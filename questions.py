@@ -191,6 +191,10 @@ def audit_format(question: str) -> str:
 ## Exploit Question
 {question}
 
+Main Focus should be on crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/ 
+Issues outside that file is out of scope 
+
+
 ## Scope Rules
 - Audit only production StarkNet protocol code.
 - Do not ask for repo contents or claim files are missing.
@@ -252,6 +256,10 @@ def scan_format(report: str) -> str:
 
 ## External Report
 {report}
+
+Main Focus should be on crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/ 
+Issues outside that file is out of scope 
+
 
 ## Access Rules (Strict)
 - Treat production StarkNet protocol files in the provided scope as accessible context.
@@ -319,6 +327,10 @@ def validation_format(report: str) -> str:
 
 ## Security Claim
 {report}
+
+Main Focus should be on crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/ 
+Issues outside that file is out of scope 
+
 
 ## Rules
 - Validate only the submitted claim.
