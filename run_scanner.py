@@ -113,7 +113,7 @@ def main():
                 processed_count += 1
 
                 counter += 1
-                if counter >= 30:
+                if counter >= 50:
                     break
 
             except Exception as e:
