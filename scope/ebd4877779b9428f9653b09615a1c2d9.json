@@ -1,0 +1,19 @@
+[
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/revert.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/syscall_impls.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/transaction_impls.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/hash/hash_state_blake.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/naive_blake.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os_config/os_config.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os_utils.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os_utils__virtual.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/output.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/aliases.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/commitment.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/output.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/squash.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/state.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/transaction_hash/transaction_hash.cairo -> Scope: Critical. Permanent freezing of funds'",
+  "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/virtual_os_output.cairo -> Scope: Critical. Permanent freezing of funds'"
+]
