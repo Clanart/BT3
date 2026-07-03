@@ -20,7 +20,7 @@ def generate_scope_files():
         # Load all questions
 
         # Split into chunks of 25
-        chunk_size = 25
+        chunk_size = 30
         total_questions = len(scope_files)
 
 

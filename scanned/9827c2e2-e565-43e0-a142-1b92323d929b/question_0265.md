@@ -1,0 +1,13 @@
+# Q265: compute_class_commitment class rebinding or undeclared-class use in state/commitment.cairo (batch-ordering edge)
+
+## Question
+Can a malicious user transaction set shaping storage writes, messages, class declarations, and block-level state diffs use declared class contents, entry-point tables, compiled class facts, storage keys and values reachable from attacker-owned contracts, the shape of the resulting state diff through crafted valid transactions to make `compute_class_commitment` in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/commitment.cairo` swap a contract's class binding to an undeclared, stale, or differently hashed class without all validation paths agreeing on the same code identity around storage diff coherence, so that honest StarkNet OS execution commits, emits, or accepts an attacker-favorable result that reaches direct loss of funds? Can the issue appear only when the attacker repeats or reorders otherwise valid actions inside the same block or state diff?
+
+## Target
+- File/function: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/commitment.cairo:255 :: compute_class_commitment
+- Entrypoint: malicious user transaction set shaping storage writes, messages, class declarations, and block-level state diffs
+- Attacker controls: declared class contents, entry-point tables, compiled class facts, storage keys and values reachable from attacker-owned contracts, the shape of the resulting state diff through crafted valid transactions
+- Exploit idea: make class replacement, declaration, or lookup observe one class hash while execution or commitment later uses another while this function is handling storage diff coherence. Exploit repeated valid actions, cross-transaction ordering, or same-block batching to surface the mismatch.
+- Invariant to test: no contract may execute, deploy, or remain committed under a class hash whose declaration, compiled-class fact, and state binding were not all validated consistently Reordering or repeating otherwise valid public actions within one block must not change the safety invariant beyond the intended deterministic state transition.
+- Expected bounty impact: Direct loss of funds
+- Fast validation: test undeclared class hashes, v1/v2 migration edges, and revert paths around this function, then assert the committed class binding is declared, unique, and the same one execution used Write a same-block differential test that permutes the attacker-controlled actions and assert there is no extra accepted state, message, or accounting outcome.

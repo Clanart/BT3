@@ -1,0 +1,13 @@
+# Q2109: is_program_hash_allowed validated-vs-committed mismatch in execution/execution_constraints.cairo (mode/version split)
+
+## Question
+Can a normal Starknet user submitting an invoke transaction with attacker-chosen proof_facts use proof_facts payload to make `is_program_hash_allowed` in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/execution_constraints.cairo` validate one attacker-controlled representation of the operation but commit, emit, or hash a different representation after the same path advances around proof-fact acceptance, so that honest StarkNet OS execution commits, emits, or accepts an attacker-favorable result that reaches permanent freezing of funds? Can validate/execute mode, deprecated/new code paths, or output-mode switches make honest executions disagree on the same public input?
+
+## Target
+- File/function: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/execution_constraints.cairo:25 :: is_program_hash_allowed
+- Entrypoint: normal Starknet user submitting an invoke transaction with attacker-chosen proof_facts
+- Attacker controls: proof_facts payload
+- Exploit idea: drive a mismatch between what the OS checks before side effects and what it finally writes into state, message output, or a commitment while this function is handling proof-fact acceptance. Exploit a mode, version, or output-format split so one phase authorizes a behavior that another phase commits differently.
+- Invariant to test: one accepted attacker-controlled operation must commit exactly the state, class binding, message effect, or hash preimage that the OS validated earlier in the same flow All supported modes and versions must preserve one canonical authorization and commitment result for the same accepted public input.
+- Expected bounty impact: Permanent freezing of funds
+- Fast validation: build a focused unit or integration test that executes this function with two logically different but parser-accepted representations and assert the final committed state/output cannot differ from the validated representation Cross-test the old/new or validate/execute variants with the same public input and assert they cannot commit divergent results.

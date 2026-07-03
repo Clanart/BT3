@@ -1,0 +1,13 @@
+# Q3400: execute_library_call attacker-driven shutdown path in execution/syscall_impls.cairo (batch-ordering edge)
+
+## Question
+Can a malicious Cairo contract reached from a valid user transaction, using attacker-chosen syscall inputs use message payloads, message ordering, message-triggered calldata, storage keys and values reachable from attacker-owned contracts, selector, calldata length to make `execute_library_call` in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/syscall_impls.cairo` use valid attacker-controlled input to drive this path into deterministic aborts or unresolvable disagreement that stop honest nodes from confirming new transactions around L1/L2 message uniqueness and accounting, so that honest StarkNet OS execution commits, emits, or accepts an attacker-favorable result that reaches network not being able to confirm new transactions? Can the issue appear only when the attacker repeats or reorders otherwise valid actions inside the same block or state diff?
+
+## Target
+- File/function: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/syscall_impls.cairo:237 :: execute_library_call
+- Entrypoint: malicious Cairo contract reached from a valid user transaction, using attacker-chosen syscall inputs
+- Attacker controls: message payloads, message ordering, message-triggered calldata, storage keys and values reachable from attacker-owned contracts, selector, calldata length
+- Exploit idea: find an input shape that turns a local assertion, ordering assumption, or hinted value dependency into a protocol-wide confirmation failure while this function is handling L1/L2 message uniqueness and accounting. Exploit repeated valid actions, cross-transaction ordering, or same-block batching to surface the mismatch.
+- Invariant to test: public StarkNet OS inputs must not give an unprivileged attacker a deterministic way to halt confirmation or crash honest execution for otherwise valid blocks Reordering or repeating otherwise valid public actions within one block must not change the safety invariant beyond the intended deterministic state transition.
+- Expected bounty impact: Network not being able to confirm new transactions
+- Fast validation: fuzz adversarial but valid public inputs that maximize this function's structural edge cases, then assert honest nodes either all reject before block inclusion or all keep confirming transactions Write a same-block differential test that permutes the attacker-controlled actions and assert there is no extra accepted state, message, or accounting outcome.

@@ -1,0 +1,13 @@
+# Q3825: prepare_constructor_execution_context validate-time rounding hazard in execution/transaction_impls.cairo (batch-ordering edge)
+
+## Question
+Can a contract deployer or deploy-account sender controlling class hash, salt, constructor calldata, and follow-up calls use transaction calldata, nonce selection, resource bounds and tip, signature material accepted by the sender's own account contract, class hash, constructor calldata to make `prepare_constructor_execution_context` in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/transaction_impls.cairo` make block-number or timestamp rounding in validate mode permanently reject valid user transactions or split honest executions around the same public block around account nonce and replay protection, so that honest StarkNet OS execution commits, emits, or accepts an attacker-favorable result that reaches unintended chain split / network partition? Can the issue appear only when the attacker repeats or reorders otherwise valid actions inside the same block or state diff?
+
+## Target
+- File/function: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/transaction_impls.cairo:524 :: prepare_constructor_execution_context
+- Entrypoint: contract deployer or deploy-account sender controlling class hash, salt, constructor calldata, and follow-up calls
+- Attacker controls: transaction calldata, nonce selection, resource bounds and tip, signature material accepted by the sender's own account contract, class hash, constructor calldata
+- Exploit idea: abuse a contract that branches on rounded validate-time block info versus exact execute-time block info while this function is handling account nonce and replay protection. Exploit repeated valid actions, cross-transaction ordering, or same-block batching to surface the mismatch.
+- Invariant to test: validate-mode rounding must not let an attacker create transactions that honest nodes disagree on or that valid users can never confirm once the block context changes Reordering or repeating otherwise valid public actions within one block must not change the safety invariant beyond the intended deterministic state transition.
+- Expected bounty impact: Unintended chain split / network partition
+- Fast validation: test contracts that branch on block number or timestamp around the rounding boundary and assert the same public transaction cannot oscillate between valid and permanently stuck across honest nodes Write a same-block differential test that permutes the attacker-controlled actions and assert there is no extra accepted state, message, or accounting outcome.

@@ -1,0 +1,13 @@
+# Q3341: execute_deploy_syscall attacker-driven shutdown path in execution/deprecated_execute_syscalls.cairo (mode/version split)
+
+## Question
+Can a malicious Cairo contract reached from a valid user transaction, using attacker-chosen syscall inputs use message payloads, message ordering, message-triggered calldata, class hash, constructor calldata, salt to make `execute_deploy_syscall` in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/deprecated_execute_syscalls.cairo` use valid attacker-controlled input to drive this path into deterministic aborts or unresolvable disagreement that stop honest nodes from confirming new transactions around L1/L2 message uniqueness and accounting, so that honest StarkNet OS execution commits, emits, or accepts an attacker-favorable result that reaches network not being able to confirm new transactions? Can validate/execute mode, deprecated/new code paths, or output-mode switches make honest executions disagree on the same public input?
+
+## Target
+- File/function: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/deprecated_execute_syscalls.cairo:229 :: execute_deploy_syscall
+- Entrypoint: malicious Cairo contract reached from a valid user transaction, using attacker-chosen syscall inputs
+- Attacker controls: message payloads, message ordering, message-triggered calldata, class hash, constructor calldata, salt
+- Exploit idea: find an input shape that turns a local assertion, ordering assumption, or hinted value dependency into a protocol-wide confirmation failure while this function is handling L1/L2 message uniqueness and accounting. Exploit a mode, version, or output-format split so one phase authorizes a behavior that another phase commits differently.
+- Invariant to test: public StarkNet OS inputs must not give an unprivileged attacker a deterministic way to halt confirmation or crash honest execution for otherwise valid blocks All supported modes and versions must preserve one canonical authorization and commitment result for the same accepted public input.
+- Expected bounty impact: Network not being able to confirm new transactions
+- Fast validation: fuzz adversarial but valid public inputs that maximize this function's structural edge cases, then assert honest nodes either all reject before block inclusion or all keep confirming transactions Cross-test the old/new or validate/execute variants with the same public input and assert they cannot commit divergent results.

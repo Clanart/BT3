@@ -1,0 +1,13 @@
+# Q3945: cap_remaining_gas attacker-driven shutdown path in execution/execute_transaction_utils.cairo (batch-ordering edge)
+
+## Question
+Can a normal Starknet user submitting invoke, declare, deploy_account, or L1-handler-triggering inputs use transaction calldata, nonce selection, resource bounds and tip, signature material accepted by the sender's own account contract, gas/resource edge cases to make `cap_remaining_gas` in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/execute_transaction_utils.cairo` use valid attacker-controlled input to drive this path into deterministic aborts or unresolvable disagreement that stop honest nodes from confirming new transactions around account nonce and replay protection, so that honest StarkNet OS execution commits, emits, or accepts an attacker-favorable result that reaches network not being able to confirm new transactions? Can the issue appear only when the attacker repeats or reorders otherwise valid actions inside the same block or state diff?
+
+## Target
+- File/function: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/execute_transaction_utils.cairo:165 :: cap_remaining_gas
+- Entrypoint: normal Starknet user submitting invoke, declare, deploy_account, or L1-handler-triggering inputs
+- Attacker controls: transaction calldata, nonce selection, resource bounds and tip, signature material accepted by the sender's own account contract, gas/resource edge cases
+- Exploit idea: find an input shape that turns a local assertion, ordering assumption, or hinted value dependency into a protocol-wide confirmation failure while this function is handling account nonce and replay protection. Exploit repeated valid actions, cross-transaction ordering, or same-block batching to surface the mismatch.
+- Invariant to test: public StarkNet OS inputs must not give an unprivileged attacker a deterministic way to halt confirmation or crash honest execution for otherwise valid blocks Reordering or repeating otherwise valid public actions within one block must not change the safety invariant beyond the intended deterministic state transition.
+- Expected bounty impact: Network not being able to confirm new transactions
+- Fast validation: fuzz adversarial but valid public inputs that maximize this function's structural edge cases, then assert honest nodes either all reject before block inclusion or all keep confirming transactions Write a same-block differential test that permutes the attacker-controlled actions and assert there is no extra accepted state, message, or accounting outcome.
