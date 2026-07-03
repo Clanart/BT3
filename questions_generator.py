@@ -343,7 +343,7 @@ def generate_file_path_get_questions():
     # Move up to 20 files
     for file_path in questions_files:
         try:
-            if counter >= 20:
+            if counter >= 30:
                 break
 
             # Create destination path
