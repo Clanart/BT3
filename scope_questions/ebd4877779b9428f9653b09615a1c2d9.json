@@ -1,0 +1,87 @@
+[
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/revert.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3e4c7e05-4b45-4621-87f9-98e7e432fd62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/syscall_impls.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_435c0912-085d-4a31-aa45-0648b27cfc26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/execution/transaction_impls.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3a0ea87-5349-4acc-81e1-139957bf56aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/hash/hash_state_blake.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c59f7bb-b9b1-470e-beac-83155b29d22b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/naive_blake.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a37973c-6332-4ad6-aeba-935939327936?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ab46591f-40ca-48ae-9d3d-a087b9fe897f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os_config/os_config.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09f139fe-3445-48e4-9489-57ad037920ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os_utils.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8344490-b107-49ca-a51a-1339b792a31c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/os_utils__virtual.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a0d58b47-50de-44d8-b76f-da0712f66a5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/output.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96e14569-de51-49e1-b0a1-cf634556926c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/aliases.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ae03624-8df5-41ec-b6f4-2e62736df504?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/commitment.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_213402ff-a084-4a8f-a1de-5509d5faa84f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/output.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e681a041-283d-48a4-bc80-b4220d770e57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/squash.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c926c851-763f-4cdc-83f8-29683fab1c23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/state/state.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fbd242d2-028e-4e2c-a140-a6f132506805?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/transaction_hash/transaction_hash.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_548b028b-a7b4-47b8-9aaf-027a88cdabb8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/virtual_os_output.cairo -> Scope: Critical. Permanent freezing of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_439af392-3879-4067-ac5a-ec92013c97bf?mode=deep",
+    "questions_generated": false
+  }
+]
