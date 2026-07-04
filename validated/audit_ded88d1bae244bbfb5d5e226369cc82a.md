@@ -1,0 +1,1 @@
+Let me look at the `execute_deploy` implementation in `syscall_impls.cairo` to complete the analysis.
