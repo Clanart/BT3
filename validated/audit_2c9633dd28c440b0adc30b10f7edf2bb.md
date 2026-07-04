@@ -1,0 +1,1 @@
+Looking at the scope files in `crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os/` for an analog to H-02's vulnerability class: **persistent authorization/permission state that is not cleared after use and cannot be revoked**.
