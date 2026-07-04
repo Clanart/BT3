@@ -1,0 +1,1 @@
+Looking at the scope carefully, I need to examine the execution and transaction processing code for state-transition bypass patterns analogous to the ERC777 lock-period bypass.
