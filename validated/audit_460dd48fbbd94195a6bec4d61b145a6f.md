@@ -1,0 +1,3 @@
+Looking at the scoped files, I need to find an analog to the "accepting any amount without slippage/bounds protection" vulnerability class. In the StarkNet OS context, this maps to **unchecked arithmetic in fee computation** — accepting any resource bound values without overflow protection, analogous to accepting any token amount without a minimum-output guard.
+
+Let me examine the fee computation path closely.
