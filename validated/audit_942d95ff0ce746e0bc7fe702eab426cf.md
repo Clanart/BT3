@@ -1,1 +1,0 @@
-Let me look at `deploy_contract` and `execute_send_message_to_l1` to complete the analysis.

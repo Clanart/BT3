@@ -1,1 +1,0 @@
-Looking at the vulnerability class — **parser bounds issue: trusting a user-supplied length field without validating it against actual data size, leading to resource exhaustion** — I need to find an analog in the StarkNet OS execution files.

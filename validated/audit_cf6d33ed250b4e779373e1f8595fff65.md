@@ -1,1 +1,0 @@
-Looking at the scope, I need to find an analog to the "arbitrary `from` in transferFrom" vulnerability class — specifically, an authorization bypass where an attacker-controlled address is used as the source of a privileged operation without proper validation. Let me read the most critical remaining file.
