@@ -1,1 +1,0 @@
-[File: 'near/omni-token/src/migrate.rs -> Scope: High. Proof, signature, MPC, Wormhole, or light-client verification bypass enabling unauthorized transfer finalization, token deployment, or message execution'] [Function: migrate_from_poa / ft_transfer] Can an attacker exploit the post-migration ft_transfer redirect logic—where ft_transfer(receiver_id=token_contract, memo=\
