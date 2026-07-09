@@ -1,0 +1,1 @@
+[File: 'near/omni-types/src/btc.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'] [Function: OmniAddress::Btc / UTXOChainAddress / init_transfer] Can an unprivileged attacker call init_transfer with recipient=OmniAddress::Btc(\

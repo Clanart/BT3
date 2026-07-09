@@ -1,0 +1,1 @@
+[File: 'near/omni-token/src/migrate.rs -> Scope: High. Proof, signature, MPC, Wormhole, or light-client verification bypass enabling unauthorized transfer finalization, token deployment, or message execution'] [Function: migrate_from_poa] Can an attacker exploit the fact that migrate_from_poa reads the FungibleToken from NearIntentsState.token (which uses storage key \

@@ -1,0 +1,1 @@
+[File: 'near/omni-types/src/bounded_string.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'] [Function: BoundedString<MAX_INIT_TRANSFER_MSG_LEN>::new / fast_fin_transfer / resolve_fast_transfer] Can an unprivileged trusted relayer submitting a FastFinTransferMsg with msg='{\

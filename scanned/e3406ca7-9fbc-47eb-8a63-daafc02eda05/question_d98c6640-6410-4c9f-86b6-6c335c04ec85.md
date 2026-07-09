@@ -1,0 +1,1 @@
+[File: 'near/omni-types/src/bounded_string.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'] [Function: BoundedString<MAX_INIT_TRANSFER_MSG_LEN>::new / claim_fee_callback / fee computation] Can an unprivileged bridge user submitting a transfer with msg=BoundedString::new('{\
