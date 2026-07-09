@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: near/omni-types/src/utils.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70062d94-453b-4b66-a567-dfbff5159845?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/token-deployer/src/lib.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33db74c4-4eba-457a-9a04-b4ba6ce80a4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/token-deployer/src/migrate.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bed12358-9ca7-4cfa-b23f-110a3643ed34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/Borsh.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_14670409-1b80-4793-84f7-3f876eecd20c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/IBridgeToken.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb5c2ef3-b373-4ffd-bc44-8b38cfad8abb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/ICustomMinter.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_689c83f6-d668-489f-9501-7a51e987af08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/ENearProxy.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89f02b8f-0c6a-4cc7-805a-c06ab97ce4ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/IENear.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a3e1475a-7715-44ac-b140-4240b75390b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeToken.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3666ecbe-6f83-433e-b776-1ef52c8bab82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeTypes.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b3cdb55-0f33-4868-9f6b-9fb72114fcea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/HlBridgeToken.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3e25e923-136b-4f50-95b4-7afb159e1f52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridge.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_79c23caa-bd98-439c-b0ec-df9401b21d2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridgeWormhole.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b4860242-ace8-4c9c-b630-66e84cdf0a6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/SelectivePausableUpgradable.sol -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9cf3fc05-0223-4384-a4f5-e3eef4d3df3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/constants.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e29c55a-058c-4dfc-9a68-623a54960310?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/error.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9671df00-c255-413c-8e59-c5ec6ca4ac52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/change_config.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ed0ee9a-f544-48bf-9171-487fb54b32c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/initialize.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1ba20d6-1399-4e4a-88b1-a0b1c39d42a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/mod.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f6a5e6c7-ec64-40a8-8d7e-666c93cf43fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/pause.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_676465ea-b30f-4aae-94a9-8590d8c0c02c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/update_metadata.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d11d03bc-7bfa-40f7-8a4a-f8631dd924f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/mod.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a5c5e11d-d8ca-45fc-bd5c-9d12026abb46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/deploy_token.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_346fce43-2c7d-4134-a2cb-647da1b76343?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/finalize_transfer.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6d810ff5-596f-41f2-a3f7-3bdfdeffdcba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/finalize_transfer_sol.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28674944-b1a5-487b-997a-f5ece2fcaf64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/get_version.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_08bea629-21ee-473e-a442-3896def7f908?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/init_transfer.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c273ce15-9219-4ff9-b33e-bfd3565cd771?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/init_transfer_sol.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1bf4fd38-d7ae-41b5-a484-b43f43062026?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/log_metadata.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cd312ad2-14b4-46a5-bc30-18cd0104c74a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/mod.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_121f9100-8306-46dd-9728-37dfff314d27?mode=deep",
+    "questions_generated": false
+  }
+]
