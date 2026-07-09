@@ -1,0 +1,82 @@
+[
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/wormhole_cpi.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_276e9075-d243-4b25-995f-a42da4384ba9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/lib.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4d7df699-72b7-4fb0-a3e2-261eda6de522?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/config.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1180bc35-964b-411d-9aab-d4638e2d542d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/deploy_token.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6be2f1b9-91f0-422e-a0bc-4176898620d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/finalize_transfer.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_01321213-3690-498f-a5bf-39967196f900?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/init_transfer.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e39ea966-6ce7-4842-a928-72e2e0cbfe4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/log_metadata.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_12101926-a496-4fa6-a6a5-2284182c4d00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/mod.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bd2b1876-c508-4491-9184-af8e6121f4e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/mod.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fd1a357b-7eb2-4ca7-b0ec-2607391931e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/used_nonces.rs -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b630ee7-142b-4cf4-87ff-b2867a858339?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_token.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8382c648-10d6-4cf1-be22-e01e57931c69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_types.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d00c7d58-fc5e-4f56-a871-1fadb126555a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/lib.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_64f27f53-e44a-49e2-b598-47b0281fce46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/omni_bridge.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_945b1c9e-451f-40bd-98f7-4e61012e1592?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f306d9e-a43a-451d-8568-7663a66290a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d7a4cfa-c066-40b4-89f8-21c9dc1c2717?mode=deep",
+    "questions_generated": false
+  }
+]
