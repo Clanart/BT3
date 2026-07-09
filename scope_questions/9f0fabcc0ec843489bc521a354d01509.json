@@ -1,0 +1,82 @@
+[
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/wormhole_cpi.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d150f141-54e5-4747-a9da-ab0da6f0572f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/lib.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2b379a46-6578-4101-b3d5-fa0bd3ee380d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/config.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_91fd6d10-a5fd-471a-a9f7-465146f3465f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/deploy_token.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34aec2a2-b472-46a9-ad16-80d4ae30c9e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/finalize_transfer.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_996cb800-9637-40d8-ac5e-4825d28bc788?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/init_transfer.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c8bc85c-7799-4450-ba68-a0ee66105e49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/log_metadata.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b682c809-82af-4b3c-a24f-74ea275323dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/mod.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c39d7c3-fcf3-48b3-91fa-053007563491?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/mod.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_57f8727e-c4d6-4857-8c28-98309442a33e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/used_nonces.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a9555712-3d42-4c90-a0af-a1d2f99e3999?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_token.cairo -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_091e8ea4-9533-4f31-9948-05f627a733a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_types.cairo -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89f08895-92ac-49d6-9bcb-e6d0260c5262?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/lib.cairo -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f6740d2-0e6f-4e2d-b37a-15ebd1bee7ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/omni_bridge.cairo -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35c8a8a2-1c03-427f-b3f8-e6cc8034b4e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb9254be-6798-4ba3-849b-1061c9132879?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils.cairo -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_57e564e1-1ffa-463d-b229-942a1f8c1166?mode=deep",
+    "questions_generated": false
+  }
+]
