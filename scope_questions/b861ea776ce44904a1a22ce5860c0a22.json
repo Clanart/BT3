@@ -1,0 +1,82 @@
+[
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/wormhole_cpi.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ebe93bb-c069-4a20-875d-85088f346599?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/lib.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bbc1d31-631c-4ed4-9d65-189b290d786c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/config.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_afb4da16-66b9-40e2-9484-e413e11fc03c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/deploy_token.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ffacf4a7-f949-4933-b0d4-3723dd4c2147?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/finalize_transfer.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_55b28438-b843-4ec4-a05d-7f6413591c8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/init_transfer.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_91e4cb9a-d21f-445c-a83f-6a04cd2b0b85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/log_metadata.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb577cf5-ad4e-4687-b2dc-1025981038a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/mod.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_84f05c72-cc95-433c-8f87-8de14a5fb73f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/mod.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bfe01402-9abb-46ce-ac45-91db9733475c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/used_nonces.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5449bf6-789d-4a06-80b6-9579ece56073?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_token.cairo -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f7f7f8b5-da78-4f1a-8874-e507f78b2078?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_types.cairo -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_914aaf26-aa86-4650-b63d-f90615b7351a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/lib.cairo -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_990af797-5a12-4b78-82da-faf1a37b4575?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/omni_bridge.cairo -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c10326fa-866a-4f98-a348-64c51df39696?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc400372-b581-48fe-84f2-163f17d86660?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils.cairo -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e6e6d11-de67-4d0a-9f7f-5447b740d886?mode=deep",
+    "questions_generated": false
+  }
+]
