@@ -1,0 +1,13 @@
+# Q3018: NEAR factory map mutation assumptions same remote asset deployable via multiple proof paths through cross-module drift
+
+## Question
+Can an unprivileged attacker use `public proof-consuming flows after a valid source-chain event exists` with control over chain kind, emitter address, and any state race across token deployment and finalization and desynchronize `near/omni-bridge/src/lib.rs::factories usage in all proof callbacks` from the adjacent token-mapping and asset-identity logic that shares the same asset, nonce, proof subject, or mapping specifically in the `same remote asset deployable via multiple proof paths` attack class because uses a single configured factory per chain to authenticate proof-derived events across init, finalize, deploy, metadata, and fee claim flows, violating `source authentication must never accept a valid event from the wrong contract instance, retired factory, or mismatched chain domain`?
+
+## Target
+- File/function: `near/omni-bridge/src/lib.rs::factories usage in all proof callbacks`
+- Entrypoint: `public proof-consuming flows after a valid source-chain event exists`
+- Attacker controls: chain kind, emitter address, and any state race across token deployment and finalization
+- Exploit idea: Compare metadata-based deployment, deploy-token binding, native-token deployment, and chain-specific extension paths. Focus on drift between this module and the adjacent token-mapping and asset-identity logic.
+- Invariant to test: source authentication must never accept a valid event from the wrong contract instance, retired factory, or mismatched chain domain
+- Expected Immunefi impact: Balance manipulation
+- Fast validation: Attempt the same remote asset through every supported path and assert that the bridge converges to one canonical local representation. Also assert cross-module consistency between `near/omni-bridge/src/lib.rs::factories usage in all proof callbacks` and the adjacent token-mapping and asset-identity logic after every branch.

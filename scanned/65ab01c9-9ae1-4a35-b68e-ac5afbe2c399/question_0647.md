@@ -1,0 +1,13 @@
+# Q647: EVM bridge-token proxy deploy rollback canonical token identity collision at boundary values
+
+## Question
+Can an unprivileged attacker trigger `public EVM `deployToken`` with boundary-controlled inputs covering zero, maximal, and malformed user-controlled values and make `evm/src/omni-bridge/contracts/OmniBridge.sol::deployToken around proxy creation and mapping writes` violate `deployment ordering must not allow a reentrant or partially-failed extension to leave a live token proxy outside the bridge’s canonical mapping or vice versa` in the `canonical token identity collision` attack class because creates a proxy, emits events, and only then writes mapping state for the new bridge token becomes fragile at those edges?
+
+## Target
+- File/function: `evm/src/omni-bridge/contracts/OmniBridge.sol::deployToken around proxy creation and mapping writes`
+- Entrypoint: `public EVM `deployToken``
+- Attacker controls: token id, metadata fields, signature bytes, and reordering between proxy deployment and map writes
+- Exploit idea: Target hashed token ids, deterministic synthetic addresses, PDA seeds, and address-to-token maps. Concentrate on zero, maximal, and malformed user-controlled values.
+- Invariant to test: deployment ordering must not allow a reentrant or partially-failed extension to leave a live token proxy outside the bridge’s canonical mapping or vice versa
+- Expected Immunefi impact: Balance manipulation
+- Fast validation: Search for collisions and alias conditions and assert that two distinct remote assets cannot share one local token identity or mapping row. Sweep boundary values for zero, maximal, and malformed user-controlled values and assert that the same invariant holds at every edge.

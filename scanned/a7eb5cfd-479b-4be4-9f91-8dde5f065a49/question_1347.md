@@ -1,0 +1,13 @@
+# Q1347: NEAR UTXO transfer dispatcher asset-branch confusion on finalization
+
+## Question
+Can an unprivileged attacker use ``ft_on_transfer` branch for UTXO-origin settlement` to make `near/omni-bridge/src/lib.rs::utxo_fin_transfer` release value through a more favorable branch than the source event actually authorized because of routes UTXO-origin settlements into Near or other-chain legs, creates fast-transfer state when applicable, and tracks `UnifiedTransferId` rather than plain nonces, violating `UTXO-origin flows must not let one origin outpoint or replacement message fan out into multiple bridge settlements or mismatched lock states`?
+
+## Target
+- File/function: `near/omni-bridge/src/lib.rs::utxo_fin_transfer`
+- Entrypoint: ``ft_on_transfer` branch for UTXO-origin settlement`
+- Attacker controls: token id, amount, signer/sender split, UTXO transfer message, origin chain, relayer fee, recipient, and message
+- Exploit idea: Target native-versus-wrapped, vault-versus-mint, ERC-20-versus-ERC-1155, or custom-minter-versus-custody branches.
+- Invariant to test: UTXO-origin flows must not let one origin outpoint or replacement message fan out into multiple bridge settlements or mismatched lock states
+- Expected Immunefi impact: Theft or permanent freezing of funds
+- Fast validation: Assert that every accepted settlement lands on exactly the branch implied by the validated source asset type and mapping state.
