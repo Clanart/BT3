@@ -1,0 +1,82 @@
+[
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/wormhole_cpi.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2b68fa08-5e01-4d1e-883e-98530615420f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/lib.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1cb99de8-c86b-4d59-a29e-d5cdc5d9e2ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/config.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_874e756a-e716-4425-a2cb-e862debdb5c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/deploy_token.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce30cb89-ab73-44eb-8fd8-56d22a076676?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/finalize_transfer.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_40f94a38-e72b-40bb-886f-dc62eb10b6b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/init_transfer.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c414d6ea-088d-4f7e-b10d-525a065a1e2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/log_metadata.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a5047b9-1069-4b08-89ee-19ac08d96794?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/mod.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2310dea5-bdd4-416c-972d-9261286e5ee8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/mod.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e1e9e448-3e7c-4f05-97b6-526f38a98840?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/used_nonces.rs -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f465bc85-d203-4a78-a6fd-b161cd6a2590?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_token.cairo -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8fa0906f-3071-48de-af6c-59a1b1f0bfeb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_types.cairo -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ad942c7-5505-45da-be7e-14e4ac44302d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/lib.cairo -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81341415-7c84-4c5a-86b2-4879c0345c3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/omni_bridge.cairo -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5a0ae1b-29df-43da-adf4-8e89bd1ae590?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c4d1826-0354-4060-8b57-b795aaa295da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils.cairo -> Scope: Critical. Permanent freezing, irrecoverable lock, or unclaimable settlement of user or protocol funds in bridge, token, or vault flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_44d7d8b7-3046-4f63-85c2-8b28a854d765?mode=deep",
+    "questions_generated": false
+  }
+]
