@@ -1,0 +1,1 @@
+I need to trace the full `claim_fee` → `claim_fee_callback` → `send_fee_internal` flow carefully.
