@@ -1,0 +1,1 @@
+Let me look at the Solana bridge and EVM bridge for similar patterns before concluding.
