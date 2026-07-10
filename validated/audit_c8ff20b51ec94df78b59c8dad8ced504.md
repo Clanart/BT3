@@ -1,0 +1,1 @@
+Let me look at the `OmniAddress` enum definition and the StarkNet bridge's handling of payload types to check for incomplete case coverage.
