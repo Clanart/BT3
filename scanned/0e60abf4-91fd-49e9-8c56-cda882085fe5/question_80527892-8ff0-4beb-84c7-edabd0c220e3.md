@@ -1,1 +1,0 @@
-[File: 'near/omni-token/src/migrate.rs -> Scope: High. Cross-chain replay, double-finalization, nonce reuse, or duplicate settlement that enables double-spend or unbacked supply'] [Function: migrate_from_poa] Can an attacker trigger a metadata storage key collision by observing that migrate_from_poa() calls LazyOption::new(b\
