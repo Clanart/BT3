@@ -1,0 +1,1 @@
+Let me look at the Solana finalize_transfer and the NEAR bridge's `send_tokens` function more carefully.
