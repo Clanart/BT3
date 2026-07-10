@@ -1,0 +1,1 @@
+Let me look at the `fin_transfer_send_tokens_callback` and the Solana `init_transfer` for zero-amount checks.
