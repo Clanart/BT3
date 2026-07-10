@@ -1,0 +1,1 @@
+Let me look at the `process_fin_transfer_to_near` function and the Solana init_transfer for amount calculations.
