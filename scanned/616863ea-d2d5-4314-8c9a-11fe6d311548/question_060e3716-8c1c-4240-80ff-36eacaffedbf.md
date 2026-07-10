@@ -1,1 +1,0 @@
-[File: 'solana/programs/bridge_token_factory/src/error.rs -> Scope: Critical. Direct theft, unauthorized release, or unauthorized mint of native or bridged assets across NEAR, EVM, Solana, or StarkNet'] [Function: deploy_token / deploy_token.rs] Can an unprivileged attacker call `deploy_token` with a `DeployTokenPayload` where `token` is an empty string (`\
