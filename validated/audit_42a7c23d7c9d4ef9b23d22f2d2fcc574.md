@@ -1,0 +1,1 @@
+Let me read more of the NEAR bridge lib.rs and look for bind_token/deploy_token patterns.
