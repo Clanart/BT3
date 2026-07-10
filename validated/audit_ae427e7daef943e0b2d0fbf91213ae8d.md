@@ -1,0 +1,1 @@
+Looking at the Solana `FinalizeTransfer` and `FinalizeTransferSol` instructions, I need to check whether the `recipient` account is constrained by the signed payload — the direct analog to the ZetaChain `sender` impersonation bug.
