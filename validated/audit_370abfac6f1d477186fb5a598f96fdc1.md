@@ -1,0 +1,1 @@
+Looking at the EVM `OmniBridge.sol` `finTransfer` and `initTransfer` functions for re-entrancy / callback-state desync analogous to the external report.
