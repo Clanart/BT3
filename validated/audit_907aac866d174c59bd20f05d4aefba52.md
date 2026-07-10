@@ -1,0 +1,3 @@
+Looking at the external report's vulnerability class: **a validity check is performed on the requested amount before an operation that can reduce the effective amount, and state is updated based on the requested amount rather than the actual effective amount**. I need to find an analog in Omni Bridge where a check on the raw amount passes, but the actual effective amount (after some transformation) can be zero, with state already committed.
+
+Let me examine the NEAR bridge's transfer initiation and signing flow.

@@ -1,0 +1,1 @@
+Let me look at the `sign_transfer_callback` and the wormhole prover parsing to complete the picture.
