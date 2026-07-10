@@ -1,0 +1,1 @@
+Let me look at the critical `is_refund_required` function and the `send_tokens` flow to verify the exact conditions under which `remove_fast_transfer` is called.
