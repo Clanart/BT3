@@ -1,0 +1,1 @@
+Let me look at the SECURITY.md and Solana bridge code for any remaining analog patterns.
