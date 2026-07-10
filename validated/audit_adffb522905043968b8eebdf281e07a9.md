@@ -1,0 +1,1 @@
+Let me look at the EVM bridge contracts and the `remove_fin_transfer` flow more carefully.
