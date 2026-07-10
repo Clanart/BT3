@@ -1,1 +1,0 @@
-[File: 'starknet/src/bridge_types.cairo -> Scope: High. Balance, decimal, fee, token-mapping, or accounting corruption that breaks bridge collateralization or misdirects value'] [Function: TransferMessagePayloadTrait::to_borsh / omni_bridge::fin_transfer] Can an unprivileged relayer submit a fin_transfer payload with fee_recipient: Option::Some(\
