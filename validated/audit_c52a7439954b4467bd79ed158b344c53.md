@@ -1,0 +1,1 @@
+Let me look at the EVM and Solana bridge contracts for similar patterns.
