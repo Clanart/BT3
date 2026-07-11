@@ -1,1 +1,0 @@
-Let me look at the `claim_fee_callback` and the full fee accounting flow more carefully.

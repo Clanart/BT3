@@ -1,1 +1,0 @@
-Looking at the `fast_fin_transfer` flow in `near/omni-bridge/src/lib.rs`, I need to check whether the `relayer` field in `FastFinTransferMsg` is verified against the actual signer. Let me also check the EVM side.

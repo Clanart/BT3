@@ -1,1 +1,0 @@
-Let me look at the `sign_transfer` function and the fast transfer flow for NEAR-origin transfers more carefully.

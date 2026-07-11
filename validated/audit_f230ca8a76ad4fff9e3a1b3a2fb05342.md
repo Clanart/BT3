@@ -1,1 +1,0 @@
-Looking at the EVM `OmniBridge.sol` `finTransfer` function and the permissionless `logMetadata` + `initTransfer` entry points, I can identify a direct analog to the external report's vulnerability class.

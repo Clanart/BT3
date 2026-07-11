@@ -1,3 +1,0 @@
-Looking at the vulnerability class from the report — **state desync between current registry state and historical/pending state causing an essential function to permanently revert** — I need to find an analog in the Omni Bridge codebase where current mappings diverge from pending/historical state, causing a critical function to panic.
-
-Let me examine the `migrate_deployed_token` function and `sign_transfer` interaction.

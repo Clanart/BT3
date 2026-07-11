@@ -1,1 +1,0 @@
-Let me check the lib.rs and how `verify_signature` is called in the instruction handlers.

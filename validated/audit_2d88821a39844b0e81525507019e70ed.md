@@ -1,1 +1,0 @@
-Let me look at the EVM contracts and the `submit_transfer_to_btc_connector_callback` to complete my analysis.

@@ -1,1 +1,0 @@
-Let me look at the Solana bridge token factory and EVM contracts for accounting issues analogous to the external report.

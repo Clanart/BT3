@@ -1,1 +1,0 @@
-Let me look at the Solana bridge for fee/amount calculations and also check the `process_fin_transfer_to_other_chain` locking logic more carefully.

@@ -1,1 +1,0 @@
-Let me look at the sign_transfer function and the trusted_relayer macro to complete the analysis.

@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class — **asset-accounting bug where a single operation collects multiple asset types but only forwards the primary one, leaving secondary assets permanently stuck** — I need to find an analog in Omni Bridge where a bridge operation collects both a bridged asset and a fee asset, but only properly handles one of them.

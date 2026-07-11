@@ -1,1 +1,0 @@
-I need to trace the full execution path of `resolve_fast_transfer` and its surrounding logic carefully.

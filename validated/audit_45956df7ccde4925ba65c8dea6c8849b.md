@@ -1,1 +1,0 @@
-Let me look at the `swap_migrated_token` function, which is the only actual "swap" in the bridge codebase.

@@ -1,1 +1,0 @@
-I need to trace the full call path through `ft_on_transfer` → `init_transfer` → `init_transfer_internal` and the resume path.

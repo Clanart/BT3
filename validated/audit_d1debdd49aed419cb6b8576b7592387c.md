@@ -1,1 +1,0 @@
-Let me look at the `fin_transfer_send_tokens_callback` and the Solana nonce constants to complete my analysis.

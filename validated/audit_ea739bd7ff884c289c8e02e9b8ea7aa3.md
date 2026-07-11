@@ -1,1 +1,0 @@
-Looking at the vulnerability class (inverted success/failure logic in a callback causing incorrect state transitions), I need to find an analog in the Omni Bridge codebase where a callback mishandles the return value of a sub-call, leading to incorrect asset accounting or fund loss.

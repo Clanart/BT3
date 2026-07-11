@@ -1,1 +1,0 @@
-I need to trace the full cross-chain flow to verify whether the normalization round-trip actually produces zero.
