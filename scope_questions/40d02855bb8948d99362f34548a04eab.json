@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: evmd/app.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c4d5e95-d7bf-4c2c-a633-eab59cfcc6ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/executor.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3e967299-cb9e-45e4-9d3b-f3fd69ffde27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/export.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed19f9e3-59b0-4a22-ba62-cac4de955b66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/genesis.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_629eaa05-eb0a-465f-b386-823e50e31dae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/mempool.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_814e6c60-3555-4c1d-857d-4f7baa7fb087?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/signer.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f010aa9d-8d55-490d-a090-5a4e181a4933?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/upgrades.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1dbd04d3-5041-40fb-ac98-3580e2ecdc3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: indexer/kv_indexer.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e77a3fd8-8d99-4fde-a95b-fbe0bdbfd276?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/origin/origin.go -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d20b8aa-b906-43cd-a966-9d87473af09c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/crypto/v1/ethsecp256k1/keys.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9cfbbf73-847c-403d-be47-d7d9d207e7ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/access_tuple.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65fd83d8-c7dc-490c-bda8-a4034919232c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/chain_config.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e5af1bed-417a-4e6c-a04e-973ff0a61464?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/chain_config_v0.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4413b141-dd40-44fb-ba2d-a853dd0bd71d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/events.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67473d74-8af8-48c8-87b0-8801a123131e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/genesis.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2105ce4b-7de9-4f32-adeb-5107b86b03eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/log.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9a22e615-5d1c-49a5-85aa-df3f28ade111?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d606ecf8-a94a-491b-8dd3-dc55046bc266?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params_v0.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a826a8e2-550b-4cea-a7d2-161fcdbc9278?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params_v4.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dde81426-7b66-4728-8e66-5b5af1e629b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/preinstall.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2877374a-eee6-449c-b088-396ce82ea5d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/query.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b5e70f2-2dd0-43ab-b189-f3b0067c59bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/set_code_authorization.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f1dd6ac-05ae-4287-a219-b3a4158fd2a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/state.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fce8bd46-e739-4bd7-ac2b-84dfb250e8a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/trace_config.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce33605b-644d-472b-8984-67e01598c5c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/trace_config_v0.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e5a64941-826c-4446-8a09-7a83da0dc660?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/transaction_logs.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47ef97e1-a435-4b96-84ca-9fabf236cbe7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/tx.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a6f4f7a7-ba8f-47ef-bef9-3390803d7309?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/tx_result.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7a5758c4-1daa-4449-a2d7-8d9a4bc678d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/feemarket/v1/events.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92ce928b-c1cd-42a8-835d-3830ffe7c677?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/feemarket/v1/feemarket.proto -> Scope: Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b589862-0529-404a-8180-4efd6d3cccb6?mode=deep",
+    "questions_generated": false
+  }
+]
