@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: evmd/app.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b5dff4a1-98d4-4b93-8be1-8c4b0456e2fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/executor.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4279480-5f2a-4c83-a284-e8738254b6f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/export.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26ffc669-da1f-4bc5-a127-4283dc43c903?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/genesis.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_447eaa1d-7087-403c-a942-f71390450e05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/mempool.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a98cc85d-01c0-4983-a16f-6cb3a51f4c85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/signer.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10ba59ce-f792-43f7-b0fd-c9c7b32c5ee2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/upgrades.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f3b92e3-1d35-4718-83eb-19d307abbc2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: indexer/kv_indexer.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d021ebbf-03c6-457d-9355-de7522c883d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/origin/origin.go -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56c71239-6b2b-447e-b146-5b707203f06b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/crypto/v1/ethsecp256k1/keys.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8efd6e0d-8bb7-4d4f-b314-30d2f73293d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/access_tuple.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10217780-c674-4e67-afc6-018844158231?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/chain_config.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7bf5f7c9-38b2-41b0-be25-ec6f333af56a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/chain_config_v0.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_616f0330-b94e-4edf-abdb-17833e598d60?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/events.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff49c0d3-b11e-44c9-8829-ea5546a12b48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/genesis.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_279d99d7-3760-4f95-b890-2b79d487d456?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/log.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8898aa54-62b0-4e3d-a1f7-7e1ee23aea1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2b468900-14bc-4caf-8017-c434d3404499?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params_v0.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b7ea31f-68bd-413e-b277-ef419e442009?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params_v4.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7aab816e-d60d-4b57-a1d2-27ee5babd88b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/preinstall.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b0e97a9-ee53-46de-8a07-a913ddf1a3de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/query.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_37752203-f0c4-4086-8bc9-bfd2431310e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/set_code_authorization.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e58c4e34-49c9-45f0-a288-edeab494ad9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/state.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e48718dc-2050-4723-8b44-5f15a7e7dec9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/trace_config.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_734ea80a-6ae2-4363-a0ff-968a13db0c8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/trace_config_v0.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e71004b3-3fc6-4b98-bb17-5cd7901549e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/transaction_logs.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15873927-e14c-46a0-a651-a133944ee17e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/tx.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed979e1e-a99d-4b91-9b94-2cc849b90695?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/tx_result.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1485897c-d9f9-4952-8352-ba25602f2354?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/feemarket/v1/events.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a1c2efb-8428-4c22-84a3-388671050a14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/feemarket/v1/feemarket.proto -> Scope: High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6f9abba9-6e76-4404-80ef-b9853f2b13b6?mode=deep",
+    "questions_generated": false
+  }
+]
