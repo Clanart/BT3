@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: types/coin.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0a94f6e-9a5b-4108-ad03-af3b88807a33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/dynamic_fee.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_999bf287-48f4-4003-8014-8d0290e98038?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/encoding.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3fe66cc2-5c20-44ec-8788-45c60c81cb9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/errors.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_00cd6b10-d4d7-4c9d-90ac-f8381c1c0983?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/gasmeter.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_605b0e42-9526-4fff-a437-ac40b03be38e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/hdpath.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d71d2d53-07fa-498d-9e03-f6373becfb50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/indexer.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0891b1c2-593d-4142-b46b-5321ef22f7f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/int.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e681dae0-ab83-4665-83d2-f58d88cd8dab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/protocol.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3dcce15-0e3b-4886-aa85-7aba02689f53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/validation.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_015d20f7-092a-4e4c-b6f4-5a91be410b6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/client/cli/query.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c47d1e98-ba42-48d8-9e23-b583777c2122?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/client/cli/tx.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8600e2bc-fd00-4bf7-9951-fcfd66918c93?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/client/cli/utils.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f41bd5c-f3f6-4459-916a-bb2fe4cd3533?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/genesis.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_22e776db-e3be-40cf-b8ce-927426cd3653?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/abci.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_422f18a1-45cd-4349-9c86-ec8b5222ad85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/bloom.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7101c3cd-e6e6-4704-a959-aecfef502ef5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/config.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da191cc9-61e6-47b3-bcc8-eb1ad5efc5a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/gas.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e50893a8-c798-4397-9336-8aaf0d81b146?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/grpc_query.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dd5a7256-ee39-4d47-ba22-e129e1839cea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/hooks.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_844f8d10-b724-4879-98d6-2d1b7d6b3806?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/keeper.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b3e32d78-c904-4001-a1a2-15969fb0a007?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/migrations.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e071548f-89b1-446b-8ac7-02ba04465d5e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/msg_server.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ee54648e-d418-46e2-ba76-47a69c481866?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/params.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_074866e8-783e-4b29-8edc-cb77a1ed7b7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/set_code_authorizations.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92b0a9c2-edb3-45b7-808e-87f1adeda0fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/simulate.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ab9252d-356b-4dfc-96c0-55d76ba7b56f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/state_transition.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2429c3a6-5073-434b-9f3c-c9af9e32b2d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/statedb.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aa544d40-3ab5-43be-b0bb-539f9cc417c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/keeper/utils.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_99dad81a-76c4-4c7d-a771-882c891f70da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/evm/migrations/v0/types/chain_config.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6f767788-fc56-48e3-851b-1cfeea2df2b0?mode=deep",
+    "questions_generated": false
+  }
+]
