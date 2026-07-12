@@ -1,0 +1,13 @@
+# Q1971: ValidateAddress - Preinstall Address Collision Is Not Detected For User Created Account
+
+## Question
+Can an unprivileged attacker submit a Cosmos-wrapped Ethereum transaction through `address validation for RPC/query/tx conversion` while controlling `AuthInfo fee/gas` and `signature values`, under the precondition that the same tx is seen in CheckTx and ReCheckTx, drive `RPC conversion -> MsgEthereumTx.BuildTx -> Cosmos tx decoding -> ante signature verification` in `types/validation.go::ValidateAddress` so that preinstall address collision is not detected for user-created account, violating the invariant that the authenticated signer must be the only account whose nonce, balance, or code can change, and causing a realistic Cronos critical impact by enabling unauthorized EVM-denom movement, fee/refund misaccounting, or account code/nonce mutation that leads to direct user-fund loss?
+
+## Target
+- File/function: `types/validation.go::ValidateAddress`
+- Entrypoint: `address validation for RPC/query/tx conversion`
+- Attacker controls: `AuthInfo fee/gas`, `signature values`; public inputs only, no privileged roles, leaked keys, governance/admin actions, docs/tests/mocks/scripts, or disabled configs.
+- Exploit idea: preinstall address collision is not detected for user-created account through `RPC conversion -> MsgEthereumTx.BuildTx -> Cosmos tx decoding -> ante signature verification`.
+- Invariant to test: the authenticated signer must be the only account whose nonce, balance, or code can change.
+- Expected Immunefi impact: HackenProof Cronos Critical - direct unintentional withdrawal, draining, or loss of user funds on the in-scope Ethermint/Cronos blockchain target.
+- Fast validation: write a focused Go unit test around the target function and assert bank supply, sender balance, nonce, code hash, logs, and receipt status before and after.

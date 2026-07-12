@@ -1,0 +1,13 @@
+# Q2487: StateDB.SetNonce - Nonce Set Lower Than Previous Enables Replayed Spend
+
+## Question
+Can an unprivileged attacker submit replay, reorder, or replacement transactions from attacker-controlled accounts through `EVM nonce mutation during CREATE, CALL, and EIP-7702` while controlling `replay timing` and `deleted account sequence`, under the precondition that contract creation performs nested CREATE operations, drive `GetNonce -> ante nonce check -> SetNonce in EVM -> Commit` in `x/evm/statedb/statedb.go::StateDB.SetNonce` so that nonce set lower than previous enables replayed spend, violating the invariant that contract creation nonce math must match geth, and causing a realistic Cronos critical impact by enabling unauthorized EVM-denom movement, fee/refund misaccounting, or account code/nonce mutation that leads to direct user-fund loss?
+
+## Target
+- File/function: `x/evm/statedb/statedb.go::StateDB.SetNonce`
+- Entrypoint: `EVM nonce mutation during CREATE, CALL, and EIP-7702`
+- Attacker controls: `replay timing`, `deleted account sequence`; public inputs only, no privileged roles, leaked keys, governance/admin actions, docs/tests/mocks/scripts, or disabled configs.
+- Exploit idea: nonce set lower than previous enables replayed spend through `GetNonce -> ante nonce check -> SetNonce in EVM -> Commit`.
+- Invariant to test: contract creation nonce math must match geth.
+- Expected Immunefi impact: HackenProof Cronos Critical - direct unintentional withdrawal, draining, or loss of user funds on the in-scope Ethermint/Cronos blockchain target.
+- Fast validation: build a two-message Cosmos tx fixture and assert ante, execution, refund, and receipt invariants after FinalizeBlock.

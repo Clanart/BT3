@@ -1,0 +1,13 @@
+# Q1768: HookedStateDB.SubBalance - Hooked Debit Reports Balance Change Based On Failed Inner Debit
+
+## Question
+Can an unprivileged attacker request debug_trace* for crafted included transactions or calls through `debug/trace hooked EVM execution balance debit` while controlling `predecessor tx list` and `trace config`, under the precondition that traceReplay or state overrides are enabled, drive `TraceCall/TraceBlock -> block context setup -> hooked StateDB execution` in `x/evm/statedb/statedb_hooked.go::HookedStateDB.SubBalance` so that hooked debit reports balance change based on failed inner debit, violating the invariant that trace results must map to the exact target transaction, and causing a realistic Cronos critical impact by enabling unauthorized EVM-denom movement, fee/refund misaccounting, or account code/nonce mutation that leads to direct user-fund loss?
+
+## Target
+- File/function: `x/evm/statedb/statedb_hooked.go::HookedStateDB.SubBalance`
+- Entrypoint: `debug/trace hooked EVM execution balance debit`
+- Attacker controls: `predecessor tx list`, `trace config`; public inputs only, no privileged roles, leaked keys, governance/admin actions, docs/tests/mocks/scripts, or disabled configs.
+- Exploit idea: hooked debit reports balance change based on failed inner debit through `TraceCall/TraceBlock -> block context setup -> hooked StateDB execution`.
+- Invariant to test: trace results must map to the exact target transaction.
+- Expected Immunefi impact: HackenProof Cronos Critical - direct unintentional withdrawal, draining, or loss of user funds on the in-scope Ethermint/Cronos blockchain target.
+- Fast validation: build a two-message Cosmos tx fixture and assert ante, execution, refund, and receipt invariants after FinalizeBlock.

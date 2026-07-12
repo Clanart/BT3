@@ -1,0 +1,13 @@
+# Q3658: StateDB.SetCode - Create2 Preinstall Address Can Be Overwritten By User Tx
+
+## Question
+Can an unprivileged attacker create, delegate, clear, or selfdestruct code through public EVM execution through `EVM code mutation during CREATE or EIP-7702 delegation` while controlling `authority account` and `empty code`, under the precondition that selfdestruct and recreate happen in one transaction, drive `SELFDESTRUCT/recreate -> Finalise -> DeleteAccount -> code lookup` in `x/evm/statedb/statedb.go::StateDB.SetCode` so that Create2 preinstall address can be overwritten by user tx, violating the invariant that code hash and bytecode storage must stay consistent, and causing a realistic Cronos critical impact by enabling unauthorized EVM-denom movement, fee/refund misaccounting, or account code/nonce mutation that leads to direct user-fund loss?
+
+## Target
+- File/function: `x/evm/statedb/statedb.go::StateDB.SetCode`
+- Entrypoint: `EVM code mutation during CREATE or EIP-7702 delegation`
+- Attacker controls: `authority account`, `empty code`; public inputs only, no privileged roles, leaked keys, governance/admin actions, docs/tests/mocks/scripts, or disabled configs.
+- Exploit idea: Create2 preinstall address can be overwritten by user tx through `SELFDESTRUCT/recreate -> Finalise -> DeleteAccount -> code lookup`.
+- Invariant to test: code hash and bytecode storage must stay consistent.
+- Expected Immunefi impact: HackenProof Cronos Critical - direct unintentional withdrawal, draining, or loss of user funds on the in-scope Ethermint/Cronos blockchain target.
+- Fast validation: replay the same scenario through eth_call or estimateGas and through eth_sendRawTransaction and assert the only difference is persistence.

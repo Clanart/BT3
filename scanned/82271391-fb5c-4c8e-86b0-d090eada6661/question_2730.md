@@ -1,0 +1,13 @@
+# Q2730: HookedStateDB.SetCode - Code Hook Ordering Changes Selfdestruct Finalization
+
+## Question
+Can an unprivileged attacker request debug_trace* for crafted included transactions or calls through `debug/trace hooked EIP-7702 or CREATE code mutation` while controlling `state overrides` and `hooked StateDB`, under the precondition that the target block is near a fork or upgrade height, drive `debug_trace* -> predecessor replay -> ApplyMessageWithConfig in trace context -> result marshaling` in `x/evm/statedb/statedb_hooked.go::HookedStateDB.SetCode` so that code hook ordering changes selfdestruct finalization, violating the invariant that predecessor replay must reconstruct the exact block state, and causing a realistic Cronos critical impact by enabling unauthorized EVM-denom movement, fee/refund misaccounting, or account code/nonce mutation that leads to direct user-fund loss?
+
+## Target
+- File/function: `x/evm/statedb/statedb_hooked.go::HookedStateDB.SetCode`
+- Entrypoint: `debug/trace hooked EIP-7702 or CREATE code mutation`
+- Attacker controls: `state overrides`, `hooked StateDB`; public inputs only, no privileged roles, leaked keys, governance/admin actions, docs/tests/mocks/scripts, or disabled configs.
+- Exploit idea: code hook ordering changes selfdestruct finalization through `debug_trace* -> predecessor replay -> ApplyMessageWithConfig in trace context -> result marshaling`.
+- Invariant to test: predecessor replay must reconstruct the exact block state.
+- Expected Immunefi impact: HackenProof Cronos Critical - direct unintentional withdrawal, draining, or loss of user funds on the in-scope Ethermint/Cronos blockchain target.
+- Fast validation: run a local integration test that submits the crafted raw tx through JSON-RPC and compares committed state with direct keeper queries.
