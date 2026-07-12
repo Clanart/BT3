@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/personal/api.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a7d9977-9666-4149-a560-e91aec468ff6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/txpool/api.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b34bc9be-6eef-450b-9d09-1f5efcc255ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/web3/api.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_75cb2d57-544f-4a90-a680-068b85ec0eed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/cond.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aff3920a-33ca-4659-bcd8-af4b79c4a1c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/queue.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_473a46d7-2835-4d4b-b1ab-1ca5cf070b1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/rpc.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da25231b-0dcc-480f-ab1d-136655a4f309?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/stream.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c8be9291-9612-42db-b33c-9bad342b8b41?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/addrlock.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0357382f-3d5c-4e27-a527-f9345aeae178?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/block.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96727ba9-bf92-4039-afd6-e7e5edcd7142?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/events.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3f79ebfe-b05a-40f3-bbea-58cd006ab2f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/query_client.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cc65463d-578b-4f69-873b-89fd2e043abf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/simulate.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3d1d698-cce9-45e3-a0da-999bceba35b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/simulate_errors.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1078d5fc-c89c-497b-b114-cef535c12554?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/simulate_tracer.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5dc50bad-c6a2-48f6-9128-d33ace416d70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/types.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b3c976f2-7873-4bc2-91d1-c28319a6d731?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/utils.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db11578d-630b-4d4e-94e7-fe5bd24c8e2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/websockets.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_41d3fa6f-9bad-48e7-892a-f84aaee35816?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/config.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6fcdfdf3-9478-4353-a3bb-84207f151b11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/toml.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_58a18cfd-8104-466c-a033-f26219adde81?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/flags/flags.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b2f3e20-63ca-4b2c-87f7-335707695c96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/indexer_cmd.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b68ddc2-f6b5-476b-93e9-2772f7386038?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/indexer_service.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9b11a3a-9689-4762-8c76-a302ff097998?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/json_rpc.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2a4d0051-0823-4b41-bf30-67e261ace8df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/log_handler.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ca27270-45c3-4f84-834b-b4cb000e890d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/start.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2b7233b1-ce15-4691-ba22-b2d037dd1d83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/util.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c42a1ed3-8bb4-445f-8cbc-79890fbdfe31?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/account.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9fe4f960-efc9-4120-ad70-e04122b87124?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/block.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77f55b36-0ecb-4328-8b4f-b0e4bfeeb5d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/chain_id.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4752c12e-fd5d-4537-8dd9-b69fd333b385?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/codec.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0c83ee3f-e501-4ebe-9ae6-aca43b845e32?mode=deep",
+    "questions_generated": false
+  }
+]
