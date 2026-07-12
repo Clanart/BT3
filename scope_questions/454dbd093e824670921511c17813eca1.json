@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: evmd/app.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_45008963-484a-4047-9c7f-26c36bbd06fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/executor.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc7da898-cd74-4237-adeb-2e7d25670ba3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/export.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e1aa16a2-baca-4bb7-a657-fb7d5efaab9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/genesis.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_de715f52-70d5-4546-a12d-bc9347e3eb82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/mempool.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b1ab3ab-3c11-4382-9350-c6e7032822b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/signer.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa1ce596-56ab-4ff7-955e-16233dc41e97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evmd/upgrades.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c033c98-b1bf-475f-86c6-1db65acbfd6a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: indexer/kv_indexer.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_061e9cfe-6503-4c87-81ff-d53629c4295d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/origin/origin.go -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_69c73be6-92a1-427e-a698-25ac2d7de774?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/crypto/v1/ethsecp256k1/keys.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aba36cb3-bf05-4c02-976d-9a83f1322ecb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/access_tuple.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3b6b775-e02f-41a5-bf1e-bfb5fc995d98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/chain_config.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1d5c01ed-d5b3-4e43-b0c0-b29c7bbf9d43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/chain_config_v0.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_661b9d1a-ff3b-4da7-a70b-ea84c6f8a1c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/events.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aa27e8a1-6906-4cd8-b5eb-9e60d9c808e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/genesis.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26ae8781-c138-4723-97bf-431a276bde6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/log.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8d875c12-b3cc-44ec-be54-b129c47d121d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2d0a9d1a-3be3-401c-a9ff-41f5c35d68a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params_v0.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc224108-172d-4a49-b2db-264b24703a38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/params_v4.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b38098f-edc5-436f-aebd-70300e0f6b3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/preinstall.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0647b1ed-2ebb-4c20-8e6d-bfb1191b53ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/query.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f60028f-9350-4f92-a850-b9d74143691d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/set_code_authorization.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a29dfdaa-e460-4a33-9abe-299dc7804cd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/state.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b8eb07c-4508-42bf-906e-3357da624a0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/trace_config.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fcaf5344-0bd4-4197-866e-3ada53fbf5a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/trace_config_v0.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ffa587c1-85e0-43fd-94af-98c62b06ae5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/transaction_logs.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af1eff8f-9800-4497-81e5-093b7cb33229?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/tx.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_abc696a0-c654-484a-a481-73c8b27e4e20?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/evm/v1/tx_result.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0fcf5d80-b782-4498-a58b-73fab2a6daba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/feemarket/v1/events.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9bf4891-fa69-485e-a99c-65bf4f76b6c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/ethermint/feemarket/v1/feemarket.proto -> Scope: High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_53e16e88-62e5-4ac1-8ed0-ce041d9e5a03?mode=deep",
+    "questions_generated": false
+  }
+]
