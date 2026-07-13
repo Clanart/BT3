@@ -1,0 +1,1 @@
+Let me look at the EVM ante handler and the CheckEthGasConsume decorator to understand the full fee flow.
