@@ -256,6 +256,7 @@ def main():
 
         # Remove .git directory
         shutil.rmtree(".git", ignore_errors=True)
+        shutil.rmtree(".github", ignore_errors=True)
 
         # Create and push repositories
         for i in range(1, num_repos + 1):
@@ -271,7 +272,7 @@ def main():
                 f"\n🔄 Processing {i}/{num_repos}: {repo_name} "
                 f"(account {account_index + 1}/{len(accounts)}: {username})"
             )
-            time.sleep(7 * 60 )
+            time.sleep(12 * 60 )
 
             # Setup and push to GitHub
             if setup_github_repo(repo_name, source_repo, token, username):

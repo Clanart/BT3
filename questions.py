@@ -4,11 +4,11 @@ import os
 from decouple import config
 
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
-MAX_REPO = 20
+MAX_REPO = 25
 # todo: the path from https:///github.com/dfinity/ICRC-1
-SOURCE_REPO = "crypto-org-chain/ethermint"
+SOURCE_REPO = "Chia-Network/chia_rs"
 # todo: the name of the repository
-REPO_NAME = "ethermint"
+REPO_NAME = "chia_rs"
 run_number = os.environ.get('GITHUB_RUN_NUMBER') or os.environ.get('CI_PIPELINE_IID', '0')
 
 
@@ -46,285 +46,225 @@ else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
 scope_files = [
-    "ante/cache/antecache.go",
-    "ante/cosmos/authz.go",
-    "ante/cosmos/eip712.go",
-    "ante/cosmos/min_gas_price.go",
-    "ante/cosmos/reject_msgs.go",
-    "ante/eth.go",
-    "ante/evm/fee_checker.go",
-    "ante/evm/nativefee.go",
-    "ante/interfaces/evm.go",
-    "ante/interfaces/setup.go",
-    "ante/sigverify.go",
-    "appmempool/mempoolclient.go",
-    "appmempool/preverify.go",
-    "crypto/codec/amino.go",
-    "crypto/codec/codec.go",
-    "crypto/ethsecp256k1/ethsecp256k1.go",
-    "crypto/hd/algorithm.go",
-    "encoding/codec/codec.go",
-    "encoding/config.go",
-    "ethereum/eip712/domain.go",
-    "ethereum/eip712/eip712.go",
-    "ethereum/eip712/eip712_legacy.go",
-    "ethereum/eip712/encoding.go",
-    "ethereum/eip712/encoding_legacy.go",
-    "ethereum/eip712/message.go",
-    "ethereum/eip712/types.go",
-    "evmd/ante/ante.go",
-    "evmd/ante/evm_handler.go",
-    "evmd/ante/handler_options.go",
-    "evmd/ante/tx_listener.go",
-    "evmd/app.go",
-    "evmd/executor.go",
-    "evmd/export.go",
-    "evmd/genesis.go",
-    "evmd/mempool.go",
-    "evmd/signer.go",
-    "evmd/upgrades.go",
-    "indexer/kv_indexer.go",
-    "internal/origin/origin.go",
-    "proto/ethermint/crypto/v1/ethsecp256k1/keys.proto",
-    "proto/ethermint/evm/v1/access_tuple.proto",
-    "proto/ethermint/evm/v1/chain_config.proto",
-    "proto/ethermint/evm/v1/chain_config_v0.proto",
-    "proto/ethermint/evm/v1/events.proto",
-    "proto/ethermint/evm/v1/genesis.proto",
-    "proto/ethermint/evm/v1/log.proto",
-    "proto/ethermint/evm/v1/params.proto",
-    "proto/ethermint/evm/v1/params_v0.proto",
-    "proto/ethermint/evm/v1/params_v4.proto",
-    "proto/ethermint/evm/v1/preinstall.proto",
-    "proto/ethermint/evm/v1/query.proto",
-    "proto/ethermint/evm/v1/set_code_authorization.proto",
-    "proto/ethermint/evm/v1/state.proto",
-    "proto/ethermint/evm/v1/trace_config.proto",
-    "proto/ethermint/evm/v1/trace_config_v0.proto",
-    "proto/ethermint/evm/v1/transaction_logs.proto",
-    "proto/ethermint/evm/v1/tx.proto",
-    "proto/ethermint/evm/v1/tx_result.proto",
-    "proto/ethermint/feemarket/v1/events.proto",
-    "proto/ethermint/feemarket/v1/feemarket.proto",
-    "proto/ethermint/feemarket/v1/genesis.proto",
-    "proto/ethermint/feemarket/v1/query.proto",
-    "proto/ethermint/feemarket/v1/tx.proto",
-    "proto/ethermint/types/v1/account.proto",
-    "proto/ethermint/types/v1/dynamic_fee.proto",
-    "proto/ethermint/types/v1/indexer.proto",
-    "proto/ethermint/types/v1/web3.proto",
-    "rpc/apis.go",
-    "rpc/backend/account_info.go",
-    "rpc/backend/backend.go",
-    "rpc/backend/blocks.go",
-    "rpc/backend/call_tx.go",
-    "rpc/backend/chain_info.go",
-    "rpc/backend/filters.go",
-    "rpc/backend/node_info.go",
-    "rpc/backend/sign_tx.go",
-    "rpc/backend/simulate.go",
-    "rpc/backend/tracing.go",
-    "rpc/backend/tx_info.go",
-    "rpc/backend/utils.go",
-    "rpc/ethereum/pubsub/pubsub.go",
-    "rpc/namespaces/ethereum/debug/api.go",
-    "rpc/namespaces/ethereum/debug/trace.go",
-    "rpc/namespaces/ethereum/debug/trace_fallback.go",
-    "rpc/namespaces/ethereum/debug/utils.go",
-    "rpc/namespaces/ethereum/eth/api.go",
-    "rpc/namespaces/ethereum/eth/filters/api.go",
-    "rpc/namespaces/ethereum/eth/filters/filters.go",
-    "rpc/namespaces/ethereum/eth/filters/utils.go",
-    "rpc/namespaces/ethereum/net/api.go",
-    "rpc/namespaces/ethereum/personal/api.go",
-    "rpc/namespaces/ethereum/txpool/api.go",
-    "rpc/namespaces/ethereum/web3/api.go",
-    "rpc/stream/cond.go",
-    "rpc/stream/queue.go",
-    "rpc/stream/rpc.go",
-    "rpc/stream/stream.go",
-    "rpc/types/addrlock.go",
-    "rpc/types/block.go",
-    "rpc/types/events.go",
-    "rpc/types/query_client.go",
-    "rpc/types/simulate.go",
-    "rpc/types/simulate_errors.go",
-    "rpc/types/simulate_tracer.go",
-    "rpc/types/types.go",
-    "rpc/types/utils.go",
-    "rpc/websockets.go",
-    "server/config/config.go",
-    "server/config/toml.go",
-    "server/flags/flags.go",
-    "server/indexer_cmd.go",
-    "server/indexer_service.go",
-    "server/json_rpc.go",
-    "server/log_handler.go",
-    "server/start.go",
-    "server/util.go",
-    "types/account.go",
-    "types/block.go",
-    "types/chain_id.go",
-    "types/codec.go",
-    "types/coin.go",
-    "types/dynamic_fee.go",
-    "types/encoding.go",
-    "types/errors.go",
-    "types/gasmeter.go",
-    "types/hdpath.go",
-    "types/indexer.go",
-    "types/int.go",
-    "types/protocol.go",
-    "types/validation.go",
-    "x/evm/client/cli/query.go",
-    "x/evm/client/cli/tx.go",
-    "x/evm/client/cli/utils.go",
-    "x/evm/genesis.go",
-    "x/evm/keeper/abci.go",
-    "x/evm/keeper/bloom.go",
-    "x/evm/keeper/config.go",
-    "x/evm/keeper/gas.go",
-    "x/evm/keeper/grpc_query.go",
-    "x/evm/keeper/hooks.go",
-    "x/evm/keeper/keeper.go",
-    "x/evm/keeper/migrations.go",
-    "x/evm/keeper/msg_server.go",
-    "x/evm/keeper/params.go",
-    "x/evm/keeper/set_code_authorizations.go",
-    "x/evm/keeper/simulate.go",
-    "x/evm/keeper/state_transition.go",
-    "x/evm/keeper/statedb.go",
-    "x/evm/keeper/utils.go",
-    "x/evm/migrations/v0/types/chain_config.go",
-    "x/evm/migrations/v0/types/params.go",
-    "x/evm/migrations/v0/types/params_legacy.go",
-    "x/evm/migrations/v4/migrate.go",
-    "x/evm/migrations/v4/types/params.go",
-    "x/evm/migrations/v5/migrate.go",
-    "x/evm/migrations/v6/migrate.go",
-    "x/evm/migrations/v7/migrate.go",
-    "x/evm/migrations/v8/migrate.go",
-    "x/evm/module.go",
-    "x/evm/simulation/decoder.go",
-    "x/evm/simulation/genesis.go",
-    "x/evm/simulation/operations.go",
-    "x/evm/statedb/access_list.go",
-    "x/evm/statedb/config.go",
-    "x/evm/statedb/interfaces.go",
-    "x/evm/statedb/journal.go",
-    "x/evm/statedb/native.go",
-    "x/evm/statedb/state_object.go",
-    "x/evm/statedb/statedb.go",
-    "x/evm/statedb/statedb_hooked.go",
-    "x/evm/statedb/transient_storage.go",
-    "x/evm/types/access_list.go",
-    "x/evm/types/access_list_tx.go",
-    "x/evm/types/auth_list.go",
-    "x/evm/types/chain_config.go",
-    "x/evm/types/codec.go",
-    "x/evm/types/compiled_contract.go",
-    "x/evm/types/dynamic_fee_tx.go",
-    "x/evm/types/errors.go",
-    "x/evm/types/eth.go",
-    "x/evm/types/events.go",
-    "x/evm/types/evm_result.go",
-    "x/evm/types/genesis.go",
-    "x/evm/types/interfaces.go",
-    "x/evm/types/key.go",
-    "x/evm/types/legacy_tx.go",
-    "x/evm/types/logs.go",
-    "x/evm/types/msg.go",
-    "x/evm/types/params.go",
-    "x/evm/types/preinstall.go",
-    "x/evm/types/query.go",
-    "x/evm/types/response.go",
-    "x/evm/types/set_code_tx.go",
-    "x/evm/types/storage.go",
-    "x/evm/types/tracer.go",
-    "x/evm/types/tx.go",
-    "x/evm/types/tx_args.go",
-    "x/evm/types/tx_data.go",
-    "x/evm/types/utils.go",
-    "x/feemarket/client/cli/query.go",
-    "x/feemarket/genesis.go",
-    "x/feemarket/keeper/abci.go",
-    "x/feemarket/keeper/eip1559.go",
-    "x/feemarket/keeper/grpc_query.go",
-    "x/feemarket/keeper/keeper.go",
-    "x/feemarket/keeper/migrations.go",
-    "x/feemarket/keeper/msg_server.go",
-    "x/feemarket/keeper/params.go",
-    "x/feemarket/migrations/v4/migrate.go",
-    "x/feemarket/migrations/v4/types/params.go",
-    "x/feemarket/module.go",
-    "x/feemarket/simulation/genesis.go",
-    "x/feemarket/types/codec.go",
-    "x/feemarket/types/events.go",
-    "x/feemarket/types/genesis.go",
-    "x/feemarket/types/interfaces.go",
-    "x/feemarket/types/keys.go",
-    "x/feemarket/types/msg.go",
-    "x/feemarket/types/params.go",
+    "crates/chia-bls/src/bls_cache.rs",
+    "crates/chia-bls/src/derive_keys.rs",
+    "crates/chia-bls/src/error.rs",
+    "crates/chia-bls/src/gtelement.rs",
+    "crates/chia-bls/src/lib.rs",
+    "crates/chia-bls/src/parse_hex.rs",
+    "crates/chia-bls/src/public_key.rs",
+    "crates/chia-bls/src/secret_key.rs",
+    "crates/chia-bls/src/signature.rs",
+    "crates/chia-client/src/error.rs",
+    "crates/chia-client/src/lib.rs",
+    "crates/chia-client/src/peer.rs",
+    "crates/chia-client/src/utils.rs",
+    "crates/chia-consensus/src/additions_and_removals.rs",
+    "crates/chia-consensus/src/allocator.rs",
+    "crates/chia-consensus/src/build_compressed_block.rs",
+    "crates/chia-consensus/src/build_interned_block.rs",
+    "crates/chia-consensus/src/check_time_locks.rs",
+    "crates/chia-consensus/src/coin_id.rs",
+    "crates/chia-consensus/src/condition_sanitizers.rs",
+    "crates/chia-consensus/src/conditions.rs",
+    "crates/chia-consensus/src/consensus_constants.rs",
+    "crates/chia-consensus/src/error.rs",
+    "crates/chia-consensus/src/fast_forward.rs",
+    "crates/chia-consensus/src/flags.rs",
+    "crates/chia-consensus/src/generator_cost.rs",
+    "crates/chia-consensus/src/get_puzzle_and_solution.rs",
+    "crates/chia-consensus/src/lib.rs",
+    "crates/chia-consensus/src/make_aggsig_final_message.rs",
+    "crates/chia-consensus/src/merkle_set.rs",
+    "crates/chia-consensus/src/merkle_tree.rs",
+    "crates/chia-consensus/src/messages.rs",
+    "crates/chia-consensus/src/opcodes.rs",
+    "crates/chia-consensus/src/owned_conditions.rs",
+    "crates/chia-consensus/src/puzzle_fingerprint.rs",
+    "crates/chia-consensus/src/run_block_generator.rs",
+    "crates/chia-consensus/src/sanitize_int.rs",
+    "crates/chia-consensus/src/solution_generator.rs",
+    "crates/chia-consensus/src/spend_visitor.rs",
+    "crates/chia-consensus/src/spendbundle_conditions.rs",
+    "crates/chia-consensus/src/spendbundle_validation.rs",
+    "crates/chia-consensus/src/validation_error.rs",
+    "crates/chia-datalayer/macro/src/lib.rs",
+    "crates/chia-datalayer/src/lib.rs",
+    "crates/chia-datalayer/src/merkle/blob.rs",
+    "crates/chia-datalayer/src/merkle/deltas.rs",
+    "crates/chia-datalayer/src/merkle/dot.rs",
+    "crates/chia-datalayer/src/merkle/error.rs",
+    "crates/chia-datalayer/src/merkle/format.rs",
+    "crates/chia-datalayer/src/merkle/iterators.rs",
+    "crates/chia-datalayer/src/merkle/mod.rs",
+    "crates/chia-datalayer/src/merkle/proof_of_inclusion.rs",
+    "crates/chia-datalayer/src/merkle/util.rs",
+    "crates/chia-protocol/src/block_record.rs",
+    "crates/chia-protocol/src/bytes.rs",
+    "crates/chia-protocol/src/chia_protocol.rs",
+    "crates/chia-protocol/src/classgroup.rs",
+    "crates/chia-protocol/src/coin.rs",
+    "crates/chia-protocol/src/coin_record.rs",
+    "crates/chia-protocol/src/coin_spend.rs",
+    "crates/chia-protocol/src/coin_state.rs",
+    "crates/chia-protocol/src/end_of_sub_slot_bundle.rs",
+    "crates/chia-protocol/src/fee_estimate.rs",
+    "crates/chia-protocol/src/foliage.rs",
+    "crates/chia-protocol/src/full_node_protocol.rs",
+    "crates/chia-protocol/src/fullblock.rs",
+    "crates/chia-protocol/src/header_block.rs",
+    "crates/chia-protocol/src/lazy_node.rs",
+    "crates/chia-protocol/src/lib.rs",
+    "crates/chia-protocol/src/partial_proof.rs",
+    "crates/chia-protocol/src/peer_info.rs",
+    "crates/chia-protocol/src/pool_target.rs",
+    "crates/chia-protocol/src/pos_quality.rs",
+    "crates/chia-protocol/src/pot_iterations.rs",
+    "crates/chia-protocol/src/program.rs",
+    "crates/chia-protocol/src/proof_of_space.rs",
+    "crates/chia-protocol/src/reward_chain_block.rs",
+    "crates/chia-protocol/src/slots.rs",
+    "crates/chia-protocol/src/spend_bundle.rs",
+    "crates/chia-protocol/src/sub_epoch_summary.rs",
+    "crates/chia-protocol/src/unfinished_block.rs",
+    "crates/chia-protocol/src/unfinished_header_block.rs",
+    "crates/chia-protocol/src/utils.rs",
+    "crates/chia-protocol/src/vdf.rs",
+    "crates/chia-protocol/src/wallet_protocol.rs",
+    "crates/chia-protocol/src/weight_proof.rs",
+    "crates/chia-puzzle-types/src/derive_synthetic.rs",
+    "crates/chia-puzzle-types/src/lib.rs",
+    "crates/chia-puzzle-types/src/memos.rs",
+    "crates/chia-puzzle-types/src/proof.rs",
+    "crates/chia-puzzle-types/src/puzzles.rs",
+    "crates/chia-puzzle-types/src/puzzles/cat.rs",
+    "crates/chia-puzzle-types/src/puzzles/did.rs",
+    "crates/chia-puzzle-types/src/puzzles/nft.rs",
+    "crates/chia-puzzle-types/src/puzzles/offer.rs",
+    "crates/chia-puzzle-types/src/puzzles/singleton.rs",
+    "crates/chia-puzzle-types/src/puzzles/standard.rs",
+    "crates/chia-secp/src/lib.rs",
+    "crates/chia-secp/src/secp256k1.rs",
+    "crates/chia-secp/src/secp256k1/public_key.rs",
+    "crates/chia-secp/src/secp256k1/secret_key.rs",
+    "crates/chia-secp/src/secp256k1/signature.rs",
+    "crates/chia-secp/src/secp256r1.rs",
+    "crates/chia-secp/src/secp256r1/public_key.rs",
+    "crates/chia-secp/src/secp256r1/secret_key.rs",
+    "crates/chia-secp/src/secp256r1/signature.rs",
+    "crates/chia-serde/src/lib.rs",
+    "crates/chia-sha2/src/lib.rs",
+    "crates/chia-ssl/src/ca.rs",
+    "crates/chia-ssl/src/error.rs",
+    "crates/chia-ssl/src/lib.rs",
+    "crates/chia-tools/src/lib.rs",
+    "crates/chia-tools/src/visit_spends.rs",
+    "crates/chia-traits/src/chia_error.rs",
+    "crates/chia-traits/src/from_json_dict.rs",
+    "crates/chia-traits/src/int.rs",
+    "crates/chia-traits/src/lib.rs",
+    "crates/chia-traits/src/streamable.rs",
+    "crates/chia-traits/src/to_json_dict.rs",
+    "crates/chia_py_streamable_macro/src/lib.rs",
+    "crates/chia_streamable_macro/src/lib.rs",
+    "crates/clvm-derive/src/apply_constants.rs",
+    "crates/clvm-derive/src/from_clvm.rs",
+    "crates/clvm-derive/src/helpers.rs",
+    "crates/clvm-derive/src/lib.rs",
+    "crates/clvm-derive/src/parser.rs",
+    "crates/clvm-derive/src/parser/attributes.rs",
+    "crates/clvm-derive/src/parser/enum_info.rs",
+    "crates/clvm-derive/src/parser/field_info.rs",
+    "crates/clvm-derive/src/parser/struct_info.rs",
+    "crates/clvm-derive/src/parser/variant_info.rs",
+    "crates/clvm-derive/src/to_clvm.rs",
+    "crates/clvm-traits/src/clvm_decoder.rs",
+    "crates/clvm-traits/src/clvm_encoder.rs",
+    "crates/clvm-traits/src/error.rs",
+    "crates/clvm-traits/src/from_clvm.rs",
+    "crates/clvm-traits/src/int_encoding.rs",
+    "crates/clvm-traits/src/lib.rs",
+    "crates/clvm-traits/src/macros.rs",
+    "crates/clvm-traits/src/match_byte.rs",
+    "crates/clvm-traits/src/to_clvm.rs",
+    "crates/clvm-traits/src/wrappers.rs",
+    "crates/clvm-utils/src/curried_program.rs",
+    "crates/clvm-utils/src/curry_tree_hash.rs",
+    "crates/clvm-utils/src/hash_encoder.rs",
+    "crates/clvm-utils/src/lib.rs",
+    "crates/clvm-utils/src/tree_hash.rs",
+    "src/lib.rs",
+    "wasm/src/lib.rs",
+    "wheel/python/chia_rs/__init__.py",
+    "wheel/python/chia_rs/chia_rs.pyi",
+    "wheel/python/chia_rs/datalayer.pyi",
+    "wheel/python/chia_rs/sized_byte_class.py",
+    "wheel/python/chia_rs/sized_bytes.py",
+    "wheel/python/chia_rs/sized_ints.py",
+    "wheel/python/chia_rs/spend.py",
+    "wheel/python/chia_rs/struct_stream.py",
+    "wheel/src/api.rs",
+    "wheel/src/error.rs",
+    "wheel/src/lib.rs",
+    "wheel/src/run_generator.rs",
+    "wheel/src/run_program.rs",
 ]
-
 target_scopes = [
-    "Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic",
-    "Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure",
-    "High. Ethereum transaction, EIP-155/EIP-712/EIP-7702 authorization, nonce, chain-id, or signer verification bypass enabling replay, forged execution, or unauthorized account/code mutation",
-    "High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted",
-    "High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above",
+    "Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees",
+    "Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption",
+    "High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay",
+    "High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data",
+    "High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state",
 ]
 
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit + fuzzing questions for one Ethermint production target.
+    Generate exploit-focused audit + fuzzing questions for one chia_rs production target.
 
     ```
     target_file format:
-    "'File Name: x/evm/keeper/state_transition.go -> Scope: Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic'"
+    "'File Name: crates/chia-consensus/src/spendbundle_validation.rs -> Scope: Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees'"
     ```
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit and fuzzing questions for this exact Ethermint target:
+    Generate exploit-focused security audit and fuzzing questions for this exact chia_rs target:
 
     {target_file}
 
     Project context:
-    Ethermint is a Cosmos SDK application/library that executes Ethereum transactions on CometBFT consensus. Security-sensitive areas include EVM tx decoding/signing, ante checks, mempool/preverify/proposal handling, EIP-1559 fee market, EVM stateDB, bank balance bridging, native action hooks, EIP-712 Cosmos signing, EIP-7702 set-code authorization, JSON-RPC transaction submission/simulation/tracing, block/receipt/log/indexer data, genesis and migrations.
+    chia_rs is the Rust implementation of Chia consensus/protocol primitives with Python and wasm bindings. Sensitive surfaces include CLVM program execution, condition parsing/sanitization, spend bundle validation, coin ids, additions/removals, block generators, fast-forward/compression, BLS and secp signatures, streamable serialization, protocol structs, puzzle helpers, DataLayer Merkle logic, and binding conversions.
 
     Core invariants:
-    * Only valid Ethereum/Cosmos transactions with correct signer, nonce, chain-id, fees, gas, and authorization may commit state.
-    * EVM stateDB, bank keeper balances, gas refunds, fee market updates, logs, receipts, and account/code/storage changes must stay deterministic and internally consistent.
-    * Public RPC, gRPC, simulation, tracing, and mempool paths must not create a route to invalid committed execution, replay, forged authorization, consensus divergence, or fund loss.
-    * Migrations/genesis must preserve balances, params, chain config, nonces, code, storage, fee market state, and EVM compatibility assumptions.
+    * Consensus validation must deterministically accept only valid spends, blocks, proofs, conditions, signatures, timelocks, fees, and rewards.
+    * Coin ids, tree hashes, Merkle roots, CLVM costs, serialized bytes, and signed messages must be canonical and identical across Rust, Python, wasm, and node callers.
+    * Untrusted programs, spends, proofs, network objects, or binding inputs must not cause unauthorized spend acceptance, double-spend, inflation, state corruption, or validator disagreement.
 
     Rules:
     * Treat `File Name:` as the exact file/module and `Scope:` as the ONLY accepted impact.
     * Assume full repo context is accessible. Do not ask for code or say files are missing.
-    * Attacker is unprivileged: external account, contract caller, tx/RPC submitter, mempool participant, block proposer using valid public interfaces, or user controlling tx/call/simulation inputs.
-    * Do not rely on malicious validators, governance, privileged keepers, leaked keys, compromised nodes, chain reorgs, dependency compromise, social engineering, local config mistakes, or network-level DoS only.
-    * Ignore tests, mocks, docs, generated pb.go, scripts, local tooling, and issues with only informational/low/medium impact.
-    * Generate 20 to 30 high-signal questions.
-    * At least 70% must be multi-step flow, invariant, fuzz, accounting, replay, consensus, or cross-module questions.
+    * Attacker is unprivileged: wallet/user submitting spends, CLVM, blocks/proofs, serialized protocol data, DataLayer blobs/proofs, or Python/wasm API inputs.
+    * Do not rely on malicious validators, governance, leaked keys, compromised nodes, dependency compromise, social engineering, local config mistakes, or network-level DoS only.
+    * Ignore tests, mocks, docs, fuzz targets, benches, generated fixtures, scripts, CLI-only tooling, and low/medium/informational issues.
+    * Generate 20 to 30 high-signal questions; at least 70% must be multi-step flow, invariant, fuzz, differential, accounting, replay, or cross-module questions.
     * Every question must be testable by PoC, unit test, fuzz test, invariant test, differential test, or local integration test.
     * Avoid generic checklist questions and repeated root causes.
 
     High-value attack surfaces:
-    * Tx path: RPC SendRawTransaction/SendTransaction -> tx decoding -> ante/sigverify/fees -> ApplyTransaction/ApplyMessage -> stateDB commit.
-    * Authorization/replay: EIP-155, EIP-712, EIP-7702, nonce handling, chain-id/domain separation, authz, and signer/account conversion.
-    * Accounting: bank/EVM balance sync, gas/refunds, base fee, priority fee, native fee, selfdestruct, preinstall/native actions, and fee market BeginBlock/EndBlock.
-    * Determinism: mempool/proposal handlers, block context/header fields, state snapshots/reverts, migrations, genesis, logs/receipts/bloom, indexer, simulation, tracing.
+    * Spend path: serialized SpendBundle/CoinSpend -> CLVM run -> conditions -> sanitizers -> aggsig/timelock/cost checks -> additions/removals.
+    * Encoding/hash path: streamable bytes, sized ints/bytes, CLVM atom encoding, coin ids, tree hashes, Merkle set/tree roots, Python/wasm conversions.
+    * Crypto/puzzle path: BLS aggregate verification/cache, secp verification, synthetic keys, CAT/NFT/DID/offer/singleton puzzle helpers.
+    * Block/DataLayer path: block records, proof-of-space/VDF/weight proof structs, generator compression/fast-forward, DataLayer blob/delta/proof iteration.
 
     Allowed impacts only:
-    * Critical unauthorized fund theft/mint/burn bypass/balance transfer.
-    * Critical chain halt, committed state corruption, or deterministic consensus failure from a valid unprivileged path.
-    * High signature/replay/authorization bypass.
-    * High invalid tx commit or user fund/fee mis-accounting.
-    * High public RPC/query/simulation route to one of those impacts.
+    * Critical coin theft, mint/burn bypass, double-spend, or reward/fee mis-accounting.
+    * Critical deterministic consensus failure, chain halt, or committed state corruption from valid unprivileged input.
+    * High unauthorized spend/replay via signature, puzzle, condition, timelock, or coin-id validation bypass.
+    * High non-canonical parse/serialization/hash mismatch across consensus-critical boundaries.
+    * High forged DataLayer proof/root/blob state acceptance.
 
     Each question must include:
     1. target function/module;
@@ -346,53 +286,44 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(question: str) -> str:
     """
-    Generate a focused Ethermint exploit-question validation prompt.
+    Generate a focused chia_rs exploit-question validation prompt.
     """
     return f"""# QUESTION SCAN PROMPT
 
 ## Exploit Question
 {question}
 
-Main Focus should be on production Ethermint files from `scope_files`, especially:
-- x/evm/keeper, x/evm/statedb, x/evm/types, x/evm/migrations
-- x/feemarket/keeper and x/feemarket/types
-- ante, evmd/ante, appmempool
-- rpc, server JSON-RPC, indexer
-- ethereum/eip712, crypto, encoding, types, proto sources
-Issues outside those production files are out of scope unless required as direct supporting context.
+Main focus is production chia_rs files from `scope_files`, especially consensus, protocol structs, CLVM traits/utils, puzzle types, BLS/secp crypto, streamable/serde traits, DataLayer Merkle logic, and Python/wasm bindings. Issues outside those files are out of scope unless required as direct supporting context.
 
 ## Scope Rules
-- Audit only production Ethermint code.
+- Audit only production chia_rs code.
 - Do not ask for repo contents or claim files are missing.
-- Ignore tests, docs, mocks, generated pb.go, scripts, configs, local fixtures, vendored libraries, and developer tooling as audited targets.
+- Ignore tests, docs, mocks, fuzz targets, benches, generated fixtures, scripts, CLI-only tooling, configs, and package metadata as audited targets.
 
 ## Objective
-Decide whether the question leads to a real, reachable Ethermint vulnerability.
-The attacker must be unprivileged and enter through public tx submission, contract execution, RPC/gRPC query or simulation inputs, mempool/proposal paths, or valid chain data.
-The impact must match one allowed Critical/High Ethermint impact below.
-Prefer #NoVulnerability unless the path is concrete, local-testable, and bounty-grade.
+Decide whether the question leads to a real, reachable chia_rs vulnerability. The attacker must be unprivileged and enter through spend/block/proof/CLVM/serialized protocol/DataLayer/binding input. The impact must match one allowed Critical/High chia_rs impact below. Prefer #NoVulnerability unless the path is concrete, local-testable, and bounty-grade.
 
 ## Allowed Impact Scope
 Only these impacts are valid:
-- Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic.
-- Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure.
-- High. Ethereum transaction, EIP-155/EIP-712/EIP-7702 authorization, nonce, chain-id, or signer verification bypass enabling replay, forged execution, or unauthorized account/code mutation.
-- High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted.
-- High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above.
+- Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees.
+- Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption.
+- High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay.
+- High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data.
+- High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state.
 
 ## Method
 1. Trace the attacker-controlled entrypoint.
-2. Map it to exact production Ethermint files/functions.
-3. Check the relevant guard: signature, nonce, chain-id, fee/gas, ante, stateDB snapshot/revert/commit, bank balance, fee market, RPC input, simulation, migration, or consensus determinism.
-4. Decide whether the questioned invariant can actually break under intended deployment.
+2. Map it to exact production chia_rs files/functions.
+3. Check relevant guards: CLVM cost, condition sanitization, aggsig, timelock, coin id, tree hash, streamable canonicality, Merkle root/proof, or binding conversion.
+4. Decide whether the invariant can break under intended deployment.
 5. Prove root cause with file/function/line references.
 6. Confirm realistic likelihood and exact scoped impact.
 7. Reject if current validation already prevents the exploit.
 
 ## Reject Immediately
-- Requires malicious validators, governance, privileged roles, leaked keys, compromised RPC nodes, host compromise, dependency compromise, chain reorgs, phishing, victim mistakes, or network-level DoS only.
-- Only affects tests, docs, configs, scripts, mocks, generated code, local fixtures, vendored libraries, or local deployment choices.
-- Impact is only logging, observability, local misconfiguration, non-security correctness, harmless revert, stale read without consensus/security impact, gas optimization, fee estimate inaccuracy, or theoretical risk.
+- Requires malicious validators, governance, privileged roles, leaked keys, compromised nodes, dependency compromise, chain reorgs, phishing, victim mistakes, or network-level DoS only.
+- Only affects tests, docs, configs, scripts, mocks, fuzz targets, benches, generated fixtures, package metadata, or CLI-only tooling.
+- Impact is only logging, local misconfiguration, non-security correctness, harmless reject/revert, performance, API ergonomics, or theoretical risk.
 - No concrete Critical/High scoped impact or no realistic exploit path.
 
 ## Output
@@ -415,55 +346,44 @@ If invalid, output exactly:
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for Ethermint.
+    Generate a short cross-project analog scan prompt for chia_rs.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
 ## External Report
 {report}
 
-Main Focus should be on production Ethermint files from `scope_files`, especially:
-- x/evm/keeper, x/evm/statedb, x/evm/types, x/evm/migrations
-- x/feemarket/keeper and x/feemarket/types
-- ante, evmd/ante, appmempool
-- rpc, server JSON-RPC, indexer
-- ethereum/eip712, crypto, encoding, types, proto sources
-Issues outside those production files are out of scope unless required as direct supporting context.
+Main focus is production chia_rs files from `scope_files`, especially consensus validation, protocol serialization, CLVM parsing/execution helpers, crypto verification, puzzle helpers, DataLayer Merkle code, and Python/wasm bindings. Issues outside those files are out of scope unless required as direct supporting context.
 
 ## Access Rules (Strict)
-- Treat production Ethermint files in the provided scope as accessible context.
-- Do not claim missing/inaccessible files.
-- Do not ask for repository contents.
-- Do not scan tests, docs, generated pb.go, build files, IDE files, configs, resources, local fixtures, vendored libraries, package metadata, or e2e assets as audited targets.
+- Treat production chia_rs files in the provided scope as accessible context.
+- Do not claim missing/inaccessible files or ask for repository contents.
+- Do not scan tests, docs, generated fixtures, fuzz targets, benches, scripts, CLI-only tooling, configs, package metadata, or local assets as audited targets.
 
 ## Objective
-Use the external report's vulnerability class as a hint to find valid Critical/High issues in Ethermint.
-Only report an analog if this codebase has its own reachable root cause, triggered by an unprivileged tx/RPC/contract/mempool input, and the impact matches one allowed Ethermint impact below.
+Use the external report's vulnerability class only as a hint. Report an analog only if chia_rs has its own reachable root cause triggered by unprivileged spend/block/proof/CLVM/serialized protocol/DataLayer/binding input and the impact matches one allowed chia_rs impact below.
 
 ## Allowed Impact Scope
 Only these impacts are valid:
-- Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic.
-- Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure.
-- High. Ethereum transaction, EIP-155/EIP-712/EIP-7702 authorization, nonce, chain-id, or signer verification bypass enabling replay, forged execution, or unauthorized account/code mutation.
-- High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted.
-- High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above.
+- Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees.
+- Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption.
+- High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay.
+- High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data.
+- High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state.
 
 ## Method
-1. Classify vuln type: auth/replay bypass, fee/gas/accounting bug, stateDB commit/revert bug, consensus nondeterminism, invalid tx admission, RPC-to-consensus confusion, migration/genesis corruption, or parser/encoding issue.
-2. Map to Ethermint components and exact production files.
-3. Prove root cause with exact file/function/module/line references.
-4. Confirm concrete scoped impact and realistic likelihood.
-5. Explain the attacker-controlled entry path and why Ethermint code is the necessary vulnerable step.
-6. Reject if the impact does not match one allowed Critical/High impact above.
+1. Classify vuln type: validation bypass, parser/canonicalization bug, hash/root mismatch, crypto misuse, CLVM cost/condition flaw, Merkle proof flaw, binding disagreement, or consensus nondeterminism.
+2. Map to exact chia_rs components and production files.
+3. Prove root cause with file/function/module/line references.
+4. Confirm concrete scoped impact, likelihood, and attacker-controlled entry path.
+5. Reject if the impact does not match one allowed Critical/High impact above.
 
 ## Disqualify Immediately
 - No reachable attacker-controlled entry path.
-- Requires malicious validators, governance, privileged roles, leaked keys, compromised nodes, dependency compromise, Sybil/51% attack, phishing, chain reorgs, or network-level DoS only.
+- Requires malicious validators, governance, privileged roles, leaked keys, compromised nodes, dependency compromise, phishing, chain reorgs, or network-level DoS only.
 - External dependency behavior is the only cause.
-- Test/docs/config/build/generated-only issue.
-- Theoretical-only issue with no protocol impact.
-- Impact is only local misconfiguration, observability/logging noise, harmless revert, stale read, fee estimate drift, or non-security correctness.
-- Impact or likelihood missing.
+- Test/docs/config/build/generated/fuzz/bench/tooling-only issue.
+- Impact is only local misconfiguration, observability, harmless reject/revert, performance, or theoretical-only.
 
 ## Output (Strict)
 If valid analog exists, output:
@@ -488,73 +408,49 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict Ethermint bounty-style validation prompt for security claims.
+    Generate a strict chia_rs bounty-style validation prompt for security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
 ## Security Claim
 {report}
 
-Main Focus should be on production Ethermint files from `scope_files`, especially:
-- x/evm/keeper, x/evm/statedb, x/evm/types, x/evm/migrations
-- x/feemarket/keeper and x/feemarket/types
-- ante, evmd/ante, appmempool
-- rpc, server JSON-RPC, indexer
-- ethereum/eip712, crypto, encoding, types, proto sources
-Issues outside those production files are out of scope unless required as direct supporting context.
+Main focus is production chia_rs files from `scope_files`: consensus, protocol, CLVM traits/utils, puzzle types, BLS/secp crypto, streamable/serde traits, DataLayer Merkle code, and Rust/Python/wasm binding boundaries. Supporting context is allowed, but audited targets must be production files in scope.
 
 ## Rules
 - Validate only the submitted claim.
-- Check SECURITY.md, Researcher.md if present, and the Evmos/Ethermint bounty context for scope, exclusions, and valid impact classes.
+- Check SECURITY.md and repository scope context when relevant.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- Reject malicious-validator-only, governance-only, privileged-role-only, leaked-key, host-compromise, dependency-compromise, best-practice, docs/style, config/test-only, generated-code-only, gas-optimization-only, front-run-only, network-level-DoS-only, and purely theoretical issues.
-- Reject if the exploit requires unrealistic assumptions, victim mistakes, phishing/social engineering, third-party dapp/oracle compromise, public-mainnet DoS testing, chain reorgs, or unsupported protocol behavior.
-- A valid report must be triggerable by an unprivileged user through public tx/RPC/gRPC/contract/mempool/simulation inputs, unless the claim proves privilege escalation from an unprivileged path.
-- The final impact must match an allowed Critical/High Ethermint impact, not just a generic code bug.
+- Reject malicious-validator-only, governance-only, privileged-role-only, leaked-key, host-compromise, dependency-compromise, best-practice, docs/style, config/test-only, generated/fuzz/bench-only, tooling-only, performance-only, network-level-DoS-only, and purely theoretical issues.
+- A valid report must be triggerable by an unprivileged user through spend/block/proof/CLVM/serialized protocol/DataLayer/Python/wasm inputs, unless it proves privilege escalation from an unprivileged path.
+- The final impact must match an allowed Critical/High chia_rs impact, not just a generic code bug.
 - Prefer #NoVulnerability over speculative reports.
 
 ## In-Scope Protocol Areas
-The claim must affect production in-scope Ethermint code or systems, such as:
-- EVM execution: ApplyTransaction, ApplyMessage, stateDB account/code/storage/balance changes, snapshots/reverts, native actions, selfdestruct, logs, receipts, bloom, hooks.
-- Authorization: Ethereum tx decoding, EIP-155 chain-id, nonce checks, ethsecp256k1 signatures, EIP-712 Cosmos signing, authz, and EIP-7702 set-code authorization.
-- Fees and admission: ante handlers, min gas price, native fee checks, app mempool/preverify, proposal handling, gas refunds, EIP-1559 base fee and feemarket state.
-- Public API paths: JSON-RPC, gRPC queries, SendRawTransaction, eth_call, estimateGas, simulate/tracing, block/receipt/log/indexer reconstruction when they feed or prove consensus-impacting behavior.
-- State lifecycle: genesis, migrations, params, chain config, account encoding, proto schemas, and deterministic block BeginBlock/EndBlock behavior.
-
-Reject third-party dapps, unlisted public websites, tests, docs, examples, mocks, generated pb.go files, local deployment helpers, vendored libraries, e2e tooling, and issues that only affect local developer tooling unless the claim proves a direct in-scope Critical/High Ethermint security impact.
+- Consensus execution: block generators, CLVM costs, conditions, sanitizers, spend bundle validation, timelocks, additions/removals, coin ids, rewards, fees, and fast-forward/compression.
+- Serialization and hashing: streamable bytes, sized ints/bytes, CLVM atom encoding, tree hashes, Merkle sets/trees, protocol structs, and cross-language canonicality.
+- Crypto and puzzles: BLS aggregate verification/cache, secp signatures, synthetic keys, CAT/NFT/DID/offer/singleton/standard puzzle helpers, and signed message construction.
+- DataLayer and bindings: Merkle blobs/deltas/proofs/iterators plus Rust/Python/wasm APIs when parsing or returning consensus-critical values.
 
 ## Allowed Impact Scope
 Only these impacts are valid:
-- Critical. Unauthorized theft, mint, burn bypass, or balance transfer of EVM-denom or Cosmos bank funds through Ethermint transaction execution or stateDB/native action logic.
-- Critical. Valid unprivileged transaction, RPC submission, or block-processing path can halt the chain, corrupt committed state, or cause deterministic validator consensus failure.
-- High. Ethereum transaction, EIP-155/EIP-712/EIP-7702 authorization, nonce, chain-id, or signer verification bypass enabling replay, forged execution, or unauthorized account/code mutation.
-- High. EVM state transition, gas refund, fee market, ante handler, mempool, or proposal handling bug that permits invalid transactions to commit or valid user funds/fees to be mis-accounted.
-- High. Public JSON-RPC, gRPC, simulation, tracing, receipt/log, or indexer path feeds incorrect consensus-critical data into transaction execution or exposes a reachable route to the impacts above.
+- Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees.
+- Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption.
+- High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay.
+- High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data.
+- High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state.
 
-Informational, Low, Medium, non-security correctness, observability/logging-only, harmless reject/revert, stale read without consensus/state/accounting/security impact, local misconfiguration, and non-demonstrably-exploitable reports are invalid for this validation output.
-
-If the submitted claim does not concretely prove one allowed Critical/High Ethermint impact above, it is invalid.
+Informational, Low, Medium, non-security correctness, logging-only, harmless reject/revert, local misconfiguration, API ergonomics, and non-demonstrably-exploitable reports are invalid.
 
 ## Required Validation Checks
 All must pass:
 1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken protocol/security/accounting/authentication/consensus assumption.
+2. Clear root cause and broken consensus/security/accounting/authentication/canonicality assumption.
 3. Reachable exploit path: preconditions -> attacker action -> trigger -> bad result.
 4. Existing checks/guards reviewed and shown insufficient.
 5. Concrete impact that exactly matches one allowed Critical/High impact above, with realistic likelihood.
-6. Reproducible safe proof path: runnable PoC, deterministic integration test, invariant/fuzz test, differential test, or exact local manual steps.
-7. No obvious rejection reason from SECURITY.md, Researcher.md if present, known issues, privileges, or scope exclusions.
-
-## Silent Triage Questions
-Before output, internally answer:
-- Can a normal external user trigger this through a public Ethermint protocol path?
-- Does the code actually behave as claimed?
-- Is the impact caused by Ethermint production code, not by an external dependency alone?
-- Is the fund loss, replay, invalid commit, state corruption, or consensus impact concrete?
-- Does the claim avoid malicious validators, governance, privileged roles, leaked keys, node compromise, mainnet DoS, and third-party compromise assumptions?
-- Would a bounty triager accept the proof?
-- What exact test would prove it?
+6. Reproducible safe proof path: runnable PoC, deterministic unit/integration test, invariant/fuzz test, differential test, or exact local manual steps.
 
 ## Output
 If valid, output exactly:
@@ -571,7 +467,7 @@ Audit Report
 [Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete allowed Ethermint impact and severity rationale]
+[Concrete allowed chia_rs impact and severity rationale]
 
 ## Likelihood Explanation
 [Attacker capability, required conditions, feasibility, repeatability]
@@ -580,7 +476,7 @@ Audit Report
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or fuzz/invariant/fork test plan]
+[Minimal reproducible steps or fuzz/invariant/differential test plan]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
