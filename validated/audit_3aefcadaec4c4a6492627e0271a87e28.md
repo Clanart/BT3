@@ -1,0 +1,1 @@
+Let me read the encoding files to understand what `GetEIP712BytesForMsg` does with the sign bytes.
