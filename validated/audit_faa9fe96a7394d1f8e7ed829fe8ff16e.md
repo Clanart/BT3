@@ -1,0 +1,1 @@
+Let me look at one more critical area — the `GetBlockGasWanted` function used in base fee calculation, and the ante handler fee deduction path.
