@@ -1,0 +1,1 @@
+Looking at the external report's vulnerability class — **lack of segregation between user assets and collected fees** (Method 1) and **privileged manipulation of gas price feeds** (Method 2) — I need to find an unprivileged analog in Ethermint's fee/gas accounting path.

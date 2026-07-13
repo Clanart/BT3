@@ -1,0 +1,1 @@
+Let me look at the `DeductTxCostsFromUserBalance` function and the virtual balance mechanism more carefully.
