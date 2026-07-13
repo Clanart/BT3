@@ -1,0 +1,1 @@
+Let me analyze the vulnerability class from the report (unauthorized state mutation via a privileged/special code path that bypasses authorization checks) and search for analogous patterns in Ethermint.
