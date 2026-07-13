@@ -1,1 +1,0 @@
-Looking at the concrete code path to verify the claim:

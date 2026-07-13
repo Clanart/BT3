@@ -1,1 +1,0 @@
-I'll search the Ethermint codebase for patterns analogous to the state-tracking/ownership mismatch vulnerability described in the report.

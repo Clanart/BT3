@@ -1,1 +1,0 @@
-I'll search for the analog vulnerability pattern in Ethermint — specifically, mandatory external calls (fee/reward/refund transfers) that can revert and block the primary operation.

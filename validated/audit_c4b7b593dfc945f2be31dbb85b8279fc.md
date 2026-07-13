@@ -1,1 +1,0 @@
-Let me look at the ante handler gas consume logic and the multi-message loop pattern more carefully.

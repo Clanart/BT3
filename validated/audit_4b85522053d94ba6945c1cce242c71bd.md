@@ -1,1 +1,0 @@
-Looking at the vulnerability class — **stale data read without first refreshing the source** — I need to find where Ethermint reads a dynamic fee/price value that was captured at construction time rather than at the point of use.

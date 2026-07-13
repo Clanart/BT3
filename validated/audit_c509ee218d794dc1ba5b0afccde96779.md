@@ -1,1 +1,0 @@
-I'll analyze the Ethermint codebase for analogs to the "silent no-op / missing revert on failed operation" vulnerability class. Let me search relevant production files.

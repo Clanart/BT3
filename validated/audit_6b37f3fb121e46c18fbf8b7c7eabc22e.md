@@ -1,1 +1,0 @@
-Let me look at the ante handlers and the EIP-7702 authorization flow more carefully.
