@@ -1,0 +1,1 @@
+Looking at the analog vulnerability class (price/value mismatch between submission and fulfillment), I need to find fee/gas accounting bugs in Ethermint where the price used at one stage differs from the price used at another stage.
