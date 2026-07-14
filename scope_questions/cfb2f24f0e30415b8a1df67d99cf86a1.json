@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/chia-protocol/src/coin_state.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_16096327-2be2-4649-abd9-b6753e95f4f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/end_of_sub_slot_bundle.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_54f582c9-4b81-440b-95c9-c7e67b83fb11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/fee_estimate.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_84c7da64-0a8c-42ac-936d-ece8d1b85d11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/foliage.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a7202590-43e8-4eb0-8cc1-29914053b5a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/full_node_protocol.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff2142b1-d845-4618-98fe-4f1ea9625075?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/fullblock.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff8d963a-a410-4d1d-aa6b-61bf49c7ec8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/header_block.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ab065f89-d24d-45a2-b785-c471937fe579?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/lazy_node.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f67db30-0876-4c2c-bead-29a0a9168b55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bcf26dd1-7f1b-4227-8174-3f3223725f81?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/partial_proof.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a8f4c784-77ed-4934-b5c5-6391e8c505dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/peer_info.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_66ae6417-f1c9-47ca-93fe-0008db6cd854?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/pool_target.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92fa6cb5-7505-4190-8a48-5850089afd8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/pos_quality.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e8a58b8-15df-4ba0-bca6-ed12bb69a451?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/pot_iterations.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15927fd0-1a46-43ea-864b-4380bfce2010?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/program.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a636617-590c-4e44-a5e8-c217b72f07e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/proof_of_space.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7cf5485d-e3a0-4ffe-a6ae-58597dae331d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/reward_chain_block.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce51a3c1-680b-4691-a554-3ee0e618769f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/slots.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d114a984-984d-46d3-adde-72e76c8dbce9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/spend_bundle.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ecd988d-dea1-4f3e-b14f-4f0376955e9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/sub_epoch_summary.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4eba913f-590f-46a6-a295-aac7d3c1326a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/unfinished_block.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_74fdc6c9-1c9c-450f-a98b-14ec77264c7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/unfinished_header_block.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38b46887-6053-448e-9095-04ec0a2cc190?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/utils.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9db42712-4b28-401e-9687-1e82b68d42fe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/vdf.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bb0de923-d1a4-4668-a13c-7649374194f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/wallet_protocol.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56382162-de24-48bd-a46f-774d4350cbb0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/weight_proof.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6575117c-df83-4459-9dc1-dde714bfe3d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/derive_synthetic.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_53a42651-2696-40d8-ac71-472286c44fa6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5054dce-7319-47bc-b98a-95ca604c95be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/memos.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d2004135-a32d-46ca-a905-edbe314a5a8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/proof.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9a51770-b529-409f-befb-84bd2bde7173?mode=deep",
+    "questions_generated": false
+  }
+]
