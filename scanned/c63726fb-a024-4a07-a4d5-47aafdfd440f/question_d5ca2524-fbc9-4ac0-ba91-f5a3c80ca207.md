@@ -1,1 +1,0 @@
-[File: 'crates/chia-datalayer/src/merkle/blob.rs'] [Function: MerkleBlob::insert_third_or_later] Can an unprivileged attacker trigger a panic in insert_third_or_later via the line 'let old_parent_index = old_leaf.parent.0.expect(\
