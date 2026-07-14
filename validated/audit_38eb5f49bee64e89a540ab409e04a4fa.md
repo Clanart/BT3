@@ -1,0 +1,1 @@
+Let me look at the `make_aggsig_final_message` function and the `AGG_SIG_AMOUNT` condition handling, as these encode amounts into BLS signature messages.
