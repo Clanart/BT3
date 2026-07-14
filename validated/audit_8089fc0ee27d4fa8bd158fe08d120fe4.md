@@ -1,0 +1,1 @@
+Looking at the external report's vulnerability class — **"state initialized only once"** (a guard like `if (state == 0)` that sets state only on first call, allowing subsequent calls to bypass the intended constraint) —
