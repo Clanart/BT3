@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/chia-bls/src/bls_cache.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_074ad97e-6a82-4388-ab4d-9583d781aee5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/derive_keys.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1ea125f1-7b61-4f91-8ec6-81d3fd8de47e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/error.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bed353af-0a91-4f64-968d-f11008ce6041?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/gtelement.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_83f88e26-5bcb-47f8-8d0a-ad1bdefc3c28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/lib.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04ab691a-5a0b-44fa-9809-562090352c52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/parse_hex.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_301d3ded-dacb-4590-b57d-629144dccdb0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/public_key.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b1570a5-bc4f-4f60-bbbb-818b02faeb8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/secret_key.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3eb34374-407d-474b-8b57-90240fb5b54c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-bls/src/signature.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4cfb47f-2d00-45eb-8d4d-3e54a9ad34ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-client/src/error.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d08efa04-bcef-4c16-ad52-032cad2f3d36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-client/src/lib.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92fae081-0545-4b79-9213-f580c20045bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-client/src/peer.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63f4abaa-1c64-4402-b065-b772169ad2b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-client/src/utils.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e4c173f4-dedf-43e0-a5f5-56f8baffb225?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/additions_and_removals.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d986eeb-bfd7-429e-a73e-4abc7f4aac89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/allocator.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d882b66-7021-450d-83a3-3f977e985991?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/build_compressed_block.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_875cd31c-4eb1-4d35-b7ee-36809c1da098?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/build_interned_block.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f2eaba7-da89-49c6-bd8f-ac165c7bf68e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/check_time_locks.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8e4cdea8-f9ae-4e3e-a1f1-71bda4637ab0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/coin_id.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c80598f-02e7-4aea-abf7-4581736bd4b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/condition_sanitizers.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_462dfc57-e79d-46d7-ae0b-aab6ee782ffa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/conditions.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cc39417b-d097-4851-8095-6eac8f6de8ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/consensus_constants.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_05861d01-343f-4a0f-937a-b501a3397197?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/error.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df07566f-89bd-4a25-aa08-bd0c406ff860?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/fast_forward.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8aae6b04-f32d-4acf-8a4a-86a94a31727a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/flags.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2522b243-4609-4fff-acf2-eb40982ec9f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/generator_cost.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98e8b1ff-0722-454b-aa6f-3e616e95cd50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/get_puzzle_and_solution.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c2fa73d-e7be-4e99-b05f-788d7f557516?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/lib.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d439dc1-27b4-4bd8-a0cb-cd2abeeb7e1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/make_aggsig_final_message.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a788a563-69a3-425f-a665-3cdb16598e4a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/merkle_set.rs -> Scope: High. Streamable/CLVM/serde/Python/wasm boundary parsing bug causes non-canonical bytes, integer confusion, hash mismatch, or cross-language disagreement in consensus-critical data'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f7e01cad-b3b2-4518-a36b-0a2e66e75629?mode=deep",
+    "questions_generated": false
+  }
+]
