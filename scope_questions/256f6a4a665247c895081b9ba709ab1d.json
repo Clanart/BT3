@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/chia_streamable_macro/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_37a42ce8-4457-4227-bbc6-5e2222dad3a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/apply_constants.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5520c85c-32d5-4d7c-b39b-3b33d3bb3e5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/from_clvm.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_faa09dc8-75eb-49ec-916e-30d9de2e1d13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/helpers.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c8d0ea7-83af-44a7-ae90-d1e4eeb842ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_266eb75b-b620-4243-a212-5edaee6a1c3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/parser.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe8eabf6-cbc5-465d-b608-1ffce81f8d26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/parser/attributes.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc3e53ed-83a3-42ee-a0ce-ebda890546f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/parser/enum_info.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6885f378-0519-45c5-b578-d727c2ed592b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/parser/field_info.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ee6466df-3d52-487b-acab-2f9c1233b8ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/parser/struct_info.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce2e4730-b995-4729-9e2f-e9c5d5d01344?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/parser/variant_info.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70e4ae08-5e9a-42a9-a6f7-a40c685d3dea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-derive/src/to_clvm.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92becf07-3faa-45d5-ae1e-213ae20e4836?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/clvm_decoder.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ea11769-fd8d-4c62-9de9-85daaa2855c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/clvm_encoder.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1386d71a-aa01-488b-b495-91a4c5c2ab31?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/error.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac76ce7d-4a1a-4f46-83fd-6657efc0ca6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/from_clvm.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6999443e-2e16-45a9-b06d-aa80a3a2ae40?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/int_encoding.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b23d4e62-95e6-4c5f-a94a-6985cc043781?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_813bf5db-0656-4e3a-b6a1-840759a55085?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/macros.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b03d8f0e-5a6b-4364-bbc2-6fda965467d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/match_byte.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e219fe0-731b-4422-8df4-da919abf0394?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/to_clvm.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_be234005-d8ac-4ffb-9ae8-83d607b7a88f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-traits/src/wrappers.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d183a577-b868-475b-a748-dc1f740283a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-utils/src/curried_program.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_de61a289-f64d-4a5f-b579-7dd52c1a6577?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-utils/src/curry_tree_hash.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8ba75bef-280e-4806-9e87-41088bee9b51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-utils/src/hash_encoder.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7e7f28d-9034-4a02-bac7-61b9ac3fb636?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-utils/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bf0a2e09-b9b0-4ab1-83db-b0edba25dd75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clvm-utils/src/tree_hash.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c497c414-dfee-4de8-a040-3aaaad76d83c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e9ab58cc-24e8-4e0e-a4a9-b71a3453c71e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wasm/src/lib.rs -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e1c754ef-4637-418c-96d4-5f1b2bc2f975?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wheel/python/chia_rs/__init__.py -> Scope: High. Signature, aggregate signature, synthetic key, puzzle type, condition, timelock, or coin-id validation bypass enables unauthorized spend acceptance or replay'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ea20882-0cf6-48d0-8602-b2281703c33a?mode=deep",
+    "questions_generated": false
+  }
+]
