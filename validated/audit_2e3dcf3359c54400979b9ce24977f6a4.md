@@ -1,0 +1,1 @@
+Let me look at the `ELIGIBLE_FOR_FF` flag computation and the `SpendId::parse` function more carefully.
