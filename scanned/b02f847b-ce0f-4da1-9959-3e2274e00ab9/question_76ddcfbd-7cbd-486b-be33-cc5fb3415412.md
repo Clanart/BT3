@@ -1,0 +1,1 @@
+[File: 'crates/chia-bls/src/error.rs -> Scope: Critical'] [Function: From<Error> for chia_traits::Error] Can an unprivileged attacker craft a spend bundle whose AGG_SIG public key triggers Error::G1NotCanonical in PublicKey::from_bytes_unchecked, causing the Display-format conversion Custom(format!(\

@@ -1,0 +1,1 @@
+[File: 'crates/chia-datalayer/macro/src/lib.rs -> Scope: High.'] [Function: python_error / generated From<Error> for pyo3::PyErr, cross-module: batch_insert parent=None assumption] Can an unprivileged attacker submit a DataLayer blob via `MerkleBlob::new` where a non-root leaf node has `parent = None`, causing `insert_third_or_later` to call `old_leaf.parent.0.expect(\
