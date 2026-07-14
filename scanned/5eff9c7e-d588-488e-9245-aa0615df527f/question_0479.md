@@ -1,0 +1,13 @@
+# Q479: new allow replay across contexts via reward-chain and foliage fields
+
+## Question
+Can an unprivileged attacker process network-delivered protocol payloads targeting `new` in `crates/chia-protocol/src/program.rs` with reward-chain and foliage fields when duplicate or prefix-colliding items are present make chia_rs allow replay across contexts, violating the invariant that state transitions preserve parent-child coin relationships, and realistically causing the in-scope impact: Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees?
+
+## Target
+- File/function: `crates/chia-protocol/src/program.rs:46` / `new`
+- Entrypoint: process network-delivered protocol payloads
+- Attacker controls: reward-chain and foliage fields
+- Exploit idea: Drive `new` through its public caller path using reward-chain and foliage fields; combine ordering, boundary, or alternate encoding cases until the checked state differs from the consensus/model expectation.
+- Invariant to test: state transitions preserve parent-child coin relationships
+- Expected Immunefi impact: Critical. Consensus-valid spend, block generator, proof, or block record path can mint, burn, steal, double-spend, or mis-account Chia coins/rewards/fees
+- Fast validation: feed trailing and truncated bytes and assert rejection in untrusted mode.

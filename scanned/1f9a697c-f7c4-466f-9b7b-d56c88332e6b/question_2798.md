@@ -1,0 +1,13 @@
+# Q2798: supports fast forward produce a Rust/Python disagreement via from bytes/from json dict inputs
+
+## Question
+Can an unprivileged attacker invoke validation helpers from Python targeting `supports_fast_forward` in `wheel/src/api.rs` with from_bytes/from_json_dict inputs when the attacker can choose ordering inside a batch make chia_rs produce a Rust/Python disagreement, violating the invariant that buffers are copied or borrowed without stale mutation changing validation, and realistically causing the in-scope impact: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption?
+
+## Target
+- File/function: `wheel/src/api.rs:403` / `supports_fast_forward`
+- Entrypoint: invoke validation helpers from Python
+- Attacker controls: from_bytes/from_json_dict inputs
+- Exploit idea: Drive `supports_fast_forward` through its public caller path using from_bytes/from_json_dict inputs; combine ordering, boundary, or alternate encoding cases until the checked state differs from the consensus/model expectation.
+- Invariant to test: buffers are copied or borrowed without stale mutation changing validation
+- Expected Immunefi impact: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption
+- Fast validation: call the Python API with mutable buffers and compare Rust direct output.
