@@ -1,1 +1,0 @@
-[File: 'crates/chia-datalayer/src/merkle/blob.rs'] [Function: MerkleBlob::insert_third_or_later] Can an unprivileged attacker trigger insert_third_or_later with an old_leaf whose parent.0 is None (i.e., the old leaf is the root), causing the unwrap on 'old_leaf.parent.0.expect(\
