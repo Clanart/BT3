@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/chia-protocol/src/coin_state.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dd107e7f-140b-4346-ad35-77f528465e89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/end_of_sub_slot_bundle.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2415aa2e-f0cb-45c7-82b1-adcde6388a9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/fee_estimate.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_21012ede-88fb-4d86-bf56-ddd3d2fad036?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/foliage.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b475e4d-3cbf-4137-9b9b-5792ab377afa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/full_node_protocol.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3fed7621-097b-4c09-ac4f-33c845641d5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/fullblock.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_037be583-57ae-4c17-a2b6-6922157309f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/header_block.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f62c603f-172c-42d5-9a01-6cf8b471d982?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/lazy_node.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f11e857e-5b32-4678-927d-b4ba2fdcb34d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/lib.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d31d4720-fb7f-4ec0-a661-f48962b8482e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/partial_proof.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_05a0251f-98b9-4e54-97ef-8d227dea0fdf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/peer_info.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d98e84e-4e5b-461e-a27f-d8e455fdcb0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/pool_target.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b3824bb-3640-4264-ba9d-1fd3d1d7bdc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/pos_quality.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2add1d0c-ad0d-4552-8f23-0b2f56469698?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/pot_iterations.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34ace87f-b8b1-488f-a58f-9e8861b141d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/program.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3dc70496-4f80-44e8-a4bc-95180278ec89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/proof_of_space.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d457cd5-0891-4e20-9435-a0c9b80575ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/reward_chain_block.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e00bb6c5-986c-4fe4-97cc-7f9e428a7d13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/slots.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0973779-01fe-4453-8b56-ce607447b45a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/spend_bundle.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_45ce0258-7346-43a7-aa8f-2f1599c81083?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/sub_epoch_summary.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1db6b27b-79ed-4c11-81a2-5218bf058d09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/unfinished_block.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e9f34110-3bd5-4b73-8752-7461c204e428?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/unfinished_header_block.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_071d9560-cfb7-4735-afd3-0c681debfb34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/utils.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_12ee21d4-f047-4e98-88bd-f0fd864c2af7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/vdf.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a69f0b3d-6fc3-492f-a3a5-1a4e3fb81309?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/wallet_protocol.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_029b7971-d99e-45bb-823c-2fb0b91eac52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/weight_proof.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d0ca319e-9e97-4d30-a517-ffbf4fb5d160?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/derive_synthetic.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b6d5212-f371-4d80-a93c-5393c2e59386?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/lib.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc822500-5761-4653-9ee4-1b7c03febd1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/memos.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a4a471b-a88f-428a-b468-5d05ac0d24f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-puzzle-types/src/proof.rs -> Scope: Critical. Valid unprivileged CLVM program, spend bundle, block, proof, or serialized network object can trigger deterministic consensus divergence, chain halt, or committed state corruption'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fcefbac7-50e7-4875-8c94-610664caedc9?mode=deep",
+    "questions_generated": false
+  }
+]
