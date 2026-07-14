@@ -1,0 +1,1 @@
+Looking at the actual code in `crates/chia-datalayer/src/merkle/blob.rs`, I need to trace the exact control flow of `batch_insert` and verify whether the `contains_key` guard is truly absent in the fast path.
