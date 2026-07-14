@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/chia-consensus/src/merkle_tree.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_00daee6f-f47a-425e-978c-33b8176fd264?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/messages.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15636caa-38db-4a2a-afa4-47402aaf5985?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/opcodes.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87ed320b-c489-4f8c-834c-bcd28a65801f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/owned_conditions.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_74f7db04-78c5-4292-acdd-e35db8b26e5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/puzzle_fingerprint.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8260e38d-4f81-42d4-a3ee-42a1fc785171?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/run_block_generator.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_48d4c58d-e8c3-4a56-a828-f3a40ce12653?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/sanitize_int.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a0f04fc-9132-4fbc-ae6c-3929819ef3e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/solution_generator.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9960ac2d-8c63-40c3-b2a8-4f7faab013d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/spend_visitor.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b747d15-b298-485c-99b3-8fd655b850d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/spendbundle_conditions.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7096de46-21d7-483c-802f-769d42245d49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/spendbundle_validation.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cc4f1f0c-e498-41f3-9785-e88e799df670?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-consensus/src/validation_error.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5bef6922-8654-4a94-b030-53beb1aaf3b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/macro/src/lib.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb2bab95-6c17-410c-b9a5-73b7557d7cde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/lib.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_03c8b973-7e70-4f9f-84f4-c106cfabcbc0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/blob.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e31f68d5-7841-4c4b-b547-eee40732f680?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/deltas.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c9d097c-0249-4aeb-b4e6-010a77b12f23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/dot.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7d3a462-e177-4a4b-8365-c91e2d34cf08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/error.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f93f3b7a-bddf-4eed-b068-693abdc79d8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/format.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_627966a2-77b0-482b-bdd6-af6527610fd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/iterators.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b315723-64ec-4a3e-951e-2a52f171846b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/mod.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_08de1aa5-0716-46ba-8a68-4791198e07bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/proof_of_inclusion.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96eb6735-aadf-4072-8a93-bb28657c9651?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-datalayer/src/merkle/util.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e7ea60a-8fbb-404c-812d-2526f52bc1aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/block_record.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe2ce783-f989-4dad-9962-cd2fc13adaef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/bytes.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1920d9e-aa82-436e-84ce-7059dc436944?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/chia_protocol.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_36acde88-10d3-4ad0-8a50-07bb61c81dd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/classgroup.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bac1ac3-0aa6-4036-a2c8-ec46d898467a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/coin.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fd17cd6b-fd9e-4f20-a4f9-c1cc89c76abe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/coin_record.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_22be2285-9d51-4d04-b8b3-46ccedc3c999?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/chia-protocol/src/coin_spend.rs -> Scope: High. DataLayer Merkle proof/blob/delta logic accepts forged inclusion/exclusion, corrupts tree roots, or lets untrusted input prove invalid state'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_78219115-6289-474f-9582-8fc71c80dd3e?mode=deep",
+    "questions_generated": false
+  }
+]
