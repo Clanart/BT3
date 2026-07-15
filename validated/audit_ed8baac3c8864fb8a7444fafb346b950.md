@@ -1,1 +1,0 @@
-Looking at the `get_proof_of_inclusion` code carefully, I need to verify whether the sibling dirty-flag check is missing and whether that creates an exploitable path. Let me also check `get_root_hash`.

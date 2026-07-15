@@ -1,1 +1,0 @@
-Let me look at the fast_forward code and the DataLayer Merkle code for potential analogs.

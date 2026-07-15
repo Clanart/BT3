@@ -1,1 +1,0 @@
-Let me look at the `NewCoin` struct and its equality implementation, which is critical for the `is_ephemeral` check.

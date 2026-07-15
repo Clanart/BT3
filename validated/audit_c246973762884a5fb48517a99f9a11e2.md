@@ -1,1 +1,0 @@
-Looking at the relevant code in `crates/chia-datalayer/src/merkle/blob.rs`:
