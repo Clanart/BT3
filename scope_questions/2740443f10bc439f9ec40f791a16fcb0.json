@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/processing_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_97d30aac-6630-454b-a1ac-5c294a0438bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2cffb9ee-9641-486e-9d82-ef3108b688ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_666f8ffb-c2af-4443-b772-3b56031a6c4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/update_shard.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_834f662d-a6ea-4914-96e4-6a0adaf4dfec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/validate.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6a60330f-f09e-4859-8d90-3ba90ec1c7fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/chunk_cache.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a3ec62ab-5312-4445-8ac3-09518134d2d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/client.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_89399d39-15ad-49f7-86cf-738d53cd1fc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/logic.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d16729bd-de7c-41ed-99e6-18dc82be38a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/shards_manager_actor.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9c92ea25-72e9-48cd-8c28-32160f94a235?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_endorsement_handler.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9db0c273-2301-485a-a883-358aa6982740?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_inclusion_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4311a1d8-2f5f-4faf-aabf-8d499d917fd6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_producer.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3fc86549-d36d-4897-a0aa-69d7afbf0396?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c4b20794-65be-4420-a871-402d4169f4e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client_actor.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3c9ab228-8872-437b-ac96-b91c17463adb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/pending_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_41a8df74-4f67-4206-87c8-d654eca2af39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/prepare_transactions.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_556c594a-8661-4265-a676-5d8b04fa9cd2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/rpc_handler.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_065e1bc2-cd23-43a6-b5a4-fb5bdb823229?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/state_request_actor.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_13bc2021-46fd-4edd-a3ba-de808b0e2d45?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3ba356c6-1e23-46a4-a8cb-e49e74f89cbc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validation_actor.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0e1f6777-d0b3-4c01-8590-410bd4345f15?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/mod.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_918d0565-5618-4108-bd74-f059f7a4cedc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/orphan_witness_pool.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b5ccd8eb-e990-43d9-8b89-817ba17fd451?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/encoding.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a35d8e2d-bc63-40cc-934b-cd7717e0e91a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_deploys_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_86b557f7-ad9e-4b1d-ac99-1b33774f66f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_actor.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d250255a-1a44-4436-98bb-e32eb029c3ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_995e53d7-40dd-4376-b3a7-47d8db9075be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/shadow_validate.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2709500a-a8c8-4259-b386-7a67f517db77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_producer.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f118951b-7515-41d2-8558-0e7eb2a30d5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0bda08c4-58fc-486a-9d4f-1378c3764f99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/validate.rs -> Scope: Critical. Unprivileged-user-triggered Chunk availability, part ownership, erasure coding, chunk reconstruction, or chunk inclusion tracking bug marks missing or unrecoverable chunk data as available for canonical processing.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_eaa899cf-7c48-4476-a2f4-4755ea18d9d4?mode=deep",
+    "questions_generated": false
+  }
+]
