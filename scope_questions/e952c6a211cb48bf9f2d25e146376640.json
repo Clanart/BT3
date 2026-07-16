@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives/src/state_sync.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6710d485-ef96-466b-b837-af4df0efdc3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/chunk_endorsement.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_875ccfe5-aa22-4c65-9f31-6bde87871dbc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/chunk_endorsements_bitmap.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_992dec9b-3a33-4332-80eb-cc2375c224c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/contract_distribution.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b9be06df-8f56-4fc1-bedd-1198f573141d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/partial_witness.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_689274c6-ba83-475f-a52c-b6f0d66c0f5c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/state_witness.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_648a4272-cbe3-444c-9622-e2d0faa7e15b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/stored_chunk_state_transition_data.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_082a059c-fb41-47ea-8ea4-71b5dc9e02f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/validator_assignment.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6d3f20b8-d7f6-47ae-b626-6ea2138890c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/transaction.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_304fb33c-be96-4864-a10c-bfbe599e48b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_key.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2258339b-b9af-447f-9f22-bc5d71e36f2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_split.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_47337a43-7151-4d88-86a4-3a14204da554?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/types.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_16a98b23-d7f9-4faa-97c6-879013aca4ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/upgrade_schedule.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_72bd7b77-6a2c-4019-bca5-44c0e6adeda8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/validator_mandates/compute_price.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_37534756-a7ac-44ec-90e5-230341a7058d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/validator_signer.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d5a957bf-39a3-44e4-9df4-7d52112ca1e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/chain_store.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3fff9ade-9db1-46fc-a4de-a70f34888c13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/chunk_store.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f9d76925-0622-472e-8e77-185ccb7a363d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/epoch_store.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ec696b2a-3c4c-4688-9687-33e58b8b8465?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/flat_store.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_8deaf90d-898e-49cd-98be-ad2f3612a2b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/trie_store.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e8bbdcd5-5121-4a96-893b-3c8cb8ad5b73?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/delta.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5b5b1bb7-66b2-4636-a00e-dff787ea3643?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/manager.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6595ad5f-f354-4179-8a5e-c8b8c5b73982?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/storage.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2831e867-5789-4475-ae27-24dfea230c9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/types.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_92351c93-2638-4e70-8767-531c0c7b209e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/merkle_proof.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d7595176-df6c-49dd-b239-7e09a269d30e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/from_flat.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2630a2f6-6c5d-47a6-831a-78d548ae40d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/iterator.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_fa20e186-6c99-4313-828c-333906e9d7ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/loading.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_677a8123-cfbd-4fbb-abce-003ade1ffbb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/memtries.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9671ce13-1634-4f5e-9e27-687cfd425248?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/memtrie_update.rs -> Scope: High. Unprivileged-user-triggered Missing-chunk, orphan block, optimistic block, cached chunk result, or pending shard job logic attaches valid data to the wrong block, height, shard, or previous state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bf6d28ca-1db6-4d3a-951c-c930d9bea262?mode=deep",
+    "questions_generated": false
+  }
+]
