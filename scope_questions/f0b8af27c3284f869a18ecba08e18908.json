@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives/src/state_sync.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5f8381ca-b615-4ff0-9fec-d8df620e7acf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_26d141bf-4936-4ef9-a40a-0b2428b8242f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/chunk_endorsements_bitmap.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a518014c-8450-427e-8af1-0e326ba4c35f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/contract_distribution.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7fad36db-2b80-4a78-b78c-48de3d9d863f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/partial_witness.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a78a4439-b882-42e3-bb11-4a10ec56484f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_98e2cefc-4ff9-4d46-b686-9c6399a1d61d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/stored_chunk_state_transition_data.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a541f7eb-1df9-4872-9a9a-de041b4feaf0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/validator_assignment.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9ae5c792-e438-4e9c-a6c9-fb8add0a5f1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/transaction.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c9d6c033-34db-4358-bad8-d2043b42a5e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_key.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6c477cff-6f28-4156-ae24-419bedb5e34b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_split.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5134522c-6201-41b7-8d5d-10bf07b83fa2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/types.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_03ef8933-2204-4422-8a7b-79a7aa00b424?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/upgrade_schedule.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d0ef2ad1-e9e2-44c6-8a38-be1f25ba47ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/validator_mandates/compute_price.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9b0b2dda-c54f-4a7b-9e3c-bb9345d7cd9e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/validator_signer.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_49e93ab6-e81d-4065-a206-40a34e98a32a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/chain_store.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ea9b7777-954b-4873-afbd-6512121e72fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/chunk_store.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_cdd7ec4d-d641-43f5-bbc0-093a5b924de9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/epoch_store.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d61261f7-f1b1-4c53-910b-91d70c3b9d96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/flat_store.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e70f8504-0a7c-4c8c-b12b-ac9cb5dae5fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/trie_store.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_671c9717-c377-4b85-b535-c70ac110f86b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/delta.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ec592879-8614-4fd7-8f47-c61799bab3e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/manager.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d44abaae-9911-4f4d-8745-1cbdad96b3b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/storage.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2b37efa8-804e-4ade-8490-01ec2fba2e24?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/types.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_448ed38f-9fe7-40b2-8611-102e53e42d2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/merkle_proof.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a021bac4-4e95-4482-ae8e-ba34466fa33d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/from_flat.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0bb0231b-a7de-4e59-871f-294a2f20cfef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/iterator.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_767bbaba-2995-4908-85f4-fbf10f3b44ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/loading.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_250178cb-746a-4189-9ab2-e4846c4a941e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/memtries.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d2e1a5f1-b3cd-4563-a8ce-2660ef471862?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/memtrie_update.rs -> Scope: Critical. Unprivileged-user-triggered State sync header, state part, snapshot, external storage, or part ordinal validation bug installs state for the wrong shard, epoch, root, or split boundary.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_055dc086-4564-4d9c-ae87-df648e71d801?mode=deep",
+    "questions_generated": false
+  }
+]
