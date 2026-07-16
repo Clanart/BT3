@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare/instrument_v3.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_05615181-aab1-42db-87f9-960843ba1854?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare/prepare_v2.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4d2aa5cf-a989-4d76-ba59-3823eefece47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare/prepare_v3.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5849f4b7-7ff9-4249-a845-10008e9aee38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/runner.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_397f5b86-8107-4c5a-a96e-2a22a89180f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/logic.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9bf11668-df0d-4659-baac-dc20b957292a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/mod.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a98729ae-85ef-43c9-b183-6ae891a775f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/access_keys.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c2cf2846-c9ec-4e42-9fe3-6ebe9d2f87fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/action_validation.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f533c1c4-8c2f-494b-bb47-02a94fb79627?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/actions.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b66fded0-f6b9-443e-b6b3-8d734d83c2fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/adapter.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_cb11ed86-d11e-4475-be98-4cd423662722?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/bandwidth_scheduler/distribute_remaining.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e89d6197-fd33-41d2-b29b-4a64ab594128?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/bandwidth_scheduler/scheduler.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_134b0615-f7a1-4a81-b7aa-590d96d921e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/cache_warming.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e7a3a59e-e258-457c-9955-7d1eb480d803?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/congestion_control.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4c762bcb-0620-47c1-83ef-19962cbe2921?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/contract_code.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_290f9b3b-88c5-4af7-ab1e-2dfcffac89e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/conversions.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ecde5395-92f2-4eac-b1be-8c346db6e7d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/deterministic_account_id.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a1e27cdb-e8b5-4891-9bf4-368351ffc4de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/ext.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_07ccfee1-10fb-4081-9b70-ed6f5fc948e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/function_call.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b64c9f75-39ce-46e8-897e-91d51d2d91ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/global_contracts.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_70fb5aac-6c51-4623-aab7-c20d254d52f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/pipelining.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bce1e5a5-8900-45bf-b1a3-5b3a397232c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/prefetch.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_19354ab7-16e3-4f18-9cb6-297f695bbe43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/receipt_manager.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_132028e6-013d-4d4b-828b-109206553881?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/types.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bb511655-01e3-44ef-945d-d976b2e16e00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/verifier.rs -> Scope: High. Unprivileged-user-triggered Reed-Solomon, compression, encoded-part serialization, or witness part assembly accepts inconsistent pieces that pass local checks but reconstruct a different committed payload.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6337621b-e470-45f7-af22-16e3e226fefe?mode=deep",
+    "questions_generated": false
+  }
+]
