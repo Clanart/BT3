@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: chain/client/src/sync/block.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_358d3e5d-eecc-4575-b5b4-8aecd4828d24?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/epoch.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b54bdea2-3373-4d6d-9d99-3dc3cedcfcaf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/external.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e69e7e86-b46b-4fe7-ba85-c676772484f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/handler.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5a074f95-6bd7-4605-a044-74992f5c8eae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/header.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_40f0e25b-dd2f-4467-99c7-b3d21144da6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/chain_requests.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3d6437da-1743-4076-b930-b16e1204ec70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/downloader.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_953d1e37-6640-40f0-9fb4-2c115a005e79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/mod.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0d07f656-2260-4b8f-bf86-86ae68b023d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/network.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f30a7242-1e42-4850-ad55-8421d2b97d08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/shard.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_18bad503-6020-42a1-a81f-3879a97b6a8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/task_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d5b29122-356e-4559-bc8f-57d157216071?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/sync/state/util.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ebf1405f-7c99-48e9-8f1d-b4485d8b9d04?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/view_client_actor.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_02136d75-d74d-423a-a1b4-a6ec51eca0f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/epoch_info_aggregator.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5180147f-40fc-4654-beff-39ece33c005d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/epoch_sync.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a807c87e-c963-44fc-b377-f2667a6c3268?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/lib.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5d7c83e5-6d05-42d6-aa35-212ebd7afbe7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/reward_calculator.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c82f339e-7469-46bf-954b-71f14a81a1c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/shard_assignment/mod.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_69c5fb8d-8230-4b10-81a8-a4d483fbb61a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/shard_assignment/sticky_resharding.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9116f678-3283-43c5-be16-cfd9a5172c68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/shard_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_aceaa922-5291-4ab8-a594-72fc211219c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/validator_selection.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2c5be753-dce2-45df-aca7-8dd2a03c6955?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/epoch-manager/src/validator_stats.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c84120f5-e8ab-449b-aafe-59329b6c424f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/blocks.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_772c0a0b-98f2-4e32-850d-92da833f0495?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/call_function.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_8fbbf6d1-a8b4-465f-a7b5-ae7ce359fcc3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/chunks.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7d3efa9d-80af-4e78-8adb-2be7fbada6bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/light_client.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e76386b9-0b4c-44f6-8e74-29c54a7874a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/query.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_038bb2cc-2688-4153-8071-e9102b7e1b70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/status.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3f81e7fe-f7a9-4c2d-b189-1c6111093548?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/transactions.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_dc1f69de-e8fd-447a-9c45-40b61a555051?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/validator.rs -> Scope: Critical. Unprivileged-user-triggered Partial encoded chunk, receipt proof, chunk extra, or chunk body validation bug reconstructs a different chunk payload than the one committed by the block/chunk header.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b6c74600-0ee5-46ba-b151-565786a199c5?mode=deep",
+    "questions_generated": false
+  }
+]
