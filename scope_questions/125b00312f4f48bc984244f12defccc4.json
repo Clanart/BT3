@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_access_key.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_668e7eb9-d014-432b-b7f8-be650e9c89d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_account.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f6b30160-b747-4a32-92b9-31fcbfa2cae2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_code.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_21ec2a1c-da3e-4de6-95be-4d0d5cb9d819?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_state.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_97be394f-fabe-4315-a1e4-b8b3024b2001?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/sharded_rpc.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_1f204d70-b855-4820-89c6-9104dcb33cfd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/accounts_data/mod.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e1c432fc-21be-423a-92b7-6becdb03c304?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/announce_accounts/mod.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c9e8520a-4c75-4fb5-993d-c01693c80d47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/client.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_edf1ff84-b193-4f60-a447-ffdde2c347c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/edge.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7372c401-776a-4ed7-aa2c-0996d3dae531?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/mod.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9fabacc0-1d10-4812-99eb-10e34edf61b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/peer.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0ada43d8-3ebc-4491-802b-06d4b16cf7c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/state_sync.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7e4ea4b2-6ff6-424e-9119-4bd62651ee18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/peer/peer_actor.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_672cd6ae-78c1-4496-bd6c-72f8659aee33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/peer_manager/peer_manager_actor.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0cf7e458-b3a3-4c25-93dd-9bb11673bb9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/routing/edge.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6ef9bc1d-6182-4134-aac7-703d5cd17c7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/routing/graph/mod.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_d6c5ff30-2564-47d8-8523-94880e12f7df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/shards_manager.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b903b586-32df-4ee8-b856-017cb92a7c03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/state_sync.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c4ab334f-1ce7-46d7-8945-a8379cb5982f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/state_witness.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3d818a89-52ac-4e13-9b00-302b3ecbaaed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/types.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a8b175ed-f602-4936-b825-87d2fbd0738c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/pool/src/lib.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5ffa254f-9a60-4843-8cc8-ce5e8bf17d70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/pool/src/types.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_45ee8db7-ca85-4ebf-9a71-781cbd76f2a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/hash.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bfd454ab-7e77-49cb-af5b-f17ef3acb3ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/hash_domain.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_62b5f871-2de9-425f-bde2-61d1030405c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/signature.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5fd56ed0-8043-4de0-8b4f-77290968e8a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/signer.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_52ec5433-ca1e-4e2c-b9d1-26592919115d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/vrf.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ba9c91a4-56c0-4211-84c0-005168ec32ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/account.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_fb9a3f9c-89c4-4b19-b19a-0cad52347b67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/apply.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b9fdb9f2-c433-4113-96bd-81218f7d6be6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/gas.rs -> Scope: High. Unprivileged-user-triggered Garbage collection, split storage, archival boundary, state snapshot retention, or cold storage transition removes data still required for canonical validation, catchup, or state reconstruction.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7cd6dda0-1189-414f-a133-0baef0e86da6?mode=deep",
+    "questions_generated": false
+  }
+]
