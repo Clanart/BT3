@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/processing_tracker.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4ff98346-ffec-4987-9162-ae852763c335?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_a46b8e60-d735-4f02-bbee-0bdc863b5a17?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/types.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f9c078b2-64d7-48a3-87ab-d4eb5941c507?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/update_shard.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2f0090ad-7b24-4cc3-82a4-737c70afea2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/validate.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ecda9770-ff1e-4fb7-96fb-77835d588a38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/chunk_cache.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0a5aec3a-1dc7-4c3c-aa66-49a763f7e41a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/client.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e03db531-5f17-409e-9681-1834183ba336?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/logic.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_38f0d5fe-263f-4478-ba1e-41398c292663?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/shards_manager_actor.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_16913cdd-0f38-4de6-98d7-5a9815d8dbf7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_endorsement_handler.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_8be4b426-a7d5-47b9-984e-4aef1f849d71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_inclusion_tracker.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7e3063d5-32e1-4151-9ef4-7329eb234ce9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_producer.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_954260b3-b789-4dee-ab44-69693a7ebe05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_1a3c2840-e580-4cce-9011-da3e5893ade5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client_actor.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e464bf6d-17fa-4fc3-aa9c-82823119a373?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/pending_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_751336f0-b590-471c-91d5-69e5fc03317d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/prepare_transactions.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_939ff70e-5beb-4245-8968-bbb18b508a3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/rpc_handler.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_27c41991-6458-4603-930c-0dad9187e545?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/state_request_actor.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0a60693d-3981-4916-b7e2-d2783cd1f259?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_03c63548-b3d9-41fc-bfae-24192e727a68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validation_actor.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_062edab3-5425-46bf-a061-8d91e7ab9211?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/mod.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_657ef8d2-51f4-48a1-9cc3-d61c1e750be9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/orphan_witness_pool.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5a27411c-69d2-4bae-bd99-f9f38a286972?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/encoding.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_1ca2474a-102a-4297-9bae-951c8228bcb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_deploys_tracker.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_604cb80a-163f-4082-9f55-494878199ae9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_actor.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b9192855-a696-4dbe-b07c-2fd2998e3cb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_tracker.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b4344a7a-3f37-42f8-a796-efae7b24ee0a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/shadow_validate.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_47cefdeb-9211-4989-a769-82fef2dab410?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_producer.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_392adf7e-8bbb-42ce-82fb-ca1e752b7a77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_tracker.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_73b26219-90c0-4af5-bf44-cf9902404972?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/validate.rs -> Scope: Critical. Unprivileged-user-triggered State witness, partial witness, contract access list, chunk endorsement, or witness acknowledgement logic lets validators endorse a chunk whose execution data was not actually validated for the committed state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_76977ec1-46c4-4c62-9cb1-76b0a7f3ba7f?mode=deep",
+    "questions_generated": false
+  }
+]
