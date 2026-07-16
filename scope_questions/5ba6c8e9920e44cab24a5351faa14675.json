@@ -148,5 +148,155 @@
     "question": "'File Name: chain/client/src/stateless_validation/validate.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
     "url": "https://deepwiki.com/search/-generate-dataavailability-and_5a4730ff-2e88-47fa-bb60-584456a5d02c?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/processing_tracker.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_6b64276d-5a05-4dbe-81ca-bcb5c0a1d903?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/state_witness.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_548bdb89-0272-4391-ac01-44bd06327d9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/types.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5fcb1c3e-68d0-441a-b02d-57c79a99eda4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/update_shard.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_1d8bf145-6e89-4831-8935-e0832ce774bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/validate.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f82a491f-c524-4e52-8053-d45f8bf66fcd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/chunk_cache.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_85352ab9-3ca2-45dc-95f2-079c43d4115a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/client.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_7efad552-0ebe-4632-aa9d-c70fd43affbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/logic.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b3b023dc-cc7c-415e-941f-dbb64dfc0703?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/shards_manager_actor.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_09e6144a-31bd-4f1e-8453-17228b8af434?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_endorsement_handler.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_8f45e5ac-be73-457c-994a-e4de4c3e6acf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_inclusion_tracker.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0a1a01f6-8683-4fae-9c4f-1b1593e8a6c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_producer.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4c712078-102d-4dc0-b361-1a115d71dba3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_fbfcb340-76a2-4a84-b491-660c2b63efcb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client_actor.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bc7a6bfe-f371-427d-b396-11e21939678c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/pending_transaction_queue.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e82bdb5f-685f-431b-9044-6a79fabc83c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/prepare_transactions.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e00cad90-e5b6-46a2-9ac9-0099a48c8517?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/rpc_handler.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_223fdc64-29c6-44d0-b681-f4253dada6d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/state_request_actor.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c07c8c45-f170-497b-bde4-b5c51f1e3e94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_endorsement.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4af958d8-b5f0-494d-98af-333b19c2bf02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validation_actor.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9e179dbc-3b44-46a1-a70d-fe1332bed703?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/mod.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bf485c8a-56af-4802-88e5-c7610787a589?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/orphan_witness_pool.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_309a8d7b-d20c-4ec5-9325-ea93f0477ce7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/encoding.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2c3d3c4d-df50-4d92-9f3e-46798e62aa66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_deploys_tracker.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_36dd02a0-0073-4304-9c14-c1a39acca530?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_actor.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_bee39e2f-e35d-4b21-95a0-7b38602695bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_tracker.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_378a7605-ab13-44c2-9474-afc78bdf23ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/shadow_validate.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ab3e6960-68a6-4cef-bcec-875d80bc844c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_producer.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_0a3bc8db-33db-4a0d-aa32-64ae10c243d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_tracker.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_5a62c4f7-032d-41e1-ac79-b4e0476ec49a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/validate.rs -> Scope: High. Unprivileged-user-triggered Shards manager, chunk distribution, state witness distribution, routing target, or validator assignment lookup sends required validation data to the wrong validator set or shard owners with protocol-visible consequences.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_41733e2c-7ecb-4400-bece-9b8aecdf6826?mode=deep",
+    "questions_generated": false
   }
 ]
