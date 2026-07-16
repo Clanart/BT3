@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives-core/src/hash.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_fae572c2-dd1b-4d2c-9f6e-cf8b0ccd9164?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/serialize.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_07ab0b3a-fd78-4bd2-be36-823cb87a6771?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/trie_key.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_f9b16ef8-8457-4448-89fa-37c081522581?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_82bd76af-b291-472b-9ebd-97c8eb03eb10?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/action/mod.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_571a0dd9-4ba1-468f-a0b2-c98f0270925b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3baf4baf-5d62-4099-a806-7efb14c26d37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_body.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_866449bd-2db0-4e19-ad58-62510600ef26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_header.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_83649b66-026f-4dc0-8036-d7c59ad8fb06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/challenge.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_8eab99d5-bab8-4a0b-bc09-0f5a1bf8b215?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/congestion_info.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ddae9e53-d43c-47ee-8d47-b39b620d508f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_block_info.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_37b7000b-598a-42fb-b27f-6c27ec67f135?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_info.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_58a2365c-b096-4997-a893-2ba05a57872d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_manager.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_2d8f03c7-f5ff-4cc8-83bb-6a30701f4a05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_sync.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_44e9f2f2-9e99-4012-a077-551cd38b0acc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/merkle.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_45d1ae22-4cdc-45a1-a530-9a457fd8a576?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/optimistic_block.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_1d2c3ad0-eb31-474a-9939-d2ebd557a0a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/receipt.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ad2655ae-a623-4a50-ad29-e7239a3c4b59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/reed_solomon.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_ccecfa34-43d4-4f63-87b2-8f60d08aa764?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/mod.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_134180bf-3897-47d6-bdf8-c4bd0a36989d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v1.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_c8515fba-db68-4235-9f7e-f096b73558a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v2.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_52f08c7a-f318-4bd7-82d7-8c7ab66c3419?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v3.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_e56dcd95-2883-440b-8ab3-baca2286701f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_3870df8e-ae12-4f21-a5ac-95cf672cf472?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding/shard_chunk_header_inner.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_04f73d51-3dc2-4b15-ace9-36e192b4aa69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_06e96271-5bd5-41b4-80be-3ebd4386545c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/partial_data.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_37d5efd7-c77e-47ab-ba7c-518c109a9784?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_27851cdd-278d-4167-8223-e331b9b1136f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_b12276a7-c1f1-47ae-b319-0e3965da034a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_part.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_4d7161c1-6f44-4c34-9b1b-3baa12741bc1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_record.rs -> Scope: Critical. Unprivileged-user-triggered Flat storage, memtrie loading, catchup, resharding delta, or trie update replay bug skips, duplicates, or reorders state changes while reconstructing tracked shard state.'",
+    "url": "https://deepwiki.com/search/-generate-dataavailability-and_9b0ed003-734c-42bd-b202-06805e2f935b?mode=deep",
+    "questions_generated": false
+  }
+]
