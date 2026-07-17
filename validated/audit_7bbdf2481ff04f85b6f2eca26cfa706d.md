@@ -1,0 +1,1 @@
+Let me look at the state sync downloader to understand how `shard_id` is determined when calling `set_state_header`.
