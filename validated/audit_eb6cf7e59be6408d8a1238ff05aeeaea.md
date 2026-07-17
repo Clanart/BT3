@@ -1,0 +1,1 @@
+Looking at the production code in `set_state_header` and the surrounding validation logic, I need to trace every guard that could catch a shard_id mismatch.
