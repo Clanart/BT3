@@ -1,0 +1,1 @@
+Let me look at the `get_receipt_proof_key` function implementation to check parameter ordering.
