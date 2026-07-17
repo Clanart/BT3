@@ -1,0 +1,1 @@
+Let me look at the `verify_path` implementation and how `chunk_headers_root` is built to understand whether position/shard-index is encoded in the proof.
