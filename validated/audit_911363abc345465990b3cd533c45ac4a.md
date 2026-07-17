@@ -1,0 +1,1 @@
+Let me analyze the external bug and search for nearcore analogs. The core issue is: when a cross-chain transaction fails, an error-handling mechanism burns ALL remaining gas instead of refunding the unused portion. The nearcore analog would be in cross-shard receipt execution where gas refunds on failure may be mishandled.
