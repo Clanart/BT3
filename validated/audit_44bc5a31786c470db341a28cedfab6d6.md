@@ -1,1 +1,0 @@
-Looking at the production code in `set_state_header` and the full validation chain, I need to determine whether the `chunk.shard_id` vs `shard_id` parameter mismatch can survive all guards.

@@ -1,1 +1,0 @@
-Let me look more carefully at the `validate_chunk_with_encoded_merkle_root` function and the `shard_id` usage in witness validation.

@@ -1,1 +1,0 @@
-I'll analyze the external bug (incorrect `> 0` vs `>= initialIndex` validation causing wrong delta computation) and search for nearcore analogs in reward/index/state validation code.

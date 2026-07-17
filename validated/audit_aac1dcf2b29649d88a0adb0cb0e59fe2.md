@@ -1,1 +1,0 @@
-Let me analyze the external bug pattern and search for nearcore analogs. The core issue is: a cumulative rate/value crosses a threshold, triggering a drastic "wipe all" action, with the false assumption that "threshold crossed = not much value left."

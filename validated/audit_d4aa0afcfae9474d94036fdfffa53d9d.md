@@ -1,1 +1,0 @@
-I'll analyze the external report's core pattern — using a stale/imprecise reference value to compute a critical bound — and search for nearcore analogs in chunk/state/witness reconstruction, state sync, and related areas.

@@ -1,1 +1,0 @@
-I'll analyze the external bug (two different "price sources" used for the same asset in different parts of the system, causing mismatch in calculations) and look for nearcore analogs where two different "oracles" or "value sources" are used for the same data in different parts of the system.

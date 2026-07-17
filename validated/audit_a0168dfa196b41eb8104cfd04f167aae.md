@@ -1,1 +1,0 @@
-Let me analyze the external bug pattern and search for nearcore analogs. The core issue is: a value is correctly computed from source A, but source B (wrong variable) is used when actually routing/storing the result.
