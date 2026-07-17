@@ -1,0 +1,1 @@
+Let me analyze the external bug pattern and search for nearcore analogs. The core issue is: **state commitment happens before an operation that changes the underlying value used in the commitment check**, causing the check to use an inflated/incorrect value.
