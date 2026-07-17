@@ -1,0 +1,1 @@
+Let me look more carefully at the `MainStateTransitionCache` and the resharding logic in chunk validation, as well as the validator reward/stake calculation functions.
