@@ -1,0 +1,1 @@
+I'll analyze the external report's core invariant — a recovery function uses a restricted primitive (with extra guards) instead of the underlying unrestricted one, causing reconstruction to fail in non-initial state — and search for nearcore analogs.
