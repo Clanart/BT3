@@ -1,0 +1,1 @@
+Let me analyze the external bug and search for analogs in nearcore. The core issue is: an unprivileged caller can trigger a re-calculation that replaces a committed value with a lower current value, reducing another party's reward/stake.
