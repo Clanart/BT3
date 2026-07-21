@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_serde.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c2a1e81b-b70b-407c-a219-199011bec08c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/tree.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d03dbc0d-1fb9-4aa9-b43e-3d57c9f12bad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/types.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1ba64452-2a99-40d1-b450-da83330300e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/commitment_infos.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6d2d932c-22d3-432c-bcc0-cba7a8140e88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_input.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b2686652-090c-4757-913a-f0fb84f6875b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_output.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_bb89f788-aa28-4822-8431-2f67e4223731?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_output_types.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a261bc5e-9918-4ae3-b4a3-72b17eb23267?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/virtual_os_output.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_445f0864-db64-42a3-9de6-85ea7d7955ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/runner.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_08185ee2-1311-4413-87c3-a299a398d6ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/db_layout.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_da07c34a-60a4-4e5b-bba2-4a85f0d9931c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/felt.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5ada5523-f031-482f-8f5b-b6f8c5549d00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/filled_tree/tree.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_ef20ab75-c574-41a6-9840-7f2d6e726b48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/node_data/inner_node.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_327f5a91-fcf0-4064-aec9-b0ea1ad36ecf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/node_data/leaf.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5d28aa07-659a-4c05-aff5-fdff1e710baf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/original_skeleton_tree/tree.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b0850548-36be-47ff-a15b-c5a5806a0976?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/traversal.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6963dfc3-d818-4435-a94e-344a3b716dd8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/types.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_63e2b40c-1321-435b-b124-1890f029c373?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/updated_skeleton_tree/tree.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_939be452-7514-4628-b44d-e211c2f707d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/aerospike_storage.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_f32bdba8-cd14-49b6-9013-0553ff92fe9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/map_storage.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_36610abe-bc7d-43ea-ad13-fddc253d30d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/mdbx_storage.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_909bd532-8601-47a7-bb92-4e4be62c2ae1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/rocksdb_storage.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1df03775-3e1f-4be1-a464-52211e40b5d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/storage_trait.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9c5d6347-8b33-43ff-bc0d-bee57a9d08ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_proof_verifier/src/proof_verifier.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_ec80189a-23ec-47c4-a247-1cb7486ad3c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/proving/prover.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_86869253-7f66-44f0-836e-23a4e2bc503a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/classes_provider.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e1e0f1fa-8181-431a-b306-8e90ef673239?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/committer_utils.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1e5c57bd-7dda-4445-95a6-1d6625a604e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/runner.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_167dcae3-dc42-438a-b021-a4b3f2d3e162?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/storage_proofs.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_12ddd45c-4c9f-45e4-b5c9-43cac8e765be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/virtual_block_executor.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e0e83196-8dca-4f2d-ab42-3a2701e791b3?mode=deep",
+    "questions_generated": false
+  }
+]
