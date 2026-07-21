@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_serde.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_09d55ca1-9b22-4afd-a4df-885b1420172b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/tree.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9d87803d-c8dc-4d19-8419-a40afc516777?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/types.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_32ff95a9-517a-4f0b-9966-113821009812?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/commitment_infos.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_3e298e89-b48a-4b8d-a48a-9c9edebdadae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_input.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0ec21e92-96b5-4eed-8248-35b6379c82dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_output.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_392521ce-9a69-4b14-b8a4-6cd144a713d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_output_types.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_43b5cc70-4536-424b-bc6f-a6840796e3a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/virtual_os_output.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_af715c2a-e5fb-46cb-8b59-73082ca906b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/runner.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_93601232-2e9c-4f9f-bd9e-ce3614baab94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/db_layout.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a4b2b50a-4aea-48c3-a2a7-489afa3b45f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/felt.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7bcd4e88-62b4-49c9-ba5a-b3a3a91079ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/filled_tree/tree.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8886165c-4ce8-4be6-ad55-d1372122b0b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/node_data/inner_node.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_62dc8afd-2653-4afb-bcdf-5757f4147304?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/node_data/leaf.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a8d13c99-ea0c-4463-afd7-98692b3bb90d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/original_skeleton_tree/tree.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8c72e6ca-6140-4e78-b44d-41d73f30d586?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/traversal.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4b4b2478-4e8f-474c-a694-0e43ee68c2df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/types.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e8a14d3b-6e76-4378-8045-ab5f911e6cf2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/updated_skeleton_tree/tree.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a90a04c7-71c1-4d87-8e94-39826067ffb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/aerospike_storage.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e4942287-2667-4526-9512-0a7fe7cb80cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/map_storage.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d8241b1e-8e88-4caa-ae01-f6779603950c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/mdbx_storage.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1beaf820-f15a-4b63-a40a-f5587d52547c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/rocksdb_storage.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_96629eda-1c75-40d3-94eb-ae299701194f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/storage_trait.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c80b6024-4652-460d-83d5-6017b8a839d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_proof_verifier/src/proof_verifier.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_cede082c-af46-4719-9c41-293b37851f77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/proving/prover.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6e51c8f8-2de9-4a5a-aee9-e34c4064feaa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/classes_provider.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_cb3211fb-75fd-42b5-b35e-e279554e8b6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/committer_utils.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0a27f386-a3c5-4eea-a051-35f72d2fa7ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/runner.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_72e83e18-9522-41e9-8966-10657449963e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/storage_proofs.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7279dda3-45fe-4a60-a670-f890f01f44d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/virtual_block_executor.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_de494c7c-a88c-409f-8f86-b104ba5b8178?mode=deep",
+    "questions_generated": false
+  }
+]
