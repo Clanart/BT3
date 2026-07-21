@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_batcher/src/commitment_manager/commitment_manager_impl.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_906e21ab-9e20-4c27-aad3-e335e5c42ac8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_batcher/src/commitment_manager/state_committer.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1421ff0f-bd93-42b6-9648-8e2d4cb9b863?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_batcher/src/pre_confirmed_cende_client.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4ba9aadb-4a20-49a3-8173-fb4e4f45a8f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/pending_sync.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9b945f65-59cf-4c9d-a0b8-43df9f78c607?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/base_layer.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_76aeeb69-3305-45a8-b989-7f1b1ab37888?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/central.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_58ec0c2d-e641-402b-a942-d566519fc45b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/central/state_update_stream.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_68c8408c-918d-4232-8643-984bc2010814?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/pending.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_51bde996-9278-4006-8104-078e941b95ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_storage.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_dd540abb-260f-4c1f-96bb-baf1757ba577?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_committer/src/committer.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9f9165ea-f2a8-49e5-9128-086f3910c558?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_consensus_orchestrator/src/cende/central_objects.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_aee06b87-5974-4906-9cf2-3bed8a71518e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/proof_archive_writer.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_cab8b733-fe72-4431-87d8-3113eeffa462?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/state_reader.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_382235fa-9af1-41bc-9a02-c065b40a858c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/catchupper.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_3d270f8e-d3da-42e2-ba84-afaf95085cde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_provider.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_465e8d58-c11a-42a9-bdd2-9505b638c6bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_scraper.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e377b06a-5bb9-4b20-88a4-0c9b4e721147?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_manager.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5128c3c1-92a1-40c3-b5d9-d1bc9f5a38cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_record.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_352d4353-9d30-4b5f-a658-c312127d249d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/block_data_stream_builder.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c6759f79-ebb8-4855-8feb-1fc2deb8c7d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/class.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2edcfbfc-deec-4a31-9ba2-efb3cf26110f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/header.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0989b924-a8fc-4695-8eb8-7fbd7489d957?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/state_diff.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e8276a83-3ede-462c-ad44-0c637998e6bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/transaction.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_aeb856de-bd53-4a74-b7d9-be76fb0b9ed5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/server/mod.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c9108ef0-1984-45b7-8799-13be8975628e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/server/utils.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1978c056-7e1e-4e13-b6e1-18546fb04099?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_proof_manager/src/proof_manager.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_aed12d93-f40f-495e-bba8-e3d8046afc06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_proof_manager/src/proof_storage.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_47b4a078-632d-4a25-804f-aec92187aee5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/pending.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_19eb97b1-2edf-4202-bf70-646d9e487df5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/syncing_state.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_615b7b45-451b-4f8b-b507-15d2f82bd367?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_state_reader/src/apollo_state.rs -> Scope: High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1caf7184-ebbe-4dd6-a457-9fd8a65bb28c?mode=deep",
+    "questions_generated": false
+  }
+]
