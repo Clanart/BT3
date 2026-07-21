@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_batcher/src/commitment_manager/commitment_manager_impl.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b2da186b-1a2e-4e42-85c1-f68705a71c99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_batcher/src/commitment_manager/state_committer.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_cc1e7c24-4b7b-4e70-9dba-80d26fb3a433?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_batcher/src/pre_confirmed_cende_client.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0bd16e05-aea7-48ec-a9ef-3155237fa10b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/pending_sync.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_434f907a-bb22-462d-a175-de8f0af8bb95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/base_layer.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_63eea932-dbdd-434d-a51c-56e35bccfde1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/central.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0168bf61-1d88-4f80-a2d3-b80de9454c90?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/central/state_update_stream.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8713404c-526f-4574-b69c-4c3bad99cf11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/pending.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a896de5d-9484-4981-9c21-29995a1128b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_storage.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9d0f9a85-6630-43a7-a667-29aa65ef5fe5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_committer/src/committer.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_aa6afb4e-251b-471f-8d3e-fa1a5d88cf44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_consensus_orchestrator/src/cende/central_objects.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_de88a20c-d8be-43c6-aab8-44a4c589d2cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/proof_archive_writer.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_74edfddb-274f-4246-bef2-ea03ec86f1b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/state_reader.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4c1b8a39-cea8-42eb-9a75-6a77efaa9536?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/catchupper.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_93e4ae5a-2b2e-4eb4-a657-3d637c61502c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_provider.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1bf3937f-5765-4bce-b777-5194b342108a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_scraper.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_bcb14353-bc19-4124-bc1d-4253a5975f0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_manager.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_aaaac189-0be2-494d-b030-804b54531727?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_record.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_fae77594-90f6-4f88-bf4f-cf06e3e71fbb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/block_data_stream_builder.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_21e06c06-b37f-40cb-84a7-f1a5663a721e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/class.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_15b27906-dfbf-46ec-b758-b4446bfe7744?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/header.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4da73a9a-3e44-401a-b672-6482b09ef412?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/state_diff.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8d9f30b5-8f0c-4ab7-bad5-6f2bacef9b96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/transaction.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8754210d-076a-452a-a05b-cb544bf47574?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/server/mod.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5b3c261e-0356-4714-8649-d9ad3e4ddbc4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/server/utils.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6e82d265-7020-4b25-9c25-1e8ce5bb1d21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_proof_manager/src/proof_manager.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1ce6f624-337f-419c-8693-117b0627f9e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_proof_manager/src/proof_storage.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_572c9952-2a63-4bff-b403-1a62a56cef46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/pending.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_87059822-6662-4b2f-acff-0a0ba4d51221?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/syncing_state.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b774dc69-2d60-48dc-82af-b907e45994c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_state_reader/src/apollo_state.rs -> Scope: Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4ddaa772-04bf-4eeb-a147-a55909d3e397?mode=deep",
+    "questions_generated": false
+  }
+]
