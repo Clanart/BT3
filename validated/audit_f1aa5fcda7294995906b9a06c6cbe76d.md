@@ -1,0 +1,1 @@
+Based on my investigation, I need to look at the `decide` function and the full flow around `next_l2_gas_price` storage to find the analog.
