@@ -1,0 +1,1 @@
+Let me check the `verify_state_diff_hash` default config and the committer config defaults.
