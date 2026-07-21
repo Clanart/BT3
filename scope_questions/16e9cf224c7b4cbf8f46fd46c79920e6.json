@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/blockifier/src/state/stateful_compression.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e85d81bd-b4b7-40c2-a52c-2298c33963e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_base_layer/src/cyclic_base_layer_wrapper.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c43434fb-d783-44c7-ad3b-0d35724b39ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_base_layer/src/eth_events.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_08ad6f62-753b-46e7-9cd2-8b7ea29e57b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_base_layer/src/ethereum_base_layer_contract.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_3c515d3d-9cf9-4c1e-9b32-4e5dd9a2a503?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_common/src/pending_classes.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c63ceb93-99ca-4678-8dbe-783c2b09dcbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_common/src/state.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_718d7bd5-a79e-4b4a-8901-5333ca6d702e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/block_hash_calculator.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_3f5e01da-de29-4da6-8152-d072047368f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/event_commitment.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_61214071-6899-4472-bfff-322665db38c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/receipt_commitment.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e27a2154-3653-4e3a-b422-6c40f5d3cb2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/state_diff_hash.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_820430b0-90f9-4ef6-931c-1ad62f93810f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/transaction_commitment.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1397e3b1-ae67-450f-8ebd-aa8889b87410?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/class_cache.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_78d7f003-abe7-4613-b73e-9d2f4cc89b89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/compression_utils.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e8ee0855-50dd-48cd-ba4d-31f67c26e2f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/data_availability.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_327e93a1-4be9-47c7-abd8-40a57f32c066?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/state.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_fdf78ec9-54f5-47ce-b4fe-8410d3d103e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/block_committer/commit.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_20e18c2d-674e-4c9b-bfb1-f6b5cbf1f257?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/block_committer/input.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8bf24b5f-b7e1-4afe-8ad5-2e16aa90aa6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/block_committer/state_diff_generator.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_01768651-840d-44f6-8b7c-02d899e4a581?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/create_facts_tree.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5b68b984-c8a8-4302-a862-a7eb56c9d55a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/db.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2e09af03-c1b5-468a-bc8d-537a9d36e529?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/node_serde.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e99fa73d-0662-45d4-8bf4-a1a481380a68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/traversal.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_dd776a27-1c42-4388-8986-41221e35554c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/index_db/db.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b9bd65df-a5d8-4aaa-8618-652cef8d87cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/index_db/leaves.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_482ccedb-651a-46af-9947-ddacff6cba3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/trie_traversal.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_02622c01-3a59-40e2-94d2-a11cdc60cb42?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/forest/filled_forest.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_86f3b0fb-29f6-4026-a3a4-07b52d905861?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/forest/original_skeleton_forest.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2c4df610-8ec1-4e29-8a25-d6d9acc0e82e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/forest/updated_skeleton_forest.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_37b4d6f2-d6cc-45d9-99b6-5e1fa4dac48b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/hash_function/hash.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_dec1851b-3e2a-48b6-a030-415983f7216d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_impl.rs -> Scope: Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_ad2035a1-228a-446f-9cfa-47e474a2ed1c?mode=deep",
+    "questions_generated": false
+  }
+]
