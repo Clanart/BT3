@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_state_sync/src/runner/mod.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_559449e2-48d0-418d-8d49-5bcdb63f5d1a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_state_sync_types/src/lib.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b604a1fd-79e0-4d3d-a270-14a82b615c90?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/base_layer.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c8d15c35-ff1c-41f4-b10f-3e4c2b61aa27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/block_hash.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_775af00d-740d-42a9-a5f2-fc469bc26f61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/body/events.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_93586d13-b4fa-40ed-827f-b542d652adac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/body/mod.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_390e3003-cd56-4990-a4f9-39bb3b677b77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/class.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9699256f-da33-494d-916c-c3ed1d8ccb06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/class_hash.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d2a1381d-7060-4e43-89dd-7e01b3968a70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/class_manager.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e7d2ee40-ebfc-4a2a-beb9-003d3c5edee7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/compiled_class.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_3eccc738-5d94-4bae-b18b-3007bdfe292c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/compression_utils.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0ea25232-6420-4232-a558-82b6ea4e93bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/consensus.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_08ca456e-9d0e-4e01-8687-68a14e0d8116?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/db/mod.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9f88e31c-96b9-40ed-9f56-b25c1f0ce90b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/db/serialization.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1c4257fb-4998-473f-a8dc-fa874765d4d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/deprecated/migrations.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_cce0e9b2-1bf6-4527-b9fa-029d85585187?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/deprecated/serializers.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b545d909-31ee-41ba-8d1c-2ad30fd9b4e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/global_root.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5f6be90a-876f-4778-854a-fdcef4e4a7f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/global_root_marker.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4315b374-eb81-4c9e-b29a-735795d7ef07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/header.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_22fee775-f21a-4a18-b072-c2609a172e75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/partial_block_hash.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b1423b1a-a223-4772-a37a-fe83977e5d1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/serialization/mod.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_65bfcf07-dfbb-4454-8f69-95f41e064edd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/serialization/serializers.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2474c032-d835-4e9b-b6e2-232c0d1cddf5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/state/data.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_f4917455-bf4e-406c-b580-e27ea34152c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/state/mod.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8aaa31db-abfa-4696-ba4d-e8d31fa4091e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/storage_reader_server.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_fd733b6a-904a-4f88-8265-7ee61b8bef16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_storage/src/storage_reader_types.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8193730b-426b-421b-8359-4b84a0a372ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/cached_state.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6113c7ea-432c-4b9c-ba62-4cd85bf0a931?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/contract_class_manager.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_3b34ff40-8f29-479c-bcdf-d2cfeddb72aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/state_api.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_cf6bc440-788a-41dd-8058-d51ceba8cdc5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/state_reader_and_contract_manager.rs -> Scope: High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_57ce4106-230f-43a8-a7fa-966438bebd4f?mode=deep",
+    "questions_generated": false
+  }
+]
