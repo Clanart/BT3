@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/blockifier/src/state/stateful_compression.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c2e82f8e-b973-4d9e-bcdb-a807f705d161?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_base_layer/src/cyclic_base_layer_wrapper.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_04a7162a-29ce-4d36-9477-ea745212ad24?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_base_layer/src/eth_events.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_db525ada-b5b6-45d0-983c-1d5cc660bf73?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_base_layer/src/ethereum_base_layer_contract.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a22bd0ab-5741-4ef7-b25b-99e2cec36272?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_common/src/pending_classes.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a74206ae-57a1-4cd5-895f-228fdaae7cef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/papyrus_common/src/state.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_40c9a5b3-71fd-4bb2-ac73-93c64e9822db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/block_hash_calculator.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_a7bb4c8a-708b-4738-aab6-ad24a4db0437?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/event_commitment.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d7a06df3-7bfb-4cef-ab7d-c69d44db8ce5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/receipt_commitment.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_eb3c6dca-e9fa-468c-8d4e-d52ff91b3bdd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/state_diff_hash.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4791e4fe-bcfe-47cb-ae31-d9e693fff725?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/block_hash/transaction_commitment.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2d83ffa3-f517-4fd3-b3a1-19977ad840f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/class_cache.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2596f73b-cdff-429b-b786-487de6e3cf8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/compression_utils.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_f214f440-5b2f-4dbd-abce-bcf6759236cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/data_availability.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1bebb3af-05d8-4f0b-a28f-b337234fa835?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/state.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1570ab2e-684f-4b12-b7fb-8570c4861394?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/block_committer/commit.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d4e46451-ad12-48cf-9e95-bd6776f2976f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/block_committer/input.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_bf0d3a23-1b7f-4ee4-96db-1a2b7017e290?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/block_committer/state_diff_generator.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c8b97139-4ffb-4522-8e79-c0567853aa35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/create_facts_tree.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7ac57151-d63a-480c-8731-261a2dabc507?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/db.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_889a1f9c-ee1b-4a96-9cea-ea9fcd47a5aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/node_serde.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2b0c954f-f373-43ed-ae8c-406e8d1be5cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/facts_db/traversal.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_807d5cfc-96d9-4c65-ba9d-6662c79d0692?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/index_db/db.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5fcdb0e3-a2b5-486a-b0ac-d37918221cea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/index_db/leaves.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2d5f90b6-01ea-4dfd-a902-f276274075b9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/db/trie_traversal.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_762e6278-57f3-4bfc-96df-e4077dd8b585?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/forest/filled_forest.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_8540f533-ddbc-40cc-ba6e-47aca05abb9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/forest/original_skeleton_forest.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6ae053c4-e856-44d2-8b26-47464993ed30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/forest/updated_skeleton_forest.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_f11a9703-6cdf-4a40-9edc-04f43266e311?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/hash_function/hash.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_ef6bf971-01ae-4a8b-881a-26c8cf313808?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_impl.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_60cb9165-a465-4b48-887e-79348b1eb70b?mode=deep",
+    "questions_generated": false
+  }
+]
