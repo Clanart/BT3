@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_batcher/src/commitment_manager/commitment_manager_impl.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e17220af-b761-4ee5-8bdc-7441a16f7ec0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_batcher/src/commitment_manager/state_committer.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9a730118-0ffe-4476-a94e-769c1449dc57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_batcher/src/pre_confirmed_cende_client.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7730096a-d96a-44a8-8eff-9eaae1fe8203?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/pending_sync.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_168fed30-50d6-47e0-9b8d-742ea57750d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/base_layer.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_dd0df22c-7907-403d-9179-eb7a1e4f0d15?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/central.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4c9ee1c3-8e58-4ae0-ab3a-5d56dd1b4303?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/central/state_update_stream.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_96b0d2df-872d-48a1-91eb-ebc790b69aba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_central_sync/src/sources/pending.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_c3cae7ab-622a-4271-a83e-33550628bf84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_storage.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d848a330-a8b9-44a0-8c3d-db13a5a4248d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_committer/src/committer.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9ad85af0-3687-48a2-bc4d-3988a3551c71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_consensus_orchestrator/src/cende/central_objects.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7e5fff3e-8519-4949-8ab9-8bd20e48dc67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/proof_archive_writer.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_28334904-ed64-44cd-8bbb-06ba805bf3b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/state_reader.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_40d3a17f-e76a-4d3f-8958-eeae9aabbf83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/catchupper.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4501d981-f0ee-441e-8c99-9c904bbb1948?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_provider.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_692cb479-6095-46de-9b73-5077d4951d06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_scraper.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_22641027-e63a-48bb-aa19-e20288fdaad8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_manager.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_061fff91-9181-4cb1-b466-67803b3aa502?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_record.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7c915738-893a-4ddd-aa50-3995ac2b90f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/block_data_stream_builder.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0fa7edd9-dd33-4ff7-a09d-12383827621e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/class.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_543cf3de-2061-4f71-86ed-c7655fc56c9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/header.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_20ba26bc-6199-43a4-8ac6-74f73f20a6ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/state_diff.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_bed323ca-cf7a-4d8d-923a-968ab8fa824e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/client/transaction.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7fb1956a-401a-40bd-974c-ca2730489b55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/server/mod.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_b6326eea-a243-49c6-9577-1f229565bf5c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_p2p_sync/src/server/utils.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_972f9eff-1b52-47d7-844a-e60b75aed31c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_proof_manager/src/proof_manager.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_73990960-d2b6-47e5-ab50-aac432dcb98d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_proof_manager/src/proof_storage.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2b843c18-2201-4d0f-83f8-964be7f7c926?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/pending.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_edf45b11-8b9d-4567-b73d-600e69b883da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/syncing_state.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_db40059a-987a-4c7b-b244-12194a63504d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_state_reader/src/apollo_state.rs -> Scope: Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4ab52411-5050-4313-88b9-33196bb9ac86?mode=deep",
+    "questions_generated": false
+  }
+]
