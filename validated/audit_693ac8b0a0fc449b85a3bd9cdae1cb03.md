@@ -1,0 +1,1 @@
+Let me look at the header validation and state diff commitment validation to understand if there are any guards.
