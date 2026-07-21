@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_serde.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_59da4e35-6e80-4f76-b27e-4fd0ed381f44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/tree.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7808f4cc-aabb-4829-ab6d-12ea47252687?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_committer/src/patricia_merkle_tree/types.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_07e04bbd-1abf-4aa1-9a76-84c4fe5af46f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/commitment_infos.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0b05cfe5-6b07-4d6e-a606-a36902e3f8cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_input.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_5fb08f2f-3883-416e-b4a7-54dbbeb25361?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_output.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d629f391-742c-43c3-8520-44e3688bfc64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/os_output_types.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0ee7aa65-5b97-45ca-bf75-879a735d95c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/io/virtual_os_output.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_56bdbfe9-6cd2-4f87-bfc8-06122c576d28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_os/src/runner.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_682644ea-0d45-45c1-88c4-dac2221c8841?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/db_layout.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_83397e72-7938-40fe-a0d7-df74ffea5d34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/felt.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_44388c21-f384-4cdd-8a17-460c66329a22?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/filled_tree/tree.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_343a7169-47f4-4c5c-b652-747dd4594a1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/node_data/inner_node.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_87c73c52-0092-4c3c-8482-0058541353ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/node_data/leaf.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9f07e721-eb60-428e-af13-e21dbf4cabbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/original_skeleton_tree/tree.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7daa7a29-cb32-4c5c-9ebe-89d1b1b0d0f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/traversal.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_dd7b1abd-0d89-4fff-a962-1bc0bad03d2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/types.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_318c4b78-a5d8-4b0d-bacb-1a7ffe0011d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia/src/patricia_merkle_tree/updated_skeleton_tree/tree.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9d5a660b-71fa-4e7f-b118-c9f0cfde7a2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/aerospike_storage.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_411b25a5-5b84-4893-8873-54c487e9afef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/map_storage.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_fac70196-62dc-4e60-a6d1-d2dfd7520aff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/mdbx_storage.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_1c54d5e6-d37f-4400-8a2e-2c3a6904e8df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/rocksdb_storage.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_0443df76-a7c5-4490-a607-e3ad81299aae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_patricia_storage/src/storage_trait.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_2c1ee823-d556-4180-9d6e-f9bdcb0282ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_proof_verifier/src/proof_verifier.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_6031989e-ceb8-445d-a678-05b07032583b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/proving/prover.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_4011fe9e-35b4-47ae-b790-26fd6695ae17?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/classes_provider.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_9f9c7f07-28b7-4388-8f8c-abacd6f388ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/committer_utils.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_e1b283d7-c71b-4c27-8fb4-6440dfd39eb1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/runner.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_7e75ab9e-a6ec-4111-aa21-b34b95359900?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/storage_proofs.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_850963ca-55a5-4fbc-a836-ead5283ab821?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_transaction_prover/src/running/virtual_block_executor.rs -> Scope: Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.'",
+    "url": "https://deepwiki.com/search/-generate-stateproofdatacommit_d4f868d9-7b1e-4006-94b4-07b39977f438?mode=deep",
+    "questions_generated": false
+  }
+]
