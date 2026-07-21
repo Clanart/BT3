@@ -1,0 +1,1 @@
+Let me check the `SimpleTable::insert` implementation to confirm the exact error behavior.
