@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/callbacks/IMetricOmmModifyLiquidityCallback.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_bcb4b111-9251-4d2c-b289-6002065cb218?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/callbacks/IMetricOmmSwapCallback.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_84b21c43-956c-45d0-8385-6fb0b2f637a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/extensions/IMetricOmmExtensions.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_2c1d358b-cd79-45a5-9565-080208373bc5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IExtsload.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_ae3f89e0-6f6d-4490-ae02-68a917ec103f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryOwner.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_5fa212b1-d12a-4af3-888e-6b8e57b33bb0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryPoolAdmin.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_9851a3f8-a44e-4a2c-af4e-cdeca5efdeec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactory.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_c11e3cf0-6632-431b-b47b-35de08d4a73c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolActions.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_e2e6240e-2b52-4df6-8ccf-9d7c6789a1c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolCollectFees.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_486509ab-606d-4a78-84e7-656db455e54a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolFactoryActions.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_b2273c58-9e3b-4c93-b688-be4754953ae2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPool.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_de5adcca-7a29-4075-b242-bfa3199c9ddc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IPriceProvider/IPriceProvider.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_2a23e2e7-0f69-4083-9985-70f8eef71691?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/BinDataLibrary.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_7f5c6456-ed51-4078-9264-41bc47a8ac55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/CallExtension.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_5ac27bcb-28e7-4cc5-9f0e-72d5985d7dd6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/LiquidityLib.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_d5e2e763-8709-4d09-9976-2c7c2a405318?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/PoolActions.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_e025b64d-2383-4133-9fbe-5d6fec0ea6fe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/PoolStateLibrary.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_848752ae-d91e-4a21-924f-d8c41f5dd4e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/SignedMath.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_f85e17aa-78fd-41d2-90fe-9cc80ca1f9bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/Slot0Library.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_778d6361-d035-4176-9c08-d02d8d73801f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/SwapMath.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_b0205fd0-f88d-4713-a7c4-3002cd9f3367?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/ValidateExtensionsConfig.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_5edca331-e617-4af3-9762-2b2e6ed121cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/MetricOmmPoolDeployer.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_2af85629-7788-4545-91b8-9612577de193?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/MetricOmmPoolFactory.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_c3827002-87d6-4c44-a7e0-e777951bffc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/MetricOmmPool.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_16ddf6b6-1618-4f80-bb7b-abb6bf89c52d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/FactoryOperation.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_31c13b35-6d40-4a01-9252-dd7fda3b5669?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/FactoryStorage.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_071a68aa-b3ac-410a-9316-5b312171f259?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/PoolExtensionsConfig.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_87954faf-184a-4013-b438-5eac01316467?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/PoolOperation.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_df16fa50-0110-4f5d-86b9-7ff58e4ff0b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/PoolStorage.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_0b306e05-abc0-4bd9-90fe-592cb3208a9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/Slot0.sol -> Scope: High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_7d6cd37e-e14e-4f9b-b807-621c360bd1cf?mode=deep",
+    "questions_generated": false
+  }
+]
