@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/AnchoredProviderFactory.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_9a24b97f-6e40-4b80-8b3d-3cee63921e64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_18818a27-6276-4bf4-a5a4-18149327b41a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchorSource.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_a000f7aa-821a-4387-8836-a907423c25b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_4927c51f-e11a-4f34-bb55-6621229b94c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_b630fb3f-e59f-422c-a29e-6f983ab7d28f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_54de938e-7bb6-4d05-8f85-23909f74bced?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_028c2bb7-8607-49dd-96d5-16ce77798256?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_4298b241-b4f5-421e-8877-6893c7390c0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_cc5750a0-4395-467b-b6d4-b222746aedd4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/OracleBase.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_6e477bef-5f2f-4927-bde9-b2e94b1b0cc6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/PythOracle.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_1ad4ed98-2a0f-49d7-97f9-e2096cca71cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/Codebook256.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_42cfb694-1e0a-44c3-9d28-0e7add83b541?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_deff3dcb-8238-4158-a603-1bbc8aae6c10?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/TimeMs.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_5f76e903-0db3-4a3f-b3d5-3e80474341d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/U64x32.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_afc026b5-48ab-40e9-bb5d-e665c85f5ea4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProviderFactory.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_e2094c85-ca8b-4426-a338-412cd42372ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProvider.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_12dad138-f613-4006-ab66-6bb2c6d7457e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_ff08da89-da18-4544-b4d2-b5c4d9681dda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProvider.sol -> Scope: Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_a0ebf6bf-0cd8-486c-a075-e7ceabad1890?mode=deep",
+    "questions_generated": false
+  }
+]
