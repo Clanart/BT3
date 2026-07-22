@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/AnchoredProviderFactory.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_b08e1c47-29aa-4853-a08a-a8b7c7dbaf9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_6946e6ed-48f2-42ca-8c79-469079f52c4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchorSource.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_ffe6d42b-003f-40e6-bb86-419220a26c62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_0ab0e95b-5b1c-4448-95db-a20aa486afef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_b2db4b4e-fb19-4be6-8ea6-a9ab8b1fcda5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_987c43aa-a3ad-41b9-b2ad-715fd55205bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_48a1395d-36c5-43b3-a088-86cbd8bbd73b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_3838f8c5-7ee1-4fb7-a105-d9e91700e930?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_2f50bf1e-a3df-4eb2-a70f-87ca2e1e20f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/OracleBase.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_e605a76a-2d2b-40ff-a5be-ca4f105d38ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/PythOracle.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_9d74d13a-cdfb-4bca-a87c-161d44e437b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/Codebook256.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_4f0a1ffa-2295-4932-bbee-13088401e3c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_7bf18475-a369-47b3-868e-869927055b66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/TimeMs.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_9f54aac2-2c07-450d-8004-a7d5b5b0a6e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/U64x32.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_b8e18306-0225-439b-b7e6-093850199133?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProviderFactory.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_c190f98b-52a1-4664-97e5-82f400fee604?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProvider.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_16c64961-1b31-4de3-89b0-c05faf50f4c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_5135c18d-37a0-412a-85ce-f1554edbea67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProvider.sol -> Scope: Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.'",
+    "url": "https://deepwiki.com/search/-generate-peripheryrouter-sett_03d5eb6f-7f6d-4d77-88ce-3cf79ea6553e?mode=deep",
+    "questions_generated": false
+  }
+]
