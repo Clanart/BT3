@@ -1,0 +1,1 @@
+I need to read the `TransientCallbackPool` library to complete the analysis, but based on what I've gathered, let me trace the full execution path carefully.
