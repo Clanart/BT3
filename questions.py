@@ -1,10 +1,9 @@
 import json
 import os
 
-# todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 25
-SOURCE_REPO = "starkware-libs/sequencer"
-REPO_NAME = "sequencer"
+SOURCE_REPO = 'codertjay/2026-07-metric-dev-oyakhil-main'
+REPO_NAME = '2026-07-metric-dev-oyakhil-main'
 run_number = os.environ.get("GITHUB_RUN_NUMBER") or os.environ.get(
     "CI_PIPELINE_IID", "0"
 )
@@ -45,192 +44,139 @@ else:
     else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
-
 scope_files = [
-    "crates/apollo_batcher/src/commitment_manager/commitment_manager_impl.rs",
-    "crates/apollo_batcher/src/commitment_manager/state_committer.rs",
-    "crates/apollo_batcher/src/pre_confirmed_cende_client.rs",
-    "crates/apollo_central_sync/src/pending_sync.rs",
-    "crates/apollo_central_sync/src/sources/base_layer.rs",
-    "crates/apollo_central_sync/src/sources/central.rs",
-    "crates/apollo_central_sync/src/sources/central/state_update_stream.rs",
-    "crates/apollo_central_sync/src/sources/pending.rs",
-    "crates/apollo_class_manager/src/class_storage.rs",
-    "crates/apollo_committer/src/committer.rs",
-    "crates/apollo_consensus_orchestrator/src/cende/central_objects.rs",
-    "crates/apollo_gateway/src/proof_archive_writer.rs",
-    "crates/apollo_gateway/src/state_reader.rs",
-    "crates/apollo_l1_provider/src/catchupper.rs",
-    "crates/apollo_l1_provider/src/l1_provider.rs",
-    "crates/apollo_l1_provider/src/l1_scraper.rs",
-    "crates/apollo_l1_provider/src/transaction_manager.rs",
-    "crates/apollo_l1_provider/src/transaction_record.rs",
-    "crates/apollo_p2p_sync/src/client/block_data_stream_builder.rs",
-    "crates/apollo_p2p_sync/src/client/class.rs",
-    "crates/apollo_p2p_sync/src/client/header.rs",
-    "crates/apollo_p2p_sync/src/client/state_diff.rs",
-    "crates/apollo_p2p_sync/src/client/transaction.rs",
-    "crates/apollo_p2p_sync/src/server/mod.rs",
-    "crates/apollo_p2p_sync/src/server/utils.rs",
-    "crates/apollo_proof_manager/src/proof_manager.rs",
-    "crates/apollo_proof_manager/src/proof_storage.rs",
-    "crates/apollo_rpc/src/pending.rs",
-    "crates/apollo_rpc/src/syncing_state.rs",
-    "crates/apollo_state_reader/src/apollo_state.rs",
-    "crates/apollo_state_sync/src/runner/mod.rs",
-    "crates/apollo_state_sync_types/src/lib.rs",
-    "crates/apollo_storage/src/base_layer.rs",
-    "crates/apollo_storage/src/block_hash.rs",
-    "crates/apollo_storage/src/body/events.rs",
-    "crates/apollo_storage/src/body/mod.rs",
-    "crates/apollo_storage/src/class.rs",
-    "crates/apollo_storage/src/class_hash.rs",
-    "crates/apollo_storage/src/class_manager.rs",
-    "crates/apollo_storage/src/compiled_class.rs",
-    "crates/apollo_storage/src/compression_utils.rs",
-    "crates/apollo_storage/src/consensus.rs",
-    "crates/apollo_storage/src/db/mod.rs",
-    "crates/apollo_storage/src/db/serialization.rs",
-    "crates/apollo_storage/src/deprecated/migrations.rs",
-    "crates/apollo_storage/src/deprecated/serializers.rs",
-    "crates/apollo_storage/src/global_root.rs",
-    "crates/apollo_storage/src/global_root_marker.rs",
-    "crates/apollo_storage/src/header.rs",
-    "crates/apollo_storage/src/partial_block_hash.rs",
-    "crates/apollo_storage/src/serialization/mod.rs",
-    "crates/apollo_storage/src/serialization/serializers.rs",
-    "crates/apollo_storage/src/state/data.rs",
-    "crates/apollo_storage/src/state/mod.rs",
-    "crates/apollo_storage/src/storage_reader_server.rs",
-    "crates/apollo_storage/src/storage_reader_types.rs",
-    "crates/blockifier/src/state/cached_state.rs",
-    "crates/blockifier/src/state/contract_class_manager.rs",
-    "crates/blockifier/src/state/state_api.rs",
-    "crates/blockifier/src/state/state_reader_and_contract_manager.rs",
-    "crates/blockifier/src/state/stateful_compression.rs",
-    "crates/papyrus_base_layer/src/cyclic_base_layer_wrapper.rs",
-    "crates/papyrus_base_layer/src/eth_events.rs",
-    "crates/papyrus_base_layer/src/ethereum_base_layer_contract.rs",
-    "crates/papyrus_common/src/pending_classes.rs",
-    "crates/papyrus_common/src/state.rs",
-    "crates/starknet_api/src/block_hash/block_hash_calculator.rs",
-    "crates/starknet_api/src/block_hash/event_commitment.rs",
-    "crates/starknet_api/src/block_hash/receipt_commitment.rs",
-    "crates/starknet_api/src/block_hash/state_diff_hash.rs",
-    "crates/starknet_api/src/block_hash/transaction_commitment.rs",
-    "crates/starknet_api/src/class_cache.rs",
-    "crates/starknet_api/src/compression_utils.rs",
-    "crates/starknet_api/src/data_availability.rs",
-    "crates/starknet_api/src/state.rs",
-    "crates/starknet_committer/src/block_committer/commit.rs",
-    "crates/starknet_committer/src/block_committer/input.rs",
-    "crates/starknet_committer/src/block_committer/state_diff_generator.rs",
-    "crates/starknet_committer/src/db/facts_db/create_facts_tree.rs",
-    "crates/starknet_committer/src/db/facts_db/db.rs",
-    "crates/starknet_committer/src/db/facts_db/node_serde.rs",
-    "crates/starknet_committer/src/db/facts_db/traversal.rs",
-    "crates/starknet_committer/src/db/index_db/db.rs",
-    "crates/starknet_committer/src/db/index_db/leaves.rs",
-    "crates/starknet_committer/src/db/trie_traversal.rs",
-    "crates/starknet_committer/src/forest/filled_forest.rs",
-    "crates/starknet_committer/src/forest/original_skeleton_forest.rs",
-    "crates/starknet_committer/src/forest/updated_skeleton_forest.rs",
-    "crates/starknet_committer/src/hash_function/hash.rs",
-    "crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_impl.rs",
-    "crates/starknet_committer/src/patricia_merkle_tree/leaf/leaf_serde.rs",
-    "crates/starknet_committer/src/patricia_merkle_tree/tree.rs",
-    "crates/starknet_committer/src/patricia_merkle_tree/types.rs",
-    "crates/starknet_os/src/commitment_infos.rs",
-    "crates/starknet_os/src/io/os_input.rs",
-    "crates/starknet_os/src/io/os_output.rs",
-    "crates/starknet_os/src/io/os_output_types.rs",
-    "crates/starknet_os/src/io/virtual_os_output.rs",
-    "crates/starknet_os/src/runner.rs",
-    "crates/starknet_patricia/src/db_layout.rs",
-    "crates/starknet_patricia/src/felt.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/filled_tree/tree.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/node_data/inner_node.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/node_data/leaf.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/original_skeleton_tree/tree.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/traversal.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/types.rs",
-    "crates/starknet_patricia/src/patricia_merkle_tree/updated_skeleton_tree/tree.rs",
-    "crates/starknet_patricia_storage/src/aerospike_storage.rs",
-    "crates/starknet_patricia_storage/src/map_storage.rs",
-    "crates/starknet_patricia_storage/src/mdbx_storage.rs",
-    "crates/starknet_patricia_storage/src/rocksdb_storage.rs",
-    "crates/starknet_patricia_storage/src/storage_trait.rs",
-    "crates/starknet_proof_verifier/src/proof_verifier.rs",
-    "crates/starknet_transaction_prover/src/proving/prover.rs",
-    "crates/starknet_transaction_prover/src/running/classes_provider.rs",
-    "crates/starknet_transaction_prover/src/running/committer_utils.rs",
-    "crates/starknet_transaction_prover/src/running/runner.rs",
-    "crates/starknet_transaction_prover/src/running/storage_proofs.rs",
-    "crates/starknet_transaction_prover/src/running/virtual_block_executor.rs",
+    'metric-core/contracts/interfaces/callbacks/IMetricOmmModifyLiquidityCallback.sol',
+    'metric-core/contracts/interfaces/callbacks/IMetricOmmSwapCallback.sol',
+    'metric-core/contracts/interfaces/extensions/IMetricOmmExtensions.sol',
+    'metric-core/contracts/interfaces/IExtsload.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryOwner.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryPoolAdmin.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactory.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolActions.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolCollectFees.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolFactoryActions.sol',
+    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPool.sol',
+    'metric-core/contracts/interfaces/IPriceProvider/IPriceProvider.sol',
+    'metric-core/contracts/libraries/BinDataLibrary.sol',
+    'metric-core/contracts/libraries/CallExtension.sol',
+    'metric-core/contracts/libraries/LiquidityLib.sol',
+    'metric-core/contracts/libraries/PoolActions.sol',
+    'metric-core/contracts/libraries/PoolStateLibrary.sol',
+    'metric-core/contracts/libraries/SignedMath.sol',
+    'metric-core/contracts/libraries/Slot0Library.sol',
+    'metric-core/contracts/libraries/SwapMath.sol',
+    'metric-core/contracts/libraries/ValidateExtensionsConfig.sol',
+    'metric-core/contracts/MetricOmmPoolDeployer.sol',
+    'metric-core/contracts/MetricOmmPoolFactory.sol',
+    'metric-core/contracts/MetricOmmPool.sol',
+    'metric-core/contracts/types/FactoryOperation.sol',
+    'metric-core/contracts/types/FactoryStorage.sol',
+    'metric-core/contracts/types/PoolExtensionsConfig.sol',
+    'metric-core/contracts/types/PoolOperation.sol',
+    'metric-core/contracts/types/PoolStorage.sol',
+    'metric-core/contracts/types/Slot0.sol',
+    'metric-core/contracts/utils/MetricReentrancyGuardTransient.sol',
+    'metric-periphery/contracts/base/MetricOmmSwapRouterBase.sol',
+    'metric-periphery/contracts/base/PeripheryPayments.sol',
+    'metric-periphery/contracts/base/SelfPermit.sol',
+    'metric-periphery/contracts/common/MetricOmmPoolStateView.sol',
+    'metric-periphery/contracts/extensions/base/BaseMetricExtension.sol',
+    'metric-periphery/contracts/extensions/DepositAllowlistExtension.sol',
+    'metric-periphery/contracts/extensions/OracleValueStopLossExtension.sol',
+    'metric-periphery/contracts/extensions/PriceVelocityGuardExtension.sol',
+    'metric-periphery/contracts/extensions/SwapAllowlistExtension.sol',
+    'metric-periphery/contracts/interfaces/extensions/IDepositAllowlistExtension.sol',
+    'metric-periphery/contracts/interfaces/extensions/IOracleValueStopLossExtension.sol',
+    'metric-periphery/contracts/interfaces/extensions/IPriceVelocityGuardExtension.sol',
+    'metric-periphery/contracts/interfaces/extensions/ISwapAllowlistExtension.sol',
+    'metric-periphery/contracts/interfaces/external/IERC20PermitAllowed.sol',
+    'metric-periphery/contracts/interfaces/IMetricOmmPoolLiquidityAdder.sol',
+    'metric-periphery/contracts/interfaces/IMetricOmmSimpleRouter.sol',
+    'metric-periphery/contracts/interfaces/IMetricOmmSwapQuoter.sol',
+    'metric-periphery/contracts/interfaces/IMulticall.sol',
+    'metric-periphery/contracts/interfaces/IPeripheryPayments.sol',
+    'metric-periphery/contracts/interfaces/ISelfPermit.sol',
+    'metric-periphery/contracts/interfaces/IWETH9.sol',
+    'metric-periphery/contracts/libraries/MetricOmmSwapInputs.sol',
+    'metric-periphery/contracts/libraries/MetricOmmSwapPath.sol',
+    'metric-periphery/contracts/libraries/MetricOmmSwapQuoteDecode.sol',
+    'metric-periphery/contracts/libraries/MetricOmmSwapResults.sol',
+    'metric-periphery/contracts/libraries/TransientCallbackPool.sol',
+    'metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol',
+    'metric-periphery/contracts/MetricOmmSimpleRouter.sol',
+    'smart-contracts-poc/contracts/AnchoredPriceProvider.sol',
+    'smart-contracts-poc/contracts/AnchoredProviderFactory.sol',
+    'smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol',
+    'smart-contracts-poc/contracts/interfaces/IAnchorSource.sol',
+    'smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol',
+    'smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol',
+    'smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol',
+    'smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol',
+    'smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md',
+    'smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md',
+    'smart-contracts-poc/contracts/oracles/providers/OracleBase.sol',
+    'smart-contracts-poc/contracts/oracles/providers/PythOracle.sol',
+    'smart-contracts-poc/contracts/oracles/utils/Codebook256.sol',
+    'smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol',
+    'smart-contracts-poc/contracts/oracles/utils/TimeMs.sol',
+    'smart-contracts-poc/contracts/oracles/utils/U64x32.sol',
+    'smart-contracts-poc/contracts/PriceProviderFactory.sol',
+    'smart-contracts-poc/contracts/PriceProvider.sol',
+    'smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol',
+    'smart-contracts-poc/contracts/ProtectedPriceProvider.sol',
 ]
 
 target_scopes = [
-    "Critical. Unprivileged-user-triggered state diff, Patricia trie, committer, storage proof, or global-root bug commits or verifies the wrong Starknet state root.",
-    "Critical. Unprivileged-user-triggered block hash, transaction commitment, event commitment, receipt commitment, data-availability, or CENDE path binds valid-looking block data to the wrong commitment.",
-    "Critical. Unprivileged-user-triggered state sync, central sync, p2p sync, pending sync, or L1 provider path installs or serves state/classes/transactions for the wrong block, root, height, or L1 event.",
-    "Critical. Unprivileged-user-triggered proof manager, transaction prover, SNOS input/output, or storage proof path proves a block, class, storage read, or execution result against mismatched data.",
-    "High. Unprivileged-user-triggered storage serialization, migration, compression, or deprecated storage path returns stale, duplicated, skipped, or cross-table data to execution, sync, or RPC.",
-    "High. Unprivileged-user-triggered pending block/class/state cache path leaks uncommitted or cross-block data into authoritative RPC, execution, proof, or sync flows.",
-    "High. Unprivileged-user-triggered L1 event scraper/provider ordering or reorg handling makes the sequencer consume, skip, duplicate, or misattribute L1 messages with state/proof impact.",
+    'Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.',
+    'Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.',
+    'High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.',
+    'High. Liquidity adder misroutes callback payments, owner/salt positions, or pool tokens, causing LP principal loss or unusable liquidity operations.',
+    'Medium. Quoter/state-view/path decoding returns values that predictably cause integrators to execute loss-making swaps above Sherlock thresholds.',
+    'Medium. Amount limit, deadline, token ordering, bitmap direction, or extensionData propagation mismatch breaks core swap functionality or user protection.',
 ]
 
-EXECUTION_ALLOWED_IMPACT_SCOPE = """## Allowed Impact Scope
-Only these impacts are valid:
-- Critical. Invalid or unauthorized Starknet transaction accepted through account validation, signature, nonce, chain id, fee/resource bound, paymaster, or account-deployment logic.
-- Critical. Wrong state, receipt, event, L1 message, class hash, storage value, or revert result from blockifier/syscall/execution logic for accepted input.
-- Critical. Incorrect fee, gas, bouncer, resource accounting, refund, balance, or L1 gas price effect with economic impact.
-- Critical. Wrong compiled class, CASM/native artifact, class hash, or contract code selected for execution.
-- High. Mempool/gateway/RPC admission accepts invalid transactions or rejects valid transactions before sequencing.
-- High. RPC execution, fee estimation, tracing, simulation, or pending view returns an authoritative-looking wrong value.
-- High. Transaction conversion or signature/hash logic binds the wrong signer, hash, type, or executable payload."""
+METRIC_ALLOWED_IMPACT_SCOPE = '## Metric OMM Allowed Impact Gate\nOnly accept contest-relevant impacts:\n- Critical/High/Medium direct loss of user principal, protocol fees, or owed LP assets above Sherlock thresholds.\n- Broken core pool functionality causing loss of funds or unusable withdraw/swap/liquidity flows.\n- Pool insolvency: balances fail to cover LP claims, owed fees, or swap settlement.\n- Swap conservation failure: trader receives more than the oracle/bin curve permits or pool fails to receive owed input.\n- Bad-price execution: stale, inverted, unbounded, or unclamped bid/ask quote reaches a pool swap.\n- Admin-boundary break: pool admin exceeds caps, bypasses timelocks, or factory/oracle role checks are bypassed by an unprivileged path.\nOut of scope: non-standard ERC20 behavior except USDC/USDT, malicious initial pool setup, trusted factory owner/oracle admin actions, correct off-chain oracle data, tests, mocks, scripts, deployments, docs-only issues with no code-level impact, gas-only DoS, crashes, style, or low-value dust.'
 
-SMART_AUDIT_PIVOTS = """## Sequencer-Specific Audit Pivots
-- Commitment construction: `BlockExecutionArtifacts::new` converts `CommitmentStateDiff` to `ThinStateDiff`, calls `calculate_block_commitments`, records `state_diff_length`, and derives `PartialBlockHashComponents`. Audit ordering and equality between execution outputs, signatures, state diff, commitments, and final proposal commitment.
-- Block hash/root path: `calculate_block_hash` chains versioned prefix, block number, global root, sequencer, timestamp, concatenated counts, state-diff/tx/event/receipt commitments, gas prices, Starknet version, zero field, and parent hash. For partial hashes, global root and parent hash are deliberately zero; questions must prove a wrong accepted commitment, not just notice that design.
-- Storage/proof path: storage serializers cover headers, transactions, state diffs, commitments, classes, statuses, DA modes, resource bounds, proof facts, and deprecated objects. Look for cross-table/key/version mismatches that feed execution, sync, RPC, proof manager, or transaction prover with a wrong authoritative value.
-- Sync/prover path: state sync/central sync/L1 provider data, proof-manager storage, SNOS input/output, and transaction prover storage proofs must agree on block number, state root, class hash, storage key, proof facts hash, L1 event identity, and pending markers."""
+SMART_AUDIT_PIVOTS = '## Smart Audit Pivots\n- Router path: `exactInput*` and `exactOutput*` set transient callback context, call pools, recurse through callbacks, enforce amount minimum/maximum, then clear context; verify every revert/early-return path cannot leave stale payable authority.\n- Callback path: `metricOmmSwapCallback` must accept only expected pool callers, pay the correct token from the correct payer, and bind multi-hop exact-output recursion to the original path and amount cap.\n- Payment path: `pay`, WETH unwrap, ETH refund, sweep, `multicall`, `selfPermit`, and DAI-style permits must not let arbitrary callers spend, trap, or redirect standard ERC20/ETH balances.\n- Lens/quoter path: quoted amounts, path decoding, state reads, and simulated reverts must match actual pool execution closely enough that integrations are not induced into fund-losing trades.'
 
 
 def question_generator(target_file: str) -> str:
     """
-    Generate state, proof, and data-commitment questions for one target.
+    Generate router, callback, payment, permit, quoter, and path questions for one Metric OMM target.
     """
 
     prompt = f"""
-    Generate state/proof/data-commitment security questions for this exact Starknet Sequencer target:
+    Generate periphery/router settlement security questions for this exact Metric OMM contest target:
 
     {target_file}
 
-    Lens:
-    Focus on whether Sequencer code stores, reconstructs, proves, syncs, and serves the exact data committed by Starknet protocol objects. Look at state diffs, Patricia tries, global roots, block hashes, transaction/event/receipt commitments, CENDE data, state sync, pending data, L1 events, SNOS inputs/outputs, proof storage, and transaction proving.
+    Project lens:
+    Focus on MetricOmmSimpleRouter, router base transient callback context, multicall, selfPermit, PeripheryPayments, WETH unwrap/refund flows, path libraries, quoters, liquidity adder, and state-view assumptions.
 
-    Execution/admission impact gate:
-    {EXECUTION_ALLOWED_IMPACT_SCOPE}
+    Contest impact gate:
+    {METRIC_ALLOWED_IMPACT_SCOPE}
 
     {SMART_AUDIT_PIVOTS}
 
     Rules:
-    * Treat `File Name:` as the exact file/module and `Scope:` as the only impact.
+    * Treat `File Name:` as the exact file and `Scope:` as the only impact.
     * Assume repo context is accessible; do not ask for code.
-    * Attacker is unprivileged: public RPC client, ordinary account/contract user, low-trust peer, or source of publicly consumed L1/L2 data.
-    * Do not grant state-sync provider operator, sequencer operator, validator/proposer, oracle, node admin, database, storage-service, or deployment privileges unless the question proves an unprivileged bypass.
-    * Malicious-peer-only/provider-only behavior is out of scope when bad data is rejected, ignored, disconnected, retried, rate-limited, or only wastes resources.
-    * Bad data that is rejected, ordinary DoS, unbounded CPU/memory/disk/cache/queue growth, OOM, leaks, performance-only degradation, tests, mocks, benches, generated data, scripts, deployments, and local tooling are out of scope unless one allowed impact above or the target Scope is concretely reached.
-    * Generate 16 to 22 high-signal questions, mostly crossing storage/sync/proof/execution boundaries.
-    * Name the exact value at risk: state root, global root, block hash, state diff, class hash, storage key/value, commitment leaf, proof fact, SNOS input/output, block number, L1 event id, pending marker, storage row, or RPC/sync result.
-    * Every question must be testable with a Rust unit/property/fuzz test, proof/state-sync test, or focused local reproducer.
+    * Attacker is unprivileged: trader, LP, router caller, public pool creator, contract caller, or public oracle pusher where the contract allows it.
+    * Standard ERC20 tokens are in scope, including USDC and USDT. Do not rely on non-standard token behavior.
+    * Factory owner and oracle admin are trusted. Pool admin is semi-trusted only inside configured caps and timelocks; bypassing those boundaries can be valid.
+    * Pools are assumed honestly configured and non-malicious at creation unless the question proves a validation bypass in scoped code.
+    * Correct off-chain oracle prices are assumed; only on-chain validation, attribution, staleness, encoding, or clipping failures are in scope.
+    * Exclude tests, mocks, scripts, deployments, local tooling, docs-only issues with no code-level impact, gas-only DoS, crashes, style, and dependency-only behavior.
+    * Generate 20 to 30 high-signal questions. Avoid generic checklist items and repeated root causes.
+    * Name the exact value at risk: token balance, LP shares, owed fees, bin state, bid/ask, price limit, provider address, feed id, timestamp, extension decision, admin cap, or pool registry entry.
+    * Every question must be testable with a Foundry unit, integration, fork, or property test.
 
-    Each question must include target symbol, attacker-controlled data, preconditions, call path, commitment invariant, exact corrupted value, scoped impact, and proof idea.
+    Each question must include target symbol, attacker-controlled input, required state, call path, invariant, corrupted value, scoped impact, and proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Symbol: symbol_or_module] Can attacker-controlled DATA under PRECONDITIONS pass CALL_PATH and violate COMMITMENT_OR_PROOF_INVARIANT, corrupting EXACT_VALUE with scoped impact SCOPE_IMPACT? Proof idea: build a Rust state/proof/property reproducer over PARAMETERS and assert EXPECTED_COMMITMENT_BINDING.",
+    "[File: {target_file}] [Symbol: symbol_or_module] Can attacker-controlled ROUTER_OR_PATH_INPUT under CALLBACK_CONTEXT reach CALL_PATH and violate PAYMENT_OR_PATH_INVARIANT, corrupting EXACT_TOKEN_AMOUNT_PAYER_OR_POOL with scoped impact SCOPE_IMPACT? Proof idea: build a Foundry router/multicall/property test over PATHS_AMOUNTS_PERMITS and assert EXPECTED_SETTLEMENT.",
     ]
     """
     return prompt
@@ -238,38 +184,41 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(question: str) -> str:
     """
-    Generate a state/proof question validation prompt.
+    Generate a focused Metric OMM exploit-question validation prompt.
     """
-    return f"""# STATE AND PROOF QUESTION REVIEW
+    return f"""# ROUTER PERIPHERY QUESTION REVIEW
 
-## Question
+## Exploit Question
 {question}
 
-## Boundary
-Audit only production Sequencer files listed in `scope_files`. Ignore tests, mocks, fixtures, generated data, docs, benches, scripts, deployments, and local tools.
+## Scope Rules
+- Audit only contest-relevant Metric OMM production code for Sherlock contest 1279.
+- Ignore tests, mocks, scripts, deployments, generated artifacts, local tooling, and docs-only issues with no code-level impact.
+- Do not ask for repo contents or claim files are missing.
 
-## Goal
-Decide whether the question can expose a reachable bug in state reconstruction, commitment binding, storage, sync, pending data, L1 event ordering, SNOS input/output, proof production, or proof verification.
+## Objective
+Decide whether the question leads to a real Metric OMM vulnerability. The attacker must enter through public pool, router, liquidity, permit, oracle-push, provider-read, or pool-creation/admin-boundary flows available in scoped code.
 
-A valid path must show unprivileged-controlled data causing production code to accept, store, prove, sync, or serve the wrong committed value. Prefer #NoVulnerability unless the exact corrupted root/hash/proof/storage/sync value is concrete.
+Reject claims needing trusted factory owner, oracle admin, deployment control, malicious pool setup, incorrect off-chain oracle data, or non-standard token behavior. Prefer #NoVulnerability unless the path proves direct fund loss, pool insolvency, bad-price execution, or broken core functionality under the contest rules.
 
-## Required Execution/Admission Impacts
-{EXECUTION_ALLOWED_IMPACT_SCOPE}
+## Required Impacts
+{METRIC_ALLOWED_IMPACT_SCOPE}
 
 {SMART_AUDIT_PIVOTS}
 
-## Review Steps
-1. Identify the production entrypoint and target symbol.
-2. Bind attacker data to block number, state root, block hash, class hash, trie path, L1 event, proof fact, or storage key.
-3. Trace validation, serialization, storage, proof, sync, and RPC decisions.
-4. Check existing hash/root/proof/order/cache/table guards.
-5. Reject if guards prevent the mismatch or impact is resource-only, unbounded-growth-only, or malicious-peer-only.
+## Method
+1. Trace the public or semi-trusted entrypoint.
+2. Map it to exact scoped files and functions.
+3. Check public router input -> transient callback context -> pool callback -> payment movement -> amount/deadline/slippage enforcement -> final balances.
+4. Identify the exact corrupted value and who loses funds or functionality.
+5. Reject if existing guards preserve the invariant or impact is below contest thresholds.
 
-## Fast Rejections
-- Requires operator/admin/validator/proposer/oracle/database/storage-service privileges.
-- Bad peer/provider data is rejected, ignored, retried, disconnected, or only wastes resources.
-- Ordinary crash, DoS, timeout, unbounded CPU/memory/disk/cache/queue growth, OOM, leaks, performance-only degradation, logging, style, dependency-only behavior.
-- No exact corrupted committed-data value or no unprivileged path.
+## Reject Immediately
+- Trusted owner/oracle admin/deployer assumptions without an unprivileged bypass.
+- Malicious pool initialization or user-chosen unsafe pool parameters without a scoped validation failure.
+- Non-standard ERC20 behavior, except USDC/USDT-compatible edge cases.
+- Correctly rejected stale/bad oracle data, harmless bad quotes, or view-only differences with no fund impact.
+- Gas-only DoS, crashes, unbounded growth, logs, style, dependency-only behavior, tests, mocks, scripts, deployments, local tooling, or docs-only issues with no code-level impact.
 
 ## Output
 If valid:
@@ -291,29 +240,29 @@ If invalid, output exactly:
 
 def scan_format(report: str) -> str:
     """
-    Generate an analog scan prompt for state/proof issues.
+    Generate a cross-project analog scan prompt for Metric OMM issues.
     """
-    prompt = f"""# STATE AND PROOF ANALOG SCAN
+    prompt = f"""# ANALOG SCAN PROMPT
 
 ## External Report
 {report}
 
 ## Task
-Use the external report only as a seed for a Sequencer-native analog in state roots, Patricia tries, block commitments, state diffs, storage serialization, pending data, L1 events, state sync, proof inputs/outputs, or transaction proving.
+Use the external report only as a bug-class seed. Search Metric OMM periphery router, payment, permit, WETH, multicall, quoter, path, and liquidity-adder code for a native analog with concrete user fund loss.
 
-## Required Execution/Admission Impacts
-{EXECUTION_ALLOWED_IMPACT_SCOPE}
+## Required Impacts
+{METRIC_ALLOWED_IMPACT_SCOPE}
 
 {SMART_AUDIT_PIVOTS}
 
-Report only if this repo has its own reachable root cause, unprivileged trigger, broken commitment/proof invariant, exact corrupted value, and matching target scope or one of the impacts above. Reject privileged operations, malicious-peer/provider-only noise, resource-only issues, unbounded growth, dependency-only behavior, and non-production files.
+Report only if this repository has its own reachable root cause, unprivileged or valid semi-trusted trigger, broken invariant, exact corrupted value, and matching target scope or allowed impact. Reject privileged operations, malicious setup assumptions, non-standard tokens, resource-only issues, dependency-only behavior, and anything outside the contest-relevant production surface.
 
 ## Work Plan
-1. Translate the external bug into a root, commitment, ordering, cache-key, serialization, or proof invariant.
-2. Map it to exact production symbols.
-3. Trace attacker-controlled data through validation and storage/proof/sync.
-4. Identify the wrong state root, block hash, commitment, state diff, class hash, storage value, proof fact, SNOS value, L1 event, pending marker, or RPC/sync result.
-5. Reject if existing checks preserve the invariant.
+1. Classify the external bug into one Metric OMM invariant.
+2. Map it to exact scoped files/functions.
+3. Trace attacker input through production validation and state updates.
+4. Identify the wrong token balance, LP claim, fee amount, bid/ask, provider/feed binding, extension decision, callback payment, admin cap, or registry value.
+5. Reject if existing guards preserve the invariant or the loss is not contest-relevant.
 
 ## Output (Strict)
 If valid analog exists, output:
@@ -338,40 +287,33 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict state/proof validation prompt.
+    Generate a strict Metric OMM validation prompt for security claims.
     """
-    prompt = f"""# STATE AND PROOF VALIDATION
+    prompt = f"""# VALIDATION PROMPT
 
 ## Security Claim
 {report}
 
-## Validation Rules
-- Validate only this claim against production Sequencer files in `scope_files`.
-- A valid issue must be reachable through unprivileged public RPC, transaction/contract, low-trust peer, state-sync, pending-data, or L1/L2 data paths.
-- Reject operator/admin/validator/proposer/oracle/database/storage-service assumptions, bad data that is rejected, malicious-peer-only behavior, ordinary crash/DoS, unbounded CPU/memory/disk/cache/queue growth, OOM, leaks, tests/mocks/generated files, docs, scripts, deployment tooling, dependency-only bugs, and downstream misuse.
-- The final impact must match one allowed scope below or one execution/admission impact, and name the exact corrupted value.
+## Rules
+- Validate only the submitted claim against contest-relevant Metric OMM production code in this repository.
+- Do not invent a stronger claim, change target scope, or upgrade severity without evidence.
+- A valid issue must be triggered by an unprivileged trader, LP, router caller, public pool creator, contract caller, or public oracle pusher where allowed by scoped code.
+- Factory owner and oracle admin are trusted. Pool admin is semi-trusted only inside caps and timelocks; prove bypass or fund-impacting cap failure.
+- Reject malicious setup, incorrect off-chain oracle data, non-standard ERC20 behavior except USDC/USDT, gas-only DoS, crashes, unbounded growth, logs, style, dependency-only bugs, tests, mocks, scripts, deployments, local tooling, and docs-only issues with no code-level impact.
+- The final impact must match one `target_scopes` item or allowed impact below, identify the exact corrupted value, and meet Sherlock contest thresholds.
 
-## Required Execution/Admission Impacts
-{EXECUTION_ALLOWED_IMPACT_SCOPE}
+## Required Impacts
+{METRIC_ALLOWED_IMPACT_SCOPE}
 
 {SMART_AUDIT_PIVOTS}
 
-## Allowed Impact Scope
-Only these impacts are valid:
-- Critical. Wrong Starknet state root accepted, committed, proved, or served due to state diff, Patricia trie, committer, storage proof, or global-root logic.
-- Critical. Wrong block hash, transaction/event/receipt commitment, or data-availability binding accepted for valid-looking block data.
-- Critical. State sync, central sync, p2p sync, pending sync, or L1 provider installs or serves data for the wrong block/root/height/L1 event.
-- Critical. Proof manager, transaction prover, SNOS input/output, or storage proof proves mismatched block/class/storage/execution data.
-- High. Storage serialization, migration, compression, or deprecated table path returns stale, skipped, duplicated, or cross-table data to production consumers.
-- High. Pending state/class/block cache leaks uncommitted or cross-block data into authoritative flows.
-- High. L1 event ordering or reorg handling consumes, skips, duplicates, or misattributes L1 messages with state/proof impact.
-
 ## Required Checks
-1. Exact file/function/line references.
-2. Broken root, commitment, ordering, cache-key, storage, serialization, sync, or proof invariant.
-3. Exploit path: preconditions -> attacker data -> call path -> bad committed value.
-4. Existing guards shown insufficient.
-5. Reproducible Rust test, property/fuzz test, state-sync/proof test, or local reproducer.
+1. Exact file/function references in scoped code.
+2. Clear broken Metric OMM invariant tied to funds, core functionality, bad-price execution, admin boundary, or provider/oracle integrity.
+3. Reachable exploit path: preconditions -> attacker input -> production call path -> bad value.
+4. Existing guards reviewed and shown insufficient.
+5. Exact wrong value named: token balance, LP shares, owed fees, bin totals, bid/ask, price limit, provider/feed id, timestamp, extension decision, callback context, fee cap, or registry entry.
+6. Reproducible proof path: Foundry unit, integration, fork, or property test.
 
 ## Output
 If valid, output exactly:
@@ -382,19 +324,19 @@ Audit Report
 [Clear vulnerability statement] - ([File: file_path])
 
 ## Summary
-[2-3 sentence summary]
+[2-3 sentence summary of the bug and impact]
 
 ## Finding Description
-[Code path, root cause, exploit flow, and failed guards]
+[Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete allowed impact and severity]
+[Concrete allowed repository impact and severity rationale]
 
 ## Likelihood Explanation
-[Attacker capability and conditions]
+[Attacker capability, required conditions, feasibility, repeatability]
 
 ## Recommendation
-[Specific fix]
+[Specific fix guidance]
 
 ## Proof of Concept
 [Minimal reproducible steps or test plan]
@@ -405,3 +347,5 @@ If invalid, output exactly:
 Output only one of the two outcomes above. No extra text.
 """
     return prompt
+
+

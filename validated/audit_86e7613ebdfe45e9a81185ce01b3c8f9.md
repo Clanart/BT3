@@ -1,1 +1,0 @@
-Let me look at the `calculate_state_diff_hash` function and the `deprecated_declared_classes` path more carefully.

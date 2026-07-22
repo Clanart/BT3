@@ -1,1 +1,0 @@
-Looking at the code carefully, I need to trace the full path from `estimate_message_fee` → `read_pending_data` → `client_pending_data_to_execution_pending_data` → `exec_estimate_fee`, and examine what the stale-pending fallback actually produces.

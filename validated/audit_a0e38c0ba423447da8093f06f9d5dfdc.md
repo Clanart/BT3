@@ -1,1 +1,0 @@
-Looking at the codebase for a sequencer-native analog to the "parameter passed but ignored, causing wrong recipient" pattern.

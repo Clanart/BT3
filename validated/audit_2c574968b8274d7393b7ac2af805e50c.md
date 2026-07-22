@@ -1,2 +1,0 @@
-### Title
-`ExecutionStateReader::get_compiled_class_hash` uses a stale declaration-block index after compiled-class-hash migration, returning wrong compiled class hash to RPC simulation/fee-estimation - (File: crates/apollo_rpc_execution

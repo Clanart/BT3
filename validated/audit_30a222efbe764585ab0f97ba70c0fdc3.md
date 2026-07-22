@@ -1,1 +1,0 @@
-Let me search for more specific patterns related to the analog.

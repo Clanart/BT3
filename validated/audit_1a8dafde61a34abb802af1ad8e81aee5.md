@@ -1,1 +1,0 @@
-Let me look at the gateway's full transaction flow to understand the proof verification ordering.
