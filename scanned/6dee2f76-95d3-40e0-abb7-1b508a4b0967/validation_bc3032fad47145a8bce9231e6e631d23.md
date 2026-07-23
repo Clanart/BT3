@@ -1,1 +1,0 @@
-I need to trace the full `exactOutput` → callback recursion path carefully, examining the transient storage management, callback caller checks, and payment logic.
