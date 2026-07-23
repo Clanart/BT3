@@ -1,1 +1,0 @@
-I need to trace the full `exactOutput` recursive callback flow and verify whether extension data is correctly routed to each hop.
