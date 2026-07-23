@@ -1,0 +1,11 @@
+[
+  "'File Name: crates/tx-sender-types/src/citrea.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: crates/tx-sender-types/src/clementine.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: crates/tx-sender-types/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: risc0-circuits/bridge-circuit/guest/src/main.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: risc0-circuits/bridge-circuit/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: risc0-circuits/header-chain/guest/src/main.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: risc0-circuits/header-chain/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: risc0-circuits/work-only/guest/src/main.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+  "'File Name: risc0-circuits/work-only/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'"
+]
