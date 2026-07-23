@@ -1,0 +1,47 @@
+[
+  {
+    "question": "'File Name: crates/tx-sender-types/src/citrea.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_bffd61dc-5801-40ac-9621-b49a61f1dbc3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/tx-sender-types/src/clementine.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_9bf3ba7d-3a74-4d7d-b326-d098e91bced8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/tx-sender-types/src/lib.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_2110bd1d-6e29-45d9-8a70-ba272b3db4f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/bridge-circuit/guest/src/main.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c8222214-5028-4ff5-8d54-7a93c5131535?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/bridge-circuit/src/lib.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_2f613266-316b-47ed-9b05-6a0ef68c4301?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/header-chain/guest/src/main.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_78767aea-d092-414a-98c3-82c8d02cdc74?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/header-chain/src/lib.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_8fd2f200-7ce2-4396-9faf-ee4c8de987e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/work-only/guest/src/main.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_6bf864ad-073e-4370-95b8-f798d7c8d0ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/work-only/src/lib.rs -> Scope: High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_5f43d84e-62af-4c15-9fb5-0d321f1141a1?mode=deep",
+    "questions_generated": false
+  }
+]
