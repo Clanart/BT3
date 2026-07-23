@@ -1,0 +1,1 @@
+[File: 'circuits-lib/src/common/constants.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'] [Symbol: NETWORK_TYPE / get_network() in circuits-lib/src/common/mod.rs] Can an attacker exploit the `#[cfg(test)] { \

@@ -1,0 +1,1 @@
+[File: 'core/src/rpc/ecdsa_verification_sig.rs -> Scope: Medium'] [Symbol: ClementineOperator::withdraw / verification_signature Option<String> handling] Can an unprivileged attacker submit a `WithdrawParamsWithSig` with `verification_signature` set to an empty string (`\

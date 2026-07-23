@@ -1,0 +1,1 @@
+[File: 'crates/clementine-tx-sender/src/nonstandard.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'] [Symbol: TxSender::send_testnet4_nonstandard_tx / tx[\
