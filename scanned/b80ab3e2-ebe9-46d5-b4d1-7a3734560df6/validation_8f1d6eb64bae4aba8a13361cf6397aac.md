@@ -1,1 +1,0 @@
-I need to read the full transient storage library and the `MetricOmmSwapInputs` library to complete the analysis.
