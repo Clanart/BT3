@@ -1,0 +1,1 @@
+[File: 'circuits-lib/src/bridge_circuit/mod.rs -> Scope: Medium'] [Symbol: storage_verify / existence sentinel] Can an attacker-controlled `EIP1186StorageProof.proof[1]` (arbitrary `Bytes`) under the state where the JMT proof at `proof[0]` is valid for a different key reach the check `storage_proof.proof[1] == Bytes::from(\

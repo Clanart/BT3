@@ -1,0 +1,1 @@
+[File: 'core/src/utils.rs -> Scope: Medium'] [Symbol: monitor_standalone_task] Can an attacker cause a tokio task cancellation (e.g., by triggering a server restart via the restart_background_tasks RPC) while a deposit_sign session is active, so that monitor_standalone_task observes JoinError::is_cancelled() == true, constructs a BridgeError via eyre::eyre!(\

@@ -1,0 +1,1 @@
+[File: 'circuits-lib/src/bridge_circuit/lc_proof.rs -> Scope: Medium'] [Symbol: verify_storage_proofs / storage_verify sentinel] Can an attacker-controlled EIP1186StorageProof whose proof[1] field is set to Bytes::from(\
