@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: bridge-circuit-host/src/bridge_circuit_host.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e58322b5-4aba-437b-9f5f-29c08985f6f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge-circuit-host/src/docker.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_622004d2-7605-47d1-aa68-94c1d4d66414?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge-circuit-host/src/lib.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_47f76a11-bcf2-4dae-bf58-25230f267614?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge-circuit-host/src/seal_format.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_13068e50-fb2f-45af-b7cc-b10543b48066?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge-circuit-host/src/structs.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_ed0db9d2-26b7-4eaf-8a5b-513c6116a840?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge-circuit-host/src/utils.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_1b504199-ccea-435d-ad74-875d9800b00e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/constants.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_28f42778-33d4-4238-9188-ffa7317650cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/groth16.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f156f611-cf00-48be-b5f2-33034b4212dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/groth16_verifier.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_110e9cda-2f39-4252-aaa8-009066fc541d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/lc_proof.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_97b9f551-1610-44b0-bf5b-89dfe05dfa30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/merkle_tree.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_11a9b574-7f92-4acb-970e-4e0ac6c46dfa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/mod.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c359dc30-9d9d-4afd-bf83-39fce9abd14a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/spv.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_bb23dece-49ee-4d83-b519-848d75158c15?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/storage_proof.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_51fad261-fef0-458c-b110-d5737b42cffa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/structs.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_7ed1146d-a4ee-4263-b794-00e36e69d71f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/bridge_circuit/transaction.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4d3a5b11-fb72-446c-87f9-7a33c6dd5a48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/common/constants.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_ceef327a-7d68-4314-9d2d-c4a9bd9f980c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/common/hashes.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e79da451-f28e-4f7a-8b35-0e1553f3662a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/common/mod.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_9b69a0f3-cc3c-4f96-ad44-ea56d67695c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/common/zkvm.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_22457dc9-5967-4c1b-9745-7c2897d54739?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/header_chain/mmr_guest.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4b971a17-263e-43b1-b10e-eca50186e56c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/header_chain/mmr_native.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_32b06291-8e21-4144-99b8-dc036094d1b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/header_chain/mod.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f49272d7-c563-4170-9fcf-199f3519139a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/lib.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c7e8a10a-5823-4b7a-805d-6afd9a41b36b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: circuits-lib/src/work_only/mod.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a2cfe9a9-5539-4fca-aa5d-eb9492d6d56d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/actor.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_3fda6b78-d782-4329-981c-135f9d20a201?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/aggregator.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e437f779-73f7-4498-886b-5b6895becd49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/bin/cli.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a30fe434-ec83-4ae5-9234-629a6eed458d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/bitcoin_syncer.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_afbaba9d-85c3-48ee-93d9-32bda809cf55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/bitvm_client.rs -> Scope: Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a074182b-3432-4d9d-a41f-6a109935e0b7?mode=deep",
+    "questions_generated": false
+  }
+]
