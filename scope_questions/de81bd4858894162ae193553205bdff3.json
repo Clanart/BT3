@@ -1,0 +1,47 @@
+[
+  {
+    "question": "'File Name: crates/tx-sender-types/src/citrea.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e473f991-de9c-408f-9a8c-0a7d1364b441?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/tx-sender-types/src/clementine.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4319d85f-52ff-47a3-b388-d9611cec8ef5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/tx-sender-types/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_1d429323-78f6-411a-8ba7-3bf7b3a20686?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/bridge-circuit/guest/src/main.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_52ea6b3a-591d-4627-862a-0bcadbb6a28b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/bridge-circuit/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d9128fce-0346-4018-94b7-e4dd4463db5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/header-chain/guest/src/main.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_ab825b0a-6bd4-4dce-a574-96c8f6085624?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/header-chain/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_0cda5a99-ac06-4f83-a009-46762dd949c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/work-only/guest/src/main.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d361e96b-2df6-4eb2-b7d4-4b0ca463de82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: risc0-circuits/work-only/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_462db1f6-4563-423d-b24f-527a8b06db28?mode=deep",
+    "questions_generated": false
+  }
+]
