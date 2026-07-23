@@ -1,1 +1,0 @@
-[File: 'crates/clementine-utils/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'] [Symbol: NamedEntity::LCP_SYNCER_CONSUMER_ID] Can an attacker-induced state where the `Operator` uses `LCP_SYNCER_CONSUMER_ID = \

@@ -1,1 +1,0 @@
-[File: 'crates/clementine-utils/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'] [Symbol: is_p2a_anchor] Can an attacker craft a bridge transaction output with `script_pubkey = ScriptBuf::from_hex(\
