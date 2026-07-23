@@ -1,1 +1,0 @@
-I need to carefully trace the `exactInput` execution path, the callback context, payment logic, and path validation to determine if the described residue-theft attack is achievable.

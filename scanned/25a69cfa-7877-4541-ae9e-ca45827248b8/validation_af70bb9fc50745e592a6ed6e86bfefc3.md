@@ -1,1 +1,0 @@
-I need to trace the full execution path through `exactInput`, the callback context management, and the payment flow to evaluate this claim.

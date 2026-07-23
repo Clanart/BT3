@@ -1,1 +1,0 @@
-I need to trace the full payment, callback, and amount-validation paths across the periphery to find an analog to the "no withdrawal amount check + no state update" bug class.
