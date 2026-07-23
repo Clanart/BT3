@@ -1,0 +1,13 @@
+# Q2878: Cross internal/public method boundary in parse_op_keys_with_deposit
+
+## Question
+Can an unprivileged attacker use the gRPC method path / `grpc-method` metadata to cross from a public path into logic that `parse_op_keys_with_deposit` assumes is only reachable internally, corrupting the parsed request object that downstream signing / settlement logic trusts and violating the invariant that parser logic must not turn attacker-controlled bytes into a trusted privileged request under a different meaning, leading to High. Role/pausing logic vulnerabilities that allow an unprivileged attacker to bypass safety controls?
+
+## Target
+- File/function: core/src/rpc/parser/verifier.rs::parse_op_keys_with_deposit
+- Entrypoint: public network gRPC request attempting to cross the verifier certificate/method boundary
+- Attacker controls: the gRPC method path / `grpc-method` metadata
+- Exploit idea: reach logic that assumes only self-calls are possible via the gRPC method path / `grpc-method` metadata
+- Invariant to test: parser logic must not turn attacker-controlled bytes into a trusted privileged request under a different meaning
+- Expected Immunefi impact: High. Role/pausing logic vulnerabilities that allow an unprivileged attacker to bypass safety controls
+- Fast validation: stand up the gRPC service with client verification enabled and fuzz peer-cert / method-path / stream-order combinations; assert the request never reaches the privileged body

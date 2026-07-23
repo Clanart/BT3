@@ -2,8 +2,8 @@ import json
 import os
 
 MAX_REPO = 25
-SOURCE_REPO = 'codertjay/2026-07-metric-dev-oyakhil-main'
-REPO_NAME = '2026-07-metric-dev-oyakhil-main'
+SOURCE_REPO = 'chainwayxyz/clementine'
+REPO_NAME = 'clementine'
 run_number = os.environ.get("GITHUB_RUN_NUMBER") or os.environ.get(
     "CI_PIPELINE_IID", "0"
 )
@@ -45,138 +45,215 @@ else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
 scope_files = [
-    'metric-core/contracts/interfaces/callbacks/IMetricOmmModifyLiquidityCallback.sol',
-    'metric-core/contracts/interfaces/callbacks/IMetricOmmSwapCallback.sol',
-    'metric-core/contracts/interfaces/extensions/IMetricOmmExtensions.sol',
-    'metric-core/contracts/interfaces/IExtsload.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryOwner.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryPoolAdmin.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactory.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolActions.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolCollectFees.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolFactoryActions.sol',
-    'metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPool.sol',
-    'metric-core/contracts/interfaces/IPriceProvider/IPriceProvider.sol',
-    'metric-core/contracts/libraries/BinDataLibrary.sol',
-    'metric-core/contracts/libraries/CallExtension.sol',
-    'metric-core/contracts/libraries/LiquidityLib.sol',
-    'metric-core/contracts/libraries/PoolActions.sol',
-    'metric-core/contracts/libraries/PoolStateLibrary.sol',
-    'metric-core/contracts/libraries/SignedMath.sol',
-    'metric-core/contracts/libraries/Slot0Library.sol',
-    'metric-core/contracts/libraries/SwapMath.sol',
-    'metric-core/contracts/libraries/ValidateExtensionsConfig.sol',
-    'metric-core/contracts/MetricOmmPoolDeployer.sol',
-    'metric-core/contracts/MetricOmmPoolFactory.sol',
-    'metric-core/contracts/MetricOmmPool.sol',
-    'metric-core/contracts/types/FactoryOperation.sol',
-    'metric-core/contracts/types/FactoryStorage.sol',
-    'metric-core/contracts/types/PoolExtensionsConfig.sol',
-    'metric-core/contracts/types/PoolOperation.sol',
-    'metric-core/contracts/types/PoolStorage.sol',
-    'metric-core/contracts/types/Slot0.sol',
-    'metric-core/contracts/utils/MetricReentrancyGuardTransient.sol',
-    'metric-periphery/contracts/base/MetricOmmSwapRouterBase.sol',
-    'metric-periphery/contracts/base/PeripheryPayments.sol',
-    'metric-periphery/contracts/base/SelfPermit.sol',
-    'metric-periphery/contracts/common/MetricOmmPoolStateView.sol',
-    'metric-periphery/contracts/extensions/base/BaseMetricExtension.sol',
-    'metric-periphery/contracts/extensions/DepositAllowlistExtension.sol',
-    'metric-periphery/contracts/extensions/OracleValueStopLossExtension.sol',
-    'metric-periphery/contracts/extensions/PriceVelocityGuardExtension.sol',
-    'metric-periphery/contracts/extensions/SwapAllowlistExtension.sol',
-    'metric-periphery/contracts/interfaces/extensions/IDepositAllowlistExtension.sol',
-    'metric-periphery/contracts/interfaces/extensions/IOracleValueStopLossExtension.sol',
-    'metric-periphery/contracts/interfaces/extensions/IPriceVelocityGuardExtension.sol',
-    'metric-periphery/contracts/interfaces/extensions/ISwapAllowlistExtension.sol',
-    'metric-periphery/contracts/interfaces/external/IERC20PermitAllowed.sol',
-    'metric-periphery/contracts/interfaces/IMetricOmmPoolLiquidityAdder.sol',
-    'metric-periphery/contracts/interfaces/IMetricOmmSimpleRouter.sol',
-    'metric-periphery/contracts/interfaces/IMetricOmmSwapQuoter.sol',
-    'metric-periphery/contracts/interfaces/IMulticall.sol',
-    'metric-periphery/contracts/interfaces/IPeripheryPayments.sol',
-    'metric-periphery/contracts/interfaces/ISelfPermit.sol',
-    'metric-periphery/contracts/interfaces/IWETH9.sol',
-    'metric-periphery/contracts/libraries/MetricOmmSwapInputs.sol',
-    'metric-periphery/contracts/libraries/MetricOmmSwapPath.sol',
-    'metric-periphery/contracts/libraries/MetricOmmSwapQuoteDecode.sol',
-    'metric-periphery/contracts/libraries/MetricOmmSwapResults.sol',
-    'metric-periphery/contracts/libraries/TransientCallbackPool.sol',
-    'metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol',
-    'metric-periphery/contracts/MetricOmmSimpleRouter.sol',
-    'smart-contracts-poc/contracts/AnchoredPriceProvider.sol',
-    'smart-contracts-poc/contracts/AnchoredProviderFactory.sol',
-    'smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol',
-    'smart-contracts-poc/contracts/interfaces/IAnchorSource.sol',
-    'smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol',
-    'smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol',
-    'smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol',
-    'smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol',
-    'smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md',
-    'smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md',
-    'smart-contracts-poc/contracts/oracles/providers/OracleBase.sol',
-    'smart-contracts-poc/contracts/oracles/providers/PythOracle.sol',
-    'smart-contracts-poc/contracts/oracles/utils/Codebook256.sol',
-    'smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol',
-    'smart-contracts-poc/contracts/oracles/utils/TimeMs.sol',
-    'smart-contracts-poc/contracts/oracles/utils/U64x32.sol',
-    'smart-contracts-poc/contracts/PriceProviderFactory.sol',
-    'smart-contracts-poc/contracts/PriceProvider.sol',
-    'smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol',
-    'smart-contracts-poc/contracts/ProtectedPriceProvider.sol',
+    'bridge-circuit-host/src/bridge_circuit_host.rs',
+    'bridge-circuit-host/src/docker.rs',
+    'bridge-circuit-host/src/lib.rs',
+    'bridge-circuit-host/src/seal_format.rs',
+    'bridge-circuit-host/src/structs.rs',
+    'bridge-circuit-host/src/utils.rs',
+    'circuits-lib/src/bridge_circuit/constants.rs',
+    'circuits-lib/src/bridge_circuit/groth16.rs',
+    'circuits-lib/src/bridge_circuit/groth16_verifier.rs',
+    'circuits-lib/src/bridge_circuit/lc_proof.rs',
+    'circuits-lib/src/bridge_circuit/merkle_tree.rs',
+    'circuits-lib/src/bridge_circuit/mod.rs',
+    'circuits-lib/src/bridge_circuit/spv.rs',
+    'circuits-lib/src/bridge_circuit/storage_proof.rs',
+    'circuits-lib/src/bridge_circuit/structs.rs',
+    'circuits-lib/src/bridge_circuit/transaction.rs',
+    'circuits-lib/src/common/constants.rs',
+    'circuits-lib/src/common/hashes.rs',
+    'circuits-lib/src/common/mod.rs',
+    'circuits-lib/src/common/zkvm.rs',
+    'circuits-lib/src/header_chain/mmr_guest.rs',
+    'circuits-lib/src/header_chain/mmr_native.rs',
+    'circuits-lib/src/header_chain/mod.rs',
+    'circuits-lib/src/lib.rs',
+    'circuits-lib/src/work_only/mod.rs',
+    'core/src/actor.rs',
+    'core/src/aggregator.rs',
+    'core/src/bin/cli.rs',
+    'core/src/bitcoin_syncer.rs',
+    'core/src/bitvm_client.rs',
+    'core/src/builder/address.rs',
+    'core/src/builder/block_cache.rs',
+    'core/src/builder/mod.rs',
+    'core/src/builder/script.rs',
+    'core/src/builder/sighash.rs',
+    'core/src/builder/transaction/challenge.rs',
+    'core/src/builder/transaction/creator.rs',
+    'core/src/builder/transaction/deposit_signature_owner.rs',
+    'core/src/builder/transaction/input.rs',
+    'core/src/builder/transaction/mod.rs',
+    'core/src/builder/transaction/operator_assert.rs',
+    'core/src/builder/transaction/operator_collateral.rs',
+    'core/src/builder/transaction/operator_reimburse.rs',
+    'core/src/builder/transaction/output.rs',
+    'core/src/builder/transaction/sign.rs',
+    'core/src/builder/transaction/txhandler.rs',
+    'core/src/citrea.rs',
+    'core/src/cli.rs',
+    'core/src/compatibility.rs',
+    'core/src/config/env.rs',
+    'core/src/config/mod.rs',
+    'core/src/config/protocol.rs',
+    'core/src/constants.rs',
+    'core/src/database/aggregator.rs',
+    'core/src/database/bitcoin_syncer.rs',
+    'core/src/database/header_chain_prover.rs',
+    'core/src/database/migrations/0001_add_last_bump_block_height.down.sql',
+    'core/src/database/migrations/0001_add_last_bump_block_height.up.sql',
+    'core/src/database/migrations/0002_txsender_seen_at_height_no_bitcoin_syncer_fk.down.sql',
+    'core/src/database/migrations/0002_txsender_seen_at_height_no_bitcoin_syncer_fk.up.sql',
+    'core/src/database/migrations/0003_tx_sender_and_lcp_update.down.sql',
+    'core/src/database/migrations/0003_tx_sender_and_lcp_update.up.sql',
+    'core/src/database/migrations/0004_verifier_lcp_syncer_handler.down.sql',
+    'core/src/database/migrations/0004_verifier_lcp_syncer_handler.up.sql',
+    'core/src/database/mod.rs',
+    'core/src/database/operator.rs',
+    'core/src/database/pgmq.sql',
+    'core/src/database/schema.sql',
+    'core/src/database/state_machine.rs',
+    'core/src/database/verifier.rs',
+    'core/src/database/wrapper.rs',
+    'core/src/deposit.rs',
+    'core/src/encryption.rs',
+    'core/src/errors.rs',
+    'core/src/extended_bitcoin_rpc.rs',
+    'core/src/header_chain_prover.rs',
+    'core/src/lib.rs',
+    'core/src/main.rs',
+    'core/src/musig2.rs',
+    'core/src/operator.rs',
+    'core/src/rpc/aggregator.rs',
+    'core/src/rpc/clementine.proto',
+    'core/src/rpc/ecdsa_verification_sig.rs',
+    'core/src/rpc/error.rs',
+    'core/src/rpc/interceptors.rs',
+    'core/src/rpc/mod.rs',
+    'core/src/rpc/operator.rs',
+    'core/src/rpc/parser/mod.rs',
+    'core/src/rpc/parser/operator.rs',
+    'core/src/rpc/parser/verifier.rs',
+    'core/src/rpc/verifier.rs',
+    'core/src/servers.rs',
+    'core/src/states/context.rs',
+    'core/src/states/event.rs',
+    'core/src/states/kickoff.rs',
+    'core/src/states/matcher.rs',
+    'core/src/states/mod.rs',
+    'core/src/states/round.rs',
+    'core/src/states/task.rs',
+    'core/src/task/aggregator_metric_publisher.rs',
+    'core/src/task/entity_metric_publisher.rs',
+    'core/src/task/lcp_syncer.rs',
+    'core/src/task/manager.rs',
+    'core/src/task/mod.rs',
+    'core/src/task/payout_checker.rs',
+    'core/src/task/status_monitor.rs',
+    'core/src/task/tx_sender.rs',
+    'core/src/tx_sender_ext.rs',
+    'core/src/tx_sender_queue.rs',
+    'core/src/utils.rs',
+    'core/src/verifier.rs',
+    'crates/clementine-config/src/grpc.rs',
+    'crates/clementine-config/src/lib.rs',
+    'crates/clementine-config/src/protocol.rs',
+    'crates/clementine-config/src/telemetry.rs',
+    'crates/clementine-config/src/tx_sender.rs',
+    'crates/clementine-errors/src/lib.rs',
+    'crates/clementine-extended-rpc/src/client.rs',
+    'crates/clementine-extended-rpc/src/lib.rs',
+    'crates/clementine-extended-rpc/src/retry.rs',
+    'crates/clementine-primitives/src/lib.rs',
+    'crates/clementine-tx-sender/migrations/0001_init.up.sql',
+    'crates/clementine-tx-sender/src/citrea/data_serialization.rs',
+    'crates/clementine-tx-sender/src/citrea/mod.rs',
+    'crates/clementine-tx-sender/src/citrea/reveal_scripts.rs',
+    'crates/clementine-tx-sender/src/citrea/sync.rs',
+    'crates/clementine-tx-sender/src/client.rs',
+    'crates/clementine-tx-sender/src/config.rs',
+    'crates/clementine-tx-sender/src/confirmations.rs',
+    'crates/clementine-tx-sender/src/cpfp.rs',
+    'crates/clementine-tx-sender/src/db/citrea.rs',
+    'crates/clementine-tx-sender/src/db/mod.rs',
+    'crates/clementine-tx-sender/src/db/tx_sender.rs',
+    'crates/clementine-tx-sender/src/db/wrapper.rs',
+    'crates/clementine-tx-sender/src/jsonrpc/client.rs',
+    'crates/clementine-tx-sender/src/jsonrpc/mod.rs',
+    'crates/clementine-tx-sender/src/jsonrpc/server.rs',
+    'crates/clementine-tx-sender/src/lib.rs',
+    'crates/clementine-tx-sender/src/main.rs',
+    'crates/clementine-tx-sender/src/nonstandard.rs',
+    'crates/clementine-tx-sender/src/rbf.rs',
+    'crates/clementine-tx-sender/src/rpc_errors.rs',
+    'crates/clementine-tx-sender/src/signer.rs',
+    'crates/clementine-tx-sender/src/task.rs',
+    'crates/clementine-utils/src/address.rs',
+    'crates/clementine-utils/src/lib.rs',
+    'crates/clementine-utils/src/sign.rs',
+    'crates/clementine-utils/src/tracing.rs',
+    'crates/clementine-utils/src/traits.rs',
+    'crates/tx-sender-jsonrpc-client/src/lib.rs',
+    'crates/tx-sender-types/src/citrea.rs',
+    'crates/tx-sender-types/src/clementine.rs',
+    'crates/tx-sender-types/src/lib.rs',
+    'risc0-circuits/bridge-circuit/guest/src/main.rs',
+    'risc0-circuits/bridge-circuit/src/lib.rs',
+    'risc0-circuits/header-chain/guest/src/main.rs',
+    'risc0-circuits/header-chain/src/lib.rs',
+    'risc0-circuits/work-only/guest/src/main.rs',
+    'risc0-circuits/work-only/src/lib.rs',
 ]
 
 target_scopes = [
-    'Critical. Router callback, transient context, or multicall bug allows unauthorized token payment, stale payer reuse, or recipient redirection causing direct user fund loss.',
-    'Critical. Exact-output recursion or path handling causes router to overpay input, underdeliver output, or settle against the wrong pool/token pair.',
-    'High. Permit, WETH, refund, sweep, or periphery payment flow lets an unprivileged caller steal or strand user-approved standard ERC20/ETH value.',
-    'High. Liquidity adder misroutes callback payments, owner/salt positions, or pool tokens, causing LP principal loss or unusable liquidity operations.',
-    'Medium. Quoter/state-view/path decoding returns values that predictably cause integrators to execute loss-making swaps above Sherlock thresholds.',
-    'Medium. Amount limit, deadline, token ordering, bitmap direction, or extensionData propagation mismatch breaks core swap functionality or user protection.',
+    'Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.',
+    'Critical. An unprivileged attacker can make header-chain, work-only, bridge-circuit, SPV, light-client, storage-proof, or network/method binding logic accept a forged, replayed, stale, or wrong-context proof that changes bridge outcomes.',
+    'High. An unprivileged attacker can replay, confuse, exhaust, or misbind MuSig2 nonce/session/signature material into an unauthorized move, payout, reimbursement, or challenge transaction.',
+    'High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.',
+    'High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.',
+    'Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.',
 ]
 
-METRIC_ALLOWED_IMPACT_SCOPE = '## Metric OMM Allowed Impact Gate\nOnly accept contest-relevant impacts:\n- Critical/High/Medium direct loss of user principal, protocol fees, or owed LP assets above Sherlock thresholds.\n- Broken core pool functionality causing loss of funds or unusable withdraw/swap/liquidity flows.\n- Pool insolvency: balances fail to cover LP claims, owed fees, or swap settlement.\n- Swap conservation failure: trader receives more than the oracle/bin curve permits or pool fails to receive owed input.\n- Bad-price execution: stale, inverted, unbounded, or unclamped bid/ask quote reaches a pool swap.\n- Admin-boundary break: pool admin exceeds caps, bypasses timelocks, or factory/oracle role checks are bypassed by an unprivileged path.\nOut of scope: non-standard ERC20 behavior except USDC/USDT, malicious initial pool setup, trusted factory owner/oracle admin actions, correct off-chain oracle data, tests, mocks, scripts, deployments, docs-only issues with no code-level impact, gas-only DoS, crashes, style, or low-value dust.'
+CLEMENTINE_ALLOWED_IMPACT_SCOPE = '## Clementine Allowed Impact Gate\nOnly accept repository-relevant impacts:\n- Critical/High/Medium theft, loss, permanent lock, or slashable exposure of bridged BTC, operator collateral, reimbursement outputs, bridge-controlled UTXOs, or tx-sender-managed balances.\n- Acceptance of a forged, replayed, stale, cross-network, or otherwise invalid header-chain, work-only, bridge, SPV, light-client, or storage proof that changes deposit, withdrawal, or challenge outcomes.\n- Unauthorized state transition in deposit, payout, challenge, reimbursement, round, or watchtower flow that breaks bridge safety/liveness with material fund impact.\n- Authentication or authorization bypass in gRPC, mTLS, actor roles, signer flow, or database-backed state handling that grants privileged bridge actions to the wrong party.\nOut of scope: tests, mocks, fixtures, scripts, docs-only issues, local tooling, manifest/build/generated files, operator config mistakes without a code bug, privileged key compromise, honest external chain/node behavior unless scoped validation fails, fee-only issues, crashes, style, and dependency-only behavior.'
 
-SMART_AUDIT_PIVOTS = '## Smart Audit Pivots\n- Router path: `exactInput*` and `exactOutput*` set transient callback context, call pools, recurse through callbacks, enforce amount minimum/maximum, then clear context; verify every revert/early-return path cannot leave stale payable authority.\n- Callback path: `metricOmmSwapCallback` must accept only expected pool callers, pay the correct token from the correct payer, and bind multi-hop exact-output recursion to the original path and amount cap.\n- Payment path: `pay`, WETH unwrap, ETH refund, sweep, `multicall`, `selfPermit`, and DAI-style permits must not let arbitrary callers spend, trap, or redirect standard ERC20/ETH balances.\n- Lens/quoter path: quoted amounts, path decoding, state reads, and simulated reverts must match actual pool execution closely enough that integrations are not induced into fund-losing trades.'
+CLEMENTINE_AUDIT_PIVOTS = '## Smart Audit Pivots\n- Deposit path: nonce aggregation, partial signatures, move-tx creation, deposit finalization, and session lifecycle must bind the right deposit, round, keys, and scripts.\n- Withdrawal/challenge path: kickoff, payout, watchtower challenge, operator assert/disprove, reimbursement, and collateral handling must preserve canonical-chain and script-path invariants.\n- Proof path: header-chain -> work-only -> bridge-circuit -> light-client/storage/SPV verification must bind method IDs, network, block data, work, and witness contents correctly.\n- Trust-boundary path: gRPC/mTLS auth, actor RPCs, parser/interceptor logic, tx-sender RPC, DB state transitions, queues, and automation tasks must not let the wrong party advance bridge state or spend funds.'
 
 
 def question_generator(target_file: str) -> str:
     """
-    Generate router, callback, payment, permit, quoter, and path questions for one Metric OMM target.
+    Generate security questions for one Clementine target.
     """
 
     prompt = f"""
-    Generate periphery/router settlement security questions for this exact Metric OMM contest target:
+    Generate Clementine security questions for this exact target file:
 
     {target_file}
 
     Project lens:
-    Focus on MetricOmmSimpleRouter, router base transient callback context, multicall, selfPermit, PeripheryPayments, WETH unwrap/refund flows, path libraries, quoters, liquidity adder, and state-view assumptions.
+    Clementine is a BitVM-based BTC <-> Citrea bridge. Focus on deposit signing, move tx creation, payout/challenge flows, proof verification, actor RPC auth, database/state transitions, and tx-sender automation.
 
-    Contest impact gate:
-    {METRIC_ALLOWED_IMPACT_SCOPE}
+    Impact gate:
+    {CLEMENTINE_ALLOWED_IMPACT_SCOPE}
 
-    {SMART_AUDIT_PIVOTS}
+    {CLEMENTINE_AUDIT_PIVOTS}
 
     Rules:
     * Treat `File Name:` as the exact file and `Scope:` as the only impact.
     * Assume repo context is accessible; do not ask for code.
-    * Attacker is unprivileged: trader, LP, router caller, public pool creator, contract caller, or public oracle pusher where the contract allows it.
-    * Standard ERC20 tokens are in scope, including USDC and USDT. Do not rely on non-standard token behavior.
-    * Factory owner and oracle admin are trusted. Pool admin is semi-trusted only inside configured caps and timelocks; bypassing those boundaries can be valid.
-    * Pools are assumed honestly configured and non-malicious at creation unless the question proves a validation bypass in scoped code.
-    * Correct off-chain oracle prices are assumed; only on-chain validation, attribution, staleness, encoding, or clipping failures are in scope.
-    * Exclude tests, mocks, scripts, deployments, local tooling, docs-only issues with no code-level impact, gas-only DoS, crashes, style, and dependency-only behavior.
-    * Generate 20 to 30 high-signal questions. Avoid generic checklist items and repeated root causes.
-    * Name the exact value at risk: token balance, LP shares, owed fees, bin state, bid/ask, price limit, provider address, feed id, timestamp, extension decision, admin cap, or pool registry entry.
-    * Every question must be testable with a Foundry unit, integration, fork, or property test.
+    * The attacker is strictly unprivileged. Do not rely on operator, verifier, aggregator, watchtower, admin, signer, database, or infrastructure control unless the bug shows how an unprivileged attacker reaches the same effect through scoped code.
+    * Trusted key compromise, malicious deployment, and off-repo infrastructure failures are out of scope unless scoped code fails to authenticate, bind, or validate them.
+    * Exclude tests, mocks, fixtures, scripts, docs-only issues, local tooling, manifest/build/generated files, fee-only issues, crashes, style, and dependency-only behavior.
+    * Generate 18 to 26 high-signal questions with non-overlapping root causes.
+    * Name the exact corrupted value: bridged BTC amount, collateral UTXO, reimbursement output, nonce session, partial signature set, method ID, network binding, total work, block hash, storage slot, DB state, queue item, or RPC auth decision.
+    * Every question must be testable with a Rust unit, integration, property, or fuzz-style test.
 
-    Each question must include target symbol, attacker-controlled input, required state, call path, invariant, corrupted value, scoped impact, and proof idea.
+    Each question must include target symbol, attacker-controlled input, required state, call path, broken invariant, corrupted value, scoped impact, and proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Symbol: symbol_or_module] Can attacker-controlled ROUTER_OR_PATH_INPUT under CALLBACK_CONTEXT reach CALL_PATH and violate PAYMENT_OR_PATH_INVARIANT, corrupting EXACT_TOKEN_AMOUNT_PAYER_OR_POOL with scoped impact SCOPE_IMPACT? Proof idea: build a Foundry router/multicall/property test over PATHS_AMOUNTS_PERMITS and assert EXPECTED_SETTLEMENT.",
+    "[File: {target_file}] [Symbol: symbol_or_module] Can attacker-controlled INPUT under REQUIRED_STATE reach CALL_PATH and violate BRIDGE_OR_PROOF_INVARIANT, corrupting EXACT_VALUE_AT_RISK with scoped impact SCOPE_IMPACT? Proof idea: write a Rust test that drives ENTRYPOINT through the vulnerable state transition and asserts EXPECTED_SAFETY_PROPERTY.",
     ]
     """
     return prompt
@@ -184,41 +261,39 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(question: str) -> str:
     """
-    Generate a focused Metric OMM exploit-question validation prompt.
+    Generate a focused Clementine exploit-question validation prompt.
     """
-    return f"""# ROUTER PERIPHERY QUESTION REVIEW
+    return f"""# CLEMENTINE QUESTION REVIEW
 
 ## Exploit Question
 {question}
 
 ## Scope Rules
-- Audit only contest-relevant Metric OMM production code for Sherlock contest 1279.
-- Ignore tests, mocks, scripts, deployments, generated artifacts, local tooling, and docs-only issues with no code-level impact.
+- Audit only Clementine production code in this repository.
+- Ignore tests, mocks, fixtures, scripts, generated artifacts, local tooling, and docs-only issues with no code-level impact.
 - Do not ask for repo contents or claim files are missing.
 
 ## Objective
-Decide whether the question leads to a real Metric OMM vulnerability. The attacker must enter through public pool, router, liquidity, permit, oracle-push, provider-read, or pool-creation/admin-boundary flows available in scoped code.
+    Decide whether the question leads to a real Clementine vulnerability. The attacker must be unprivileged and must enter through deposit, payout, challenge, proof, RPC, actor, automation, database, or tx-sender flows available in scoped code.
 
-Reject claims needing trusted factory owner, oracle admin, deployment control, malicious pool setup, incorrect off-chain oracle data, or non-standard token behavior. Prefer #NoVulnerability unless the path proves direct fund loss, pool insolvency, bad-price execution, or broken core functionality under the contest rules.
+    Reject claims needing privileged key compromise, malicious deployment, off-repo infrastructure control, or honest external chain behavior without a scoped validation failure. Reject any claim that needs the attacker to already be operator, verifier, aggregator, watchtower, or admin. Prefer #NoVulnerability unless the path proves material fund loss, invalid proof acceptance, unauthorized privileged action, or broken bridge functionality.
 
 ## Required Impacts
-{METRIC_ALLOWED_IMPACT_SCOPE}
+{CLEMENTINE_ALLOWED_IMPACT_SCOPE}
 
-{SMART_AUDIT_PIVOTS}
+{CLEMENTINE_AUDIT_PIVOTS}
 
 ## Method
-1. Trace the public or semi-trusted entrypoint.
+1. Trace the unprivileged entrypoint.
 2. Map it to exact scoped files and functions.
-3. Check public router input -> transient callback context -> pool callback -> payment movement -> amount/deadline/slippage enforcement -> final balances.
-4. Identify the exact corrupted value and who loses funds or functionality.
-5. Reject if existing guards preserve the invariant or impact is below contest thresholds.
+3. Follow the full path through actor logic, transaction construction, proof validation, DB state transitions, and final spend or state effects.
+4. Identify the exact corrupted value and who loses funds, authority, or liveness.
+5. Reject if existing guards preserve the invariant or if impact is immaterial.
 
 ## Reject Immediately
-- Trusted owner/oracle admin/deployer assumptions without an unprivileged bypass.
-- Malicious pool initialization or user-chosen unsafe pool parameters without a scoped validation failure.
-- Non-standard ERC20 behavior, except USDC/USDT-compatible edge cases.
-- Correctly rejected stale/bad oracle data, harmless bad quotes, or view-only differences with no fund impact.
-- Gas-only DoS, crashes, unbounded growth, logs, style, dependency-only behavior, tests, mocks, scripts, deployments, local tooling, or docs-only issues with no code-level impact.
+- Privileged key compromise, operator config mistakes, or malicious deployment assumptions without a scoped code bypass.
+- Honest Bitcoin, Citrea, postgres, or external service behavior unless scoped validation/binding is missing.
+- View-only mismatches, harmless deserialization differences, fee-only issues, logs, style, dependency-only behavior, tests, mocks, fixtures, scripts, or docs-only issues.
 
 ## Output
 If valid:
@@ -240,7 +315,7 @@ If invalid, output exactly:
 
 def scan_format(report: str) -> str:
     """
-    Generate a cross-project analog scan prompt for Metric OMM issues.
+    Generate a cross-project analog scan prompt for Clementine issues.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -248,21 +323,21 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Task
-Use the external report only as a bug-class seed. Search Metric OMM periphery router, payment, permit, WETH, multicall, quoter, path, and liquidity-adder code for a native analog with concrete user fund loss.
+Use the external report only as a bug-class seed. Search Clementine deposit, withdrawal, challenge, proof, RPC, DB, and tx-sender code for a native analog with concrete bridge impact.
 
 ## Required Impacts
-{METRIC_ALLOWED_IMPACT_SCOPE}
+{CLEMENTINE_ALLOWED_IMPACT_SCOPE}
 
-{SMART_AUDIT_PIVOTS}
+{CLEMENTINE_AUDIT_PIVOTS}
 
-Report only if this repository has its own reachable root cause, unprivileged or valid semi-trusted trigger, broken invariant, exact corrupted value, and matching target scope or allowed impact. Reject privileged operations, malicious setup assumptions, non-standard tokens, resource-only issues, dependency-only behavior, and anything outside the contest-relevant production surface.
+Report only if this repository has its own reachable root cause, unprivileged trigger, broken invariant, exact corrupted value, and matching target scope or allowed impact. Reject privileged assumptions, malicious deployment, external-system-only issues, dependency-only behavior, and anything outside the production surface.
 
 ## Work Plan
-1. Classify the external bug into one Metric OMM invariant.
+1. Classify the external bug into one Clementine invariant.
 2. Map it to exact scoped files/functions.
 3. Trace attacker input through production validation and state updates.
-4. Identify the wrong token balance, LP claim, fee amount, bid/ask, provider/feed binding, extension decision, callback payment, admin cap, or registry value.
-5. Reject if existing guards preserve the invariant or the loss is not contest-relevant.
+4. Identify the wrong BTC amount, collateral UTXO, signature/session object, proof field, DB state, or authorization decision.
+5. Reject if existing guards preserve the invariant or the impact is not material.
 
 ## Output (Strict)
 If valid analog exists, output:
@@ -287,7 +362,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict Metric OMM validation prompt for security claims.
+    Generate a strict Clementine validation prompt for security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -295,25 +370,26 @@ def validation_format(report: str) -> str:
 {report}
 
 ## Rules
-- Validate only the submitted claim against contest-relevant Metric OMM production code in this repository.
+- Validate only the submitted claim against Clementine production code in this repository.
 - Do not invent a stronger claim, change target scope, or upgrade severity without evidence.
-- A valid issue must be triggered by an unprivileged trader, LP, router caller, public pool creator, contract caller, or public oracle pusher where allowed by scoped code.
-- Factory owner and oracle admin are trusted. Pool admin is semi-trusted only inside caps and timelocks; prove bypass or fund-impacting cap failure.
-- Reject malicious setup, incorrect off-chain oracle data, non-standard ERC20 behavior except USDC/USDT, gas-only DoS, crashes, unbounded growth, logs, style, dependency-only bugs, tests, mocks, scripts, deployments, local tooling, and docs-only issues with no code-level impact.
-- The final impact must match one `target_scopes` item or allowed impact below, identify the exact corrupted value, and meet Sherlock contest thresholds.
+- A valid issue must be triggered by an unprivileged external attacker using only capabilities exposed by scoped code.
+- Trusted key compromise, malicious deployment, and off-repo infra control are out unless the code fails to authenticate, bind, or validate them.
+- Reject any claim that needs the attacker to already hold operator, verifier, aggregator, watchtower, admin, database, or infrastructure privileges.
+- Reject tests, mocks, fixtures, scripts, local tooling, docs-only issues, manifest/build/generated-file issues, fee-only issues, crashes, style, and dependency-only bugs.
+- The final impact must match one `target_scopes` item or allowed impact below and identify the exact corrupted value.
 
 ## Required Impacts
-{METRIC_ALLOWED_IMPACT_SCOPE}
+{CLEMENTINE_ALLOWED_IMPACT_SCOPE}
 
-{SMART_AUDIT_PIVOTS}
+{CLEMENTINE_AUDIT_PIVOTS}
 
 ## Required Checks
 1. Exact file/function references in scoped code.
-2. Clear broken Metric OMM invariant tied to funds, core functionality, bad-price execution, admin boundary, or provider/oracle integrity.
+2. Clear broken Clementine invariant tied to funds, proof validity, actor authority, or bridge state correctness.
 3. Reachable exploit path: preconditions -> attacker input -> production call path -> bad value.
 4. Existing guards reviewed and shown insufficient.
-5. Exact wrong value named: token balance, LP shares, owed fees, bin totals, bid/ask, price limit, provider/feed id, timestamp, extension decision, callback context, fee cap, or registry entry.
-6. Reproducible proof path: Foundry unit, integration, fork, or property test.
+5. Exact wrong value named: bridged BTC amount, collateral or reimbursement UTXO, nonce session, partial signature set, method ID, total work, block hash, storage proof field, DB state, queue item, or auth decision.
+6. Reproducible proof path: Rust unit, integration, property, or fuzz-style test.
 
 ## Output
 If valid, output exactly:
@@ -347,5 +423,3 @@ If invalid, output exactly:
 Output only one of the two outcomes above. No extra text.
 """
     return prompt
-
-
