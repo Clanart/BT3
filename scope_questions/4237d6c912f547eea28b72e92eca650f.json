@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/clementine-primitives/src/lib.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_302df2f2-e02b-4aa3-8cb6-34b2ff6c3952?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/migrations/0001_init.up.sql -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a6b16fa7-7f34-4be5-a3ef-1db18950fdce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/data_serialization.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4cea47e3-9f56-4a2a-9577-120b8f064e09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/mod.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4d7c0459-7d97-4714-a989-9142e97a7af2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/reveal_scripts.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d18f03e0-0aa2-42d1-97df-de824b1355c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/sync.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_1fff33b6-c228-40eb-b89a-596151d08cda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/client.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_0509af44-332d-448d-871f-3bd31171fda6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/config.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a86d00a7-cd81-404a-a33d-9e96ee808f4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/confirmations.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_ad0d1f59-6509-4a01-b84b-bb208f44dc0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/cpfp.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_9bf5a474-f615-4d9b-9d10-03ac0dca003a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/citrea.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_db191892-7570-4c94-8db1-f072c9432b1a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/mod.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_6cc30f3b-112d-4e19-9817-715e3188e21b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/tx_sender.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_cdb13c29-9c20-4fc9-b2f5-8e8c9aedaadb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/wrapper.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_fbb683d5-e6d6-407b-a712-d257713cf562?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/jsonrpc/client.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_b1b3132b-d037-4abf-a024-9fc2684991e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/jsonrpc/mod.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_69350128-9f77-4dd6-853a-923ebb748005?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/jsonrpc/server.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_170d5a6a-d3b2-4f92-a0e7-55cfd2e3f246?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/lib.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_db85ea3d-edf6-491b-806d-3bee4fe4824a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/main.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_55bdedb9-19c5-4a90-a175-07997278cc48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/nonstandard.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d4ceb2b0-2974-4866-ac27-522534168ce3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/rbf.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_816bf52b-4c46-4e2a-835f-7615cb767181?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/rpc_errors.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_3a266720-3b20-4daa-b1f6-94abd2969b51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/signer.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4b3d6b45-868f-4154-ab7a-6d0fd85aec73?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/task.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_de0b2bcc-b3c1-4b64-be36-8069a82f5247?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/address.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a28c1103-b5df-421f-b073-2c462d19ab94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/lib.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_54af1a47-356d-40c5-b26a-fd4c05d7b6ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/sign.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_0f7b2cfd-36e5-4a0d-908b-4fc5e7e340cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/tracing.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_1f1f4a58-90c0-4b59-ac74-f6aa1e69ec0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/traits.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_27ad429c-577d-437a-99e1-da0eb892a927?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/tx-sender-jsonrpc-client/src/lib.rs -> Scope: High. An unprivileged attacker can bypass RPC, mTLS, actor-role, parser, or database/state-machine authorization and trigger privileged verifier, operator, aggregator, or tx-sender actions.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e3ab74cb-e1fc-4c0b-8551-9e8afe990b31?mode=deep",
+    "questions_generated": false
+  }
+]
