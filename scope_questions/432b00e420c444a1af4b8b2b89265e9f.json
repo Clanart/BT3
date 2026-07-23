@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/src/rpc/verifier.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_481cccd0-a8fc-4785-b58d-138aa1ace0d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/servers.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c11ae156-b8c1-4639-b0f8-313eacb27870?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/context.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_483ce049-5c11-49fa-84a5-852677a7cf5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/event.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_6536a5b0-5ec4-4ed6-8124-dd688630fd1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/kickoff.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_537749c7-7b12-4eda-91f3-cf9d17258bc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/matcher.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d498081c-abd8-4b38-a815-91d393b831db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/mod.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_0ba4a34d-731e-4f8e-984a-0243250104ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/round.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_dfcb6beb-41af-4fc9-b7df-d2d61f9923a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/task.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_bfe0e0e4-707e-4d66-84e2-837e4b622e09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/aggregator_metric_publisher.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4e013577-2539-4e57-92c8-6edabb89f6cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/entity_metric_publisher.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f554b60a-c35a-47df-b9cd-d727b24dd8cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/lcp_syncer.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_996d9c52-915c-4b29-a22d-fa59cd2d893f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/manager.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c0a525a7-1139-4678-912e-00e63f138b35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/mod.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f6a682f4-e6b4-43d4-9710-f8841191dcb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/payout_checker.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e3a486dd-58ba-455c-a6b8-a548149ed775?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/status_monitor.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f354c907-81eb-41c3-8f29-1c720335dadd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/tx_sender.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_26997c94-f77a-4d0a-9de4-cf55d86abc5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/tx_sender_ext.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_94e91fe3-a93a-4ab6-b465-1bc6879e9fb1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/tx_sender_queue.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f82a40ff-5ab8-46df-acca-47a94771f8b5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/utils.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d993c0be-b5b5-4237-8af6-87c46405edfd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/verifier.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f641cef1-d04c-4654-923e-8cc83a2c98ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/grpc.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_fee08ee5-95ae-49d8-ab3c-ecd8babca5bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_64bc157f-46fc-4885-a83b-8df3ddfbb274?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/protocol.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_6805c918-0ac8-46e0-ae48-5ddb7478ab86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/telemetry.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_8279f7de-b926-43c0-b5b2-160cc41430a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/tx_sender.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_d9ccf176-568d-44a3-bbaf-e2ac3dbc7123?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-errors/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_8a6f8669-1b15-422b-aa00-0dfd0c20da01?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-extended-rpc/src/client.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_97a1e098-4802-4a4a-a580-a7c52b1cfec5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-extended-rpc/src/lib.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_450f59d9-3f52-4aae-9402-e1e9b3b60d88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-extended-rpc/src/retry.rs -> Scope: Critical. An unprivileged attacker can make Clementine release, redirect, double-spend, or permanently lock bridged BTC, operator collateral, reimbursement outputs, or bridge-controlled UTXOs.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e3fd961f-4e2d-4edd-bc86-f865856a9d6a?mode=deep",
+    "questions_generated": false
+  }
+]
