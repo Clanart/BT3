@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/clementine-primitives/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_08fe4a28-2853-44cc-857a-b6fbbeffb17b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/migrations/0001_init.up.sql -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_084f6c1d-68f1-4514-a0d2-ad8639a3a681?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/data_serialization.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_9171da2d-28f0-4dba-8ec1-0b03bb3cc792?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/mod.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_0b833aa0-3d84-4a5f-8a49-94ec8e565ae4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/reveal_scripts.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_bea90453-dc6f-4057-abcb-c5778b4a2844?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/citrea/sync.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_7fed0e46-9d86-4d3c-ac5e-85442bb7170a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/client.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_171b1704-d0c9-4c51-81c0-d402af9ac21f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/config.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4f1ffb38-1686-40ba-8981-1642200590e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/confirmations.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c47e824b-357f-4935-af30-aec1de44e584?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/cpfp.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_fba6855b-a760-4e97-ac40-8e98e9cd2d99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/citrea.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_beeca459-be9d-447d-92d8-ec209ece2001?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/mod.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_b7271a86-2422-4e50-9bc4-974c02945507?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/tx_sender.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_34e3a554-0c27-467b-853f-1a8ab27929ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/db/wrapper.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4620eabf-816f-49a4-91a2-9f80bc258f52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/jsonrpc/client.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e15a31fd-3275-47a1-ad72-0e8cb9fb79a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/jsonrpc/mod.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_cfd4f87c-e67e-4cb1-a13c-7ac3fe95c69a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/jsonrpc/server.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c090d463-f335-4b1f-9e3d-653631b9b94f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_44cfc3f5-62b5-478b-814b-62d0ec310746?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/main.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_944a0b1f-20de-4cc9-82a7-622b74fb4227?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/nonstandard.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_9f321e62-2259-495e-9753-0eab24a7d2e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/rbf.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_05c4a315-8a46-4802-aef3-13a801227a67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/rpc_errors.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_dd54e987-f22d-44e7-ac92-a051723105b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/signer.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c527afad-b88e-44ae-97e6-bb95ffb90876?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-tx-sender/src/task.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_f1531012-7ccd-4f4c-b053-c670ebc0fcea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/address.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_3dc36ffa-3139-4db1-9031-115c699437df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_832e7852-1d35-4f18-ad2f-feb0a6e524eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/sign.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c3acbf54-c5a6-41c3-978c-60d9cb3a0f23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/tracing.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_64d89060-9daa-41da-b990-3348dad9d33a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-utils/src/traits.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_fcf781d5-fea7-434f-80da-ed5c8e600ec4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/tx-sender-jsonrpc-client/src/lib.rs -> Scope: High. An unprivileged attacker can abuse automation, tx-sender, RBF/CPFP, queueing, fee, or UTXO-selection logic to spend the wrong input, strand reimbursements, or burn slashable funds during normal bridge flow.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_666fc808-a8d7-4cbc-8695-cc2d92ffd7f2?mode=deep",
+    "questions_generated": false
+  }
+]
