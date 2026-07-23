@@ -1,1 +1,0 @@
-I need to trace the full `exactInput` execution path, the callback context management, and the payment helpers to determine if the described exploit is real.
