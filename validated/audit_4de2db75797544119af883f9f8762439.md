@@ -1,0 +1,147 @@
+Audit Report
+
+## Title
+Unvalidated Pool Address in `MetricOmmPoolLiquidityAdder` Allows Malicious Pool to Drain User Tokens — (File: metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol)
+
+## Summary
+
+`MetricOmmPoolLiquidityAdder` accepts an arbitrary `pool` address from the caller and stores it as the trusted callback caller in transient storage without verifying it against the factory registry. A user who has approved the adder for their tokens can be tricked into calling `addLiquidityExactShares` or `addLiquidityWeighted` with an attacker-controlled pool address. The malicious pool re-enters `metricOmmModifyLiquidityCallback`, passes all guards (because `expectedPool` was set to the malicious pool itself), and causes `pay` to execute `safeTransferFrom(victim, maliciousPool, amount)` for up to the caller-supplied caps.
+
+## Finding Description
+
+The contract explicitly documents the absence of factory validation at lines 19–21:
+
+```solidity
+/// @dev The caller is responsible for supplying a legitimate pool address and other non-malicious parameters.
+///      This contract does not verify the pool against the factory; a malicious pool can request token pulls up to
+///      the caller-provided max caps during callback settlement.
+```
+
+`addLiquidityExactShares` passes the caller-supplied `pool` directly to `_addLiquidity` with no factory check: [1](#0-0) 
+
+`_addLiquidity` stores the unvalidated pool as the trusted callback caller via `_setPayContext`, then calls `addLiquidity` on it: [2](#0-1) 
+
+Inside `metricOmmModifyLiquidityCallback`, the only caller check is `msg.sender != expectedPool`. Because `expectedPool` was set to the malicious pool, this check passes. The amount caps are also set by the user's own `maxAmountToken0`/`maxAmountToken1`, which the malicious pool can consume in full: [3](#0-2) 
+
+The `pay` call then executes `safeTransferFrom(payer, msg.sender, amount)` where `payer` is the victim and `msg.sender` is the malicious pool: [4](#0-3) 
+
+By contrast, `MetricOmmSwapRouterBase._setNextCallbackContext` calls `_requireFactoryPool(pool)` before storing any pool in transient context: [5](#0-4) [6](#0-5) 
+
+The liquidity adder has no equivalent guard, creating an inconsistency that is directly exploitable.
+
+## Impact Explanation
+
+Any user who has approved `MetricOmmPoolLiquidityAdder` for token0 and/or token1 — a prerequisite for normal LP use — can have up to `maxAmountToken0` of token0 and `maxAmountToken1` of token1 transferred directly to the attacker's malicious pool contract. Because the malicious pool controls its own `addLiquidity` implementation, it never credits any LP shares; the tokens are simply stolen. This is a direct, complete loss of user principal with no recovery path. Severity: **Critical/High**.
+
+## Likelihood Explanation
+
+The attack requires:
+1. The victim has already approved the adder (normal for any LP user).
+2. The attacker tricks the victim into calling `addLiquidityExactShares(maliciousPool, ...)` — e.g., via a phishing UI that presents a fake pool address as a legitimate one, or via a malicious frontend that substitutes the pool parameter.
+
+The social-engineering surface is real and exploitable because the adder is a shared, approved contract. The contract itself documents the risk, confirming the attack path is known and reachable.
+
+## Recommendation
+
+Add a factory registry check inside `_addLiquidity` (or at each public entry point) before storing the pool in transient context, mirroring the pattern already used in `MetricOmmSwapRouterBase`:
+
+```solidity
+// In MetricOmmPoolLiquidityAdder._addLiquidity or each public entry point:
+if (!FACTORY.isPool(pool)) revert InvalidPool(pool);
+```
+
+This requires injecting the factory address at construction time, exactly as `MetricOmmSwapRouterBase` does.
+
+## Proof of Concept
+
+```solidity
+// Attack sequence (Foundry test sketch):
+// 1. victim approves adder for token0 and token1 (normal LP onboarding)
+// 2. attacker deploys MaliciousPool(token0, token1, adder, attacker)
+// 3. attacker tricks victim into calling:
+//      adder.addLiquidityExactShares(
+//          address(maliciousPool),
+//          victim,          // owner
+//          0,               // salt
+//          deltas,
+//          1_000_000e18,    // maxAmountToken0
+//          1_000_000e18,    // maxAmountToken1
+//          ""
+//      )
+// 4. adder stores maliciousPool as expectedPool, calls maliciousPool.addLiquidity
+// 5. maliciousPool calls back metricOmmModifyLiquidityCallback with full caps
+//    and callbackData = abi.encode(uint8(1)) (KIND_PAY)
+// 6. adder checks msg.sender == expectedPool  ✓ (both are maliciousPool)
+// 7. adder calls pay(token0, victim, maliciousPool, 1_000_000e18)
+//    → safeTransferFrom(victim, maliciousPool, 1_000_000e18)  ← STOLEN
+// 8. adder calls pay(token1, victim, maliciousPool, 1_000_000e18)  ← STOLEN
+```
+
+### Citations
+
+**File:** metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol (L56-68)
+```text
+  function addLiquidityExactShares(
+    address pool,
+    address owner,
+    uint80 salt,
+    LiquidityDelta calldata deltas,
+    uint256 maxAmountToken0,
+    uint256 maxAmountToken1,
+    bytes calldata extensionData
+  ) external payable override returns (uint256 amount0Added, uint256 amount1Added) {
+    _validateOwner(owner);
+    _validateDeltas(deltas);
+    return _addLiquidity(pool, owner, salt, deltas, msg.sender, maxAmountToken0, maxAmountToken1, extensionData);
+  }
+```
+
+**File:** metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol (L162-177)
+```text
+    (address expectedPool, address payer, uint256 max0, uint256 max1) = _loadPayContext();
+    if (expectedPool == address(0)) revert CallbackContextNotActive();
+    if (msg.sender != expectedPool) revert InvalidCallbackCaller(msg.sender, expectedPool);
+    if (amount0Delta > max0 || amount1Delta > max1) {
+      revert MaxAmountExceeded(amount0Delta, amount1Delta, max0, max1);
+    }
+
+    PoolImmutables memory imm = IMetricOmmPool(msg.sender).getImmutables();
+    address token0 = imm.token0;
+    address token1 = imm.token1;
+    if (amount0Delta > 0) {
+      pay(token0, payer, msg.sender, amount0Delta);
+    }
+    if (amount1Delta > 0) {
+      pay(token1, payer, msg.sender, amount1Delta);
+    }
+```
+
+**File:** metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol (L193-196)
+```text
+    _setPayContext(pool, payer, maxAmountToken0, maxAmountToken1);
+    try IMetricOmmPoolActions(pool)
+      .addLiquidity(positionOwner, salt, deltas, abi.encode(KIND_PAY), extensionData) returns (
+      uint256 a0, uint256 a1
+```
+
+**File:** metric-periphery/contracts/base/PeripheryPayments.sol (L85-87)
+```text
+    } else {
+      IERC20(token).safeTransferFrom(payer, recipient, value);
+    }
+```
+
+**File:** metric-periphery/contracts/base/MetricOmmSwapRouterBase.sol (L29-32)
+```text
+  function _setNextCallbackContext(address pool, uint8 callbackMode, address payer, address tokenToPay) internal {
+    _requireFactoryPool(pool);
+    TransientCallbackPool.set(pool, callbackMode, payer, tokenToPay);
+  }
+```
+
+**File:** metric-periphery/contracts/base/MetricOmmSwapRouterBase.sol (L87-89)
+```text
+  function _requireFactoryPool(address pool) internal view {
+    if (!FACTORY.isPool(pool)) revert IMetricOmmSimpleRouter.InvalidPool(pool);
+  }
+```
