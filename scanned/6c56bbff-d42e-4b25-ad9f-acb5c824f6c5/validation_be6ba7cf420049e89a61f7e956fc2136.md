@@ -1,1 +1,0 @@
-Let me look at the `PeripheryPayments` base and the `MetricOmmSwapRouterBase` to check the payment and callback context logic.
