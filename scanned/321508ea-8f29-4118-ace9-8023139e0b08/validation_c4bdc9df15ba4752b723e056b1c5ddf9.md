@@ -1,1 +1,0 @@
-Looking at the `pay()` function in `PeripheryPayments.sol` carefully:
