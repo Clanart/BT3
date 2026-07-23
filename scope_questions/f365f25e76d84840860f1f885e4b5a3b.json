@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/src/rpc/verifier.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_3cf9bcd5-e671-43fc-85cd-eeae7f393ffb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/servers.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_547e0d12-3963-4215-b649-be750af71b59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/context.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a12492ff-177f-44f9-8cbc-ee2f81ec262a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/event.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_ee13736f-a9ae-4e39-9361-564c48353e1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/kickoff.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_aa21f0fe-d5cf-419a-84ae-d91558ed6239?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/matcher.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_414a5393-aa94-4a3d-a073-101889ef92be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/mod.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_00ed1aa6-2588-4148-87cb-315933dfb5d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/round.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_c6b3110e-ac10-415d-b00b-c8bdab2bed1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/states/task.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_297aaf5c-c508-4be2-aa2f-10f4a3de3d2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/aggregator_metric_publisher.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e680ec73-2584-4ac7-bdd4-c3a41148192b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/entity_metric_publisher.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_9599310f-d150-4441-be8f-34d5baf8659e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/lcp_syncer.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_8704c7d8-9758-41e5-b5f8-3ab8531434b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/manager.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_df5dda33-674f-4888-801f-4f0030d15f30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/mod.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_32955eff-dbc2-4418-a446-995de7d3baf1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/payout_checker.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_fb0d6414-87f8-45c9-ab06-1ed96788dc1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/status_monitor.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_e4de3e2e-d742-41c2-b920-bf052e085f0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/task/tx_sender.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_4df3f9fc-b214-4d36-89a2-f79bbd2ea690?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/tx_sender_ext.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_6a121d90-736c-4cd7-b593-9f6b6bbf00ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/tx_sender_queue.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_824b9125-d22c-4b00-98c6-159d19afb455?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/utils.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_862fca8d-e0a2-4865-8ee3-6d9c0c62376f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/verifier.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_6976d1b9-4d79-496c-b571-bbeea2e3fef1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/grpc.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_74e51b92-bd9c-4d73-bb78-d415a6e28028?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/lib.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_36e43c5f-81dd-4cf0-821a-23d460b1e19c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/protocol.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_7a1f308c-3b03-4693-a5dc-c15d7a1f19dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/telemetry.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_db906069-2fbf-4fdf-bc3f-037c1bdfc9c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-config/src/tx_sender.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_98bc55b4-4e33-495f-9f26-be3a553dcd5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-errors/src/lib.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_ffa4a6bb-e22a-4c50-8f08-996d9c324349?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-extended-rpc/src/client.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_a12b265f-1a93-4ed3-8ed6-bc9eddac6749?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-extended-rpc/src/lib.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_608aa959-9693-4651-b021-6491aa3542c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/clementine-extended-rpc/src/retry.rs -> Scope: Medium. An unprivileged attacker can exploit watchtower ordering, canonical-chain selection, deposit/finality tracking, or Citrea/Bitcoin sync mismatches to cause honest bridge actions to be wrongly accepted, rejected, or stuck with material loss.'",
+    "url": "https://deepwiki.com/search/-generate-clementine-security_cb5f2ddf-769d-487b-ad16-baa526eae1a1?mode=deep",
+    "questions_generated": false
+  }
+]
