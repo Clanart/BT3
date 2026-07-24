@@ -1,0 +1,1 @@
+Let me look at the rest of the bridge circuit function and the `verify_storage_proofs` to check if `move_txid` is used correctly.
