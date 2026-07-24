@@ -1,0 +1,1 @@
+Let me look at the bridge circuit host more carefully to understand how `host_deposit_constant` is used in the proof flow.
