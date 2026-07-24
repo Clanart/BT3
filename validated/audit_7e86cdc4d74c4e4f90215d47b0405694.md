@@ -1,0 +1,1 @@
+I need to trace the full call path and check every validation gate before concluding.

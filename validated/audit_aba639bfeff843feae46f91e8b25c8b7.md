@@ -1,0 +1,1 @@
+I'll analyze the Clementine codebase to find an analog to the H-1 bug pattern: a validation check performed on one object/pool while the actual operation targets a different one, allowing the check to be bypassed.
