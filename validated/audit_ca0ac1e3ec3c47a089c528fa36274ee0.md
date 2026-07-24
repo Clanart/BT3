@@ -1,0 +1,1 @@
+I need to examine the Unix socket server path more carefully, the `internal_end_round` implementation, and the tx-sender JSON-RPC server authentication.
