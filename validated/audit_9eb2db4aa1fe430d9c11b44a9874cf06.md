@@ -1,0 +1,1 @@
+Looking at the vout endianness handling in the bridge circuit's storage proof verification, and tracing it through the operator reimbursement flow.
