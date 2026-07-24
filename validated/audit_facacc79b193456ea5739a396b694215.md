@@ -1,0 +1,1 @@
+Looking at the external bug class — missing membership flag when adding to a list, causing duplicate entries that break downstream calculations — I need to trace the analog through Clementine's deposit, withdrawal, and challenge paths.
