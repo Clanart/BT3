@@ -1,0 +1,1 @@
+Let me look at the `AddMethodMiddlewareLayer` implementation and the aggregator server setup to understand the full auth picture.
