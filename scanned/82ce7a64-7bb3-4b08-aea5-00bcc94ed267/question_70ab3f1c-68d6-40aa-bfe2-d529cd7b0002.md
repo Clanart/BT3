@@ -1,1 +1,0 @@
-[File: 'core/src/database/verifier.rs -> Scope: High'] [Symbol: get_handled_payout_kickoff_txid] Can an attacker-controlled DB state under the condition that `mark_payout_handled` is called for a `citrea_idx` where `kickoff_txid` is NULL (e.g., due to a bug or partial write) reach `get_handled_payout_kickoff_txid -> .expect(\
