@@ -1,0 +1,1 @@
+Let me look at the interceptors and auth guards for the internal RPCs, and also examine the `ContractContext` to understand if operator key mismatch has any impact.
