@@ -1,0 +1,1 @@
+Let me look at the operator code and the `is_finalized` usage more carefully before concluding.
