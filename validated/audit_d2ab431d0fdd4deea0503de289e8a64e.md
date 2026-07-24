@@ -1,0 +1,1 @@
+Let me dig deeper into what transactions spend the KickoffFinalizer and the exact semantics of the cancel_outpoint mechanism.
