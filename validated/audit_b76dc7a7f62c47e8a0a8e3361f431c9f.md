@@ -1,0 +1,1 @@
+I need to find the actual `sign_optimistic_payout` implementation, which is past the truncation point in `core/src/verifier.rs`. Let me check what I can determine from the evidence gathered.
