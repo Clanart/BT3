@@ -1,0 +1,1 @@
+Let me look at the `bump_fee_with_fee_rate` function and the `calculate_required_fee` function more carefully, as well as the `fee_vb` usage in `cpfp.rs`.
