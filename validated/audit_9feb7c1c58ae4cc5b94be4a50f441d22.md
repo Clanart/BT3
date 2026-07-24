@@ -1,0 +1,1 @@
+Looking at the external bug class — **unauthenticated input reaching a parsing/state-mutation function before any authorization check, enabling an attacker to corrupt bridge-critical state** — I need to find the Clementine analog.
