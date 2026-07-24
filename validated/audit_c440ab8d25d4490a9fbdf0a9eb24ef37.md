@@ -1,0 +1,1 @@
+Looking at the external bug's invariant: a state-based guard that can be manipulated by an attacker to block a privileged
