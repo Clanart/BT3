@@ -1,0 +1,1 @@
+Looking at the exact code path for this claim, I need to trace whether `hcp.genesis_state_hash` is operator-malleable in a way that survives all bridge circuit checks.
