@@ -1,1 +1,0 @@
-I'll analyze the bug class from the external report and search the Clementine codebase for analogous patterns. The core bug is: a pointer/cursor in an ordered structure advances to a node whose state was corrupted by a cancel operation, causing a permanent DoS and fund lock.

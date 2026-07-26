@@ -1,1 +1,0 @@
-Let me look more carefully at the fee calculation and the `calculate_required_fee` function, as well as the `from_sat_per_kwu` conversion path.

@@ -1,1 +1,0 @@
-Let me look at the `update_finalized_payouts` function and the `get_last_deposit_idx` bug more carefully.

@@ -1,1 +1,0 @@
-Let me look at `handle_finalized_payout` and the `PayoutCheckerTask` more carefully to understand the state update ordering.

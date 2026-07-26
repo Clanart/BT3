@@ -1,1 +1,0 @@
-Let me look more carefully at the `BlockHeaderCircuitOutput` struct and how `genesis_state_hash` is set.

@@ -1,1 +1,0 @@
-Let me look at the `handle_finalized_payout` function and the `AllSessions::remove_oldest_session` more carefully.

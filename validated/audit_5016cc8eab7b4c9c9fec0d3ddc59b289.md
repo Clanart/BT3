@@ -1,1 +1,0 @@
-Let me read the aggregator's signature verification to complete the analysis.

@@ -1,1 +1,0 @@
-Looking at the full call chain for this claim, I need to trace the exact code path and assess whether the `agg_nonce` manipulation produces the claimed impact.

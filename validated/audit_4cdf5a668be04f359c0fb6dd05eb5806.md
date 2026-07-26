@@ -1,3 +1,0 @@
-Looking at the external bug class — **a function interface changed but callers still pass the old parameter, causing a runtime failure that blocks a critical operation** — I need to find an analogous interface/value mismatch in Clementine's proof, deposit, withdrawal, or challenge path that compiles but produces wrong behavior at runtime.
-
-Let me examine the bridge circuit's storage proof verification closely.

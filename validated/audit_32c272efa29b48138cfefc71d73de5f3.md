@@ -1,1 +1,0 @@
-Let me look at `create_nonce_streams` and how `first_responses` are ordered relative to verifier indices.

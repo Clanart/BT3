@@ -1,1 +1,0 @@
-Let me look at the watchtower challenge transaction and the `is_profitable` function more carefully, as these are the most promising areas for an analog.
