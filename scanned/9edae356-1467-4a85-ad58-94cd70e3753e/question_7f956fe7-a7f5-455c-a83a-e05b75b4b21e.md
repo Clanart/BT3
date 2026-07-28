@@ -1,0 +1,1 @@
+[File: 'precompiles/ics20/errors.go -> Scope: Critical.'] [Symbol: Denom / query.go string-match on ErrDenomNotFound] Can an attacker craft an IBC denom trace hash input under REQUIRED_STATE where transferKeeper.Denom returns an error whose message coincidentally contains the substring \

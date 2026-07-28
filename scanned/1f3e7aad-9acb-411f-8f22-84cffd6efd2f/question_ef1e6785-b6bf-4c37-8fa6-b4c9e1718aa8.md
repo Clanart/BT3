@@ -1,0 +1,1 @@
+[File: 'rpc/backend/utils.go' -> Scope: Critical] [Symbol: ShouldIgnoreGasUsed] Can an attacker craft a transaction that deliberately triggers ABCI response code 11 with a log message string containing the exact substring \
