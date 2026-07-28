@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rpc/backend/sign_tx.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_052e77af-5fff-4a7c-a79d-f1dced7f3b07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/tracing.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8e1da4a2-c811-48a7-adec-ca0aa68cf968?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/tx_info.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_11284209-7823-4143-841d-c27b6d3a1b21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/tx_pool.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e43504a9-8623-4b8e-b250-fb3b2237e18c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/utils.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_7c1968d7-f083-4cae-8243-fd6f262ef32f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/ethereum/pubsub/pubsub.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_dae66256-74ff-48dd-90b7-5452f7df34e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f708298f-d9b2-4d17-a50f-443e699aa039?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/trace.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_59dcbf96-c69f-4f07-9484-e696474ed018?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/trace_fallback.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_56a7c109-3519-41d6-af40-3d457c4958d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/utils.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_94b1b5f5-3599-449c-986c-a3560dc5fa0a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_5503c9fd-c366-4072-a52e-fb582996287c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/filters/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e117a7dd-c0a4-45aa-be05-43520497cac3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/filters/filters.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e0f9bd12-5ac1-4fc1-870a-ab01a4466ebc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/filters/utils.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_2bf4ace5-a9eb-48b2-84f5-0dad3948a83e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/miner/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_dd74cb56-3159-4e41-8ed1-dcb96ae104ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/miner/unsupported.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f776f1d9-af45-450d-8b82-07ba690c6b1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/net/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_08d3505c-effe-4f12-94ae-1732a51b9b64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/personal/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_7df9bf86-e77b-4fe2-85ba-72032a5757ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/txpool/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_43f66eff-34e5-4e22-834c-97c7243eaae3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/web3/api.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_75293fe4-a613-4254-882c-0758993cc04d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/cond.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_95138556-1749-4155-8ad0-ad4d4ce7fcc6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/queue.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b41136d7-1b26-4e9e-b864-c9c21c0c1351?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/rpc.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c3eb2121-ea21-4d79-968e-bb20a916ea18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/stream.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_a483da97-8cb5-4304-9a16-f76b8f8de907?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/addrlock.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8a024c0d-6309-4699-b19f-bcc533f73bff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/block.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_3799c63b-282d-41bc-bcb9-ef2f8904d068?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/errors.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f381fa0e-4682-4c57-9a93-88ee626dba96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/events.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_13ace207-c569-42f9-b0c4-9a08e1b90e89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/protocol.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_333f783b-c9d3-4c24-88ef-dd4c2205db4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/query_client.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_5754131c-22a4-4e98-819c-376193c0bcf5?mode=deep",
+    "questions_generated": false
+  }
+]
