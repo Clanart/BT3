@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: x/vm/types/denom_config.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_483a0090-7985-410d-93a5-cc8a3a8c816b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/errors.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d10e6f27-2f39-4c55-b5dc-97d2776decb5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/eth.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b71eab1c-6b2c-4e18-806c-f48a025320dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/events.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_52cbb8ec-f90f-4a74-9f1e-695ca737fab5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/gasmeter.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_734caf11-72b3-4688-aea1-f5cc50ce9f80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/genesis.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_59121e08-421f-49bf-a3ad-d350099a4b98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/interfaces.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_05b552e9-26e1-4b43-9cee-455e7a929199?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/key.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_13580ca0-072e-474c-8367-baccac780d55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/logs.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_658b7f63-fa5c-4cba-b26f-1d9166935ef2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/msg.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_20d3ccf2-b7f5-4f28-a42f-a1091ae2e4cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/opcodes_hooks.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d81be036-4100-41a5-9dc4-ddb4c11a7d84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/params.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_1efcf0ed-3843-4a3e-8dd9-d855e8ff8caa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/permissions.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_819dc3ba-2b64-43f8-9147-e232b532a557?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/precompiles.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_a67f6a76-bb44-4ddd-bab2-cd1e73cbf224?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/preinstall.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_1f296f64-9a1d-44d0-9463-c32cdfa0f7ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/query.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c0a13da0-a15a-4e95-911f-349a47e251a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/scaling.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4b125633-9252-439b-aa59-eff5848f9836?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/storage.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4d14c80c-33ca-47ab-805f-c66a21ba821f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/tracer.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_6dc9add0-7607-46c6-8a0a-1a029578e650?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/tx.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_432f2524-5691-4499-9b0d-beb08c4956ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/tx_args.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8a79272f-f5ad-4fa5-9a63-1565ab650edf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/tx_types.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ae824630-b0b1-4e20-994a-c7e79cb0ac70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/utils.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b6e0fa48-423a-4a2f-9054-6da7c7442f3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/wrappers/bank.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4999a6b3-b199-457c-a385-c381d17a9a7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/wrappers/feemarket.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_583c5a14-b649-4124-b8f8-e767e8359a38?mode=deep",
+    "questions_generated": false
+  }
+]
