@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: precompiles/ics20/types.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_05d887fc-4f31-4422-a9e6-c629bd9170d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/p256/p256.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_46525c37-ee97-4671-a6b0-fd004798476b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/slashing/events.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_bf7d617f-ed7f-45b0-92d6-3e1a7189ed84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/slashing/query.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d941ea07-8166-4a8d-9dc8-8ae753923c2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/slashing/slashing.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f8a75e54-dc40-40dd-9bfd-92ddeadc778d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/slashing/tx.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_a7958109-bced-4f52-8e82-302d23ef03e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/slashing/types.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b2842997-4aba-4e24-9570-f57fcd980619?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/staking/errors.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_094d2752-ce57-469d-9154-8a3fadc95cd0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/staking/events.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_0b322637-0b16-4b43-b401-58d7ee9e1b3e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/staking/query.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_7028b1be-f4e6-422f-b697-f991f8d82d6a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/staking/staking.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_705f6f61-706f-475a-a23c-e78d712d1185?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/staking/tx.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_99dc1a7a-2db0-4d48-bdc1-11eb0ab5b6dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/staking/types.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_258b27ad-792f-4d33-9a66-b36b51b0f1b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/types/defaults.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ea30464c-3b21-4ee2-8517-c8fe67d6e4ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/types/static_precompiles.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9828e9fc-81a9-4775-9aa6-772d7af7f6f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/werc20/events.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_a88713a0-68bf-4aa5-8fee-c252c25286f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/werc20/interfaces.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9ece9a04-ff0a-4104-9531-df30bb2e5b85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/werc20/tx.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_1d9f5018-53e0-43ea-9b45-773332fdbcc4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/werc20/werc20.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_3fcdceff-b2cd-49b3-b12b-d894c9b577ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/apis.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c1e5f26c-2abd-4e19-800d-f3fbd4ad7a09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/account_info.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f7c3c43a-31f8-4f10-8ec4-536805aeb5ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/backend.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9ff21943-8f3c-4151-953e-38e54b7ed183?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/blocks.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ab473ce3-4e7d-427a-8bf7-6bdc19696290?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/call_tx.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_da488a65-bd75-458d-80cc-2cb96d0fde3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/chain_info.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_00a340b3-5648-43d5-8fbb-8584f022061c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/comet.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e9cc6e33-253f-4e52-bf03-fb9e39e6b749?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/comet_to_eth.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8e2080e7-fabb-495d-8ac0-6f033877e145?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/filters.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_7e9214a6-04eb-49a4-99ec-9a1ff95d0fce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/headers.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_09a5f852-471d-406b-8607-8da6ed38dc0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/node_info.go -> Scope: Critical. An unprivileged attacker can mint, burn, duplicate, or resurrect spendable user value by breaking native/EVM/ERC20/IBC accounting, rollback, or supply invariants in x/vm, x/erc20, ante, mempool, or precompile flows.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e706f90e-d966-42bd-aad9-1fb5c7f62810?mode=deep",
+    "questions_generated": false
+  }
+]
