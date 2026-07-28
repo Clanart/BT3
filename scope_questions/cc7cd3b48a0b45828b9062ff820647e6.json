@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: x/vm/keeper/keeper.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ea580bb8-15b1-4070-9183-c029caf8b0ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/migrator.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_427ecc9d-facb-4b42-916d-93d151708506?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/msg_server.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d4fdf58c-bdf5-4129-aa43-13f3b6466f6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/params.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_6c55e926-1d40-4989-b061-0a9dfccb612e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/precompiles.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_6c5c523e-0260-4979-8c2b-4c91ef478a9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/preinstalls.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_461cfc01-81f2-4eff-85e6-4b4d57669ebe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/state_transition.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e58a8362-02d6-49c4-9f8b-e50e26137a44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/statedb.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_bd623370-3ab4-4b68-a69c-2ed8cf3b4c48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/static_precompiles.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9c0048e9-18c6-441c-8e74-4d260fe4ff77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/keeper/utils.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9971e30c-bead-4fb7-8396-08e2c3575c63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/migrations/v2/migrate_params.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_374ebb26-3a23-44cf-bcce-bb8ceb0bbcaa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/module.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d94d1519-2b82-449a-8886-b44f8b271d86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/access_list.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_901c05cf-be6d-460f-b58f-a5c5e84a09eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/config.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f33b10d8-0c83-4938-8418-ae606a4a3be2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/interfaces.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_41f1ae75-762e-4868-a431-9bbd8b30ffd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/journal.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c2d6e80d-620f-48b4-b039-c5481ceb7e08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/state_object.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_07e4d75c-9be8-4651-b77a-bc9b3c5108cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/statedb.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_1063c31f-052f-41d9-8fbc-c5a2074f5870?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/statedb/transient_storage.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f47b4cb7-042e-4c5b-b487-c79a90de1f38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/store/snapshotkv/store.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f9e2a9e6-6e60-4235-9b48-66b0ad66d2fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/store/snapshotmulti/store.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_5b216670-7a8e-4f89-8be1-94c702bd3194?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/store/types/store.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_76705ba5-9a20-4f9c-a713-7e11df718fb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/activators.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_66c585fe-8027-48ba-adc1-03e409f0f604?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/call.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ec0f7736-50b6-4209-ada0-d2c376cd96c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/chain_config.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_5f7331e0-1527-4988-b24d-a38dc22dab71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/codec.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_56b019de-30dd-422f-84d2-be13c6f23559?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/compiled_contract.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ad42cca9-e609-43ad-bd73-1cab57e84e53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/config.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4d0ab1dc-029b-44b7-9a1c-b67dbaf6581f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/configurator.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ab1d4a48-4153-478b-bd55-9da64f52ff2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/vm/types/denom.go -> Scope: Critical. An unprivileged attacker can permanently freeze user funds, escrowed assets, contract balances, or transferable value in a way that would require a coordinated upgrade or hard fork to recover.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9442e926-c7ea-4c61-bcea-641a0b71d9b4?mode=deep",
+    "questions_generated": false
+  }
+]
