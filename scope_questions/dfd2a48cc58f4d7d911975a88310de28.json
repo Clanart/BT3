@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rpc/backend/sign_tx.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b6c3dec1-57e3-4d59-81ea-4cbcd08e7d14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/tracing.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_af9383b7-0836-4630-b50a-81102f6f71cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/tx_info.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_069ebf13-8e53-4407-988d-d1a6f5df04a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/tx_pool.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_957d464a-3f84-4209-aed1-9297a8ddf333?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/backend/utils.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_480d5342-206c-4d38-8d81-a9898835518a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/ethereum/pubsub/pubsub.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_2550c1cd-cd6d-443e-9f7a-b18418a0ed2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_df13ca7e-07db-44ab-8b7a-d0ec4edfa5c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/trace.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_411bac92-cce3-4356-9467-4d9676bc8a80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/trace_fallback.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_86fc559b-ef9c-4d49-b694-5f5f4da99679?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/debug/utils.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_114a7647-fff2-496a-83af-99db6a60991a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_6c4a6add-6b88-4d8e-91e0-4d9744ee9bad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/filters/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c52902e5-9d4d-4b9b-9ae9-4830d72dfbf6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/filters/filters.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4ce5cf5c-6bcd-4942-8d03-ea9cb7bdb61c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/eth/filters/utils.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_93f78202-6512-4db2-ace8-7a1a5e9389cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/miner/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_5f5fa316-3768-4a48-bcaa-bedf2b3f938d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/miner/unsupported.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_0c4f0599-9295-4335-bf5f-3b937e957893?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/net/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8bb878e2-e093-443e-943d-b2752da5866d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/personal/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_3af42c6d-927a-42e2-b700-bc62d8ddeb5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/txpool/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_2ad97832-d079-410d-a97d-412f2edb1662?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/namespaces/ethereum/web3/api.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_5bc1880b-6f96-456e-843f-a7334707448c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/cond.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_aabecb5b-3ecf-4e32-ba3d-fe1e06365f7c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/queue.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_42ffbb71-d62d-4337-8696-ff5cfbb305e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/rpc.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e86c62d9-75ac-4b14-be58-560dde46424a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/stream/stream.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ab18fd98-a782-4538-9f5d-2220e71163c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/addrlock.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_e8526749-5d22-4720-a50e-3df4ac13c94e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/block.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d38e4580-dc56-44d2-8270-957ad68fb8bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/errors.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4c138749-863e-4308-b8c2-4a99fd4c7d7c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/events.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c34d33bc-f8d7-4316-b03e-d5b50f897b0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/protocol.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f76fde98-0a8b-4b09-906d-4e2c8ae43fcb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/query_client.go -> Scope: Critical. An unprivileged attacker can break ERC20 or token-pair invariants and cause unauthorized issuance, redemption, duplication, or loss of backing between Cosmos balances and EVM-visible assets.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_cdae29be-e53f-4adc-bdfa-e597ab9d92b6?mode=deep",
+    "questions_generated": false
+  }
+]
