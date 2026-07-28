@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rpc/types/types.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_7f5d0336-4ca2-4635-930d-37d33e07a941?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/types/utils.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c85ab084-2bf8-46bb-86da-38a571a2d6ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/websockets.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_53a6a956-73b5-4659-8ffc-36505a96ade3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/config.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_a5da8bf8-333c-4c87-baa6-b235ace7ff56?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/migration/migration.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b6f690bd-ffd0-4e0d-ae27-5c702cb13609?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/opendb.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_6e7401a9-2ac2-42d9-893b-6176239884c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/opendb_rocksdb.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_a466bb09-5d0b-4b52-9e99-0046a9aeb20f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/config/toml.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f385e83a-6ea2-4543-8d78-a81d01015d68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/flags/flags.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_277bbc16-dbdb-4e02-b4dd-8a3cedb37a59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/indexer_cmd.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_d17eff67-ae35-49e6-b792-325efd1b2abc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/indexer_service.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_563abab5-6aab-44c3-8726-3e233d5a1935?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/json_rpc.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_938c2839-3df0-495c-bd4e-b16c31974e21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/log_handler.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4164281d-8f3e-414c-9100-6f5a51e34aac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/start.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ed997b17-89a7-4b1a-a76a-41ba6f70f20b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/types/indexer.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_853507fb-96f8-4345-8fa7-1f9680e5baab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: server/util.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_720abe4d-7ea5-467c-bfe6-65a50128f1aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: utils/eth/eth.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b841dfd0-0154-4ec1-b7c7-1568764b3c1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: utils/int.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_f0b5b5fb-f10c-4181-a7fe-1a0a61c022f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: utils/power.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8b2c8c12-6940-4435-b302-c86c12cf927d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: utils/utils.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_742af67c-e3fc-4691-a234-8bf32f17d92d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: utils/validation.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_15c70e6b-40e5-4f72-b36e-f5472c474f65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/genesis.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_338ff97f-ef57-4bbd-b726-1519703251b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/ibc_middleware.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_aa5f801d-f42d-4d75-903c-b61594f92a17?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/allowance.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_961f7243-bbf2-4e79-a6bd-7315a832693b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/dynamic_precompiles.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_3be701cf-45cc-4326-82ad-2ed9537a5df9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/evm.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_84a9f086-39b6-4375-aec5-3cb8690c0f27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/grpc_query.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_137ed1bd-9c76-4046-8dc6-c1418743a6a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/ibc_callbacks.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_b6153da8-e797-482a-b911-419aebd86b52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/keeper.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_02a39593-47ba-424d-ba48-80371fcf3891?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/erc20/keeper/mint.go -> Scope: Critical. An unprivileged attacker can trigger chain halt, non-determinism, consensus fork, or AppHash divergence using an ordinary transaction, contract call, ante path, block hook, or public module entrypoint.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_9699936b-c81b-441a-82a1-bc4df3b3d409?mode=deep",
+    "questions_generated": false
+  }
+]
