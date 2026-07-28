@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: precompiles/common/precompile.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_655a9f25-513b-427b-b5fc-c75611346adf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/common/revert.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_792090a1-2331-4ecf-b957-59b059e73414?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/common/types.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_2acc6643-8d21-4406-bcba-fb054dac95f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/common/utils.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_951b09b7-9e93-49c5-9e7c-da7cd7517fe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/distribution/distribution.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_65ca02fd-738c-4fbc-9488-8c6ea5bec21a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/distribution/errors.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_7cad6649-d765-471e-95cb-810fb0168ad2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/distribution/events.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8c1b0be7-7927-4fcc-af99-12ead5e452b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/distribution/query.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_70848b49-9827-4c4a-94fd-380970f154da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/distribution/tx.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_cbf2f7e4-528a-4ea4-b870-7bde9ec03c68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/distribution/types.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_fb17d24a-af9e-4469-b9ec-f84733031c99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/approve.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_410ef5b1-0c1d-425a-b3b6-48664ad5a808?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/bank_msg_server_wrapper.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4941293d-f377-4a4f-910e-21c757db3a54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/erc20.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_0c227e03-b979-421c-bcad-ecfab5d6edf8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/errors.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8b634152-c7b6-4655-9e9b-f03703ae485c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/events.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c8f37de7-931c-4056-8325-1e08c15dcd4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/interfaces.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_dcb9050e-c4fa-435f-b5ff-8c8e30f79b1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/query.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_be522c01-0855-4c7d-858c-245f55d69286?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/tx.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_73b478fd-0cd1-4707-aec1-32959c746213?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/erc20/types.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_aa7fb1ec-1015-4f20-ad9b-02e0d0b0f6b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/gov/errors.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_2fae7062-30b8-47d4-bebb-9c8d72a8280c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/gov/events.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_8defb6ca-9c36-494b-9018-c43afe788964?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/gov/gov.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4757d232-cec8-4947-86a8-e258ac62707b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/gov/query.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_12170eba-80fd-4afe-8c8d-baeba348e4fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/gov/tx.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_82f7790c-e319-4c90-bcb5-843ba54e1664?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/gov/types.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_340246bf-0797-46a3-9a23-b721e679de94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/ics20/errors.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_ec1415e8-4fd7-4e95-9805-94eea4aa20f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/ics20/events.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_c27b2164-7230-46a2-a606-333aa6efe782?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/ics20/ics20.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_4806421f-e933-4e0c-9c0a-29a0ee56e1bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/ics20/query.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_0068750c-53e8-4b2d-9660-3930a2f195d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: precompiles/ics20/tx.go -> Scope: Critical. An unprivileged attacker can exploit public EVM execution, nested-call, revert, journal, snapshot, or precompile state handling to reuse balances, bypass burn/escrow semantics, or commit inconsistent state across execution contexts.'",
+    "url": "https://deepwiki.com/search/-generate-cosmos-evm-security_6a42c26c-2cdb-4cbc-9c63-ea148130debf?mode=deep",
+    "questions_generated": false
+  }
+]
