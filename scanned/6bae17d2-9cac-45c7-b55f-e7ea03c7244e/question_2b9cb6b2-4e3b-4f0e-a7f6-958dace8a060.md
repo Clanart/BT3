@@ -1,0 +1,1 @@
+[File: precompiles/bech32/methods.go -> Scope: Critical chain halt] [Symbol: Precompile.Bech32ToHex] If `address` contains zero occurrences of the separator '1' character (e.g., a string using only unsupported bech32 charset), does `strings.SplitN(address, \

@@ -1,0 +1,1 @@
+[File: x/vm/types/preinstall.go -> Scope: Critical.] [Symbol: Preinstall.Validate] Since Validate only checks `IsEmptyCodeHash` but never checks that the decoded Code bytes are non-empty in a way that also matches len(code)!=0 semantics used elsewhere (x/vm/genesis.go's `if len(code) != 0`), can a Preinstall with Code = \

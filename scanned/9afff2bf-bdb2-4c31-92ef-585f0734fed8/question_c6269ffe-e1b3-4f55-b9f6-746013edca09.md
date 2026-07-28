@@ -1,0 +1,1 @@
+[File: 'File Name: x/erc20/types/interfaces.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'] [Symbol: Keeper.OnRecvPacket, strings.HasPrefix(data.Denom, \

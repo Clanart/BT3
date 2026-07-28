@@ -1,0 +1,1 @@
+[File: 'File Name: precompiles/gov/query.go -> Scope: Critical. ...'] [Symbol: GetProposals/ParseProposalsArgs] Can an attacker supply ProposalsInput.Voter or ProposalsInput.Depositor as the zero common.Address, which ParseProposalsArgs converts to voter=\

@@ -1,0 +1,1 @@
+[File: mempool/errors.go] [Symbol: fmt.Errorf wrapping in InsertInvalidNonce breaking errors.Is] Can an attacker submit a tx via InsertInvalidNonce with exactly one eth message causing len(errs)==1, followed by an ante-handler based removal check where the wrapped error from `fmt.Errorf(\

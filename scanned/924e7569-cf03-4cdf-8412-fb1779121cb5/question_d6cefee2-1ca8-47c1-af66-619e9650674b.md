@@ -1,0 +1,1 @@
+[File: 'File Name: x/erc20/types/keys.go -> Scope: Critical.'] [Symbol: RegisterERC20Extension double-registration race for IBC voucher] Can an attacker relay two IBC packets in the same block for the same not-yet-registered ibc/ denom, both hitting OnRecvPacket's `!found && strings.HasPrefix(coin.Denom,
