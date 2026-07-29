@@ -1,1 +1,0 @@
-[File: 'File Name: x/erc20/ibc_middleware.go -> Scope: Critical. An unprivileged attacker can steal, redirect, or irreversibly extract native balances, EVM balances, contract-held funds, or precompile-controlled assets through reachable state-transition, keeper, or precompile logic.'] [Symbol: Keeper.OnRecvPacket case '!found && strings.HasPrefix(coin.Denom, \
