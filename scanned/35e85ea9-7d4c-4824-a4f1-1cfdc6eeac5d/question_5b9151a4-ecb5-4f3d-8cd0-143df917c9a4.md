@@ -1,1 +1,0 @@
-[File: 'File Name: x/erc20/keeper/grpc_query.go -> Scope: Critical.'] [Symbol: Keeper.GetTokenPairID / GetDenomMap empty-string handling] Can an attacker submit an empty-string token (or a token that fails both ValidateAddress and ValidateDenom in a way that still passes due to a whitespace/unicode normalization difference) to the TokenPair handler such that GetDenomMap(ctx,
