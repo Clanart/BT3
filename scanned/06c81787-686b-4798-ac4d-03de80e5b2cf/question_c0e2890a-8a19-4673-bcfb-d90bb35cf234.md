@@ -1,1 +1,0 @@
-[File: 'File Name: rpc/backend/blocks.go -> Scope: Critical.'] [Symbol: GetBlockReceipts] Given msgs and txsAdditional slices built independently in EthMsgsFromCometBlock/parseDerivedTxFromBlockResults, can index misalignment (e.g., partial nil-skipping in one loop but not the other) cause result[i][\
