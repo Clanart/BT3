@@ -1,1 +1,0 @@
-[File: 'ethereum/eip712/eip712_legacy.go' -> Scope: Critical] [Symbol: LegacyWrapTxToTypedData, feeInfo mutation] Can an attacker-influenced `data` payload (parsed via `json.Unmarshal(data, &txData)`) contain a 'fee' object whose 'feePayer' key is later force-overwritten by `feeInfo[
