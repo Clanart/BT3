@@ -1,1 +1,0 @@
-[File: methods.go] [Symbol: Bech32ToHex] Does passing a bech32 string containing multiple valid '1' separators (e.g. an HRP that itself is a valid decodable prefix followed by another '1' later in the checksum/data part) cause `strings.SplitN(address, \

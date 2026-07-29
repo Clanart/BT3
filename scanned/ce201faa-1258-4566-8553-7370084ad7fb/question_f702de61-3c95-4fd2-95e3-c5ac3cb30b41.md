@@ -1,1 +1,0 @@
-[File: 'File Name: precompiles/bech32/methods.go -> Scope: Critical. An unprivileged attacker can break ICS20 or IBC transfer accounting and steal, duplicate, strand, or permanently desynchronize escrowed assets or cross-chain token representations.'] [Symbol: Bech32ToHex] Since `bech32Prefix := strings.SplitN(address, \
