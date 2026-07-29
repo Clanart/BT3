@@ -1,0 +1,1 @@
+I'll search the repository for the relevant modules and any share/asset conversion logic that could mirror the WStable invariant break.functions.grep_search:23{"pattern": "func GetEVMCoinDenom|func GetEVMCoinExtendedDenom|EVMCoinDenom|EVMCoinExtendedDenom|ExtendedDenomOptions", "repo_name": "blackvul/push-chain-evm--014", "include": "x/vm/types/*.go"}
