@@ -1,0 +1,1 @@
+[File: 'File Name: ibc/module.go -> Scope: Critical.'] [Symbol: Module.OnRecvPacket -> Keeper.OnRecvPacket 'factory/' guard] Can an attacker route a token-factory-denominated coin through an additional IBC hop so that after Module.OnRecvPacket's inner app processes the packet, the raw data.Denom string used in the `strings.HasPrefix(data.Denom, \

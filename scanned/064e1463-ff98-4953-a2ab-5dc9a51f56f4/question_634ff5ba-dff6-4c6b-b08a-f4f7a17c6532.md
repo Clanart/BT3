@@ -1,0 +1,1 @@
+[File: 'ethereum/eip712/types.go' -> Symbol: getEthTypeForJSON] Can an attacker submit a numeric amount field (e.g. token transfer `amount`) as a raw JSON number instead of the expected string, causing `getEthTypeForJSON` to classify it as `ethInt64` (

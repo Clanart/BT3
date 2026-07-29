@@ -1,0 +1,1 @@
+[File: 'File Name: rpc/backend/utils.go -> Scope: Critical.'] [Symbol: GetHexProofs] Can an attacker submit a proof request that yields a `crypto.ProofOps` with entries whose `Data` is empty but whose presence is still expected by a fund-release verifier consuming `GetHexProofs`, causing GetHexProofs to return an empty-string proof (`proofs = append(proofs,
