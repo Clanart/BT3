@@ -1,1 +1,0 @@
-[File: 'File Name: mempool/txpool/reserver.go -> Scope: Critical.'] [Symbol: ReservationHandle.Release error swallowing] Since Release logs errors via log.Error but callers in the SubPool implementations may not always check the returned error (a common Go anti-pattern), can an attacker force a Release(
