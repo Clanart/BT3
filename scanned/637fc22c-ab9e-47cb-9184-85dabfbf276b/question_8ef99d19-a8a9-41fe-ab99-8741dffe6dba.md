@@ -1,1 +1,0 @@
-[File: create_signer.rs] [Symbol: native_create_signer] Can `account.rs::make_all` (aptos-move/framework/natives/src/account.rs:61-66), which re-exports `create_signer::native_create_signer` under the `account` module \
