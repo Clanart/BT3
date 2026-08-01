@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/mvhashmap/src/versioned_group_data.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: VersionedGroupData::finalize_group] Can an attacker exploit the `.expect(\

@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/natives/src/storage_slot.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: make_all / native table registration] Can an attacker who publishes a module at a non-framework address using the same native function names \

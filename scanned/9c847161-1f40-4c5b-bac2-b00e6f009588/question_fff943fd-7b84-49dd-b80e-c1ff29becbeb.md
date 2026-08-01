@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/natives/src/aggregator_natives/helpers_v1.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: PHANTOM_TABLE_FIELD_INDEX] Can code::check_dependencies' wildcard AllowedDep (module_name = \

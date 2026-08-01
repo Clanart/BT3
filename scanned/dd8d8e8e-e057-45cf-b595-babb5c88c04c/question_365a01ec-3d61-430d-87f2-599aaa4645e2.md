@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/natives/src/cryptography/algebra/rand.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: rand.rs conditional compilation boundary] Can package metadata's declared \
