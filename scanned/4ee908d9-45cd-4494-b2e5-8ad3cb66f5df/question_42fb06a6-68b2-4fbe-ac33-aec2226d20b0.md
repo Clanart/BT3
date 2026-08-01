@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-vm/types/src/delayed_values/derived_string_snapshot.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: u64_to_fixed_size_utf8_bytes] Can an attacker choose a `value`/`length` pair such that `format!(\

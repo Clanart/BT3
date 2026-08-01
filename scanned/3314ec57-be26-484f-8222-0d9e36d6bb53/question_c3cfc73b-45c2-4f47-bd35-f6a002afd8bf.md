@@ -1,0 +1,1 @@
+[File: 'File Name: api/types/src/hash.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: HashValue::from_str] Can an attacker-supplied hex string with a doubled or malformed '0x' prefix under no special state pass through FromStr's `strip_prefix(\

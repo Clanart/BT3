@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/aptos-token/sources/property_map.move -> Scope: Critical.'] [Symbol: read_address] Can an unprivileged caller who controls the raw bytes behind a PropertyValue (via create_property_value_raw or update_property_value) under a state where type == \

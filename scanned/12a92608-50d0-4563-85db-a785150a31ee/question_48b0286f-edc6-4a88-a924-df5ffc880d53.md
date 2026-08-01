@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/move-stdlib/sources/bit_vector.move -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: named address std resolution] Can an attacker publish a package with `[addresses] std =

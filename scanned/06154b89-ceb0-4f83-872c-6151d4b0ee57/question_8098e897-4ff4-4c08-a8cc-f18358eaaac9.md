@@ -1,0 +1,1 @@
+[File: hash.move -> Scope: Critical.] [Symbol: code::is_policy_exempted_address] Given a PackageMetadata whose deps vector includes account=@1 (0x1, where std::hash lives), can an attacker craft a dependency declaration referencing a module literally named 'hash' via the wildcard AllowedDep (module_name=\

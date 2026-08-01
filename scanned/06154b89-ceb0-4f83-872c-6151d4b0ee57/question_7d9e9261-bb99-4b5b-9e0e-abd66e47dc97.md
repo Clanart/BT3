@@ -1,0 +1,1 @@
+[File: ... fixed_point32.move ...] [Symbol: aptos_vm.rs::validate_publish_request / allowed_deps.get(dep.address())] Can an attacker declare a PackageDep whose account matches move-stdlib (0x1) to obtain the wildcard `modules.contains(\
