@@ -1,1 +1,0 @@
-[File: same anchor] [Symbol: aptos_framework::code::check_dependencies wildcard AllowedDep] Can an unprivileged publisher set `AllowedDep.module_name` to the empty string wildcard for a dependency address that is not actually a well-known framework address, tricking `validate_publish_request`'s allowed_deps lookup (`modules.contains(\
