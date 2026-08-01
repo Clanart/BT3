@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/access_path.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: AccessPath::is_code] Can an attacker exploit the `expect(\
