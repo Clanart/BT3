@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-vm/runtime/src/native_functions.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: ModuleStorageWrapper (delegate ModuleStorage)] Can the #[delegate(ModuleStorage, target_ref = \
