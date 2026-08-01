@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: aptos-move/block-executor/src/captured_reads.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7470081a-62dc-48a4-867b-2b8a45d6f542?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/code_cache.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_fa3ff619-b0fc-485f-8e62-419d0046e23b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/code_cache_global.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_1693b286-3fa6-4386-b5e0-b898243048e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/code_cache_global_manager.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_23df9880-400c-457d-adea-b74972e408dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/cold_validation.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2d10f016-6ade-46cb-8b08-c7f23d67ebf7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/errors.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6f5927cc-5995-41f1-95f8-b875d723b41a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/executor.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_66544713-27b1-4a03-b5f2-ea885913dcae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/executor_utilities.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6e46ef3d-0569-41dd-8a1f-ed033d402078?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/explicit_sync_wrapper.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9d88ce5b-4dc8-424c-84b2-f8555e21b017?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/hot_state_op_accumulator.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7842c551-8542-477f-af30-f5e5ab1cb970?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/limit_processor.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_58a21943-067f-4042-bb8d-1b50c6488b39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/scheduler.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_142bfac3-7a42-43ab-b23f-f19c640d947b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/scheduler_status.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6f56a049-9727-4e52-ae3c-499f7df07949?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/scheduler_v2.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9eeb1b63-a73a-4a79-9163-1a2b7c6a093e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/scheduler_wrapper.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_4d443f18-b986-4e67-8110-02ceb1ca625d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/task.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_244c713b-cf38-49c0-ac6a-762ee038d1f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/txn_commit_hook.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_4de47b81-7ce5-41b2-8851-45ffe5ac5970?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/txn_last_input_output.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_56d7fe51-9027-47a7-ac6a-9c95993667ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/txn_provider/blocking_txns_provider.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_3dc18824-f8f9-4128-8b58-a617b3ffc9ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/txn_provider/default.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_51e30efc-0fea-4a25-a324-bfb5d09f0211?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/types.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_5364ab53-ad05-432a-8b07-f0a27cabec41?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/value_exchange.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6bd9730c-658a-49f9-a8d2-12d446602460?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/view.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a401cef9-826d-43ae-b543-7675221c5983?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/block-executor/src/worker_pool.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_39bd4000-ff13-4280-a0e8-047ebed2cd86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/account/account.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2e33da7d-ff83-449c-8248-0830b7462b9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/account/auth_data.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c4b2020e-bc26-4034-8f57-a997e8fc36f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/account/rate_limiter.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_32022da9-e91a-4fe9-878f-9106605df7ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/aggregator/aggregator.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f9e22964-7548-4d10-90b2-a7207e436434?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/aggregator/aggregator_factory.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_bdecf3f6-806e-4d30-a421-ee9f9f6e93cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/aggregator/optional_aggregator.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dd1fe4b0-8aa3-4b4a-80dc-344b5a985c84?mode=deep",
+    "questions_generated": false
+  }
+]
