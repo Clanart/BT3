@@ -1,1 +1,0 @@
-[File: signature_verified_transaction.rs -> Scope: Critical.'] [Symbol: code::check_dependencies] Can an attacker publish a package whose `PackageDep` list references `is_policy_exempted_address` (framework addresses 0x1-0xa) to obtain a wildcard `AllowedDep{module_name:
