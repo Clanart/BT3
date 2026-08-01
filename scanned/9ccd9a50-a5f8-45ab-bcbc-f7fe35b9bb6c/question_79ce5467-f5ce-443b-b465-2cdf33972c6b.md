@@ -1,0 +1,1 @@
+[File: 'File Name: api/types/src/bytecode.rs -> Scope: High.'] [Symbol: aptos_vm::validate_publish_request allowed_deps vs Bytecode dependency exposure] Can an attacker construct a module whose immediate_dependencies() include a dependency address/name pair that is present in the allowed_deps map only via the wildcard empty-string entry (modules.contains(

@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/aptos-framework/sources/aptos_coin.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: code.rs native::unpack_allowed_dep / PublishRequest.allowed_deps] Can an attacker construct a Move-level `AllowedDep` vector whose empty-string entry (`modules.contains(

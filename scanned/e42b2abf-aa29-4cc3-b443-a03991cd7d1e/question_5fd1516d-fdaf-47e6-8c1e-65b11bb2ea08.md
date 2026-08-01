@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/aptos-framework/sources/coin.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: is_apt/create_sticky_object_at_address] Can an attacker whose module defines a struct whose `type_info::type_name` string equals `\

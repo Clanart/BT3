@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/events/coin_withdraw.rs -> Scope: Critical.'] [Symbol: CoinWithdraw::MODULE_NAME/STRUCT_NAME (MoveStructType impl)] Given the struct hardcodes MODULE_NAME=\
