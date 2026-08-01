@@ -1,1 +1,0 @@
-[File: 'File Name: ... modules.rs -> Scope: High.'] [Symbol: StructFieldInformation::Native unreachable!()] Module::make_struct_type (modules.rs:445-446) treats StructFieldInformation::Native as `unreachable!(\
