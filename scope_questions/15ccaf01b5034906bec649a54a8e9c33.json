@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: types/src/account_config/events/mint.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9ce8f511-46bd-4576-96b4-6fbfffd33843?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/mint_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dc8deb3b-3710-4d3d-b711-8fb20199b617?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/mint_token.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_da5df83c-3626-4b29-9020-fda3b7ee19df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/mint_token_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_cc17af9e-34e2-414e-bb15-6a610e42663b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/mutate_property_map.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_d239e567-7d73-46b5-bc5f-58b256f68f19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/mutate_token_property_map_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_076581fe-d50a-4199-b485-f87077e42b48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/new_block.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b9f60b30-c66c-4719-97a8-454d6d154209?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/new_epoch.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0f584717-ee9d-4ca7-ab0c-eafb6a798ab6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/offer.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_540f955f-04a9-4792-b430-796a382602a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/opt_in_transfer.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_5f69d60c-f3de-444b-bb6d-b074fbb2e467?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/opt_in_transfer_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a6b0defb-c902-472a-9185-940cc269f05a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/randomness_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2d7f0178-3423-45ed-b67b-7ab50909a1c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/royalty_mutate.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dea4e44f-c8d1-4751-9b4d-5d59ba333005?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/royalty_mutate_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c19d2d3e-ba5c-42dd-9751-ad2b640ecc87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_cancel_offer_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_641097eb-c1b5-4624-bb6b-fed1d124dddf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_claim_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_336ccd25-0c5d-4f0c-a613-e74e03c92416?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_data_creation.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_136d5896-db1a-478e-809c-68f222a26508?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_deposit.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7358299d-e36d-4b67-9662-d28379466e98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_deposit_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c676ef8b-130f-4acb-9bef-f16545f403f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_mutation.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9876984f-f537-43fc-99e5-9d012125ad85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_mutation_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6661149c-c254-4544-ace9-c2a42afe06f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_offer_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_569ce7e9-9f73-4889-ae31-25b47f348e38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_withdraw.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f238fabe-6aed-49a0-b34e-2a9bbc50d561?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/token_withdraw_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b5eb8e2c-8571-42ef-b276-d5bb76da9201?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/transfer.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_641ec58f-cb55-4fee-8a42-800d68c131c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/transfer_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_fa4d7661-fb38-4c2f-a2fa-234bc6adecb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/uri_mutation.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_437b554b-40c1-4ada-bfb2-b7fb1d6f7976?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/uri_mutation_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_5c20c8de-778a-4e74-9f95-d2735a82f47f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/events/withdraw_event.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_cb3cb4f0-0600-41b5-9a3d-2a0809126666?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/account_config/resources/aggregator.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c502a67b-ffe0-48be-8439-3d02305f47b3?mode=deep",
+    "questions_generated": false
+  }
+]
