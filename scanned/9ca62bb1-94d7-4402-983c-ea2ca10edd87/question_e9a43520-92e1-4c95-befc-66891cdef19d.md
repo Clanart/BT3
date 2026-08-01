@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/account_address.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: create_collection_address / create_token_address] `create_token_address` builds `seed = collection || b\
