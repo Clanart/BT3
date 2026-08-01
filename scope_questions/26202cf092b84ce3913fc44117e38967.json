@@ -148,5 +148,155 @@
     "question": "'File Name: types/src/transaction/block_epilogue.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
     "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_e3a22298-da63-43b9-a04a-527a480a6735?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/gas_schedule.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a87d1ab9-538e-42e0-8a4e-3fe493b241ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/jwk_consensus_config.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_cf76115b-6a1f-40c2-8f3a-d660498e30e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/randomness_api_v0_config.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_42ae6dc1-6b8c-47b0-8a5b-d2f3386c1cb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/randomness_config.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b007629b-6dc9-4211-8693-209307f99578?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/timed_features.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_29b42010-4718-4717-8096-4479620841b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/timestamp.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9b196dd3-6835-412b-81e6-92573087b23e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/transaction_fee.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_8baa82c1-d4ee-4cf7-9329-61c801525e58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/validator_set.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2020d190-43ca-48cf-94d0-694875b95b59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/proof/definition.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0499c62b-d4aa-485c-8f88-38dafdc6465e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/randomness.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_58e5de1e-ec1c-40a8-afb4-74a0f2e4c19c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/secret_sharing.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6334d691-ec23-4f8d-a6dd-867df7396c4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/serde_helper/bcs_utils.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f6b24e5c-6d18-43f9-ae1f-d8fef0744ea5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/serde_helper/vec_bytes.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ed76afe9-f9aa-4210-9f37-7e80815b635a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/stake_pool.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7863b1ef-b38f-4754-bce4-da075bd7c281?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/staking_contract.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_5e70d35c-559a-4ec0-83a2-a444d4cacedb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_proof.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9160168c-5849-4dd8-929b-988b3b8b4003?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/errors.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7ec98120-54e1-4c10-adfe-8b272b08f990?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/hot_state.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_fbd283a9-ba7a-46f5-9455-e139092331b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/native_position.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_1f8ce424-6254-43d0-93d1-c57b452b401e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/state_key/inner.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7551ac98-c695-49c6-8a71-e98e1e370cf9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/state_key/prefix.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_1eda33f5-0160-4094-90e2-5ce27c016a71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/state_key/registry.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6db77c14-1470-4cc1-88f8-4fba6a889b80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/state_slot.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_fde8998b-2653-4943-b3dc-47e8fa7a261a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/state_storage_usage.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c34b45d8-9e3a-41bf-8d57-0f74a45e327a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/state_value.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f7f15852-5f81-4079-9a86-39878ccd6f7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/state_store/table.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6455efb5-2e02-4597-92c2-49e352f3f125?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/timestamp.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ac8172c0-391b-4701-bf21-55eb5478b596?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/transaction/analyzed_transaction.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_88dab0e1-ee1e-4736-b0f7-7a9b14eef087?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/transaction/authenticator.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_008f2192-38dc-4cf9-b8c4-f868f5e93b07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/transaction/block_epilogue.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_313f7612-72df-4cea-b52a-de3dc7477947?mode=deep",
+    "questions_generated": false
   }
 ]
