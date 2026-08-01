@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-core/types/src/abi.rs -> Scope: High.'] [Symbol: aptos_framework::code::request_publish_with_allowed_deps] Can an unprivileged caller pass an `allowed_deps: vector<AllowedDep>` containing a wildcard entry (`module_name == \

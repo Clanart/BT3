@@ -1,0 +1,1 @@
+[File: 'File Name: execution/executor/src/workflow/do_state_checkpoint.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: DoStateCheckpoint::run / persisted_position_state_summary.expect] The `.expect(\

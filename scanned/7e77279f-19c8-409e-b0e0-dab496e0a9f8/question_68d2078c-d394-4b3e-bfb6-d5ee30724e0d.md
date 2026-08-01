@@ -1,0 +1,1 @@
+[File: 'File Name: execution/executor/src/types/partial_state_compute_result.rs -> Scope: High.'] [Symbol: code::check_dependencies / AllowedDep.module_name wildcard] Can an attacker declare a PackageDep pointing at a non-exempted address but craft a PackageMetadata whose deps vector aliases the wildcard match logic (module_name == \

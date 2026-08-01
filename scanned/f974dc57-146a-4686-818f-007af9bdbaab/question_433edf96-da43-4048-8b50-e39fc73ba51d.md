@@ -1,0 +1,1 @@
+[File: ... native_extensions.rs ...] [Symbol: NativeContextExtensions::get] Can an unprivileged attacker cause the `code::request_publish` native to be invoked without a prior `NativeCodeContext::new()` having been added to `extensions` (e.g. via a crafted script/dispatch path that bypasses `make_aptos_extensions`), triggering the `expect(
