@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/block_executor/value.rs -> Scope: High.'] [Symbol: ValueWithLayout::extract_value_no_layout] Can an unprivileged transaction that publishes a module trigger the panic branch ValueWithLayout::Exchanged(_, Some(_)) => panic!(\
