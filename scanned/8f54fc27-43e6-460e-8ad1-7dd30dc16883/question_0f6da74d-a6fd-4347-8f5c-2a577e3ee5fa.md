@@ -1,1 +1,0 @@
-[File: coin_register_event.rs -> Scope: High.] [Symbol: check_dependencies is_policy_exempted_address wildcard AllowedDep] Can an unprivileged attacker declare a PackageDep.account equal to a policy-exempted address, causing check_dependencies to push AllowedDep{module_name: \
