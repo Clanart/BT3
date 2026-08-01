@@ -1,1 +1,0 @@
-Now let me check where `ExistingExpenditure`/`ExistingCost` callbacks are wired in `legacypool.go` and how `promoteExecutables` handles balance checks.
