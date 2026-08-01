@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-vm/types/src/module_id_interner.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'] [Symbol: Module::new_for_test / production intern path divergence] Can the divergence between the `#[cfg(any(test, feature =

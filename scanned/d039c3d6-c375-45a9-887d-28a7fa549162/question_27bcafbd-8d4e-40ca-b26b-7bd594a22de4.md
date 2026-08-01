@@ -1,0 +1,1 @@
+[File: state.rs -> Scope: High.] [Symbol: State::apply_one_update / BaseStateOp handling for legacy_deletion] Can an attacker's transaction include a `WriteOp::legacy_deletion` on a Code StateKey (module deletion is disallowed at the Move-VM `ModuleWriteSet` layer per `code_invariant_error(

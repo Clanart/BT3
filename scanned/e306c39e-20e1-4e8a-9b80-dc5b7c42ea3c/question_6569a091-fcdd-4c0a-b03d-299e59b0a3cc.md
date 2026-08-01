@@ -1,0 +1,1 @@
+[File: leaf_entry.rs] [Symbol: LeafEntry::state_key / leaf_entry_to_jmt_update panic path] Can an attacker-influenced write set produce an occupied StateSlot (Some(value_hash)) for a code/package-registry key with a None state_key, triggering the `expect(\

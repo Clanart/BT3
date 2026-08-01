@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/aptos-token/sources/token_event_store.move -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: aptos_vm::validate_publish_request allowed_deps] Can an attacker declare an allowed_deps entry using the wildcard module_name \
