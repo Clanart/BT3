@@ -1,1 +1,0 @@
-[File: 'File Name: ... error.move -> Scope: Critical.'] [Symbol: aptos_vm.rs::validate_publish_request/allowed_deps wildcard] Can an attacker craft a PackageDep pointing at one of the ten policy-exempted framework addresses (0x1-0xa) with an empty module_name wildcard AllowedDep, so that `modules.contains(\
