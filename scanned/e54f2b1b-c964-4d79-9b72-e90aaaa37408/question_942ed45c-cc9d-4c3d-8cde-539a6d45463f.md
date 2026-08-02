@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-core/types/src/int256.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: Default for U256/I256] Can a native publish helper that relies on `U256::default()`/`I256::default()` (both `ZERO`) as a \
