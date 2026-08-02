@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/aptos-crypto/src/poseidon_bn254/alt_fr.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_317d0ecb-3bcb-4404-9a5e-8b20abaca465?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/poseidon_bn254/constants.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_34441f9b-8b9d-4ca3-8165-beb669c08d0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/secp256k1_ecdsa.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_647fdb19-3b8f-4b55-96e7-837452f1ca44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/secp256r1_ecdsa/secp256r1_ecdsa_keys.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_fdc98980-a3e1-4060-bf03-d1aaf9d960e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/secp256r1_ecdsa/secp256r1_ecdsa_sigs.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_17b14962-9fc3-4e35-9a57-c06766d65642?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/slh_dsa_sha2_128s/slh_dsa_keys.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_964178a9-e14f-4507-9a26-cf883a61954f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/slh_dsa_sha2_128s/slh_dsa_sigs.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_93f92dbd-db12-48c4-ae37-4d955272c031?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/utils.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_40b74bc6-0a56-491f-a390-f68c64012d9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/validatable.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0420701b-99f7-48ea-9c33-ea1630f97694?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/weighted_config.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_970e38c3-c473-41a3-bb2c-0587615bb18a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-crypto/src/x25519.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_322227a4-abeb-44d5-834e-be883694f135?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/dlog/bsgs.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ae81730d-92f6-4c0a-9791-3c17f839bae6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/dlog/table.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_27bf50d5-1b40-4d8b-87a7-f4803f9fe521?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/fiat_shamir.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_66529881-756d-481f-b9a2-95251d783cb1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pcs/shplonked.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f73af739-52c6-4742-ba18-970b9d2bc60e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pcs/shplonked_sigma.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_eb1be03c-e6ff-4013-aa93-421ea6e41458?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pcs/traits.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_49c87cdd-701a-43de-b34f-1afa3a09c518?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pcs/univariate_hiding_kzg.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_1ba29a33-c863-4df6-8569-38dd71a73d63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pcs/univariate_kzg.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_75e1eaef-5c25-4310-abd5-81c513a2bc7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pcs/zeromorph.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_8172aa90-3dca-4269-ac12-de6d1032ce8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/chunked_elgamal.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2ed288f9-5457-44df-9d17-28beeca44542?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/chunked_elgamal_pp.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_456d81bc-3353-48e6-9642-cd87466b459d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/chunked_scalar_mul.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ff17abbf-b446-4cca-9948-76e06a5bb1c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/chunks.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_34949d84-2d54-4c9a-bd78-2588b1cf84f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/hkzg_chunked_elgamal.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_98e571a3-3730-4b0c-8808-a66e3fcb8e4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/hkzg_chunked_elgamal_commit.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_043ad749-9053-4f8a-b9f1-60832f1a30d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/input_secret.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_55f17f19-7ecc-4c89-86af-19e5f4603503?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/keys.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_41cc52bb-31aa-4fb8-80f1-dd1183fa3ad6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/public_parameters.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b237295e-74e3-45ae-87c7-9d62315475d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/aptos-dkg/src/pvss/chunky/subtranscript.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9e998676-9100-41e4-9a53-3357c02e51a8?mode=deep",
+    "questions_generated": false
+  }
+]
