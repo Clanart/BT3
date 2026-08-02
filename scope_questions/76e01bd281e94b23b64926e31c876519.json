@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/type_info.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_078e6ec5-6ac4-458a-9074-796214e09e35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token-objects/sources/aptos_token.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0d6c7a0a-a6b5-4661-9b8b-6e52b1cfe61f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token-objects/sources/collection.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_43cda065-e7bd-4471-ab02-de2ef3fddafd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token-objects/sources/property_map.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_e512323a-8897-49a7-97aa-043773f280b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token-objects/sources/royalty.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_d60a97af-bd6b-4889-9c67-c6b44d433284?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token-objects/sources/token.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_4ed7d136-2a21-4639-a1bc-8360f0597e8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token/sources/property_map.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_edcbf1c4-3092-4e74-be4b-de92c63fb5bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token/sources/token.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_55380321-b197-4c6c-af38-e31aaead3922?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token/sources/token_coin_swap.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a62bfb41-5a7a-4fcb-8220-dee253d3a063?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token/sources/token_event_store.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a3f62028-4e15-4308-8f11-dd28fb68091b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-token/sources/token_transfers.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a1e723aa-7464-43fc-bc06-ea70bd140016?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/acl.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c131f173-6709-4a01-a375-9ab30b557e7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/bcs.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_3ce1023c-47f8-42ec-866d-51e71d2d63c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/bit_vector.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9649e1fe-15b3-4692-ab37-d35c6b5d0255?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/cmp.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ba5235cb-38a5-442b-a2cd-8fc4be37915f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/configs/features.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_3c3c4fde-fc3c-4a5d-a2f8-ddfbfa1df852?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/error.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_359f08c9-420b-4152-944d-cd016bae8361?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/fixed_point32.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_e3b3f4a1-8754-4674-a06f-30c6c93b231c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/hash.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0d255a35-3456-40e2-96fb-64785d249252?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/mem.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_89d3bc1d-1182-490a-8d5a-4fa94768b7c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/option.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_74386f79-7d09-443f-a082-ae3fcfa53efc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/reflect.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ee937a27-03e2-46ca-86a2-e780113e2004?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/result.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_e9094df4-f0f9-4a7f-aa2f-790b825ad1ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/signer.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2dda5007-6dda-4939-bbc4-8ac039c78f20?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/string.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_81cd3225-3440-4e42-a679-c038b20c2b80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/move-stdlib/sources/vector.move -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b34c2581-e9da-4da6-adf5-c20eaea49a45?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/natives/src/account.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ce4bda7a-8d62-4a46-9e97-e3d7efc5834f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/natives/src/aggregator_natives/aggregator.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_4a052191-14bc-48b1-84cd-e614902ebc87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/natives/src/aggregator_natives/aggregator_factory.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_69b35935-92ff-463d-b275-72019e49f110?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/natives/src/aggregator_natives/aggregator_v2.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_4d8034dd-6e3f-4848-9964-574ac16da9c6?mode=deep",
+    "questions_generated": false
+  }
+]
