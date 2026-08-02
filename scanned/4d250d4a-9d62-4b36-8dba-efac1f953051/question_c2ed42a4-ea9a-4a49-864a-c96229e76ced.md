@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-vm/types/src/delayed_values/error.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: aptos_vm::validate_publish_request] Can an attacker supply an `allowed_deps` map whose `BTreeSet<String>` contains the empty string `\
