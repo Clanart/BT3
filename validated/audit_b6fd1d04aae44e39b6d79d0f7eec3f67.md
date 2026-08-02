@@ -1,0 +1,1 @@
+Let me find the actual `max_num_of_ty_params_or_args` function definition, which I wasn't able to view before the iteration limit was reached.
