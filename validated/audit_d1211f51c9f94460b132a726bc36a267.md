@@ -1,1 +1,0 @@
-Now let's find `FunctionAttribute::is_compatible_with` and `cannot_be_removed` in `file_format.rs` to check whether `ModuleLock` is actually treated as removable.
