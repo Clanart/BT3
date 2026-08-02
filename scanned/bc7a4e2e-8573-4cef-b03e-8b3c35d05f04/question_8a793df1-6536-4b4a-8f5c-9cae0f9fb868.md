@@ -1,1 +1,0 @@
-[File: addresses.rs] [Symbol: reserved_vm_address] Can charge_package_dependencies / gas-metering logic in aptos_vm.rs:1617-1671 be starved or skipped by an attacker submitting a publish request whose `modules` list omits a module actually referenced via allowed_deps wildcard (module_name == \
