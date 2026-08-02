@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: storage/scratchpad/src/sparse_merkle/updater.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_cbdc54dc-1b98-453f-8214-292140a09153?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/scratchpad/src/sparse_merkle/utils.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_1a567aa3-cfb3-42f1-95c9-ab9a2db50555?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/block_info.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_341e670b-2a4d-4261-af2c-cbed102c14e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/chunk_to_commit.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_79dbb8c3-4658-4327-ab74-ac1d304c9140?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/errors.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c2b1a34f-a9a8-4050-a70b-b614c5872b76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/ledger_summary.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_17609ff0-401f-4c5a-8bc7-71d2c9565ec2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/hot_state.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_5bf42e43-d3a6-49bc-b6ce-f2257ed998a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/leaf_entry.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a162bb3b-48ed-4da9-83d3-362a6674caec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/sharded_jmt_state.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_90780e06-f8ce-4ecc-9882-66264c03d15a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_25e85b51-498c-4a53-8223-63db2b4fab76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_delta.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_cf6fc9f3-d1d7-475e-83ad-89a88f12d31b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_summary.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dd313d25-f0ee-487c-8c4b-8ad1dc85cbf4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_update_refs.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ec3965b7-8847-4904-9644-f098eab601ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_view/cached_state_view.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_bbfaf7f9-4d81-42a9-8960-9f32c68052bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_view/db_state_view.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dccae3f6-6c9a-45a4-9b0b-68161f5c645e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_view/hot_state_view.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_8bf0b09f-93c9-4668-aa95-7822776ee404?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/state_with_summary.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_8d974ba4-3067-4f5a-9dba-edd32981629d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/storage-interface/src/state_store/versioned_state_value.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_d4cea606-6dc2-41f0-8ee9-edcbdbb2789d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/access.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2e737f1b-0c42-426d-8af3-516dab5b7d30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/binary_views.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_d7c8f49d-0fdd-44ba-9260-646623d2f583?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/builders.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_39b09885-9815-4fab-8406-296e721d7992?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/check_bounds.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_29aca4c1-75fe-4f34-bb90-b98265687ebe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/check_complexity.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_7afc7b46-e6db-4f41-b403-a000ff68ab1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/compatibility.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_8cab95cc-4afa-48fc-8484-6c52f031a417?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/constant.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0f7ce4bb-b2bd-494c-bd87-5654f55aefcf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/control_flow_graph.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2c71f1c9-2158-44c4-ab05-2986a5180a94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/deserializer.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ededc4fd-6e6b-4841-ad61-32e92360a21f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/errors.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6a6367bc-3d84-45c9-9ffa-74441bdc3c76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/file_format.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_89526dc3-b1a4-4c32-9511-c74fae36a46f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/file_format_common.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f2725ca9-1e73-46af-8b62-f789fa8d0ea6?mode=deep",
+    "questions_generated": false
+  }
+]
