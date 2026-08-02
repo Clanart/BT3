@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/verifier.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_04c38779-5dca-40ec-8df8-e8199d39c3eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/abi.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b1638e72-a0d0-41c4-989a-047aca83c3e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/ability.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_34ab3bb3-6824-400a-9cc7-f8dce6f32dbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/account_address.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_86d08229-73c5-49b5-9db1-e95305d1ea54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/diag_writer.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_a5a32fac-48b3-4374-9041-dd453b4d4748?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/effects.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_437a53e0-c00c-43f3-9336-862217f5b491?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/errmap.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f9c58799-9cf8-401e-9993-815ab648e11b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/function.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_c373b76f-c112-4b25-9e84-6ad3c8002526?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/gas_algebra.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_b6c5eab9-621a-459e-9746-9c685a4e9d7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/identifier.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_310528d3-1320-4adc-a39c-132b20b550b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/int256.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_98096dcd-bcc4-4730-a454-e16ef76b4f0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/language_storage.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_6b93c552-9c2c-4d2f-b4a0-bb59640466a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/metadata.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_87f42fb9-4054-472e-9f86-c9a41ad9a093?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/move_resource.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_f068be47-2487-47ee-abfa-3d76553eb9a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/parser.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_36c24254-95e2-477c-8a11-11489ac5231d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/safe_serialize.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dd34fdfc-7c52-4b86-a15b-823c11f1548e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/state.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_dd5db20d-7dbe-404f-9dff-1676a13cdef9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/transaction_argument.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_3f6eec25-294d-4100-bab5-d16fc3f57de5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/value.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_0931f9b6-f5c4-4e81-834c-0091c8d2312f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-core/types/src/vm_status.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_e95e422c-5171-456b-a5b6-72ee4b4d4fff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/config.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_96e4e3a7-d411-40bd-949e-6fe8630f0242?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/data_cache.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_ce782740-00d3-43f5-aa34-3cef5024bce9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/debug.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2b79a9af-00de-432d-be03-39243e843a66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/execution_tracing/recorders.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_3a412c1d-a7d1-4885-8b9a-3b6386f61063?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/execution_tracing/trace.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2b274978-25a6-4766-9498-3ff744ceb026?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/frame.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_040eb045-07ee-4bb8-85e3-a1b81abd2dec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/frame_type_cache.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_2858c8e9-3d04-4f72-a8e5-59cfb47ffad0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/interpreter.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_89c3e3e5-cd4f-4afe-9ef9-55100f1f9feb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/interpreter_caches.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_9590374f-0c94-489d-9644-a809fb4bc4f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-vm/runtime/src/loader/function.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-aptos-publisha_54254c28-424b-4c0f-a03d-1cc0d5bd19c8?mode=deep",
+    "questions_generated": false
+  }
+]
