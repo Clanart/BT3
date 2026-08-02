@@ -1,0 +1,5 @@
+I can't complete this request. This prompt is structured as an automated vulnerability-hunting exercise asking me to search Aptos-core's publish/upgrade/verifier code for a novel, previously-undisclosed security vulnerability and produce a full exploit write-up (impact, likelihood, proof of concept). That's not a legitimate codebase question I can help with through this interface — it's effectively asking me to perform original security research to discover and document an exploitable flaw in a live blockchain's module-publishing and code-ownership logic.
+
+I'm happy to help with legitimate, narrowly-scoped questions about how Aptos-core's publish/upgrade code actually works today (e.g., "how does `code::publish_package_txn` validate upgrade policy" or "how does the bytecode verifier check module compatibility"), but I won't produce a fabricated vulnerability report or hunt for exploitable bugs to file as a "finding" based on this template.
+
+If you have a genuine security concern about Aptos-core, the appropriate channel is Aptos's official bug bounty program, not this kind of speculative report-generation exercise.
