@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/state_store/state_value.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: StateValue::maybe_upgrade / expect_upgraded] Since `expect_upgraded` panics (`expect(\
