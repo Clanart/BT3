@@ -953,11 +953,7 @@ target_scopes = [
 
 APTOS_ALLOWED_IMPACT_SCOPE = """## Publish Impact Gate
 Accept only publish-path and code-safety impacts with current mainnet relevance:
-- Unauthorized module publish, upgrade, freeze, code-object ownership change, or code replacement.
-- Compatibility, upgrade-policy, or allowed-dependency bypass that places forbidden bytecode on chain.
-- Mismatch between verified bytes, package metadata, dependency declarations, and committed module bytes.
-- Verifier, module-init, native validation, or write-set-publish failure that reaches protected state mutation.
-Discard: malicious peer or node behavior, generic network DoS, Consensus Observer-only impact, `consensus/src/dag`, `experimental`, `keyless/pepper`, AIP-103 Permissioned Signer, AIP-104 Account Abstraction, leaked keys, privileged governance or admin assumptions, social engineering, third-party oracle errors, tests, mocks, fixtures, benches, examples, docs, readmes, generated or build files, `.toml`, event-only mismatches, minor rounding or style, and dependency-only claims without a repo root cause."""
+Discard: malicious peer or node behavior, generic network DoS, Consensus Observer-only impact."""
 
 APTOS_AUDIT_PIVOTS = """## Publish Pivots
 - Package metadata, upgrade policies, and allowed dependencies must describe the code that is actually verified and stored.
