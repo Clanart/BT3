@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/framework/aptos-stdlib/sources/cryptography/bls12381.move -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: check_dependencies / AllowedDep] Does the Move-side wildcard construction `AllowedDep { account, module_name: string::utf8(b\
