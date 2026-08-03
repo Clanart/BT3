@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/block-executor/src/txn_last_input_output.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: object_code_deployment::freeze_code_object] Can an unprivileged owner of a code object with multiple packages (violating the documented \
