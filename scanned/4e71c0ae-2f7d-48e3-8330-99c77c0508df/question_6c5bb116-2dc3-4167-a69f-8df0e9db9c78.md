@@ -1,1 +1,0 @@
-[File: 'File Name: execution/executor-types/src/ledger_update_output.rs -> Scope: Critical.'] [Symbol: Inner::txn_accumulator] Can a malicious write set that publishes a module with a corrupted allowed-dependency BTreeMap entry (empty string wildcard '' matching any module name) pass validate_publish_request's allowed_deps.contains(\
