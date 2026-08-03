@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-binary-format/src/serializer.rs -> Scope: High.'] [Symbol: serialize_identifier / IDENTIFIER_SIZE_MAX vs code::AllowedDep.module_name] Can an unprivileged package author craft an Identifier whose serialized byte length is exactly IDENTIFIER_SIZE_MAX (the max allowed by the binary serializer) while the empty-string wildcard `
