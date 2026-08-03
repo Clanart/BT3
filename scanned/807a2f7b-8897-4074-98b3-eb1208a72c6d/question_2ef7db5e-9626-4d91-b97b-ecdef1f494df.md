@@ -1,1 +1,0 @@
-[File: 'File Name: execution/executor/src/chunk_executor/chunk_result_verifier.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: StateSyncChunkVerifier::verify_chunk_result] Can an attacker who crafts a transaction that publishes/upgrades/freezes a module under `feature = \
