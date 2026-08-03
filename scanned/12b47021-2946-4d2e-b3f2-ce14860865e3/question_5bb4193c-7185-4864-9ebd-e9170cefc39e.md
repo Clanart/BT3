@@ -1,1 +1,0 @@
-[File: ... Scope: Critical ...] [Symbol: ValueView::legacy_abstract_memory_size for module_name String in AllowedDep] Can an attacker choose a `module_name: String` of length zero (the documented wildcard sentinel in `AllowedDep`) such that `legacy_abstract_memory_size`'s `visit_vec_u8` byte-count charging and the wildcard-matching logic `modules.contains(\
