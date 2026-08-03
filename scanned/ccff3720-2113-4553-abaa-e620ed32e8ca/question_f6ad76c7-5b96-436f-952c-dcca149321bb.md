@@ -1,1 +1,0 @@
-[File: create_signer.move via code.move] [Symbol: code::check_dependencies, AllowedDep wildcard] Can an attacker declare a `PackageDep` pointing to one of the exempted core addresses (`@1`..`@10`) with a package name that does not actually exist there, so `is_policy_exempted_address` grants a wildcard `AllowedDep { account, module_name:
