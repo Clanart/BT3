@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm-types/src/storage/change_set_configs.rs -> Scope: Critical.'] [Symbol: code::check_dependencies wildcard AllowedDep] Can an unprivileged package owner declare a dependency on a framework address in `is_policy_exempted_address` range (0x1-0xa) to obtain a wildcard `AllowedDep { module_name:
