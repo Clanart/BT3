@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-bytecode-verifier/src/signature_v2.rs -> Scope: High.'] [Symbol: native_request_publish allowed_deps wildcard vs check_ty struct resolution] Can an unprivileged caller who is only listed with the empty-string wildcard AllowedDep (account,
