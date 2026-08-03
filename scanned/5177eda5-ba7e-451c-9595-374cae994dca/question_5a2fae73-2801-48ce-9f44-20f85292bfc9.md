@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/utility_coin.rs -> Scope: Critical.'] [Symbol: MoveStructType::MODULE_NAME/STRUCT_NAME for AptosCoinType] Can an unprivileged package publisher declare a module also named \

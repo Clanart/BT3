@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/utility_coin.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: APTOS_COIN_TYPE StructTag{address: AccountAddress::ONE, module: \
