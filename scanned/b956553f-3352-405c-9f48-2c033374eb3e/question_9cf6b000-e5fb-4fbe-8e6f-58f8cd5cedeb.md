@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/block-executor/src/types.rs -> Scope: Critical.'] [Symbol: check_dependencies / AllowedDep wildcard] Can an unprivileged deployer set a PackageDep.account to one of the ten reserved is_policy_exempted_address values (@1..@10) without actually depending on framework code, causing check_dependencies to emit an AllowedDep wildcard (module_name =

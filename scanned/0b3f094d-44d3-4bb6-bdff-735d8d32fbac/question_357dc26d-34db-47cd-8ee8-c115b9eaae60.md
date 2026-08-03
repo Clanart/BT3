@@ -1,0 +1,1 @@
+[File: ... Scope: Critical ...] [Symbol: check_dependencies / AllowedDep wildcard] Given `is_policy_exempted_address` allows framework addresses (0x1-0xa) to inject an `AllowedDep{account, module_name: \

@@ -1,0 +1,1 @@
+[File: same scope] [Symbol: code::request_publish_with_allowed_deps allowed_deps wildcard] Can an attacker whose package depends on a `is_policy_exempted_address` core address (1-10) leverage the wildcard `AllowedDep { account, module_name: \

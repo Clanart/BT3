@@ -1,0 +1,1 @@
+[File: 'File Name: ... secp256r1.move -> Scope: Critical ...'] [Symbol: code::publish_package / is_policy_exempted_address] Can an unprivileged package owner declare a dependency on one of the ten exempted core addresses (@1..@10) that is not actually part of the trusted framework in a given deployment/test genesis, using the wildcard `AllowedDep{account, module_name:

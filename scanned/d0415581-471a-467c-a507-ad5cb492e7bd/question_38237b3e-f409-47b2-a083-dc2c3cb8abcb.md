@@ -1,0 +1,1 @@
+[File: same -> Scope: Critical.] [Symbol: AptosVM::validate_publish_request allowed_deps dependency check] Can an attacker publish a module whose `immediate_dependencies()` includes a module at an address not present in the metadata-derived `allowed_deps` map, exploiting the `modules.contains(\

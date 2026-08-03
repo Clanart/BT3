@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-vm/runtime/src/loader/modules.rs -> Scope: Critical.'] [Symbol: native_request_publish allowed_deps wildcard] Can an attacker's own PackageMetadata.deps list a `PackageDep.account` that is policy-exempted (code.move `is_policy_exempted_address`, lines 348-354) so that check_dependencies inserts an AllowedDep with `module_name =
