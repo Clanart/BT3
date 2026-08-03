@@ -1,1 +1,0 @@
-[File: 'File Name: crates/aptos-crypto/src/arkworks/msm.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: aptos_vm::validate_publish_request] Can an attacker submit a module bundle whose `allowed_deps` (built from Move-level `AllowedDep` with empty-string wildcard) is manipulated so `modules.contains(
