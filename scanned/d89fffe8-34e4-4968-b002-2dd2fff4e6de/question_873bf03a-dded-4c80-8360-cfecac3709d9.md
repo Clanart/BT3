@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/aptos-vm/src/verifier/resource_groups.rs -> Scope: High.'] [Symbol: validate_module_and_extract_new_entries] Can an unprivileged upgrader remove a `resource_group` attribute entirely (not present in `new_groups`) while the OLD group had zero members, exploiting the branch `else { metadata_validation_err(\

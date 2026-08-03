@@ -1,0 +1,1 @@
+[File: ... Scope: Critical ...] [Symbol: code::check_dependencies / is_policy_exempted_address] Can an attacker deploy a package that declares a `PackageDep` pointing at one of the exempted core addresses (@1..@10) to obtain a wildcard `AllowedDep{module_name: \

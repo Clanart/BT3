@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-core/types/src/ability.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: AbilitySet arbitrary/fuzzing derive (feature=\

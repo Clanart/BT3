@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/aptos-vm/src/sharded_block_executor/global_executor.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: native_request_publish] Can an attacker submit `allowed_deps` entries where `module_name` is the empty string `

@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/aptos-gas-meter/src/algebra.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: PublishRequest.allowed_deps] Can an attacker supply a PackageMetadata whose `deps` list omits an entry while a module in `bundle` still imports a wildcarded dependency address (module_name == \

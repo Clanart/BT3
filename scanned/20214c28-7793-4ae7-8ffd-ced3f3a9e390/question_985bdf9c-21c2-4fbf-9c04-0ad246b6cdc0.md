@@ -1,0 +1,1 @@
+[File: absint.rs -> Scope: Critical] [Symbol: check_dependencies / AllowedDep] Can an attacker specify `allowed_deps` in `request_publish_with_allowed_deps` (populated from `code.move::check_dependencies`) that omits a real bytecode dependency by exploiting a wildcard `AllowedDep{module_name:

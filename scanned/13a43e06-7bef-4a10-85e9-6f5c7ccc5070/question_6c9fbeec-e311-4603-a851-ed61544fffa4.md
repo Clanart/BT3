@@ -1,0 +1,1 @@
+[File: 'File Name: execution/executor/src/chunk_executor/transaction_chunk.rs -> Scope: High.'] [Symbol: aptos_vm::validate_publish_request allowed_deps wildcard] Can an attacker publishing a package supply an AllowedDep entry with module_name=\

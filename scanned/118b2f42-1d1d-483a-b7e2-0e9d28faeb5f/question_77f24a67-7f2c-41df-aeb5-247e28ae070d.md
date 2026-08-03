@@ -1,0 +1,1 @@
+[File: 'session_change_sets.rs -> Scope: High.'] [Symbol: UserSessionChangeSet::new / ChangeSetConfigs::check_change_set] Can an attacker exploit `validate_publish_request`'s `allowed_deps` check (aptos_vm.rs:1825-1839), where an empty string entry `\
