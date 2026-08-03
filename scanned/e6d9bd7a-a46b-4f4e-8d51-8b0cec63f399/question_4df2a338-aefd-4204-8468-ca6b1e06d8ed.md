@@ -1,1 +1,0 @@
-[File: table.rs] [Symbol: TableInfo{key_type,value_type}] Can `check_dependencies` in code.move be tricked into treating a table's `key_type`/`value_type` (surfaced via TableInfo) as satisfying a PackageDep's expected module namespace, when `is_policy_exempted_address` wildcard matching (`module_name =
