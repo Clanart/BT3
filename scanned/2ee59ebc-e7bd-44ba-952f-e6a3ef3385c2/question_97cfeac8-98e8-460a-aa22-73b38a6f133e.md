@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm/src/move_vm_ext/session/user_transaction_sessions/user.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'] [Symbol: init_func_name = ident_str!(\
