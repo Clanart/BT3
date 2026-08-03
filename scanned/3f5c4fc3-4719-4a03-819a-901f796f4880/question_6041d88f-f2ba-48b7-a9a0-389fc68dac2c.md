@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/governance.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'] [Symbol: AptosVM::validate_publish_request allowed_deps wildcard] Can an attacker exploit the AllowedDep wildcard (module_name == \
