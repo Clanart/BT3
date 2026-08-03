@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/utility_coin.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: native_request_publish / PublishRequest.allowed_deps] Can an attacker submit a request_publish_with_allowed_deps AllowedDep vector containing a module_name of empty string \

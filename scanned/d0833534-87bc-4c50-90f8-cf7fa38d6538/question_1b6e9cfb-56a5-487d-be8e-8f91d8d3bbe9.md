@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/vm/code.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'] [Symbol: validate_publish_request/allowed_deps wildcard] Can an attacker submit an allowed_deps map where the module-name BTreeSet contains only the empty string

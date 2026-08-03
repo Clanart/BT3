@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/events/token_withdraw.rs -> Scope: Critical. Unprivileged module bytes, package metadata, or dependency declarations can desync what is verified from what is executed or stored.'] [Symbol: native_request_publish allowed_deps wildcard] Can an unprivileged package author set an AllowedDep entry with an empty module_name string (

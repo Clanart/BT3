@@ -1,0 +1,1 @@
+[File: ... Scope: Critical ...] [Symbol: code::check_dependencies wildcard AllowedDep] Can an unprivileged caller add a PackageDep pointing at a policy-exempted address (0x1-0xa) to obtain an AllowedDep wildcard (module_name = \

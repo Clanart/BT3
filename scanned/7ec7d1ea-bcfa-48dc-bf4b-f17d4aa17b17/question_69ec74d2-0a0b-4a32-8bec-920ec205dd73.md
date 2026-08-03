@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/natives/src/util.rs -> Scope: Critical.'] [Symbol: native_from_bytes] Can an attacker use util.rs's from_bytes to deserialize a `PackageMetadata.source_digest` string field with content that does not match the actual sha256-of-sources digest described in the doc comment (\

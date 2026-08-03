@@ -1,0 +1,1 @@
+[File: Scope as above] [Symbol: code::AllowedDep / policy-exempt address wildcard] Can an unprivileged caller register a `PackageDep` pointing at one of the policy-exempt addresses (0x1-0xa) for a module name that does not actually exist there, relying on `is_policy_exempted_address` unconditionally inserting a wildcard `AllowedDep{account, module_name: \
