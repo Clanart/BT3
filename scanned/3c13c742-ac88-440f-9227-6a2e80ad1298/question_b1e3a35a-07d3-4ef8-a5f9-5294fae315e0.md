@@ -1,1 +1,0 @@
-[File: system_module_names.rs -> Scope: High.] [Symbol: code::request_publish_with_allowed_deps / PublishRequest.allowed_deps] Can an unprivileged publisher supply a PackageMetadata whose `deps` vector references an address that is policy-exempted (is_policy_exempted_address) to inject a wildcard AllowedDep{account, module_name: \
