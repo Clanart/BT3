@@ -1,0 +1,1 @@
+[File: 'File Name: modules/consensus/pharos/primitives/src/constants.rs -> Scope: High.'] [Symbol: PHAROS_CONSENSUS_ID / PharosClient::consensus_client_id] Given that `Mainnet` and `Testnet` share the identical 4-byte `ID = PHAROS_CONSENSUS_ID` (\

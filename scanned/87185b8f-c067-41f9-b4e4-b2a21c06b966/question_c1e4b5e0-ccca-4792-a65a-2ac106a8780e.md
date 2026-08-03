@@ -1,0 +1,1 @@
+[File: 'File Name: evm/src/apps/BandwidthManager.sol -> Scope: Critical.'] [Symbol: onAccept / OnAcceptActions.Withdraw native branch] Can the same missing `request.from` module check let an attacker drive `onAccept` into the native-token Withdraw branch (`w.token == address(0)`), forcing `w.beneficiary.call{value: w.amount}(\

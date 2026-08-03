@@ -1,0 +1,1 @@
+[File: 'File Name: evm/src/utils/uniswapv2/UniV4UniswapV2Wrapper.sol -> Scope: Critical.'] [Symbol: swapETHForExactTokens, refundETH] Can an attacker whose `msg.sender` is a contract with a reverting or gas-griefing `receive()`/fallback cause the `require(success, \

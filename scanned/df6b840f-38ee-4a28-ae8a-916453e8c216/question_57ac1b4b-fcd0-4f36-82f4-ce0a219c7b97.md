@@ -1,0 +1,1 @@
+[File: 'File Name: modules/utils/bls-utils/src/bls.rs -> Scope: Critical.'] [Symbol: BLS_PUBLIC_KEY_BYTES_LEN / BlsPublicKey] Given that `BlsPublicKey` is a fixed-length `ByteVector<48>`, does the `TryFrom`/construction path used when building `BlsPublicKey` from proof-supplied bytes (e.g., `val.bls_public_key.as_slice().try_into().expect(\

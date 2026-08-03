@@ -1,0 +1,1 @@
+[File: 'File Name: modules/pallets/hyper-fungible-token/src/module.rs -> Scope: High.'] [Symbol: on_accept unsigned-calldata origin derivation (module.rs:176-187) + pallet_account() (impls.rs:26-30)] Given `Pallet::pallet_account()` is a deterministic, publicly-derivable `PalletId(*b\

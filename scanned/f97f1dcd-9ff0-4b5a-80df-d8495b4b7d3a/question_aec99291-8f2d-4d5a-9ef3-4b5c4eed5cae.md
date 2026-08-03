@@ -1,0 +1,1 @@
+[File: 'File Name: modules/pallets/hyper-fungible-token/src/impls.rs -> Scope: Critical. An unprivileged attacker can mint, unlock, withdraw, refund, or redirect bridged assets, escrowed order funds, relayer fees, or other protocol balances they do not own.'] [Symbol: pallet_account] Can an attacker, knowing pallet_account() is a deterministic PalletId(*b\
