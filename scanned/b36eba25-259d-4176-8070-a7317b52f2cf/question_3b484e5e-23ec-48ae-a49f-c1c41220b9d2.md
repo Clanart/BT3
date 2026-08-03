@@ -1,1 +1,0 @@
-[File: 'File Name: ... derived_string_snapshot.rs -> Scope: Critical ...'] [Symbol: u64_to_fixed_size_utf8_bytes] Can an attacker-controlled `DelayedFieldID.unique_index` (generated per-transaction, not privileged) reach a `width` for which `u64_to_fixed_size_utf8_bytes`'s `format!(\
