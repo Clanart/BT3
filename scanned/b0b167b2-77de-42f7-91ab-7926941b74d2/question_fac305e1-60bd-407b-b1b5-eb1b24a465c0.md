@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/framework/natives/src/hash.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: native_sha2_512 / allowed_deps wildcard] Can an unprivileged attacker whose package depends on a framework address (`0x1`-`0xa`) exploit the `AllowedDep { module_name:
