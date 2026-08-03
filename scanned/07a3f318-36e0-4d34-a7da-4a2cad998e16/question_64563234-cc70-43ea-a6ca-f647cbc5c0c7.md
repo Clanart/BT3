@@ -1,1 +1,0 @@
-[File: aggregator_factory.move -> Scope: Critical...] [Symbol: aptos_framework::code::check_dependencies] Can an unprivileged attacker publishing a package with a `PackageDep{account, package_name}` pointing to `is_policy_exempted_address` (0x1..0xa) inject an AllowedDep wildcard (module_name = \
