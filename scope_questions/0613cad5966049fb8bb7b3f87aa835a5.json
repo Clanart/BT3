@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: modules/pallets/consensus-incentives/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_25898b04-70a1-4a42-8745-4a03770426e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/fishermen/src/extension.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_5924ca63-e93c-4648-a422-fe43e5546499?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/fishermen/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6c2860c0-f127-45ac-bbd4-e6666c06b61d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/host-executive/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_ac0fa9db-84a6-4a9e-9d20-4a99ebd72b8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/error.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_2612c060-98ab-4a4e-b4b0-6cdb9dbae077?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/impls.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_df10306a-ccc9-4bdd-9b12-ad1f6c979715?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6104b880-5477-4673-b136-63274a9af847?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/module.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_4290a1ff-559c-40db-b8b0-326843197bfc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/types.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fb4d327a-4b12-448e-a7cc-327f493dd9a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/intents-coprocessor/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_9e4eccf3-ed29-4652-b852-5deccf3b7bce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/intents-coprocessor/src/types.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fc0de0db-65d5-4cdc-8a8c-269abec9af4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/child_trie.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_1739114c-fdd0-42f5-8a0d-b2759d9e7082?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/dispatcher.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fc5ba3fd-052e-4d78-8685-9487cff7fc53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/errors.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_5c242079-3fc5-44c5-9b0f-33d41a2dfc80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/events.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6a341d32-753c-4864-b7f2-6b1ba4da748b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/fee_handler.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_5b70c450-83a5-401e-8a90-df23ace425e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/host.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_e94dd319-303d-4827-9d8e-4542d2356eb8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/impls.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_403f75d2-ab91-4ac5-ad7d-eba42988b1ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_72e18148-3fd5-401c-8668-291d426fda2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/utils.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_8d8e284f-65f3-4d52-9c5c-1ac51bd5ba6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/messaging-incentives/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_9631c9a8-e0d4-4dda-b73a-295a00781e2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/primitives/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_7457ea80-e3a2-4db7-ab68-6ff1ab6b15e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_9e1a5730-9585-4309-941d-f04c80d3afe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/mmr/mmr.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_3ff8a3fb-1f3b-43a7-871d-2928a23d2ebb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/mmr/mod.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6160a44c-1325-4c04-b986-3c46c3fc0324?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/mmr/storage.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_3da78163-47c3-45e4-a026-4023cecb666e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/accumulate.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_c82d0eb4-bd55-439d-a38f-12f364b6b567?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/lib.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_4d7efb70-09cb-4f0c-989d-0172b127c63e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/outbound_consensus.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_cf5ce4c1-9ba4-4b34-a12c-571a2148afb9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/outbound_request.rs -> Scope: Critical. An unprivileged attacker can bypass proof verification, state-machine binding, source-app binding, or challenge-period enforcement and settle a message, order, or governance action from an unauthenticated origin.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_d4aefdfe-1238-4dbb-9acd-dfeb78e4708c?mode=deep",
+    "questions_generated": false
+  }
+]
