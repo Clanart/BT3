@@ -1,1 +1,0 @@
-[File: runtime_type_checks.rs -> Scope: Critical.] [Symbol: check_dependencies (code.move) vs validate_publish_request allowed_deps] Can an unprivileged publisher construct a PackageMetadata.deps list referencing a dependency package at an is_policy_exempted_address (0x1..0xa) to obtain the wildcard AllowedDep{module_name:
