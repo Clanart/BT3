@@ -1,1 +1,0 @@
-[File: 'File Name: api/types/src/move_types.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: EntryFunctionId::from_str] Can an attacker-supplied entry-function-id string containing more than one '::' separator (e.g. embedded via a crafted module display string) be mis-split by `rsplit_once(\
