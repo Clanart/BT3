@@ -1,1 +1,0 @@
-[File: ... Scope: Critical ...] [Symbol: PackageMetadata.deps / check_dependencies] Can an attacker submit a PackageDep list referencing dep.account addresses that are policy-exempted (@1..@10) for modules that do not actually exist there, causing check_dependencies to synthesize a wildcard AllowedDep {module_name: \
