@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-core/types/src/move_resource.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: AllowedDep.module_name wildcard] Can an attacker whose package depends on a policy-exempted address (@1-@10) receive a wildcard AllowedDep{module_name:
