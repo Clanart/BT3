@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/framework/natives/src/hash.rs -> Scope: High.'] [Symbol: native_blake2b_256 vs `AllowedDep` empty wildcard account] Can an attacker exploit the fact that `check_dependencies` builds `AllowedDep{account, module_name: string::utf8(b\
