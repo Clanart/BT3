@@ -1,1 +1,0 @@
-[File: sub.rs] [Symbol: native_request_publish / PublishRequest.allowed_deps] Can an attacker's `request_publish_with_allowed_deps` call include an `AllowedDep` entry with an empty module-name string (wildcard, per `modules.contains(\
