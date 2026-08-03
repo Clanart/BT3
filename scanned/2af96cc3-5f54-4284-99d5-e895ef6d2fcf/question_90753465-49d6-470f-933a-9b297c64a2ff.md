@@ -1,0 +1,1 @@
+[File: script.rs -> Scope: Critical.] [Symbol: check_dependencies / is_policy_exempted_address] Can a script's package metadata declare a dependency `PackageDep.account` inside the framework-exempt address range (0x1-0xa) for a *non-framework* purpose to obtain the wildcard `AllowedDep{module_name: \

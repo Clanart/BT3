@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-core/types/src/parser.rs -> Scope: Critical...'] [Symbol: parse_transaction_argument numeric suffix stripping ('_')] Can an attacker supply a numeric literal for a u64/u128 argument with underscores in positions that change the parsed magnitude only when combined with the `.replace('_',

@@ -1,0 +1,1 @@
+[File: ability.rs] [Symbol: AbilitySet arbitrary/fuzzing Arbitrary impl] Can a property/fuzz-generated AbilitySet produced via proptest::bits::u8::masked(AbilitySet::ALL.0) diverge from what real module-publish deserialization would ever accept, given the fuzzing feature gate `cfg(any(test, feature =

@@ -1,0 +1,1 @@
+[File: '...versioned_group_data.rs -> Scope: Critical.'] [Symbol: VersionedGroupData::mark_estimate] Can an attacker-timed sequence of concurrent writes to a resource group holding package upgrade-policy data cause mark_estimate to be called on a size_entries key that was concurrently removed by remove_v2, triggering the `.expect(\

@@ -1,0 +1,1 @@
+[File: ... Scope: Critical ...] [Symbol: convert_txn_args expect() panic] Can an unprivileged sender construct a TransactionArgument whose `From<TransactionArgument> for MoveValue` conversion (transaction_argument.rs:61-82) yields a MoveValue that fails `simple_serialize()`, triggering the `.expect(\
