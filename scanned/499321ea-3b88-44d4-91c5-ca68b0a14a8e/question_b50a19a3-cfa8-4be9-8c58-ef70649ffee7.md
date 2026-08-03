@@ -1,1 +1,0 @@
-[File: 'File Name: ... module_cache.rs'] [Symbol: aptos_framework::code::check_dependencies / AllowedDep wildcard] Can an attacker publish a package whose `PackageDep.account` targets a policy-exempted framework address (`is_policy_exempted_address`) to obtain an `AllowedDep` wildcard entry (`module_name =
