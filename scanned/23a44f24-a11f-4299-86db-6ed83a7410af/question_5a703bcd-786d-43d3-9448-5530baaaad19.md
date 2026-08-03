@@ -1,1 +1,0 @@
-[File: ... same header ...] [Symbol: AptosVM::validate_publish_request allowed_deps check] Can an attacker-controlled CompiledModule bundle declare an immediate_dependency address/name pair that is present in `allowed_deps` only as a wildcard (\
