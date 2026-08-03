@@ -1,1 +1,0 @@
-[File: dkg.move tag as above] [Symbol: code::check_dependencies] Can an attacker craft a `PackageDep { account, package_name }` entry pointing at an address in `is_policy_exempted_address` (0x1-0xa) to obtain a wildcard `AllowedDep { module_name: \
