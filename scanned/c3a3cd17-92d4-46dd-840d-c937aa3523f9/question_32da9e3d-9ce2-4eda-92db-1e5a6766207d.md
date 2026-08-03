@@ -1,1 +1,0 @@
-[File: same file -> Scope: High.] [Symbol: is_policy_exempted_address wildcard AllowedDep] Can an unprivileged package author declare a dependency on one of the exempted core addresses (@1-@10) to obtain a wildcard AllowedDep{ module_name: \
