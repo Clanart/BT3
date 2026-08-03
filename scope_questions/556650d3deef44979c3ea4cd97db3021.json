@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: modules/pallets/consensus-incentives/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_d2de0721-5118-4491-bc4f-d0270596205e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/fishermen/src/extension.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_4be39aec-e27a-4694-839e-b6f3edc68385?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/fishermen/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_cab5ff17-67a4-4f8f-8e14-4ab0c9c01d4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/host-executive/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_da52aafc-29a4-41bc-9093-c7dfc88b98ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/error.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_b63ebb30-e94b-44b7-9185-cf803d50796f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/impls.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_1062ccdd-d217-49c2-9558-ba39c191b04b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_809a12f9-5dd5-428f-90bd-03ca05cb836d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/module.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6d382e97-f74d-4f4b-ace6-4c0779b530ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/hyper-fungible-token/src/types.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_d9db1726-b863-47d1-8b66-721e7572e6ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/intents-coprocessor/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fd5a5be1-a456-4993-a6af-e5a77c2b9c5e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/intents-coprocessor/src/types.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_243c1d71-e385-496e-8070-7a164fcdaefb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/child_trie.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6094d294-01a9-452f-acd8-f84da906f649?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/dispatcher.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_12d2a611-562e-482e-8181-71109347187c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/errors.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_905b1b29-0b9d-4a43-b91e-6a6d49c347fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/events.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_17052922-4e10-4e53-aadc-1044643b9d84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/fee_handler.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_931be968-0ad5-4827-b486-b160c9534a32?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/host.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_2c889def-ff3e-4ce4-809a-ce6c680bba84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/impls.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_14262a55-374b-4a47-b58d-00e5b74801eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_4c0d954e-31b1-42f6-9e52-2181f6bdc0e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/ismp/src/utils.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_d68a2cae-13d0-40f9-abb1-e0396c6d78a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/messaging-incentives/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_43415e46-8560-4c12-ae5c-4de622cff2ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/primitives/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_ac6ea3a6-64e9-4fba-853b-2fd82d78629d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_b66cd32e-1cf2-43a2-8e5c-745f1a7a5d30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/mmr/mmr.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_1360746e-7ab2-484f-9ce8-5ed2f033dfe4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/mmr/mod.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_c5a0031e-2501-4fe1-9a2d-03d18c404fe0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/mmr/src/mmr/storage.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_66509997-5470-427a-8a77-de6f1ef61c20?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/accumulate.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fe36b8ed-a4f6-40d1-b494-94fdc0230edf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/lib.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_1e8ae13e-a689-4718-818d-a0d756b606c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/outbound_consensus.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_79131b3b-9274-4c33-aea4-444d050fe76f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/relayer/src/outbound_request.rs -> Scope: Critical. An unprivileged attacker can forge, replay, or smuggle a consensus update, cross-chain request, response, or timeout so Hyperbridge accepts false remote state or executes an unauthorized transaction.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_65e4cc9c-9ac3-4de9-8937-4b382d6eb9ea?mode=deep",
+    "questions_generated": false
+  }
+]
