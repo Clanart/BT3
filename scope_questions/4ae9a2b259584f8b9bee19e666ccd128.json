@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: evm/src/apps/BandwidthManager.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_f625c2d9-5269-46b1-8358-b427bf6dd9bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/apps/IntentGatewayV2.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_2e23fded-8504-428c-8b78-ad7ed1d79ac1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/apps/intentsv2/ExtrinsicIntents.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_96f3bf8a-3cb3-4dfa-b97c-1e50d82881b5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/apps/intentsv2/IntentsBase.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_7916cc6c-5267-4728-af54-86374d2e748b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/apps/intentsv2/IntrinsicIntents.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_ae1808af-1fb3-4060-abb7-08d07bbc874f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/apps/intentsv2/SolverAccount.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fb461466-98c1-4b67-9df0-68bc36f1c619?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/consensus/Codec.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_34287619-9a9d-4e95-86c9-5c57f60a809f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/consensus/ConsensusRouter.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_be3b7ae5-4f54-4c31-b8fe-ac44d1211174?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/consensus/EcdsaBeefy.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_0d71e087-7286-453a-9506-0f8b2fae34f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/consensus/SP1Beefy.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_1e54d0d3-4300-446d-a4b7-942039f85f20?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/consensus/Types.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_85504901-f3e6-410f-bd95-70ba1fd61a79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/core/EvmHost.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_ebcdcc28-1643-44d7-b7ce-6b012f94dcee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/core/HandlerV2.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_b1b28fc7-cecc-47bb-b338-98d4e22b6f6d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/core/HostManager.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fcded570-210e-4c02-91cb-21055095a0fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/CallDispatcher.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_3f1df04c-f4ba-405b-b8dd-eab3ad95c8a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/HyperFungibleTokenImpl.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_9d3fa835-0257-4a7a-bee4-01f8f2b047d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/SimplexPaymaster.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_209e5110-f103-4867-9ab1-ad48d27bf8b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/VWAPOracle.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_e340d013-e181-484d-b787-efcc1f03f0c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/uniswapv2/GnosisUniswapV2Wrapper.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_e81b905f-f57b-49b8-a596-d5ad95c94744?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/uniswapv2/UniV3UniswapV2Wrapper.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_b2929776-6b72-46dd-8130-23ecf8f6fda0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/utils/uniswapv2/UniV4UniswapV2Wrapper.sol -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_db89a5ea-b494-4607-84c9-f57808128904?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/beefy/primitives/src/lib.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_1e51f5af-ed19-4870-bc7f-0000169412f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/beefy/verifier/src/error.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_ccb3cd85-6d67-4100-9f8d-1bd034579df3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/beefy/verifier/src/lib.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_8272fc2e-cc09-4067-9d6d-29d18483d861?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/beefy/verifier/src/sp1.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_4e56ebba-a241-4d8b-ac35-27b764f5e6bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/bsc/verifier/src/error.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_29f54649-497a-429e-b519-d554c409ad66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/bsc/verifier/src/lib.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_dbb7e469-fdf6-47e6-867e-8ccda37ef7d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/bsc/verifier/src/primitives.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6771cde8-74fd-4f59-93ba-c838e7a40b21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/geth-primitives/src/lib.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_17afbba5-64a1-4850-ac36-59b747703c21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/consensus/grandpa/primitives/src/justification.rs -> Scope: High. An unprivileged attacker can manipulate destination execution, beneficiary selection, token amount, bandwidth credit, reward payout, or settlement state so valid protocol activity resolves to the wrong recipient or wrong value.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_dc1c0528-16f4-4a7d-87ab-bd20079cb6a3?mode=deep",
+    "questions_generated": false
+  }
+]
