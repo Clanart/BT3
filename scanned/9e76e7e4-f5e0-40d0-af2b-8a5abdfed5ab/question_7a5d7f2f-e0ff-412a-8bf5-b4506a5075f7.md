@@ -1,1 +1,0 @@
-[File: state_view_adapter.rs -> Scope: Critical.] [Symbol: allowed_deps wildcard AllowedDep for policy-exempted address] Since is_policy_exempted_address (code.move:351-354) grants wildcard AllowedDep (module_name = \
