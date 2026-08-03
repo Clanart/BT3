@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/state_store/native_position.rs -> Scope: High.'] [Symbol: bcs::serialized_size expect(...) panic] Can a `Position` value with fields at extreme widths (e.g. `i128::MIN` funding index combined with maximum `u128` `entry_px_times_size_sum`) cause `bcs::serialized_size` to return an `Err` that trips the `.expect(\
