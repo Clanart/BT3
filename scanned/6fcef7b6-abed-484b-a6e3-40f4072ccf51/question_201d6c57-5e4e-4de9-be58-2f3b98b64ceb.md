@@ -1,0 +1,1 @@
+[File: same as above] [Symbol: BandwidthManager.onAccept - Withdrawal.beneficiary == address(0)] Can a forged `Withdraw` action (via the missing `from` check) set `beneficiary = address(0)` for the native-token branch, causing `w.beneficiary.call{value: w.amount}(\

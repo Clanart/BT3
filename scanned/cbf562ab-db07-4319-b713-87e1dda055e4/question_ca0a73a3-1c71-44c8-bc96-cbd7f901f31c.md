@@ -1,0 +1,1 @@
+[File: 'File Name: evm/src/utils/uniswapv2/UniV3UniswapV2Wrapper.sol -> Scope: Critical.'] [Symbol: swapExactTokensForETH] Can an unprivileged caller pass an attacker-controlled `to` address that is a malicious contract, so the final `to.call{value: amountOut}(
