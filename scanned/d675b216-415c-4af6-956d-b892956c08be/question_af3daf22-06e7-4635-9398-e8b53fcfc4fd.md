@@ -1,1 +1,0 @@
-[File: event.move Scope: Critical] [Symbol: native code::request_publish_with_allowed_deps / AllowedDep wildcard] Can an attacker craft a PackageDep whose account matches a policy-exempted framework address (0x1-0xa) to receive a wildcard AllowedDep{module_name: \
