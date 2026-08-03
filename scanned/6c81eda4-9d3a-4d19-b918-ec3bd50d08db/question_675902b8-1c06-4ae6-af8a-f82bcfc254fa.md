@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm-environment/src/natives.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'] [Symbol: table_natives Identifier::new(\

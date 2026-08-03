@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm-environment/src/natives.rs -> Scope: High. Unprivileged publish or script input can bypass native validation, module-init rules, or view-function restrictions and reach protected state mutation.'] [Symbol: aptos_position_natives module_name hardcode vs feature flag ordering] `make_table_from_iter` labels every position native under `\
