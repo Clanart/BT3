@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: modules/ismp/core/src/abi.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_6c4c02e4-c91c-4204-8ae1-3abdc05c5f1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/consensus.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_c1c7724e-10ba-4f5d-ab93-2e13cba88795?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/dispatcher.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_a672acd6-41fa-46a1-97b2-c262ef440faf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/error.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_34e9a308-175e-4f92-8f90-44787c948970?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/events.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_312609d7-eab2-4a9b-bc22-b22e01e0ce43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/handlers.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_432318b4-7df9-4950-aefb-487966c7e071?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/handlers/consensus.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_3609319d-ee16-4d58-a19d-695dfa28d0f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/handlers/request.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_a1402136-6839-477d-a59f-875cec82c377?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/handlers/response.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_df3a2447-9fd3-4004-a04c-4d62a7950463?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/handlers/timeout.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_361a070a-24b5-41ef-a45c-be9f9c9122d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/host.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_a9108e46-6083-4736-bf7d-514d3811ee45?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_8af7c2b5-bb9b-49c6-a433-2779c14c028f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/messaging.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fe9cffd3-c2ea-4396-a27d-512785e7390e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/module.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_7de86da3-98bc-4739-a85f-a69fdbfdde3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/core/src/router.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_a8f89cdf-7715-41ae-a96a-e2539e894f49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/evm/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_4c0e689f-8ff0-46a7-89e0-9a39d8413fe0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/evm/src/presets.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_e26324c3-0488-46c4-b68c-b0116231b527?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/evm/src/substrate_evm.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_3153a9c1-c57f-4443-9f27-da66f0436ce4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/evm/src/tendermint.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_f00e558a-3ce6-4e54-a18b-7f2bc776d67a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/evm/src/types.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_ebb0d3b2-a5fc-4643-aaab-4fe7721d9a43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/evm/src/utils.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_e68fdde6-ed74-4207-9fc1-b0eab9b88009?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/pharos/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_145aed2a-272c-4b9d-8aec-f14c03987679?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/ismp/state-machines/substrate/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_67d6497b-a5f0-44a6-8665-594b201230ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/bandwidth/src/abi.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_45168e5f-c06c-4987-a920-bfa70707c9fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/bandwidth/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_93a313ae-9d84-4e5c-bb06-4164a6bdcfc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/bandwidth/src/types.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_fd3414c3-b75c-40b4-b4db-998b1eee775b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/beefy-consensus-proofs/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_a9011458-a0b9-465f-9cb8-3c7deda70ba5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/beefy-consensus-proofs/src/types.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_67b1bb84-c64a-4d58-b0ee-17c053ed6e1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/call-decompressor/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_753ab7b7-cc7d-4bac-b673-d44addfeea6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: modules/pallets/consensus-incentives/src/impls.rs -> Scope: High. An unprivileged attacker can permanently lock or burn user funds, refunds, withdrawals, fills, or claims by corrupting custody, timeout, or settlement accounting in a production flow.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-hyperbridge-ex_43bb612b-3f5a-4e3b-b550-9a2a20d8b49c?mode=deep",
+    "questions_generated": false
+  }
+]
