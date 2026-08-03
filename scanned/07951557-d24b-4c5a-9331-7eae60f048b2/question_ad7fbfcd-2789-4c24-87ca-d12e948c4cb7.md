@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/framework/aptos-framework/sources/reconfiguration_state.move -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: is_in_progress] Can an attacker-controlled write set set `State.variant` to a value whose `type_name()` bytes exactly equal `b\
