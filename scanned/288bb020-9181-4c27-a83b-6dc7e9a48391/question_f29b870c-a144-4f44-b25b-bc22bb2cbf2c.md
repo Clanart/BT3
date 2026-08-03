@@ -1,1 +1,0 @@
-[File: 'File Name: ... execution_config.move -> Scope: Critical ...'] [Symbol: native request_publish_with_allowed_deps (natives/src/code.rs)] Can an attacker construct a Move-level `AllowedDep` vector (via `unpack_allowed_dep`) containing a wildcard `module_name == \
