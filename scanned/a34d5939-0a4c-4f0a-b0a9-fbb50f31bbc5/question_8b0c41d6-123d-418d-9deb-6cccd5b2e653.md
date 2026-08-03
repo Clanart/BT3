@@ -1,1 +1,0 @@
-[File: 'File Name: ... storage.rs -> Scope: Critical.'] [Symbol: code::check_dependencies AllowedDep wildcard] Can an attacker construct a PackageDep pointing at an is_policy_exempted_address (0x1-0xa) so check_dependencies in aptos-move/framework/aptos-framework/sources/code.move inserts an AllowedDep with module_name=\

@@ -1,1 +1,0 @@
-[File: 'File Name: ...types.rs -> Scope: Critical...'] [Symbol: request_publish_with_allowed_deps / AllowedDep wildcard] Can an unprivileged attacker construct a PackageMetadata whose `deps` references a `is_policy_exempted_address` (0x1..0xa) to obtain a wildcard AllowedDep{module_name: \
