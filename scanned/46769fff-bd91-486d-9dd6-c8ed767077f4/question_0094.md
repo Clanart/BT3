@@ -1,0 +1,13 @@
+# Q94: Partial-Fill Accounting Drift By Reusing Data Cross Module
+
+## Question
+Can an unprivileged attacker enter through `IntentGatewayV2 public order lifecycle` with attacker-controlled order fields, predispatch assets and call data, output amounts, cancellation height, relayer-fee values, and session signatures and reusing data that should belong to one chain, module, order, state machine, or payee in another publicly reachable path, and make `_withdraw` release more escrow than corresponds to the newly supplied output or leave the order in a state that can later release the same escrow again so `the escrow released for one partial or full fill` becomes inconsistent with `the proportional amount earned by the filler for that specific fill step`, breaking the invariant that partial fills must release escrow proportionally, exactly once, and must leave the remaining order state cancelable or fillable without reuse and leading to Critical: wrongful mint, unlock, withdrawal, refund, or redirect of protocol-controlled or user escrowed assets?
+
+## Target
+- File/function: evm/src/apps/intentsv2/IntentsBase.sol::_withdraw
+- Entrypoint: IntentGatewayV2 public order lifecycle
+- Attacker controls: order fields, predispatch assets and call data, output amounts, cancellation height, relayer-fee values, and session signatures
+- Exploit idea: Release more escrow than corresponds to the newly supplied output or leave the order in a state that can later release the same escrow again. Craft two public flows that share one byte string or hash and check whether module, chain, or payee binding is enforced everywhere.
+- Invariant to test: partial fills must release escrow proportionally, exactly once, and must leave the remaining order state cancelable or fillable without reuse
+- Expected Immunefi impact: Critical: wrongful mint, unlock, withdrawal, refund, or redirect of protocol-controlled or user escrowed assets.
+- Fast validation: Perform partial fills at boundary amounts, then cancel or complete the order and assert total released escrow never exceeds the original escrow. Feed the same bytes through two reachable entrypoints and assert the second path rejects instead of inheriting the first path's authorization.

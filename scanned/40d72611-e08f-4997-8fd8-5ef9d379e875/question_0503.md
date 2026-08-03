@@ -1,0 +1,13 @@
+# Q503: Merkle Root Confusion Across Mixed Context
+
+## Question
+Can an unprivileged attacker enter through `pallet_ismp::handle_unsigned(origin=None, messages)` with attacker-controlled consensus proof bytes, authority indices, header batches, state-machine identifiers, and claimed heights and mixing bytes that were valid in one proof, chain, module, order, or beneficiary context with metadata interpreted in another context, and make `from` bind authenticated signatures to the wrong MMR root, header root, trie root, or leaf set so `the stored state commitment root` becomes inconsistent with `the root actually committed inside the authenticated proof`, breaking the invariant that every verified signature set must authenticate exactly the root later used to derive state commitments or receipts and leading to Critical: false state acceptance that can unlock unauthorized cross-chain execution, withdrawals, or settlement?
+
+## Target
+- File/function: modules/consensus/beefy/verifier/src/error.rs::from
+- Entrypoint: pallet_ismp::handle_unsigned(origin=None, messages)
+- Attacker controls: consensus proof bytes, authority indices, header batches, state-machine identifiers, and claimed heights
+- Exploit idea: Bind authenticated signatures to the wrong mmr root, header root, trie root, or leaf set. Try a pair of otherwise valid artifacts where one verification step authenticates the old context and a later step consumes the new context.
+- Invariant to test: every verified signature set must authenticate exactly the root later used to derive state commitments or receipts
+- Expected Immunefi impact: Critical: false state acceptance that can unlock unauthorized cross-chain execution, withdrawals, or settlement.
+- Fast validation: Alter only the root-bearing substructure or proof ordering and assert verification rejects before any state-machine commitment is stored. Build two neighboring valid contexts and mutate only the binding field while asserting state, receipts, and balances stay unchanged.
