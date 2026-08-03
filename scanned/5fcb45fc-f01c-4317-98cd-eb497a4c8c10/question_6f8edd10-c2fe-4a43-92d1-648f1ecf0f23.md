@@ -1,1 +1,0 @@
-[File: user.rs finish_with_module_publishing_and_initialization / module_init::verify_init_module_function] [Symbol: init_module dispatch] Can an attacker craft a module whose `init_module` function has a name that only matches `ident_str!(\
