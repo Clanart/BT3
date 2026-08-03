@@ -1,1 +1,0 @@
-[File: 'File Name: execution/executor/src/workflow/do_state_checkpoint.rs -> Scope: Critical. Malicious bytecode or write-set input can survive verifier or runtime publish guards and mutate protected resources.'] [Symbol: code::check_dependencies/AllowedDep] Can an attacker craft a PackageDep list where `is_policy_exempted_address` wildcards (module_name == \
