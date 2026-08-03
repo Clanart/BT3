@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/aptos-vm-types/src/resolver.rs -> Scope: High. Unprivileged package input can bypass compatibility, upgrade-policy, or allowed-dependency checks and land forbidden bytecode on chain.'] [Symbol: code::AllowedDep wildcard module_name] Can an unprivileged package owner exploit the wildcard semantics of `AllowedDep.module_name ==

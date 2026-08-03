@@ -1,0 +1,1 @@
+[File: same as above] [Symbol: validate_publish_request allowed_deps.get(dep.address())] Can an attacker whose package declares a dependency address matching an allowed_deps entry using the wildcard empty-string module_name (`modules.contains(\

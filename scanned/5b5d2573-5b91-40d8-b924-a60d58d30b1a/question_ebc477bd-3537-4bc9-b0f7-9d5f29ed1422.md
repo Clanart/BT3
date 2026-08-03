@@ -1,0 +1,1 @@
+[File: 'File Name: mempool/src/core_mempool/mempool.rs -> Scope: Critical. An unprivileged attacker can publish, upgrade, freeze, or replace code they do not control.'] [Symbol: code::check_dependencies/is_policy_exempted_address] Can an attacker deploy a package that declares a PackageDep pointing at one of the exempted core addresses (@1..@10) with a wildcard module_name of
