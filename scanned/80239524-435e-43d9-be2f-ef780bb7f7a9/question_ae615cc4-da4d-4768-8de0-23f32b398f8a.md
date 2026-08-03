@@ -1,1 +1,0 @@
-[File: same as above -> Scope: Critical.] [Symbol: code::check_dependencies / AllowedDep] Can an attacker submit a `PackageDep` whose `account` points to a `is_policy_exempted_address` (0x1-0xa) that they don't control, causing `check_dependencies` to insert a wildcard `AllowedDep{account, module_name: \
