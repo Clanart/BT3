@@ -1,1 +1,0 @@
-[File: ... Scope: Critical ...] [Symbol: code::check_dependencies/is_policy_exempted_address] Can an attacker publish a package that declares a PackageDep on one of the ten hardcoded exempted addresses (@1..@10) that does NOT actually host a PackageRegistry with the referenced package_name, corrupting the allowed_module_deps wildcard entry generated (module_name == \
