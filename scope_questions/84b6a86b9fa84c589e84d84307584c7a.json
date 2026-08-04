@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: accounts-db/src/is_zero_lamport.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9201f8fc-ab79-4031-97dd-c63a34aca471?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/lib.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_3a381867-b565-494c-bd72-a310e79d048c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/obsolete_accounts.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_905cda5e-e355-48dd-b128-7c9152da5e54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/partitioned_rewards.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b971f233-403b-4aa8-a439-3a15e47665c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/pubkey_bins.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c5841a5d-1ef1-4149-a0a1-22160c513246?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/read_only_accounts_cache.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_cceafcb1-d661-4392-8681-c29be43c42d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/rolling_bit_field/iterators.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_efbbefdc-3ee7-4907-9800-f376fa2be8d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/rolling_bit_field.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_2d2ba6e1-f1e9-4fe9-9ebf-806a0d6cdcee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/sorted_storages.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_d6c06d0c-75cb-409d-8b35-f527ea7fd8f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/stake_rewards.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_3b0ff995-8f17-433a-a72e-26c8662ab1e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/storable_accounts.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8af83d43-8af2-4272-9b36-ef53989bb0ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/utils.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_dfef455e-a298-4aa0-9f8f-435723828b7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/waitable_condvar.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4bb44a62-dc10-46b6-91a0-6d281fa76224?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: builtins/src/core_bpf_migration.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b3028653-3221-48e8-81d8-6961322a3899?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: builtins/src/lib.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_2029f584-0836-44c0-9d54-daa24b3b2891?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: builtins/src/prototype.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b9e67c7a-0647-428a-aa97-df4487e4c5ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/compute_budget.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f84f8486-3c3b-41db-a65c-38cd21de57ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/compute_budget_limits.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4b1b808e-7fee-4294-8e1a-4cb845d207f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/lib.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c0a54a2f-9454-4c38-b683-10b2e57a0568?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/builtin_programs_filter.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_dd06980d-909f-4e92-a5d6-b4bb43417438?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/compute_budget_instruction_details.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_365fdbd5-778b-4ac2-9d78-939ede84e7aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/compute_budget_program_id_filter.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9f3e0043-3b68-484c-a0aa-9802d95c75c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/instructions_processor.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_1e3d7563-61b5-49cd-b5d9-ef76f37afb24?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/lib.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_fceab36a-b493-4534-beb5-56ee02821ba8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/client_connection.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_19c30c3f-367c-4a4c-9670-448bbf82ba35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a3d18560-6b08-41e0-8601-d86ff71c6850?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache_stats.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_50b21e1b-2f2c-45f4-8a68-456e76f04c97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/lib.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_44105bc1-a40e-435a-b15a-665bad943ec0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/client_connection.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5a359d3c-aa35-433a-bbf0-9d23b56e8e32?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/mod.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_d4e1d361-1521-48ee-80a4-75d7d069a0e8?mode=deep",
+    "questions_generated": false
+  }
+]
