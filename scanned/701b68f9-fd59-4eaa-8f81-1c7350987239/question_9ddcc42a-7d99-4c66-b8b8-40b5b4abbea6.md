@@ -1,0 +1,1 @@
+[File: 'File Name: runtime/src/bank/partitioned_epoch_rewards/distribution.rs -> Scope: Critical.'] [Symbol: Bank::store_stake_accounts_in_partition] Can `partition_index` supplied to `distribute_epoch_rewards_in_partition` ever exceed `partition_rewards.partition_indices.len()`, reaching the `.unwrap_or_else(|| panic!(\

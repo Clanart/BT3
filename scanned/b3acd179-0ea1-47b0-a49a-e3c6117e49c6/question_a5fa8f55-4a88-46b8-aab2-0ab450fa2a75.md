@@ -1,0 +1,1 @@
+[File: malicious_repair_handler.rs] [Symbol: MaliciousRepairHandler::repair_response_packet / blockstore.get_data_shred] Since `get_data_shred(slot, shred_index)` is called with the attacker-controlled `shred_index` and any `.expect(\

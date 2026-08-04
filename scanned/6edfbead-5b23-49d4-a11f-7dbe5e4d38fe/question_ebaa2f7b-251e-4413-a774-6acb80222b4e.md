@@ -1,0 +1,1 @@
+[File: 'File Name: programs/bpf_loader/src/lib.rs -> Scope: Critical.'] [Symbol: UpgradeableLoaderInstruction::ExtendProgram / common_extend_program] Can an attacker call `ExtendProgram` twice on the same ProgramData account within a single transaction via CPI so the second call's `clock_slot == slot` check at lib.rs:909-912 (\

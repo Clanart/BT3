@@ -1,0 +1,1 @@
+[File: 'File Name: runtime/src/stake_delegation.rs -> Scope: Critical.'] [Symbol: sub_delegated_stake] Can an attacker who controls the order/timing of stake account updates (e.g. rapid deactivate+redelegate in the same slot) cause `sub_delegated_stake`'s `checked_sub(stake).expect(\

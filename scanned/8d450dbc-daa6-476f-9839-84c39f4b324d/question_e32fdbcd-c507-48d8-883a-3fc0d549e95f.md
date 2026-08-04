@@ -1,0 +1,1 @@
+[File: 'File Name: gossip/src/tlv.rs -> Scope: Critical.'] [Symbol: short_vec::ShortU16 length prefix] Can attacker-controlled INPUT (a ShortU16-encoded length declaring up to 16383 while providing fewer/more actual bytes) through PUBLIC_ENTRYPOINT (gossip message decode) under REQUIRED_STATE (`#[wincode(with = \
