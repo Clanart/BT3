@@ -1,0 +1,1 @@
+[File: 'File Name: program-runtime/src/deploy.rs -> Scope: Critical.'] [Symbol: morph_into_deployment_environment] Can an attacker submit programdata containing the syscall name `sol_alloc_free_` inside a crafted function_registry entry that bypasses the explicit skip check at deploy.rs:36-40 (e.g., via a name that compares unequal to the exact byte string `b\

@@ -1,0 +1,1 @@
+[File: ... -> Scope: Critical ...] [Symbol: container.get_mut_transaction_state panic path] Can a crafted sequence of transaction cancellations/duplicates delivered via QUIC/TPU ingestion reach `container.pop()` returning an `id` for which `get_mut_transaction_state` returns `None`, corrupting the invariant 'every popped id has live TransactionState' and triggering `panic!(\

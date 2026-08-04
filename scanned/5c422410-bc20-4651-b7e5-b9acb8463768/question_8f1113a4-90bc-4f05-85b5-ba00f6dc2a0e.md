@@ -1,0 +1,1 @@
+[File: poh/src/poh_recorder.rs] [Symbol: PohRecorder::record] Can a crafted/malformed transaction batch that banking_stage forwards after processing (still non-empty when TransactionRecorder::record_transactions is called) but reduced to zero entries by the time record() executes trigger the `assert!(!transactions.is_empty(), \

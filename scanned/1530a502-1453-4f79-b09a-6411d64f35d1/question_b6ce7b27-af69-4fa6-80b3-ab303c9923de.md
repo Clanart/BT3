@@ -1,0 +1,1 @@
+[File: 'File Name: entry/src/block_component.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'] [Symbol: BlockMarkerV1 tag_encoding] Since `BlockMarkerV1` uses `#[wincode(tag_encoding = \

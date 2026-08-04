@@ -1,0 +1,1 @@
+[File: 'File Name: streamer/src/quic_socket.rs -> Scope: Critical.'] [Symbol: QuicXdpTxSocket::try_send src_ip handling] Can an unprivileged remote peer, by causing Quinn to issue Transmits with `t.src_ip = Some(IpAddr::V6(_))` on a wildcard-bound QUIC endpoint configured for AF_XDP egress, repeatedly trigger the `Err(io::ErrorKind::InvalidInput, \

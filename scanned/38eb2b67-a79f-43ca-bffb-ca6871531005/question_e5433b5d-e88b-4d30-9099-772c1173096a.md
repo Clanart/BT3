@@ -1,0 +1,1 @@
+[File: 'File Name: perf/src/packet.rs -> Scope: Critical.'] [Symbol: to_packet_batches] Can an unprivileged client submitting exactly `NUM_PACKETS + 1` (perf/src/packet.rs:29) serialized items through the RPC/TPU batching path reach `to_packet_batches` at perf/src/packet.rs:805-817, where `Packet::populate_packet(...).expect(\
