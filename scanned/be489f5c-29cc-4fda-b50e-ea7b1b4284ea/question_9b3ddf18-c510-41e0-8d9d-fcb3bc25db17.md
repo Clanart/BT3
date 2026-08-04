@@ -1,1 +1,0 @@
-[File: 'File Name: evm/src/utils/uniswapv2/UniV3UniswapV2Wrapper.sol -> Scope: Critical. An unprivileged attacker can mint, unlock, withdraw, refund, or redirect bridged assets, escrowed order funds, relayer fees, or other protocol balances they do not own.'] [Symbol: swapExactTokensForETH -> to.call{value: amountOut}(\
