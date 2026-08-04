@@ -1,1 +1,0 @@
-[File: 'core/src/repair/repair_response.rs' -> Scope: High] [Symbol: repair_response_packet] Can an unprivileged peer send a RepairProtocol::WindowIndex/HighestWindowIndex/Orphan request via serve_repair's UDP socket, under a blockstore state where `get_data_shred(slot, shred_index)` returns `Err` (e.g. after a concurrent purge/compaction), reach the `.expect(\
