@@ -1,1 +1,0 @@
-[File: 'File Name: modules/consensus/sync-committee/primitives/src/constants.rs -> Scope: Critical.'] [Symbol: sepolia::Sepolia::ID and mainnet::Mainnet::ID both equal BEACON_CONSENSUS_ID] Since `Sepolia::ID` and `Mainnet::ID` are both set to the constant `BEACON_CONSENSUS_ID = *b\
