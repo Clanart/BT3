@@ -1,1 +1,0 @@
-[File: ... -> Scope: High ...] [Symbol: ByteList<N>/ByteVector serde 'as_hex' feature-gated (de)serialization path] Can an attacker who controls an externally-submitted JSON/hex-encoded update (ingested via the `serde(with = \
