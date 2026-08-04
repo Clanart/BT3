@@ -1,1 +1,0 @@
-[File: 'File Name: ledger/src/rooted_slot_iterator.rs -> Scope: High. An unprivileged attacker can replay, double-apply, or permanently lock a transaction, nonce, receipt, reward, withdrawal, or account-state transition in production paths.'] [Symbol: expect() panics on Database failure] Lines 50 and 59 use `.expect(\
