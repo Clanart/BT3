@@ -1,1 +1,0 @@
-[File: 'File Name: sdk/packages/core/contracts/apps/WrappedHyperFungibleToken.sol -> Scope: High.'] [Symbol: onPostRequestTimeout (isWeth branch), lines 344-365] Can an attacker-controlled `refundee` (derived from `message.from`, which is attacker-supplied on the original `send()` call) use the low-level `refundee.call{value: message.amount}(\
