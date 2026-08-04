@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: accounts-db/src/is_zero_lamport.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_518da4d9-04b4-4d43-9a54-0c9c6b180a81?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/lib.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c5c4c2e7-2c77-43b3-86e0-edf8e10de845?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/obsolete_accounts.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7138f27b-5a44-4035-97bd-abb7fa9b12c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/partitioned_rewards.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_998dbab2-39ff-43e7-ae57-68f1ae99fed2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/pubkey_bins.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8d4b0fad-9bae-4a14-851e-d41e1d28933f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/read_only_accounts_cache.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_80dd03e8-ee57-4113-b037-9fde61a65a85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/rolling_bit_field/iterators.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_32a907bd-72c6-42b4-b3d5-20065106d3a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/rolling_bit_field.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9b85db3a-1d44-4414-b65a-94f2575545a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/sorted_storages.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_566d4c94-5ac2-4e49-9653-158d2e270f34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/stake_rewards.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f3f3c485-2fce-464d-8252-96e667bcd1e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/storable_accounts.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_504fa102-62ff-4997-b60e-6c126a2cd135?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/utils.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b66074bd-e50d-44f0-96f0-51a257e826eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/waitable_condvar.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5a91192e-75a6-4c43-b28d-e690298cc859?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: builtins/src/core_bpf_migration.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4cae8162-ae0a-4e14-9529-95d960c25c80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: builtins/src/lib.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_115e808e-807f-44d3-8d5f-06557ef851a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: builtins/src/prototype.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b522b35d-d3b6-4477-985c-19f9814fe7af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/compute_budget.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_d296cecc-15fa-4321-bbf5-baa64a8f4099?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/compute_budget_limits.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e922a06c-389f-4ff8-81da-d407701eafe8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/lib.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_20be9f9b-5837-40d1-ba59-7ce643c4de8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/builtin_programs_filter.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_41653483-f98e-42ed-929a-536f0fefc1c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/compute_budget_instruction_details.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5d302b4f-3802-4536-befc-cd8aa462606d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/compute_budget_program_id_filter.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_700bb56a-0c33-4f40-a70c-ab0726b10d68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/instructions_processor.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_39bb2ae1-4a6a-4c52-9705-6d99312bfb38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/lib.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_24fee533-7ffb-4a31-98f1-f95b278d5f0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/client_connection.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_3db0732f-f080-48cf-bf59-9fb99bc13b7e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_3706e256-4a68-4cab-ba37-93954bdc8548?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache_stats.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_2b235a88-2d93-4952-b3d4-c24a9987a47d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/lib.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b50dbd19-6626-46f1-9eff-93ebe14a514c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/client_connection.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_71e2cd1c-3c64-4810-9cfc-28727a421f8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can steal lamports, fees, rewards, stake, vote funds, or program-controlled balances without the victim or rightful authority consenting.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c5f8bd67-44be-4d49-99fd-f2f3bcf3a319?mode=deep",
+    "questions_generated": false
+  }
+]
