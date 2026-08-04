@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: streamer/src/evicting_sender.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e93d1202-2aaf-4afd-93a4-a74ed3b1ad7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/lib.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ba489bfb-8142-4991-8d43-11321b0d15a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/msghdr.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f4058e40-33ac-4ad6-ba34-c094fb726e99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/connection_rate_limiter.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_bcf29fc2-2040-48ac-8465-24a88197c40b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c16d30c2-4a9a-46ae-90c4-6bdc9846b4f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/qos.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f6ca4a71-03df-48da-82b5-576a74995201?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/quic.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_259cecf4-dbe9-448f-a985-3ad289ea6327?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/simple_qos.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_08adf854-8a5a-410d-bc25-fd250bb239ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/stream_throttle.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_1021a5c1-2b9b-4971-b0d7-9c3fd6475f5a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/swqos.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7ed3cf97-3d6a-4b20-8baa-c6f3b5e5c264?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/packet.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_bb794293-55c4-4c40-9d11-8366b4f257eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/quic.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_dd7bcba7-282f-4b00-b537-7aad4c351ec6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/quic_socket.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_0438b5c3-3147-447a-b0a5-8d5c73814389?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/recvmmsg.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4833d54d-6504-46f0-9183-81f4e4cf8160?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/sendmmsg.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_23f87ea1-ebc4-4338-aec2-260e20b0ec13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/streamer.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a6605942-4fe7-433b-a676-1c600df8d607?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_loader.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_155ce171-0217-46fc-a606-4c6989b3fe5a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_overrides.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8abbfbd0-5306-441a-b0c4-4ad55f233fa8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/lib.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_872846e8-58df-4fff-9e04-89d9706d4e39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/nonce_info.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_40695fea-b373-42ed-8fdb-fd19ff88f556?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/program_loader.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_924568a6-fffa-4d82-a2ca-04f123dfda7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/rent_calculator.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_45d8efab-9600-479d-be5a-89e71c319db9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/rollback_accounts.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_870e2ca0-c3f2-41e2-a05b-c3ec48e53748?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_account_state_info.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_95c0fe7f-44c5-46ab-802f-57056153d461?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_balances.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_bc70e536-9528-4465-822b-42f3500d94d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_commit_result.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f50a3aef-21cd-430d-8356-459e5886cdcb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_error_metrics.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_2d0e0f82-ca2a-4ff4-8901-2a028effbcf0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_execution_result.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ecb54970-fc68-45e5-bc7a-d51e996c1a0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_processing_callback.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f3f6f99e-9a5b-4761-b54a-e2975ae29b4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_processing_result.rs -> Scope: Critical. An unprivileged attacker can remotely exhaust memory, CPU, disk, or crash the validator through non-RPC public protocols such as QUIC/TPU, gossip, shred, repair, or blockstore ingestion.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_6e7ce103-fe0a-4655-a125-7693a256008f?mode=deep",
+    "questions_generated": false
+  }
+]
