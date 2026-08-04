@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: streamer/src/evicting_sender.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c03b855f-113f-4826-8c12-87c2444a9799?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/lib.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9c92ed6c-d943-44a4-b578-9768b1316b9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/msghdr.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_bcd880bd-a660-41d1-ace2-1679c7210752?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/connection_rate_limiter.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a88e29f8-24f6-4485-ba9f-e3992c52e434?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/mod.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_0146a079-e83a-4c09-9756-ea33e9e91cc4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/qos.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e55e0d36-bb02-4311-bc40-29df251bea1a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/quic.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7f283647-557e-438e-97e4-01c072b7b375?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/simple_qos.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_3f1e5d1e-01c1-4de7-b768-13a1d63e5b0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/stream_throttle.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_fe5517db-ec92-4e40-9ff5-b89aa9fe7f19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/swqos.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9cd890db-6915-4cf4-99b6-988bde7a639e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/packet.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4b27c3de-f4c7-4f5d-b028-a4f467bd9433?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/quic.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ebdaf2d6-7cda-484b-9d5d-1a9a5f9a4a32?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/quic_socket.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_bcf1b459-091a-4046-bccb-3413be6d0d62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/recvmmsg.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4d636527-d3af-4c4d-b0f3-4b214e06e187?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/sendmmsg.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_030257e2-e72d-4a16-811e-f0df13913cc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/streamer.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5e65ee5e-c2df-45da-9a96-8b3d534bac11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_loader.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_fc86d915-ee0a-41d2-a39b-5fe379cde513?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_overrides.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ee080a65-ef5c-46df-a3f5-b5e37403c0a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/lib.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_126b76d3-828a-4196-86e5-931d71c5d246?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/nonce_info.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9de7db7f-e5f1-4071-b4c4-e5eb75553733?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/program_loader.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_387e4009-a2c0-4952-8d30-57c9d9e3c8e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/rent_calculator.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_1dabf896-2423-4925-9cd8-e282cf5b6c4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/rollback_accounts.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_6ef13eb0-3039-4cfc-8509-ae5c1de0a713?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_account_state_info.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e0e02779-d264-4ecd-ba6e-0cc4c8eb854c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_balances.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ecbf3018-fa46-4a62-b012-f60a66b8d682?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_commit_result.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_d65e6e9f-65cd-44ac-8034-feda562e1875?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_error_metrics.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8569cd37-9364-410a-ae08-9e11f871ed8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_execution_result.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_42c6125c-ecc2-456a-9969-153ad1f7cde6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_processing_callback.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a33c236b-1887-403f-8de9-2de6fbca67cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_processing_result.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e65f7eb3-5996-4084-afc5-dd1d57735754?mode=deep",
+    "questions_generated": false
+  }
+]
