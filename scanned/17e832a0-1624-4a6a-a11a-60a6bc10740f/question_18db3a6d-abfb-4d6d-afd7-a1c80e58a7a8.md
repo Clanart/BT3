@@ -1,1 +1,0 @@
-[File: 'runtime/src/block_component_processor/vote_reward/epoch_inflation_account_state.rs' -> Scope: Critical.] [Symbol: EpochInflationAccountState::new_from_bank] Can an unprivileged attacker send an ordinary system-program Transfer to the off-curve PDA `VOTE_REWARD_ACCOUNT_ADDR` (derived from seeds `b\
