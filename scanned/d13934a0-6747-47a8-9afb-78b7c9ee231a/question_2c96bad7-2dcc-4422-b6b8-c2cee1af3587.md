@@ -1,1 +1,0 @@
-[File: 'File Name: accounts-db/src/append_vec.rs -> Scope: High.'] [Symbol: AppendVec::next_account_offset] Can attacker-influenced but on-disk StoredMeta.data_len, reached through the built-in RPC 'getProgramAccounts'/'getTokenAccountsByOwner' scan path into AppendVec::next_account_offset (accounts-db/src/append_vec.rs:722-731), cause the `.expect(\
