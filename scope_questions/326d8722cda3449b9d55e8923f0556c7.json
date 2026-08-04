@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: gossip/src/contact_info_notifier.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c06f0c4d-b9b2-41d6-b138-735f2799d34f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_d0a6188a-6ace-4728-9aec-1cdcd8433812?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_data.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a7df8124-ae99-47d5-9ba9-09534d594c28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_entry.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e35751fb-cf83-41f8-bd8d-2366376db96c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_filter.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_bc7100e8-80c2-4ac9-aff7-8c7a6af36aa5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_gossip.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4f45c995-83ab-4a45-9c76-b447ab7ae260?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_gossip_error.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_630bf4c9-4c8d-4669-bec8-90e59ce9fcaf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_gossip_pull.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4c7b919e-fe92-45f5-922f-bb51270d14a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_gossip_push.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f6c43e77-9692-483d-bb31-b6df98771e84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_shards.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9d617476-841d-49ec-93ea-0c16c9a32e2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_value.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_00b6b6e1-c7c9-4882-a248-464a683ceec7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/duplicate_shred.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_42e392e5-5231-411b-a03c-d24c8e6dc633?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/duplicate_shred_handler.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_d21a37ac-7410-4b5b-bc9c-8fc0342fb959?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/duplicate_shred_listener.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5c00b72d-cb14-4074-bc0b-d0763ea8c748?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/epoch_slots.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9a1eeb55-3c26-49f1-976a-91a3000f4c07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/epoch_specs.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_748324e0-aa96-4e59-bf1f-6502cf59f86b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/gossip_error.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a8cb9648-4ebc-49a0-ae90-106053bce349?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/gossip_service.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7f3fd69e-f182-4a00-b61f-1ebf4701393a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/lib.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f327ab47-b017-4649-816e-1afaf139704c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/node.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a958d518-2a1d-4f3b-81a1-7a083ab8ef14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/ping_pong.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_32f36cbe-c6a5-4e93-a3cd-e25791a870c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/protocol.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ffdd8903-69a6-4dc7-bef5-33df62b94740?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/push_active_set.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_86d618bf-2216-40f7-8548-ee382e3a60d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/received_cache.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9f0a26a8-c0b4-41ed-9b82-0b3aeaf64b23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/restart_crds_values.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_fabaaded-2d7f-48a8-abc4-7e6cf7bc79f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/sigverify_cache.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_469b8d88-4328-45f0-a750-5f83e2850164?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/tlv.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9ac54052-dbfd-4d08-b22e-22b66e00006d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/weighted_shuffle.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a0af91df-e0c6-402b-90d7-739eefae9948?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/ancestor_iterator.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4d2fa32b-11c3-41bb-9ff9-9c04f8c6191e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/bank_forks_utils.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_40e1298a-2d9c-4fb1-b19d-caf0f220b133?mode=deep",
+    "questions_generated": false
+  }
+]
