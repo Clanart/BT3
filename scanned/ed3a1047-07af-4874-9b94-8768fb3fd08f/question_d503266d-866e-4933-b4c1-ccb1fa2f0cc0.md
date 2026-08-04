@@ -1,0 +1,1 @@
+[File: 'File Name: core/src/consensus/fork_choice.rs -> Scope: Critical.'] [Symbol: select_vote_and_reset_forks] Can attacker-supplied shreds create a heaviest_bank whose `epoch_vote_accounts(heaviest_bank.epoch())` returns None (e.g., via a crafted epoch boundary slot ingested through repair), triggering the `.expect(\

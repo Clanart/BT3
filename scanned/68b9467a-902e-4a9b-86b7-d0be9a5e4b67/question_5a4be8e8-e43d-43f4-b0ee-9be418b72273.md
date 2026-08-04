@@ -1,0 +1,1 @@
+[File: 'File Name: accounts-db/src/account_info.rs -> Scope: High. A single unprivileged client can crash or materially degrade the built-in RPC or pubsub service while staying within the published single-client rate limits.'] [Symbol: AccountInfo::new -> assert_eq!(\

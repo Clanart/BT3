@@ -1,0 +1,1 @@
+[File: sendmmsg.rs] [Symbol: SendPktsError -> TransportError] Does the lossy `From<SendPktsError> for TransportError` conversion (line 31-35), which collapses the structured `(io::Error, num_failed)` into a single `format!(\
