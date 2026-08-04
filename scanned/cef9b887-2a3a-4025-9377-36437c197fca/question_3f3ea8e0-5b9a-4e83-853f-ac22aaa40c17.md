@@ -1,1 +1,0 @@
-[File: 'File Name: accounts-db/src/account_info.rs -> Scope: Critical.'] [Symbol: AccountsFileId store_id] Can a sustained high-rate stream of QUIC/TPU transactions that each create new accounts (forcing AccountsDb::create_store to call next_id() repeatedly) exhaust the AccountsFileId space, triggering the \
