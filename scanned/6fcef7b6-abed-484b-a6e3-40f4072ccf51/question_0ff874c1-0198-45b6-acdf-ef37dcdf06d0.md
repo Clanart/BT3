@@ -1,1 +1,0 @@
-[File: 'File Name: evm/src/apps/intentsv2/IntentsBase.sol -> Scope: Critical.'] [Symbol: IntentsBase._withdraw / TRANSACTION_FEES] Can an attacker who controls `WithdrawalRequest.tokens` supplied via a cross-chain RedeemEscrow/RefundEscrow body (decoded from `incoming.request.body[1:]`) include the sentinel address `TRANSACTION_FEES = keccak256(\
