@@ -1,1 +1,0 @@
-[File: ... impls.rs ...] [Symbol: Pallet::is_module] Since `is_module` performs raw byte equality (`id == PALLET_ID.to_bytes()`) without any length or prefix delimiting, can an attacker craft a `ModuleId::Contract` (EVM contract address) whose byte serialization happens to equal the byte serialization of `ModuleId::Pallet(PalletId(*b\

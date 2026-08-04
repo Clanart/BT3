@@ -1,1 +1,0 @@
-[File: ... impls.rs ...] [Symbol: Pallet::pallet_account] Can an unprivileged attacker, on a chain where `AccountId` is derived from or equal to a 20-byte EVM-style address (e.g. via `AccountId20`), construct or control an externally-owned account whose bytes collide with `PalletId(*b\
