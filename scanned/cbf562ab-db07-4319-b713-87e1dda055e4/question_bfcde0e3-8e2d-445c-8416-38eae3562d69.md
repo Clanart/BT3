@@ -1,1 +1,0 @@
-[File: 'File Name: evm/src/utils/uniswapv2/UniV3UniswapV2Wrapper.sol -> Scope: Critical.'] [Symbol: swapETHForExactTokens] Can an unprivileged contract that is the direct msg.sender of swapETHForExactTokens (e.g., a HyperApp/IntentGatewayV2-like caller mid-fee-dispatch) reenter its own pending state-mutating function via the unrestricted low-level `msg.sender.call{value: refund}(

@@ -1,1 +1,0 @@
-[File: 'File Name: evm/src/utils/uniswapv2/UniV3UniswapV2Wrapper.sol -> Scope: Critical.'] [Symbol: swapETHForExactTokens] Can an unprivileged attacker force `spent == 0` (e.g., by supplying `amountOut == 0` or a path yielding a zero-cost quote) so that the full `msg.value` is refunded via `IWETH(weth).withdraw(refund); msg.sender.call{value: refund}(
