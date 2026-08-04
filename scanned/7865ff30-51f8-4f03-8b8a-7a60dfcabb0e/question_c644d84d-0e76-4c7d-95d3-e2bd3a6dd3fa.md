@@ -1,1 +1,0 @@
-[File: core/src/optimistic_confirmation_verifier.rs -> Scope: Critical.] [Symbol: datapoint_info] Can an attacker who forces repeated calls to `add_new_optimistic_confirmed_slots` through the optimistic-confirmation vote path reach the unconditional `datapoint_info!(\
