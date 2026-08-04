@@ -1,1 +1,0 @@
-[File: ... same header ...] [Symbol: verify_membership merkle_path construction] Can an attacker exploit the fixed two-segment `MerklePath::new(vec![store_key, key])` construction — where `store_key` is always the constant `\
