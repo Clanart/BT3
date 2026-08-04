@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: streamer/src/evicting_sender.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_1ba80f92-12a9-4ef3-85b4-59b905a7a62e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/lib.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c83edbc7-563e-43bb-aebf-d24f319e3760?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/msghdr.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ac16d8dc-121f-4faf-86e5-1058d9631c54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/connection_rate_limiter.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7a468642-512f-4ec3-84b7-a584862935e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f77f9fd8-1c54-45b6-baad-717f1c25373b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/qos.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_28dea425-12b0-49ce-99d8-e2c0413e8fde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/quic.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5f33ebbc-3792-4fb3-a116-89e1cdde0a5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/simple_qos.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c98badfb-f482-4ea2-a60d-7e4f15df0e1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/stream_throttle.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ee5bf151-4c14-4b2e-9cf2-9a85a5caa6bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/nonblocking/swqos.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8ebbf3ef-34a7-4ab1-a4e1-56eea3661868?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/packet.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_25b45d7c-8d0e-4dbb-b5fa-bbf3b34d0283?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/quic.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_5d6e2134-d714-49e2-8bf8-b9c12a9750a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/quic_socket.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_cc3af190-9873-4a76-a0e5-86868c84cda3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/recvmmsg.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ceb5f4aa-f9ae-4c75-be12-25a25395670d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/sendmmsg.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b21f1aea-ef0b-409b-bdc4-6da4f35b3a86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: streamer/src/streamer.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_23ce6268-bc91-43e3-a3f6-ce45b8e022ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_loader.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_fd6b780e-8e16-45d6-bbfd-7d532631cdb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_overrides.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c9e5554f-b5d6-4855-b2c3-73255e1fb22a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/lib.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_309607e2-cda8-49c5-8126-870633e832e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/nonce_info.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_98fe7dcd-d4dd-4dc2-a5f6-38081cc53960?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/program_loader.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e10acf57-814e-4927-a1ac-3baf4e1eaf0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/rent_calculator.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7049e86e-8922-4632-a5bc-fe89b3f86e26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/rollback_accounts.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_be2b399b-91f5-41ef-bc0c-391000007a95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_account_state_info.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_251f79e7-700e-4b22-90fa-3ea6d1170a92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_balances.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_c78dbb6e-d56b-44f4-96aa-3d6b67b81478?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_commit_result.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_332e59e7-72bf-476c-bddd-ac96cdcd3d55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_error_metrics.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e1fc2a7b-d539-46b8-b955-387824fa9ef7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_execution_result.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_aa60bba5-a8e0-4cd8-b70d-4536e70f3d7c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_processing_callback.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7d7f8020-75f9-4bbc-b8ef-363bc3398209?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/transaction_processing_result.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7ed0bd18-3484-4e1b-84da-31baf548871f?mode=deep",
+    "questions_generated": false
+  }
+]
