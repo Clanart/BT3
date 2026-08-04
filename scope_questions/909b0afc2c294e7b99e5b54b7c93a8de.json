@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/src/banking_stage/committer.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4d3c0ebe-bc7c-407b-95f2-5d0faaedb7e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/consume_worker.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_09e0e1c7-4121-47d2-ad2a-2fbce4661a7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/consumer.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_33b3e4d3-17f9-4dc5-8645-f49b7c4cf155?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/decision_maker.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8c600f02-08ec-4442-8270-50ca127b64d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/latest_validator_vote_packet.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f2572717-cf41-4653-832f-bfdf298c98df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/leader_slot_metrics.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_6373e93d-7e1e-41c0-b76d-8174d957ba78?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/leader_slot_timing_metrics.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_1013dbf4-9983-4111-882e-1d6b8c6ba4fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/progress_tracker.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_fd58fb37-2140-4048-803a-8a42868f3745?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/scheduler_messages.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_ba8f63bf-2d00-475f-8b18-5afb8524ef5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/tpu_to_pack.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a97d18a3-94d1-4671-ba46-d4aab1e0fc47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/batch_id_generator.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_9d91c53f-614f-4aad-b21c-dc2faacb777b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/greedy_scheduler.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_270cea5b-f1e5-4e05-b181-f9deefac291b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/in_flight_tracker.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_465863d9-702d-407f-b353-e87a8068f9c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/mod.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_b223431c-cc7f-4db7-a006-b497cd9f6337?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/receive_and_buffer.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f02fadd8-1e79-47d9-b630-5db5ac3f3ce8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_a13bc7e0-4025-4b60-9409-0c193cccc0d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_common.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_00bc761b-84cf-40d3-9a1f-e130dd124fc5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_controller.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_3820aa77-7452-40f7-a68a-7562f0895eb0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_error.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_18187025-141f-4a12-b4b2-ff15eeb2e774?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_metrics.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_801ab03a-9561-45a9-9582-110e33d8b090?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/transaction_priority_id.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e802c879-ef14-44bc-ae13-828ea2ad940d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/transaction_state.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_7ba7ffca-466f-4e35-9aab-ba9d6a1049ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/transaction_state_container.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_8a2b2997-b05f-4370-ac8c-be0d34536912?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/vote_packet_receiver.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_e54eeba8-2682-4889-a37d-5cc8953dfeb2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/vote_storage.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_cf569f4e-682d-4016-8ba8-cfe737e2ea98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/vote_worker.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_64d19b28-0ce3-4f97-a3ec-131029afafe6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_f56f5b86-8404-4725-84da-3174117e470b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_trace.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_cf79b914-4ca6-4fbf-acbf-c68d69a61d64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/block_creation_loop/rewards/certs_builder/entry/notar_entry.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_4f5ffe75-79ba-4fdb-a818-4fe30f8cf459?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/block_creation_loop/rewards/certs_builder/entry/partial_cert.rs -> Scope: Critical. An unprivileged attacker can make a validator accept, root, optimistically confirm, execute, or cache a state transition that honest code should reject, causing a consensus or safety violation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-agave-exploit_944df867-d8cb-4237-ba56-4d403b993e5c?mode=deep",
+    "questions_generated": false
+  }
+]
