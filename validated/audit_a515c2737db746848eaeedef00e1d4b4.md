@@ -1,0 +1,1 @@
+Let me find the actual purchase/on_accept credit path with the months multiplication, since that's the specific arithmetic I need to verify for overflow.
