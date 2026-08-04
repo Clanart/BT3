@@ -1,0 +1,13 @@
+# Q1658: serialize_parameters compute undercharge
+
+## Question
+Can an unprivileged attacker reach `serialize_parameters` by submit transactions invoking deployed programs with account layouts, resize patterns, duplicate accounts, and cpi paths that mutate overlapping memory regions such that attacker-chosen instruction graphs consume materially more compute than the path here appears to meter, breaking the invariant that runtime work must be fully covered by compute metering before commit and leading to `Liveness / Loss of Availability`?
+
+## Target
+- File/function: program-runtime/src/serialization.rs::serialize_parameters
+- Entrypoint: submit transactions invoking deployed programs
+- Attacker controls: account layouts, resize patterns, duplicate accounts, and CPI paths that mutate overlapping memory regions
+- Exploit idea: look for work that escapes the intended compute meter or is charged too late
+- Invariant to test: runtime work must be fully covered by compute metering before commit
+- Expected Immunefi impact: Liveness / Loss of Availability
+- Fast validation: instrument compute-meter consumption around CPI-heavy or log-heavy transactions
