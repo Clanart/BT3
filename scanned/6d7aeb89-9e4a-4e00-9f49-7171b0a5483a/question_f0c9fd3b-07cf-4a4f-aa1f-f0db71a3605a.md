@@ -1,1 +1,0 @@
-[File: 'File Name: program-runtime/src/deploy.rs -> Scope: Critical.'] [Symbol: deploy_program error mapping] Can attacker-supplied `programdata` that fails ELF loading with an `ElfError` variant carrying attacker-controlled string content reach the `ic_logger_msg!(log_collector, \
