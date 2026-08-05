@@ -1,1 +1,0 @@
-[File: 'File Name: compute-budget-instruction/src/builtin_programs_filter.rs -> Scope: High.'] [Symbol: BuiltinProgramsFilter::program_kind] Can an attacker submit a transaction whose sanitized `program_id_index` exceeds `FILTER_SIZE` (256) through the QUIC/TPU transaction entrypoint under normal sanitization, reaching `get_mut(index).expect(\
