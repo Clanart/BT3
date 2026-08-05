@@ -1,1 +1,0 @@
-[File: 'File Name: runtime/src/accounts_background_service.rs -> Scope: Critical. An unprivileged attacker can halt validator progress or require human intervention through production transaction, QUIC/TPU, gossip, shred, repair, blockstore, or runtime paths.'] [Symbol: SnapshotRequestHandler::handle_snapshot_request `.expect(\
