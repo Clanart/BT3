@@ -1,1 +1,0 @@
-[File: 'File Name: ledger/src/blockstore/error.rs -> Scope: Critical.'] [Symbol: BlockstoreError::InvalidShredData(String)] Can an attacker send a data shred with a payload that deserializes structurally but fails semantic validation, causing InvalidShredData(String) to be constructed and formatted (via #[error(\
