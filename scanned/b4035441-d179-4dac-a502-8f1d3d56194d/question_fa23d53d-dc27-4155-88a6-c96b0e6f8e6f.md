@@ -1,0 +1,1 @@
+[File: 'File Name: ledger/src/shred/filter.rs -> Scope: Critical.'] [Function: program-runtime::program_cache_entry::ProgramCacheEntry::new_internal jit_compile] Can an unprivileged attacker submit an ELF whose bytecode passes `RequisiteVerifier` but produces platform-dependent behavior between the `#[cfg(all(not(target_os = \

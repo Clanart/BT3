@@ -1,0 +1,1 @@
+[File: runtime/src/epoch_stakes.rs -> Scope: High] [Function: BLSPubkeyToRankMap::new / total_stake fold+expect] Can an attacker construct a scenario where all vote accounts they control have colliding BLS pubkeys or node identities such that every candidate is filtered out, driving keys_stake_entry_with_compressed to empty and triggering the `.expect(\
