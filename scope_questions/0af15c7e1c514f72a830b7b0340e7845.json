@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/src/repair/malicious_repair_handler.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_673cbd81-4851-4db6-866d-5d40e0441955?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/mod.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b76ecb1c-6124-464b-9918-f13c3539e9f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/outstanding_requests.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_74dafebf-3355-41cf-a30a-ab2bc193e3f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/packet_threshold.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db73af6c-cc8a-4a79-8d2d-25cc7640faf4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/repair_generic_traversal.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_53b2198b-60ce-4c2e-b0ac-bc76fffafa2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/repair_handler.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fd6c1f39-4b1a-44b5-9736-7d5e531f8b4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/repair_response.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1f36722-a3d7-40be-ab1e-8290fc3629df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/repair_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d91c91ab-fdd7-41b6-beac-fab3c339496f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/repair_weight.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_894320bf-1660-4663-9a0d-9f1190ebf735?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/repair_weighted_traversal.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e7a1324f-7e21-4136-adf6-bdc00ca2ab7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/request_response.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_990bb3c0-9d9c-4e29-83c4-701d2a63afe3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/result.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dbe892b8-aaee-4c15-bc14-5789f0e5dfe3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/serve_repair.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1737998-ef68-46dd-995c-5b9b8235ada0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/serve_repair_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20c9f790-83d9-4594-9045-e1d8d3fc84a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/standard_repair_handler.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_669c5cdd-31be-4f06-852e-89d5d24a7994?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/replay_stage/dead_slots.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_62d9ea84-b2be-4aa6-bb57-a635f3d5f58d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/replay_stage/update_parent.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a612f892-064d-4e63-8d1f-a823ca0c5e40?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/replay_stage.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a44aa7bb-2702-42b6-bc87-11465f95812b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/resource_limits.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_412db9f7-d328-4cdd-a1df-a9b1217cb71e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/result.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d765fd69-2ba5-4e0c-85b2-e755b32c7705?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/sample_performance_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_48b6ae64-549f-45ac-a90e-698d7a7570ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/scheduler_bindings_server.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35557afc-307e-4b3d-956f-4d1155d1a0f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/shred_fetch_stage.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65913062-ec64-4661-8359-4b4a1c455163?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/sigverify.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c63d23f-6c2f-48ba-a2ff-aab906ba7635?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/sigverify_stage.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e33dcc81-1082-4223-81a2-f627202d8cfd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/snapshot_packager_service/snapshot_gossip_manager.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d0ec223c-beab-4d75-860b-8235bcae6289?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/snapshot_packager_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb438f6a-1544-49a5-ba14-c8591f3b277c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/staked_nodes_updater_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_88ebba99-8648-4488-a458-e3a238013976?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/stats_reporter_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f28af9c-5e00-4b4e-b429-bec54da2d8e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/system_monitor_service.rs -> Scope: Critical. An unprivileged attacker can craft bytecode, ELF metadata, precompile data, or zk proof input that panics, aborts, infinite-loops, or exhausts memory inside the VM and halts every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_278ef69b-2822-42a1-a20e-8d03e5f06273?mode=deep",
+    "questions_generated": false
+  }
+]
