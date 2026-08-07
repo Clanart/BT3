@@ -1,0 +1,1 @@
+[File: 'core/src/system_monitor_service.rs -> Scope: Critical program-cache/determinism divergence'] [Function: program-runtime/src/program_cache_entry.rs::ProgramCacheEntry::new_internal jit_compile feature-gated by target_arch] Can an unprivileged attacker exploit the #[cfg(all(not(target_os = \
