@@ -1,0 +1,18 @@
+# Q1513: lamports_per_signature accepts input it should reject (blockhash_queue.rs)
+
+## Question
+Can an unprivileged attacker entering through ordinary transactions that create, write, resize, close and reopen accounts the attacker pays for reach `lamports_per_signature` in `accounts-db/src/blockhash_queue.rs` with a payload that satisfies the cheap precondition but not the full check, and have `lamports_per_signature` accept input that fails the property it is supposed to prove, so that the invariant "`lamports_per_signature` accepts exactly the valid set: no forged input passes and no valid input fails." breaks and the result is Loss of Funds?
+
+## Target
+- File/function: `accounts-db/src/blockhash_queue.rs` -> `lamports_per_signature()` (around line 24)
+- Entrypoint: ordinary transactions that create, write, resize, close and reopen accounts the attacker pays for
+- Attacker controls: a payload that satisfies the cheap precondition but not the full check
+- Exploit idea: Construct input that `lamports_per_signature` accepts although it fails the property it is supposed to prove (signature, proof, derivation, ownership).
+- Invariant to test: `lamports_per_signature` accepts exactly the valid set: no forged input passes and no valid input fails.
+- Expected Immunefi impact: Loss of Funds - theft or creation of lamports/tokens without the owner's signature (6,250-25,000 SOL)
+- Fast validation: Differential test `lamports_per_signature` against a reference implementation over random valid and mutated-invalid inputs.
+
+## Bounty scope note
+In-scope target per anza-xyz/agave SECURITY.md. Assumes no validator, leader,
+staked-node, peer, gossip, operator, or leaked-key capability. Folder scope:
+Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.
