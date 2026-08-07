@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: compute-budget/src/compute_budget.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93ef962a-9eb8-4e1c-a5ea-080a4ebfdcfa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/compute_budget_limits.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a542b96-e78a-472e-a0bd-229f694e630f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28fd3367-8ab1-4142-a968-e0614e976a69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/builtin_programs_filter.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8fefae90-398f-40d9-847e-5021f92a722c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/compute_budget_instruction_details.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a92f2f4a-aefe-4a7c-8b44-a0523792a730?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/compute_budget_program_id_filter.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed3b5855-3a72-4ffb-b428-6c9657160a29?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/instructions_processor.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85426cf0-4f10-4097-86d5-9bb0a532f31c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: compute-budget-instruction/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8af4dfa4-f209-4fc4-8be0-d73897c92317?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/block_cost_limits.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63835ef5-2631-4d39-8d7d-86ebe0296d14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/cost_model.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fdc2768d-9f2e-45b3-9602-f0ac208e4b1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/cost_tracker.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_626aac0f-7d89-4f94-9c5d-8947f5828a24?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/cost_tracker_post_analysis.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6039b81f-d210-47ec-a8be-3d168028c7a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f7c76540-b21b-4420-96c6-5ba1c80474ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/shred_limit.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f0130c70-2899-4296-bc81-c175a9bbd2fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: cost-model/src/transaction_cost.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c6fbe1ee-bc75-414e-afc1-868287c96ea1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: feature-set/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56b0d45e-9aec-491d-8a79-56981ec7ad96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: fee/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff041d59-e2cc-42d5-a287-2e35340fc27e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: reserved-account-keys/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fbcc4efc-596c-400d-b2b7-b244fe44733f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/instruction_data_len.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a6c92641-585b-4497-af60-f4bfd009fb2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/instruction_meta.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_484d56e1-2981-46a7-baac-71ce0bee7492?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e637e151-4ed5-4db6-a27a-8b0c092a6da0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/runtime_transaction/sdk_transactions.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_494853fd-753e-48da-bdb4-eab2cc4e20b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/runtime_transaction/transaction_view.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_855102de-4227-47d6-ba7c-65891ced1efd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/runtime_transaction.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5ecce02-2315-4bc8-92fb-c642bd8bb124?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/sanitize_config.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aba4a986-ab73-4cab-be2f-4558b40852e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/signature_details.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f4107b1c-e655-459f-ab0f-9fd1462ff1b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/transaction_meta.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7e614f9-a770-41b0-a4af-e82636efab49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime-transaction/src/transaction_with_meta.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ea122853-b0a8-4d82-8ce2-84c5b9a50a69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_loader.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7892816-71c0-4e56-a455-ea56fb03cb2b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: svm/src/account_overrides.rs -> Scope: Critical. An unprivileged attacker can deploy a program that reads or writes host/guest memory outside its permitted regions, or forges an account reference, and extracts or corrupts state belonging to other accounts.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f78876f5-54d6-4c67-93ab-d67d4e0652be?mode=deep",
+    "questions_generated": false
+  }
+]
