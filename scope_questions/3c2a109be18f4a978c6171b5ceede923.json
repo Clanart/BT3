@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/src/cluster_slots_service/slot_supporters.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4aa3d5b7-21d7-4c33-8f9d-62cc81cfe94c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/cluster_slots_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_368ddd0a-56f4-4602-bbfe-fda470ddbdee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/commitment_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c6eda5f0-4f63-4c51-a136-1af23c9302f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/completed_data_sets_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b787bb1-c179-4c09-a7de-2eb763834947?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/fork_choice.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a56002ee-f45b-44f9-afbd-8aff2ecc455d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/heaviest_subtree_fork_choice.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_adb731ee-7951-4506-b4fb-02c0ac8c7b09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/latest_validator_votes_for_frozen_banks.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_383b66d8-b320-42a7-aed9-29b765d90b3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/progress_map.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6cca71be-0dd5-4971-8c52-3705f2ba78a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/tower1_14_11.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8e2bf208-27e0-4a37-b257-814f56796a09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/tower1_7_14.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_712475cb-0f79-4150-a1ef-19d4bfe9aea3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/tower_storage.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7e00623-3116-46ec-b9a3-49ee7812fa2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/tower_vote_state.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb4db773-f8d6-4222-9c9d-2ba4561b6786?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/tree_diff.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04fedff4-796a-47ac-a015-a1857c06dc88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus/vote_stake_tracker.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1749e7a0-cad3-4a0a-a8ce-dd1a01caf170?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/consensus.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_289e427d-8520-49f1-a7e6-31fd159c9ede?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/cost_update_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8d4c6e0e-d33a-45f9-a7f6-44bc40493834?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/drop_bank_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0fb50437-c5c7-45bd-814b-ab9495fa54ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/epoch_specs.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e1bf392-7e10-44ea-91fa-340a8d6495d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/fetch_stage.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d05c9047-3be4-46f3-9fb0-28fd7f83dd75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/forwarding_stage/packet_container.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2fe41e53-5dd6-413c-b5eb-95b5814cbbc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/forwarding_stage.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c5081d03-0fbc-4ec3-aac1-85e1290ed351?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/gen_keys.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_30a8cfe3-3f25-4215-9440-3928f9fa884f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/lib.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_58c1c7cd-9835-42bb-9d27-b447bf182c61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/next_leader.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e9f43a31-f61f-4274-b3b5-0b74801f7f05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/optimistic_confirmation_verifier.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2bdaca88-1f60-4390-9f84-5a7b1a740dbf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/ancestor_hashes_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_23a7806f-c279-4df0-b9c8-97acd43f3603?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/block_id_repair_service/stats.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aa58de01-318e-48e1-96b2-7a95da245cce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/block_id_repair_service.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f62ec377-6236-4c89-954c-81c6613f92b9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/cluster_slot_state_verifier.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8403b77-8ed7-445b-8932-72ecd5907a98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/repair/duplicate_repair_status.rs -> Scope: Critical. An unprivileged attacker can escalate instruction privileges through CPI, account serialization, or signer-seed handling and mutate or drain an account the top-level transaction never authorized as writable or signed.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5c93000-dbce-4c57-9b04-2fbfc29c3259?mode=deep",
+    "questions_generated": false
+  }
+]
