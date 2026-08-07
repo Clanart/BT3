@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/src/banking_stage/committer.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_372fa143-4722-4a10-810b-785aa0a492e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/consume_worker.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_76d1d2cf-eb1d-4a33-8033-223099aab2cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/consumer.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0335bac-5322-4ca8-9f53-ee1c5d99b27f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/decision_maker.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9e8c54a5-1795-4c99-99f9-836e82d6012a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/latest_validator_vote_packet.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_511d739c-1d7f-4725-8a4e-679a2730664b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/leader_slot_metrics.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_622db621-8710-4c08-81e9-977dbd5c7028?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/leader_slot_timing_metrics.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce694db2-5a5b-4ed3-9033-b4724a18643a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/progress_tracker.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e046f994-aa1c-44a3-a7dd-d64d8188dcf4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/scheduler_messages.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fdca9a07-8166-45ed-bdd3-b111127fbb8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/tpu_to_pack.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fffbe7be-e6a3-4125-9395-b9f25a80f93b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/batch_id_generator.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c52ec59c-85e5-43c6-b9ce-8dc533cef2a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/greedy_scheduler.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77028121-d1a5-4bbc-935a-da9e66ec35bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/in_flight_tracker.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_16f5af0a-64b1-4636-bda0-115b94e4607f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/mod.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2567debf-3c47-429e-b07b-224351e8370a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/receive_and_buffer.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0804f867-5bf4-45d2-9d59-5ba90de0667d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7582bf3c-74a3-4519-bcf8-3e694f6f07ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_common.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c315c9d4-1ca0-43f1-9dc4-aaea5cf69cec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_controller.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a274d04a-79a8-4f33-a21c-464c43ed486d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_error.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cdeaf27d-a818-4ebe-a91e-2e90f51e4d5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/scheduler_metrics.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b49412b9-6620-4350-bbff-889a4b33cc97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/transaction_priority_id.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1e6031f0-14cd-481f-8054-d1f4d9e6d84f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/transaction_state.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8adc13ef-1c00-42d2-aef8-b41398ad7ef1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/transaction_scheduler/transaction_state_container.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60aa8753-5d61-4f0c-a268-4d0ed894ae35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/vote_packet_receiver.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad482e57-4f73-499a-ab6c-682929731d84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/vote_storage.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eaeddfa0-01c1-4f90-abad-3b7e284fe3cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage/vote_worker.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bb310968-ed86-4b82-b13f-24a3b87aff2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_stage.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c4b1b5c-524c-4fd7-a3b9-40ea777db7e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/banking_trace.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28bcd1b7-40dc-40c5-aeb2-a9f016779808?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/cluster_info_vote_listener.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_72da2275-08a7-4b12-9c52-bd66175e11ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/src/cluster_slots_service/cluster_slots.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e438af02-0e70-448a-a8cf-8e9073fcd62d?mode=deep",
+    "questions_generated": false
+  }
+]
