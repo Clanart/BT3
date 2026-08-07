@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: fs/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ed2eb3b-4b36-4b2c-b352-0f9f7789ff3e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: fs/src/metadata.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5ce97fd-695c-4123-923d-71dd2766d2ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: io-uring/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d0c4afc1-81bc-45c5-8084-25ce64152ecb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: io-uring/src/ring.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_025aad5c-492a-474d-bb2e-0ec857a72a59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: io-uring/src/slab.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ab8f908-51d1-4bec-b035-400e88487d1a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lattice-hash/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fdb6a4ac-ea06-4483-aebe-30e4142fd03e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lattice-hash/src/lt_hash.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_68f81991-309c-4cf2-a8b7-4bf11769440f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: merkle-tree/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac07dc24-bc83-4613-967a-af6739bbab88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: merkle-tree/src/merkle_tree.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e180a473-f3bc-46af-9873-af403303beea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banking-stage-ingress-types/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ce1a968-7476-4e1b-8bd4-149a613d8c56?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/client_connection.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_75ac62a7-0fd5-4070-8611-dd09138872ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f275c23c-0d9d-49f0-a224-88795d38f0f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache_stats.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_056997c5-94d5-4d62-af99-39a861def730?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_faac5e7f-fda4-46cb-864e-ebd5964ff6d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/client_connection.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e40fce9c-d1f5-4d39-abfb-0c04533b32b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/mod.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f0f1a4c-3d31-4080-bf71-e65f0588eda8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/block_component.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f6fb2fc6-7faf-4e92-b756-46ae67bceac3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/entry.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4d9e8618-3837-4fe9-b834-216d9aa1b27b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/entry_or_marker.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3edb12cb-3127-4c89-8b67-ec4d8dc56c8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_123a0419-e5b5-418a-afe7-57ba4afe3b43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/poh.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d8e0016-fa82-4bf6-83ba-ab6baca141b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/banlist.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_55a6028e-0206-4417-a22e-3bfd7861e556?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/ip_echo_client.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8e302c96-eb65-441d-be59-b9199ba5c2fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/ip_echo_server.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_010bfc59-706e-4f0c-bf04-d87047b350a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/lib.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_45408975-0674-49bb-8612-140c1be1e0c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/multihomed_sockets.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8e1a9df4-4e5b-4aa2-8b8d-5744ae3b510a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/pinned_xdp_sender.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_94fd4ed0-c7a0-4801-b689-01e662c427ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/socket_addr_space.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_811dc06d-3806-40b2-8514-14bc2f149bf6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/sockets.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7567184b-fa8d-4174-ab95-09cb359e072b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/token_bucket.rs -> Scope: High. An unprivileged attacker can make a precompile or zk-elgamal proof verifier accept an invalid signature or proof, or reject a valid one, breaking authentication for programs that rely on it.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ba257155-2aa5-48e8-a357-1b62ebdc96f0?mode=deep",
+    "questions_generated": false
+  }
+]
