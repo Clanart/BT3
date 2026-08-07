@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: runtime/src/commitment.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cba80ff4-6303-464e-8ce3-d50f9f699978?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/dependency_tracker.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71bad417-f478-4350-9d2f-8b7713074d03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/epoch_stakes.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb87a8ab-76e5-43f3-92a8-93123442278b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/genesis_utils.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af48370b-2dde-47c1-be39-3ac89b7f9a38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/inflation_rewards/mod.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6dcc9ca7-6efa-4c24-bcd6-518608a492ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/inflation_rewards/points.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc9a3b6a-75a4-43d7-9f8e-8730c0cdd550?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/installed_scheduler_pool.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6efdc608-7211-40c6-9120-947f647fe79a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/leader_schedule_utils.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f2550ef7-e284-4eb1-a607-47efbc871fac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/lib.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_499f7a1a-ac37-4730-8d1b-1a2a4dfcaa8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/non_circulating_supply.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81005164-21f1-478f-8fb8-ab1dc95dd65d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/prioritization_fee.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e2f5b1c-8f95-42f6-b8c8-b549ea3e7446?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/prioritization_fee_cache.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_850523d3-1a74-47c3-a812-c4b882d352cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/read_optimized_dashmap.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a4025fbf-aa1b-40fa-a6d9-defde469593c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/rent_collector.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0cfabfc4-b128-40bf-9c1d-20ec26076bd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/reward_info.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2c4385ce-20bb-4cf9-b9de-1c1de51ad49e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/runtime_config.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_972d819b-5ca8-45db-9743-a12417749f54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/serde_snapshot/obsolete_accounts.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f91e2061-7eec-468a-9475-a37af4f5270f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/serde_snapshot/status_cache.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_40ffbb1c-197f-4656-9ea6-f61144e06294?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/serde_snapshot/storage.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6310283e-7435-4dbf-8ddb-c2195da84f34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/serde_snapshot/storages_list.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_066c312c-1cec-44c4-90f5-55f2273d3b6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/serde_snapshot/types.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65b736de-a81e-4bc3-8f46-b11d8d53a30e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/serde_snapshot.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93ecdacd-6a5f-4b79-b67a-bef3d6059c75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/slot_params.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e73e264-b75b-46ad-9cfd-8ff296419b00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_bank_utils.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7aeb80a7-3af1-45ae-b184-d977911c8f24?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_controller.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_36ddd9fd-d908-45f8-b43d-6b69a4cadfb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_minimizer.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a99502cd-5772-4bac-8b71-987c31ad7c32?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_package/compare.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b1a3149-5ec2-42f4-9772-89a2151029d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_package.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bb8ab32b-bc22-49c5-8692-996b21e5009c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_utils/snapshot_storage_rebuilder.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34f09b3a-1913-4f90-a37c-d02d2df8cdc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/src/snapshot_utils.rs -> Scope: Critical. An unprivileged attacker can deploy or upgrade a program, or poison the program cache, so honest validators execute different bytecode or produce different results for the same instruction.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8e1f6fd-b610-4f71-ace8-81cae67e8752?mode=deep",
+    "questions_generated": false
+  }
+]
