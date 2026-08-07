@@ -1,0 +1,1 @@
+[File: runtime/src/inflation_rewards/mod.rs -> Scope: Critical] [Function: redeem_rewards u64::try_from(rewards).expect] Can an attacker construct a rewards u128 intermediate value that is valid (fits in u128) but exceeds u64::MAX, deliberately triggering the `.expect(\

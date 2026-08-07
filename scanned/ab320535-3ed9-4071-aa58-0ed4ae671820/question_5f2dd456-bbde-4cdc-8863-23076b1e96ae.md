@@ -1,0 +1,1 @@
+[File: bucket_map/src/index_entry.rs -> Scope: High] [Function: MultipleSlots::set_storage_offset / PackedStorage::set_offset_checked] Can an attacker who forces sustained growth of a single account's slot-list-in-data-file (via repeated cheap writes across slots) push `storage_offset` past the 56-bit (`B56`) limit encoded in `PackedStorage`, causing `.expect(\

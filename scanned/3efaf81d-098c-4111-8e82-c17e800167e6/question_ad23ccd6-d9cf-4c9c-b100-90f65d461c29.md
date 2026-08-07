@@ -1,0 +1,1 @@
+[File: runtime/src/account_saver.rs -> Scope: Critical VM-halting DoS] [Function: max_number_of_accounts_to_collect / collect_accounts_to_store] Can an unprivileged attacker exploit the documented gap in `max_number_of_accounts_to_collect`'s comment (\
