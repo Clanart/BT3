@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: validator/src/commands/run/args/json_rpc_config.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20f8ac92-82f2-46d6-8f70-32d0a6d43f23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/args/pub_sub_config.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bf6025dd-59ee-40fd-a58c-254dbb2aa77e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/args/rpc_bigtable_config.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a481647-9455-46f1-b334-ff99d97beca3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/args/rpc_bootstrap_config.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1365dcbd-0aa3-454a-aa8e-f5021c785eba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/args/send_transaction_config.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8ff8bd19-adbb-4e3f-89e2-eedf5108fd0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/args.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61327595-2c64-4ada-80fd-8f3555434cc3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/execute.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3650211c-ec01-435c-9c9c-26c6f37010a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/run/mod.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4227166-61ee-4fad-9452-8bb0152d5c0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/set_identity/mod.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad4d8128-e55e-4279-a008-9d4746aed667?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/set_log_filter/mod.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3c49fd95-55eb-4683-a403-2323e10c4137?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/set_public_address/mod.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_37379ef4-8bb7-4402-b163-028cc692583a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/staked_nodes_overrides/mod.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e23afbf7-3948-426a-a153-a07c6e5d704c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/commands/wait_for_restart_window/mod.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5706f64-d381-41ed-a8b5-c5002577752a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/dashboard.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a28f588a-066d-4875-aafc-67d678dc832c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/lib.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb822205-97b4-4bd0-bffb-4be221ebba14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: validator/src/main.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8eadeb81-b002-4f71-8c28-f663bd27bbda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: version/src/client_ids.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9067a8f4-dbc2-4162-9057-d803dbc8f855?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: version/src/lib.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_27928281-38c6-43ab-a733-e9515532f2a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: version/src/v3.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10471470-1af6-4f8e-8a3f-785aeaf940f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: version/src/v4.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_53586e45-14fa-49f9-9800-a7d5c95dd36c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/account_info.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_36f2d5e6-f06e-4417-8d3a-7965738d7ef7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/account_locks.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d61d04f8-43d0-4923-93fc-d363ce0663c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/account_storage/stored_account_info.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d08faf8e-4a8a-4765-b63f-51e08f105116?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/account_storage.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_75e5c91f-5a50-406f-a7f1-35e5404803db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/account_storage_entry.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b3828fd2-0d51-4f40-b529-9606a9638854?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/account_storage_reader.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f15bbc3-c09b-4981-b985-0d3d57b04a75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/accounts.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f9844e4e-fa1d-4a16-a59a-b7bc13ed17ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/accounts_cache.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d473a7ed-b14c-4e8c-b114-e1f123f03993?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/accounts_db/accounts_db_config.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e1661562-f706-4c57-b080-cd9af094a915?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts-db/src/accounts_db/stats.rs -> Scope: High. An unprivileged attacker can perform syscall, CPI, memory-mapping, or deserialization work whose real CPU/memory cost far exceeds the compute units charged, degrading nodes below true cost.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_50178b52-5dfd-4be6-b4cf-29b6291ee8c8?mode=deep",
+    "questions_generated": false
+  }
+]
