@@ -1,0 +1,1 @@
+[File: 'gossip/src/gossip_error.rs -> Scope: Critical'] [Function: load_program_with_pubkey / replenish_program_cache in svm/src/transaction_processor.rs] Can an unprivileged attacker exploit the 'expect(\

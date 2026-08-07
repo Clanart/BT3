@@ -1,0 +1,1 @@
+[File: program-runtime/src/mem_pool.rs -> Scope: Critical] [Function: VmMemoryPool::get_stack] Can an attacker who forces a stack_size mismatch between solana_sbpf::vm::get_stack_frame_size() * MAX_CALL_DEPTH (used only in a debug_assert!, compiled out in release) and the actual pooled AlignedMemory length cause create_vm!'s stack.as_slice_mut().get_mut(..stack_size).expect(\
