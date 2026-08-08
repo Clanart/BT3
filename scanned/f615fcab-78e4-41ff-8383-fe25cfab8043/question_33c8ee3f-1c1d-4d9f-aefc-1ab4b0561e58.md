@@ -1,1 +1,0 @@
-[File: 'compute-budget-instruction/src/compute_budget_instruction_details.rs -> ComputeBudgetInstructionDetails::sanitize_and_convert_to_compute_budget_limits'] Given `updated_heap_bytes` feeds `program-runtime/src/vm.rs::create_vm!` macro's `heap.as_slice_mut().get_mut(..heap_size as usize).expect(
