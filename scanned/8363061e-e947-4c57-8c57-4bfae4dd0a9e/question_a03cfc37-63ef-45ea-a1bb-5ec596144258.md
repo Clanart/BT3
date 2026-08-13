@@ -1,1 +1,0 @@
-[File: plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh] [Function: Check 6 'Unquoted variables' regex heuristic] Can an attacker craft a hook script containing shell variable expansions that intentionally evade the regex '\\$[A-Za-z_][A-Za-z0-9_]*[^\

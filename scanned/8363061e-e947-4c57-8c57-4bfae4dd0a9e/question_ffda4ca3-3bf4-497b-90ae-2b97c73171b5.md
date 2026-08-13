@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/agent-development/SKILL.md'] [Function: agents/*.md auto-discovery + 'tools' frontmatter field] Can an unprivileged attacker who contributes an agent markdown file under a cloned repo's 'agents/' directory set 'tools: [\
