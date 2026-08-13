@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh'] [Function: check_script Check 11 -> grep -E 'sleep [0-9]{3,}|while true'] Can an attacker obfuscate a long-running/blocking pattern (e.g. using variables like SLEEP_SECS=999; sleep \
