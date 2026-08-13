@@ -1,0 +1,1 @@
+[File: '.claude/commands/triage-issue.md' -> Scope: Critical] [Function: newline/multiline injection into --add-label / --remove-label argv in scripts/edit-issue-labels.sh:25-31] Can an unprivileged attacker craft issue text containing embedded newlines, NUL-adjacent bytes, or extremely long label-like strings that, when Claude constructs the '--add-label \

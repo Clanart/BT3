@@ -1,0 +1,1 @@
+[File: plugins/hookify/core/config_loader.py -> Rule.from_dict, line 81] Can an attacker set frontmatter `action` to a value with trailing whitespace, mixed case, or unicode homoglyph (e.g. 'Block ', 'BLOCK', 'blоck' with Cyrillic о) so that `rule_engine.py:55 'if rule.action == \

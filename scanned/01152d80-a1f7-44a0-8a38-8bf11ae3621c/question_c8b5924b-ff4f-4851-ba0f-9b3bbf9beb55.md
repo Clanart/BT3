@@ -1,0 +1,1 @@
+[File: plugins/security-guidance/hooks/gitutil.py] [Function: parse_diff_into_files] Can an unprivileged attacker embed a crafted diff hunk containing the literal substring 'diff --git ' inside a file's content body (e.g. inside a multi-line string or heredoc) so `diff_output.split(\

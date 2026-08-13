@@ -1,0 +1,1 @@
+[File: plugins/pr-review-toolkit/agents/silent-failure-hunter.md -> Scope: High] [Function: agent YAML frontmatter parser (model/color/name fields) vs command frontmatter parser used by plugins/pr-review-toolkit/commands/review-pr.md (allowed-tools: [\

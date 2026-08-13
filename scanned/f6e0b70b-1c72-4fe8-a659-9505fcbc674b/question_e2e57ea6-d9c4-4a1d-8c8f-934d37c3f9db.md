@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/commands/cancel-ralph.md'] [Function: hide-from-slash-command-tool boolean-as-string frontmatter field] Can an unprivileged attacker exploit a parsing differential between the string value `\

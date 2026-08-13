@@ -1,0 +1,1 @@
+[File: scripts/gh.sh] [Function: CMD case statement, lines 26-36] Can an unprivileged attacker craft argv such that SUB1/SUB2 (e.g. extra whitespace, empty $2 via `./scripts/gh.sh issue`, or case variants like `Issue View`) causes `CMD=\

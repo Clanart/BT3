@@ -1,0 +1,1 @@
+[File: 'plugins/feature-dev/agents/code-architect.md'] [Function: diff/patch content ingestion during 'Codebase Pattern Analysis' referencing 'similar features' via git history] Can an unprivileged attacker craft a git commit/diff whose textual diff content contains lines resembling YAML frontmatter or tool directives (e.g. a diff hunk that looks like 'tools: [\

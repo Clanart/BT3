@@ -1,0 +1,1 @@
+[File: 'parse-frontmatter.sh'] [Function: whole pipeline as used by consumer hooks, cf. references/real-world-examples.md coordinator_session usage] Can an attacker-controlled 'coordinator_session' field value (extracted verbatim by parse-frontmatter.sh) containing shell metacharacters be passed into a consumer's 'tmux send-keys -t \

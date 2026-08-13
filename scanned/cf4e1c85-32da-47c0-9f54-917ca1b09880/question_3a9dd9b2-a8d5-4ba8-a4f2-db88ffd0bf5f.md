@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/agents/skill-reviewer.md' -> Scope: High. Leak of private code/secrets to external model/network beyond consent boundary] [Function: skill-reviewer agent tools frontmatter enforcement, tools: [\

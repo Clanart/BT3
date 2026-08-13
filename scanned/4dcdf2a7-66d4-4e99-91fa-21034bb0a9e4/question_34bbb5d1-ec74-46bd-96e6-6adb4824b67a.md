@@ -1,0 +1,1 @@
+[File: '.claude/commands/triage-issue.md' -> Scope: High] [Function: scripts/gh.sh search-query qualifier filter] Can an attacker craft an issue body/$ARGUMENTS-derived search query containing a case-obfuscated or unicode-homoglyph variant of `repo:`, `org:`, or `user:` (e.g. full-width colon, `REPO\u200b:`) that survives the `QUERY_LOWER=$(echo \

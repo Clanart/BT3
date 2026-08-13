@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/scripts/setup-ralph-loop.sh' -> Scope: Critical argument-parsing confusion] [Function: `while [[ $# -gt 0 ]]; do case $1 in --max-iterations) ... --completion-promise) ... *) PROMPT_PARTS+=(\

@@ -1,0 +1,1 @@
+[File: scripts/gh.sh] [Function: search issues qualifier filter, lines 76-83] Can an unprivileged attacker bypass the `QUERY_LOWER` substring check for `repo:`, `org:`, `user:` qualifiers using case tricks, embedded whitespace/tabs, unicode confusables, or URL/percent-encoding (e.g. `re%70o:other/priv`, `Org:`, `repo\t:x/y`) so that `gh search issues \

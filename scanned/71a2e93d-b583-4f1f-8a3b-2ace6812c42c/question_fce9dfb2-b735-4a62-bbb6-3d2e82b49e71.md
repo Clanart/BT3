@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/comment-analyzer.md' -> Scope: cross-repo confusion via $ARGUMENTS] [Function: review-pr.md '$ARGUMENTS' argument-hint '[review-aspects]' interpolated into workflow text] Can an attacker supply a malicious slash-command argument (e.g., embedding shell metacharacters or a second repo path) that, when interpolated as \

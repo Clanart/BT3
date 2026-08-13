@@ -1,0 +1,1 @@
+[File: plugins/ralph-wiggum/scripts/setup-ralph-loop.sh, function: COMPLETION_PROMISE_YAML quoting] Can an attacker-supplied `--completion-promise` argument value (via /ralph-loop $ARGUMENTS from repo-embedded instructions or issue/PR text that gets echoed as a command argument) containing an embedded `\

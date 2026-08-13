@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/core/config_loader.py -> Rule.from_dict, extract_frontmatter'] [Function: Rule.from_dict] Can an unprivileged attacker who controls a checked-in '.claude/hookify.*.local.md' file craft YAML frontmatter (e.g. 'enabled: \

@@ -1,0 +1,1 @@
+[File: plugins/security-guidance/hooks/sg-python.sh -> Scope: Critical] [Function: probe()/interpreter-resolution loop] Can an unprivileged attacker who only controls repo-local content (e.g. a checked-in `bin/`, `.venv/bin/`, or a repo-scoped PATH-affecting file like `.envrc`/`pyproject.toml` shim) cause the `for cmd in \

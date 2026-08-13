@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/scripts/setup-ralph-loop.sh'] [Function: COMPLETION_PROMISE_YAML quoting at lines 133-138] Can an attacker pass --completion-promise text containing a double-quote and newline (e.g. '\

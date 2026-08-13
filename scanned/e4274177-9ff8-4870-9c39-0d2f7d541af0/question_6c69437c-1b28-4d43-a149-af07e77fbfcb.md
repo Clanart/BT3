@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh' -> Scope: Critical - timeout field type confusion] [Function: timeout validation, lines 131-143] Can an attacker supply a `timeout` value that is a JSON array/object instead of a scalar (e.g. `\

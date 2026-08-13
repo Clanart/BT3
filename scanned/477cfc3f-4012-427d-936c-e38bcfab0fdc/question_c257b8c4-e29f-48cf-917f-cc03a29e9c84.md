@@ -1,0 +1,1 @@
+[File: plugins/plugin-dev/skills/plugin-structure/SKILL.md -> Scope: High] [Function: plugin.json path-array vs single-string field normalizer (manifest-reference.md:213-235)] Can an unprivileged attacker supply a 'commands' field as a single string containing a JSON-array-looking payload (e.g., '[\

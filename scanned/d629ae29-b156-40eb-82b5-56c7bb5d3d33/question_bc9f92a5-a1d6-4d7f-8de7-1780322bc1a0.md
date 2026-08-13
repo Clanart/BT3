@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/commands/help.md -> Scope: High. Leak private code/secrets to external model or network endpoints beyond consent boundary.'] [Function: help.md frontmatter parser / slash-command loader] Can an unprivileged attacker exploit the absence of an 'allowed-tools' key in help.md's YAML frontmatter (lines 1-3), unlike ralph-loop.md's 'allowed-tools: [\

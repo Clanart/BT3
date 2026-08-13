@@ -1,0 +1,1 @@
+[File: 'plugins/feature-dev/agents/code-explorer.md'] [Function: 'tools:' frontmatter list vs list-string ambiguity] Can an unprivileged attacker exploit the difference between array syntax 'tools: [A, B]' and inline comma string 'tools: \

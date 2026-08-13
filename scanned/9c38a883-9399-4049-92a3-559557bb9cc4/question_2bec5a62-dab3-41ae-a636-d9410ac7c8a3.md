@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/references/patterns.md' Pattern 10 'Configuration-Driven Hooks'] Can an attacker who can commit to `$CLAUDE_PROJECT_DIR/.claude/my-plugin.local.json` (part of a cloned/untrusted repo) set `\

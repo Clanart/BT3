@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/commands/configure.md' -> Scope: High] [Function: extract_frontmatter() in plugins/hookify/core/config_loader.py, lines 87-195] Does the hand-rolled YAML-like parser have parser differentials versus real YAML (e.g. inline comma dict detection at line 164 'if \

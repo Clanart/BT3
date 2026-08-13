@@ -1,0 +1,1 @@
+[File: plugins/ralph-wiggum/hooks/hooks.json] [Function: Stop hook command \

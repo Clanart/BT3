@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/core/config_loader.py' function Rule.from_dict / extract_frontmatter boolean coercion] Can an unprivileged attacker craft frontmatter like 'enabled: True' (capitalized), 'enabled: \

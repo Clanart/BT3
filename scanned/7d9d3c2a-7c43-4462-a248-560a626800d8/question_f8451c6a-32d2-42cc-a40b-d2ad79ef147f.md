@@ -1,0 +1,1 @@
+[File: plugins/security-guidance/hooks/llm.py -> Scope: High] [Function: _call_claude's response text-block parsing, ~line 497-507] Can attacker-influenced diff/file content cause the model's structured-output text block to contain valid-but-multi-document or trailing-garbage JSON such that `json.loads(block[\

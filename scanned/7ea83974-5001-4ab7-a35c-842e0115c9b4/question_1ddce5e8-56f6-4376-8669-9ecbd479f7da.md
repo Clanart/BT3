@@ -1,0 +1,1 @@
+[File: plugins/commit-commands/commands/commit.md] [Function: `allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*)`] Can an attacker craft a git commit message, staged file name, or diff content that, when substituted into the LLM's generated `git commit -m \

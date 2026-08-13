@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/scripts/setup-ralph-loop.sh'] [Function: COMPLETION_PROMISE_YAML quoting, lines 133-138] Can an attacker supply a --completion-promise value containing an embedded double-quote and YAML-breaking sequence (e.g. 'X\

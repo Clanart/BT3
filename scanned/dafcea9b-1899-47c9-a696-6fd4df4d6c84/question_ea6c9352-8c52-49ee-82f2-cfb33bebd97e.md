@@ -1,0 +1,1 @@
+[File: plugins/plugin-dev/skills/plugin-settings/scripts/validate-settings.sh -> Scope: Critical] [Function: overall script vs. references/parsing-techniques.md 'Validate File Paths' guidance] Given the SKILL.md documents a path-traversal check pattern ('if [[ \

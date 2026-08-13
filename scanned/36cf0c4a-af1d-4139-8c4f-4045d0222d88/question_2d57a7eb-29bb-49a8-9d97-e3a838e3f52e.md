@@ -1,0 +1,1 @@
+[File: scripts/edit-issue-labels.sh -> Scope: High] [Function: while [[ $# -gt 0 ]] arg parser / --add-label / --remove-label] Can an attacker craft an issue body that causes the LLM agent to pass a --add-label value containing shell metacharacters or a second flag disguised as a label value (e.g. 'x --remove-label needs-info') that, due to `ADD_LABELS+=(\

@@ -1,0 +1,1 @@
+[File: 'plugins/security-guidance/hooks/diffstate.py' -> Scope: Critical] [Function: compute_v2_review_set] Can an attacker who controls commit history make head_at_capture..HEAD non-linear-but-ancestor (e.g. via a crafted merge or rebase during the turn) so `_is_ancestor` returns True while `_git_name_only(repo, f

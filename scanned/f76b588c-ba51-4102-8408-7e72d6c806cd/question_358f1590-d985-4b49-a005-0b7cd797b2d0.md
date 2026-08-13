@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/code-simplifier.md' -> Scope: High] [Function: agent frontmatter loader parsing 'model: opus' and absent 'tools:' key] Can an unprivileged attacker who controls the checked-in agent markdown (e.g. via a forked/cloned repo PR that modifies plugins/pr-review-toolkit/agents/code-simplifier.md) inject an additional YAML key such as 'tools: [\

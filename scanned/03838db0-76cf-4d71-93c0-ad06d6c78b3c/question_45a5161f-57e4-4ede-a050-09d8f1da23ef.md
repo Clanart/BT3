@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/agent-development/scripts/validate-agent.sh' -> Scope: High] [Function: TOOLS extraction line 162 vs runtime tools array parser] Since the script stores the raw post-colon string (which may be a YAML flow array like [\

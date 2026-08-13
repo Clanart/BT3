@@ -1,0 +1,1 @@
+[File: 'plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md'] [Function: agent frontmatter tools field (absent) governing WebFetch/Read/Bash access] Can an unprivileged attacker who controls a cloned repo's package.json, .env.example, or src/*.ts rely on this agent's missing `tools:` allowlist (unlike plugin-validator.md's `tools: [\

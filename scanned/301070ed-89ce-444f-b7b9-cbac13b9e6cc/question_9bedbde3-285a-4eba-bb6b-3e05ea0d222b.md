@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development references/migration.md -> Bash validate-write.sh path traversal check'] Can an unprivileged attacker craft a file_path value using encoded traversal (e.g. URL-encoded '..%2f', unicode look-alike separators, or a symlink created inside the workspace pointing outside it) that bypasses the shell substring check `[[

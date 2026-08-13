@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/agent-development/SKILL.md'] [Function: agent creation write path 'Write tool to create agents/[identifier].md'] Can an unprivileged attacker supply a crafted identifier (from Method 1 AI-assisted generation JSON: '{\

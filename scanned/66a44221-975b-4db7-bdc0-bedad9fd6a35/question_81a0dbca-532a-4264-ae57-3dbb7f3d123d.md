@@ -1,0 +1,1 @@
+[File: plugins/ralph-wiggum/commands/ralph-loop.md] [Function: ```! fenced execution block] Can an attacker craft $ARGUMENTS content (slash-command arguments) containing shell metacharacters (e.g. \$(...), backticks, ;, |) that get interpolated unquoted into the ```! block '\

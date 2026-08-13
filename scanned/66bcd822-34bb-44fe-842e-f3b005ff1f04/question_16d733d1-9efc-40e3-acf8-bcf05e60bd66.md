@@ -1,0 +1,1 @@
+[File: same] [Function: check_script Check 4 stdin-read detection] Can an attacker craft a hook script that reads tool_input/diff data via a mechanism other than literal `cat`/`read` tokens (e.g. `mapfile`, `< /dev/stdin`, `exec {fd}<&0`, `xargs`) so Check 4's `grep -q \

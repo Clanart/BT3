@@ -1,0 +1,1 @@
+[File: 'plugins/commit-commands/commands/commit-push-pr.md'] [Function: Bash tool_input.command matching against '_GIT_COMMIT_RE' in security_reminder_hook.py] Can an attacker craft a compound Bash command string (e.g. 'git status && git commit -m \

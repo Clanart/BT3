@@ -1,0 +1,1 @@
+[File: 'plugins/security-guidance/hooks/sg-python.sh -> Scope: High secret/code exfiltration to external endpoints'] [Function: probe/exec loop in sg-python.sh] Can an unprivileged attacker who only controls a cloned repository's working directory or PATH-adjacent files cause the `for cmd in \

@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/code-reviewer.md'] [Function: absence of explicit 'allowed-tools' restriction, contrasted with sibling command 'plugins/pr-review-toolkit/commands/review-pr.md' allowed-tools: [\

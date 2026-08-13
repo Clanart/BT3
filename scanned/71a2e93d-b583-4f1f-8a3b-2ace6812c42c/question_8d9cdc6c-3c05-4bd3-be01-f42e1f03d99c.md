@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/code-reviewer.md' -> Scope: High] [Function: frontmatter 'allowed-tools' inheritance via review-pr.md Task invocation] Can an unprivileged attacker relying on the fact that 'commands/review-pr.md' declares `allowed-tools: [\

@@ -1,0 +1,1 @@
+[File: scripts/gh.sh] [Function: issue-view positional validation, lines 84-89] Can an attacker pass multiple concatenated digits disguised as one numeric token combined with an allowed flag ordering trick (e.g. `123 --comments=1;2`) to make `[[ \

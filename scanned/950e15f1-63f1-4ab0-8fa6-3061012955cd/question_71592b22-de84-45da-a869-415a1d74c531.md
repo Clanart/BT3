@@ -1,0 +1,1 @@
+[File: plugins/plugin-dev/agents/agent-creator.md -> Scope: Critical] [Function: generated tools array acceptance, step 3 'Tools'] Does agent-creator or the downstream Claude Code agent loader accept a wildcard value like tools: [\

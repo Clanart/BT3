@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh'] [Function: check_script Check 10 decision-JSON check (grep -q 'permissionDecision\\|decision')] Can an attacker author a PreToolUse hook script that merely contains the literal substring 'decision' inside an unrelated comment or echoed help text (never actually emitting a real {\

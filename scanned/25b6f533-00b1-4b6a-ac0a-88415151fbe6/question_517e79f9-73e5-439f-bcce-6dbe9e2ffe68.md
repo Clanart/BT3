@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/SKILL.md' -> Scope: Critical unauthorized file access] [Function: 'Temporarily Active Hooks' flag-file / config-based activation pattern, e.g. FLAG_FILE=\

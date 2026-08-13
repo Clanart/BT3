@@ -1,0 +1,1 @@
+[File: 'plugins/security-guidance/hooks/patterns.py' -> Scope: High] [Function: 'go_exec_shell_injection' / 'child_process_exec' regex substrings list interaction] Can an unprivileged attacker craft JS/Go source using obfuscated equivalents (e.g. string concatenation 'child_process' + '.exec', or 'require(\

@@ -1,0 +1,1 @@
+[File: plugins/ralph-wiggum/hooks/stop-hook.sh, function: jq -n argument construction lines 167-174] Can an attacker embed jq-significant or JSON-breaking sequences inside PROMPT_TEXT (via repo-controlled state file body) that, despite `--arg` safe-encoding, still cause a downstream consumer of the hook's stdout JSON (`{\

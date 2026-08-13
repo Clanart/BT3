@@ -1,0 +1,1 @@
+[File: 'plugins/security-guidance/hooks/sg-python.sh -> Scope: Critical.'] [Function: probe() stderr suppression '2>/dev/null'] Can an unprivileged attacker craft an interpreter shim that prints the literal string '3' to stdout (satisfying `[ \

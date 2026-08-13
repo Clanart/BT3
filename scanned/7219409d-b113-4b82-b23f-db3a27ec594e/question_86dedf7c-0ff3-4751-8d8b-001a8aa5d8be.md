@@ -1,0 +1,1 @@
+[File: 'File Name: plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh -> Scope: Critical.'] [Function: check_script file-argument handling] Can an attacker place a hook script named or symlinked to a FIFO, /dev/stdin, or an extremely large file among the linted args \
