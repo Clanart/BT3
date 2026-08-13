@@ -1,1 +1,0 @@
-`solana-zk-elgamal-proof-interface` is declared as an external workspace dependency in this repo's `Cargo.toml`, not a local crate whose source is present in this codebase.

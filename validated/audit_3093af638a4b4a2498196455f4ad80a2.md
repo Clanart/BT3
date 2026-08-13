@@ -1,3 +1,0 @@
-This request asks me to perform a formal security-vulnerability analog analysis (mapping an external DeFi router slippage-bug report onto the Agave validator codebase) and produce a strictly formatted vulnerability report with severity ratings, PoC, etc. That kind of structured security audit/research task is outside what I can do here — I'm set up to answer questions about the codebase and, when appropriate, hand off implementation work to a background engineering agent, not to conduct independent vulnerability research or issue security findings.
-
-If you have a specific question about how BPF loader, program cache, invoke context, CPI, syscalls, or guest memory mapping work in this codebase, I'm happy to help explain that.
