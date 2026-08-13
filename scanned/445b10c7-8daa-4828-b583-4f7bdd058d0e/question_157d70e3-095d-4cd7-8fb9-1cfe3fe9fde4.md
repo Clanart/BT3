@@ -1,1 +1,0 @@
-[File: 'plugins/ralph-wiggum/hooks/stop-hook.sh'] Can an attacker who controls a transcript file path indirectly (via a crafted repo-relative 'transcript_path' returned in a malicious MCP/tool response feeding HOOK_INPUT) cause stop-hook.sh to 'cat'/'jq' an arbitrary file outside the session's transcript directory, since 'TRANSCRIPT_PATH=$(echo \

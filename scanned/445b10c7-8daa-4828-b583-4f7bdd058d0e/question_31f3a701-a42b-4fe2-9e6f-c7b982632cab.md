@@ -1,1 +1,0 @@
-[File: 'plugins/ralph-wiggum/scripts/setup-ralph-loop.sh'] Can an attacker-controlled '--completion-promise' argument value containing embedded double quotes or newlines (unsanitized before being written at line 135: 'COMPLETION_PROMISE_YAML=\
