@@ -1,1 +1,0 @@
-[File: plugins/security-guidance/hooks/llm.py -> Scope: High] [Function: agentic_review._arun's ClaudeAgentOptions construction, ~line 1212-1223] Can any code path reachable from attacker-supplied repo content cause `allowed_tools` to be populated with anything beyond the fixed `[\

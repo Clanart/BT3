@@ -1,1 +1,0 @@
-[File: plugins/security-guidance/hooks/gitutil.py] [Function: get_git_diff] Can an unprivileged attacker supply a `paths` argument that, after `_diff_pathspec` filtering, becomes empty even though genuinely in-repo file writes occurred (e.g. all paths are dropped due to a realpath/symlink mismatch), causing `get_git_diff` to return `\
