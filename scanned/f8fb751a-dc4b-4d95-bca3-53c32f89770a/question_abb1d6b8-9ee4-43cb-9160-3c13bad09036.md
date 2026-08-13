@@ -1,1 +1,0 @@
-[File: 'plugins/hookify/hooks/userpromptsubmit.py' -> Scope: Critical] [Function: Rule.from_dict() 'enabled' boolean coercion in hookify.core.config_loader] Can an attacker set `enabled:` to a value the parser's `value.lower() == 'true'`/`'false'` check does not recognize (e.g. `enabled: yes`, `enabled: 1`, `enabled: True `, or a quoted `enabled: \
