@@ -1,1 +1,0 @@
-[File: 'plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md'] [Function: 'Read the relevant files' -> 'tsconfig.json'] Does the verifier resolve tsconfig.json's 'extends' field (or 'include'/'files' glob patterns) without canonicalizing against the workspace root, allowing an attacker-crafted tsconfig.json with '\
