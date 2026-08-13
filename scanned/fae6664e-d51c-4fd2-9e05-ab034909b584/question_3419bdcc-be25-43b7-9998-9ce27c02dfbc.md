@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/agent-development/SKILL.md'] [Function: agent frontmatter 'tools' field parsing] Can an unprivileged attacker who commits a plugin agent file with an omitted or malformed 'tools:' array (e.g. 'tools: [\
