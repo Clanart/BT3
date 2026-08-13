@@ -1,1 +1,0 @@
-[File: 'plugins/ralph-wiggum/commands/cancel-ralph.md'] [Function: allowed-tools comma vs array format ambiguity] Can an unprivileged attacker submit a plugin command file where `allowed-tools` mixes array syntax with an embedded comma-separated string (e.g. one array element containing `\

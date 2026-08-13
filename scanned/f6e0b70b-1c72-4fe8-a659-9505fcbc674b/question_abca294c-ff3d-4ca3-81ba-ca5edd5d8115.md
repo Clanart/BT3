@@ -1,1 +1,0 @@
-[File: 'plugins/pr-review-toolkit/agents/type-design-analyzer.md'] [Function: system prompt Output Format parser in review-pr.md step 6 'Aggregate Results'] Can an attacker embed a crafted type name or invariant description in source code (e.g. `class Foo /* --- \\nallowed-tools: [\
