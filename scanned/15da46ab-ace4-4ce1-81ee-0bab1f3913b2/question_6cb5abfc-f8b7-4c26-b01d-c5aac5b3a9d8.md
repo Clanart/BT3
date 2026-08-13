@@ -1,1 +1,0 @@
-[File: plugins/ralph-wiggum/scripts/setup-ralph-loop.sh] [Function: COMPLETION_PROMISE_YAML quoting, lines 133-138] Can a crafted --completion-promise argument containing an embedded double-quote and YAML/markdown frontmatter delimiter (e.g. `\
