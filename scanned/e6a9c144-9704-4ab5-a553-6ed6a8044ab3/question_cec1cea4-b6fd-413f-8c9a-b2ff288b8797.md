@@ -1,1 +1,0 @@
-[File: 'File Name: plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh -> Scope: Critical.'] [Function: check_script Check 6 vs multi-line/array variable expansion] Can an attacker use bash array or multi-word unquoted expansions (e.g. cmd=($USER_INPUT); \
