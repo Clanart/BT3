@@ -1,1 +1,0 @@
-[File: 'File Name: plugins/plugin-dev/skills/skill-development/SKILL.md -> Scope: Critical.'] [Function: secret-detection regex in plugins/plugin-dev/skills/hook-development/references/advanced.md: '(api[_-]?key|password|secret|token).{0,20}['\\\
