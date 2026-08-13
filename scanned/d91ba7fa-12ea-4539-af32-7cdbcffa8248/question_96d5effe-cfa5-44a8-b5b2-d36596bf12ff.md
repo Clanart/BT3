@@ -1,1 +1,0 @@
-[File: plugins/ralph-wiggum/hooks/stop-hook.sh, function: error-path file removal] Can an attacker craft a state file that triggers one of the many 'corrupted state' error branches (lines 28-48, 60-112) which unconditionally `rm \
