@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/command-development/SKILL.md' -> MCP tool allowlist wildcard pattern e.g. 'mcp__plugin_asana_asana__*'] Can an unprivileged attacker who controls a command's allowed-tools array containing an MCP wildcard (\
