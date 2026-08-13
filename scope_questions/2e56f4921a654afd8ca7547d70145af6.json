@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/review_api.py -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c63127e-52e2-4834-82fb-0d9a40bd8465?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/security_reminder_hook.py -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ffd50c72-8a9c-4756-9d65-ad9487349e92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/session_state.py -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb4471da-309c-46eb-a0f5-6985fc07c306?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/sg-python.sh -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b948319f-2fd7-4b45-b9b7-03bd275dbdae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3267b02-70f5-40bd-8dc3-cb10a1834a51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_21ac6e9c-2c22-4a7f-82af-20ed69debd4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/commands/new-sdk-app.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2cb0154c-21e8-4893-83e0-21fc1a343db6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/code-review/commands/code-review.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a283580-d449-4b0a-aee8-b940f6d2b333?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/clean_gone.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3f56167-777d-4a61-b062-9de42142ff55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/commit-push-pr.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20513a30-5a7a-4b73-b447-7641ec9c29d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/commit.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98c1a72b-3ac3-4a3f-9d0c-3110ff4fe0e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-architect.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f08c9f26-90c7-4d44-a1af-9c59e8e2a9df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-explorer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0437ab25-b9df-45fb-b8dc-5ee18ea5ff75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-reviewer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2567828d-ccc8-4c0e-a62a-ebe19ccd6869?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/commands/feature-dev.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8a67ab5-3c60-4045-9f9e-6d5a7a8d45c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/code-reviewer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d026826e-da07-42ac-8561-928ac1666219?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/code-simplifier.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0c532fd-762b-4b4c-9e69-5871606776a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/comment-analyzer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_83422d4f-f46b-4b3f-b999-61a9a9ab9af6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/pr-test-analyzer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed0afb1f-3ddb-4162-ba61-f9467194f8b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/silent-failure-hunter.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb9731b1-18e7-4cb5-bbd6-6b2bcb978c19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/type-design-analyzer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_896f1f4d-a3bb-4997-9c8f-0da31abc990f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/commands/review-pr.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1132c1b-0627-46e0-9d11-5c360b63dd4b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/cancel-ralph.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6649bee4-cade-4736-acac-c69c1a6c4d89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/help.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c44ccd39-7777-49d0-adee-b47d6ba7c92c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/ralph-loop.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5d4b1bd7-6d94-4dcd-be1b-6ab0df4fd525?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/hooks/stop-hook.sh -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a30eaa7b-7cd2-48ed-8bf4-5a532124931b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/scripts/setup-ralph-loop.sh -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_06216ccb-c8b2-4393-868d-360cdc159864?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/agent-creator.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4fa59ef8-8b67-454d-92fa-cb3de640ad1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/plugin-validator.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed33fbee-8216-471d-8eea-1cc4ded59d3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/skill-reviewer.md -> Scope: Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67881c23-f552-4e8f-bedb-1e2124a68e16?mode=deep",
+    "questions_generated": false
+  }
+]
