@@ -1,1 +1,0 @@
-[File: '.claude/commands/dedupe.md' -> Scope: High] [Function: gh.sh issue-view positional/flag parser] Can an unprivileged attacker whose issue text influences agent-constructed arguments smuggle an extra positional argument or a value that looks like a flag (e.g. an issue number string like '123 --comments' or '123;456') past the regex check `[[ \

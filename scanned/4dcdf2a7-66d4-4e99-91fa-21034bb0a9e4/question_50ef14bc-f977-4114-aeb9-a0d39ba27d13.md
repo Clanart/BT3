@@ -1,1 +1,0 @@
-[File: '.claude/commands/dedupe.md' -> Scope: High] [Function: comment-on-duplicates.sh BASE_ISSUE extraction] Can an unprivileged attacker who controls only issue/workflow_dispatch content cause `jq -r '.issue.number // .inputs.issue_number // empty' \
