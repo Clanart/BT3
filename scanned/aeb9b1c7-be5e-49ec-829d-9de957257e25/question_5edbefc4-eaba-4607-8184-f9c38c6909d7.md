@@ -1,1 +1,0 @@
-[File: 'plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md' -> Scope: parser differential] [Function: 'Verify package.json has 'type': 'module'' check combined with SDK import validation] Can an attacker craft a `package.json` with duplicate keys or BOM/encoding tricks (e.g. two `
