@@ -1,1 +1,0 @@
-[File: 'plugins/security-guidance/hooks/sg-python.sh -> Scope: Critical.'] [Function: Windows 'py -3' word-split branch] Can an unprivileged attacker who controls repository content check in a PEP 397 `py.ini` file (or place one reachable via a repo-scoped %PATH%/%HOME% override) to redirect the `-3` tag used by `exec $cmd \
