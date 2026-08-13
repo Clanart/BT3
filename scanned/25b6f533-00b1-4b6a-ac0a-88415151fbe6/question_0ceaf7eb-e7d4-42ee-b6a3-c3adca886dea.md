@@ -1,1 +1,0 @@
-[File: 'hook-linter.sh' -> Scope: Critical, arbitrary file read/write, secret exfiltration] [Function: check_script] Can an unprivileged attacker craft a repository-checked-in hook script whose filename begins with a dash (e.g. '--files=/etc/passwd' or '-e') such that when hook-linter.sh invokes `head -1 \
