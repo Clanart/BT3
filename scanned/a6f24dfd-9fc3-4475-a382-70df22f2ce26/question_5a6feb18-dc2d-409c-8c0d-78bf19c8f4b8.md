@@ -1,1 +1,0 @@
-[File: gitutil.py] [Function: _git_name_only] Can an attacker create a tracked file whose path contains raw NUL-adjacent or unusual byte sequences that survive `-z` NUL-splitting but desynchronize `result.stdout.split(\
