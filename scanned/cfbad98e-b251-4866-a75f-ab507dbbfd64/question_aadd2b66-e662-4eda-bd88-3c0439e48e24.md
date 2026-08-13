@@ -1,1 +1,0 @@
-[File: 'plugins/pr-review-toolkit/commands/review-pr.md'] [Function: allowed-tools frontmatter parsing] Can an attacker-controlled PR diff or issue text injected into the `$ARGUMENTS` of `/pr-review-toolkit:review-pr` cause the command's declared `allowed-tools: [\
