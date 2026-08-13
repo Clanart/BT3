@@ -1,1 +1,0 @@
-[File: 'plugins/security-guidance/hooks/llm.py'] [Function: _anthropic_base_url() / _call_claude()] Can an unprivileged attacker who only controls checked-in repo config (e.g. a project-level `.env`, `.mcp.json`, or CI env injected from a PR-controlled workflow file) set `ANTHROPIC_BASE_URL` such that `_call_claude`'s POST to `_anthropic_base_url() + \
