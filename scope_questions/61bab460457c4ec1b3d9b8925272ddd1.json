@@ -1,0 +1,92 @@
+[
+  {
+    "question": "'File Name: plugins/plugin-dev/commands/create-plugin.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5e2f2b47-463e-4a79-927d-c2cbcd29c8c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/agent-development/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d78d3cc4-476b-405b-9d02-4419180189da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/agent-development/scripts/validate-agent.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ca33d159-7e1b-4349-a73a-965ede4d815e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/command-development/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_58fb1fb9-5e2c-4448-9c44-3ed20f81af6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/hook-development/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f78e3c98-74c3-4405-9a49-41a92f8c785a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5676820e-6415-497d-8c88-3c2af42364ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/hook-development/scripts/test-hook.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09d53150-3eb3-49af-a651-46c0c482bf61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db669536-1c83-41e5-bdb7-f2333af29007?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/mcp-integration/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb67f4e5-d360-4281-b3db-7f3b297484bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/plugin-settings/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d29ecc96-7981-403d-bc6b-744253647fa8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/plugin-settings/scripts/parse-frontmatter.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e346eee1-7987-4f90-bdc5-5c4babbcf60a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/plugin-settings/scripts/validate-settings.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1989a588-93b7-426a-a9fa-4c0f37d65028?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/plugin-structure/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_06415e90-2cd4-47a5-bcea-3de589e40575?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/skills/skill-development/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_51a75317-ea38-4136-a1d8-138f9fd198ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/claude-opus-4-5-migration/skills/claude-opus-4-5-migration/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61d03320-e8c2-4279-958e-053583b51209?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/explanatory-output-style/hooks-handlers/session-start.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7cf52e85-602f-4b1c-95e3-f9d036c4fbe9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/frontend-design/skills/frontend-design/SKILL.md -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ba058c5-0c08-42eb-b613-993316866e0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/learning-output-style/hooks-handlers/session-start.sh -> Scope: High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_665d2f64-202b-40e6-96fb-82c190ec15df?mode=deep",
+    "questions_generated": false
+  }
+]
