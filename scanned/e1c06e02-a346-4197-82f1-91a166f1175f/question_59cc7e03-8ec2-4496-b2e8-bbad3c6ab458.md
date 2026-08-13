@@ -1,1 +1,0 @@
-[File: 'plugins/hookify/core/rule_engine.py -> RuleEngine.evaluate_rules'] Can an unprivileged attacker set 'action: Block' (wrong case) or 'action: blocked' (typo) in a checked-in rule's frontmatter so that the strict equality check 'if rule.action == \
