@@ -1,1 +1,0 @@
-[File: plugins/ralph-wiggum/hooks/stop-hook.sh] [Function: hook crash / fail-open behavior] Does an uncaught runtime error anywhere in stop-hook.sh (e.g. jq failure on a malformed transcript line, or arithmetic on a corrupted MAX_ITERATIONS) under 'set -euo pipefail' cause the hook process to exit non-zero without emitting the '{\
