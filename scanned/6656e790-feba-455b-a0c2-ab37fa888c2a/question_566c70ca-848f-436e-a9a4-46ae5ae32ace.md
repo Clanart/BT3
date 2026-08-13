@@ -1,1 +1,0 @@
-[File: scripts/gh.sh -> Scope: Critical] [Function: CMD case statement + SUB1/SUB2 parsing] Can an attacker-influenced agent invocation pass a crafted first two tokens (e.g. 'issue  view' with embedded IFS characters, or 'ISSUE VIEW' case variance) that bypasses the case \
