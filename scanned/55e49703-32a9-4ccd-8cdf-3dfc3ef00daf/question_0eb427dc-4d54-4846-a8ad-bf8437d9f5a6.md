@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/agents/plugin-validator.md'] [Function: hookify.core.rule_engine.RuleEngine._rule_matches, 'if not rule.conditions: return False'] Can an attacker submit a rule file using only the legacy 'pattern' field but with a malformed/empty string (e.g. pattern: \
