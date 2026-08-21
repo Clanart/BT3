@@ -1,1 +1,0 @@
-[File: lib/shopify_app/controller_concerns/ensure_billing.rb] [Function: ShopifyApp::EnsureBilling#request_payment] Can an attacker force `request_payment` to embed a `host` value built via `Base64.encode64(\
