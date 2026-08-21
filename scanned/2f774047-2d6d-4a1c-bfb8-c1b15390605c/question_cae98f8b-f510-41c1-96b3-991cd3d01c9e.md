@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/configuration.rb -> Scope: Critical'] [Function: ShopifyApp::Configuration#login_callback_url override + custom routing] Can an unprivileged attacker exploit the fact that login_callback_url is a plain configurable string (File.join(\
