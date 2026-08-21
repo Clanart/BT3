@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/controller_concerns/app_proxy_verification.rb'] [Function: calculated_signature] Can an attacker exploit the query-hash normalization `query_hash_without_signature.collect { |k, v| \
