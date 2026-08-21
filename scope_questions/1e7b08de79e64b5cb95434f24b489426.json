@@ -1,0 +1,92 @@
+[
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_62f5ae72-8eac-4fc9-abaf-02117cc3ce03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage_with_scopes.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c817a406-f303-4ff6-8473-d81cb522432b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_session_store.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_575c95ac-7704-4ee8-993b-a3515d710a9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_shop_session_store.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_294613d3-81ed-4f27-b50f-e9818ac936c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_user_session_store.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42f8d184-13ca-497a-8e41-2ccdade3ad9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/null_user_session_store.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2718ffff-d0f9-4d5b-89ed-62aed486d1bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/shop_strategy.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9dadfd5d-f5bc-4fcc-8498-b804c3e9f567?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/user_strategy.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b2343cf-f984-41b7-b9f5-d5f366a31945?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/noop_strategy.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1f793e86-ba20-4b40-9802-3d8158bfbcd9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/utils.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3fe4c16-5cc3-4890-bb0d-09b6d9fa530d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/configuration.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2c43fb76-13fb-4ca1-bb3d-8ccefad98950?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/engine.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_48c13c52-0db9-4b9f-ad46-b807d51abd82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/errors.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dfeee411-066e-4ddb-926d-f3524f67d683?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/logger.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a872faba-4585-4d7a-ae82-dc68735d5e6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/webhooks_manager.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a74a8d6-fc50-40fe-b1bb-bd445bbd3392?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/script_tags_manager.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15934d4b-1bc8-4c91-bff3-15b9ab8dbaeb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/webhooks_manager_job.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4f5f6c30-5a10-4b3c-b9c2-a2176a6696d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/script_tags_manager_job.rb -> Scope: Critical. An attacker who controls one shop (or an arbitrary shop domain string) causes the app to load, overwrite, or act with another shop's or another user's stored session, through shop domain sanitization, session id or scope lookup, or session storage key collisions.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb3ef94f-e7ff-4237-9966-ec7da8afdcff?mode=deep",
+    "questions_generated": false
+  }
+]
