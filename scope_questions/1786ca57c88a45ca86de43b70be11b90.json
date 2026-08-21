@@ -1,0 +1,92 @@
+[
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb4a2cd5-5c4b-4d71-a646-6c475683883c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage_with_scopes.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_08d1c981-b803-4320-b65c-7bc105e6deac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_session_store.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1eb82159-5b06-4204-8854-e39ee4c7b504?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_shop_session_store.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8e430f6-6061-4441-a63d-a30381f7adda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_user_session_store.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25af3601-c69c-4ce8-a4d0-af5c861fc6a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/null_user_session_store.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ec8ed59-eaad-476b-bc79-e313f3b866e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/shop_strategy.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_45cec984-709a-42a6-af3e-8f716313d11a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/user_strategy.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4ada93c-172b-4caf-903a-3430a91c6bf6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/noop_strategy.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2387b76c-3342-4e3d-a58e-af20364c3592?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/utils.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_299fdcfc-5340-4a0d-b9e0-7c0716e71dc0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/configuration.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93392b1b-2d25-4430-ba0f-f0ff350624e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/engine.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_acceb109-e7c8-4dc2-a0bf-fab69b5461c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/errors.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b61abced-b5b1-444e-9b7d-e9e1885a95f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/logger.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_59ea85f5-8a50-4616-a684-8bf3e77d3504?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/webhooks_manager.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b6106d8-782b-4a74-ad64-117a5ad20d5c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/script_tags_manager.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d81d4430-17f4-4fd5-8cc9-ab22eb145e19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/webhooks_manager_job.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_daa31d1e-6d9c-4a5d-95be-7a4b6ab2d9b9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/script_tags_manager_job.rb -> Scope: Critical. An unauthenticated attacker forges a webhook, app proxy, or extension request that passes HMAC verification, through a comparison that is not constant-time, a wrong signing secret or payload, missing verification on a route, or signature parameter parsing that lets attacker-chosen data be excluded from the signed digest.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3968a67c-f50f-476b-83df-4345bc1644fc?mode=deep",
+    "questions_generated": false
+  }
+]
