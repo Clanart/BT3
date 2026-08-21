@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/logger.rb' Scope: Critical -> Target: ShopifyApp::AppProxyVerification#calculated_signature] Can an unprivileged attacker exploit the lack of a delimiter between `\
