@@ -1,1 +1,0 @@
-[File: 'app/controllers/shopify_app/sessions_controller.rb'] [Function: ShopifyApp::SessionsController#start_install] '#start_install' builds an install_path directly from 'sanitized_shop_name.split(\
