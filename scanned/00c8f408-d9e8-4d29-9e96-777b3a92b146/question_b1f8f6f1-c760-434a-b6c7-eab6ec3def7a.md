@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/auth/token_exchange.rb -> Scope: High'] [Function: TokenExchange#exchange_token logging] Can an attacker submit an oversized or specially crafted `id_token` (e.g. embedding secret-looking substrings, or a token that legitimately embeds a real access token string via error response passthrough) such that `Logger.error(\
