@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/controller_concerns/sanitized_params.rb'] [Function: ShopifyApp::SanitizedParams#sanitize_shop_param combined with ShopifyApp::Utils#uri_from_shop_domain] Can an attacker exploit the auto-suffix logic (`name += \
