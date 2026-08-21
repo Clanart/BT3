@@ -1,1 +1,0 @@
-[File: 'app/controllers/concerns/shopify_app/ensure_installed.rb' -> Scope: High] [Function: ShopifyApp::EnsureInstalled#current_shopify_domain (memoized `@shopify_domain`)] Can an unprivileged attacker exploit the `@shopify_domain ||=` memoization combined with `ShopifyApp::Logger.info(
