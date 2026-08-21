@@ -1,1 +1,0 @@
-[File: 'config/routes.rb -> Scope: Critical'] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Can an attacker craft a query_hash where a param value is an array (e.g., `baz[]=1&baz[]=2`) so that Array(v).join(\

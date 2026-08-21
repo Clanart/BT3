@@ -1,1 +1,0 @@
-[File: 'config/routes.rb -> Scope: Critical'] [Function: ShopifyApp::AppProxyVerification#query_string_valid?] Can an attacker submit an app proxy request with the `signature` parameter present multiple times (e.g., `signature=valid&signature=evil`) such that query_hash.delete(\
