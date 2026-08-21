@@ -1,0 +1,92 @@
+[
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49de001a-0153-4d82-9567-10cd64a1b632?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage_with_scopes.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c4ad56d0-eaaf-4ab6-9132-9710077c4552?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_session_store.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e593049b-36e5-4f33-abe8-e868975839e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_shop_session_store.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe1933d5-f29d-48ac-83b0-023d1af337b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_user_session_store.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_19efb9d1-be6c-4318-bf7a-1afbf0608a19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/null_user_session_store.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc06dfd4-749f-451a-9c3f-53e3ab58bb6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/shop_strategy.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_129c6f8c-14c3-48cc-bde5-da0d1dca7389?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/user_strategy.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8cf117e-87c0-47a3-8fba-5a48fa6c76ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/noop_strategy.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_18c2204b-0351-4adf-a704-8844a6370316?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/utils.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c53b2b3-963a-4e0a-9a92-c3d19621065f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/configuration.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b3632a01-8f9d-4fc1-a56f-846ca0e7b603?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/engine.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_439b2467-5589-4807-a812-7bbb8751181f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/errors.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f12441a7-35c7-4510-b944-0e086864fc25?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/logger.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56ddba56-df41-470f-b08e-69c12095a96a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/webhooks_manager.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_989f6a47-c5a6-4f4b-b74b-84eb1c8953d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/script_tags_manager.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cdb5a519-9870-4b84-9ec2-69e79a02ba71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/webhooks_manager_job.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_151668a0-39c1-4594-8a5c-5c29081e9bd4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/script_tags_manager_job.rb -> Scope: Critical. An unauthenticated attacker reaches a controller action protected by ensure_has_session, ensure_installed, or the token exchange concern without presenting a valid, correctly verified Shopify session token, or with a token whose signature, destination, audience, or expiry is not enforced.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35d09690-edc9-4923-a8a3-42aa5d1a0363?mode=deep",
+    "questions_generated": false
+  }
+]
