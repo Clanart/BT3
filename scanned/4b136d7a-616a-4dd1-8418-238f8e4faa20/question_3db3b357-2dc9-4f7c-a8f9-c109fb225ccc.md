@@ -1,1 +1,0 @@
-[File: 'app/jobs/shopify_app/script_tags_manager_job.rb -> Scope: Critical'] [Function: ShopifyApp::SessionsController#start_install] Can an attacker send `shop` as a crafted string (e.g. containing path traversal, `..`, or extra segments) that passes `sanitized_shop_name` but yields a `shop_name = sanitized_shop_name.split(\
