@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/auth/token_exchange.rb -> Scope: High'] [Function: ShopifyApp::Auth::TokenExchange.perform domain used in Logger.info] Can an attacker inject Rails log-formatting-breaking or terminal-escape-sequence characters into `Logger.info(\
