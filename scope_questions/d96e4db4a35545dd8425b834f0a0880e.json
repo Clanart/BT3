@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/controllers/shopify_app/sessions_controller.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_22f83e68-8b71-4036-84a0-d412e231261a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/callback_controller.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8483cd37-cd0f-4c5c-b9fb-6bcf81759490?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/authenticated_controller.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_41239d1e-ee8f-4157-94d0-c8d11dad92aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/extension_verification_controller.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f321b605-ae4a-4224-9904-c8a03f74bf1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/webhooks_controller.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ed3053f-2182-43e6-ba08-06a3643b7d36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: config/routes.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5eb46d75-549c-4ad7-9f2a-4c6dc345c006?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/ensure_has_session.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b854f65-48bb-42cc-969a-87aa7bb58302?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/ensure_installed.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33edb59a-04d4-439c-a32a-e7cc21b33bad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/ensure_authenticated_links.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67125ef1-276a-43d5-82a4-b353dd8b4b0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/shop_access_scopes_verification.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9483c7d4-8be8-4e79-9fd5-322bc9464635?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/login_protection.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a977a5a-1ce9-434e-b7d8-cdf7b9f41a2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/token_exchange.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f91d4246-0d9b-426a-9b86-0f56d3e149c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/with_shopify_id_token.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1f7d8746-a8d5-4950-bef3-a85e61b5e2db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/csrf_protection.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_134df90d-a5c5-4fe9-96ad-28a7fbb25d90?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/embedded_app.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4bdabca0-419c-41b8-ba43-d7a86c35c669?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/redirect_for_embedded.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_14fd8a84-7c37-4504-9c2c-97bba8670d76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/frame_ancestors.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d36e8f90-90af-47c3-b3df-d585d6d0874e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/sanitized_params.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35cac3ce-36c7-4bf7-93b7-c956e32868d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/localization.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3139a49d-97a0-4251-8a8a-b5bdacc322f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/ensure_billing.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15183cb4-cbf9-4367-b2b3-207571c8191e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/webhook_verification.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dd51a0c4-77ed-4ee5-8ac9-f8c81590f2af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/app_proxy_verification.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_41444e6d-e854-4587-ae19-22c0e472aed9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/payload_verification.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ee0f848-105b-454f-a6ac-879b8e0e742d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/auth/token_exchange.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b49806a3-9da7-4c60-aa70-4c03175177d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/auth/post_authenticate_tasks.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56e0e6a6-addc-4d29-9db3-5ec82f5b4eb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/admin_api/with_token_refetch.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af576ade-5796-42ed-97aa-b6d0de83f3f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/session_repository.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dabf73a1-61dd-4015-bbc7-eb86eebd8816?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/session_storage.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6befb0e8-3548-4f95-8d70-e810029448b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/shop_session_storage.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_335e771c-6471-48c0-acb8-4e0c723379a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/shop_session_storage_with_scopes.rb -> Scope: Critical. An unauthenticated attacker who can only send HTTP requests to a public route of an app built on this gem obtains a valid Shopify access token or session for a shop they do not own, by abusing shop-parameter handling, session id derivation, ID token verification, or token exchange in the login, callback, or token-exchange path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b0146a3-76b8-4bcf-883c-b9fbb5631a17?mode=deep",
+    "questions_generated": false
+  }
+]
