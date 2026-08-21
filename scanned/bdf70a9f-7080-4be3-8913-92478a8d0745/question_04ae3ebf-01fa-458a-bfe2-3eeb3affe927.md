@@ -1,1 +1,0 @@
-[File: 'app/controllers/shopify_app/authenticated_controller.rb -> Scope: Critical HMAC bypass'] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Does the sort-then-join scheme (`query_hash_without_signature.collect { |k, v| \
