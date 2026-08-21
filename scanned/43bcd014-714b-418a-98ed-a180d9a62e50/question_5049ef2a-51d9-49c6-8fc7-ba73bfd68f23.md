@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/embedded_app.rb'] [Function: ShopifyApp::EmbeddedApp#redirect_to_embed_app_in_admin/#safe_embedded_app_url] Can an attacker on a public route with only params[:shop] set (no host) trigger the fallback 'Base64.encode64(\

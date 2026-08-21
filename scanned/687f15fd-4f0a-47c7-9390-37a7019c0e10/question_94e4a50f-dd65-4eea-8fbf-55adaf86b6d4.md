@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/session/session_repository.rb' -> Scope: Critical] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Does the sorted_params generation via query_hash_without_signature.collect { |k, v| \

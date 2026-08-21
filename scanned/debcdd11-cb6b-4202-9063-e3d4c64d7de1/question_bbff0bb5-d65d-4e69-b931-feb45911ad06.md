@@ -1,0 +1,1 @@
+[File: same as above] [Function: ShopifyApp::AppProxyVerification#query_string_valid?] Can an unprivileged attacker submit a query string containing multiple 'signature' parameters (e.g. 'signature=valid&signature=x') so that Rack::Utils.parse_query returns an array or last-value for 'signature', and 'query_hash.delete(\

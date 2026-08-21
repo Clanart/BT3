@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/access_scopes/shop_strategy.rb' -> Scope: Critical HMAC/webhook/proxy forgery] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Because calculated_signature builds sorted_params via collect { |k,v| \

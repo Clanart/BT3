@@ -1,0 +1,1 @@
+[File: 'app/jobs/shopify_app/script_tags_manager_job.rb -> Scope: Critical'] [Function: ShopifyApp::SessionRepository.load_session / delete_session] Can an attacker who controls `shopify_user_id` collisions (e.g. numeric overflow, leading zeros, or shop id reused across environments) cause `load_session(id)`'s regex `/^offline_(.*)/` or `id.split(\

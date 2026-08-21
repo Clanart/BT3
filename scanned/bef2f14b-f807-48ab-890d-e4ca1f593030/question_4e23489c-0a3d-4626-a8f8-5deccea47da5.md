@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/app_proxy_verification.rb'] [Function: ShopifyApp::AppProxyVerification#query_string_valid?] Can an attacker submit duplicate query parameters (e.g. `shop[]=a&shop[]=b`) or parameters differing only in key casing/encoding such that Rack::Utils.parse_query builds a query_hash whose `calculated_signature` (built via `Array(v).join(\

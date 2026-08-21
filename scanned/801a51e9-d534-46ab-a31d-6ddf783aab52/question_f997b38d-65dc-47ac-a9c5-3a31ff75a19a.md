@@ -1,0 +1,1 @@
+[File: csrf_protection.rb + embedded_app.rb#redirect_to_embed_app_in_admin] [Function: ShopifyApp::EmbeddedApp#redirect_to_embed_app_in_admin] Can an attacker exploit the fallback host construction `Base64.encode64(\

@@ -1,0 +1,1 @@
+[File: 'app/jobs/shopify_app/webhooks_manager_job.rb' -> Scope: Critical] [Function: AppProxyVerification#query_string_valid?] What happens when an attacker supplies multiple `signature` query parameters (e.g., `?signature=a&signature=b`), causing `query_hash.delete(\

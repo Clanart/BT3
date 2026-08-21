@@ -1,0 +1,1 @@
+[File: 'app/controllers/shopify_app/sessions_controller.rb'] [Function: SessionsController#copy_return_to_param_to_session] Can an attacker craft `return_to` as a protocol-relative or scheme-prefixed URL (`//evil.com`, `javascript:...`) that bypasses `RedirectSafely.make_safe(params[:return_to], \

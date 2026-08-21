@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/token_exchange.rb' -> #respond_to_invalid_shopify_id_token / #redirect_to_bounce_page'] [Function: redirect_to_bounce_page] Can an attacker craft `request.query_parameters` (excluding `id_token`) containing attacker-controlled values that get embedded verbatim into `bounce_url`/`patch_shopify_id_token_params[

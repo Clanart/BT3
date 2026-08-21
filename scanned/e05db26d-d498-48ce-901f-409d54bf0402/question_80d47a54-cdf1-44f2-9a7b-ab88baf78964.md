@@ -1,0 +1,1 @@
+[File: 'config/routes.rb -> Scope: Critical'] [Function: ShopifyApp::AppProxyVerification#verify_proxy_request] Can an attacker send an app-proxy GET/POST request with an empty query_string (request.query_string == \

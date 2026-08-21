@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/app_proxy_verification.rb'] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Can an attacker exploit the query string reconstruction `query_hash.collect { |k, v| \

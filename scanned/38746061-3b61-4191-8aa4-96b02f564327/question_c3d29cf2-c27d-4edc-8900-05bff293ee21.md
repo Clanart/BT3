@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/app_proxy_verification.rb'] [Function: ShopifyApp::AppProxyVerification#query_string_valid?] Can an attacker append a second `signature` query parameter (duplicate key) so that `Rack::Utils.parse_query` and `query_hash.delete(\

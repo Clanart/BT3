@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/sanitized_params.rb' -> Scope: secret exfiltration via redirect] [Function: LoginProtection#return_to_url + SanitizedParams#sanitized_params interplay] Can an attacker craft `request.referer` (used on non-GET `redirect_to_login` paths: `referer = URI(request.referer || \

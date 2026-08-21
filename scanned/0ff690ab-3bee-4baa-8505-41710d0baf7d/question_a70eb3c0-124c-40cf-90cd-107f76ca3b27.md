@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/app_proxy_verification.rb'] [Function: ShopifyApp::AppProxyVerification#query_string_valid?] Can an attacker submit a query string containing a `signature` key more than once (e.g., signature=valid&signature=evil) so that query_hash.delete(\

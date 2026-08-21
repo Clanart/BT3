@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/session/session_repository.rb' -> Scope: Critical] [Function: ShopifyApp::AppProxyVerification#query_string_valid?] Since 'signature' is deleted from query_hash via query_hash.delete(\

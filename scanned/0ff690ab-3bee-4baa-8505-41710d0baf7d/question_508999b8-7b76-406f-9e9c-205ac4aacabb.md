@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/managers/webhooks_manager.rb' -> Scope: Critical] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Can an attacker append an extra query parameter whose key, when URL-decoded, collides with an existing key after `Array(v).join(\

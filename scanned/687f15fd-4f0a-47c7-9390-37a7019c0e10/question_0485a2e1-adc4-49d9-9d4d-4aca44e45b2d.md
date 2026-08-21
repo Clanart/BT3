@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/session/shop_session_storage.rb -> Scope: Critical HMAC forgery'] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Given the app proxy signature is computed as HMAC-SHA256 over 'sorted_params = query_hash_without_signature.collect{|k,v|

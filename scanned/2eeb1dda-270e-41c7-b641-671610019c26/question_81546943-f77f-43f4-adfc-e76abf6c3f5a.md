@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/session/in_memory_user_session_store.rb -> Scope: Critical'] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Can an attacker craft two different query parameter sets that serialize to the same signed string via `\

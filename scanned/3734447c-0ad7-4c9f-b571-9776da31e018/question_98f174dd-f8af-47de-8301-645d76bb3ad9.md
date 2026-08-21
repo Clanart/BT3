@@ -1,0 +1,1 @@
+[File: lib/shopify_app/managers/webhooks_manager.rb -> Scope: Critical] [Function: ShopifyApp::WebhooksManager.path(webhook_attributes)] For statically configured webhooks whose `address` is parsed via URI(address).path, can a crafted address containing userinfo/host confusion (e.g., \

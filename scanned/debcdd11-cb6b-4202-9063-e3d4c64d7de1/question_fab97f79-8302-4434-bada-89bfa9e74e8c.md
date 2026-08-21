@@ -1,0 +1,1 @@
+[File: same as above] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Can an unprivileged attacker add extra query parameters with array-style repeated keys (e.g. 'baz[]=a&baz[]=b') so that 'Array(v).join(\

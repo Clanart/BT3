@@ -1,0 +1,1 @@
+[File: 'lib/shopify_app/controller_concerns/token_exchange.rb -> Scope: Critical'] [Function: ShopifyApp::TokenExchange#activate_shopify_session] Can an attacker with no Authorization header and no valid id_token, but who sets 'params[\
