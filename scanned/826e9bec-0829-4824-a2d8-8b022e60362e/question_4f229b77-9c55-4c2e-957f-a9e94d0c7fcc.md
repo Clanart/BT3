@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/controller_concerns/token_exchange.rb' -> Scope: Critical.] [Function: ShopifyApp::TokenExchange#current_shopify_session (SessionRepository.load_session integration)] Can an attacker register/install an app for a shop domain deliberately chosen so that ShopifyApp::SessionRepository.load_session's 'id.split(\
