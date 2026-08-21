@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/controllers/shopify_app/sessions_controller.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d14b5aa8-20d4-49f8-a37a-3609c53349a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/callback_controller.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f602801e-c4a6-46ac-a528-f2b60d4b8ce1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/authenticated_controller.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e71df6b5-a1db-48cf-b192-a955038a2a69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/extension_verification_controller.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a78d6563-442c-4af8-ba0d-aa7846f268d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/shopify_app/webhooks_controller.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_434dff35-5fa7-46c8-b3d7-954401a05d51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: config/routes.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a59d19c8-8f5e-4bd6-9e25-162cb9e4a489?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/ensure_has_session.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b6e52830-9a14-462f-88d5-7c334a47112e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/ensure_installed.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_74c4e786-0ae8-47e7-a4cb-6cb593cccd4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/ensure_authenticated_links.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e6df173-6d83-4324-9209-24e35822a719?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/controllers/concerns/shopify_app/shop_access_scopes_verification.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0b3383c-c027-4870-81a9-fc41270b281b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/login_protection.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ddd86499-e4b4-4b25-938c-c407e10423ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/token_exchange.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b06444ce-eef3-4449-b033-f5013df0f9ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/with_shopify_id_token.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3c7b5fa-9d83-4a6c-a469-fcf972244c1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/csrf_protection.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b736fcc1-ad23-4fee-a844-fa7fb0dbcfdf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/embedded_app.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8cdc9897-d218-4b54-b2c7-9c9e4243c280?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/redirect_for_embedded.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_709aceb2-fd94-4bc6-a9ff-5f8f53f4e7b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/frame_ancestors.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3e3adaec-f8bc-47d3-81db-f39b8cd3b77f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/sanitized_params.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4d0d40ff-cdbe-4c29-a35d-27e0021b2f8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/localization.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5a6e1c5-0009-481e-a5a2-9b626d84772b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/ensure_billing.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35885652-8ce6-414f-b64a-34130ec020ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/webhook_verification.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_679bcba9-35cc-4cb7-8679-42cc94afd6b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/app_proxy_verification.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_701dbaaa-8c7e-47bf-978b-34a1aac23807?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/controller_concerns/payload_verification.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bd298460-03ac-4274-9278-9aa6cccdacfc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/auth/token_exchange.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5e35546b-7b72-4d4a-b14c-be37bdea610b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/auth/post_authenticate_tasks.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9f346609-48c1-4f65-934d-8eb1826bc499?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/admin_api/with_token_refetch.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_356153af-3e67-4425-ad8f-9dcc5ecea93a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/session_repository.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bcbca677-d1c0-45a5-b0fb-b5c00fed117f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/session_storage.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dece2d6e-8b14-41bd-b584-2c576f26cabc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/shop_session_storage.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7fb7d378-023c-4ec5-b768-edcae1acc441?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/shop_session_storage_with_scopes.rb -> Scope: Critical. An attacker exfiltrates a Shopify ID token, session token, access token, or host parameter to a domain they control by influencing a redirect, App Bridge redirect target, Content-Security-Policy frame-ancestors value, or return_to value that is not validated as a Shopify-owned or same-origin destination.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a987020-46e0-43e3-b888-f6b3bead2fb0?mode=deep",
+    "questions_generated": false
+  }
+]
