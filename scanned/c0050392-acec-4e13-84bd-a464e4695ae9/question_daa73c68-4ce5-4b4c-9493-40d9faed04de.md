@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/controller_concerns/frame_ancestors.rb'] [Function: ShopifyApp::FrameAncestors#included content_security_policy frame_ancestors] Can an attacker who is an unauthenticated caller of an EnsureAuthenticatedLinks-guarded action supply no valid session (current_shopify_domain nil) and thereby force the frame-ancestors directive to fall back to the wildcard \
