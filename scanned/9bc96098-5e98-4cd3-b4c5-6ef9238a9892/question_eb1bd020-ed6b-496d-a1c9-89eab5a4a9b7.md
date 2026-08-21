@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/managers/script_tags_manager.rb -> ScriptTagsManager#create_script_tag / #delete_script_tag / #fetch_active_theme / #fetch_json_templates / #all_sections_support_app_blocks?'] Can crafted GraphQL error bodies (attacker-controllable if theme content or scope errors are attacker-influenced) cause 'error_messages' built via 'response.body[\
