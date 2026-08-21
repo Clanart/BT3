@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/configuration.rb'] [Function: Configuration#api_key] Can an unprivileged attacker who controls the `shop` query param force `SessionsController#start_install` to build `install_path = \
