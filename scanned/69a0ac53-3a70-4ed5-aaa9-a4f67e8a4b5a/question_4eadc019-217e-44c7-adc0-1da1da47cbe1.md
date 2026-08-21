@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/controller_concerns/with_shopify_id_token.rb' -> Scope: High.] [Function: ShopifyApp::WithShopifyIdToken#shopify_id_token combined with ShopifyApp::Auth::TokenExchange.perform] Can an attacker who controls only the 'id_token' URL param (no Authorization header) supply a syntactically valid but unsigned/self-signed JWT such that ShopifyApp::Logger.error(\
