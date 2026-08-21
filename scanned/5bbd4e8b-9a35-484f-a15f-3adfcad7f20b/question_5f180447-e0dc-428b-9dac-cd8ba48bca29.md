@@ -1,1 +1,0 @@
-[File: 'app/controllers/shopify_app/callback_controller.rb'] [Function: CallbackController#callback_rescue] Can an attacker trigger an OAuth error path (invalid `hmac` or `code`) whose rescued `error` object is logged via `ShopifyApp::Logger.debug(\
