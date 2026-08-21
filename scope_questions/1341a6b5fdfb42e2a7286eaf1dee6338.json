@@ -1,0 +1,92 @@
+[
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_66ce0582-f49d-4e72-b761-f1fa39621400?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/user_session_storage_with_scopes.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10b1cdc9-fa7e-41c8-9631-f5e25cc5110c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_session_store.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a0baaec1-084e-43d6-85c0-8a339866d8ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_shop_session_store.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c8493a8-8a2b-4cc7-b050-5975295c4116?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/in_memory_user_session_store.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f97a6bbe-6e98-4de0-b165-d368e4f5a0b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/session/null_user_session_store.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0fdddee8-f3f0-46fa-9955-22967bde3f26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/shop_strategy.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_94a1350e-6a50-4bab-ad5a-32d01cd26e6d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/user_strategy.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff9f001b-fcce-43bc-af78-92c01384ad0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/access_scopes/noop_strategy.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_32f63ef3-5237-4ed6-967c-4329fdbcba64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/utils.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_760e1a15-aa6d-47b6-acfb-136f6b3abbbc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/configuration.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1828d31-4b80-4843-9e88-f4ec60e53a52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/engine.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f07a042-a279-4f9d-9168-983609484789?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/errors.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_43f30f22-b774-4d9f-9ea7-03e3262eda53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/logger.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10571fc6-ed26-42ec-8f8b-a27191bf098b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/webhooks_manager.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09e46c09-ebf3-48de-8a3b-9edbd4ebbc8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: lib/shopify_app/managers/script_tags_manager.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e1c6aee0-8f2c-497d-ab40-659a2f1925c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/webhooks_manager_job.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9db5e6a9-5746-4b58-b350-bdd4dafcb649?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/jobs/shopify_app/script_tags_manager_job.rb -> Scope: High. An attacker bypasses CSRF protection or session invalidation so that state-changing app requests are accepted cross-origin, or a logged-out, uninstalled, or scope-revoked shop keeps a usable session or token.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a08f1b61-02d2-400f-bd61-e3706fab319a?mode=deep",
+    "questions_generated": false
+  }
+]
