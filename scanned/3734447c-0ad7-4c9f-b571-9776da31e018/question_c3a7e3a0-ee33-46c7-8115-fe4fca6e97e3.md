@@ -1,1 +1,0 @@
-[File: lib/shopify_app/managers/webhooks_manager.rb -> Scope: Critical] [Function: ShopifyApp::WebhooksManager.queue vs ShopifyApp::SessionRepository.load_session(id)] Given SessionRepository.load_session matches ids with /^offline_(.*)/ to derive the domain and otherwise splits by \
