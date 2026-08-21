@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/controller_concerns/redirect_for_embedded.rb'] [Function: ShopifyApp::RedirectForEmbedded#embedded_param? / #loaded_directly_from_admin?] Can an attacker who is not loaded from Shopify admin still satisfy `loaded_directly_from_admin?` by simply setting `params[:embedded] == \
