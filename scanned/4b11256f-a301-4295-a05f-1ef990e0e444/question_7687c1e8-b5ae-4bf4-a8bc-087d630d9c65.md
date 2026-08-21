@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/session/in_memory_session_store.rb' -> Scope: Critical HMAC forgery] [Function: ShopifyApp::AppProxyVerification#calculated_signature] Can an attacker supply a query parameter literally named 'signature' twice (once as the real key Rack::Utils.parse_query will keep, and effectively shadow it) combined with a nested key whose name after 'delete(\
