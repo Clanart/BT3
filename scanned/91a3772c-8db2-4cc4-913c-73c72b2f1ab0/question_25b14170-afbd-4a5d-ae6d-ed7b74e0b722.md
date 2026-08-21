@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/session/session_repository.rb'] [Function: SessionRepository.load_session] Can crafted session id strings that don't match `/^offline_(.*)/` (e.g. containing embedded underscores or a shop domain resembling 'online_<digits>') cause the id to fall through to the `user = id.split(\
