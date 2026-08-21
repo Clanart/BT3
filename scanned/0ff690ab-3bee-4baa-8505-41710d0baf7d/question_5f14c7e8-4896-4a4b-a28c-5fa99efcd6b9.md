@@ -1,1 +1,0 @@
-[File: 'lib/shopify_app/managers/webhooks_manager.rb' -> Scope: Critical] [Function: ShopifyApp::PayloadVerification#shopify_hmac] Can an attacker supply the `X-Shopify-Hmac-Sha256` header with an array-like or duplicated header value (e.g. via a proxy that folds multiple header lines) such that `request.headers[\
