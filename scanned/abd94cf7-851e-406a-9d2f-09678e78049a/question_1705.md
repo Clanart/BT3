@@ -1,0 +1,13 @@
+# Q1705: findEditorOrDefault: argv/flag or shell injection into git or a spawned process
+
+## Question
+Can an unprivileged attacker supply a branch/tag/ref or remote value that reaches `findEditorOrDefault` in [app/src/lib/editors/lookup.ts] beginning with `-` or `--`, so it is parsed by git as an option rather than an operand and changes what the command does?
+
+## Target
+- File/function: [app/src/lib/editors/lookup.ts] — `findEditorOrDefault`
+- Entrypoint: A ref, branch, tag, remote URL, repository/worktree path, or editor/shell argument the attacker controls
+- Attacker controls: branch/tag/ref names, remote URLs, repository and worktree paths, custom-integration/editor/shell arguments
+- Exploit idea: Can an unprivileged attacker supply a branch/tag/ref or remote value that reaches `findEditorOrDefault` in [app/src/lib/editors/lookup.ts] beginning with `-` or `--`, so it is parsed by git as an option rather than an operand and changes what the command does?
+- Invariant to test: attacker-controlled text reaches a child process only as an inert operand, never as an option/flag or shell token
+- Expected Immunefi impact: Critical - git or a spawned program executes attacker-chosen options or commands (target scope: "Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, reposit...")
+- Fast validation: Feed a value beginning with `-`/`--` or containing shell metacharacters into this function in a test and assert it is passed after `--` or rejected, not interpreted as a flag
