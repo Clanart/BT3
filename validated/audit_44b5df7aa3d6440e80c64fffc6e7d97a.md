@@ -1,1 +1,0 @@
-This confirms `retrieve_by_shopify_user_id` is a pure lookup by the `shopify_user_id` column, with no cross-check against the requesting shop domain.
