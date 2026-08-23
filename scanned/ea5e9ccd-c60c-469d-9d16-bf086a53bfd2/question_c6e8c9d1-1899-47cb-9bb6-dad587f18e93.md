@@ -1,1 +1,0 @@
-[File: authentication.ts -> Scope: High.'] [Symbol: getEndpointKind / wwwauth realm spoofing] In app/src/lib/trampoline/trampoline-credential-helper.ts:137-178, getEndpointKind() classifies an unknown HTTP endpoint as 'enterprise' solely because a captured `wwwauth[...]` credential field contains the substring `realm=\
