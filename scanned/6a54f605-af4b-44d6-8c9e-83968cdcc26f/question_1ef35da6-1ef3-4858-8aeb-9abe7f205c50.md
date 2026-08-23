@@ -1,1 +1,0 @@
-[File: 'app/src/lib/parse-app-url.ts' -> Scope: Critical] Is the `url` field for `open-repository-from-url` (parse-app-url.ts:96,120) taken verbatim from `pathName.substring(1)` with no scheme allow-list (e.g. rejecting `ext::`, `file://`, or other git transport helpers), so a link like `github-mac://openRepo/ext::sh -c
