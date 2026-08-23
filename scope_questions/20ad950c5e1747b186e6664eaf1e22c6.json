@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/tailer.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_70a28d08-ca95-42bd-8efe-862d2c357230?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/text-token-parser.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_70d73aa2-548f-436e-b431-fd1e0e70bc79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/find-account.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_95ba9b6c-69f3-4d5d-9f8d-fabf61d2de8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-askpass-handler.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_55ff49c3-b9fb-42cd-a80a-fbb06d0204ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-command-parser.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_633f2cb1-4d76-44f0-866c-6307cdebfc3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-command.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_92210c3e-011a-44a0-a1a2-b7a19b2fb3f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-credential-helper.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_202b3ab0-84f0-4ed8-8643-3c7f47e534dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-environment.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_9613c766-e604-4683-8b45-ccc1cd7cba9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-server.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8b59a8fd-be1e-4451-82f3-e683c95bf040?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-tokens.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_50e28ab8-82d2-4b9e-aad1-ffcfb6a3f7cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-ui-helper.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_023c6aca-d164-4a94-911a-bf46f135797e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/url-without-credentials.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ac03231a-c594-4fef-becd-12e525d4f3c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/use-external-credential-helper.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4a675433-b63b-4101-aa1c-974d3d703a5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/valid-notification-pull-request-review.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_84b9b998-db10-4a1a-b118-6a205e9062a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/web-flow-committer.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_fcb442d2-bace-428d-80e2-07f04b8f3ba0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/wrap-rich-text-commit-message.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a0945668-e43c-4ca8-b89c-486a3a72d6ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/alive-origin-filter.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_daff843f-41a5-44dc-be16-b33d00ccdb9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/app-window.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_15454c16-ca9b-4b9e-b86a-fd7b27a4ee33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/authenticated-image-filter.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_51930940-c906-4a65-999a-479870072504?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/crash-window.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_52b77e00-ba1f-45ba-8e07-71153333daca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/desktop-console-transport.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3f28267f-c26a-44ab-8f02-4419a772045e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/desktop-file-transport.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b092194d-b313-4ec4-9235-8d75394a5fbb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/exception-reporting.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1cd62838-5fa5-470a-8fa6-2699ee771544?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/ipc-main.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_08033c1e-191f-468b-89ae-60500780a545?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/ipc-webcontents.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ad1cc0c4-03a8-42ec-b468-8ac183f777a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/log.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e62809ad-aaa5-48f6-baf2-010045f70df0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/main.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_45a0c52b-9c99-4d8a-b318-b22d3107216c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/menu/build-context-menu.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d31e32ef-05bd-4f61-b038-1496ebc014dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/menu/build-default-menu.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_77283720-8bc8-4ffc-ae3d-4f6ce57850b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/menu/build-spell-check-menu.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d8653963-5bab-499b-86b3-fa6f6d5c86e2?mode=deep",
+    "questions_generated": false
+  }
+]
