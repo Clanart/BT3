@@ -1,1 +1,0 @@
-[File: 'app/src/lib/is-application-bundle.ts' -> Scope: High] [Symbol: encoding:mdls stdout parsing] Can an attacker name a repository directory using Unicode homoglyphs or zero-width characters positioned inside the quoted content-type string so that when embedded in a crafted `kMDItemFinderComment`-adjacent Spotlight field the raw stdout bytes still satisfy `stdout.includes('\
