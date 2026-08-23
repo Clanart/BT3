@@ -1,1 +1,0 @@
-[File: 'app/src/lib/git/index.ts' -> Scope: High] In `UrlRegex`/link rendering within `action-log-parser.ts`, can a crafted Actions log line embed a URL string that is technically valid per the regex `([{(<[]*https?:\\/\\/[a-z0-9][a-z0-9-]*[a-z0-9]\\.[^\\s<>|'\
