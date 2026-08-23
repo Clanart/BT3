@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/git/credential.ts -> Scope: Critical.'] [Symbol: getEndpointKind] Can a malicious HTTPS remote configured with a non-standard port or path component, whose `wwwauth[]` header matches `/realm=\
