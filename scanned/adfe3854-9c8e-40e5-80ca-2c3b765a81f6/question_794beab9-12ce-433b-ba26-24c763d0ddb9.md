@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/markdown-filters/mention-filter.ts -> Scope: Critical.'] [Symbol: getEndpointKind wwwauth[] realm trust] Can a malicious or MITM git server response processed by `getEndpointKind` (trampoline-credential-helper.ts) supply a `wwwauth[...]` header claiming `realm=\
