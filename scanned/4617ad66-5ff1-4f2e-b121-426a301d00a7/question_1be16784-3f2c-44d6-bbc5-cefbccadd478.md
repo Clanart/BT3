@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/ui/ssh/add-ssh-host.tsx -> Scope: Critical.'] [Symbol: AddSSHHost.onSubmit default button] Can a scripted/automated 'Enter' keypress or a rapid deep-link-triggered dialog stacking scenario cause `AddSSHHost`'s default OK action at `add-ssh-host.tsx:37-41` (`okButtonText=\
