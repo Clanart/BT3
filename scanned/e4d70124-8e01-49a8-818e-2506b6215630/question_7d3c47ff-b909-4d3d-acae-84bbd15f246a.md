@@ -1,1 +1,0 @@
-[File: find-upstream-remote.ts -> Scope: Critical] [Symbol: parent.cloneURL] Since ensureUpstreamRemoteURL(remoteUrl) in git-store.ts passes a caller-supplied remoteUrl directly into addRemote/setRemoteURL without checking for a leading '--' or shell metacharacters, can a crafted PR/fork GitHub API response whose parent.cloneURL is '--upload-pack=/bin/sh -c \
