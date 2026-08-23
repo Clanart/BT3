@@ -1,1 +1,0 @@
-[File: 'app/src/lib/actions-log-parser/action-log-parser.ts' -> Scope: Critical] [Symbol: ActionsLogParser.parse] Can an attacker-controlled Actions log line, delivered via a forked repository's workflow run and consumed through the getParsedLogLinesTemplateData/parse() pipeline, reach the renderer as raw, unescaped `entry` text (no HTML-entity encoding of `<`, `>`, `&`, `\
