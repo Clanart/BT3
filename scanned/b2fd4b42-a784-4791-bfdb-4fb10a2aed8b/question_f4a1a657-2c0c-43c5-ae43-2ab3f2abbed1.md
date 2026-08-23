@@ -1,1 +1,0 @@
-[File: squash.ts] [Symbol: messagePath] Similarly, does the `rm(messagePath, { recursive: true, force: true })` cleanup at squash.ts:167-169 validate that `messagePath` still refers to the originally created temp file (not a symlink swapped in between creation and deletion), preventing a TOCTOU-based arbitrary-path deletion?
