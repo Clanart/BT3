@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/lib/parse-files-to-be-overwritten.ts -> Scope: High. ...'] [Symbol: getEndpointKind / getCredentialUrl] In app/src/lib/trampoline/trampoline-credential-helper.ts:137-179, does trusting the `wwwauth[...]` header value (`realm=\

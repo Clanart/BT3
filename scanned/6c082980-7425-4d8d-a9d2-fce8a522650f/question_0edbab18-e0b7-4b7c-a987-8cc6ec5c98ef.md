@@ -1,0 +1,1 @@
+[File: 'app/src/ui/diff/diff-contents-warning.tsx' -> Scope: Critical] [Symbol: DiffContentsWarning] Does this component ever receive or render this file's diff content inside the sandboxed markdown iframe (`SandboxedMarkdown` in app/src/ui/lib/sandboxed-markdown.tsx), or does it render as plain React JSX directly in the privileged renderer DOM outside the `sandbox=\

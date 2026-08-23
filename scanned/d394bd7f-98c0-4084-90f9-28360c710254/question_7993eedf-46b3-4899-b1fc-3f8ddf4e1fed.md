@@ -1,0 +1,1 @@
+[File: commit-mention-link-filter.ts] [Symbol: getCommitMentionRef] Does `getCommitMentionRef` build the replacement HTML string via raw template interpolation (`${ownerRepo}<tt>${trimmedSha}</tt>${filePath ?? ''}`) without HTML-entity-escaping `owner`, `name`, or `filePath`, so that an owner/name value containing `<` or `

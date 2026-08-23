@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/hooks/get-shell.ts -> Scope: Critical.'] [Symbol: quoteArgMsys2] Can a repository-controlled value passed through getShellEnv/get-shell.ts's quoteCommand (e.g. a printenvz/hook path or cwd string built from a cloned repo's directory name containing backticks, `$(...)`, or unescaped `~`/`*` glob metacharacters not covered by the regex /[\\s\\\\\

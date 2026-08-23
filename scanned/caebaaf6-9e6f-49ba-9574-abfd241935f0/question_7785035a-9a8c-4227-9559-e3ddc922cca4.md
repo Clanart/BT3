@@ -1,0 +1,1 @@
+[File: 'app/src/ui/autocompletion/issues-autocompletion-provider.tsx' -> Scope: Critical] Can a malicious issue `title` containing Unicode bidi control characters (RLO/LRO) be stored unsanitized by `IssuesStore.storeIssues` (issues-store.ts:91-105) and rendered in the `<span className=\

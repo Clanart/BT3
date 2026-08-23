@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/autocompletion/common.ts -> Scope: Critical.'] [Symbol: IIssueHit.title] Can an attacker-controlled PR/issue title containing HTML/script-like markup, delivered through IssuesStore.getIssuesMatching and rendered via IssuesAutocompletionProvider.renderItem's `<span className=\

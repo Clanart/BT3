@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/main-process/menu/menu-event.ts -> Scope: Critical...'] [Symbol: launchCustomShell in app/src/lib/shells/win32.ts] Can a repository or worktree path containing a double-quote character reach 'launchCustomShell'/'launch' on Windows, which builds command strings like '[\

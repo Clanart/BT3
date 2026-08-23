@@ -1,0 +1,1 @@
+[File: same -> Scope: Critical] Does the group `identifier` derived from `x.owner.login` in `groupRepositories` (group-repositories.ts lines 59-63) get rendered as a group header (`renderGroupHeader`, lines 228-238) without escaping such that a login value containing markup breaks out of the `div` and reaches a script context?

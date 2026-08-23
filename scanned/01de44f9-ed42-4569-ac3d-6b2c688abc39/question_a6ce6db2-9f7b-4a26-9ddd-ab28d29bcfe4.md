@@ -1,0 +1,1 @@
+[File: squash.ts] [Symbol: revRange] Since `revRange` at rev-list.ts:19 performs plain string concatenation (`${from}..${to}`) with no validation, can a `lastRetainedCommitRef` sourced from an untrusted ref/remote (rather than an internal SHA) inject shell-unsafe or git-option-like tokens into the range string consumed by `getCommits` in squash.ts:56-61?

@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/main-process/shell.ts -> Scope: Critical.'] [Symbol: win32.ts launch() Shell.Alacritty] Can a repository path containing a double quote reach `spawn(alacrittyPath, ['--working-directory \

@@ -1,0 +1,1 @@
+[File: 'app/src/main-process/squirrel-updater.ts' -> Scope: Critical] [Symbol: writeShellScriptCLITrampoline/versionedPath] Can attacker-controlled INPUT in versionedPath.replace(/\\\\/g,'/') under REQUIRED_STATE 'installWindowsCLI() writes the POSIX trampoline' reach the embedded `sh \

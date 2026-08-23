@@ -1,0 +1,1 @@
+[File: squash.ts] [Symbol: todoPath] In the `finally` block at squash.ts:163-165, `rm(todoPath, { recursive: true, force: true })` is called on a path derived from `getTempFilePath`; if that path were ever influenced or replaced by a symlink pointing at a directory outside the OS temp folder, could this result in recursive deletion of attacker-chosen files/directories?

@@ -1,0 +1,1 @@
+[File: same -> Scope: Critical] Does `LinkButton onClick={this.refreshRepositories}` (lines 303-305) ever accept an `href`-style attacker-controlled value from repository/account data rather than a fixed callback, which could be repurposed for `shell.openExternal` or arbitrary navigation?

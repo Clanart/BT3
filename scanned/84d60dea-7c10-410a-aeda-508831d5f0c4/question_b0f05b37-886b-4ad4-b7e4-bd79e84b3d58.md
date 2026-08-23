@@ -1,0 +1,1 @@
+[File: same -> Scope: Critical] When no `onItemClicked` handler is provided, does `onSelectionChanged` (lines 214-222) still leak the raw `IAPIRepository` object (including any injected extra fields from a malformed API response) up to the dispatcher without field allowlisting, potentially smuggling extra properties into a privileged IPC call payload?

@@ -1,0 +1,1 @@
+[File: same -> Scope: Critical] Can `repo.owner.login` containing HTML/script-like characters (e.g. `<img src=x onerror=...>`) safely round-trip through `text: [\`${repo.owner.login}/${repo.name}\`]` (group-repositories.ts line 47) and `HighlightText`/`TooltippedContent` (lines 247-254) without any `dangerouslySetInnerHTML` sink being reached elsewhere in the render tree?

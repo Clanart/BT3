@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/autocompletion/emoji-autocompletion-provider.tsx -> Scope: Critical.'] [Symbol: EmojiAutocompletionProvider.renderItem] Can a crafted `emoji.json`-style Emoji entry (as consumed via the `allEmoji` Map built by `readEmoji`) supply a `url` value such as `javascript:` or `file://` that reaches the `<img className=\
