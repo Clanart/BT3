@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/process/win32.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d8a70297-cf0d-4cd8-bc2f-cb0091035843?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/pull-request-refs.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_166e901f-f4b1-4afb-a448-85f6007eb2b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/read-emoji.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a64f6fb4-a2c2-454e-b48d-b1853cbd1d03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/release-notes.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ce23e494-3972-4933-adf8-1bff0b301ebe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/remote-parsing.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2fcb7ef6-3574-4672-9e8e-427c569905c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/remove-remote-prefix.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d4f65179-6e33-4ae3-a8d1-74c75fbe33a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/repository-matching.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3fb1a748-e37c-4a17-9dc5-dffadfc0ce55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/resolve-git-proxy.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4cec7143-3ac8-4964-ad6f-6634c3db423d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/sanitize-ref-name.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3adaeb7f-4431-49ca-9164-67c031a39e54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shell.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d267fd9e-45fa-4381-bd77-877db3705f8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/darwin.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_65c4ccd9-9dc2-4356-aede-0ce21f453623?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/error.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8a2d3c9c-6827-45ab-99ca-ba5cb049ac5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/index.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f7c44492-025d-47c1-842d-baa05539d934?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/linux.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_782ba4c4-068c-4de5-85a8-becef8a8871f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/shared.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_25bee664-6fcf-43f2-b358-71458b513fbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/win32.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ce0e0667-abc7-4226-93af-98f1238ace62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/split-buffer.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_dee5c02b-f35d-4808-8f13-8de6c0a48814?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh-credential-storage.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_191e02d7-d6c2-4ca3-8509-89d1a7f95941?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh-key-passphrase.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2728f16f-f7d3-489b-a473-ccbba4d844ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh-user-password.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_71d6ae26-878e-4ca7-b439-8c86861aadf9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_75e405cf-ac1d-4d81-9a18-525228969099?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/status-parser.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_20e9a94b-42b9-4cd5-bdaa-998c7b89de28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/status.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e60dc9c1-72cb-4848-a237-8890f5862c4a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/accounts-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8f3cdd07-c0ea-4624-ad95-18dc6765bffb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/ahead-behind-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f9e27403-1ebf-47bf-b9eb-3206368d4400?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/alive-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_450d9391-d200-49ba-b7a0-ce1e0154349c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/api-repositories-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b99b8f18-ff4c-4fde-b44b-1a8b200245a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/app-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b01c9f1a-69f2-490a-9555-317bccd7a1bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/base-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c32d3ab9-c076-4c58-a6ff-aaae054ffe54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/cloning-repositories-store.ts -> Scope: Critical. Renderer-to-main IPC, webContents routing, or the origin/webRequest filters accept a sender, frame, or origin they should reject, letting untrusted embedded content invoke privileged main-process behaviour: file access, process spawn, window or menu control, or updater actions.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_eea78a44-b96b-48d5-bf13-9b331158cd42?mode=deep",
+    "questions_generated": false
+  }
+]
