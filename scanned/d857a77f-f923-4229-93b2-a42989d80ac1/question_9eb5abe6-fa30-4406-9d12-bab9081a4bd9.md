@@ -1,1 +1,0 @@
-[File: 'app/src/lib/trampoline/trampoline-askpass-handler.ts' -> Scope: Critical] Does createAskpassTrampolineHandler() (lines 148-171) treat command.parameters[0] as a trusted git-generated prompt string and route it via string-prefix checks ('The authenticity of host ', 'Enter passphrase for key ', ends with \
