@@ -1,1 +1,0 @@
-[File: 'app/src/lib/databases/github-user-database.ts' -> Scope: Critical.] [Symbol: IMentionableUser.name] Can a repository's mentionables API response supply name containing HTML/script payload that is stored via GitHubUserDatabase.mentionables and rendered without escaping in the autocomplete popup's `<span className=\
