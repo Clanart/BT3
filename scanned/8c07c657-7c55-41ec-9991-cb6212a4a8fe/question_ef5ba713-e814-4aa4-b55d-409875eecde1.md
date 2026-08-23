@@ -1,1 +1,0 @@
-[File: 'app/src/ui/generic-git-auth/generic-git-auth.tsx' -> Scope: High] [Symbol: getEndpointKind (trampoline-credential-helper.ts)] Can a malicious/proxying git server return a spoofed `WWW-Authenticate: realm=\
