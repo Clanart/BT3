@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/auth.ts -> Scope: High.'] [Symbol: getKeyForEndpoint] Does getEndpointKind() in trampoline-credential-helper.ts trust the `wwwauth[]` header value returned by a cloned/fetched repository's git server (realm=\
