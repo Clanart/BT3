@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/git/credential.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_30a4925b-1770-4d47-8799-587b0b3be4a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/description.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_64a8f0d7-c4a4-4bc8-bdcd-e219a7c09623?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff-check.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6e4cac33-d9a3-41cd-bc66-9037f61f91fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff-index.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6f5b81f0-90d5-4d95-a262-b4e251419f05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e4f67855-4813-43b8-a4e7-50a4f72dfd74?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/environment.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3747debd-61e8-4cab-9ca2-78b7f1dabc9e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/fetch.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_20de036f-a524-455b-898b-ab62a2ac539b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/for-each-ref.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c7ea3346-b845-4f78-be6a-5125632981cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/format-patch.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7501994f-0cb6-4cec-8343-b14eb923ba2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/git-delimiter-parser.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_67b81e59-bc32-4cc0-9b6b-c98775e56278?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/gitignore.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_50a4f99e-5baf-4d3a-befb-3441185c086a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/index.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_703e57d1-378d-4a8a-aa97-7b450e80026e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/init.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_84a2197b-a2a2-4100-a31a-d13c183175c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/interpret-trailers.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a03831b9-1522-4bc1-8f19-db0cb7ee7e64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/lfs.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_71003be6-7e60-4481-841f-b2ef9875a15e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/log.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e81e2b9f-b73b-4fe7-84ad-94243bcc4be9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/merge-tree.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_dba1027c-0bc4-4009-9a62-cea72548bbcc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/merge.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_066ca361-c53a-4000-9f7d-a172e7900bc4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/multi-operation-terminal-output.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_79e0c8ef-be54-4095-a035-1e5f9f30d483?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/pull.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8068d5f2-dd5e-443f-af12-1eb352e2b7d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/push-terminal-chunk.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d66fddf5-8794-484a-b7c1-55dcb2c263ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/push.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_dcc9e350-70b3-4602-8fd1-af4ca83bf805?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rebase.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_906a395d-148c-4298-bac3-73cbea7c97bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reflog.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e8e81afc-52c3-4b8a-b10f-aec16b599999?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/refs.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_5dfa530b-0f8a-4af8-80fa-81813e17cb8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/remote.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d5ab2321-741b-41a6-a7e2-de0774891406?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reorder.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6d9632c0-8939-4e8a-8f6f-7f038015fe39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reset.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0180ed94-3350-4e7d-9bb7-d7ec2022f344?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rev-list.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a4982fe3-b7ae-4602-a297-3146ed0d0941?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rev-parse.ts -> Scope: Critical. Attacker-controlled text that reaches a git or child-process invocation (ref, branch, tag, remote URL, repository path, worktree path, editor/shell/custom-integration argument) is parsed as an option, flag, or shell token, so git or a spawned program runs attacker-chosen commands or configuration.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_bdb838eb-fca3-4587-851a-51e20c7ec5a5?mode=deep",
+    "questions_generated": false
+  }
+]
