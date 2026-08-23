@@ -1,1 +1,0 @@
-[File: same -> Scope: Critical] Can a repository name field (`repo.name`) containing path traversal sequences (e.g. `../../../etc`) survive into `name: repo.name` (group-repositories.ts line 49) and subsequently be used unsanitized as a filesystem path when the clone destination directory is derived from it, causing a file write outside the intended clone folder?

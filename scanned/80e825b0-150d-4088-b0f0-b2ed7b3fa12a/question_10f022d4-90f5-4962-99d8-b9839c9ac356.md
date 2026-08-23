@@ -1,1 +1,0 @@
-[File: same -> Scope: Critical] Is `item.url` (`clone_url`) ever compared or forwarded without validating the URL scheme (i.e., could a non-`https`/`git` scheme such as `file://` or `ext:` in `clone_url` from `findMatchingListItem`, lines 89-104, be selected and passed to the clone command, resulting in local file access rather than a network clone)?
