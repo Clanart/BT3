@@ -1,1 +1,0 @@
-[File: 'app/src/main-process/squirrel-updater.ts' -> Scope: Critical] [Symbol: writeBatchScriptCLITrampoline/trampoline] Can attacker-controlled INPUT in versionedPath under REQUIRED_STATE 'installWindowsCLI() runs during --squirrel-install/--squirrel-updated' reach the template string `\
