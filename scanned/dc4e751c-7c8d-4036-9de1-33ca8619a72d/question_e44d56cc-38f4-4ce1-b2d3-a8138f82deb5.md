@@ -1,0 +1,1 @@
+[File: 'app/src/lib/markdown-filters/video-tag-filter.ts' -> Scope: High] [Symbol: filter] When `node.src` is unset (empty string) because a `<video>` tag has no `src` attribute but contains child `<source src=\

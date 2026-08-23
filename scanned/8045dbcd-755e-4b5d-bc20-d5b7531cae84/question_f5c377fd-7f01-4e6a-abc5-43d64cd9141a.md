@@ -1,0 +1,1 @@
+[File: 'app/src/lib/trampoline/trampoline-ui-helper.ts' -> Scope: High] In getEndpointKind() (trampoline-credential-helper.ts, lines 137-179), can a malicious git server/proxy emit a `wwwauth[...]` header value containing `realm=\

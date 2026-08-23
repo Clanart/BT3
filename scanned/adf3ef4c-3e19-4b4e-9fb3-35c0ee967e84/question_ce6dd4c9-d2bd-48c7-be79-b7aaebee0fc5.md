@@ -1,0 +1,1 @@
+[File: 'app/src/lib/trampoline/trampoline-askpass-handler.ts' -> Scope: Critical.] [Symbol: handleSSHKeyPassphrase regex] Can the promptRegex /^Enter passphrase for key '(.+)': $/ be satisfied by an attacker-controlled multi-line or embedded-quote payload (e.g. key path containing \

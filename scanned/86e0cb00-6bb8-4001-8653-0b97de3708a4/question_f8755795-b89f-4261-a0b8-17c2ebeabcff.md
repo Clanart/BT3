@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/hooks/get-shell-env.ts -> Scope: Critical.'] [Symbol: quoteCommand(printenvzPath) + windowsVerbatimArguments] On Windows with git-bash, does `windowsVerbatimArguments: true` (line 36) combined with `quoteArgMsys2`'s regex-based quoting in shell-escape.ts fail to escape a printenvzPath or cwd containing a literal `

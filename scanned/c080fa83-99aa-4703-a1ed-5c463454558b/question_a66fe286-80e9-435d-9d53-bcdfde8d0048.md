@@ -1,0 +1,1 @@
+[File: 'app/src/lib/git/reset.ts' -> Scope: Critical] [Symbol: resetPaths] Can PATHS derived from untrusted repository tree entries (e.g. a filename literally named '--soft' or starting with '-') bypass the '--' separator inserted before ...paths in resetPaths's non-Windows branch, causing git to treat a filename as an option flag? Proof idea: focused repo test.

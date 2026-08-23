@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/git/revert.ts -> Scope: Critical.'] [Symbol: getEndpointKind/wwwauth] In app/src/lib/trampoline/trampoline-credential-helper.ts, `getEndpointKind` classifies a credential request as 'enterprise' (GitHub) purely by inspecting a `wwwauth[N]` header value containing `realm=\

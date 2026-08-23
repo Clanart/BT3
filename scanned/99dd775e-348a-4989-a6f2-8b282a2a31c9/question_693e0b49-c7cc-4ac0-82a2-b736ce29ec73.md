@@ -1,0 +1,1 @@
+[File: app/src/lib/stores/cloning-repositories-store.ts -> Scope: Critical.] [Symbol: CloningRepositoriesStore.clone -> clone (app/src/lib/git/clone.ts)] Does the store forward the raw 'url' argument straight to 'cloneRepo(url, path, options, ...)' -> 'args.push(\

@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/git/submodule.ts -> Scope: Critical.'] [Symbol: updateSubmodulesAfterOperation -> trampoline-credential-helper.getEndpointKind] Because `getEndpointKind` in `trampoline-credential-helper.ts` classifies a credential request as `enterprise`/`github.com` partly via the `wwwauth[...]` header value containing `realm=\

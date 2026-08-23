@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/http.ts -> Scope: Critical.'] [Symbol: getNextPagePathFromLink] Does `getNextPagePathFromLink` in api.ts (used by http.ts's request/fetchAll pipeline) rely solely on Node's legacy `URL.parse(match[1]).path` to strip the host from a `Link: <...>; rel=\

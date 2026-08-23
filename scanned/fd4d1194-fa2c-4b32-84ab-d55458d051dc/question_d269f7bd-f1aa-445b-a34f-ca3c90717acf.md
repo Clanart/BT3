@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/untrusted-certificate/untrusted-certificate.tsx -> Scope: Critical.'] [Symbol: writeBatchScriptCLITrampoline] Can the 'versionedPath' value computed by 'resolveVersionedPath(binPath, 'resources/app/static/github.bat')' be manipulated (e.g. via a crafted process.execPath or relocated app folder) so the emitted trampoline '

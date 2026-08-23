@@ -1,0 +1,1 @@
+[File: 'app/src/ui/autocompletion/issues-autocompletion-provider.tsx' -> Scope: High.] [Symbol: IssuesAutocompletionProvider.renderItem] Can an issue title returned from a compromised GitHub API response contain right-to-left override or bidi control characters that, when rendered inside `<span className=\

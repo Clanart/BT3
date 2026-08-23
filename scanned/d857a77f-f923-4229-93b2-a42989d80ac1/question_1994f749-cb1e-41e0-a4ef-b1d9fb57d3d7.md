@@ -1,0 +1,1 @@
+[File: 'app/src/lib/trampoline/trampoline-credential-helper.ts' -> Scope: Critical] In getEndpointKind() (lines 137-179), does the code classify a remote as 'enterprise' solely because a WWW-Authenticate response header contains realm=\

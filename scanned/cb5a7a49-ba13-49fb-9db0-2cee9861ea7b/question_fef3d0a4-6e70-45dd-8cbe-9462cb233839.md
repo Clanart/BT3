@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/git/tag.ts -> Scope: Critical.'] [Symbol: fetchTagsToPush -> getEndpointKind] Can a malicious HTTP server that tag.ts's push contacts (as the 'origin' git remote) return a forged 'WWW-Authenticate: ...realm=\

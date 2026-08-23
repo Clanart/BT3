@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/git/for-each-ref.ts -> Scope: Critical.'] [Symbol: getBranches BranchType classification] Can an attacker-controlled fetched remote whose ref.fullName is crafted to start with the literal string 'refs/heads' as a prefix trick (e.g. 'refs/headsXXX' or path-like tricks) reach the 'ref.fullName.startsWith(\

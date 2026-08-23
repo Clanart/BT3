@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/check-runs/ci-check-run-list-item.tsx -> Scope: High.'] [Symbol: renderCheckRunName] Can an attacker-controlled check-run `name`/`description` string containing markup or control characters reach `TooltippedContent`/`<div className=\

@@ -1,0 +1,1 @@
+[File: 'app/src/lib/databases/index.ts'] [Symbol: IDatabaseRepository.alias] Can an attacker-controlled repository `alias` string (attacker-influenced repo/org name) reach a UI label rendered without escaping, corrupting the renderer output-encoding invariant with scoped impact of HTML/script injection in the repository list? Proof idea: focused repo test seeding a crafted alias.

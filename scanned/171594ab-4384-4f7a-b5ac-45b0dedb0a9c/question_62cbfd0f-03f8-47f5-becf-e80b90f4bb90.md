@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/autocompletion/index.ts -> Scope: High. ...'] [Symbol: IssuesAutocompletionProvider.renderItem] Can an attacker-controlled issue `title` returned by the GitHub API (e.g. containing crafted unicode bidi/control characters) be rendered unescaped inside the `<span className=\

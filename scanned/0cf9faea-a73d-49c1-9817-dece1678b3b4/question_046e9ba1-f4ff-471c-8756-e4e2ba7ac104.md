@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/trampoline/use-external-credential-helper.ts -> Scope: High.'] [Symbol: getCredential/getEndpointKind] getEndpointKind() in trampoline-credential-helper.ts classifies a host as 'enterprise' by parsing a `wwwauth[N]=` header value the attacker's HTTP/git-remote server returns and testing `v.includes('realm=\

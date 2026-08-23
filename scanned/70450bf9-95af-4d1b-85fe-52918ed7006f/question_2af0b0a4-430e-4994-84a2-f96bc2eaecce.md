@@ -1,0 +1,1 @@
+[File: 'app/src/lib/trampoline/find-account.ts' -> Scope: High] In `getEndpointKind` (trampoline-credential-helper.ts:137-179), can an attacker-controlled git server return a forged `WWW-Authenticate` header containing `realm=\
