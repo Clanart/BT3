@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/trampoline/trampoline-askpass-handler.ts -> Scope: Critical.'] [Symbol: handleSSHUserPassword] Can an attacker-controlled remote (e.g. a fetched repo's submodule URL or a malicious SSH server banner) cause ssh to emit a
