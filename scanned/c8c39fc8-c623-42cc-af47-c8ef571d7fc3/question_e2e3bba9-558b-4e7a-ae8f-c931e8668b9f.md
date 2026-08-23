@@ -1,0 +1,1 @@
+[File: same] [Symbol: getEndpointKind wwwauth trust, trampoline-credential-helper.ts:153-165] Since `getEndpointKind` classifies a credential request as `'enterprise'` purely from a `wwwauth[...]` header value containing `realm=\

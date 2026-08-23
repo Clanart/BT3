@@ -1,0 +1,1 @@
+[File: clone.ts] [Symbol: getEndpointKind] During the clone's credential-helper 'get' flow, can a malicious server respond to the initial unauthenticated request with a forged `WWW-Authenticate: realm=\

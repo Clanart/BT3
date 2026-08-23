@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/shell.ts -> Scope: Critical.'] [Symbol: win32.ts launch() Shell.Warp] Can a repository PATH containing a double-quote or `&`/`|` character reach `spawn(warpPath, [`warp://action/new_tab?path=\

@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/actions-log-parser/action-log-parser.ts -> Scope: Critical.'] [Symbol: possibleProtocols/handleCommandLineArguments] On Windows, does the prefix-matching logic at app/src/main-process/main.ts:259-270 (`prefixes.some(p => arg.startsWith(p))`) correctly reject a crafted argv entry like `x-github-client://oauth?code=1&state=2

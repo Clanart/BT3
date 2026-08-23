@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/diff-parser.ts -> Scope: Critical.'] [Symbol: parseAppURL 'openrepo' branch / testForInvalidChars] Can a crafted `github-windows://openrepo/<url>?branch=<value>` deep link bypass `testForInvalidChars` (which only strips control chars, `~^:?*[\\|\

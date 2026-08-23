@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/generic-git-auth/generic-git-auth.tsx -> Scope: Critical...'] [Symbol: writeShellScriptCLITrampoline] NOTE: actual code lives in app/src/main-process/squirrel-updater.ts. Given the POSIX-normalized versionedPath is embedded unescaped into a bash heredoc-style trampoline string (`sh \

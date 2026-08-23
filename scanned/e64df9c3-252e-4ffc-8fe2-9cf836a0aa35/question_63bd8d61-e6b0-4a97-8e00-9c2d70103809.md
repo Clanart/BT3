@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/shell.ts -> Scope: Critical.'] [Symbol: win32.ts launch() Shell.Cygwin] Can an attacker-controlled repository PATH containing a single quote reach `spawn(cygwinPath, [`/bin/sh -lc 'cd \

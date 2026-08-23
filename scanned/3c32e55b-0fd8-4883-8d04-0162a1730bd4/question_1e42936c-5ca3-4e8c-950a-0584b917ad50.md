@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/ssh/add-ssh-host.tsx -> Scope: Critical.'] [Symbol: getEndpointKind] Can a malicious HTTP git remote supply a forged `WWW-Authenticate` header (captured by git and forwarded to the trampoline as a `wwwauth[...]` credential field) containing `realm=\

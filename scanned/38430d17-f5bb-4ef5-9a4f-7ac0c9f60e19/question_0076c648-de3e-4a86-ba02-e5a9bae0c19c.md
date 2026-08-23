@@ -1,0 +1,1 @@
+[File: 'app/src/lib/git/branch.ts'] [Symbol: deleteRemoteBranch] When git executes the push with envForRemoteOperation(remote.url), and the remote responds with a WWW-Authenticate header containing realm=\
