@@ -1,0 +1,37 @@
+[
+  {
+    "question": "'File Name: app/src/ui/ssh/add-ssh-host.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e9f41579-e602-4597-b28c-b8b2f4e56695?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/ui/ssh/ssh-key-passphrase.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1c0ae94f-6e6e-43b4-b0af-39c0b95aa939?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/ui/ssh/ssh-user-password.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_215a4a5f-fd13-42e0-a0d4-258b1e7508fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/ui/terminal.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_82fad850-3213-4a1d-ab25-770a631f383c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/ui/untrusted-certificate/untrusted-certificate.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_750ae77f-4aaf-432f-9e3b-0649eefea2a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/ui/welcome/sign-in-enterprise.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b0f28194-f166-41dc-ba68-2429dbd54bbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/ui/worktrees/add-worktree-dialog.tsx -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d2631392-6e70-4fb0-9c8f-0f316fb01264?mode=deep",
+    "questions_generated": false
+  }
+]
