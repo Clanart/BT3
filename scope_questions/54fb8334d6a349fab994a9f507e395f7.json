@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/git/revert.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_913d3433-1b34-4ecb-8b99-f46130695aaf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rm.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e91575cb-5f2d-47b0-a348-0e0676b94d91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/show.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_837fc540-a7c9-4bca-b446-ff12689b747a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/spawn.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f16e39a9-dab3-480a-9e19-e5686478b482?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/squash.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_26f14b58-c4c4-48b8-9a8f-2cc700beeb29?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/stage.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a7235eba-7ca7-44a5-a43a-c9e8463093f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/stash.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f1c849e2-9490-45b5-a95a-728e2c198704?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/status.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2eae4881-65b0-4218-ba93-0fc7961be3c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/submodule.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_235b82f6-4f31-4771-8155-3f48094e9a19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/tag.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_24a89ca4-15af-42bd-9b16-9ef4c546270f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/update-index.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_696b3113-be28-4523-a240-0f8e65d24c62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/update-ref.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1c917cbe-d61a-4e1e-bc7d-5543f97fc9fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/var.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_dc36aa76-f3d2-4e97-abb3-e580170a9072?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/worktree.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c21431bc-b1e4-457b-9e1b-ef4b4e1544c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/helpers/pull-request-matching.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4efc16c7-f52c-4d16-b68b-707d2aca039d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/helpers/regex.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_9e83eeac-0941-4cd5-a7b6-9406b45852ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/helpers/repo-rules.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_48260758-a6ae-466c-844d-9675c2e4ac86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/highlighter/worker.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a599b781-b618-4036-b72b-6c71e4a088bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/config.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2c09f403-ed76-4314-8773-f3d95f8442ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/get-repo-hooks.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d2339bba-8785-4538-9c1f-567a50c6b5e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/get-shell-env.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_85d3b712-c86e-48e3-912d-c728c88c02bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/get-shell.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_abb84279-38f7-4ff2-b15f-536f8cca6c0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/hooks-proxy.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e8463ed3-d1bb-4d3c-9276-838c366eb953?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/shell-escape.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0ac7793b-23c8-4c03-8ca8-cdd38c5a5a0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/hooks/with-hooks-env.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6d622155-5884-4db8-a577-768074b874ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/http.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8073d09a-8e87-4ac0-961e-e9a375dc7963?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ipc-renderer.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0d368fd9-c052-409e-a262-b21160d6cd7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ipc-shared.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8ee07df7-d8ec-4f2b-83b2-53c345cadebb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/is-application-bundle.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6a3444cc-4aae-4b2d-9c55-c26912cc7b34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/large-files.ts -> Scope: High. Parsing of attacker-controlled git or API output (status, diff, log, refs, submodules, trampoline commands, ANSI logs, PAC strings) yields state that misrepresents what will be committed, discarded, pushed, or checked out, causing silent loss of local work or publication of content the user did not intend to publish.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_debf1524-386e-4f2f-90b9-9e48816a4645?mode=deep",
+    "questions_generated": false
+  }
+]
