@@ -1,1 +1,0 @@
-[File: 'app/src/lib/endpoint-token.ts' -> Scope: Critical] Can an attacker-controlled PR/issue body image URL of the form https://<endpoint-origin>/{owner}/{repo}/assets/{id}/{guid}, rendered inside the sandboxed-markdown iframe (sandbox=\
