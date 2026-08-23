@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/tailer.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_684e2519-e66c-4213-8e28-316c0b61f701?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/text-token-parser.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_649e87ed-fd8e-4035-9864-3dd15a74c838?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/find-account.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6e6b628d-e445-41b6-9a44-2b6d491f743d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-askpass-handler.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8a75b241-7ab4-4615-b651-71311d27bad6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-command-parser.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_66190297-f766-4e81-b08d-b225885b5220?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-command.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8b219c8a-6c11-46a1-a8b8-79ea637974fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-credential-helper.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_680f9c26-8eff-4b4c-9578-fd29b3c0e264?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-environment.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c22ea292-76fb-4df9-bba7-4880a0ad293a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-server.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_72ecfbba-fd43-4cba-b755-a6b0fda20fef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-tokens.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0498685b-657c-4eee-9574-8293535697f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/trampoline-ui-helper.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6b94ab1c-23ea-4162-a00d-b0db5b005709?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/url-without-credentials.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0cf9609e-a46d-40c3-aa9b-adebc8b03729?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/trampoline/use-external-credential-helper.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7c125d65-fa16-42fd-8ab1-cc7c7294f22d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/valid-notification-pull-request-review.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_632f891a-0441-411f-8431-e1a80e17253f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/web-flow-committer.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_91832139-5818-4b6e-8d69-76e1478782c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/wrap-rich-text-commit-message.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_dccf80de-54a7-40b1-b458-3a726704bd49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/alive-origin-filter.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_00995331-4347-4b40-a7e9-e47be4cf67ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/app-window.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2b404958-bcaa-4001-a080-d45d95acf354?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/authenticated-image-filter.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_913caf49-65ef-4c94-aefe-de63034c8c36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/crash-window.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7fb0a348-4f18-499e-9862-f53e0acf8c40?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/desktop-console-transport.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ea1cb8f1-ddc8-43ae-87b8-96a785717076?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/desktop-file-transport.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e732cde1-677f-47fe-a94d-fa657c77ee52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/exception-reporting.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_eb8523ae-cb57-4053-9f19-028c0535b2a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/ipc-main.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a724f338-8f01-4d54-91d3-6a3dbb3cadc3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/ipc-webcontents.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ef1e4697-c2d5-47b1-9f91-74a04d7e0018?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/log.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4a193dda-b09f-48b9-b205-9be5351fe43d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/main.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3060358d-9e4f-4e13-ade2-92d85ca901d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/menu/build-context-menu.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_cce1411d-7928-4264-8890-224327dfab64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/menu/build-default-menu.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1cc07e83-004b-44bc-8feb-aa31c90babed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/main-process/menu/build-spell-check-menu.ts -> Scope: Critical. A GitHub OAuth token, PAT, generic git credential, or SSH passphrase held by Desktop is sent to, or accepted from, a host the user never authorized, through remote/redirect handling, the trampoline askpass or credential helper, the proxy resolver, or certificate-error handling.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_584f3bef-1b95-412f-8a5b-744720f56e86?mode=deep",
+    "questions_generated": false
+  }
+]
