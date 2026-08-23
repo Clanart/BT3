@@ -1,1 +1,0 @@
-[File: same -> Scope: Critical] Does `TooltippedContent`'s `tooltip={item.text[0]}` (lines 247-254) ever render tooltip content via `innerHTML` or a title attribute susceptible to attribute-breakout given a repo name containing `\

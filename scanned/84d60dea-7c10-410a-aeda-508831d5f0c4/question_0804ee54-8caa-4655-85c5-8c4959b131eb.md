@@ -1,1 +1,0 @@
-[File: same -> Scope: Critical] Does `account.friendlyEndpoint`, sourced from account/API data and interpolated directly into a template string in `renderNoItems` (lines 283, 302), ever get passed through a component that permits raw HTML injection, or is it strictly rendered as a JSX text child with no injection path?

@@ -1,1 +1,0 @@
-[File: same -> Scope: Critical] Does selecting a repository whose `clone_url` embeds a crafted username/password or `@` sequence (e.g. `https://evil.com@github.com/x/y.git`) bypass `findRepositoryForListItem`'s exact string equality (line 115) and cause the wrong host to be treated as trusted for credential injection during the subsequent clone?
