@@ -1,0 +1,1 @@
+[File: 'app/src/lib/trampoline/trampoline-credential-helper.ts -> Scope: Critical.'] [Symbol: storeCredential / getEndpointKind] If a repository's remote is later changed (e.g. via a malicious post-checkout hook or `.git/config` rewrite committed as part of a submodule) so that a previously-generic endpoint now returns a `wwwauth[]` header claiming `realm=\

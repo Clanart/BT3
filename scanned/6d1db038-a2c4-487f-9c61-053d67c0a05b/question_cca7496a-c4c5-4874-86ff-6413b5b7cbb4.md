@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/auth.ts -> Scope: High...'] [Symbol: createAskpassTrampolineHandler] Can a malicious SSH server presented by an attacker-controlled remote send a host-authenticity prompt string that also matches the \

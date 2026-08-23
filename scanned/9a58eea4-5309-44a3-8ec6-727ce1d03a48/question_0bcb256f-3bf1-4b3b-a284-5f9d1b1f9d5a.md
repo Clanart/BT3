@@ -1,0 +1,1 @@
+[File: ... actions-logs-ansii.ts] [Symbol: getStates/style.fg RGB path] Can the 24-bit RGB parsing path (Esc[38;2;<r>;<g>;<b>m) accept codeNumber values built from parseInt() truncation (e.g., '256abc' -> 256, or a value >255 that isn't range-checked before the final push) letting rgbColors contain out-of-spec strings that are interpolated unescaped into `style=

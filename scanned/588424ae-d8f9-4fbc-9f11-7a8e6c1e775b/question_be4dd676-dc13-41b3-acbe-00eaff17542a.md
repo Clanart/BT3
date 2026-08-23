@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/stores/copilot-store.ts -> Scope: Critical.'] [Symbol: workingDirectory] Can `workingDirectory: repositoryPath`, sourced from an attacker-controlled cloned/fetched repository path, be leveraged together with the `--eval \

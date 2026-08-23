@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/main-process/same-origin-filter.ts -> Scope: High.'] [Symbol: unsafeHeaders 'authentication'] Can an attacker-controlled cross-origin redirect target under REQUIRED_STATE 'the unsafeHeaders set contains the literal string \

@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/trampoline/url-without-credentials.ts -> Scope: High.'] [Symbol: getEndpointKind] Can a malicious HTTP git remote respond to an authentication challenge with a forged `WWW-Authenticate: Basic realm=\

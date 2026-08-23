@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/stores/sign-in-store.ts -> Scope: Critical.'] [Symbol: resolveVersionedPath] Does resolveVersionedPath in squirrel-updater.ts interpolate the unescaped Path.relative(binPath, appFolder) result directly into the trampoline template string (`\

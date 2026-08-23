@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/trampoline/trampoline-tokens.ts -> Scope: High.'] [Symbol: getEndpointKind wwwauth sniffing] getEndpointKind() classifies an unknown host as 'enterprise' whenever any 'wwwauth[...]' credential field contains realm=\

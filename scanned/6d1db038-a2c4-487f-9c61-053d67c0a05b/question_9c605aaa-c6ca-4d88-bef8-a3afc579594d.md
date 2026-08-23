@@ -1,0 +1,1 @@
+[File: 'app/src/lib/actions-log-parser/actions-logs-ansii.ts' -> Scope: High] Can the `UrlRegex` (actions-logs-ansii.ts:7-8) used to auto-linkify Actions log content match a crafted string in attacker-controlled workflow output such that a URL is extracted with an unintended trailing character boundary (due to the permissive `[^\\s<>|'\

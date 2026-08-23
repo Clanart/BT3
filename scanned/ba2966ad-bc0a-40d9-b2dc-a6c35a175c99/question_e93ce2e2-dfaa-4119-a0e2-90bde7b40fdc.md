@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/lib/releases.ts -> Scope: High...'] [Symbol: SandboxedMarkdown iframe sandbox attribute] Given the iframe in app/src/ui/lib/sandboxed-markdown.tsx line 395 sets `sandbox=\

@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/main-process/log.ts -> Scope: High. Repository-to-account confusion...'] [Symbol: getEndpointKind] Can WWW-Authenticate 'wwwauth[...]' header content forwarded from a malicious/proxy git remote response, matched against /realm=\

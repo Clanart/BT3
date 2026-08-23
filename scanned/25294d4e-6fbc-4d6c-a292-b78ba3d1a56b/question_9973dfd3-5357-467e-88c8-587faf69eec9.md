@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/trampoline/trampoline-askpass-handler.ts -> Scope: Critical.'] [Symbol: getEndpointKind / isGitHubHost wwwauth fallback] In trampoline-credential-helper.ts's getEndpointKind, does trusting the git-supplied 'wwwauth[n]' header value containing 'realm=\

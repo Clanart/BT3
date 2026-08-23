@@ -1,0 +1,1 @@
+[File: 'app/src/models/pull-request.ts' -> Scope: Critical] [Symbol: PullRequest.body] Since all custom node filters (issue-mention, commit-mention, team-mention, mention) run via 'applyFilters' at 'app/src/ui/lib/sandboxed-markdown.tsx:342' AFTER DOMPurify.sanitize has already run at line 130, can a filter's DOM node creation (e.g. 'document.createElement(\

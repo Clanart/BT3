@@ -1,0 +1,1 @@
+[File: app/src/lib/trampoline/trampoline-server.ts -> Scope: Critical] In getEndpointKind (trampoline-credential-helper.ts), can a malicious HTTP remote's WWW-Authenticate header (`wwwauth[...]`) forwarded by git as a credential-helper stdin field be crafted with `realm=\
