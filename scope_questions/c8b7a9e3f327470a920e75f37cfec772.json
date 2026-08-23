@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/git/credential.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a564a8a1-68a7-4811-bcb4-1798cebb1dcd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/description.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_534bb143-a4a5-4a6c-9568-ee8af9122585?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff-check.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1c17fd71-87a5-4cf4-b302-cfcb6d9fd6cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff-index.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_5343c055-8315-4e09-ada8-26a3082497d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c7be3f15-a5be-4265-97f9-c72158cc5fb6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/environment.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c7defd09-71cd-4849-9ce7-fe23a75c191a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/fetch.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_fc8eff07-9c92-400b-8f9b-07f670401e61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/for-each-ref.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4e7051f6-9987-48eb-a084-dd5a21aed653?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/format-patch.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0bc75f57-7a17-4f53-9df3-6a9b9d712bf9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/git-delimiter-parser.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e27c0bb0-53fd-4b1d-8cdc-c032b733dee4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/gitignore.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_5d18b73f-a6d2-4211-9085-4b805eba0707?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/index.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_bfbffc90-8123-414f-84ea-39a15835516a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/init.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_786d1899-308a-403d-b288-b16169d69810?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/interpret-trailers.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c543a2bb-bb24-47e4-9dde-16b475c134cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/lfs.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_87074333-997f-48f5-ab7f-9153693698e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/log.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_abbb9af2-411f-4300-bf9d-761f18c21fe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/merge-tree.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b711ffd9-1423-4460-a73d-4a1bd56da20f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/merge.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ddfcba2d-ff8d-4ff0-b3d4-b3988bbbee67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/multi-operation-terminal-output.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0f36893b-3187-4d8e-913b-3c0f4cb389ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/pull.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_16b6cde8-ca00-4d09-b9e4-0592b6f97830?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/push-terminal-chunk.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8548ed70-33c6-4b97-af09-50131736a421?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/push.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_20a4c1db-1a62-4f00-b51b-95b123ecc95b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rebase.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_56cb6191-e10e-4728-80b4-87bcd7cb1a5e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reflog.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6adefde9-2666-4d35-a2cf-65b51a6ce295?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/refs.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a2e169c7-5dd7-452d-87e0-6b691d08d40f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/remote.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_393f3b52-7ce0-4443-bb08-d4d07e7925bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reorder.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3c6554e4-8441-496a-99e2-5b3faf91c56b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reset.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_10bdf104-fe43-4ce5-a244-f15cd012fcb8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rev-list.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8fae23e0-f510-4014-a608-2317267a8d2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rev-parse.ts -> Scope: Critical. Untrusted repository or API text - markdown, commit message, PR or issue title, branch name, avatar or image URL, diff body, Actions log - escapes the sandboxed-markdown frame or renderer escaping and reaches a privileged capability such as IPC, `shell.openExternal`, node APIs, or arbitrary navigation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a80cb7ba-e54f-4192-8147-edb93ccc7a46?mode=deep",
+    "questions_generated": false
+  }
+]
