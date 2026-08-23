@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/trampoline/trampoline-environment.ts -> Scope: Critical.'] [Symbol: getEndpointKind] Can a malicious HTTP server return a crafted `WWW-Authenticate` header containing `realm=\
