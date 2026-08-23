@@ -1,1 +1,0 @@
-[File: ...] [Symbol: SandboxedMarkdown.renderMarkdown / iframe.src] Can an untrusted PR/issue body containing crafted HTML survive `marked()` + `DOMPurify.sanitize()` and get embedded into the `data:text/html;charset=utf-8;base64,...` `src` assigned to the `sandbox=\
