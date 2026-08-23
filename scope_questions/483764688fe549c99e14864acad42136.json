@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/process/win32.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ebd88592-3090-4196-8c53-507273ae5d07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/pull-request-refs.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ece487e6-eca8-4aa3-9843-841c21283d3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/read-emoji.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_414aca9c-1e67-4cde-adc2-f60425706f58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/release-notes.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3b30cced-b657-45ce-8203-a169fa5bd8cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/remote-parsing.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_49cf14f4-e508-4fff-9826-240aa35f0929?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/remove-remote-prefix.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2e834094-0f41-40bb-8fbf-56475a8e119c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/repository-matching.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3f90ec05-fc91-4813-ae9d-0b50f0f93375?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/resolve-git-proxy.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_feb6129f-7bfc-4005-8c7f-0fd4f4a76495?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/sanitize-ref-name.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8d829f25-06fd-4bca-b50d-694ef6fa64c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shell.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_bbf5b2bb-bfe2-42ba-9b0c-470b35689bb2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/darwin.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_846afb6c-f998-423e-9e5f-d2096f014d61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/error.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3119de2f-aa59-4ecf-95b9-6d7ca84b4040?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/index.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8db6b9db-674e-4174-9b7d-719a33103f31?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/linux.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7dcd5ffd-1ca4-4c86-9eb0-8f2c0f698f46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/shared.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_55fbabdf-3d0a-480c-baf7-92de6506a522?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/shells/win32.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ed2936af-2616-4761-8e4f-9b1c1992ee69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/split-buffer.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_9bc62b41-4777-42a8-8dd9-b77a9e557f8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh-credential-storage.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_23877d94-2d27-4424-b92c-e0ff05014083?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh-key-passphrase.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_12612bd7-3885-493c-9802-e9008369da6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh-user-password.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6d857a29-4510-405e-ad1f-64521a22a44e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ssh/ssh.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2f306b55-b48d-42cb-9f2f-aff20c553eaf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/status-parser.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c0ab0c45-1e3e-404e-894f-8c8e332c1fd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/status.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0aeba27f-e2b7-466d-85ce-7ed9c04b135e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/accounts-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d4b578c9-cc55-4199-b192-80239b48c3d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/ahead-behind-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c5ff061b-8258-430a-a628-212ee0f39e70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/alive-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_416e5295-e807-4422-b977-7bb7b3bfd608?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/api-repositories-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_98723d00-455a-4d9f-87d4-85f9c1d72719?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/app-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_125d71a1-a76b-4d71-9715-e99c2a9858c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/base-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_85fc6c5f-3bdd-4792-884b-3c6cd6af7c7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/stores/cloning-repositories-store.ts -> Scope: High. Attacker-controlled repository content or API data makes Desktop read, stage, or transmit files outside the selected repository scope - into a diff, a commit, Copilot or conflict context, or an error report - disclosing local user data to the attacker.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0cad1254-0da7-46b8-a73e-098253aec7ac?mode=deep",
+    "questions_generated": false
+  }
+]
