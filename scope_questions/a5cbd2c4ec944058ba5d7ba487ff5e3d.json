@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/lib/git/credential.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c2f78429-9f36-4a7c-9d12-e2d54eeef7aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/description.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_90a39e50-fbf3-4dd3-8ccc-8878380baabe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff-check.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_65455a64-423d-4dd0-8f2b-03ed0817ca14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff-index.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_565970d6-8958-42ba-95dd-37afd058267d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/diff.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f2f3c9eb-7691-4eae-acdd-53051a0149f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/environment.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ec1176fb-d56d-42d9-97aa-6d58294b1580?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/fetch.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a0721144-5095-4e25-b7e8-da44956191d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/for-each-ref.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_9fcb3dc1-0bda-4364-8c10-6fd2b14775a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/format-patch.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_57758808-0b5e-4dd1-826b-91bebc50cd3e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/git-delimiter-parser.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_60adba46-f6ae-4a16-99b1-94481f32b402?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/gitignore.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c34650d9-72f0-4fe3-b0ea-f9bb479e1a77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/index.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_e9a15a05-d1be-47a3-a773-fd8ef437c3d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/init.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_84fdcd41-4599-4e9e-8b6f-30b799b8a174?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/interpret-trailers.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_cd9718d0-dc48-4dba-b574-582c3589fef8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/lfs.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_8a8cceb0-c754-4ec0-82e2-3acef674fdc0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/log.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_19fc0165-ed1e-4787-b3ad-360f367a00a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/merge-tree.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_50d5bf23-3151-49a9-b68c-4d8d8ee2260c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/merge.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1ebad554-9192-4b81-83c7-e5af6264723a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/multi-operation-terminal-output.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0974e5eb-565c-44a9-b447-edb13d3181a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/pull.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_624adcf7-2efc-44e1-bde8-f53727c1b6dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/push-terminal-chunk.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_866ee7e0-98e9-4013-a20d-8129539ecdf7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/push.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_cff27e7d-11e1-44e4-8f5d-b02e0ca4ac8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rebase.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4dd8515e-62ee-4a0a-acff-6cdb68c37436?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reflog.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_01b476bd-70ee-4667-9c84-cc303186f2cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/refs.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3e21f73b-a9cd-4f7c-b2f9-4843700f1cc6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/remote.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a299742d-dc50-4eb2-b43a-0e4f5201d8b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reorder.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_27f33dc6-d21c-4a9d-9395-896ad456a7a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/reset.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c10ee047-9b8f-499f-b3a1-ce4db89b6a78?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rev-list.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_5eebb2b6-e127-44cc-87af-4cf901631340?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/git/rev-parse.ts -> Scope: Critical. Content of a repository the user merely clones, fetches, checks out, or opens - paths, symlinks, `.gitattributes`, `.gitmodules`, submodule or LFS metadata, hook-adjacent files - makes Desktop write, replace, or execute something outside the intended working tree, yielding code execution on the user machine.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_670e5675-9663-43b4-8cda-a96192a05bdc?mode=deep",
+    "questions_generated": false
+  }
+]
