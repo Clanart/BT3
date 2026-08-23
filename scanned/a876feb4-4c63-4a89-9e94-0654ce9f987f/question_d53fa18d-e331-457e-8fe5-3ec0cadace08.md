@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/git/checkout-index.ts -> Scope: High. ...'] [Symbol: getEndpointKind] Can a malicious git remote/proxy HTTP response supply a `WWW-Authenticate` header containing `realm=\
