@@ -1,1 +1,0 @@
-[File: 'app/src/main-process/ipc-main.ts' -> Scope: Critical] [Symbol: app/static/darwin/github.sh CONTENTS] Does the packaged `github.sh` trampoline resolve `CONTENTS` via four nested `command dirname
