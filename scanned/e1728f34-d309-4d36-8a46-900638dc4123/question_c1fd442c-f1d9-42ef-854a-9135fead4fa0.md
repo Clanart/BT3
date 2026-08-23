@@ -1,1 +1,0 @@
-[File: 'File Name: ... trampoline-credential-helper.ts -> Scope: Critical ...'] [Symbol: getEndpointKind] Can a malicious git remote/proxy response containing a forged `wwwauth[...]` header with `realm=\
