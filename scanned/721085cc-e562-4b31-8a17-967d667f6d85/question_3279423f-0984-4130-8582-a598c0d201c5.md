@@ -1,1 +1,0 @@
-[File: 'app/src/ui/worktrees/add-worktree-dialog.tsx' -> Scope: Critical.] Does `RepositoryPath.getFullPath()` (repository-path.tsx:123-129), which underlies `AddWorktreeDialog`'s path field via `onFullPathChanged`, call `Path.join(path, safeDirectoryName(name))` where `safeDirectoryName` (repository-path.tsx:23-25) only strips `<>:\
