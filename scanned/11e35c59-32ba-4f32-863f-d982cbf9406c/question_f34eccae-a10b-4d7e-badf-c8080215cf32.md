@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/ui/autocompletion/user-autocompletion-provider.tsx -> Scope: High.'] [Symbol: renderItem] Does renderItem() pass item.name (sourced unsanitized from the GitHub API mentionable response) directly into a React `<span className=\
