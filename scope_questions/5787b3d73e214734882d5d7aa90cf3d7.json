@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/cli/main.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_cc7b3308-f343-4ec9-b4bd-8a10e42d02c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/highlighter/index.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4c1a73dc-4f23-4e89-b6dc-0f7ac7a31aa9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/action-log-parser.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_03e3de18-f372-4a74-b331-ff02266aa6a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/action-log-pipeline-commands.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_58ba4f1d-f683-4424-b2dc-bd7f79f33004?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/actions-log-parser-objects.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7cb0bbd7-6f2b-40e1-a006-4f82d97a2326?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/actions-logs-ansii.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_cedda6f8-50c1-4466-86c3-325ca0377075?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/api.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_3009b09b-0bb3-4455-9e7d-931e39fcc9de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/app-shell.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7f593b62-7b3e-473b-bc60-a869adc38da4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/auth.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_40fa3eba-5151-4f27-a574-cce66cfa36d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/branch.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_835772be-bfd1-43c9-985e-4a73505f86da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ci-checks/ci-checks.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_55121289-f9ad-4dca-a8a2-57e400d0970d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/cli-action.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_cc391f42-bc79-4b41-8bba-c59fec9127d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/commit-url.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1f659f8e-285c-4935-b47c-b53644761058?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-commit-message.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_840ca6aa-37c0-4bc2-9024-b96e928ded1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-conflict-context.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2b09386e-c238-413a-8520-d315c0ad2442?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-conflict-resolution.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6adee06a-2c62-4ada-8b96-43c4a43a712c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-in-memory-session-fs-provider.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_20bd96dd-7e73-4090-8a75-24baf2d30fdc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot/byok.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_881fc78b-2675-4630-8cc0-73ea139552d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot/conflict-resolution-model.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_693f4488-0008-4f0e-88fe-75be0a1c469b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/custom-integration.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_2db6d7da-9145-4b20-b63f-8762a973ccfc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/base-database.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_71a0956c-55fc-4259-8d81-cff5ffa06dc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/github-user-database.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4e035967-2f15-43ab-af1e-9905198f0a5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/index.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_23ff640e-0bc2-4951-965f-5b8ec24ed196?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/issues-database.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_84a76566-40a5-4632-8829-b96fa3405b8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/pull-request-database.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_6d05b81d-9dd1-4e47-95cc-240ae9d47c3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/repositories-database.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1e3a040a-110e-41bc-ba09-9c5cf2512b5e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/diff-parser.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0ea21a76-91fb-452b-a834-c2d4dfcf4513?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/editors/darwin.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4962be8c-3678-4004-950c-755b33d0943d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/editors/found-editor.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_9cba1dab-4114-4469-9e21-d972c5a2c03c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/editors/index.ts -> Scope: Critical. The auto-update, Squirrel installer, or CLI-install path resolves, verifies, or writes its payload so that an unprivileged local user or an on-path attacker can substitute the executed content, giving code execution on the next launch or invocation.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_5550ef39-69a4-4c58-954a-6bdda9d3a236?mode=deep",
+    "questions_generated": false
+  }
+]
