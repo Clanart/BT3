@@ -1,1 +1,0 @@
-[File: 'app/src/ui/lib/releases.ts' -> Scope: Critical] Does `app/src/lib/app-shell.ts`'s `openExternal` proxy (line 49) forward the raw string to Electron's `shell.openExternal` on Windows without stripping embedded quotes/spaces/arguments, so a release-notes-derived URL like `https://example.com/
