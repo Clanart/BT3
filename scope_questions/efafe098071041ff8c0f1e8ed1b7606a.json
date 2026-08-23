@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/src/cli/main.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_4316b08b-f34f-4a9f-9e5f-edef1bd00f94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/highlighter/index.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f743be74-4e16-4cf2-b64b-cafa9c2e6cb2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/action-log-parser.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_1d5cc63e-ebf6-4bcc-8e61-92d09127212d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/action-log-pipeline-commands.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_25ea8fa3-c1b4-4aec-8605-52a0c83a636a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/actions-log-parser-objects.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7c72f5de-d17f-4504-9b32-44fb2ce6f70b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/actions-log-parser/actions-logs-ansii.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_a0f9a886-905d-4ba5-ac82-8b01bb6d5a26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/api.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f3ce2d91-6458-47ec-9be3-a577bcd6dcf9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/app-shell.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d0f53d43-b927-4a1d-912c-32249490d398?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/auth.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_bd1b7dd5-30e2-412b-814d-b4e97e7ab90d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/branch.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_f13c6af4-decb-46a6-a091-c3a180c3ccb6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/ci-checks/ci-checks.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ac7ce875-e39e-4062-a1af-543959d60af8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/cli-action.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_c7d27a14-ad58-455b-a7d7-333e5162facf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/commit-url.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_dc610c8a-f774-4ae1-8d93-9aa27f1c1614?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-commit-message.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_55a557bf-c556-44a3-933d-6997683a3f89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-conflict-context.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_9a3fbe3e-a66f-4946-8105-df0f50597d95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-conflict-resolution.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0fd087e8-b3a7-420a-a599-eaad26c80313?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot-in-memory-session-fs-provider.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d0cedd06-1e6e-4fb4-ac01-2ef36bd179b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot/byok.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b911f40d-274c-44f2-bef8-5546650e9efd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/copilot/conflict-resolution-model.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_ef2b17e8-118c-4b03-a1b9-44c0cdd2ef66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/custom-integration.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_d340f2be-5a27-4136-9d1e-c3d219f12cb9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/base-database.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_26f45519-52fc-4dbd-9f81-341875d1c435?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/github-user-database.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_78fe30b5-e375-43f0-926d-d8442d023cea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/index.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_006ad23c-955b-45f9-a646-4833e8341f7e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/issues-database.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_b0c6c2a3-6b10-4f1b-811e-82ccb1f195d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/pull-request-database.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_583c09c7-0912-45c5-b012-5522809a703a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/databases/repositories-database.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_20890208-b959-4846-a188-e31973f4095e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/diff-parser.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_7ed15365-8ffb-440b-903c-3aaab4b1b248?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/editors/darwin.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0020e760-dd6b-408e-a1a6-ba8862970066?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/editors/found-editor.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_0893970a-023f-48c2-9d2d-518cf189fb28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/src/lib/editors/index.ts -> Scope: Critical. A `x-github-client://` / `github-mac://` / `github-windows://` deep link or its OAuth callback lets a page the user only visits finish sign-in, bind an attacker account or Enterprise endpoint, or drive a clone/open/repository action as the user without a fresh explicit consent step.'",
+    "url": "https://deepwiki.com/search/-draft-18-to-24-github-desktop_27816147-0693-424c-b1a1-9f64c93eebea?mode=deep",
+    "questions_generated": false
+  }
+]
