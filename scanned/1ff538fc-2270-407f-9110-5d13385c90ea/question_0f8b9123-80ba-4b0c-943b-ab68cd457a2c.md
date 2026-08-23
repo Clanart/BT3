@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/git/show.ts -> Scope: Critical.'] [Symbol: resolveVersionedPath] Can `resolveVersionedPath(binPath, relativePath)` produce a `Path.relative` string that, when embedded unquoted into the trampoline (`\
