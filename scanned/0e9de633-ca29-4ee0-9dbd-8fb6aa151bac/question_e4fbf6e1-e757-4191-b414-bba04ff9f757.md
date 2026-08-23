@@ -1,0 +1,1 @@
+[File: 'app/src/lib/git/diff.ts'] [Symbol: parseLineEndingsWarning / lineEndingsChangeRegex] Can an attacker-controlled repository configuration or file content cause `git diff` to emit stderr text that coincidentally matches lineEndingsChangeRegex (\

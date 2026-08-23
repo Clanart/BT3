@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/preferences/custom-integration-form.tsx -> Scope: Critical.'] [Symbol: expandTargetPathArgument] Does the quote-stripping special case in expandTargetPathArgument (only matching exactly `'%TARGET_PATH%'` or `\

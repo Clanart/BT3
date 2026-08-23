@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/diff/diff-search-input.tsx -> Scope: Critical.'] [Symbol: ariaLiveMessage template string interpolation] Can a diff line/searchQuery containing HTML/script-like sequences from an attacker-controlled repository file be interpolated unescaped into the ariaLiveMessage template strings (e.g. `Result 1 of ${searchResults.length} for

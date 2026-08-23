@@ -1,0 +1,1 @@
+[File: 'app/src/ui/diff/index.tsx -> renderImage'] [Symbol: SVG image rendered via data URI in image-diffs components] For a file with a '.svg' extension flowing through `imageFileExtensions` in diff.ts and rendered by `ImageContainer`/`NewImageDiff`/`ModifiedImageDiff`, is the resulting `<img src=\

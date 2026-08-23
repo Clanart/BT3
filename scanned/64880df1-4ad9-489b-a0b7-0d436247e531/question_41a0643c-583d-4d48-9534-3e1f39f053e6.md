@@ -1,0 +1,1 @@
+[File: squirrel-updater.ts] [Symbol: resolveVersionedPath] Because writeBatchScriptCLITrampoline/writeShellScriptCLITrampoline compute a *relative* versionedPath from binPath to the current version's resources/app/static/github.{bat,sh} and embed it unescaped into the trampoline body ('\

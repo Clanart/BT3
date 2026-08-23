@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/open-with-external-editor/open-with-external-editor.tsx -> Scope: Critical. ...'] [Symbol: expandTargetPathArgument quote-stripping asymmetry] Can a customEditor.arguments string containing the placeholder wrapped in mismatched quote styles (e.g. `'%TARGET_PATH%\

@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/ui/lib/app-proxy.ts -> Scope: Critical.'] [Symbol: repository-path.tsx safeDirectoryName consuming getDefaultDir] Does safeDirectoryName() in repository-path.tsx only strip Windows-reserved characters ('<>:\

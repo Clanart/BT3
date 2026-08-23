@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/git/squash.ts -> Scope: Critical...'] [Symbol: gitEditor] Can a commitMessage supplied via the public squash() entrypoint containing a double-quote or backtick character reach the unescaped shell string `cat \

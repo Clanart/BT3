@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/git/show.ts -> Scope: Critical.'] [Symbol: writeShellScriptCLITrampoline] Does the POSIX path conversion (`.replace(/\\\\/g, '/')`) on `versionedPath` fail to reject `..`-containing segments produced by `Path.relative`, letting an attacker-controlled install directory name influence the emitted `sh \

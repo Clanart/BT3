@@ -1,0 +1,1 @@
+[File: 'app/src/ui/diff/image-diffs/index.ts' -> Scope: Critical] [Symbol: Image.contents / base64 data URI] Can a cloned repository's binary blob content, embedded verbatim as base64 into an `<img src=\

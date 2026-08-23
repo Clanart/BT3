@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/logging/get-log-path.ts -> Scope: Critical. ...'] [Symbol: getEndpointKind] Can a malicious git server's HTTP response inject a forged `wwwauth[]` header containing `realm=\

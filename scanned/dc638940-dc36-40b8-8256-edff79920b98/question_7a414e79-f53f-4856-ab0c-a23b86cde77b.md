@@ -1,0 +1,1 @@
+[File: 'app/src/ui/ssh/add-ssh-host.tsx' -> Scope: High.] [Symbol: createAskpassTrampolineHandler] Since createAskpassTrampolineHandler dispatches purely on the literal prefix/suffix of command.parameters[0] ('The authenticity of host ', 'Enter passphrase for key ', \

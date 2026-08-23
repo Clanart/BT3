@@ -1,0 +1,1 @@
+[File: ...] [Symbol: getEndpointKind] In app/src/lib/trampoline/trampoline-credential-helper.ts, does `getEndpointKind` classify a remote as `'enterprise'` purely because the cloned/fetched remote's HTTP response contained a header `wwwauth[...]` with value `realm=\

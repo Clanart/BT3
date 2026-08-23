@@ -1,0 +1,1 @@
+[File: 'File Name: app/src/lib/logging/format-log-message.ts -> Scope: Critical.'] [Symbol: getEndpointKind/wwwauth[] parsing] Can a malicious git server under REQUIRED_STATE (git fetch/clone/push over HTTPS) return a spoofed `WWW-Authenticate: realm=\
