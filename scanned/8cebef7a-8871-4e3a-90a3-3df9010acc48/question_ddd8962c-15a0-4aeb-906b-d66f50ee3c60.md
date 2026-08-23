@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/trampoline/trampoline-command.ts -> Scope: High.'] [Symbol: getEndpointKind wwwauth loop] Does `getEndpointKind`'s wwwauth[] scan in trampoline-credential-helper.ts stop at the FIRST matching key and trust its EXACT_VALUE realm string verbatim from server-controlled headers, allowing an attacker to send both a `realm=\
