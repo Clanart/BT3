@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/git/credential.ts -> Scope: High.'] [Symbol: getEndpointKind/wwwauth] Can a malicious HTTP(S) git remote responding to an authentication attempt with a `WWW-Authenticate: realm=\

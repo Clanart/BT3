@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/git/credential.ts -> Scope: High.'] [Symbol: getEndpointKind] Does the `credentialUrl.protocol !== 'https:'` fallback-to-'generic' check at trampoline-credential-helper.ts line 174 run *after* the wwwauth-realm short-circuit (lines 157-165), meaning a non-HTTPS remote (e.g. plain `http://`) that forges a `wwwauth[]` header containing `realm=\
