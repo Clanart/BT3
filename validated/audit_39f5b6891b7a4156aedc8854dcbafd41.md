@@ -1,0 +1,1 @@
+Let me check `stageFiles` to confirm the partial-selection patch-application path, since `createCommit` calls `stageFiles(repository, files)` with the `WorkingDirectoryFileChange` objects that carry the (possibly stale) line `selection`.
