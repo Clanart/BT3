@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/ui/untrusted-certificate/untrusted-certificate.tsx -> Scope: Critical.'] [Symbol: CONTENTS] Does the nested 'command dirname' chain computing 'CONTENTS' in app/static/darwin/github.sh from 'realpath
