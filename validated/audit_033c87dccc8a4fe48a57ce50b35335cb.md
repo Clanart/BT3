@@ -1,0 +1,30 @@
+[1](#0-0) [2](#0-1) [3](#0-2)
+
+### Citations
+
+**File:** app/src/lib/suppress-certificate-error.ts (L1-13)
+```typescript
+const suppressedUrls = new Set<string>()
+
+export function suppressCertificateErrorFor(url: string) {
+  suppressedUrls.add(url)
+}
+
+export function clearCertificateErrorSuppressionFor(url: string) {
+  suppressedUrls.delete(url)
+}
+
+export function isCertificateErrorSuppressedFor(url: string) {
+  return suppressedUrls.has(url)
+}
+```
+
+**File:** app/src/lib/api.ts (L1-1)
+```typescript
+import * as URL from 'url'
+```
+
+**File:** app/src/ui/app.tsx (L1-1)
+```typescript
+import * as React from 'react'
+```
