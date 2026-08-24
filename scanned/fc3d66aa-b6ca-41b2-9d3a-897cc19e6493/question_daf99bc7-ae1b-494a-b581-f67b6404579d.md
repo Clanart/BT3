@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/ipc-shared.ts -> Scope: Critical.'] [Symbol: win32.launch Warp] Can a repository path containing a double-quote character reach app/src/lib/shells/win32.ts's launch function for Shell.Warp, which builds spawn(warpPath, [`warp://action/new_tab?path=\
