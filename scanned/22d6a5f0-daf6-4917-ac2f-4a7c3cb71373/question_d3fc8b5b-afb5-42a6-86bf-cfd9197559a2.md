@@ -1,1 +1,0 @@
-[File: 'File Name: app/src/lib/hooks/shell-escape.ts -> Scope: Critical.'] [Symbol: findGitBashShell.quoteArgMsys2] Can a repo-controlled path fed into `quoteArgMsys2` in get-shell.ts (regex `[\\s\\\\\
