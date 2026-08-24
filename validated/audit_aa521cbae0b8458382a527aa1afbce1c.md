@@ -1,1 +1,0 @@
-Let me examine the resolution-writing logic since that's where the analogous "wrong return value causes silent corruption" bug would need to live.

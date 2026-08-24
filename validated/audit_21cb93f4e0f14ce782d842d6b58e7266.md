@@ -1,1 +1,0 @@
-Let me verify how `DesktopAliveEvent` payloads are validated before reaching `handleChecksFailedEvent`, to determine whether `commit_sha` can actually be attacker-controlled arbitrary text.
