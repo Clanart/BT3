@@ -1,1 +1,0 @@
-[File: same] Since `filepathToAppend` is concatenated with `url.search` (`filepathToAppend + url.search`) and both originate from attacker-controlled `text`, can `url.search` contain unescaped `<`/`>`/`\
