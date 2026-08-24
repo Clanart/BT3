@@ -1,0 +1,1 @@
+`forkPullRequestRemoteName(headRepoOwner)` builds a remote name by directly prepending `github-desktop-` to an attacker-controlled GitHub owner/login string, and `addRemote()` passes that name straight into `git(['remote', 'add', name, url], ...)` without any sanitization or a `--` separator.
