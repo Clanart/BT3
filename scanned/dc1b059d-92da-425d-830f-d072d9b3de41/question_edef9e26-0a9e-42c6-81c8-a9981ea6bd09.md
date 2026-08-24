@@ -1,1 +1,0 @@
-[File: 'app/src/ui/autocompletion/issues-autocompletion-provider.tsx' -> Scope: Critical] Can an attacker-controlled `title` field from `IAPIIssue` (api.ts `fetchIssues`), stored verbatim into `IssuesDatabase.issues.title` via `IssuesStore.storeIssues`, and rendered in `IssuesAutocompletionProvider.renderItem` as `<span className=\
