@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f2bfc3e9-eb4e-4655-b943-0c9fc83bf9ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dab9de04-7b83-4b8c-b5bf-fc5150bda48d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5ec1697-b9b6-474c-a3bc-b904737bdb87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d660e5d2-9ac7-487e-a996-34ec7ec87226?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_457e9ea0-fee3-4d70-aefa-4ea435f1b7cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_54770bde-2d72-473c-9df3-5ba8048f4b65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bd62bc03-2abd-44ad-a375-42a0aa421563?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f32ef504-049a-42be-be69-001d2e217819?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_39ebfabb-1c5b-4bff-8100-51bb4e3d7bf2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0fcacefc-87f6-464c-82e0-96ce66bc9185?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0ecd184-97e2-463e-953f-081e4e5f5db4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6aedbb95-a2b1-4539-b69d-f5a805aa8133?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a36afdb-872f-43c0-8e6c-7222f2211f4a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b4806317-b56b-4632-b8fa-d78d7a16ea9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b4752b68-226f-4fd4-899f-43067011e175?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2d4c6c2-05ee-4ae1-ba5d-9b8d7635f5f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_054ec3b7-e66c-427b-a254-9cc2db99a1aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a86c136-2184-4dca-8314-5d23116999e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ce5ef97-8807-487c-9484-b82049e09dbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d90d8bcd-17d9-4151-abc0-5e887cdeb64a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4dfb5d2-eda1-4859-a515-33d2c74f508f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e678f8c2-d45b-4601-9bfd-68795d56a652?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2f23d32-2f74-400b-81f4-cc5f23e41c26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8dfdd30c-9b84-46a9-947c-efc2da184e7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ab4127d9-8f30-496a-ac6f-b7954ee63f88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_722a41c0-0a99-4932-86d4-b19712d47613?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a2b68f1-a605-40b1-b038-52411b8c9702?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f8e9d88-829f-4e5e-a76c-d9e4c8fff87c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c2577e9-4db8-4359-8e44-cf940388f54c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_39d19426-ca4c-40f3-b1f0-91027b238f22?mode=deep",
+    "questions_generated": false
+  }
+]
