@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b5e53a12-74e5-4666-8c3b-c4bdae0d1858?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_05a49dc0-6a18-4309-ab49-3d17dbd0e2ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c6990e6a-b404-453c-9593-05f82e9ac326?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ec5a3415-0029-4454-a80b-7c0f34f84f34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe0d8200-a8d4-4951-9831-e68720911556?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c55382d-f18f-4c75-b04c-d481ba8ce195?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c617575-6b38-49a3-bf8a-7b9c63f54e55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_034b997c-0a98-4e10-bf50-8f8a21434e2f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38071492-b0e1-4b92-a740-3eb653aa59e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d384de21-74b7-4fea-99f3-949cf20e3f1a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_648fdec2-97da-4312-8f42-a6a33eb8a534?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5bfe025c-c12e-41d1-b008-750a5bb5b27e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa8fb31c-117b-4875-961e-58336d7bb3d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_085d85dc-b1d0-4e2d-ae54-808aeb38c0f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f50a859b-2415-407b-baaf-4fadc697a287?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_03f70517-3a72-4e66-8e13-5f16bbc5f207?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cd0ddb3c-e8a9-4aa2-931b-2db9029b6abc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35bb07b5-ca17-4ec4-a04e-dd8e926b2011?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb0ef3fc-fa30-42b3-a5ef-6cbe5331ea1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_79aa6bef-8b1a-439e-a59e-ceee8cc7f8bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2ae95bb-c153-4040-badd-2da94012a6ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b47d48ed-7513-4513-9f78-94b55d96671b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_514c762c-c3ad-45d3-a107-14a4cf0b3832?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15599ab7-5519-4054-bca3-ae63a91783d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eea27e19-433c-4a72-a966-98a0c7a773aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f464791-1870-459f-8c7e-8fbf531b0d80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a338eea1-658a-41e9-868c-2cddecba379d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09799238-db34-4fc7-a288-fb0f9388348b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8dcb4f2d-2c70-4726-a924-9ecf9777ec39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: Critical. An unprivileged depositor withdraws more Wombat LP or underlying than they own, or mints receipt tokens without depositing, via a mismatch between WombatStaking deposit/depositLP/withdraw/burnReceiptToken and WombatPoolHelper, WombatPoolHelperV2, AnkrBNBPoolHelper depositFor/batchDepositLPFor/depositNative accounting: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4a8837f-24b3-462a-ad4d-7274185c9176?mode=deep",
+    "questions_generated": false
+  }
+]
