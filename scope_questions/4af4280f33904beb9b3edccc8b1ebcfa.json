@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: libraries/DSMath.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93d32b68-08b2-4e0c-8a60-f9bea5e4989c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/LogExpMath.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d44fe7c9-a8e6-4a6d-ba87-af9e5241a097?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/SignedSafeMath.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87466cdc-bb59-4c62-9db5-54f916afae23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/MintableERC20.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1c1a10e-c2a0-4a46-b434-9508c3fc5721?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/ERC20FactoryLib.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f7ab838f-414a-422e-8283-891847809193?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/PoolHelperFactoryLib.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f363eed-593d-498d-bc55-3c00343a3d75?mode=deep",
+    "questions_generated": false
+  }
+]
