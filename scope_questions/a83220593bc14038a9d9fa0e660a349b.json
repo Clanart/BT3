@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: libraries/DSMath.sol -> Scope: Critical. An unprivileged locker permanently freezes another user's locked MGP or mWOM, or exits with no penalty and no cooldown, via VLMGP or mWomSV startUnlock, unlock, cancelUnlock, forceUnLock, getNextAvailableUnlockSlot, or userUnlocks slot bookkeeping: permanent freezing of funds or direct theft.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_946b7d11-cdc7-4215-978e-4a0766597f12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/LogExpMath.sol -> Scope: Critical. An unprivileged locker permanently freezes another user's locked MGP or mWOM, or exits with no penalty and no cooldown, via VLMGP or mWomSV startUnlock, unlock, cancelUnlock, forceUnLock, getNextAvailableUnlockSlot, or userUnlocks slot bookkeeping: permanent freezing of funds or direct theft.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a49e282-7708-4ee7-84fc-359f15f888d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/SignedSafeMath.sol -> Scope: Critical. An unprivileged locker permanently freezes another user's locked MGP or mWOM, or exits with no penalty and no cooldown, via VLMGP or mWomSV startUnlock, unlock, cancelUnlock, forceUnLock, getNextAvailableUnlockSlot, or userUnlocks slot bookkeeping: permanent freezing of funds or direct theft.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_83b3193b-b917-4259-98ae-7993a2978367?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/MintableERC20.sol -> Scope: Critical. An unprivileged locker permanently freezes another user's locked MGP or mWOM, or exits with no penalty and no cooldown, via VLMGP or mWomSV startUnlock, unlock, cancelUnlock, forceUnLock, getNextAvailableUnlockSlot, or userUnlocks slot bookkeeping: permanent freezing of funds or direct theft.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98f93435-d739-4b80-af73-62c551c0147e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/ERC20FactoryLib.sol -> Scope: Critical. An unprivileged locker permanently freezes another user's locked MGP or mWOM, or exits with no penalty and no cooldown, via VLMGP or mWomSV startUnlock, unlock, cancelUnlock, forceUnLock, getNextAvailableUnlockSlot, or userUnlocks slot bookkeeping: permanent freezing of funds or direct theft.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1fb85809-7318-4760-a6a8-bb05fa4ccdd2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/PoolHelperFactoryLib.sol -> Scope: Critical. An unprivileged locker permanently freezes another user's locked MGP or mWOM, or exits with no penalty and no cooldown, via VLMGP or mWomSV startUnlock, unlock, cancelUnlock, forceUnLock, getNextAvailableUnlockSlot, or userUnlocks slot bookkeeping: permanent freezing of funds or direct theft.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e56db4bd-81d9-42ad-b5a0-cf24a675652a?mode=deep",
+    "questions_generated": false
+  }
+]
