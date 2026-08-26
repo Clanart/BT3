@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3296256-512d-4a96-a143-b467f8cf174c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a859c2d-f7b4-45d8-a7f6-86c87762ab73?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ffe22e16-352e-425d-8bc8-1e9cecb70de3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bec20642-a39c-4380-943e-be2843a96114?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b47879d-0a0f-48bd-8f71-320e4c87cf72?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1bf3efc-dd59-487c-9077-f145f58a5249?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a229ec0f-571e-48c6-8624-f918129f7e82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b236d18-756f-478e-bede-21f4b630309c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_316f595b-0510-416b-aa09-4e60ef4e0296?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f2368e8f-6ce8-41ae-956f-b9ceee778046?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_97d38102-18dc-4c82-ab7c-2a9a5912ca80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dfe9616f-4aa7-4623-b947-3a3ae0d388cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4006308d-0168-4863-97ea-08ad4d9a04dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b8f02a5b-22ae-4958-87b2-8483088f4aa5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_474b2b18-e86a-439f-ac7d-f3e9f9cf44ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c418270-ffe5-46c9-9bfa-73c0a900c570?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5976701f-450f-45b4-b4cb-18e70e917626?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0245b8e8-2afb-4ce8-a139-27cfec84ccaf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81528961-bee4-47b0-b38e-4db626e74588?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1bbd6b89-2f9c-4074-9b41-decd8f9f6861?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5bfb93c-7eef-4f04-a7a0-b17311aedfd0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0d54889-e9a3-4913-8e7b-d4043575e3f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e4776fc6-c48c-4da4-9659-6ab3de1fe05a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2fc681a-ba29-458f-adad-cc90343b3645?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c99b60ea-28c2-460c-a39a-7fb92feb57be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_573758c8-2896-4237-88db-a3698352f7aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_27f97cd4-87a5-48c8-be82-16a3ccb6aff5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ea02e4d8-d789-4a5f-88ed-af1a2e727c8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eba7e7bd-93a5-49fe-ae26-7b5adf3fef2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: High. An unprivileged account inflates its MGP emission share or campaign reward without the qualifying stake, via ReferralStorage useCode/registerCode/trigger/updateTotalFactor self-referral and tier factors, or WomUp/ArbWomUp/ArbWomUp2/ArbWomUp3 stake, migrate, getRewardAmount, calDoubledCounted, and getUserTier accounting: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_acfed82b-cddc-490b-b7ab-df370abd36a7?mode=deep",
+    "questions_generated": false
+  }
+]
