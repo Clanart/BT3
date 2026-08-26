@@ -1,0 +1,13 @@
+# Q5864: MasterMagpie.multiclaimSpec - rewardDebt reset without reward payout in _multiClaim
+
+## Question
+rewards/MasterMagpie.sol - _multiClaim() sets user.rewardDebt = user.amount * accMGPPerShare / 1e12 and zeroes unClaimedMgp for every entry in the caller-supplied _stakingTokens array before the send branch decides where the MGP goes, so a claim path that silently pays nothing still burns the accrual. Can an unprivileged attacker controlling both outer and inner arrays, so every reward-token address and its order, under the victim is mid-cooldown in VLMGP so getRewardablePercentWAD is still 1e18, exploit this through `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` to break the reconciliation between `IBaseRewardPool(rewarder).balanceOf(user)` and `IBaseRewardPool(rewarder).totalStaked()` and the invariant that no code path may advance rewardDebt or clear unClaimedMgp unless the corresponding MGP actually leaves the contract to the user or is locked for them, yielding High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: rewardDebt reset without reward payout in _multiClaim)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: _multiClaim() sets user.rewardDebt = user.amount * accMGPPerShare / 1e12 and zeroes unClaimedMgp for every entry in the caller-supplied _stakingTokens array before the send branch decides where the MGP goes, so a claim path that silently pays nothing still burns the accrual. Precondition: the victim is mid-cooldown in VLMGP so getRewardablePercentWAD is still 1e18.
+- Invariant to test: no code path may advance rewardDebt or clear unClaimedMgp unless the corresponding MGP actually leaves the contract to the user or is locked for them; concretely, `IBaseRewardPool(rewarder).balanceOf(user)` must stay reconciled with `IBaseRewardPool(rewarder).totalStaked()`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Differential test: perform the same economic action as one call and as several split calls under the victim is mid-cooldown in VLMGP so getRewardablePercentWAD is still 1e18, then assert `IBaseRewardPool(rewarder).balanceOf(user)` and `IBaseRewardPool(rewarder).totalStaked()` end identical in both runs.

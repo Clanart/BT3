@@ -1,0 +1,13 @@
+# Q3917: AnkrBNBPoolHelper.withdraw - balance() and totalStaked() read a different ledger than the payout
+
+## Question
+wombat/AnkrBNBPoolHelper.sol: balance(address) and totalStaked() read MasterMagpie stakingInfo and the receipt token supply, while withdraw pays a Wombat deposit-token balance delta, so the accounting a user sees and the value they receive come from unrelated sources. With _liquidity, _minAmount and the ordering against the lockedAmount check under attacker control and the pool was deactivated in WombatStaking so _onlyActivePoolHelper rejects deposits while withdraw still passes, can an unprivileged caller sequence `withdraw(uint256 _liquidity, uint256 _minAmount)` so that `IERC20(stakingToken).balanceOf(address(this)) delta` and `IMasterMagpie(masterMagpie).stakingInfo(stakingToken,_for).staked` no longer reconcile, violating the invariant that the balance a user is shown must be the exact basis on which their withdrawal is priced and realising Critical - Protocol insolvency?
+
+## Target
+- File/function: wombat/AnkrBNBPoolHelper.sol -> `withdraw(uint256 _liquidity, uint256 _minAmount)` (mechanism: balance() and totalStaked() read a different ledger than the payout)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `withdraw(uint256 _liquidity, uint256 _minAmount)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _liquidity, _minAmount and the ordering against the lockedAmount check
+- Exploit idea: balance(address) and totalStaked() read MasterMagpie stakingInfo and the receipt token supply, while withdraw pays a Wombat deposit-token balance delta, so the accounting a user sees and the value they receive come from unrelated sources. Precondition: the pool was deactivated in WombatStaking so _onlyActivePoolHelper rejects deposits while withdraw still passes.
+- Invariant to test: the balance a user is shown must be the exact basis on which their withdrawal is priced; concretely, `IERC20(stakingToken).balanceOf(address(this)) delta` must stay reconciled with `IMasterMagpie(masterMagpie).stakingInfo(stakingToken,_for).staked`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Single-transaction PoC contract executing the whole `withdraw(uint256 _liquidity, uint256 _minAmount)` sequence atomically under the pool was deactivated in WombatStaking so _onlyActivePoolHelper rejects deposits while withdraw still passes, asserting at the end that `IERC20(stakingToken).balanceOf(address(this)) delta` still equals `IMasterMagpie(masterMagpie).stakingInfo(stakingToken,_for).staked` and the PoC's balance delta is non-positive.

@@ -1,0 +1,13 @@
+# Q2684: MasterMagpie.multiclaimFor - BaseRewardPool.getRewards is an empty function body
+
+## Question
+Consider rewards/MasterMagpie.sol, where rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Assuming the attacker holds one wei of stake so lpSupply is non-zero but every division truncates, can an unprivileged attacker turn this into a divergence between `mgpPerSec` and `IERC20(mgp).balanceOf(masterMagpie)` via `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`, breaking the invariant that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for and producing High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: BaseRewardPool.getRewards is an empty function body)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Precondition: the attacker holds one wei of stake so lpSupply is non-zero but every division truncates.
+- Invariant to test: specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for; concretely, `mgpPerSec` must stay reconciled with `IERC20(mgp).balanceOf(masterMagpie)`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Foundry fork test against the deployed pool: set up the attacker holds one wei of stake so lpSupply is non-zero but every division truncates, snapshot `mgpPerSec` and `IERC20(mgp).balanceOf(masterMagpie)`, run the attacker's `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` sequence, then assert the two still reconcile and the attacker's net token balance did not increase.

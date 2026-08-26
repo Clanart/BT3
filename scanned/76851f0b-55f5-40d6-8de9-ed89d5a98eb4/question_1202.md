@@ -1,0 +1,13 @@
+# Q1202: ArbWomUp3.incentiveDeposit - the reward is computed against a pre-deposit balance while the deposit is credited first
+
+## Question
+In wombat/ArbWomUp3.sol, incentiveDeposit() reads this.getRewardAmount(_amount, msg.sender, _mode == 2) before calling _deposit, but _deposit mode 2 locks into mWomSV, so the tier input, the double-count correction and the resulting locked balance are three different views of one state. Starting from a state where the MGP balance is below twice the capped reward, can an unprivileged EOA use `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)` to leave `IERC20(mWom).balanceOf(address(this))` inconsistent with `the amount locked for _account in mode two`, violating the invariant that the tier input and the correction that offsets it must be taken from one snapshot and extracting Critical - Direct theft of user funds?
+
+## Target
+- File/function: wombat/ArbWomUp3.sol -> `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)` (mechanism: the reward is computed against a pre-deposit balance while the deposit is credited first)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amount, _convertRatio, _bullMode and _mode, with _mode selecting stake, mWomSV lock or plain transfer
+- Exploit idea: incentiveDeposit() reads this.getRewardAmount(_amount, msg.sender, _mode == 2) before calling _deposit, but _deposit mode 2 locks into mWomSV, so the tier input, the double-count correction and the resulting locked balance are three different views of one state. Precondition: the MGP balance is below twice the capped reward.
+- Invariant to test: the tier input and the correction that offsets it must be taken from one snapshot; concretely, `IERC20(mWom).balanceOf(address(this))` must stay reconciled with `the amount locked for _account in mode two`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Invariant/fuzz run over `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)`: constrain the setup so that the MGP balance is below twice the capped reward, fuzz the attacker inputs (_amount, _convertRatio, _bullMode and _mode, with _mode selecting stake, mWomSV lock or plain transfer), and assert after every call that the tier input and the correction that offsets it must be taken from one snapshot.

@@ -1,0 +1,13 @@
+# Q3149: BaseRewardPoolV2.donateRewards - fee-on-transfer or rebasing reward token inflates the index
+
+## Question
+rewards/BaseRewardPoolV2.sol: _provisionReward() credits the full _amountReward to historicalRewards and to the rewardPerTokenStored increment based on the requested amount rather than the balance actually received, so any reward token that delivers less than requested promises more than the pool holds. With _amountReward down to one wei and which registered reward token is provisioned under attacker control and a reward-manager queueNewRewards transaction is pending in the mempool, can an unprivileged caller sequence `donateRewards(uint256 _amountReward, address _rewardToken)` so that `balanceOf(account)` and `IMasterMagpie(operator).stakingInfo(stakingToken,account).staked` no longer reconcile, violating the invariant that the amount credited to the index must equal the balance delta actually received by the pool and realising Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/BaseRewardPoolV2.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: fee-on-transfer or rebasing reward token inflates the index)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: _provisionReward() credits the full _amountReward to historicalRewards and to the rewardPerTokenStored increment based on the requested amount rather than the balance actually received, so any reward token that delivers less than requested promises more than the pool holds. Precondition: a reward-manager queueNewRewards transaction is pending in the mempool.
+- Invariant to test: the amount credited to the index must equal the balance delta actually received by the pool; concretely, `balanceOf(account)` must stay reconciled with `IMasterMagpie(operator).stakingInfo(stakingToken,account).staked`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Invariant/fuzz run over `donateRewards(uint256 _amountReward, address _rewardToken)`: constrain the setup so that a reward-manager queueNewRewards transaction is pending in the mempool, fuzz the attacker inputs (_amountReward down to one wei and which registered reward token is provisioned), and assert after every call that the amount credited to the index must equal the balance delta actually received by the pool.

@@ -1,0 +1,13 @@
+# Q0963: BaseRewardPool.donateRewards - donateRewards rounds the increment to zero
+
+## Question
+rewards/BaseRewardPool.sol - _provisionReward() adds (_amountReward * 10**stakingDecimals()) / totalStaked() to rewardPerTokenStored, so when totalStaked() exceeds _amountReward * 10**decimals the whole donation is pulled in by safeTransferFrom, credited to historicalRewards, and adds nothing to rewardPerTokenStored. Can an unprivileged attacker controlling _amountReward down to one wei and which registered reward token is provisioned, under rewards[token].queuedRewards holds a large backlog accumulated while totalStaked() was zero, exploit this through `donateRewards(uint256 _amountReward, address _rewardToken)` to break the reconciliation between `balanceOf(account)` and `IMasterMagpie(operator).stakingInfo(stakingToken,account).staked` and the invariant that every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded, yielding High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/BaseRewardPool.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: donateRewards rounds the increment to zero)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: _provisionReward() adds (_amountReward * 10**stakingDecimals()) / totalStaked() to rewardPerTokenStored, so when totalStaked() exceeds _amountReward * 10**decimals the whole donation is pulled in by safeTransferFrom, credited to historicalRewards, and adds nothing to rewardPerTokenStored. Precondition: rewards[token].queuedRewards holds a large backlog accumulated while totalStaked() was zero.
+- Invariant to test: every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded; concretely, `balanceOf(account)` must stay reconciled with `IMasterMagpie(operator).stakingInfo(stakingToken,account).staked`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Two-account fork test (victim and attacker): establish rewards[token].queuedRewards holds a large backlog accumulated while totalStaked() was zero, have the attacker run `donateRewards(uint256 _amountReward, address _rewardToken)`, then assert the victim's claimable value and the `balanceOf(account)` versus `IMasterMagpie(operator).stakingInfo(stakingToken,account).staked` relation are unchanged by the attacker's transaction.

@@ -1,0 +1,13 @@
+# Q3419: MasterMagpie.multiclaimFor - forced claim of a victim through permissionless multiclaimFor
+
+## Question
+Consider rewards/MasterMagpie.sol, where multiclaimFor(_stakingTokens, _rewardTokens, _account) has no access control and no msg.sender == _account check, so any address can force a settlement on any victim at a timestamp of the attacker's choosing. Assuming a large honest deposit is sitting in the mempool and the attacker sandwiches it, can an unprivileged attacker turn this into a divergence between `userInfo[_stakingToken][user].available` and `userInfo[_stakingToken][user].amount` via `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`, breaking the invariant that only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state and producing High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: forced claim of a victim through permissionless multiclaimFor)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: multiclaimFor(_stakingTokens, _rewardTokens, _account) has no access control and no msg.sender == _account check, so any address can force a settlement on any victim at a timestamp of the attacker's choosing. Precondition: a large honest deposit is sitting in the mempool and the attacker sandwiches it.
+- Invariant to test: only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state; concretely, `userInfo[_stakingToken][user].available` must stay reconciled with `userInfo[_stakingToken][user].amount`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Invariant/fuzz run over `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`: constrain the setup so that a large honest deposit is sitting in the mempool and the attacker sandwiches it, fuzz the attacker inputs (_account (any victim), the staking-token list and the per-pool reward-token lists), and assert after every call that only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state.

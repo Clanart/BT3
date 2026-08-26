@@ -1,0 +1,13 @@
+# Q2624: MasterMagpie.multiclaimSpec - classification collision between vlmgp, MPGRewardPool and the default branch
+
+## Question
+rewards/MasterMagpie.sol: _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Under the attacker holds one wei of stake so lpSupply is non-zero but every division truncates, is there an unprivileged sequence of `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` that leaves `vlmgp.totalSupply()` unreconciled with `sum of userInfo[vlmgp][*].amount`, violates the invariant that the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position, and delivers High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: classification collision between vlmgp, MPGRewardPool and the default branch)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Precondition: the attacker holds one wei of stake so lpSupply is non-zero but every division truncates.
+- Invariant to test: the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position; concretely, `vlmgp.totalSupply()` must stay reconciled with `sum of userInfo[vlmgp][*].amount`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Table test over the boundary values of the attacker inputs (both outer and inner arrays, so every reward-token address and its order) under the attacker holds one wei of stake so lpSupply is non-zero but every division truncates, asserting on every row that the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position.

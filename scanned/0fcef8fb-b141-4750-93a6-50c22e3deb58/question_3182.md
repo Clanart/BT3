@@ -1,0 +1,13 @@
+# Q3182: BaseRewardPool.donateRewards - stakingDecimals sourced from an external metadata call
+
+## Question
+rewards/BaseRewardPool.sol - the reward scaling factor is 10**stakingDecimals(), and V1 re-reads IERC20Metadata(stakingToken).decimals() on every accrual, so any staking token whose reported decimals is not constant rescales every previously stored rewardPerTokenStored. Can an unprivileged attacker controlling _amountReward down to one wei and which registered reward token is provisioned, under the operator is MasterMagpie and the pool is a vlMGP-style pool credited with no token transfer, exploit this through `donateRewards(uint256 _amountReward, address _rewardToken)` to break the reconciliation between `rewards[_rewardToken].queuedRewards` and `rewards[_rewardToken].rewardPerTokenStored` and the invariant that the scaling factor used to store and to redeem rewardPerToken must be identical for the whole life of an accrual, yielding Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/BaseRewardPool.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: stakingDecimals sourced from an external metadata call)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: the reward scaling factor is 10**stakingDecimals(), and V1 re-reads IERC20Metadata(stakingToken).decimals() on every accrual, so any staking token whose reported decimals is not constant rescales every previously stored rewardPerTokenStored. Precondition: the operator is MasterMagpie and the pool is a vlMGP-style pool credited with no token transfer.
+- Invariant to test: the scaling factor used to store and to redeem rewardPerToken must be identical for the whole life of an accrual; concretely, `rewards[_rewardToken].queuedRewards` must stay reconciled with `rewards[_rewardToken].rewardPerTokenStored`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Foundry fork test against the deployed pool: set up the operator is MasterMagpie and the pool is a vlMGP-style pool credited with no token transfer, snapshot `rewards[_rewardToken].queuedRewards` and `rewards[_rewardToken].rewardPerTokenStored`, run the attacker's `donateRewards(uint256 _amountReward, address _rewardToken)` sequence, then assert the two still reconcile and the attacker's net token balance did not increase.

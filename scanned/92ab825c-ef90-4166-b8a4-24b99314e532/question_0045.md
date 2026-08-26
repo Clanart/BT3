@@ -1,0 +1,13 @@
+# Q0045: ManualCompound.compound - non-compoundable sweep uses an entirely caller-supplied token list
+
+## Question
+In rewards/ManualCompound.sol, the first loop reads rewardBalance = IERC20(_rewards[i][j]).balanceOf(address(this)) for every address the caller placed in the nested array and transfers the whole balance to msg.sender, and those addresses are never checked against any registry. Does `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` let an unprivileged caller exploit that under a previous compound left a residue of one of the configured reward tokens on the contract, so that `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` diverges from `the caller's own share of that reward token`, the invariant that a caller must not be able to name an arbitrary token and receive the contract's entire balance of it is broken, and the result is Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: non-compoundable sweep uses an entirely caller-supplied token list)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: the first loop reads rewardBalance = IERC20(_rewards[i][j]).balanceOf(address(this)) for every address the caller placed in the nested array and transfers the whole balance to msg.sender, and those addresses are never checked against any registry. Precondition: a previous compound left a residue of one of the configured reward tokens on the contract.
+- Invariant to test: a caller must not be able to name an arbitrary token and receive the contract's entire balance of it; concretely, `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` must stay reconciled with `the caller's own share of that reward token`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Differential test: perform the same economic action as one call and as several split calls under a previous compound left a residue of one of the configured reward tokens on the contract, then assert `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` and `the caller's own share of that reward token` end identical in both runs.

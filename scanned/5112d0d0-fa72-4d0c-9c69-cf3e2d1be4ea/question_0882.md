@@ -1,0 +1,13 @@
+# Q0882: ManualCompound.compound - full contract balance paid to the caller instead of the claimed delta
+
+## Question
+rewards/ManualCompound.sol: compound() settles every configured reward with receivedBalance = IERC20(_tokenAddress).balanceOf(address(this)) rather than the delta produced by this caller's multiclaimOnBehalf, so any balance already sitting on the contract is handed to whoever calls next. With every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls under attacker control and the caller passes an _lps array of pools where they hold no stake at all, can an unprivileged caller sequence `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` so that `compoundableRewards[token]` and `rewards[i].tokenAddress` no longer reconcile, violating the invariant that a compounding caller must only ever receive the value their own claim produced and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: full contract balance paid to the caller instead of the claimed delta)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: compound() settles every configured reward with receivedBalance = IERC20(_tokenAddress).balanceOf(address(this)) rather than the delta produced by this caller's multiclaimOnBehalf, so any balance already sitting on the contract is handed to whoever calls next. Precondition: the caller passes an _lps array of pools where they hold no stake at all.
+- Invariant to test: a compounding caller must only ever receive the value their own claim produced; concretely, `compoundableRewards[token]` must stay reconciled with `rewards[i].tokenAddress`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the caller passes an _lps array of pools where they hold no stake at all, call `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`, and assert `compoundableRewards[token]` equals `rewards[i].tokenAddress` and that no account can withdraw more than it put in.

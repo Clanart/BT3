@@ -1,0 +1,13 @@
+# Q3683: BaseRewardPoolV2.donateRewards - donateRewards rounds the increment to zero
+
+## Question
+rewards/BaseRewardPoolV2.sol - _provisionReward() adds (_amountReward * 10**stakingDecimals()) / totalStaked() to rewardPerTokenStored, so when totalStaked() exceeds _amountReward * 10**decimals the whole donation is pulled in by safeTransferFrom, credited to historicalRewards, and adds nothing to rewardPerTokenStored. Can an unprivileged attacker controlling _amountReward down to one wei and which registered reward token is provisioned, under the victim has not been settled for several epochs and holds a large userRewards balance, exploit this through `donateRewards(uint256 _amountReward, address _rewardToken)` to break the reconciliation between `totalStaked()` and `IERC20(stakingToken).balanceOf(operator)` and the invariant that every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded, yielding High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/BaseRewardPoolV2.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: donateRewards rounds the increment to zero)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: _provisionReward() adds (_amountReward * 10**stakingDecimals()) / totalStaked() to rewardPerTokenStored, so when totalStaked() exceeds _amountReward * 10**decimals the whole donation is pulled in by safeTransferFrom, credited to historicalRewards, and adds nothing to rewardPerTokenStored. Precondition: the victim has not been settled for several epochs and holds a large userRewards balance.
+- Invariant to test: every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded; concretely, `totalStaked()` must stay reconciled with `IERC20(stakingToken).balanceOf(operator)`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Invariant/fuzz run over `donateRewards(uint256 _amountReward, address _rewardToken)`: constrain the setup so that the victim has not been settled for several epochs and holds a large userRewards balance, fuzz the attacker inputs (_amountReward down to one wei and which registered reward token is provisioned), and assert after every call that every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded.

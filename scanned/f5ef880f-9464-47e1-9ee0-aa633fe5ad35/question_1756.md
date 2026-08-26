@@ -1,0 +1,13 @@
+# Q1756: MasterMagpie.multiclaimFor - rewardDebt reset without reward payout in _multiClaim
+
+## Question
+rewards/MasterMagpie.sol: _multiClaim() sets user.rewardDebt = user.amount * accMGPPerShare / 1e12 and zeroes unClaimedMgp for every entry in the caller-supplied _stakingTokens array before the send branch decides where the MGP goes, so a claim path that silently pays nothing still burns the accrual. With _account (any victim), the staking-token list and the per-pool reward-token lists under attacker control and the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake, can an unprivileged caller sequence `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` so that `totalAllocPoint` and `tokenToPoolInfo[_stakingToken].allocPoint` no longer reconcile, violating the invariant that no code path may advance rewardDebt or clear unClaimedMgp unless the corresponding MGP actually leaves the contract to the user or is locked for them and realising High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: rewardDebt reset without reward payout in _multiClaim)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: _multiClaim() sets user.rewardDebt = user.amount * accMGPPerShare / 1e12 and zeroes unClaimedMgp for every entry in the caller-supplied _stakingTokens array before the send branch decides where the MGP goes, so a claim path that silently pays nothing still burns the accrual. Precondition: the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake.
+- Invariant to test: no code path may advance rewardDebt or clear unClaimedMgp unless the corresponding MGP actually leaves the contract to the user or is locked for them; concretely, `totalAllocPoint` must stay reconciled with `tokenToPoolInfo[_stakingToken].allocPoint`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake, call `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`, and assert `totalAllocPoint` equals `tokenToPoolInfo[_stakingToken].allocPoint` and that no account can withdraw more than it put in.

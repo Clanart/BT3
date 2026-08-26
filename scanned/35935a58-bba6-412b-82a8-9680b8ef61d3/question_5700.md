@@ -1,0 +1,13 @@
+# Q5700: MasterMagpie.multiclaimSpec - BaseRewardPool.getRewards is an empty function body
+
+## Question
+rewards/MasterMagpie.sol: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. With both outer and inner arrays, so every reward-token address and its order under attacker control and the contract is paused so only emergencyWithdraw is reachable, can an unprivileged caller sequence `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` so that `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` and `block.timestamp` no longer reconcile, violating the invariant that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for and realising High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: BaseRewardPool.getRewards is an empty function body)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Precondition: the contract is paused so only emergencyWithdraw is reachable.
+- Invariant to test: specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for; concretely, `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` must stay reconciled with `block.timestamp`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Table test over the boundary values of the attacker inputs (both outer and inner arrays, so every reward-token address and its order) under the contract is paused so only emergencyWithdraw is reachable, asserting on every row that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for.

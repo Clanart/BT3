@@ -1,0 +1,13 @@
+# Q0280: MasterMagpie.multiclaim - safeApprove non-zero-allowance revert in _sendMGPForVlMGPPool
+
+## Question
+In rewards/MasterMagpie.sol, _sendMGPForVlMGPPool() calls IERC20(mgp).safeApprove(vlMGPRewarder, _amount) with no reset, so leftover allowance on the vlMGP rewarder path makes every vlMGP-pool claim revert for every user at once. Can an unprivileged attacker reach this through `multiclaim(address[] _stakingTokens)` while the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it, and drive `mgpPerSec` out of agreement with `IERC20(mgp).balanceOf(masterMagpie)` - breaking the invariant that the vlMGP reward path must remain claimable regardless of prior allowance residue - for High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaim(address[] _stakingTokens)` (mechanism: safeApprove non-zero-allowance revert in _sendMGPForVlMGPPool)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaim(address[] _stakingTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the full _stakingTokens array, including duplicates and unregistered addresses
+- Exploit idea: _sendMGPForVlMGPPool() calls IERC20(mgp).safeApprove(vlMGPRewarder, _amount) with no reset, so leftover allowance on the vlMGP rewarder path makes every vlMGP-pool claim revert for every user at once. Precondition: the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it.
+- Invariant to test: the vlMGP reward path must remain claimable regardless of prior allowance residue; concretely, `mgpPerSec` must stay reconciled with `IERC20(mgp).balanceOf(masterMagpie)`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Table test over the boundary values of the attacker inputs (the full _stakingTokens array, including duplicates and unregistered addresses) under the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it, asserting on every row that the vlMGP reward path must remain claimable regardless of prior allowance residue.

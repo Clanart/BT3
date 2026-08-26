@@ -1,0 +1,13 @@
+# Q0264: WombatBribeManager.vote - harvestSinglePool drains pending bribes with no caller fee
+
+## Question
+In wombat/WombatBribeManager.sol, harvestSinglePool() calls wombatStaking.vote(_lps, zero deltas, rewarders, address(0)), which harvests all pending bribes while passing caller as the zero address so no caller fee is paid, letting an attacker front-run a castVotes and strip the fee that would have compensated it. Starting from a state where a large bribe has just landed in the Wombat bribe contract and no cast has happened yet, can an unprivileged EOA use `vote(address[] _lps, int256[] _deltas)` to leave `userVotedForPoolInVlmgp[user][lp]` inconsistent with `IBribeRewardPool(pool.rewarder).balanceOf(user)`, violating the invariant that a permissionless harvest must not be usable to strip the incentive from the function that maintains the gauge and extracting High - Theft of unclaimed yield?
+
+## Target
+- File/function: wombat/WombatBribeManager.sol -> `vote(address[] _lps, int256[] _deltas)` (mechanism: harvestSinglePool drains pending bribes with no caller fee)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `vote(address[] _lps, int256[] _deltas)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every lp address and every signed delta, including duplicates and offsetting positive and negative entries
+- Exploit idea: harvestSinglePool() calls wombatStaking.vote(_lps, zero deltas, rewarders, address(0)), which harvests all pending bribes while passing caller as the zero address so no caller fee is paid, letting an attacker front-run a castVotes and strip the fee that would have compensated it. Precondition: a large bribe has just landed in the Wombat bribe contract and no cast has happened yet.
+- Invariant to test: a permissionless harvest must not be usable to strip the incentive from the function that maintains the gauge; concretely, `userVotedForPoolInVlmgp[user][lp]` must stay reconciled with `IBribeRewardPool(pool.rewarder).balanceOf(user)`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Invariant/fuzz run over `vote(address[] _lps, int256[] _deltas)`: constrain the setup so that a large bribe has just landed in the Wombat bribe contract and no cast has happened yet, fuzz the attacker inputs (every lp address and every signed delta, including duplicates and offsetting positive and negative entries), and assert after every call that a permissionless harvest must not be usable to strip the incentive from the function that maintains the gauge.

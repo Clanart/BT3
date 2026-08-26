@@ -1,0 +1,13 @@
+# Q2985: ManualCompound.compound - caller sets the conversion ratio for value that is not theirs
+
+## Question
+rewards/ManualCompound.sol - compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Can an unprivileged attacker controlling every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls, under no convertor, locker or helper is configured for one of the registered rewards, exploit this through `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` to break the reconciliation between `compoundableRewards[token]` and `rewards[i].tokenAddress` and the invariant that a routing parameter that decides how shared value is traded must not be caller-supplied, yielding Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: caller sets the conversion ratio for value that is not theirs)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Precondition: no convertor, locker or helper is configured for one of the registered rewards.
+- Invariant to test: a routing parameter that decides how shared value is traded must not be caller-supplied; concretely, `compoundableRewards[token]` must stay reconciled with `rewards[i].tokenAddress`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Foundry fork test against the deployed pool: set up no convertor, locker or helper is configured for one of the registered rewards, snapshot `compoundableRewards[token]` and `rewards[i].tokenAddress`, run the attacker's `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` sequence, then assert the two still reconcile and the attacker's net token balance did not increase.

@@ -1,0 +1,13 @@
+# Q0342: MasterMagpie.multiclaim - classification collision between vlmgp, MPGRewardPool and the default branch
+
+## Question
+rewards/MasterMagpie.sol - _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Can an unprivileged attacker controlling the full _stakingTokens array, including duplicates and unregistered addresses, under the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it, exploit this through `multiclaim(address[] _stakingTokens)` to break the reconciliation between `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` and `block.timestamp` and the invariant that the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position, yielding High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaim(address[] _stakingTokens)` (mechanism: classification collision between vlmgp, MPGRewardPool and the default branch)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaim(address[] _stakingTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the full _stakingTokens array, including duplicates and unregistered addresses
+- Exploit idea: _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Precondition: the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it.
+- Invariant to test: the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position; concretely, `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` must stay reconciled with `block.timestamp`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Single-transaction PoC contract executing the whole `multiclaim(address[] _stakingTokens)` sequence atomically under the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it, asserting at the end that `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` still equals `block.timestamp` and the PoC's balance delta is non-positive.

@@ -1,0 +1,13 @@
+# Q1006: ManualCompound.compound - caller sets the conversion ratio for value that is not theirs
+
+## Question
+rewards/ManualCompound.sol: compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. With every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls under attacker control and the caller passes an _lps array of pools where they hold no stake at all, can an unprivileged caller sequence `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` so that `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` and `the caller's own share of that reward token` no longer reconcile, violating the invariant that a routing parameter that decides how shared value is traded must not be caller-supplied and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: caller sets the conversion ratio for value that is not theirs)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Precondition: the caller passes an _lps array of pools where they hold no stake at all.
+- Invariant to test: a routing parameter that decides how shared value is traded must not be caller-supplied; concretely, `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` must stay reconciled with `the caller's own share of that reward token`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Differential test: perform the same economic action as one call and as several split calls under the caller passes an _lps array of pools where they hold no stake at all, then assert `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` and `the caller's own share of that reward token` end identical in both runs.

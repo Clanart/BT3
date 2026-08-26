@@ -1,0 +1,13 @@
+# Q1029: vlMGPBaseRewarder.getRewards - InvalidRewardableAmount revert bricks a user's claims
+
+## Question
+Consider rewards/vlMGPBaseRewarder.sol, where _calExpireForfeit() reverts with InvalidRewardableAmount whenever rewardableAmount exceeds _amount, and rewardablePercentWAD is computed inside vlMGP from getUserTotalLocked, which itself can underflow, so a single inconsistent lock state makes every claim path for that user revert forever. Assuming the account's slot matured recently so the percent has only just begun to decay, can an unprivileged attacker turn this into a divergence between `userRewards[_rewardToken][account]` and `rewards[_rewardToken].rewardPerTokenStored` via `getRewards(address _account, address _receiver, address[] _rewardTokens)`, breaking the invariant that a pricing helper on the claim path must never be able to permanently block settlement and producing Critical - Permanent freezing of funds?
+
+## Target
+- File/function: rewards/vlMGPBaseRewarder.sol -> `getRewards(address _account, address _receiver, address[] _rewardTokens)` (mechanism: InvalidRewardableAmount revert bricks a user's claims)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `getRewards(address _account, address _receiver, address[] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the reward-token array, reachable through MasterMagpie.multiclaimSpec and multiclaimFor
+- Exploit idea: _calExpireForfeit() reverts with InvalidRewardableAmount whenever rewardableAmount exceeds _amount, and rewardablePercentWAD is computed inside vlMGP from getUserTotalLocked, which itself can underflow, so a single inconsistent lock state makes every claim path for that user revert forever. Precondition: the account's slot matured recently so the percent has only just begun to decay.
+- Invariant to test: a pricing helper on the claim path must never be able to permanently block settlement; concretely, `userRewards[_rewardToken][account]` must stay reconciled with `rewards[_rewardToken].rewardPerTokenStored`.
+- Expected Immunefi impact: Critical - Permanent freezing of funds
+- Fast validation: Two-account fork test (victim and attacker): establish the account's slot matured recently so the percent has only just begun to decay, have the attacker run `getRewards(address _account, address _receiver, address[] _rewardTokens)`, then assert the victim's claimable value and the `userRewards[_rewardToken][account]` versus `rewards[_rewardToken].rewardPerTokenStored` relation are unchanged by the attacker's transaction.

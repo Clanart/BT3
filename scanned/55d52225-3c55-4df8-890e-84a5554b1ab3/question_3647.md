@@ -1,0 +1,13 @@
+# Q3647: BribeRewardPool.donateRewards - balanceOf override diverges from the inherited totalStaked semantics
+
+## Question
+rewards/BribeRewardPool.sol: BribeRewardPool overrides balanceOf and totalStaked to read its private _balances and totalSupply, while the inherited reward math was written against a MasterMagpie-backed ledger, so any inherited path that still assumes the operator ledger reads the wrong source. With _amountReward and which already-registered bribe token is provisioned under attacker control and the attacker calls the inherited donateRewards for the registered bribe token, can an unprivileged caller sequence `donateRewards(uint256 _amountReward, address _rewardToken) inherited from BaseRewardPoolV2` so that `userRewards[_rewardToken][account]` and `earned(account,_rewardToken)` no longer reconcile, violating the invariant that all reward math in a contract must read the balance ledger the contract actually maintains and realising Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/BribeRewardPool.sol -> `donateRewards(uint256 _amountReward, address _rewardToken) inherited from BaseRewardPoolV2` (mechanism: balanceOf override diverges from the inherited totalStaked semantics)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken) inherited from BaseRewardPoolV2`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward and which already-registered bribe token is provisioned
+- Exploit idea: BribeRewardPool overrides balanceOf and totalStaked to read its private _balances and totalSupply, while the inherited reward math was written against a MasterMagpie-backed ledger, so any inherited path that still assumes the operator ledger reads the wrong source. Precondition: the attacker calls the inherited donateRewards for the registered bribe token.
+- Invariant to test: all reward math in a contract must read the balance ledger the contract actually maintains; concretely, `userRewards[_rewardToken][account]` must stay reconciled with `earned(account,_rewardToken)`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the attacker calls the inherited donateRewards for the registered bribe token, call `donateRewards(uint256 _amountReward, address _rewardToken) inherited from BaseRewardPoolV2`, and assert `userRewards[_rewardToken][account]` equals `earned(account,_rewardToken)` and that no account can withdraw more than it put in.

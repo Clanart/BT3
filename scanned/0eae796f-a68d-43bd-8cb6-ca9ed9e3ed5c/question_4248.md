@@ -1,0 +1,13 @@
+# Q4248: mWOMSVBaseRewarder.getReward - _queueNewRewardsWithoutTransfer credits value with no matching balance
+
+## Question
+rewards/mWOMSVBaseRewarder.sol: _queueNewRewardsWithoutTransfer() raises historicalRewards and rewardPerTokenStored without any token transfer, relying on the forfeited amount already sitting in the contract, so any path that reaches it without a real retained balance promises tokens the pool does not hold. With the settlement timing, reachable through MasterMagpie.multiclaim and through the locker's unlock path under attacker control and the attacker locks one block before a known large settlement and unlocks one block after, can an unprivileged caller sequence `getReward(address _account, address _receiver)` so that `rewards[_rewardToken].historicalRewards` and `IERC20(_rewardToken).balanceOf(address(this))` no longer reconcile, violating the invariant that the reward index may only be raised against tokens the contract has actually retained and realising Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/mWOMSVBaseRewarder.sol -> `getReward(address _account, address _receiver)` (mechanism: _queueNewRewardsWithoutTransfer credits value with no matching balance)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `getReward(address _account, address _receiver)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the settlement timing, reachable through MasterMagpie.multiclaim and through the locker's unlock path
+- Exploit idea: _queueNewRewardsWithoutTransfer() raises historicalRewards and rewardPerTokenStored without any token transfer, relying on the forfeited amount already sitting in the contract, so any path that reaches it without a real retained balance promises tokens the pool does not hold. Precondition: the attacker locks one block before a known large settlement and unlocks one block after.
+- Invariant to test: the reward index may only be raised against tokens the contract has actually retained; concretely, `rewards[_rewardToken].historicalRewards` must stay reconciled with `IERC20(_rewardToken).balanceOf(address(this))`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Table test over the boundary values of the attacker inputs (the settlement timing, reachable through MasterMagpie.multiclaim and through the locker's unlock path) under the attacker locks one block before a known large settlement and unlocks one block after, asserting on every row that the reward index may only be raised against tokens the contract has actually retained.

@@ -1,0 +1,13 @@
+# Q5340: MasterMagpie.multiclaimFor - forced claim of a victim through permissionless multiclaimFor
+
+## Question
+In rewards/MasterMagpie.sol, multiclaimFor(_stakingTokens, _rewardTokens, _account) has no access control and no msg.sender == _account check, so any address can force a settlement on any victim at a timestamp of the attacker's choosing. Starting from a state where the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked(), can an unprivileged EOA use `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` to leave `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` inconsistent with `block.timestamp`, violating the invariant that only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state and extracting High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: forced claim of a victim through permissionless multiclaimFor)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: multiclaimFor(_stakingTokens, _rewardTokens, _account) has no access control and no msg.sender == _account check, so any address can force a settlement on any victim at a timestamp of the attacker's choosing. Precondition: the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked().
+- Invariant to test: only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state; concretely, `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` must stay reconciled with `block.timestamp`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Invariant/fuzz run over `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`: constrain the setup so that the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked(), fuzz the attacker inputs (_account (any victim), the staking-token list and the per-pool reward-token lists), and assert after every call that only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state.

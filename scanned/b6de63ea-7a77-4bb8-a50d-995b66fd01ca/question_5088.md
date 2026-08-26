@@ -1,0 +1,13 @@
+# Q5088: MasterMagpie.multiclaimFor - unregistered staking token smuggled into _multiClaim
+
+## Question
+rewards/MasterMagpie.sol: _multiClaim() reads tokenToPoolInfo[_stakingToken] for arbitrary caller-supplied addresses with no registeredToken membership check, so a never-added address yields a zero PoolInfo whose rewarder and accMGPPerShare are zero while the classification branches (vlmgp / MPGRewardPool / default) still execute. Under the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals, is there an unprivileged sequence of `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` that leaves `userInfo[_stakingToken][user].rewardDebt` unreconciled with `tokenToPoolInfo[_stakingToken].accMGPPerShare`, violates the invariant that only pools actually added through add() may be routed through the claim classification and send branches, and delivers High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: unregistered staking token smuggled into _multiClaim)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: _multiClaim() reads tokenToPoolInfo[_stakingToken] for arbitrary caller-supplied addresses with no registeredToken membership check, so a never-added address yields a zero PoolInfo whose rewarder and accMGPPerShare are zero while the classification branches (vlmgp / MPGRewardPool / default) still execute. Precondition: the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals.
+- Invariant to test: only pools actually added through add() may be routed through the claim classification and send branches; concretely, `userInfo[_stakingToken][user].rewardDebt` must stay reconciled with `tokenToPoolInfo[_stakingToken].accMGPPerShare`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Invariant/fuzz run over `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`: constrain the setup so that the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals, fuzz the attacker inputs (_account (any victim), the staking-token list and the per-pool reward-token lists), and assert after every call that only pools actually added through add() may be routed through the claim classification and send branches.

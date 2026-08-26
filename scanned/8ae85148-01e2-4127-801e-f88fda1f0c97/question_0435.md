@@ -1,0 +1,13 @@
+# Q0435: MasterMagpie.multiclaimSpec - BaseRewardPool.getRewards is an empty function body
+
+## Question
+In rewards/MasterMagpie.sol, rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Can an unprivileged attacker reach this through `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` while the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it, and drive `IBaseRewardPool(rewarder).balanceOf(user)` out of agreement with `IBaseRewardPool(rewarder).totalStaked()` - breaking the invariant that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for - for High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: BaseRewardPool.getRewards is an empty function body)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Precondition: the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it.
+- Invariant to test: specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for; concretely, `IBaseRewardPool(rewarder).balanceOf(user)` must stay reconciled with `IBaseRewardPool(rewarder).totalStaked()`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Differential test: perform the same economic action as one call and as several split calls under the pool is the only one with a non-zero allocPoint so the whole mgpPerSec stream lands on it, then assert `IBaseRewardPool(rewarder).balanceOf(user)` and `IBaseRewardPool(rewarder).totalStaked()` end identical in both runs.

@@ -1,0 +1,13 @@
+# Q1532: BaseRewardPoolV2.donateRewards - donateRewards used to grief the operator's own accounting
+
+## Question
+rewards/BaseRewardPoolV2.sol: donateRewards() is callable by anyone for any already-registered reward token with any amount, so an attacker can move rewardPerTokenStored at a chosen block without being the reward manager and without the operator's knowledge. With _amountReward down to one wei and which registered reward token is provisioned under attacker control and V2 caches stakingTokenDecimals at construction and both _updateFor and the updateRewards modifier early-continue when userRewardPerTokenPaid equals rewardPerTokenStored, can an unprivileged caller sequence `donateRewards(uint256 _amountReward, address _rewardToken)` so that `rewards[_rewardToken].rewardPerTokenStored` and `userRewardPerTokenPaid[_rewardToken][account]` no longer reconcile, violating the invariant that only an authorised manager may decide when and by how much the global reward index moves and realising High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/BaseRewardPoolV2.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: donateRewards used to grief the operator's own accounting)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: donateRewards() is callable by anyone for any already-registered reward token with any amount, so an attacker can move rewardPerTokenStored at a chosen block without being the reward manager and without the operator's knowledge. Precondition: V2 caches stakingTokenDecimals at construction and both _updateFor and the updateRewards modifier early-continue when userRewardPerTokenPaid equals rewardPerTokenStored.
+- Invariant to test: only an authorised manager may decide when and by how much the global reward index moves; concretely, `rewards[_rewardToken].rewardPerTokenStored` must stay reconciled with `userRewardPerTokenPaid[_rewardToken][account]`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Table test over the boundary values of the attacker inputs (_amountReward down to one wei and which registered reward token is provisioned) under V2 caches stakingTokenDecimals at construction and both _updateFor and the updateRewards modifier early-continue when userRewardPerTokenPaid equals rewardPerTokenStored, asserting on every row that only an authorised manager may decide when and by how much the global reward index moves.

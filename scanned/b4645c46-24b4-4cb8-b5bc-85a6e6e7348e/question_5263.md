@@ -1,0 +1,13 @@
+# Q5263: MasterMagpie.multiclaim - classification collision between vlmgp, MPGRewardPool and the default branch
+
+## Question
+In rewards/MasterMagpie.sol, _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Does `multiclaim(address[] _stakingTokens)` let an unprivileged caller exploit that under the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked(), so that `userInfo[_stakingToken][user].rewardDebt` diverges from `tokenToPoolInfo[_stakingToken].accMGPPerShare`, the invariant that the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position is broken, and the result is High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaim(address[] _stakingTokens)` (mechanism: classification collision between vlmgp, MPGRewardPool and the default branch)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaim(address[] _stakingTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the full _stakingTokens array, including duplicates and unregistered addresses
+- Exploit idea: _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Precondition: the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked().
+- Invariant to test: the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position; concretely, `userInfo[_stakingToken][user].rewardDebt` must stay reconciled with `tokenToPoolInfo[_stakingToken].accMGPPerShare`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Single-transaction PoC contract executing the whole `multiclaim(address[] _stakingTokens)` sequence atomically under the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked(), asserting at the end that `userInfo[_stakingToken][user].rewardDebt` still equals `tokenToPoolInfo[_stakingToken].accMGPPerShare` and the PoC's balance delta is non-positive.

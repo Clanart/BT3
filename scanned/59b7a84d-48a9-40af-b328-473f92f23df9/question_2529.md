@@ -1,0 +1,13 @@
+# Q2529: ManualCompound.compound - fallback branch transfers the whole balance to msg.sender
+
+## Question
+rewards/ManualCompound.sol: when no convertor, locker or helper is configured the branch falls through to IERC20(_tokenAddress).safeTransfer(msg.sender, receivedBalance), moving the entire balance out. With every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls under attacker control and the configured convertor is SmartWomConvert and _minRec is set to zero, can an unprivileged caller sequence `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` so that `IERC20(_rewards[i][j]).balanceOf(address(this))` and `the amount this caller actually claimed through multiclaimOnBehalf` no longer reconcile, violating the invariant that a fallback settlement branch must be bounded by the caller's own entitlement and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: fallback branch transfers the whole balance to msg.sender)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: when no convertor, locker or helper is configured the branch falls through to IERC20(_tokenAddress).safeTransfer(msg.sender, receivedBalance), moving the entire balance out. Precondition: the configured convertor is SmartWomConvert and _minRec is set to zero.
+- Invariant to test: a fallback settlement branch must be bounded by the caller's own entitlement; concretely, `IERC20(_rewards[i][j]).balanceOf(address(this))` must stay reconciled with `the amount this caller actually claimed through multiclaimOnBehalf`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Invariant/fuzz run over `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`: constrain the setup so that the configured convertor is SmartWomConvert and _minRec is set to zero, fuzz the attacker inputs (every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls), and assert after every call that a fallback settlement branch must be bounded by the caller's own entitlement.

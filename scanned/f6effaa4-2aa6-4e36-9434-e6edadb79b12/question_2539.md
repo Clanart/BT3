@@ -1,0 +1,13 @@
+# Q2539: MasterMagpie.multiclaimSpec - BaseRewardPool.getRewards is an empty function body
+
+## Question
+In rewards/MasterMagpie.sol, rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Can an unprivileged attacker reach this through `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` while the attacker holds one wei of stake so lpSupply is non-zero but every division truncates, and drive `vlmgp.totalSupply()` out of agreement with `sum of userInfo[vlmgp][*].amount` - breaking the invariant that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for - for High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: BaseRewardPool.getRewards is an empty function body)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Precondition: the attacker holds one wei of stake so lpSupply is non-zero but every division truncates.
+- Invariant to test: specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for; concretely, `vlmgp.totalSupply()` must stay reconciled with `sum of userInfo[vlmgp][*].amount`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Invariant/fuzz run over `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`: constrain the setup so that the attacker holds one wei of stake so lpSupply is non-zero but every division truncates, fuzz the attacker inputs (both outer and inner arrays, so every reward-token address and its order), and assert after every call that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for.

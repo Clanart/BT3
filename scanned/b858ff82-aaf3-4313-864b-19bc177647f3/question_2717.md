@@ -1,0 +1,13 @@
+# Q2717: ManualCompound.compound - caller sets the conversion ratio for value that is not theirs
+
+## Question
+In rewards/ManualCompound.sol, compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Can an unprivileged attacker reach this through `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` while _lockMgp is true and a locker is configured for the MGP entry, and drive `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` out of agreement with `the caller's own share of that reward token` - breaking the invariant that a routing parameter that decides how shared value is traded must not be caller-supplied - for Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: caller sets the conversion ratio for value that is not theirs)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Precondition: _lockMgp is true and a locker is configured for the MGP entry.
+- Invariant to test: a routing parameter that decides how shared value is traded must not be caller-supplied; concretely, `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` must stay reconciled with `the caller's own share of that reward token`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Single-transaction PoC contract executing the whole `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` sequence atomically under _lockMgp is true and a locker is configured for the MGP entry, asserting at the end that `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` still equals `the caller's own share of that reward token` and the PoC's balance delta is non-positive.

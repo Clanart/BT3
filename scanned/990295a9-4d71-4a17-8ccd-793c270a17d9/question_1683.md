@@ -1,0 +1,13 @@
+# Q1683: MasterMagpie.multiclaimSpec - unregistered staking token smuggled into _multiClaim
+
+## Question
+rewards/MasterMagpie.sol: _multiClaim() reads tokenToPoolInfo[_stakingToken] for arbitrary caller-supplied addresses with no registeredToken membership check, so a never-added address yields a zero PoolInfo whose rewarder and accMGPPerShare are zero while the classification branches (vlmgp / MPGRewardPool / default) still execute. With both outer and inner arrays, so every reward-token address and its order under attacker control and the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake, can an unprivileged caller sequence `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` so that `IBaseRewardPool(rewarder).balanceOf(user)` and `IBaseRewardPool(rewarder).totalStaked()` no longer reconcile, violating the invariant that only pools actually added through add() may be routed through the claim classification and send branches and realising High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: unregistered staking token smuggled into _multiClaim)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: _multiClaim() reads tokenToPoolInfo[_stakingToken] for arbitrary caller-supplied addresses with no registeredToken membership check, so a never-added address yields a zero PoolInfo whose rewarder and accMGPPerShare are zero while the classification branches (vlmgp / MPGRewardPool / default) still execute. Precondition: the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake.
+- Invariant to test: only pools actually added through add() may be routed through the claim classification and send branches; concretely, `IBaseRewardPool(rewarder).balanceOf(user)` must stay reconciled with `IBaseRewardPool(rewarder).totalStaked()`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake, call `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`, and assert `IBaseRewardPool(rewarder).balanceOf(user)` equals `IBaseRewardPool(rewarder).totalStaked()` and that no account can withdraw more than it put in.

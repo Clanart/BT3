@@ -1,0 +1,13 @@
+# Q3889: MasterMagpie.multiclaim - classification collision between vlmgp, MPGRewardPool and the default branch
+
+## Question
+rewards/MasterMagpie.sol: _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Under the pool's rewarder is a V1 rewards/BaseRewardPool.sol whose getRewards body is empty, is there an unprivileged sequence of `multiclaim(address[] _stakingTokens)` that leaves `mgpPerSec` unreconciled with `IERC20(mgp).balanceOf(masterMagpie)`, violates the invariant that the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position, and delivers High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaim(address[] _stakingTokens)` (mechanism: classification collision between vlmgp, MPGRewardPool and the default branch)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaim(address[] _stakingTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the full _stakingTokens array, including duplicates and unregistered addresses
+- Exploit idea: _multiClaim() buckets a pool by _stakingToken == address(vlmgp), then MPGRewardPool[_stakingToken], then default, and the three buckets are paid through three different mechanisms (queueMGP with forfeit, plain safeTransfer, forced vlMGP lock), so a pool that is misclassified pays MGP under the wrong forfeit and lock rules. Precondition: the pool's rewarder is a V1 rewards/BaseRewardPool.sol whose getRewards body is empty.
+- Invariant to test: the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position; concretely, `mgpPerSec` must stay reconciled with `IERC20(mgp).balanceOf(masterMagpie)`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Table test over the boundary values of the attacker inputs (the full _stakingTokens array, including duplicates and unregistered addresses) under the pool's rewarder is a V1 rewards/BaseRewardPool.sol whose getRewards body is empty, asserting on every row that the payout mechanism for a pool must be a single deterministic property of that pool and must not be reachable through an attacker-chosen array position.

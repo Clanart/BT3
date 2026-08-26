@@ -1,0 +1,13 @@
+# Q5468: MasterMagpie.deposit - stakingInfo(amount) versus totalStaked(balanceOf) divergence for vlMGP pools
+
+## Question
+rewards/MasterMagpie.sol: for vlMGP and mWomSV pools _deposit() credits UserInfo.amount with no token transfer (_isVlmgp == true), while every BaseRewardPool prices rewards with totalStaked() = IERC20(stakingToken).balanceOf(operator), so the per-user numerator and the global denominator are drawn from two unrelated sources. With _stakingToken, _amount, and the ERC20 the pool was registered with under attacker control and the contract has just been unpaused and lastRewardTimestamp is far behind block.timestamp, can an unprivileged caller sequence `deposit(address _stakingToken, uint256 _amount)` so that `userInfo[_stakingToken][user].rewardDebt` and `tokenToPoolInfo[_stakingToken].accMGPPerShare` no longer reconcile, violating the invariant that sum(balanceOf(user)) over a rewarder must equal that rewarder's totalStaked() at all times and realising Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `deposit(address _stakingToken, uint256 _amount)` (mechanism: stakingInfo(amount) versus totalStaked(balanceOf) divergence for vlMGP pools)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `deposit(address _stakingToken, uint256 _amount)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _stakingToken, _amount, and the ERC20 the pool was registered with
+- Exploit idea: for vlMGP and mWomSV pools _deposit() credits UserInfo.amount with no token transfer (_isVlmgp == true), while every BaseRewardPool prices rewards with totalStaked() = IERC20(stakingToken).balanceOf(operator), so the per-user numerator and the global denominator are drawn from two unrelated sources. Precondition: the contract has just been unpaused and lastRewardTimestamp is far behind block.timestamp.
+- Invariant to test: sum(balanceOf(user)) over a rewarder must equal that rewarder's totalStaked() at all times; concretely, `userInfo[_stakingToken][user].rewardDebt` must stay reconciled with `tokenToPoolInfo[_stakingToken].accMGPPerShare`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the contract has just been unpaused and lastRewardTimestamp is far behind block.timestamp, call `deposit(address _stakingToken, uint256 _amount)`, and assert `userInfo[_stakingToken][user].rewardDebt` equals `tokenToPoolInfo[_stakingToken].accMGPPerShare` and that no account can withdraw more than it put in.

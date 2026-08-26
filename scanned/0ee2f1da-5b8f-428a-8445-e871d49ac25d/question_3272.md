@@ -1,0 +1,13 @@
+# Q3272: mWOMSVBaseRewarder.getRewards - InvalidRewardableAmount revert bricks a user's claims
+
+## Question
+In rewards/mWOMSVBaseRewarder.sol, _calExpireForfeit() reverts with InvalidRewardableAmount whenever rewardableAmount exceeds _amount, and rewardablePercentWAD is computed inside mWOMSV from getUserTotalLocked, which itself can underflow, so a single inconsistent lock state makes every claim path for that user revert forever. Does `getRewards(address _account, address _receiver, address[] _rewardTokens)` let an unprivileged caller exploit that under the attacker holds a dominant share of totalStaked so the forfeit recycles mostly back to them, so that `rewards[_rewardToken].historicalRewards` diverges from `IERC20(_rewardToken).balanceOf(address(this))`, the invariant that a pricing helper on the claim path must never be able to permanently block settlement is broken, and the result is Critical - Permanent freezing of funds?
+
+## Target
+- File/function: rewards/mWOMSVBaseRewarder.sol -> `getRewards(address _account, address _receiver, address[] _rewardTokens)` (mechanism: InvalidRewardableAmount revert bricks a user's claims)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `getRewards(address _account, address _receiver, address[] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the reward-token array, reachable through MasterMagpie.multiclaimSpec and multiclaimFor
+- Exploit idea: _calExpireForfeit() reverts with InvalidRewardableAmount whenever rewardableAmount exceeds _amount, and rewardablePercentWAD is computed inside mWOMSV from getUserTotalLocked, which itself can underflow, so a single inconsistent lock state makes every claim path for that user revert forever. Precondition: the attacker holds a dominant share of totalStaked so the forfeit recycles mostly back to them.
+- Invariant to test: a pricing helper on the claim path must never be able to permanently block settlement; concretely, `rewards[_rewardToken].historicalRewards` must stay reconciled with `IERC20(_rewardToken).balanceOf(address(this))`.
+- Expected Immunefi impact: Critical - Permanent freezing of funds
+- Fast validation: Two-account fork test (victim and attacker): establish the attacker holds a dominant share of totalStaked so the forfeit recycles mostly back to them, have the attacker run `getRewards(address _account, address _receiver, address[] _rewardTokens)`, then assert the victim's claimable value and the `rewards[_rewardToken].historicalRewards` versus `IERC20(_rewardToken).balanceOf(address(this))` relation are unchanged by the attacker's transaction.

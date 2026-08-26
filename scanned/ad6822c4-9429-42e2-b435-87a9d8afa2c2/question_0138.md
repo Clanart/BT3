@@ -1,0 +1,13 @@
+# Q0138: ManualCompound.compound - caller sets the conversion ratio for value that is not theirs
+
+## Question
+In rewards/ManualCompound.sol, compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Does `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` let an unprivileged caller exploit that under a previous compound left a residue of one of the configured reward tokens on the contract, so that `_minRec supplied by the caller` diverges from `obtainedmWomAmount in SmartWomConvert`, the invariant that a routing parameter that decides how shared value is traded must not be caller-supplied is broken, and the result is Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: caller sets the conversion ratio for value that is not theirs)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: compound() forwards the caller's _convertRatio into IConverter(_convertor).convertFor(receivedBalance, _convertRatio, _minRec, msg.sender, 2) where receivedBalance is the whole contract balance, so one caller decides how another user's value is routed through the AMM. Precondition: a previous compound left a residue of one of the configured reward tokens on the contract.
+- Invariant to test: a routing parameter that decides how shared value is traded must not be caller-supplied; concretely, `_minRec supplied by the caller` must stay reconciled with `obtainedmWomAmount in SmartWomConvert`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Unit test with mocked Wombat and router legs: arrange a previous compound left a residue of one of the configured reward tokens on the contract, call `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`, and assert `_minRec supplied by the caller` equals `obtainedmWomAmount in SmartWomConvert` and that no account can withdraw more than it put in.

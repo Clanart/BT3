@@ -1,0 +1,13 @@
+# Q3761: MasterMagpie.withdraw - lpSupply inflation by direct token donation
+
+## Question
+rewards/MasterMagpie.sol: _calLpSupply() returns IERC20(_stakingToken).balanceOf(address(this)) for every non-vlMGP/non-mWomSV pool, so a raw ERC20 transfer of the receipt token straight to MasterMagpie inflates the accMGPPerShare denominator without crediting any UserInfo.amount. With _stakingToken, _amount, and withdraw ordering inside a block under attacker control and the pool's rewarder is a V1 rewards/BaseRewardPool.sol whose getRewards body is empty, can an unprivileged caller sequence `withdraw(address _stakingToken, uint256 _amount)` so that `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` and `block.timestamp` no longer reconcile, violating the invariant that MGP emitted over an interval must be fully distributable to the sum of UserInfo.amount, and accMGPPerShare must only ever be divided by staked-and-credited supply and realising High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `withdraw(address _stakingToken, uint256 _amount)` (mechanism: lpSupply inflation by direct token donation)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `withdraw(address _stakingToken, uint256 _amount)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _stakingToken, _amount, and withdraw ordering inside a block
+- Exploit idea: _calLpSupply() returns IERC20(_stakingToken).balanceOf(address(this)) for every non-vlMGP/non-mWomSV pool, so a raw ERC20 transfer of the receipt token straight to MasterMagpie inflates the accMGPPerShare denominator without crediting any UserInfo.amount. Precondition: the pool's rewarder is a V1 rewards/BaseRewardPool.sol whose getRewards body is empty.
+- Invariant to test: MGP emitted over an interval must be fully distributable to the sum of UserInfo.amount, and accMGPPerShare must only ever be divided by staked-and-credited supply; concretely, `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` must stay reconciled with `block.timestamp`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Two-account fork test (victim and attacker): establish the pool's rewarder is a V1 rewards/BaseRewardPool.sol whose getRewards body is empty, have the attacker run `withdraw(address _stakingToken, uint256 _amount)`, then assert the victim's claimable value and the `tokenToPoolInfo[_stakingToken].lastRewardTimestamp` versus `block.timestamp` relation are unchanged by the attacker's transaction.

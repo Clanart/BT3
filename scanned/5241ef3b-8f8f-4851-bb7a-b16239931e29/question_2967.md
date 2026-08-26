@@ -1,0 +1,13 @@
+# Q2967: ManualCompound.compound - stranded dust from a previous compound is claimable by anyone
+
+## Question
+rewards/ManualCompound.sol: any token that a previous compound left behind through rounding, a partial convert or an under-consuming helper stays on the contract until the next caller sweeps the full balance. With every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls under attacker control and no convertor, locker or helper is configured for one of the registered rewards, can an unprivileged caller sequence `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` so that `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` and `the caller's own share of that reward token` no longer reconcile, violating the invariant that residual value must be attributed to its owner rather than left claimable by the next caller and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: stranded dust from a previous compound is claimable by anyone)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: any token that a previous compound left behind through rounding, a partial convert or an under-consuming helper stays on the contract until the next caller sweeps the full balance. Precondition: no convertor, locker or helper is configured for one of the registered rewards.
+- Invariant to test: residual value must be attributed to its owner rather than left claimable by the next caller; concretely, `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` must stay reconciled with `the caller's own share of that reward token`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Invariant/fuzz run over `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`: constrain the setup so that no convertor, locker or helper is configured for one of the registered rewards, fuzz the attacker inputs (every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls), and assert after every call that residual value must be attributed to its owner rather than left claimable by the next caller.

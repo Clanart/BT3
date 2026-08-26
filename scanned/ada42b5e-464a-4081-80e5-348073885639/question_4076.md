@@ -1,0 +1,13 @@
+# Q4076: mWOMSVBaseRewarder.getRewards - InvalidRewardableAmount revert bricks a user's claims
+
+## Question
+rewards/mWOMSVBaseRewarder.sol: _calExpireForfeit() reverts with InvalidRewardableAmount whenever rewardableAmount exceeds _amount, and rewardablePercentWAD is computed inside mWOMSV from getUserTotalLocked, which itself can underflow, so a single inconsistent lock state makes every claim path for that user revert forever. With the reward-token array, reachable through MasterMagpie.multiclaimSpec and multiclaimFor under attacker control and the attacker locks one block before a known large settlement and unlocks one block after, can an unprivileged caller sequence `getRewards(address _account, address _receiver, address[] _rewardTokens)` so that `userRewards[_rewardToken][account]` and `rewards[_rewardToken].rewardPerTokenStored` no longer reconcile, violating the invariant that a pricing helper on the claim path must never be able to permanently block settlement and realising Critical - Permanent freezing of funds?
+
+## Target
+- File/function: rewards/mWOMSVBaseRewarder.sol -> `getRewards(address _account, address _receiver, address[] _rewardTokens)` (mechanism: InvalidRewardableAmount revert bricks a user's claims)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `getRewards(address _account, address _receiver, address[] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the reward-token array, reachable through MasterMagpie.multiclaimSpec and multiclaimFor
+- Exploit idea: _calExpireForfeit() reverts with InvalidRewardableAmount whenever rewardableAmount exceeds _amount, and rewardablePercentWAD is computed inside mWOMSV from getUserTotalLocked, which itself can underflow, so a single inconsistent lock state makes every claim path for that user revert forever. Precondition: the attacker locks one block before a known large settlement and unlocks one block after.
+- Invariant to test: a pricing helper on the claim path must never be able to permanently block settlement; concretely, `userRewards[_rewardToken][account]` must stay reconciled with `rewards[_rewardToken].rewardPerTokenStored`.
+- Expected Immunefi impact: Critical - Permanent freezing of funds
+- Fast validation: Table test over the boundary values of the attacker inputs (the reward-token array, reachable through MasterMagpie.multiclaimSpec and multiclaimFor) under the attacker locks one block before a known large settlement and unlocks one block after, asserting on every row that a pricing helper on the claim path must never be able to permanently block settlement.

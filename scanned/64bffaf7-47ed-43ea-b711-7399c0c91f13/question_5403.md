@@ -1,0 +1,13 @@
+# Q5403: MasterMagpie.emergencyWithdraw - emergencyWithdraw transfers before finishing state writes and has no nonReentrant
+
+## Question
+rewards/MasterMagpie.sol: emergencyWithdraw() performs safeTransfer of the staking token before it updates user.amount and rewardDebt, and unlike deposit/withdraw it carries no nonReentrant modifier, so a staking token with a transfer hook re-enters with user.amount still holding the pre-withdrawal value. With _stakingToken and the exact block in which the pool is paused under attacker control and the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked(), can an unprivileged caller sequence `emergencyWithdraw(address _stakingToken)` so that `userInfo[_stakingToken][user].rewardDebt` and `tokenToPoolInfo[_stakingToken].accMGPPerShare` no longer reconcile, violating the invariant that the staked-balance bookkeeping must be fully settled before any external token call in the same function and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `emergencyWithdraw(address _stakingToken)` (mechanism: emergencyWithdraw transfers before finishing state writes and has no nonReentrant)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `emergencyWithdraw(address _stakingToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _stakingToken and the exact block in which the pool is paused
+- Exploit idea: emergencyWithdraw() performs safeTransfer of the staking token before it updates user.amount and rewardDebt, and unlike deposit/withdraw it carries no nonReentrant modifier, so a staking token with a transfer hook re-enters with user.amount still holding the pre-withdrawal value. Precondition: the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked().
+- Invariant to test: the staked-balance bookkeeping must be fully settled before any external token call in the same function; concretely, `userInfo[_stakingToken][user].rewardDebt` must stay reconciled with `tokenToPoolInfo[_stakingToken].accMGPPerShare`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the staking token is a low-decimal receipt token so 10**stakingDecimals() is small relative to totalStaked(), call `emergencyWithdraw(address _stakingToken)`, and assert `userInfo[_stakingToken][user].rewardDebt` equals `tokenToPoolInfo[_stakingToken].accMGPPerShare` and that no account can withdraw more than it put in.

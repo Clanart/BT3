@@ -1,0 +1,13 @@
+# Q4952: MasterMagpie.multiclaimSpec - rewardDebt reset without reward payout in _multiClaim
+
+## Question
+rewards/MasterMagpie.sol - _multiClaim() sets user.rewardDebt = user.amount * accMGPPerShare / 1e12 and zeroes unClaimedMgp for every entry in the caller-supplied _stakingTokens array before the send branch decides where the MGP goes, so a claim path that silently pays nothing still burns the accrual. Can an unprivileged attacker controlling both outer and inner arrays, so every reward-token address and its order, under the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals, exploit this through `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` to break the reconciliation between `userInfo[_stakingToken][user].available` and `userInfo[_stakingToken][user].amount` and the invariant that no code path may advance rewardDebt or clear unClaimedMgp unless the corresponding MGP actually leaves the contract to the user or is locked for them, yielding High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: rewardDebt reset without reward payout in _multiClaim)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: _multiClaim() sets user.rewardDebt = user.amount * accMGPPerShare / 1e12 and zeroes unClaimedMgp for every entry in the caller-supplied _stakingTokens array before the send branch decides where the MGP goes, so a claim path that silently pays nothing still burns the accrual. Precondition: the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals.
+- Invariant to test: no code path may advance rewardDebt or clear unClaimedMgp unless the corresponding MGP actually leaves the contract to the user or is locked for them; concretely, `userInfo[_stakingToken][user].available` must stay reconciled with `userInfo[_stakingToken][user].amount`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Differential test: perform the same economic action as one call and as several split calls under the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals, then assert `userInfo[_stakingToken][user].available` and `userInfo[_stakingToken][user].amount` end identical in both runs.

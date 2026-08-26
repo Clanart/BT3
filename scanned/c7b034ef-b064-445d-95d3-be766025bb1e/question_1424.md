@@ -1,0 +1,13 @@
+# Q1424: ArbWomUp3.incentiveDeposit - an unrecognised mode silently takes the plain transfer branch
+
+## Question
+wombat/ArbWomUp3.sol: _deposit() treats mode 1 as a SmartWomConvert deposit, mode 2 as the swap-and-lock path and anything else as a plain mWOM transfer, so an unexpected mode value falls through to the least restrictive settlement while the reward was priced for a different one. With _amount, _convertRatio, _bullMode and _mode, with _mode selecting stake, mWomSV lock or plain transfer under attacker control and the MGP balance is below twice the capped reward, can an unprivileged caller sequence `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)` so that `rewardToSend after the _mode == 2 doubling` and `the mgpleft cap applied inside getRewardAmount` no longer reconcile, violating the invariant that an unrecognised routing mode must revert rather than settle on the least restrictive branch and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: wombat/ArbWomUp3.sol -> `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)` (mechanism: an unrecognised mode silently takes the plain transfer branch)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amount, _convertRatio, _bullMode and _mode, with _mode selecting stake, mWomSV lock or plain transfer
+- Exploit idea: _deposit() treats mode 1 as a SmartWomConvert deposit, mode 2 as the swap-and-lock path and anything else as a plain mWOM transfer, so an unexpected mode value falls through to the least restrictive settlement while the reward was priced for a different one. Precondition: the MGP balance is below twice the capped reward.
+- Invariant to test: an unrecognised routing mode must revert rather than settle on the least restrictive branch; concretely, `rewardToSend after the _mode == 2 doubling` must stay reconciled with `the mgpleft cap applied inside getRewardAmount`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the MGP balance is below twice the capped reward, call `incentiveDeposit(uint256 _amount, uint256 _convertRatio, bool _bullMode, uint256 _mode)`, and assert `rewardToSend after the _mode == 2 doubling` equals `the mgpleft cap applied inside getRewardAmount` and that no account can withdraw more than it put in.

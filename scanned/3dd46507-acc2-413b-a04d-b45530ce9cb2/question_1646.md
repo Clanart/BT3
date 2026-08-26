@@ -1,0 +1,13 @@
+# Q1646: ManualCompound.compound - compoundableRewards flag is the only filter on the first loop
+
+## Question
+Consider rewards/ManualCompound.sol, where the first loop transfers out any caller-named token whose compoundableRewards flag is false, which is the default for every address that was never registered. Assuming the caller passes an _rewards inner array naming a token that is not in the rewards registry, can an unprivileged attacker turn this into a divergence between `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` and `the caller's own share of that reward token` via `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`, breaking the invariant that an unregistered token must be rejected rather than treated as freely transferable and producing Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: compoundableRewards flag is the only filter on the first loop)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: the first loop transfers out any caller-named token whose compoundableRewards flag is false, which is the default for every address that was never registered. Precondition: the caller passes an _rewards inner array naming a token that is not in the rewards registry.
+- Invariant to test: an unregistered token must be rejected rather than treated as freely transferable; concretely, `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` must stay reconciled with `the caller's own share of that reward token`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Invariant/fuzz run over `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`: constrain the setup so that the caller passes an _rewards inner array naming a token that is not in the rewards registry, fuzz the attacker inputs (every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls), and assert after every call that an unregistered token must be rejected rather than treated as freely transferable.

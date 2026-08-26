@@ -1,0 +1,13 @@
+# Q4963: MasterMagpie.multiclaimSpec - BaseRewardPool.getRewards is an empty function body
+
+## Question
+In rewards/MasterMagpie.sol, rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Can an unprivileged attacker reach this through `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` while the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals, and drive `userInfo[_stakingToken][user].rewardDebt` out of agreement with `tokenToPoolInfo[_stakingToken].accMGPPerShare` - breaking the invariant that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for - for High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)` (mechanism: BaseRewardPool.getRewards is an empty function body)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: both outer and inner arrays, so every reward-token address and its order
+- Exploit idea: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Precondition: the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals.
+- Invariant to test: specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for; concretely, `userInfo[_stakingToken][user].rewardDebt` must stay reconciled with `tokenToPoolInfo[_stakingToken].accMGPPerShare`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the staking token is a Wombat receipt token minted by WombatStaking with 18 decimals, call `multiclaimSpec(address[] _stakingTokens, address[][] _rewardTokens)`, and assert `userInfo[_stakingToken][user].rewardDebt` equals `tokenToPoolInfo[_stakingToken].accMGPPerShare` and that no account can withdraw more than it put in.

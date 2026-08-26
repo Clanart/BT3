@@ -1,0 +1,13 @@
+# Q5000: WombatStaking.withdraw - harvest reverts on a manipulated smart convert and blocks deposits and withdrawals
+
+## Question
+wombat/WombatStaking.sol: SmartWomConvert.smartConvert passes _minRec equal to _amountIn, so a manipulated pool makes it revert, and because _sendRewards runs inside _toMasterWomAndSendReward it is on the path of every deposit, depositLP and withdraw for that pool. Under the attacker deposits and withdraws through the same helper inside one transaction, is there an unprivileged sequence of `withdraw(address,uint256,uint256,address) via a pool helper` that leaves `IERC20(poolInfo.lpAddress).balanceOf(address(this))` unreconciled with `lpReceived credited by IMintableERC20(receiptToken).mint`, violates the invariant that a manipulable external price must not be able to block principal deposits and withdrawals, and delivers High - Temporary freezing of funds for at least 24 hours?
+
+## Target
+- File/function: wombat/WombatStaking.sol -> `withdraw(address,uint256,uint256,address) via a pool helper` (mechanism: harvest reverts on a manipulated smart convert and blocks deposits and withdrawals)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `withdraw(address,uint256,uint256,address) via a pool helper`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _liquidity and _minAmount, forwarded verbatim from the helper's withdraw
+- Exploit idea: SmartWomConvert.smartConvert passes _minRec equal to _amountIn, so a manipulated pool makes it revert, and because _sendRewards runs inside _toMasterWomAndSendReward it is on the path of every deposit, depositLP and withdraw for that pool. Precondition: the attacker deposits and withdraws through the same helper inside one transaction.
+- Invariant to test: a manipulable external price must not be able to block principal deposits and withdrawals; concretely, `IERC20(poolInfo.lpAddress).balanceOf(address(this))` must stay reconciled with `lpReceived credited by IMintableERC20(receiptToken).mint`.
+- Expected Immunefi impact: High - Temporary freezing of funds for at least 24 hours
+- Fast validation: Foundry fork test against the deployed pool: set up the attacker deposits and withdraws through the same helper inside one transaction, snapshot `IERC20(poolInfo.lpAddress).balanceOf(address(this))` and `lpReceived credited by IMintableERC20(receiptToken).mint`, run the attacker's `withdraw(address,uint256,uint256,address) via a pool helper` sequence, then assert the two still reconcile and the attacker's net token balance did not increase.

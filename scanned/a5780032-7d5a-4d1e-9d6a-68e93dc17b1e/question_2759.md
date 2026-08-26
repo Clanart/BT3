@@ -1,0 +1,13 @@
+# Q2759: DelegateVoteRewardPool.harvestAll - no reentrancy guard on harvestAll
+
+## Question
+rewards/DelegateVoteRewardPool.sol: harvestAll() performs an external claim across every pool and then external fee transfers with no nonReentrant, so a bribe token with a transfer hook re-enters between the claim and the queue. Under the victim has a large unsettled userRewards balance in the delegate pool, is there an unprivileged sequence of `harvestAll()` that leaves `earnedRewards returned by claimAllBribes` unreconciled with `IERC20(rewardToken).balanceOf(address(this))`, violates the invariant that a function that settles from external claim results must hold a reentrancy guard, and delivers Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/DelegateVoteRewardPool.sol -> `harvestAll()` (mechanism: no reentrancy guard on harvestAll)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `harvestAll()`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the exact block at which the delegate pool claims and re-queues every bribe, callable by anyone
+- Exploit idea: harvestAll() performs an external claim across every pool and then external fee transfers with no nonReentrant, so a bribe token with a transfer hook re-enters between the claim and the queue. Precondition: the victim has a large unsettled userRewards balance in the delegate pool.
+- Invariant to test: a function that settles from external claim results must hold a reentrancy guard; concretely, `earnedRewards returned by claimAllBribes` must stay reconciled with `IERC20(rewardToken).balanceOf(address(this))`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Single-transaction PoC contract executing the whole `harvestAll()` sequence atomically under the victim has a large unsettled userRewards balance in the delegate pool, asserting at the end that `earnedRewards returned by claimAllBribes` still equals `IERC20(rewardToken).balanceOf(address(this))` and the PoC's balance delta is non-positive.

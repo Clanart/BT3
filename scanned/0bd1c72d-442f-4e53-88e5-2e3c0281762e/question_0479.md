@@ -1,0 +1,13 @@
+# Q0479: ManualCompound.compound - non-compoundable sweep uses an entirely caller-supplied token list
+
+## Question
+rewards/ManualCompound.sol: the first loop reads rewardBalance = IERC20(_rewards[i][j]).balanceOf(address(this)) for every address the caller placed in the nested array and transfers the whole balance to msg.sender, and those addresses are never checked against any registry. Under another user's multiclaimOnBehalf is pending in the mempool and will land in the same block, is there an unprivileged sequence of `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` that leaves `compoundableRewards[token]` unreconciled with `rewards[i].tokenAddress`, violates the invariant that a caller must not be able to name an arbitrary token and receive the contract's entire balance of it, and delivers Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: non-compoundable sweep uses an entirely caller-supplied token list)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: the first loop reads rewardBalance = IERC20(_rewards[i][j]).balanceOf(address(this)) for every address the caller placed in the nested array and transfers the whole balance to msg.sender, and those addresses are never checked against any registry. Precondition: another user's multiclaimOnBehalf is pending in the mempool and will land in the same block.
+- Invariant to test: a caller must not be able to name an arbitrary token and receive the contract's entire balance of it; concretely, `compoundableRewards[token]` must stay reconciled with `rewards[i].tokenAddress`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Single-transaction PoC contract executing the whole `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` sequence atomically under another user's multiclaimOnBehalf is pending in the mempool and will land in the same block, asserting at the end that `compoundableRewards[token]` still equals `rewards[i].tokenAddress` and the PoC's balance delta is non-positive.

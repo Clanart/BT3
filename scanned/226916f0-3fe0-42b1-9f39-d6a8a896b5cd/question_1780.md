@@ -1,0 +1,13 @@
+# Q1780: MasterMagpie.multiclaimFor - BaseRewardPool.getRewards is an empty function body
+
+## Question
+Consider rewards/MasterMagpie.sol, where rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Assuming the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake, can an unprivileged attacker turn this into a divergence between `vlmgp.totalSupply()` and `sum of userInfo[vlmgp][*].amount` via `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`, breaking the invariant that specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for and producing High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: BaseRewardPool.getRewards is an empty function body)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: rewards/BaseRewardPool.sol implements getRewards(address,address,address[]) as an empty stub, so any multiclaimSpec/multiclaimFor call that supplies a non-empty _rewardTokens[i] for a pool wired to a V1 BaseRewardPool routes into the stub and pays nothing while _multiClaim still advances the MGP accrual. Precondition: the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake.
+- Invariant to test: specifying reward tokens must never be weaker than the claim-all path; a claim that returns success must move the tokens it accounted for; concretely, `vlmgp.totalSupply()` must stay reconciled with `sum of userInfo[vlmgp][*].amount`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Two-account fork test (victim and attacker): establish the attacker is the first and only depositor and _calLpSupply() is therefore equal to their own stake, have the attacker run `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`, then assert the victim's claimable value and the `vlmgp.totalSupply()` versus `sum of userInfo[vlmgp][*].amount` relation are unchanged by the attacker's transaction.

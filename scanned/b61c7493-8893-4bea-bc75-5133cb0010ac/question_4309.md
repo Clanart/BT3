@@ -1,0 +1,13 @@
+# Q4309: BaseRewardPool.donateRewards - fee-on-transfer or rebasing reward token inflates the index
+
+## Question
+rewards/BaseRewardPool.sol: _provisionReward() credits the full _amountReward to historicalRewards and to the rewardPerTokenStored increment based on the requested amount rather than the balance actually received, so any reward token that delivers less than requested promises more than the pool holds. With _amountReward down to one wei and which registered reward token is provisioned under attacker control and the victim has not been settled for several epochs and holds a large userRewards balance, can an unprivileged caller sequence `donateRewards(uint256 _amountReward, address _rewardToken)` so that `rewards[_rewardToken].historicalRewards` and `IERC20(_rewardToken).balanceOf(address(this))` no longer reconcile, violating the invariant that the amount credited to the index must equal the balance delta actually received by the pool and realising Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/BaseRewardPool.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: fee-on-transfer or rebasing reward token inflates the index)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: _provisionReward() credits the full _amountReward to historicalRewards and to the rewardPerTokenStored increment based on the requested amount rather than the balance actually received, so any reward token that delivers less than requested promises more than the pool holds. Precondition: the victim has not been settled for several epochs and holds a large userRewards balance.
+- Invariant to test: the amount credited to the index must equal the balance delta actually received by the pool; concretely, `rewards[_rewardToken].historicalRewards` must stay reconciled with `IERC20(_rewardToken).balanceOf(address(this))`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Invariant/fuzz run over `donateRewards(uint256 _amountReward, address _rewardToken)`: constrain the setup so that the victim has not been settled for several epochs and holds a large userRewards balance, fuzz the attacker inputs (_amountReward down to one wei and which registered reward token is provisioned), and assert after every call that the amount credited to the index must equal the balance delta actually received by the pool.

@@ -1,0 +1,13 @@
+# Q3488: BaseRewardPool.donateRewards - donateRewards rounds the increment to zero
+
+## Question
+rewards/BaseRewardPool.sol: _provisionReward() adds (_amountReward * 10**stakingDecimals()) / totalStaked() to rewardPerTokenStored, so when totalStaked() exceeds _amountReward * 10**decimals the whole donation is pulled in by safeTransferFrom, credited to historicalRewards, and adds nothing to rewardPerTokenStored. With _amountReward down to one wei and which registered reward token is provisioned under attacker control and a reward-manager queueNewRewards transaction is pending in the mempool, can an unprivileged caller sequence `donateRewards(uint256 _amountReward, address _rewardToken)` so that `rewards[_rewardToken].rewardPerTokenStored` and `userRewardPerTokenPaid[_rewardToken][account]` no longer reconcile, violating the invariant that every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded and realising High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/BaseRewardPool.sol -> `donateRewards(uint256 _amountReward, address _rewardToken)` (mechanism: donateRewards rounds the increment to zero)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `donateRewards(uint256 _amountReward, address _rewardToken)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _amountReward down to one wei and which registered reward token is provisioned
+- Exploit idea: _provisionReward() adds (_amountReward * 10**stakingDecimals()) / totalStaked() to rewardPerTokenStored, so when totalStaked() exceeds _amountReward * 10**decimals the whole donation is pulled in by safeTransferFrom, credited to historicalRewards, and adds nothing to rewardPerTokenStored. Precondition: a reward-manager queueNewRewards transaction is pending in the mempool.
+- Invariant to test: every reward token that enters the pool must become claimable by some staker; nothing may be silently stranded; concretely, `rewards[_rewardToken].rewardPerTokenStored` must stay reconciled with `userRewardPerTokenPaid[_rewardToken][account]`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Unit test with mocked Wombat and router legs: arrange a reward-manager queueNewRewards transaction is pending in the mempool, call `donateRewards(uint256 _amountReward, address _rewardToken)`, and assert `rewards[_rewardToken].rewardPerTokenStored` equals `userRewardPerTokenPaid[_rewardToken][account]` and that no account can withdraw more than it put in.

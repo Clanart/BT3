@@ -1,0 +1,13 @@
+# Q1531: BaseRewardPool.updateFor - rewardTokens array grows without bound and without removal
+
+## Question
+rewards/BaseRewardPool.sol - queueNewRewards() and _queueNewRewardsWithoutTransfer() push into rewardTokens with no way to remove an entry, and getReward()/updateFor() iterate the whole array, so a token that starts reverting on transfer makes the claim-all path revert for every staker forever. Can an unprivileged attacker controlling the victim address and the exact block in which their reward index is snapshotted, under V1 recomputes stakingDecimals() by an external IERC20Metadata call on every accrual and its _updateFor has no early-continue, exploit this through `updateFor(address _account)` to break the reconciliation between `rewards[_rewardToken].queuedRewards` and `rewards[_rewardToken].rewardPerTokenStored` and the invariant that one misbehaving reward token must not be able to block settlement of the remaining reward tokens, yielding High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/BaseRewardPool.sol -> `updateFor(address _account)` (mechanism: rewardTokens array grows without bound and without removal)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `updateFor(address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the victim address and the exact block in which their reward index is snapshotted
+- Exploit idea: queueNewRewards() and _queueNewRewardsWithoutTransfer() push into rewardTokens with no way to remove an entry, and getReward()/updateFor() iterate the whole array, so a token that starts reverting on transfer makes the claim-all path revert for every staker forever. Precondition: V1 recomputes stakingDecimals() by an external IERC20Metadata call on every accrual and its _updateFor has no early-continue.
+- Invariant to test: one misbehaving reward token must not be able to block settlement of the remaining reward tokens; concretely, `rewards[_rewardToken].queuedRewards` must stay reconciled with `rewards[_rewardToken].rewardPerTokenStored`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Invariant/fuzz run over `updateFor(address _account)`: constrain the setup so that V1 recomputes stakingDecimals() by an external IERC20Metadata call on every accrual and its _updateFor has no early-continue, fuzz the attacker inputs (the victim address and the exact block in which their reward index is snapshotted), and assert after every call that one misbehaving reward token must not be able to block settlement of the remaining reward tokens.

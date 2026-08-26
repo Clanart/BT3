@@ -1,0 +1,13 @@
+# Q4099: BribeRewardPool.stakeFor - balanceOf override diverges from the inherited totalStaked semantics
+
+## Question
+In rewards/BribeRewardPool.sol, BribeRewardPool overrides balanceOf and totalStaked to read its private _balances and totalSupply, while the inherited reward math was written against a MasterMagpie-backed ledger, so any inherited path that still assumes the operator ledger reads the wrong source. Starting from a state where the stakingToken fixed at construction has different decimals from vlMGP, can an unprivileged EOA use `stakeFor(address _for, uint256 _amount) via WombatBribeManager.vote` to leave `userRewards[_rewardToken][account]` inconsistent with `earned(account,_rewardToken)`, violating the invariant that all reward math in a contract must read the balance ledger the contract actually maintains and extracting Critical - Protocol insolvency?
+
+## Target
+- File/function: rewards/BribeRewardPool.sol -> `stakeFor(address _for, uint256 _amount) via WombatBribeManager.vote` (mechanism: balanceOf override diverges from the inherited totalStaked semantics)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `stakeFor(address _for, uint256 _amount) via WombatBribeManager.vote`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the delta and the beneficiary, both chosen by the voter calling vote
+- Exploit idea: BribeRewardPool overrides balanceOf and totalStaked to read its private _balances and totalSupply, while the inherited reward math was written against a MasterMagpie-backed ledger, so any inherited path that still assumes the operator ledger reads the wrong source. Precondition: the stakingToken fixed at construction has different decimals from vlMGP.
+- Invariant to test: all reward math in a contract must read the balance ledger the contract actually maintains; concretely, `userRewards[_rewardToken][account]` must stay reconciled with `earned(account,_rewardToken)`.
+- Expected Immunefi impact: Critical - Protocol insolvency
+- Fast validation: Foundry fork test against the deployed pool: set up the stakingToken fixed at construction has different decimals from vlMGP, snapshot `userRewards[_rewardToken][account]` and `earned(account,_rewardToken)`, run the attacker's `stakeFor(address _for, uint256 _amount) via WombatBribeManager.vote` sequence, then assert the two still reconcile and the attacker's net token balance did not increase.

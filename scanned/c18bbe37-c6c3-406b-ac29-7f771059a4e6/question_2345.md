@@ -1,0 +1,13 @@
+# Q2345: ManualCompound.compound - non-compoundable sweep uses an entirely caller-supplied token list
+
+## Question
+rewards/ManualCompound.sol: the first loop reads rewardBalance = IERC20(_rewards[i][j]).balanceOf(address(this)) for every address the caller placed in the nested array and transfers the whole balance to msg.sender, and those addresses are never checked against any registry. With every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls under attacker control and the configured convertor is SmartWomConvert and _minRec is set to zero, can an unprivileged caller sequence `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` so that `compoundableRewards[token]` and `rewards[i].tokenAddress` no longer reconcile, violating the invariant that a caller must not be able to name an arbitrary token and receive the contract's entire balance of it and realising Critical - Direct theft of user funds?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: non-compoundable sweep uses an entirely caller-supplied token list)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: the first loop reads rewardBalance = IERC20(_rewards[i][j]).balanceOf(address(this)) for every address the caller placed in the nested array and transfers the whole balance to msg.sender, and those addresses are never checked against any registry. Precondition: the configured convertor is SmartWomConvert and _minRec is set to zero.
+- Invariant to test: a caller must not be able to name an arbitrary token and receive the contract's entire balance of it; concretely, `compoundableRewards[token]` must stay reconciled with `rewards[i].tokenAddress`.
+- Expected Immunefi impact: Critical - Direct theft of user funds
+- Fast validation: Table test over the boundary values of the attacker inputs (every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls) under the configured convertor is SmartWomConvert and _minRec is set to zero, asserting on every row that a caller must not be able to name an arbitrary token and receive the contract's entire balance of it.

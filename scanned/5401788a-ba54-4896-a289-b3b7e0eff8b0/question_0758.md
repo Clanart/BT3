@@ -1,0 +1,13 @@
+# Q0758: ManualCompound.compound - safeApprove without reset on the convertor, locker and helper legs
+
+## Question
+rewards/ManualCompound.sol: each branch calls safeApprove(target, receivedBalance) with no prior zeroing, so a single under-consuming target permanently disables compounding for every user. Under another user's multiclaimOnBehalf is pending in the mempool and will land in the same block, is there an unprivileged sequence of `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` that leaves `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` unreconciled with `the caller's own share of that reward token`, violates the invariant that approvals on a repeated settlement path must be idempotent, and delivers High - Permanent freezing of unclaimed yield?
+
+## Target
+- File/function: rewards/ManualCompound.sol -> `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)` (mechanism: safeApprove without reset on the convertor, locker and helper legs)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: every element of _lps and _rewards, plus _convertRatio, _minRec and _lockMgp, with no restriction on who calls
+- Exploit idea: each branch calls safeApprove(target, receivedBalance) with no prior zeroing, so a single under-consuming target permanently disables compounding for every user. Precondition: another user's multiclaimOnBehalf is pending in the mempool and will land in the same block.
+- Invariant to test: approvals on a repeated settlement path must be idempotent; concretely, `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` must stay reconciled with `the caller's own share of that reward token`.
+- Expected Immunefi impact: High - Permanent freezing of unclaimed yield
+- Fast validation: Two-account fork test (victim and attacker): establish another user's multiclaimOnBehalf is pending in the mempool and will land in the same block, have the attacker run `compound(address[] _lps, address[][] _rewards, uint256 _convertRatio, uint256 _minRec, bool _lockMgp)`, then assert the victim's claimable value and the `IERC20(rewards[i].tokenAddress).balanceOf(address(this))` versus `the caller's own share of that reward token` relation are unchanged by the attacker's transaction.

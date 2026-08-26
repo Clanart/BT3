@@ -1,0 +1,13 @@
+# Q5236: WombatStaking.withdraw - reward amounts measured by balance delta across the same fee loop
+
+## Question
+wombat/WombatStaking.sol - _toMasterWomAndSendReward() computes womRewards and every bonus amount as a balance delta around the MasterWombat call, while the fee loop inside _sendRewards moves those same tokens, so any token that is both a bonus reward and a fee currency is measured against a moving balance. Can an unprivileged attacker controlling _liquidity and _minAmount, forwarded verbatim from the helper's withdraw, under a large honest deposit is pending in the mempool for the same pool, exploit this through `withdraw(address,uint256,uint256,address) via a pool helper` to break the reconciliation between `IMintableERC20(poolInfo.receiptToken).totalSupply()` and `IMasterWombat(masterWombat) staked balance for poolInfo.pid` and the invariant that harvested reward measurement must be isolated from the fee movements that consume it, yielding High - Theft of unclaimed yield?
+
+## Target
+- File/function: wombat/WombatStaking.sol -> `withdraw(address,uint256,uint256,address) via a pool helper` (mechanism: reward amounts measured by balance delta across the same fee loop)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `withdraw(address,uint256,uint256,address) via a pool helper`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _liquidity and _minAmount, forwarded verbatim from the helper's withdraw
+- Exploit idea: _toMasterWomAndSendReward() computes womRewards and every bonus amount as a balance delta around the MasterWombat call, while the fee loop inside _sendRewards moves those same tokens, so any token that is both a bonus reward and a fee currency is measured against a moving balance. Precondition: a large honest deposit is pending in the mempool for the same pool.
+- Invariant to test: harvested reward measurement must be isolated from the fee movements that consume it; concretely, `IMintableERC20(poolInfo.receiptToken).totalSupply()` must stay reconciled with `IMasterWombat(masterWombat) staked balance for poolInfo.pid`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Foundry fork test against the deployed pool: set up a large honest deposit is pending in the mempool for the same pool, snapshot `IMintableERC20(poolInfo.receiptToken).totalSupply()` and `IMasterWombat(masterWombat) staked balance for poolInfo.pid`, run the attacker's `withdraw(address,uint256,uint256,address) via a pool helper` sequence, then assert the two still reconcile and the attacker's net token balance did not increase.

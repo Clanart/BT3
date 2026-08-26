@@ -1,0 +1,13 @@
+# Q5804: MasterMagpie.multiclaimFor - forced vlMGP lock of a victim's default-pool rewards
+
+## Question
+rewards/MasterMagpie.sol - in _multiClaim() the defaultPoolAmount branch calls _sendVlMGPFor(), which locks the MGP into vlMGP for _user instead of transferring it, and because multiclaimFor is permissionless an attacker can force a victim's liquid MGP rewards into a cooldown-bound vlMGP position. Can an unprivileged attacker controlling _account (any victim), the staking-token list and the per-pool reward-token lists, under the victim has a large unClaimedMgp balance that has not been settled for several epochs, exploit this through `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` to break the reconciliation between `mgpPerSec` and `IERC20(mgp).balanceOf(masterMagpie)` and the invariant that a third party must not be able to convert another user's liquid reward entitlement into a time-locked, penalty-bearing position, yielding High - Temporary freezing of funds for at least 24 hours?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: forced vlMGP lock of a victim's default-pool rewards)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: in _multiClaim() the defaultPoolAmount branch calls _sendVlMGPFor(), which locks the MGP into vlMGP for _user instead of transferring it, and because multiclaimFor is permissionless an attacker can force a victim's liquid MGP rewards into a cooldown-bound vlMGP position. Precondition: the victim has a large unClaimedMgp balance that has not been settled for several epochs.
+- Invariant to test: a third party must not be able to convert another user's liquid reward entitlement into a time-locked, penalty-bearing position; concretely, `mgpPerSec` must stay reconciled with `IERC20(mgp).balanceOf(masterMagpie)`.
+- Expected Immunefi impact: High - Temporary freezing of funds for at least 24 hours
+- Fast validation: Unit test with mocked Wombat and router legs: arrange the victim has a large unClaimedMgp balance that has not been settled for several epochs, call `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`, and assert `mgpPerSec` equals `IERC20(mgp).balanceOf(masterMagpie)` and that no account can withdraw more than it put in.

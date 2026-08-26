@@ -1,0 +1,13 @@
+# Q5882: MasterMagpie.multiclaimFor - forced claim of a victim through permissionless multiclaimFor
+
+## Question
+rewards/MasterMagpie.sol: multiclaimFor(_stakingTokens, _rewardTokens, _account) has no access control and no msg.sender == _account check, so any address can force a settlement on any victim at a timestamp of the attacker's choosing. With _account (any victim), the staking-token list and the per-pool reward-token lists under attacker control and the victim is mid-cooldown in VLMGP so getRewardablePercentWAD is still 1e18, can an unprivileged caller sequence `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` so that `mgpPerSec` and `IERC20(mgp).balanceOf(masterMagpie)` no longer reconcile, violating the invariant that only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state and realising High - Theft of unclaimed yield?
+
+## Target
+- File/function: rewards/MasterMagpie.sol -> `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)` (mechanism: forced claim of a victim through permissionless multiclaimFor)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: _account (any victim), the staking-token list and the per-pool reward-token lists
+- Exploit idea: multiclaimFor(_stakingTokens, _rewardTokens, _account) has no access control and no msg.sender == _account check, so any address can force a settlement on any victim at a timestamp of the attacker's choosing. Precondition: the victim is mid-cooldown in VLMGP so getRewardablePercentWAD is still 1e18.
+- Invariant to test: only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state; concretely, `mgpPerSec` must stay reconciled with `IERC20(mgp).balanceOf(masterMagpie)`.
+- Expected Immunefi impact: High - Theft of unclaimed yield
+- Fast validation: Invariant/fuzz run over `multiclaimFor(address[] _stakingTokens, address[][] _rewardTokens, address _account)`: constrain the setup so that the victim is mid-cooldown in VLMGP so getRewardablePercentWAD is still 1e18, fuzz the attacker inputs (_account (any victim), the staking-token list and the per-pool reward-token lists), and assert after every call that only the account itself, or a contract it authorized, may decide when its rewards are settled and at what forfeit/lock state.

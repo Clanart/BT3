@@ -1,0 +1,13 @@
+# Q3382: WombatBribeManager.castVotes - castVotes scales pool votes by a denominator that omits delegated votes
+
+## Question
+In wombat/WombatBribeManager.sol, castVotes() computes targetVote = pool.totalVoteInVlmgp * totalVotes() / totalVlMgpInVote, where the numerator includes delegated-pool votes and the denominator excludes them, so the requested veWOM allocation across pools does not sum to the veWOM actually held. Does `castVotes(bool swapForBnb)` let an unprivileged caller exploit that under the pool the attacker voted for has been deactivated so unvote reverts, so that `totalVlMgpInVote` diverges from `sum of userTotalVotedInVlmgp over all voters`, the invariant that the veWOM allocation requested across all pools must sum to at most the veWOM the protocol holds is broken, and the result is Critical - Governance voting result manipulation?
+
+## Target
+- File/function: wombat/WombatBribeManager.sol -> `castVotes(bool swapForBnb)` (mechanism: castVotes scales pool votes by a denominator that omits delegated votes)
+- Entrypoint: unprivileged EOA or attacker-deployed contract calling `castVotes(bool swapForBnb)`; no owner, poolManager, ankrOperator, rewardManager, compounder or ProxyAdmin role
+- Attacker controls: the exact block at which every pending vote is pushed to Wombat and every bribe is harvested, plus the caller fee destination
+- Exploit idea: castVotes() computes targetVote = pool.totalVoteInVlmgp * totalVotes() / totalVlMgpInVote, where the numerator includes delegated-pool votes and the denominator excludes them, so the requested veWOM allocation across pools does not sum to the veWOM actually held. Precondition: the pool the attacker voted for has been deactivated so unvote reverts.
+- Invariant to test: the veWOM allocation requested across all pools must sum to at most the veWOM the protocol holds; concretely, `totalVlMgpInVote` must stay reconciled with `sum of userTotalVotedInVlmgp over all voters`.
+- Expected Immunefi impact: Critical - Governance voting result manipulation
+- Fast validation: Invariant/fuzz run over `castVotes(bool swapForBnb)`: constrain the setup so that the pool the attacker voted for has been deactivated so unvote reverts, fuzz the attacker inputs (the exact block at which every pending vote is pushed to Wombat and every bribe is harvested, plus the caller fee destination), and assert after every call that the veWOM allocation requested across all pools must sum to at most the veWOM the protocol holds.
