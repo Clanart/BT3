@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0c74e97f-bcd0-484d-82b5-5b281e2511a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a3a50426-3c1e-4e45-8a3b-ceb087fb7097?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fee17f55-8e5c-46e2-9d0f-07cf3c81dd57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7654138e-2e38-4bec-b05b-5db9020a8d58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a9277e8e-9ba5-4f4a-ada3-bd3907afb8d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e7836492-05c2-4cee-9bc4-e04fc7f59c88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47a764c8-cb3d-454f-95ee-2d1be15f6e63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e01e9ad1-a0c3-41ab-be74-54b7879e76fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ab81f6e-58b4-409a-803d-6f2c761a79c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a14c0280-8a65-4df3-a996-91afa726ac21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b28272e5-1e14-4205-bcf2-b0284c44b667?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33880eda-08a5-41d9-96a9-d7c9f29fb7df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_396e35bb-eea9-4f28-988f-c9320aedc011?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_189e3caf-b077-4c56-b09d-cc7699079e50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_177af613-b2b5-4cc8-9a06-f2fd5cee8ef6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a63161de-e833-4c86-8e19-3be27b3aa613?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c77c1ead-23f9-4224-91b0-f2405a01d7aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_90ae7ebc-c40b-4c78-b349-ec40a3ec2832?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47debdba-6346-4b15-878b-dc31e67c52d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d76005c5-cc4d-4eda-8338-6db590b02961?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_37920f57-b3d7-4ed2-8a66-cbf7789f61b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60c8ba58-25dd-47e8-ae54-44c782f29843?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_14c6c44d-47d1-4dab-8dbf-a3663ce3bb14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e20bf40-7b1a-43bc-9520-1922892831ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_921cc95b-52e7-4ee5-9572-67b14266bcb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ae80471-24f7-4444-bd96-f08c5aede434?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_51b275e6-35b2-49f3-a4df-12e14651c1e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ff69e8b-30aa-4ddd-ba9b-030ccae616f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8443b383-9bc0-4ae8-a6e7-89a19a5a1a8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: High. An unprivileged account claims vesting MGP that should have been forfeited, or the forfeited share of other lockers, by exploiting vlMGPBaseRewarder or mWOMSVBaseRewarder calExpireForfeit, queueMGP, updateFor, or the rewardablePercentWAD used from VLMGP/mWomSV: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_24e54f02-7a33-4fa3-9669-0dc7ffe2c71e?mode=deep",
+    "questions_generated": false
+  }
+]
