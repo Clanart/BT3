@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c0e0f1b-e9e0-452e-9b92-feff70e6af61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38126fd0-6f7e-4f61-8fbb-7a35da8db396?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d2263938-b319-4182-a95c-335429324836?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10e7f7ab-e3de-4d59-831f-62f881e072dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af7a0807-11a9-4849-8052-e9250599f9d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_48b2fd64-0ad5-4397-87bb-bc4a90875b03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f1aed29e-bcb6-426a-a75a-fe0eac80a2e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2c48a9a6-3d03-4b6c-add4-aae3bed6781d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_607ee093-4b90-4e92-a33b-69a4e4743a08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b66b227-d43b-40c8-9c6f-5167708cb165?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c8ff0bc-92f4-4cf7-aec1-f7d8fe2a78a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e3d3681-0c1f-451d-988b-f2de18110ba6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb54deca-0264-4cac-a98d-9dede07be160?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5e713c9-3b79-4c9f-93e9-488d963b90bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b8509727-2e76-41e6-8bfa-c2069bf0c65b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fde76012-7d58-4a12-8ced-76ce5d55e7a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2ddd05c2-2ff3-4d40-bf9e-96522fbcd9cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4527bd12-d33f-4588-bd0a-2df39e939a00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e947b716-5b89-4a10-9bdb-48a4f6e85576?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f2df860-7c7d-42d1-9ab3-11d6d36f8ade?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e5230cbd-ba96-4f1f-a6dd-5d1998d1cfe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_03a2060a-94f4-44ad-90fa-fbd76e85e150?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b2d7275-7e94-4857-b331-e67fb5d95ecd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f3de4a14-c6d9-4ad8-b9e3-0f6985c07dc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8539b9c5-8f9d-45fa-868d-fb93d8de71a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc5fac7a-8d40-405d-99ba-b3a32e8a8631?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2dc3d17d-d321-4459-929b-8690e7922198?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77ea231e-366b-491a-a0af-8113e4169fcc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e872c071-d070-4433-a0ab-bf7c1b4d3037?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: Critical. An unprivileged wallet claims MGP or bonus rewards belonging to another staker by abusing MasterMagpie multiclaimFor, multiclaimOnBehalf, multiclaimSpec, or _multiClaim receiver/_rewardTokens handling, so rewards accrued to a victim are sent to the attacker: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f35b25d5-e563-4d4d-8c6e-4efed6960dfd?mode=deep",
+    "questions_generated": false
+  }
+]
