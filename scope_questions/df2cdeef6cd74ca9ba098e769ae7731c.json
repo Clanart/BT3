@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: libraries/DSMath.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bddd6c12-546f-4603-8311-5660ea195a93?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/LogExpMath.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7334c93-67b1-4d2d-a5a9-d3a7555e386c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/SignedSafeMath.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a0926575-4080-44e2-8a64-95567f835879?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/MintableERC20.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a8bc0543-99f5-4779-8411-4f8cb705181d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/ERC20FactoryLib.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c50a204e-93f0-4856-be3f-9b23995d5e32?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/PoolHelperFactoryLib.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87fabc91-fcab-40df-a41a-b33a2b04e08a?mode=deep",
+    "questions_generated": false
+  }
+]
