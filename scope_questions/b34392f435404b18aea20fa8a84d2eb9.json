@@ -28,5 +28,35 @@
     "question": "'File Name: libraries/PoolHelperFactoryLib.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
     "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09c5f57c-8a54-4463-a1bd-7f9fd6d5e5d2?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/DSMath.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b44b668-fb70-447c-b738-4fcdc3d0b72f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/LogExpMath.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_626a3e70-0571-4225-8ddd-4856f41b69e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/SignedSafeMath.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71128427-7e6c-4e40-a1d2-296662ca5000?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/MintableERC20.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8e2d91b7-7371-4a77-a0f6-6e7833ddb717?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/ERC20FactoryLib.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_270db6c5-9ad3-4e51-abd3-1795409928fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: libraries/PoolHelperFactoryLib.sol -> Scope: Critical. An unprivileged user mints mWOM that is not backed by WOM locked into veWOM, or withdraws the WOM backing, via mWOM convert/convertAndStake/deposit, WombatStaking convertWOM/convertAllWom, or SmartWomConvert convert/smartConvert ratio, mode, and _minRec handling: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42997eba-5e34-4c43-b2fa-0f63f90fb38d?mode=deep",
+    "questions_generated": false
   }
 ]
