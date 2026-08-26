@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_19d1e915-d316-49c1-8c6a-e6864fff9438?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93c3bb11-bf7b-4ba8-9b2a-b39e9c18ac48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f83f311f-84d0-493f-a744-67da6b098763?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_252ad2dd-2424-413c-b77e-41d5ce5570b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f32eb30-7780-4bbf-8333-542e070bca8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f35996e-caba-4d1a-be82-9212a49cffa6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1e30d9c-1b35-48be-b166-8f1cf58d3416?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_46452e91-9db0-46b5-8e9e-9c6b17a066d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3cf637e5-4165-417a-8ce9-77f94a8f26f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_30c38836-2a80-48d0-a260-bfbc73572bb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_27dcf53c-92be-459d-84d3-b177750af118?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5f7f246-ebac-44df-8070-d426821d58f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce55f857-5a9f-4ce8-8dc7-c147919b6321?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5c200be-6355-4213-bb47-e1f83a1153f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c950aebf-abb6-454a-8cf6-bd3e29dbc321?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5179b696-21b8-44c9-9c80-8faa91669fa0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56526847-20a2-4eac-847a-d5d672692a97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b1d3dda-deff-40b0-8c3d-10a96a1d5425?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_517478ba-3675-4c6c-a563-c370fce902dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc6c8cfb-4130-4ca2-98d9-5e5556624e03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e370980-b68c-4a53-969b-f84c29b91a7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1cc4715a-09e7-44d1-8ab2-c7475906ac53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d7e0fc6-f134-40ec-bfcc-4976a0d8248c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_57f06248-c292-4609-9d6d-5c69e72489f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d0fbd15a-dd31-45b4-8eb5-14033201023c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8691703b-eb1c-418a-a764-dda12fb31502?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e0671d4-0810-4c3b-ace5-e5967babc5b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_975a4bbb-2dcb-48f8-9aba-1c4fbdc35802?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e7237a76-9900-471f-a533-2325cdf2e7f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: Critical. An unprivileged voter manipulates the Wombat gauge outcome through WombatBribeManager vote, unvote, castVotes, getUserVotable, or usedVote so votes exceed the vlMGP weight they actually own, are counted twice, or wipe another voter's allocation: governance voting result manipulation.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_58bb891b-c4d4-4948-b10f-c1e5c84b57b7?mode=deep",
+    "questions_generated": false
+  }
+]
