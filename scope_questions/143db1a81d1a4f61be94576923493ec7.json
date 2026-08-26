@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bab99026-fda6-492e-aa2f-ff7d2f71261f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8acb794b-74da-4d59-8db2-0f43fb5f1ebf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aa518934-350f-4d7e-a154-6b7636cbe7f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_54514c8c-1cf1-46bc-9e66-17f03a27214a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89dd4a53-7e12-4cf9-8255-c82c82a69142?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2d536cc0-04d6-4778-ba33-b266f090ec63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b34f8292-65b2-4162-83a9-75be64f6e32a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a03ab2d-eba2-4fff-8081-98ae5715a56a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c546f8ca-1b5b-479f-8a73-3a08340dfbd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_59979192-5ce8-405a-b904-26c664bcabea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dee79083-b85e-4491-9577-afa767c0d258?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a9c93b1-848c-4fbd-8a04-5bab87600dbc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1fffb294-0686-4ad0-80d8-34a4a42f5ec7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73e099ce-6d91-4f37-aa8c-b69c142b2893?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_048841fb-a828-4bb5-b39d-a1e3648763a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7a4432b0-c4de-47f6-b901-e3574d9ef887?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6b7b54e-10cf-4044-b477-3ae02cd777d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f0efe8e4-67d7-4287-87e6-2bcd6870ae84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f297b1d-e9b6-4c1f-9b6c-a627899f5ff6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d628ff71-2bcc-4390-bc75-1c9d999e876a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9f84d9bf-b082-4dd8-9dd4-23bb9f6c564f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f6e86065-4ea6-4fcc-9a2b-bbe7829ae212?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3fc26e7c-09e9-4424-a52f-bb9ad964bc34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d559e26e-2324-42f6-8267-a1222b5abfeb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c005c0e-3302-4f36-97ae-02db6ba4aa1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47ae4487-f35d-46a6-b4f2-84120af06471?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_57f3e254-8f6f-4cc3-8a67-5dca79ef931d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_210273d3-514f-4366-948d-50985a7896df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4948d39f-a118-4f4d-839d-c033d8a7b9fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: Critical. An unprivileged claimer takes tokens allocated to someone else or claims more than their allocation through Airdrop claim/updateEndRemainingAllocation, Airdrop2 or ArbitrumMWomAirdrop verifyProof/getClaimable/claimed accounting, MGPRelease claim, or TokenVesting release/vestedAmount: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cea135de-9366-4957-a5eb-1b61227ddd2a?mode=deep",
+    "questions_generated": false
+  }
+]
