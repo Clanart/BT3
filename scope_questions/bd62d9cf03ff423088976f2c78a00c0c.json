@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed4c903d-4b8b-414a-bc10-1dc47278dc2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_438757cd-558f-4c13-b4d0-b4fbec4bb273?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5edc1f11-c506-46e8-8504-2e476a679b86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b4ce70f0-0383-49a5-9582-3aca2c33ec4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_833f5f44-fea9-429f-9723-a17a7d59ac37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f77acea-73d3-4f41-8a6c-cd09a9a0944a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9dcd738-a39b-441c-8e1e-608910ca39c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67895287-c8b8-4422-882c-c7d73dc50076?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d708d3f2-78ed-4a67-b29e-0ff1568054ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b5907e0-e4a9-4b1c-b214-f3fc55abb444?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8abdf78a-0b9e-4bb0-89df-c0633215a16b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_724554d0-ed18-4848-840d-766adac0fd23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e6880d3-e619-44e6-879d-1a21b5bf4de8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71279e84-1874-4cb9-a33f-24284439103d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_02d6b587-8d54-4c2a-9236-7e25a494a967?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8ba689c-be41-4e09-b339-d69f0058ce8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_826b3d89-7047-416f-abf4-004cedddac9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c236f2ef-9eee-43c6-993b-36c9bce18b43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61bb77ff-129c-423c-81ad-d6bdea9445fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63dfb48c-2f6c-4a85-9076-4f861c4ab10a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f9142e95-e876-42b5-8082-b3ebfd3629d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4d23777-f287-4c72-bda9-56c1e726d32c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f55b0b40-f4e5-427d-b19f-ef1e4c9dc1e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b2e1e0db-db3c-4eca-aca6-d11a4560cc04?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_07e63045-8572-456d-ab1f-2d899c31041b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_451136a2-25e3-43b0-ba77-644abf692109?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_21519201-b0de-46d0-8d18-b589340c32cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c36822e-5b7b-4887-876d-d854fca0f026?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_003d7c98-1a8d-4dbf-8a69-d03fbb32aa2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: High. An unprivileged caller redirects bribe rewards or the harvest caller fee owed to voters through WombatBribeManager harvestSinglePool, claimBribe, claimBribeFor, castVotesAndClaimBribes, or DelegateVoteRewardPool harvestAll: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0284e25c-df29-4b35-95b0-d57bee4781e9?mode=deep",
+    "questions_generated": false
+  }
+]
