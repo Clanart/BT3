@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: rewards/MasterMagpie.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b92eae19-98b7-4f57-861c-cb5727aa97da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPool.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_998874d6-a064-4289-8dd2-402deba1f751?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BaseRewardPoolV2.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f4574dd-a658-4b4c-aab2-b4d5b545850e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BribeRewardPool.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3fe47b94-5fa4-4c0b-a961-d4d387707f4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/DelegateVoteRewardPool.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_327b22ce-93f4-4aea-a980-0149bd0f194b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: VLMGP.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3271bf17-a368-46f5-b30b-a7fe9fa0d4be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWomSV.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3390ce9-69e2-4270-9228-e5e2983c49f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/vlMGPBaseRewarder.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ec23b124-c7df-4262-9bcc-d70219d11719?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/mWOMSVBaseRewarder.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5fceda12-6d5a-40b9-b7bb-bc156fd697fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatStaking.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b4c25be-a964-4f5c-9c39-a8df531e4b7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/mWOM.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_669f7623-ed65-4f4b-8dd7-3bbfce2732dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SmartWomConvert.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9de8b6a3-db1c-4a73-b284-1077c67e3d1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelper.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7342ac0b-0987-4b20-8ce4-146dfb6289d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatPoolHelperV2.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dcfe8d93-bc76-408e-9b86-f7a0e31f168f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/AnkrBNBPoolHelper.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04bcdd68-17bf-4ea3-a14e-fc7a235588e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/SimplePoolHelper.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82b22e12-7552-4bd3-8590-409cf02ac129?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ManualCompound.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82fd0c07-4226-4df3-ad11-c8442392dc7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/BNBZapper.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73c1e50a-d5bd-450f-a4f5-abc90beee86c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WombatBribeManager.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b804e690-a989-43bc-83c1-bd26b3d2610f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_efcfbd0a-99f6-4a3e-9d76-8c5f8693e778?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/Airdrop2.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c46aff7f-89a5-406b-bfcc-89d32c5ba000?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ArbitrumMWomAirdrop.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0b62aa6-3f1e-45c3-a20c-e84b2a59b1af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/TokenVesting.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9e14500c-d67b-473b-ae6b-bc57cedbad03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/MGPRelease.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e5b42390-df5b-4499-a2ca-2417d61a8b2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rewards/ReferralStorage.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1997420-e215-40c1-8a3b-fcf23c86e784?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/WomUp.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_355fe07d-8ae0-44c4-bd5b-533379d25196?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82726dbe-c6a4-4296-8341-d666f6093815?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp2.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_785b756e-d08c-49e8-8200-e6c8caf35624?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: wombat/ArbWomUp3.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_947a31e8-fdce-470f-befd-bbc9a112e3b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: Mgp.sol -> Scope: Critical. An unprivileged staker drains a BaseRewardPool, BaseRewardPoolV2, or BribeRewardPool beyond their earned share by manipulating queueNewRewards, donateRewards, updateFor, or the rewardPerToken/userRewardPerTokenPaid index with same-block stake-claim-unstake, dust totalStaked, or a rounding edge: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67aeb149-cb48-4d29-8db2-1728605c9ff8?mode=deep",
+    "questions_generated": false
+  }
+]
