@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_1cebe958-d5db-4051-8d75-a46f5a17aa21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_fe62741f-c70c-4d86-9179-ca51a13d0189?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_686973ee-7008-4f95-9e94-6c2fe71e7323?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_dbd8baf6-20ea-4cad-8257-3cc186379e43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_9ec8dc84-18a9-498c-90d0-04b003b8a211?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_71782aa6-617e-4bf2-b13b-6b61dff88d4e?mode=deep",
+    "questions_generated": false
+  }
+]
