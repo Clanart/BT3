@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_a91ba443-5326-4f68-afbf-12f63eca8289?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_153cd376-31d6-4ae2-9707-534cc1fc1dfe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_ba139597-ba5e-4eb5-a913-e95fd09b2590?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_d960cc19-afa0-4a78-bb01-e8445b67a806?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_50e01750-fab4-4c08-9fbe-1d9668e78574?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_cad83b39-5d7e-4833-b413-9775a1d11714?mode=deep",
+    "questions_generated": false
+  }
+]
