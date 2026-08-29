@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_429b296b-e5bb-4ad3-b36e-9495fc5ea629?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_1e89fe55-44d3-4259-ac9d-6e5540919ae4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_3bf99381-1df0-4e9a-ad00-6a2b7c80b8dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_3e0850a7-3ddb-4291-a0e8-c7c53cf0facd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_ebfec151-f30a-4192-9077-b313a484e5a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_923438a7-bef0-4215-b7c7-8748e0f9f3df?mode=deep",
+    "questions_generated": false
+  }
+]
