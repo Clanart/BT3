@@ -1,0 +1,13 @@
+# Q1004: collateral-add via supply-collateral-add: judge a position against an LTV belonging to a different a
+
+## Question
+Does `supply-collateral-add` (mainnet/contracts/market/v0-4-market.clar:1175) let an unprivileged attacker who controls the position state the final collateral-add is validated against reach `collateral-add` (mainnet/contracts/market/v0-market-vault.clar:374) in a state where it judge a position against an LTV belonging to a different asset set? Given that it evaluates the map write and `mask-update` as `let` bindings BEFORE `check-impl-auth`, the pause state and the amount assertion, the invariant that the LTV a position is judged against belongs to the exact asset set it will hold after the call breaks and the result is protocol insolvency through uncollateralised debt.
+
+## Target
+- File/function: `mainnet/contracts/market/v0-market-vault.clar:374` -> `collateral-add`
+- Entrypoint: `supply-collateral-add` (`mainnet/contracts/market/v0-4-market.clar:1175`), unprivileged and publicly callable
+- Attacker controls: the position state the final collateral-add is validated against
+- Exploit idea: `collateral-add` evaluates the map write and `mask-update` as `let` bindings BEFORE `check-impl-auth`, the pause state and the amount assertion. Reach it through `supply-collateral-add` and judge a position against an LTV belonging to a different asset set.
+- Invariant to test: the LTV a position is judged against belongs to the exact asset set it will hold after the call
+- Expected Immunefi impact: Critical - protocol insolvency through uncollateralised debt
+- Fast validation: Write a Clarinet simnet test calling `supply-collateral-add` twice with the position state the final collateral-add is validated against varied, and assert that the value `collateral-add` returns is identical in both runs; a divergence confirms the finding.

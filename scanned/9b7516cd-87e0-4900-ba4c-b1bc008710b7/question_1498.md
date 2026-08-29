@@ -1,0 +1,13 @@
+# Q1498: accrue-collateral-asset via collateral-add: make a required price path abort so the position can no lo
+
+## Question
+Entering through `collateral-add` (mainnet/contracts/market/v0-4-market.clar:1020) while controlling whether this asset is already collateral (the is-new-collateral branch), can an unprivileged attacker make `accrue-collateral-asset` (mainnet/contracts/market/v0-4-market.clar:273) make a required price path abort so the position can no longer be closed or seized? `accrue-collateral-asset` maps a ztoken id to a vault id through a chain of `is-eq` tests that falls through to the u100 sentinel, so the invariant that the LTV a position is judged against belongs to the exact asset set it will hold after the call would fail, yielding direct theft of another user's collateral.
+
+## Target
+- File/function: `mainnet/contracts/market/v0-4-market.clar:273` -> `accrue-collateral-asset`
+- Entrypoint: `collateral-add` (`mainnet/contracts/market/v0-4-market.clar:1020`), unprivileged and publicly callable
+- Attacker controls: whether this asset is already collateral (the is-new-collateral branch)
+- Exploit idea: `accrue-collateral-asset` maps a ztoken id to a vault id through a chain of `is-eq` tests that falls through to the u100 sentinel. Reach it through `collateral-add` and make a required price path abort so the position can no longer be closed or seized.
+- Invariant to test: the LTV a position is judged against belongs to the exact asset set it will hold after the call
+- Expected Immunefi impact: Critical - direct theft of another user's collateral
+- Fast validation: Set up the position in simnet, call `collateral-add` with whether this asset is already collateral (the is-new-collateral branch), and assert on the printed event plus the post-state that collateral, debt and share totals still reconcile.
