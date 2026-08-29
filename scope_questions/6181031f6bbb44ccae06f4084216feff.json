@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_734ec45b-0e2f-40be-ac7b-2f47cfa7f9d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_671eab67-a742-45f5-b27d-1430f63ad97c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_c476da74-bf49-4e77-b4c7-8c7bc557153c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_614892b9-3eb8-4738-8b31-e0969d91f6a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_1855f44f-3aa4-4cbd-886f-de149b667cea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_0a9b1be7-af6f-4463-a48f-80e432384b52?mode=deep",
+    "questions_generated": false
+  }
+]
