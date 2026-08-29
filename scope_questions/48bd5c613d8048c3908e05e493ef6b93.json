@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_c457bee1-5600-4f18-badc-c03425849aa9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_6b074384-8610-48be-9d7b-c25a904bd7c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_2f586da8-5663-47b6-96e3-eb0aeaf7514a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_46332ff2-96b9-4cff-8afe-64aea261f24c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_4f14890e-7085-45e2-933c-625baac44f66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_36af3836-93b0-4fca-8277-66f1d517e919?mode=deep",
+    "questions_generated": false
+  }
+]
