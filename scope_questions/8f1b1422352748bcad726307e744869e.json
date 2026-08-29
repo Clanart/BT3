@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_5d0e6c8c-eacc-43bd-8249-b7f500324b17?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_36e8466e-d054-4b19-960a-99c80e2e300d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_ff20eb51-33bb-40c9-9f05-2c344e5dd1bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_7cef7cf9-a242-4926-a055-0dbe21e20965?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_31d88d6d-9475-40e5-8d43-9f0ca116f7ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_897f2082-70e6-4cdc-a60b-55f148d82836?mode=deep",
+    "questions_generated": false
+  }
+]
