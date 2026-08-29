@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_819df857-e91f-4f24-bbb6-5d3a01c179ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_3ada5044-990f-4535-8e71-86d025b64ec1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_47c1dc5d-e39d-492f-a2bc-1644b0b631f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_e7e90d94-16b9-4b2c-b953-251f7535aef9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_b79ccb8e-9b93-42c3-b41d-69557fa751a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_3f3b083a-2f7b-445e-898e-24931ce81ef8?mode=deep",
+    "questions_generated": false
+  }
+]
