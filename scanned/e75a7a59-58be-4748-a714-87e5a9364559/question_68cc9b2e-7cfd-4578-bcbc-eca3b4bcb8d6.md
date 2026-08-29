@@ -1,1 +1,0 @@
-[File: mainnet/contracts/market/v0-4-market.clar] [Function: accrue-collateral-asset, is-ztoken] Does `accrue-collateral-asset` map a ztoken `aid` to its underlying `vault-id` via a hardcoded `if`-chain (`zSTX->STX`, `zsBTC->sBTC`, ...) that falls through to `u100`
