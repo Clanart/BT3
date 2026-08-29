@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_586e22fa-3b84-446f-a38c-46f4c6cdfbc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_cade8115-818a-4969-89f0-46cd0b1c72c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_49caaa59-e9ee-4c41-93be-fc825e73327e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_afaf5faa-ea35-4d66-895c-9a6867a49255?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_9962fa53-ed8e-44e4-916b-bdca21199a83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_710726f1-a669-48bc-b9b4-6beb99d64ccb?mode=deep",
+    "questions_generated": false
+  }
+]
