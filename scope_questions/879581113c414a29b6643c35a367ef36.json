@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_68d60309-6f4d-44fc-b2cc-1128401b925b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_b1e51db5-7894-46e0-9c56-b8ab82233cc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_ceb235a9-f484-40eb-bb4a-8346431518a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_8abe0d9d-aca0-4839-b92e-9fcf1fc925a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_949fa037-d3a1-4518-8cbf-dee93b7bff67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_cc0e7955-6468-4487-b342-3e9b22fca8ff?mode=deep",
+    "questions_generated": false
+  }
+]
