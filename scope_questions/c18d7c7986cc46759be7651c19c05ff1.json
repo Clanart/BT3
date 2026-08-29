@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_8326a68f-90b5-49bb-8d66-c1888c4d50c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_f3117f05-bf0e-4e14-8bf9-e5cb2f93f69f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_6e5f236e-c047-4015-87b2-2a2d7b7e8a95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_edafdc0f-388a-4bce-a5e8-39a1c62894c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_0c9a8d49-22b4-4a7d-b749-8421673606e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_5d86f523-1085-4469-9eaf-9fde22686d8e?mode=deep",
+    "questions_generated": false
+  }
+]
