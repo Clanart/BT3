@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_aa771dec-9b0c-4945-b584-f14b334de9b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_dea6be0b-ad42-4a00-b4f1-4cf426ea8040?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_5f5c5fa8-1705-46e5-8c6a-8934521e1f13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_943c3fa6-9be9-47c0-8530-fa8a71e40a0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_149dfe58-f026-4918-86b6-47cf469d9221?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_210a2e40-3d5c-48a3-a68b-6f6dfd71bb25?mode=deep",
+    "questions_generated": false
+  }
+]
