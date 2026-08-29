@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_700fe38d-9993-4b48-9887-3bf8a8d17005?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_1d8a5955-e89a-40db-b908-36a553ffad92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-egroup.clar -> Scope: High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_a993cacb-781f-492e-97c4-4f736229837a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_194595b1-3785-4fff-8d00-9e42e42d4456?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-ststx.clar -> Scope: High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_e21d835b-98c8-49c4-b739-d9a5d3dc3cee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-sbtc.clar -> Scope: High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-pricing-and-healthve_1c25443b-0db6-4a99-a580-5018477b962c?mode=deep",
+    "questions_generated": false
+  }
+]
