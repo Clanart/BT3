@@ -1,1 +1,0 @@
-once queued. Proof idea: cargo test under core/src/test building two payout txhandlers from the same user_sig with differing output_txout values and asserting insert_try_to_send queues the second without any amount/script comparison against WithdrawParams.
