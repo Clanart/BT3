@@ -1,1 +1,0 @@
-) is accepted with a valid proof. Proof idea: cargo test computing `deposit_constant` for two payout txs differing only in output value/destination and asserting the resulting `DepositConstant` bytes are equal.
