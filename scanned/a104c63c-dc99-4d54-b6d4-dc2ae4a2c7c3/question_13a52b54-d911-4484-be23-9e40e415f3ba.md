@@ -1,0 +1,1 @@
+claim be accepted. Proof idea: cargo test calling journal_hash()/deposit_constant() with two BridgeCircuitInput variants differing only in payout tx output value, asserting equal journal_hash despite different fronted amounts.
