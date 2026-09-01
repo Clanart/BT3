@@ -1,0 +1,1 @@
+[File: core/src/task/tx_sender.rs -> Scope: High] Target: `ClementineAggregator/InternalGetEmergencyStopTx`, an `Internal`-prefixed method whose only real gate under `OnlyAggregatorAndSelf` is `is_internal` (core/src/rpc/interceptors.rs: `path.as_bytes().starts_with(b

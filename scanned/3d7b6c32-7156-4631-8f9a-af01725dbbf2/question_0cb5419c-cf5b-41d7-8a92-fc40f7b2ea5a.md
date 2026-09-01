@@ -1,0 +1,1 @@
+== the actual BTC value fronted to the withdrawer. Impact: Critical — SLASHING TRUTH breaks in the opposite direction: an operator who paid nothing cannot be challenged/disproven because the circuit's own truth predicate doesn't encode the fact being violated, so a true claim of

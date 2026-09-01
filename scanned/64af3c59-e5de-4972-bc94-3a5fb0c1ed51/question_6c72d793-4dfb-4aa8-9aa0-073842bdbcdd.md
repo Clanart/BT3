@@ -1,0 +1,1 @@
+, breaking PROOF SOUNDNESS: challenge_sending_watchtowers_bit_i == watchtower_i_actually_produced_a_verified_valid_proof? Proof idea: circuits-lib test with two watchtower inputs at swapped indices where one has a valid signature but invalid/omitted proof and assert the bit for the unproven index is still incorrectly set.

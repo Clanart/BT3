@@ -1,0 +1,1 @@
+is unprovable. Proof idea: cargo test asserting `verify_additional_disprove_conditions`/`verify_disprove_conditions` in core/src/verifier.rs never return `Some(witness)` for a payout tx with correct txid/vout linkage but wrong output value.]
