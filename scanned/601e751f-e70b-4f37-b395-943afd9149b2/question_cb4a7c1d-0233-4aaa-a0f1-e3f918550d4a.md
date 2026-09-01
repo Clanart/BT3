@@ -1,1 +1,0 @@
-an attacker-controlled watchtower key gets a live WatchtowerChallenge slot on every kickoff for this deposit, letting them force `verify_watchtower_challenges` bitmap entries without ever being a real observer (High, unauthenticated state influence)

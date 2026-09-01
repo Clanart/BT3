@@ -1,1 +1,0 @@
-MAX_EXTRA_WATCHTOWERS and MAX_NUMBER_OF_WATCHTOWERS as compiled into the config

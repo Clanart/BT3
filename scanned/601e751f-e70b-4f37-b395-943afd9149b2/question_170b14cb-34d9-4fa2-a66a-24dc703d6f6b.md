@@ -1,1 +1,0 @@
-the set of watchtowers whose ChallengeAckHash Winternitz commitments the operator must produce == the set of watchtowers the aggregator/verifiers actually intend to allow to challenge (SLASHING TRUTH)
