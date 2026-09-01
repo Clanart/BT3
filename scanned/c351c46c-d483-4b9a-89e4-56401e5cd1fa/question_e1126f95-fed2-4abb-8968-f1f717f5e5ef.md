@@ -1,0 +1,1 @@
+claims accepted, enabling operator reimbursement without funding the withdrawer. Proof idea: cargo test that varies ONLY the withdrawer-facing output value across otherwise-identical `BridgeCircuitInput`s and shows `bridge_circuit` outcome (panic vs success) is value-independent.
