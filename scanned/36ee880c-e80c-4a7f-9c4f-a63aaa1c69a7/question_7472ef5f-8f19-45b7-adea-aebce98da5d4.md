@@ -1,0 +1,1 @@
+confirms mutation between deposit_sign and deposit_finalize for the same outpoint is rejected by the equality check, establishing the control that prevents a shifted nofn_xonly_pk or altered actor set from silently swapping mid-protocol (Critical baseline, MINT AUTHORITY)

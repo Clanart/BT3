@@ -1,0 +1,1 @@
+the first call's `insert_deposit_data_if_not_exists` inserting a row for the outpoint, and the second call re-deriving a different move_to_vault_txid then comparing `existing_deposit_data != *deposit_data`

@@ -1,0 +1,1 @@
+funds a deposit output in a block at exactly `start_height - 1` and immediately submits `NewDeposit`, then, if rejected, re-submits after mining one more block without changing deposit_outpoint but banking on the check being evaluated against a stale/cached chain tip

@@ -1,0 +1,1 @@
+the security_council script_pubkey embedded in the deposit's taproot address == the security_council script_pubkey the config's security council can actually satisfy with its known signature order (CUSTODY)

@@ -1,0 +1,1 @@
+cargo test: fire two concurrent new_deposit calls at the same funded outpoint with different Actors orderings within one aggregator, assert only one succeeds and the loser gets a clean error rather than a stuck signing session

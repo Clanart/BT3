@@ -1,0 +1,1 @@
+cargo test: fund a two-output tx with duplicate scriptpubkey/value, submit both outpoints as separate deposits, assert both succeed independently and produce two distinct, correctly-value-matched MoveToVault txids with no double-count of a single output

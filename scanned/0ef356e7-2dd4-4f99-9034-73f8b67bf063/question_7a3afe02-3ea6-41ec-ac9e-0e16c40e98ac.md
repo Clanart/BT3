@@ -1,0 +1,1 @@
+after a legitimate `EmergencyStop` transaction has swept a vault's `UtxoVout::DepositInMove` output to the security council address (per `create_emergency_stop_txhandler`), funds a *new*, unrelated self-funded outpoint at the plain `Multisig::from_security_council` scriptpubkey the emergency-stop output landed at, then submits it as a fresh `BaseDeposit` claiming that outpoint

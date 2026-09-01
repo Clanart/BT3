@@ -1,0 +1,1 @@
+is_deposit_valid / send_move_to_vault_tx scriptpubkey binding

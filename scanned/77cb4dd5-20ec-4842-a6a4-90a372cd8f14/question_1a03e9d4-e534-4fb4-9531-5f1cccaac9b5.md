@@ -1,0 +1,1 @@
+send_move_to_vault_tx checking `movetx.output[0].value == bridge_amount` and the destination scriptpubkey against the *current* config's nofn/security_council, then calling `insert_try_to_send` without re-verifying which DepositData's presigned signature actually authorized this exact raw tx

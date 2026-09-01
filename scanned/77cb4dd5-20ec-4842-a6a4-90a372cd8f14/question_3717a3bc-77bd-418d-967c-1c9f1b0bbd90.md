@@ -1,0 +1,1 @@
+is_deposit_valid calling `self.rpc.get_tx_of_txid(&deposit_txid)` and reading `deposit_tx.output[vout]` directly from the *original* transaction rather than checking current UTXO-set spent status, so a spent output still passes the value/script/height checks

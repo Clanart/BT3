@@ -1,0 +1,1 @@
+funds a base-deposit taproot address, waits for start_height confirmations, then before requesting new_deposit, spends the deposit output themselves back into their own wallet using the `TimelockScript` recovery path (after `user_takes_after` blocks), and only then submits `NewDeposit` for the now-already-spent outpoint

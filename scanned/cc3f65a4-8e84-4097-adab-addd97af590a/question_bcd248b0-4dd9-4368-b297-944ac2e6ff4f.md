@@ -1,0 +1,1 @@
+constructs old_move_txid equal to a real MoveToVault txid that is still unconfirmed / not yet security-council-spent, and funds the replacement-deposit address for it before the original vault has actually moved

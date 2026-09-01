@@ -1,0 +1,1 @@
+cargo test: for an arbitrary old_move_txid not backed by any real security-council spend, fund generate_replacement_deposit_address(old_move_txid, real_nofn_xonly_pk, network, real_security_council) directly, call new_deposit, assert deposit_finalize currently succeeds (demonstrating the missing on-chain spend-linkage check) or is rejected once fixed

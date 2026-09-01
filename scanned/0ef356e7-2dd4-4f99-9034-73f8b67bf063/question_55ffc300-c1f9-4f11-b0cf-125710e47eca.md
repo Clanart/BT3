@@ -1,0 +1,1 @@
+if the attacker can get bridge_amount coins to land exactly at the post-emergency-stop security-council address (e.g. by being a security council member spending swept funds forward, which is out of scope) this is not attacker-exploitable without a security-council key; documented as a closed/non-finding given the security council key requirement

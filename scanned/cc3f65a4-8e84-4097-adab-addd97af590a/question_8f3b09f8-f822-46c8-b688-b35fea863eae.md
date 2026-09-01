@@ -1,0 +1,1 @@
+cargo test: run_single_replacement_deposit once for old_move_txid, then attempt a second run_single_replacement_deposit with the same old_move_txid and a new self-funded outpoint, assert the aggregator/verifier rejects the second one

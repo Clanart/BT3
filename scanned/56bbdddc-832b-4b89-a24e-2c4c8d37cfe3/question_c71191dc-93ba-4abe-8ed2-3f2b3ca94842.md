@@ -1,0 +1,1 @@
+is_deposit_valid deposit_txout script/value binding

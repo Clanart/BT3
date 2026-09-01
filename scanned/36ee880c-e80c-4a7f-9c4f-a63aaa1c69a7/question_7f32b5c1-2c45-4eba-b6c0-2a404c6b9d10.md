@@ -1,0 +1,1 @@
+submits `Actors.verifiers` containing the same public key twice using two different serialization encodings that both parse to the identical `secp256k1::PublicKey` value (e.g. compressed vs redundant-but-valid encoding), attempting to defeat `are_all_verifiers_unique`'s `HashSet` dedup

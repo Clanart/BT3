@@ -1,0 +1,1 @@
+if any caching of block height across calls let a pre-start_height deposit slip through after being re-submitted without rechecking, an out-of-policy deposit would be presigned (Critical, MINT AUTHORITY breach if caching bug exists)

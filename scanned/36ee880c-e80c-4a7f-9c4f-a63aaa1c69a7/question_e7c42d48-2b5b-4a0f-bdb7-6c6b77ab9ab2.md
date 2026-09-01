@@ -1,0 +1,1 @@
+cargo test: call deposit_sign with watchtowers=[A,B], then deposit_finalize on the same outpoint with watchtowers=[A,C], assert BridgeError::DepositDataMismatch is returned and no MoveToVault signature is produced
