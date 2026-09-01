@@ -1,1 +1,0 @@
-submits `Actors.operators` in `DepositParams` listing only a subset of operators that still hold usable collateral, deliberately omitting one live operator so that operator is excluded from `get_num_challenge_ack_hashes`/`get_num_required_operator_sigs` for this deposit
