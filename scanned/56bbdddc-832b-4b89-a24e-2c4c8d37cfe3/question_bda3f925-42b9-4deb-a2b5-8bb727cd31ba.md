@@ -1,1 +1,0 @@
-cargo test: assert create_taproot_address is injective over distinct (evm_address, recovery_taproot_address, user_takes_after) tuples for a sample set, documenting no collision path exists in this repo's own code
