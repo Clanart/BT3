@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'Zest-Protocol/zest-v2-contracts'
+SOURCE_REPO = 'chainwayxyz/clementine'
 # todo: the name of the repository
-REPO_NAME = 'zest-v2-contracts'
+REPO_NAME = 'clementine'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -48,98 +48,188 @@ else:
 
 scope_files = [
     # =================================================================================
-    # LENS: PRICE, RISK PARAMETERS AND THE HEALTH VERDICT.
-    #
-    # One number decides everything in this protocol: the USD value of a position. This
-    # variant audits only the pipeline that produces it and the comparison that consumes
-    # it - raw feed -> `normalize-pyth` or DIA -> confidence and staleness gates ->
-    # callcode transform -> `normalize` by per-asset decimals -> notional totals ->
-    # `is-healthy` against an efficiency-group LTV -> the liquidation thresholds. Nothing
-    # about custody, nothing about accounting; if a question does not end at a price or a
-    # health verdict, it belongs to another variant.
-    #
-    # PROGRAM BOUNDARIES: incorrect data supplied by a third-party oracle is OUT OF SCOPE -
-    # the defect must be in how THIS code consumes, transforms, gates or compares the
-    # value. Oracle manipulation caused by a bug here remains in scope. The registries are
-    # in scope only for their read paths; assume the DAO configured them correctly.
-    # Flashloan logic and liquidation of disabled collateral are out of scope entirely.
+    # LENS: FROM A USER-SHAPED BYTE TO 10 BTC LEAVING THE N-OF-N VAULT.
+    # Clementine is a BitVM2 two-way peg. Everything it does is decided by bytes an
+    # ordinary user chooses: a deposit output they fund on Bitcoin, a `withdraw` call and
+    # a withdrawal UTXO they register in the Citrea Bridge contract, a Schnorr signature
+    # they hand to operators, an OP_RETURN / witness / annex they put in a Bitcoin tx,
+    # and a request they send to the public aggregator gRPC port. Those bytes end in
+    # three places: an N-of-N presigned move-to-vault UTXO, a Reimburse tx that pays an
+    # operator 10 BTC out of that vault, and a bridge-circuit `journal_hash` that decides
+    # whether an operator's collateral is burned. Every file below sits on the path
+    # between one of those inputs and one of those outcomes. A file belongs here only if
+    # a custody, attribution or proof binding must hold across it.
     # =================================================================================
 
-    # -- The whole pricing and health pipeline ------------------------------------------
-    # write-feeds, resolve-pyth / resolve-dia, normalize-pyth, check-confidence,
-    # oracle-timestamp-fresh, resolve-callcode / resolve-ststx / resolve-ztoken,
-    # price-resolve, price-multi-resolve, merge-price, calculate-asset-notional-value,
-    # normalize, is-healthy, is-healthy-with-mask, and the liquidation threshold math.
-    "mainnet/contracts/market/v0-4-market.clar",
+    # -- The public front door: gRPC surface, who may call it, and how bytes are parsed --
+    # `Interceptors::Noop` is installed whenever `client_verification` is false, and the
+    # aggregator is the entity users are meant to reach. `parser::*` turns protobuf into
+    # `DepositData`, outpoints, sighash types and addresses with no other gate.
+    "core/src/servers.rs",
+    "core/src/rpc/interceptors.rs",
+    "core/src/rpc/aggregator.rs",
+    "core/src/rpc/verifier.rs",
+    "core/src/rpc/operator.rs",
+    "core/src/rpc/mod.rs",
+    "core/src/rpc/parser/mod.rs",
+    "core/src/rpc/parser/verifier.rs",
+    "core/src/rpc/parser/operator.rs",
+    "core/src/rpc/ecdsa_verification_sig.rs",
+    "core/src/rpc/error.rs",
 
-    # -- Which assets get priced at all, and with what decimals and oracle record --------
-    # READ PATHS ONLY: lookup, find, status, status-multi, get-bitmap, mask-pos, subset,
-    # uint-to-list-u64. `decimals` is captured once at registration and multiplies into
-    # every USD figure the protocol ever computes.
-    "mainnet/contracts/registry/v0-assets.clar",
+    # -- Deposit acceptance: what a user must fund before N-of-N will presign a vault ----
+    # `Verifier::is_deposit_valid`, `DepositData::get_deposit_scripts`, `BaseDepositScript`
+    # / `ReplacementDepositScript` / `Multisig`, and the move-to-vault construction.
+    "core/src/verifier.rs",
+    "core/src/deposit.rs",
+    "core/src/builder/script.rs",
+    "core/src/builder/address.rs",
+    "core/src/builder/transaction/mod.rs",
+    "core/src/builder/transaction/creator.rs",
+    "core/src/builder/transaction/txhandler.rs",
+    "core/src/builder/transaction/input.rs",
+    "core/src/builder/transaction/output.rs",
+    "core/src/builder/transaction/sign.rs",
+    "core/src/builder/transaction/deposit_signature_owner.rs",
+    "core/src/builder/sighash.rs",
 
-    # -- Which LTV a resolved position is judged against ---------------------------------
-    # READ PATHS ONLY: resolve, active, find-superset, iter-find-superset, population,
-    # filter-u128, and buff-to-uint-be over the stored LTV-BORROW / LTV-LIQ-PARTIAL /
-    # LTV-LIQ-FULL buffers. The lookup must be wrong, not the configuration.
-    "mainnet/contracts/registry/v0-egroup.clar",
+    # -- Withdrawal, payout and reimbursement: where BTC actually leaves ------------------
+    # `Operator::withdraw` verifies the user's signature with the sighash type the user
+    # supplied; `create_payout_txhandler` writes the operator xonly pk into an OP_RETURN;
+    # `sign_optimistic_payout` spends the vault directly on N-of-N partial signatures.
+    "core/src/operator.rs",
+    "core/src/aggregator.rs",
+    "core/src/builder/transaction/operator_reimburse.rs",
+    "core/src/builder/transaction/operator_collateral.rs",
+    "core/src/builder/transaction/operator_assert.rs",
+    "core/src/builder/transaction/challenge.rs",
+    "core/src/musig2.rs",
+    "core/src/actor.rs",
+    "core/src/bitvm_client.rs",
 
-    # -- The mask that decides which rows enter the notional fold ------------------------
-    "mainnet/contracts/market/v0-market-vault.clar",
+    # -- Citrea state the bridge trusts: deposits, withdrawal UTXOs, LCP, storage proofs --
+    "core/src/citrea.rs",
+    "core/src/task/payout_checker.rs",
+    "core/src/task/lcp_syncer.rs",
+    "core/src/task/tx_sender.rs",
+    "core/src/task/manager.rs",
+    "core/src/task/mod.rs",
 
-    # -- The two vaults whose state feeds the price transforms ---------------------------
-    # v0-vault-ststx backs CALLCODE-STSTX and the compound CALLCODE-ZSTSTX; its `lindex` is
-    # the multiplier `resolve-ztoken` applies. v0-vault-sbtc is the 8-decimal asset that
-    # breaks any implicit assumption that all assets normalize alike.
-    "mainnet/contracts/vault/v0-vault-ststx.clar",
-    "mainnet/contracts/vault/v0-vault-sbtc.clar",
+    # -- Chain observation and the state machine that fires challenges and disproves ------
+    "core/src/bitcoin_syncer.rs",
+    "core/src/extended_bitcoin_rpc.rs",
+    "core/src/header_chain_prover.rs",
+    "core/src/states/mod.rs",
+    "core/src/states/kickoff.rs",
+    "core/src/states/round.rs",
+    "core/src/states/matcher.rs",
+    "core/src/states/event.rs",
+    "core/src/states/context.rs",
+    "core/src/states/task.rs",
+    "core/src/builder/block_cache.rs",
+
+    # -- Persisted protocol truth ---------------------------------------------------------
+    "core/src/database/mod.rs",
+    "core/src/database/verifier.rs",
+    "core/src/database/operator.rs",
+    "core/src/database/aggregator.rs",
+    "core/src/database/bitcoin_syncer.rs",
+    "core/src/database/header_chain_prover.rs",
+    "core/src/database/state_machine.rs",
+    "core/src/database/wrapper.rs",
+
+    # -- Protocol constants, keys and shared helpers --------------------------------------
+    "core/src/config/mod.rs",
+    "core/src/config/protocol.rs",
+    "core/src/config/env.rs",
+    "core/src/constants.rs",
+    "core/src/utils.rs",
+    "core/src/encryption.rs",
+    "core/src/compatibility.rs",
+    "core/src/tx_sender_ext.rs",
+    "core/src/tx_sender_queue.rs",
+    "crates/clementine-primitives/src/lib.rs",
+    "crates/clementine-config/src/protocol.rs",
+    "crates/clementine-config/src/grpc.rs",
+    "crates/clementine-utils/src/address.rs",
+    "crates/clementine-utils/src/sign.rs",
+    "crates/clementine-extended-rpc/src/client.rs",
+    "crates/clementine-extended-rpc/src/retry.rs",
+
+    # -- Getting deadline-bound transactions confirmed (challenge / disprove / timeout) ----
+    "crates/clementine-tx-sender/src/lib.rs",
+    "crates/clementine-tx-sender/src/rbf.rs",
+    "crates/clementine-tx-sender/src/cpfp.rs",
+    "crates/clementine-tx-sender/src/confirmations.rs",
+    "crates/clementine-tx-sender/src/nonstandard.rs",
+    "crates/clementine-tx-sender/src/signer.rs",
+    "crates/clementine-tx-sender/src/client.rs",
+    "crates/clementine-tx-sender/src/db/tx_sender.rs",
+    "crates/clementine-tx-sender/src/db/citrea.rs",
+    "crates/clementine-tx-sender/src/citrea/sync.rs",
+    "crates/clementine-tx-sender/src/citrea/reveal_scripts.rs",
+    "crates/clementine-tx-sender/src/citrea/data_serialization.rs",
+    "crates/clementine-tx-sender/src/jsonrpc/server.rs",
+    "crates/tx-sender-types/src/clementine.rs",
+    "crates/tx-sender-types/src/citrea.rs",
+
+    # -- The circuits: what a Groth16 proof is actually allowed to claim -------------------
+    "circuits-lib/src/bridge_circuit/mod.rs",
+    "circuits-lib/src/bridge_circuit/spv.rs",
+    "circuits-lib/src/bridge_circuit/merkle_tree.rs",
+    "circuits-lib/src/bridge_circuit/storage_proof.rs",
+    "circuits-lib/src/bridge_circuit/lc_proof.rs",
+    "circuits-lib/src/bridge_circuit/groth16.rs",
+    "circuits-lib/src/bridge_circuit/groth16_verifier.rs",
+    "circuits-lib/src/bridge_circuit/transaction.rs",
+    "circuits-lib/src/bridge_circuit/structs.rs",
+    "circuits-lib/src/bridge_circuit/constants.rs",
+    "circuits-lib/src/header_chain/mod.rs",
+    "circuits-lib/src/header_chain/mmr_guest.rs",
+    "circuits-lib/src/header_chain/mmr_native.rs",
+    "circuits-lib/src/work_only/mod.rs",
+    "circuits-lib/src/common/zkvm.rs",
+    "circuits-lib/src/common/hashes.rs",
+    "circuits-lib/src/common/constants.rs",
+    "bridge-circuit-host/src/bridge_circuit_host.rs",
+    "bridge-circuit-host/src/structs.rs",
+    "bridge-circuit-host/src/utils.rs",
+    "bridge-circuit-host/src/lib.rs",
+
+    # =================================================================================
+    # NOT IN THIS VARIANT:
+    # * core/src/test/**, **/tests.rs, **/test.rs, test_utils.rs, mock_zkvm.rs,
+    #   client_mock.rs, circuits-lib/**/tests/** - tests, fixtures and mocks.
+    # * core/src/rpc/clementine.rs and bridge-circuit-host/src/seal_format.rs - generated.
+    # * **/build.rs, risc0-circuits/**/guest/src/main.rs (4-24 line shims), elfs/,
+    #   *.toml, *.md, docs/**, devops/**, scripts/**, migrations/**, *.sql - build,
+    #   configuration, documentation and generated artefacts.
+    # * core/src/main.rs, core/src/cli.rs, core/src/bin/cli.rs, metrics.rs, tracing.rs -
+    #   process startup, operator tooling and telemetry, no custody decision.
+    # =================================================================================
 ]
 
 
 target_scopes = [
-    "Critical. `normalize-pyth` MISHANDLES SIGN. It computes `adj` as `(+ expo 8)`, uses an `asserts!` bound as an early return when `adj` is zero, and converts the raw `int` price with `to-uint`. Establish what happens for a negative price, for a large negative or positive exponent, and for the exponent that makes the adjustment zero, and show a feed value this code turns into a wildly wrong uint that `oracle-price-legal` still accepts because it is merely greater than zero. Impact: protocol insolvency through borrowing against a mispriced asset.",
+    "Critical. THE OPERATOR WHO GETS PAID IS NAMED BY AN OP_RETURN ANYONE CAN REWRITE. `create_payout_txhandler` puts `operator_xonly_pk.serialize()` in output 2 while the withdrawer's own signature over input 0 is `SinglePlusAnyoneCanPay` (`Operator::withdraw` -> `SECP.verify_schnorr`), which commits to input 0 and output 0 only. `Verifier::update_finalized_payouts` then attributes the withdrawal by `get_first_op_return_output` + `parse_op_return_data`, `PayoutCheckerTask::run_once` reads it back via `get_first_unhandled_payout_by_operator_xonly_pk`, and `Verifier::is_kickoff_malicious` calls a kickoff malicious when the stored xonly pk is `None` or differs. Show an unprivileged third party who copies the broadcast payout's input 0 + output 0, attaches a different or non-parsable OP_RETURN, and gets it mined first - then follow it to an honest operator that fronted 10 BTC and can never send a valid Reimburse, or to a challenge and Disprove that burns its collateral. Binding: the operator xonly pk recorded for withdrawal index i == the party whose funds paid that payout output.",
 
-    "Critical. THE CONFIDENCE GATE DOES NOT COVER EVERY FEED. `check-confidence` compares the Pyth confidence interval against `max-confidence-ratio` in BPS, but `resolve-dia` produces a price with no confidence concept at all, and `resolve-callcode` transforms the value AFTER the gate was applied to the raw one. Show a resolved price that passes every check while its true uncertainty, or its post-transform magnitude, is far outside what `max-confidence-ratio` was meant to bound. Impact: protocol insolvency.",
+    "Critical. THE BRIDGE CIRCUIT NEVER CHECKS THAT ANYONE WAS PAID. `bridge_circuit` asserts only that `input.payout_spv.transaction.input[payout_input_index].previous_output` equals the `(user_wd_outpoint, vout)` returned by `verify_storage_proofs`, and that an OP_RETURN exists; `payout_input_index` is read straight from `BridgeCircuitInput` with no bound check against `transaction.input.len()`, and no output value, no destination script and no `bridge_amount` is ever constrained before `deposit_constant` and `journal_hash` are committed. Show a payout transaction that spends the registered withdrawal UTXO while paying the withdrawer nothing (or paying it all to fees / to the prover), and follow the resulting valid journal through Assert, ChallengeTimeout and Reimburse to 10 BTC leaving a move-to-vault UTXO. Binding: the value the withdrawer receives in the transaction the circuit accepts == the withdrawal the Citrea Bridge contract recorded at that index.",
 
-    "Critical. FRESHNESS IS DECIDED BY A DELTA THAT CAN BE ZERO. `oracle-timestamp-fresh` sets `delta` to `u0` whenever `ts` exceeds `stacks-block-time`, then requires `(<= delta max-staleness)` and `(>= ts prev)`. A timestamp in the future is therefore maximally fresh. Combined with `price-resolve` advancing the per-key `last-update` only when the new timestamp is greater, show a feed state that permanently pins `last-update` high enough to reject every subsequent legitimate update, or one that accepts an arbitrarily old price. Impact: protocol insolvency, or permanent freezing of every position priced by that feed.",
+    "Critical. ONE PAYOUT, TWO REIMBURSEMENTS - INDEX CONFLATION. `CitreaClient::get_storage_proof` and `verify_storage_proofs` derive the withdrawal UTXO from `keccak256(UTXOS_STORAGE_INDEX) + index*2` and the move txid from `keccak256(DEPOSIT_STORAGE_INDEX) + index`, with `storage_proof.index` supplied by the prover and `index * 2` computed on a `u32`; `Aggregator::optimistic_payout` and `Verifier::sign_optimistic_payout` reuse the same `deposit_id` for both `get_move_to_vault_txid_from_citrea_deposit` and `get_withdrawal_utxo_from_citrea_withdrawal`, and `update_finalized_payouts` keys payouts by withdrawal utxo alone. Show one on-chain payout transaction spending a single withdrawal UTXO being converted into two settled claims - two indices, or an optimistic payout plus a kickoff reimbursement, or an index whose `*2` wraps - so more BTC leaves the vault than was ever fronted. Binding: the number of vault UTXOs spent for withdrawal index i == 1, and each equals exactly one payout actually fronted.",
 
-    "Critical. ONE `last-update` KEY, MANY ASSETS. The market stores freshness per `{{ type, ident }}` pair, while `max-staleness` is a per-asset field of the registry record. Two assets configured against the same feed ident - a token and its ztoken, or two wrappers of one underlying - share one monotonic timestamp but enforce different staleness. Show the stricter asset's guard being satisfied by an update performed for the looser one, or the looser asset advancing `last-update` past what the stricter one can ever match again. Impact: insolvency, or permanent freezing of funds.",
+    "Critical. THE PERSON BEING PAID CHOOSES THE SIGHASH TYPE. `Operator::withdraw` computes `payout_txhandler.calculate_sighash_txin(0, in_signature.sighash_type)` and `Aggregator::optimistic_payout` computes `calculate_pubkey_spend_sighash(0, input_signature.sighash_type)` using the `taproot::Signature` the caller supplied, so `SinglePlusAnyoneCanPay` is a comment in an error string, not a check; `Verifier::sign_optimistic_payout` re-signs from that same signature and only bounds `output_amount <= bridge_amount - NON_EPHEMERAL_ANCHOR_AMOUNT`, while `Operator::is_profitable` returns `true` outright when the user's input value exceeds the withdrawal amount. Show a caller-supplied sighash flag (NONE, ALL, ANYONECANPAY combinations) or an amount pair that lets the withdrawal signature be replayed into a different transaction, invalidates the funded payout after `fund_raw_transaction` adds operator inputs, or moves vault value into fees. Binding: the sighash type verified against the user's key == a flag that commits the payout output the operator is reimbursed for.",
 
-    "Critical. `write-feeds` FOLDS FAILURE INTO A STATUS. `write-feeds` accepts up to three attacker-supplied buffers and folds `write-feed` over them with a `(response bool uint)` accumulator. Determine exactly which failures abort the transaction and which are absorbed, then show a submission in which one feed updates and another silently does not, so the subsequent multi-asset health evaluation mixes a fresh price for one leg with a stale price for the other. Impact: protocol insolvency.",
+    "Critical. WHAT N-OF-N AGREES TO PRESIGN. `Verifier::is_deposit_valid` compares the security council, actor uniqueness, watchtower counts, the on-chain `script_pubkey` against `create_taproot_address(get_deposit_scripts(..))`, `value == bridge_amount` and `block_height >= start_height` - and nothing else. It never asks whether that deposit outpoint was already moved into a vault, whether the deposit is still unspent, or, for `DepositType::ReplacementDeposit`, whether `old_move_txid` names a real prior move tx that the `Multisig::from_security_council` path actually spent. `DepositData::eq` compares only the outpoint, type, security council and sorted actor sets, and `get_nofn_xonly_pk` caches a key derived from the aggregator-supplied verifier list. Show an unprivileged depositor whose crafted `DepositParams` gets a second move-to-vault presigned for one funded outpoint, gets a self-funded replacement deposit accepted for a fabricated `old_move_txid`, or shifts the derived `nofn_xonly_pk`. Binding: a move txid the verifiers sign == exactly one unspent `bridge_amount` deposit output carrying the exact scripts, counted once by the Citrea Bridge contract.",
 
-    "Critical. `resolve-ztoken` DEPENDS ON A CACHE THE CALLER CAN SHAPE. It reads `lindex` from `get-cached-indexes` - the market's own `index-cache`, not the vault - and multiplies the underlying price by it before dividing by `INDEX-PRECISION`. Establish, for every entry point, whether that cache entry was primed from a genuinely accrued vault state, from a state the same transaction has already mutated, or not at all. Show a rehypothecated collateral valuation derived from an index that does not reflect the vault at the moment of the health check. Impact: protocol insolvency.",
+    "Critical. THE ENTITY USERS ARE TOLD TO CALL HAS NO CALLER CHECK. `create_grpc_server` installs `Interceptors::Noop` whenever `config.client_verification` is false - the documented state for the aggregator, which only logs `tracing::warn!` when verification IS enabled - and `only_aggregator_and_self` is the sole thing that makes `is_internal` mean anything. On that open port `ClementineAggregator` exposes `Setup`, `NewDeposit`, `Withdraw`, `OptimisticPayout`, `InternalSendTx`, `SendMoveToVaultTx` and `InternalGetEmergencyStopTx`. Show an internet-reachable request on that port that broadcasts a transaction of the attacker's choosing, re-runs setup, extracts an emergency-stop transaction, or drives verifiers into a signing session, with no certificate and no key. Binding: a caller that reaches an aggregator method mutating protocol state or spending a bridge UTXO == a party holding the aggregator's certificate.",
 
-    "Critical. THE COMPOUND CALLCODE ROUNDS TWICE AND OVERFLOWS ONCE. `CALLCODE-ZSTSTX` evaluates `resolve-ztoken` over the output of `resolve-ststx`, chaining `mul-div-down` by an external ratio scaled by `STSTX-RATIO-DECIMALS` with a multiplication by `cached-lindex` and a division by `INDEX-PRECISION`. Show the input range where the two round-downs compound into a materially wrong value, or where the intermediate product is large enough to abort, and show which side of the health check that error favours. Impact: insolvency, or temporary freezing of every operation on that asset.",
+    "Critical. A SECNONCE THAT SIGNS TWICE IS A LEAKED KEY. `NonceSession` / `AllSessions` hand out `nonce_session_id`s and `Verifier::sign_optimistic_payout` does `session.nonces.pop()` for a sighash built from caller-supplied `input_outpoint`, `output_script_pubkey`, `output_amount` and `input_signature`, while `Verifier::nonce_gen`, `deposit_sign` and `deposit_finalize` stream nonces for a deposit the caller named; `remove_oldest_session`, `get_new_unused_id` and `total_sessions_byte_size` decide which session survives, and `musig2::partial_sign` is called with whatever `agg_nonce` the aggregator passes. Show two requests an unprivileged caller can send through the public aggregator that cause one verifier to produce two partial signatures over different messages under the same secnonce or aggregated nonce, or that make a nonce from one session serve another deposit. Binding: each secnonce popped from a `NonceSession` == exactly one message ever signed under it.",
 
-    "Critical. `resolve-ststx` PUTS AN EXTERNAL CALL INSIDE EVERY HEALTH CHECK. `call-ststx-ratio` is invoked during price resolution, and its failure is mapped to `ERR-ORACLE-CALLCODE`. Establish which user operations depend on that call succeeding, and show that a ratio value at a boundary, or a call that fails, either blocks liquidation of an unhealthy position or blocks a healthy user from withdrawing. Do not premise this on the external contract publishing wrong data; premise it on how this code handles the value and the failure. Impact: permanent or temporary freezing of funds.",
+    "Critical. SPV IS ONLY AS TIGHT AS ITS PATH LENGTH. `SPV::verify` takes `mid_state_txid`, feeds it to `BlockInclusionProof::get_root`, compares against `block_header.merkle_root` and then `MMRGuest::verify_proof`; the leaf index, the number of siblings and the MMR subroot selection all come from the untrusted `BridgeCircuitInput`, while `BitcoinMerkleTree::new` and `new_mid_state` only panic on duplicates at construction time, which never runs in the guest. `CircuitTransaction::mid_state_txid` hashes version, inputs, outputs and locktime with no witness, and `BorshDeserialize for CircuitTransaction` reconstructs a transaction from attacker bytes. Show a proof-carrying transaction that is accepted as included in a canonical block while it was never mined there - a forged path depth, a colliding mid-state preimage, or an MMR proof against a subroot the header chain never committed. Binding: the transaction `payout_spv` proves == a transaction in a block whose hash the header-chain proof committed to the MMR.",
 
-    "Critical. PRICES ARE ZIPPED BACK ONTO ASSETS BY POSITION. `price-multi-resolve` folds `iter-price-multi` over the oracle records to build a positional list of prices, carrying `aids` and `idx` in the accumulator without ever using them to align, and the result is attached to asset entries by `merge-price` in `get-assets`. Show a position whose asset list and oracle list can differ in length or order - a skipped entry, an early `valid: false`, a truncation at the 64 bound - so one asset is valued at another asset's price. Impact: direct theft of user funds, or protocol insolvency.",
+    "Critical. THE KICKOFF COMMITS TO A BLOCK HASH THAT CAN STOP BEING TRUE. `PayoutCheckerTask::run_once` reads the payout block hash straight from `update_finalized_payouts`/`get_block_info_from_hash` and `Operator::handle_finalized_payout` commits `payout_tx_blockhash.last_20_bytes()` into the kickoff witness by WOTS before any depth requirement; `Verifier::is_kickoff_malicious` re-derives the same 20 bytes from its own DB, and `bridge_circuit` requires `light_client_circuit_output.latest_da_state.block_hash == payout_spv.block_header.compute_block_hash()`. Show an unprivileged attacker who replaces or delays the payout transaction (RBF, a conflicting spend of the same withdrawal UTXO, or landing it in a block that is later reorged out - see `bitcoin_syncer` and `handle_finalized_block`) so that the hash an honest operator has already committed no longer holds, then follow it to `handle_kickoff`, Challenge and Disprove burning that operator's collateral. Binding: the block hash committed once and irrevocably in the kickoff == the block containing the payout in the chain the header-chain proof will later prove.",
 
-    "Critical. THE ROUND-UP AND ROUND-DOWN FLAGS ARE PASSED BY HAND AT EVERY CALL SITE. `normalize` takes a boolean, and every caller chooses: `calculate-asset-notional-value` rounds collateral down and debt up, `find-and-resolve-asset-value` and `get-asset-value` take the flag from their caller, `process-debt-asset` rounds down, `calc-final-liquidation-amounts` rounds collateral-actual down. Enumerate all of them and find the one that rounds in the user's favour on a path where conservatism was required. Impact: protocol insolvency, or direct theft from the borrower during liquidation.",
-
-    "Critical. THE PROTOCOL'S USD UNIT IS A WHOLE DOLLAR. `normalize` divides by `(pow u10 decimals)` only after multiplying amount by price, so every notional is an integer number of dollars. For an 8-decimal asset against a 6-decimal one, find the amount-and-price pairs where a real collateral holding normalizes to zero USD while remaining seizable, where a real debt normalizes to zero and passes `is-healthy` for free, or where the collateral round-down and debt round-up together open a persistent free-borrow window. Impact: protocol insolvency.",
-
-    "Critical. `is-healthy` COMPARES UNNORMALIZED PRODUCTS AND SHORT-CIRCUITS ON ZERO. It returns true whenever `debt-usd` is zero, and otherwise compares `(* debt-usd BPS)` against `(* collateral-usd ltv)`. Show a debt that reaches the comparison as zero after normalization while real debt exists, and separately establish the magnitudes at which either product aborts on overflow - and what aborting means for a user trying to withdraw or a liquidator trying to seize. Impact: protocol insolvency, or permanent freezing of funds.",
-
-    "Critical. THE FUTURE MASK IS NOT THE MASK THAT WILL EXIST. `borrow` computes `future-mask` by setting the bit at `(+ asset-id DEBT-OFFSET)` and validates against `is-healthy-with-mask`; `collateral-remove` computes a future mask by clearing a collateral bit when `removing-all`; `collateral-add` compares `future-capacity` against `current-capacity` using raw `(* coll-usd ltv)` products. Show a case where the mask actually written by market-vault after the call differs from the one the check validated - because a row hit zero, because a bit was already set, or because the check used the enabled-filtered mask - and land in an egroup that was never approved for the resulting position. Impact: protocol insolvency.",
-
-    "Critical. THE PER-EGROUP BORROW BLOCK IS TESTED AT THE WRONG BIT. `borrow` asserts `(is-eq (bit-and disabled-borrow-mask (pow u2 asset-id)) u0)` against the FUTURE egroup's `BORROW-DISABLED-MASK`, using the bare `asset-id` while every debt bit elsewhere in the protocol is offset by `DEBT-OFFSET`. Establish which convention the stored mask actually uses, and show a borrow that is permitted because the test looked at a bit meaning something else, or blocked because it looked at a collateral bit. Impact: protocol insolvency, or temporary freezing of a legitimate borrow.",
-
-    "Critical. THE THREE LTVs ARE READ AS BUFFERS AND USED WITHOUT ORDERING CHECKS. `LTV-BORROW`, `LTV-LIQ-PARTIAL` and `LTV-LIQ-FULL` are stored as buffers and converted at every use by `buff-to-uint-be`, then `calc-liq-factor` computes `(- ltv-curr ltv-liq-partial)` over `(- ltv-liq-full ltv-liq-partial)`. Working only from a correctly configured registry, show what the consuming code does when `ltv-curr` is below `ltv-liq-partial` (a subtraction that aborts), when the two liquidation thresholds are equal (a division), or when the buffer width differs from what `buff-to-uint-be` expects. Impact: permanent freezing of an unliquidatable position, hence insolvency.",
-
-    "Critical. A POSITION THAT NO EGROUP RESOLVES IS A POSITION NOBODY CAN CLOSE. `get-egroup` wraps `resolve`, and every health path unwraps it with `try!`. Establish which reachable masks return no group - a combination assembled through a sequence of individually permitted actions, a mask left behind by a row that hit zero without its bit clearing, a debt-only or collateral-only mask - and show a user or a liquidator who can no longer act because the position cannot be priced at all. Impact: permanent freezing of funds.",
-
-    "High. `find-superset` RETURNS THE FIRST MATCH, NOT THE TIGHTEST. `resolve` walks `active`, `find-superset` and `iter-find-superset` over `buckets` ordered by `population`, returning the first mask that is a superset of the position. With a correctly configured registry containing several overlapping groups, show a position whose resolved LTVs are looser than those of the smallest group that covers it, and borrow the difference. The bug must be in the search order, not in the stored data. Impact: protocol insolvency.",
-
-    "High. THE ENABLED BITMAP DECIDES WHICH ROWS ARE EVEN PRICED. `get-notional-evaluation` folds `calculate-asset-notional-value` over the ASSET list derived from the enabled mask, looking each asset up in the position's collateral and debt lists - so a position row whose asset is not in that list contributes nothing to either total. For collateral that is conservative; for debt it is not. Show a live debt row omitted from `debt-total`, and the health verdict that follows. Impact: protocol insolvency.",
-
-    "High. THE DEBT LEG IS PRICED FROM A CACHE INSIDE THE NOTIONAL FOLD. `calculate-asset-notional-value` calls `accrue-and-cache` with `unwrap-panic` in the middle of the fold to convert scaled debt at the borrow index before normalizing with round-up. Establish what happens when that asset was never primed, when the fold is entered from a path that primed a different set, and whether the index used for the debt leg is the same one used moments later by `convert-to-scaled-debt` or `scale-debt-for-liquidation`. Impact: insolvency, or a health check that aborts and freezes the position.",
-
-    "High. THE LIQUIDATION CURVE IS INTEGER MATH PRETENDING TO BE CONTINUOUS. `calc-liq-factor-exp` uses `(/ exp BPS)` as an integer exponent for `pow`, divides by `(pow BPS (- (/ exp BPS) u1))`, and falls back to `sqrti` for exponents below BPS; `calc-liq-factor-bound` then scales the penalty between bounds. Show the exponent and factor values where this returns zero, saturates at BPS, or aborts, and what that does to how much a borrower loses - or to whether the position can be liquidated at all. Impact: direct theft from the borrower, or insolvency through an unliquidatable position.",
-
-    "High. THE SAME PRICE IS ASKED TO DO THREE DIFFERENT JOBS. One resolved number sets borrowing capacity, triggers the liquidation threshold, and sizes the seizure, and each of those wants a different direction of conservatism. Trace a single price through `get-notional-evaluation`, `is-healthy`, `process-debt-asset` and `process-collateral-asset` in one liquidation, and show a value at which the position is judged unhealthy by one use and the seizure is sized by another in a way that takes more from the borrower than the shortfall justifies. Impact: direct theft of user funds.",
-
-    "Critical. PRICED TWICE IN ONE TRANSACTION - the seam nobody modelled. Several entry points resolve a price more than once in a single call, from different inputs and at different points in the state: `collateral-remove` resolves the removed asset separately from the position fold; `liquidate` prices the debt leg, the collateral leg, and any socialized remainder in sequence while the vault state moves underneath; `collateral-add` prices the added asset with `get-asset-value` after the position was already valued with `find-and-resolve-asset-value`. Enumerate every transaction in which two price resolutions of the SAME asset can disagree, determine which one the safety check used and which one moved the money, and prove the gap with a single simnet transaction that asserts the two resolved values differ. Impact: name it as direct theft, permanent freezing, or protocol insolvency.",
+    "Critical. THE MISSING BINDING - what nobody built. Nothing in this repository records the identity of the party that actually funded a payout output; attribution is an OP_RETURN in a transaction the withdrawer's own `SinglePlusAnyoneCanPay` signature lets anyone rebuild. Nothing marks a withdrawal UTXO, a deposit outpoint or a payout transaction as consumed across the deposit index, the withdrawal index and the storage-proof index. No code path re-checks, at Reimburse time, that value equal to the withdrawal ever reached the withdrawer. Identify the FIRST point at which a byte an unprivileged user chose - a deposit script, a registered withdrawal outpoint, a Schnorr signature and its sighash flag, an OP_RETURN, a witness or annex, a `payout_input_index`, a `storage_proof.index`, or a request on the open aggregator port - becomes a presigned vault spend, a settled payout attribution, a committed WOTS value or a Groth16 journal with no independent party ever re-deriving it. Prove it with one `cargo test` under `core/src/test` or `circuits-lib` asserting both the value used and the value that should have authorised it, and show that once they diverge nothing in the protocol reconciles them.",
 ]
 
 
@@ -149,128 +239,137 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate pricing- and health-focused audit questions for one Zest v2 target.
+    Generate bridge-custody audit questions for one Clementine target.
 
     ```
     target_file format:
-    "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. ...'"
+    "'File Name: core/src/verifier.rs -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate pricing and health-verdict security audit questions for this exact Zest Protocol v2 target:
+    Generate custody and proof-soundness security audit questions for this exact
+    Clementine target:
 
     {target_file}
 
     Project focus:
-    Every decision Zest v2 makes reduces to one number: the USD value of a position. This audit
-    covers only the pipeline that produces it. A Pyth or DIA feed is read by `resolve-pyth` or
-    `resolve-dia`, converted by `normalize-pyth` from an `int` price and an exponent, gated by
-    `check-confidence` against `max-confidence-ratio` and by `oracle-timestamp-fresh` against a
-    per-feed monotonic `last-update` and the asset's `max-staleness`, then transformed by
-    `resolve-callcode` - `resolve-ststx` multiplies by an external ratio, `resolve-ztoken`
-    multiplies by a `lindex` read from the market's own per-block `index-cache`, and
-    `CALLCODE-ZSTSTX` composes both. `price-multi-resolve` builds a positional list that
-    `merge-price` attaches to asset records from v0-assets, each carrying `decimals` captured at
-    registration. `calculate-asset-notional-value` normalizes collateral down and debt up into
-    whole-dollar totals, and `is-healthy` compares them against an LTV that v0-egroup's `resolve`
-    selected for the position's 128-bit mask. The liquidation thresholds and the graduated
-    penalty curve read the same parameters.
+    Clementine is Citrea's BitVM2 two-way peg. Untrusted bytes enter through four doors:
+    a deposit output a user funds on Bitcoin (`Verifier::is_deposit_valid`), a `withdraw`
+    call plus a withdrawal UTXO and a Schnorr signature a user registers on Citrea and
+    hands to operators (`Operator::withdraw`, `Aggregator::optimistic_payout`), any
+    Bitcoin transaction an attacker can broadcast (payout replacements, OP_RETURN,
+    witness, annex, reorgs seen by `bitcoin_syncer` and the state machines), and the
+    aggregator's gRPC port, which runs `Interceptors::Noop` unless `client_verification`
+    is on. Those bytes end in three places: an N-of-N presigned move-to-vault UTXO
+    holding `bridge_amount`, a Reimburse tx paying an operator out of that vault, and a
+    bridge-circuit `journal_hash` that decides whether an operator's collateral is burned.
+    Anything that moves vault value, credits a reimbursement, or makes an honest party
+    disprovable without the protocol re-deriving the fact independently is the bug.
 
     Rules:
-    * Treat `File Name:` as the exact contract.
+    * Treat `File Name:` as the exact file.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Clarity symbols (define-public/private/read-only names, map, data-var, constant).
-    * Every question must end at a PRICE or a HEALTH VERDICT that is wrong, and must say in which
-      direction it is wrong and who benefits. Questions about custody, share accounting or
-      authorization belong to other batches and must not be generated here.
-    * Incorrect data published by a real third-party oracle is OUT OF SCOPE. The defect must be in
-      how this code consumes, transforms, gates, aligns or compares the value. Oracle manipulation
-      caused by a bug in this code IS in scope.
-    * Assume v0-assets and v0-egroup are correctly configured by the DAO. Target only their read
-      and resolution paths - `status`, `status-multi`, `lookup`, `get-bitmap`, `resolve`, `active`,
-      `find-superset`, `population`, `buff-to-uint-be` over the stored LTV buffers.
-    * Attacker is unprivileged only: an ordinary Stacks principal that funds a wallet, calls any
-      public function, deploys its own Clarity contract, passes it as `<ft-trait>`, supplies its
-      own `price-feeds` buffers, and chooses amounts and call ordering within a block.
-    * Attacker is NOT a DAO signer, executor, market impl, authorized contract, miner, oracle
-      publisher or node operator. Ignore malicious-miner, chain-reorg, MEV-only and
-      social-engineering assumptions.
+    * Use exact Rust symbols (module, struct, enum, fn, const, field) as they appear in the file.
+    * EVERY question must close on a binding that must hold across a call. State it explicitly
+      as an equality between two named values. Narrative questions are rejected.
+    * Attacker is unprivileged only: anyone who can broadcast Bitcoin transactions and pay
+      fees, deposit into the bridge, call `withdraw` on the Citrea Bridge contract, choose
+      the bytes of a withdrawal UTXO, a Schnorr signature and its sighash flag, an
+      OP_RETURN, a script, a witness or an annex, and send requests to the aggregator's
+      public gRPC port.
+    * Attacker is NOT a verifier, operator, watchtower, aggregator, security council member,
+      Citrea sequencer or batch prover. They hold no verifier key share, no operator
+      collateral, no aggregator or client TLS certificate, no `security_council` key. No
+      malicious peer or node, no key compromise, no majority hashrate, no TLS interception,
+      no local or physical access, no compromised dependency, no social engineering.
     * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
-      - ANY logic related to flashloans is OUT OF SCOPE. A flashloan may be used as a source of
-        capital for a different attack, but never target `flashloan` itself, its fee, its
-        `flashloan-permissions` / `default-flashloan-permissions` whitelist, or `in-flashloan`.
-      - Liquidation of disabled collateral, and any other deliberate protocol safety design
-        decision, is OUT OF SCOPE.
-      - Anything requiring DAO compromise, or an accidental or incorrect registry update by the
-        DAO, is OUT OF SCOPE. Full DAO control of the asset and egroup registries is intended
-        design, and every egroup invariant needing global market and position knowledge is
-        verified off-chain by the DAO before approval. Assume both registries are correctly
-        configured, and target only the read and resolution paths an ordinary user call executes.
-      - Also excluded everywhere: leaked keys or credentials, privileged addresses, external
-        stablecoin depegs the attacker did not cause through a bug in this code, 51% and basic
-        economic or governance attacks, Sybil attacks, centralization risk, lack of liquidity,
-        incorrect data supplied by third-party oracles, best-practice notes, feature requests,
-        and test or configuration files.
-      - Oracle manipulation caused by a bug in THIS code remains fully in scope.
+      - Tests, mocks and fixtures (`core/src/test/**`, `**/tests.rs`, `**/test.rs`,
+        `test_utils.rs`, `mock_zkvm.rs`), generated files (`core/src/rpc/clementine.rs`,
+        `seal_format.rs`, `**/build.rs`, `elfs/`), `*.toml`, `*.md`, `docs/**`,
+        `devops/**`, `scripts/**` and migrations are OUT OF SCOPE.
+      - Denial of service, rate limiting, retry/backoff, queue depth, resource exhaustion,
+        unbounded collections, memory hygiene and log volume are OUT OF SCOPE.
+      - Any scenario needing a dishonest verifier, operator, watchtower, aggregator,
+        security council or Citrea sequencer is OUT OF SCOPE, as is anything that only
+        harms the attacker's own funds.
+      - Defects in third-party crates (bitcoin, risc0, bitvm, secp256k1, alloy, sqlx,
+        tonic) with no exploit path through this repository's own code are OUT OF SCOPE,
+        as are Citrea contract or light-client-circuit bugs.
+      - Also excluded: leaked keys, best-practice notes, feature requests, missing headers,
+        and theoretical findings with no demonstration.
+      - A weakness in this repository that manipulates a third-party crate into unsafe
+        behaviour remains fully in scope.
     * IN-SCOPE IMPACTS - every question must land on one and name it:
-      Critical: direct theft of user funds at rest or in motion, other than unclaimed yield;
-      permanent freezing of funds; protocol insolvency.
-      High: theft of unclaimed yield or royalties; permanent freezing of unclaimed yield or
-      royalties; temporary freezing of funds.
-    * Every question must be a concrete real-world scenario on mainnet, with the specific amounts,
-      decimals, exponents or index values that trigger it. No speculative unbounded-list, memory
-      or resource-hygiene questions.
-    * Clarity `+` `-` `*` abort on overflow and underflow. In this pipeline an abort is a real
-      finding: a price path that aborts makes a position unpriceable, therefore unwithdrawable and
-      unliquidatable - say which.
-    * Generate 30 to 40 high-signal questions.
+      Critical: BTC leaving a move-to-vault UTXO without a matching fronted withdrawal;
+      an operator reimbursed for a payout it never funded; an honest operator that funded a
+      payout being permanently unable to be reimbursed; an honest operator's collateral
+      burned via Challenge/Disprove/ChallengeNACK; a move-to-vault UTXO permanently frozen;
+      a bridge, header-chain or work-only proof accepted for a claim that is false, or a
+      true claim made unprovable; N-of-N partial signatures produced for a spend no Citrea
+      withdrawal authorises; a verifier secret key or secnonce recoverable.
+      High: an unauthenticated call that mutates protocol state or broadcasts a bridge
+      transaction; a deadline-bound challenge, disprove or timeout transaction made
+      unconfirmable by attacker-shaped chain data; leakage of protocol secrets or of a
+      commitment (WOTS preimage) before its intended reveal.
+    * Every question must be a concrete real-world scenario an unprivileged attacker can
+      execute against a running Clementine deployment - a Bitcoin transaction they
+      broadcast, a deposit they fund, a withdrawal they register, a signature they hand
+      over, a gRPC request they send. No speculative resource-hygiene or memory questions.
+    * A panic or error is a finding only when it makes an honest party disprovable, leaves
+      vault funds unspendable, or lets an unauthorised spend through - say which.
+    * Generate 40 to 80 high-signal questions.
     * At least 70% must land on a Critical impact rather than a High one.
-    * Every question must be testable by a Clarinet / vitest simnet test in `local-testing/tests`
-      on a local fork, driving a price or an index to a specific value. Never propose testing on
-      mainnet or a public testnet.
+    * Every question must be testable by a `cargo test` under `core/src/test` or
+      `circuits-lib` (regtest bitcoind, mocked `CitreaClientT`, or a direct circuit call),
+      with no mainnet and no live Citrea.
     * Avoid generic checklist questions and repeated root causes.
-    * Prefer questions that name a TRANSFORM and the GATE that was supposed to bound it, or a
-      value and the second place the same value is computed differently: a price checked before a
-      callcode and used after it, a decimals field captured once and multiplied everywhere, an LTV
-      read as a buffer and compared as a uint, a positional list and the list it is zipped onto.
+    * Prefer questions that name TWO values that must be equal and ask whether they are: the
+      operator credited and the operator that paid, the amount owed and the amount received,
+      the deposit presigned and the deposit minted, the block hash committed and the block
+      hash proved, the message signed and the nonce used, the caller and the party the
+      method is for.
 
     Known dead ends - do NOT generate questions about these:
-    * A real oracle publishing a wrong or stale price on its own.
-    * Governance choosing a bad LTV, staleness, confidence ratio, penalty or curve exponent.
-    * Pyth or Wormhole contract internals.
-    * A user harming only its own position with no protocol invariant broken.
-    * Anything only reproducible against the mock oracle or mock tokens.
+    * Anything needing a verifier, operator, watchtower, aggregator, security council or
+      sequencer key, certificate or role.
+    * A bug in a dependency, in the Citrea Bridge contract, or in the light client circuit
+      with no reachable path through this repository.
+    * Fee estimation, mempool policy, propagation timing, or an attacker burning only their
+      own BTC or cBTC with no bridge value moved and no honest party harmed.
+    * Findings only reproducible in tests, mocks, fixtures or generated files.
 
-    Core pricing invariants (each question must break one):
-    * FEED INTEGRITY: a resolved price reflects a feed that passed the confidence and staleness
-      gates in the form the gates were designed for, after every transform applied to it.
-    * TRANSFORM SOUNDNESS: each callcode preserves magnitude and sign, rounds against the user,
-      and cannot be moved by the caller within the same transaction.
-    * ALIGNMENT: every price is attached to the asset it was resolved for, and every asset in a
-      position enters the notional totals exactly once.
-    * CONSERVATISM DIRECTION: collateral is valued low and debt is valued high at every call site,
-      in that order, without exception.
-    * VERDICT SOUNDNESS: the LTV a position is judged against belongs to the exact asset set the
-      position will hold after the call, and the comparison neither aborts nor short-circuits.
+    Core bindings (each question must close on one):
+    * CUSTODY: value leaving a move-to-vault UTXO == a withdrawal the Bridge contract
+      recorded and that was actually fronted to that withdrawer.
+    * ATTRIBUTION: the operator credited and reimbursed for withdrawal i == the party whose
+      funds paid that payout, counted exactly once.
+    * MINT AUTHORITY: a move txid the verifiers presign == one unspent `bridge_amount`
+      deposit output with the exact required scripts.
+    * PROOF SOUNDNESS: what `journal_hash`, `deposit_constant` and the WOTS commitments
+      claim == what actually happened on Bitcoin and in Citrea state.
+    * SLASHING TRUTH: an operator is challengeable or disprovable only when it actually
+      deviated; an honest operator always retains a reachable Reimburse path.
+    * CALLER AUTHORITY: a party reaching a state-changing or signing method == a party the
+      interceptor and the protocol intend to allow.
 
     Each question must include:
-    1. target function/method;
-    2. the specific input that breaks it (price, exponent, confidence, timestamp, decimals, index,
-       amount, mask);
-    3. preconditions (position composition, vault state, feed state);
-    4. call sequence;
-    5. the pricing invariant broken and the DIRECTION of the error;
-    6. who profits and the in-scope impact class;
+    1. target struct/fn;
+    2. attacker action (a concrete Bitcoin transaction, deposit, Citrea withdrawal,
+       signature, or gRPC request with its fields);
+    3. preconditions (paramset, deployment configuration, existing deposit or round state);
+    4. call sequence through the code;
+    5. the binding that breaks, written as an equality;
+    6. scoped impact and whose BTC, collateral or proof is affected;
     7. proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_method] Does INPUT_VALUE under PRECONDITIONS make SYMBOL produce a price or health verdict wrong in DIRECTION via CALL_SEQUENCE, violating INVARIANT, causing IMPACT_CLASS: SCOPE_IMPACT? Proof idea: Clarinet simnet test PARAMETERS and assert FEED_INTEGRITY, TRANSFORM_SOUNDNESS, ALIGNMENT, CONSERVATISM_DIRECTION, or VERDICT_SOUNDNESS.",
+    "[File: {target_file}] [Method: struct_or_fn] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, breaking the binding BINDING_EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: cargo test PARAMETERS asserting CUSTODY, ATTRIBUTION, MINT_AUTHORITY, PROOF_SOUNDNESS, SLASHING_TRUTH, or CALLER_AUTHORITY.",
     ]
     """
     return prompt
@@ -278,7 +377,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a pricing-focused Zest v2 exploit-validation prompt.
+    Generate a bridge-custody Clementine exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -288,22 +387,19 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- The claim must end at a wrong price or a wrong health verdict produced by THIS code. Reject anything whose root cause is a third-party oracle publishing bad data; oracle manipulation caused by a bug here is in scope.
-- Assume v0-assets and v0-egroup hold a correct configuration. Only their read and resolution paths are in scope.
-- Attacker is unprivileged only: an ordinary Stacks principal that funds a wallet, calls any public function, deploys its own Clarity contract, supplies its own `price-feeds`, and chooses amounts and ordering. No DAO signer, executor, market impl, authorized contract, miner, oracle publisher or node operator access.
-- Reject malicious-miner, chain-reorg, MEV-only and social-engineering paths.
-- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
-- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
-- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
-- Reject Pyth and Wormhole internals, `local-testing/**`, tests, mocks, deployment plans, docs, read-only aggregators, and dependency-only findings.
+- Attacker is unprivileged only: anyone who can broadcast Bitcoin transactions and pay fees, deposit into the bridge, call `withdraw` on the Citrea Bridge contract, choose the bytes of a withdrawal UTXO, a Schnorr signature and its sighash flag, an OP_RETURN, a script, a witness or an annex, and send requests to the aggregator's public gRPC port. They are not a verifier, operator, watchtower, aggregator, security council member, Citrea sequencer or batch prover, and hold no key share, collateral or TLS certificate.
+- Reject malicious peers or nodes, key compromise, majority hashrate, TLS interception, local or physical access, compromised dependencies and social engineering.
+- OUT OF SCOPE, reject on sight: tests, mocks and fixtures (`core/src/test/**`, `**/tests.rs`, `**/test.rs`, `test_utils.rs`, `mock_zkvm.rs`), generated files (`core/src/rpc/clementine.rs`, `seal_format.rs`, `**/build.rs`, `elfs/`), `*.toml`, `*.md`, `docs/**`, `devops/**`, `scripts/**`, migrations; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party crate, Citrea contract or light-client-circuit defects with no path through this repository; best-practice notes; feature requests; theoretical findings with no demonstration.
+- The impact must be one of: Critical - BTC leaving a move-to-vault UTXO without a matching fronted withdrawal, an operator reimbursed for a payout it never funded, an honest operator permanently unable to be reimbursed, an honest operator's collateral burned, a move-to-vault UTXO permanently frozen, a false claim proved (or a true claim made unprovable) by the bridge, header-chain or work-only circuit, N-of-N partial signatures for an unauthorised spend, or a recoverable verifier secret or secnonce; High - an unauthenticated state-changing or broadcasting call, a deadline-bound challenge/disprove/timeout transaction made unconfirmable by attacker-shaped chain data, or premature disclosure of a protocol commitment.
+- Focus on real impact: bridge value moving, a reimbursement credited to the wrong party, or an honest party losing collateral.
 
 ## Validate
-- Follow one price end to end: raw feed value and exponent -> `normalize-pyth` or `resolve-dia` -> `check-confidence` -> `oracle-timestamp-fresh` and the per-key `last-update` -> `resolve-callcode` -> `merge-price` and the asset record -> `normalize` with `decimals` -> the notional totals -> `is-healthy` or the liquidation math.
-- At each stage state the value and its units, and identify the exact stage where it becomes wrong.
-- State the DIRECTION of the error - collateral overvalued, debt undervalued, or the reverse - and who profits.
-- Check whether a later gate, a round-up, a health check, a slippage bound, or `oracle-price-legal` recovers the error before it reaches money.
-- If the path aborts rather than mispricing, establish exactly which user or liquidator action becomes impossible, and whether that is permanent.
-- Require exact file/function support and a reproducible Clarinet / vitest simnet PoC on a local fork that drives the input to the stated value.
+- Write the binding the question claims is broken as an explicit equality between two named values BEFORE tracing any code.
+- Trace the exact reachable path from the attacker's transaction, deposit, withdrawal, signature or gRPC request, and record every read and write of the deposit outpoint and scripts, `withdrawal_utxo`, `deposit_id`/`storage_proof.index`, `in_signature.sighash_type`, the payout OP_RETURN, the committed payout block hash, `payout_input_index`, the musig2 session and nonce, and the transaction that finally spends a bridge UTXO.
+- Evaluate both sides of the equality before and after. If they still match, output no vulnerability.
+- Check whether `Verifier::is_deposit_valid`, `Operator::is_profitable`, `SECP.verify_schnorr`, `only_aggregator_and_self`, `Verifier::is_kickoff_malicious`, `verify_storage_proofs`, `SPV::verify`, `lc_proof_verifier`, `total_work_and_watchtower_flags`, the presigned transaction graph or a database uniqueness constraint already prevents the divergence.
+- State what the attacker gains or destroys per attempt and whether it is repeatable across deposits, withdrawals or operators.
+- Require exact file/fn support and a reproducible `cargo test` proof with no mainnet and no live Citrea.
 
 ## Output
 If valid, output exactly:
@@ -315,19 +411,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[The price traced stage by stage with values, the stage that breaks, root cause, attacker inputs, and why the gates do not catch it]
+[The broken binding as an equality, the code path, root cause, the attacker's exact transaction or request, exploit flow, and why existing guards fail]
 
 ### Impact Explanation
-[Direction and magnitude of the mispricing, who profits, and the exact in-scope severity category]
+[What is spent, credited, frozen, proved or burned, which party, repeatability, blast radius across deposits and operators, matching severity category]
 
 ### Likelihood Explanation
-[Input range required, how the attacker reaches it, capital cost, repeatability]
+[Preconditions, paramset and deployment configuration required, attacker cost in BTC and fees, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Clarinet simnet test plan on a local fork, with the exact price, exponent, decimals or index values]
+[cargo test plan with the exact assertions on both sides of the binding]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -339,7 +435,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for Zest v2 pricing claims.
+    Generate a strict bounty-style validation prompt for Clementine claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -351,36 +447,34 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- A pricing claim is only valid if the report traces the value stage by stage with concrete numbers and identifies the exact stage that breaks. Reject prose-only claims.
-- Reject any claim whose root cause is a third-party oracle publishing incorrect data. Oracle manipulation caused by a bug in this code remains in scope.
-- Reject any claim premised on a bad, accidental or hostile registry configuration; assume the DAO configured the asset and egroup registries correctly.
-- Reject anything requiring a DAO signer, executor, market impl, authorized contract, miner, oracle publisher, node operator, or leaked keys.
-- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
-- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
-- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
-- Reject Pyth and Wormhole internals, `local-testing/**`, tests, mocks, deployment plans, `.toml`, docs, read-only aggregator and dependency-only findings.
-- Reject if the bug was already fixed, acknowledged, or covered by the published Clarity Alliance, Greybeard or Asymmetric audits.
-- Reject any PoC requiring testing on mainnet or a public testnet; only local forks are permitted.
-- A PoC is mandatory for every severity. Prefer #NoVulnerability over speculative reports.
+- A binding claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
+- Reject anything requiring a verifier, operator, watchtower, aggregator, security council, sequencer or batch prover role, key share, collateral or TLS certificate, a malicious peer or node, key compromise, majority hashrate, TLS interception, local or physical access, a compromised dependency, or social engineering.
+- OUT OF SCOPE, reject on sight: tests, mocks and fixtures (`core/src/test/**`, `**/tests.rs`, `**/test.rs`, `test_utils.rs`, `mock_zkvm.rs`), generated files (`core/src/rpc/clementine.rs`, `seal_format.rs`, `**/build.rs`, `elfs/`), `*.toml`, `*.md`, `docs/**`, `devops/**`, `scripts/**`, migrations; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party crate, Citrea contract or light-client-circuit defects with no path through this repository; best-practice notes; feature requests; theoretical findings with no demonstration.
+- The impact must be one of: Critical - BTC leaving a move-to-vault UTXO without a matching fronted withdrawal, an operator reimbursed for a payout it never funded, an honest operator permanently unable to be reimbursed, an honest operator's collateral burned, a move-to-vault UTXO permanently frozen, a false claim proved or a true claim made unprovable by the circuits, N-of-N partial signatures for an unauthorised spend, or a recoverable verifier secret or secnonce; High - an unauthenticated state-changing or broadcasting call, a deadline-bound challenge/disprove/timeout transaction made unconfirmable by attacker-shaped chain data, or premature disclosure of a protocol commitment.
+- Reject claims that depend on a deployment ignoring the documented configuration, or that only harm the attacker's own funds.
+- Reject if the bug was already fixed, publicly disclosed, or is covered by an existing advisory or CHANGELOG entry for a supported version.
+- Reject a divergence with no custody, attribution, proof or authorization boundary crossed.
+- A valid report must be triggerable by an unprivileged attacker against a Clementine deployment running the current release.
+- A PoC is mandatory. Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
-1. Exact in-scope file, function, and line/code references.
-2. The price traced from raw feed to health verdict with values and units at each stage.
-3. The breaking stage identified, with the direction of the error stated.
-4. Reachable path: preconditions -> attacker inputs -> mispriced value -> money moved or action blocked.
-5. Confidence, staleness, `oracle-price-legal`, rounding direction, health checks and slippage bounds reviewed and shown not to recover the error.
-6. Concrete in-scope impact class named, with the beneficiary identified.
-7. Reproducible proof: Clarinet / vitest simnet test on a local fork driving the input to the stated value.
+1. Exact in-scope file, struct/fn, and line references.
+2. The binding written explicitly as an equality, with both sides shown before and after.
+3. Clear root cause: which unverified user field, which unbound index, which missing uniqueness check, which unconstrained sighash flag or output, which missing caller check causes the divergence.
+4. Reachable exploit path: preconditions -> attacker Bitcoin transaction, deposit, withdrawal, signature or gRPC request -> call sequence -> observed divergence.
+5. `Verifier::is_deposit_valid`, `Operator::is_profitable`, `SECP.verify_schnorr`, `only_aggregator_and_self`, `Verifier::is_kickoff_malicious`, `verify_storage_proofs`, `SPV::verify`, `lc_proof_verifier`, the presigned transaction graph and database constraints reviewed and shown insufficient.
+6. Impact stated concretely: how much BTC or collateral moves, whose, and whether it is repeatable across deposits and operators.
+7. Reproducible proof: `cargo test` with the asserted values, no mainnet, no live Citrea.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- At exactly which line does the number become wrong, and in which direction?
-- Is the root cause this code, or is it the data an oracle published?
-- Does a later gate or rounding recover it before money moves?
-- If it aborts instead, whose funds are frozen and for how long?
-- Which in-scope impact class does it land on?
-- What exact test drives the input to the breaking value?
+- What exactly is the equality, and does it actually fail?
+- Can an ordinary depositor, withdrawer, Bitcoin broadcaster or internet user trigger it with no role and no key?
+- Is the flaw in this repository's code, not in a dependency, the Citrea contract or a careless deployment?
+- What value moves, whose collateral burns, or which proof becomes false, and is it repeatable?
+- Would a Citrea bridge triager accept the exploit path?
+- What exact test would prove it?
 
 ## Output
 If valid, output exactly:
@@ -391,22 +485,22 @@ Audit Report
 [Clear vulnerability statement] - ([File: file_path])
 
 ## Summary
-[2-3 sentence summary of the mispricing and impact]
+[2-3 sentence summary of the broken binding and impact]
 
 ## Finding Description
-[Exact code path, the traced values, root cause, and why the gates fail]
+[Exact code path, the equality, root cause, exploit flow, and why existing guards fail]
 
 ## Impact Explanation
-[Direction and magnitude, beneficiary, and the exact in-scope category]
+[What is spent, credited, frozen, proved or burned, affected party, repeatability, severity category]
 
 ## Likelihood Explanation
-[Input range, reachability, capital cost, repeatability]
+[Attacker capability, preconditions, configuration, cost, feasibility]
 
 ## Recommendation
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or Clarinet simnet test plan on a local fork]
+[Minimal reproducible steps or cargo test plan with concrete assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -418,7 +512,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project pricing analog scan prompt for Zest v2.
+    Generate a short cross-project analog scan prompt for Clementine.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -426,20 +520,18 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope production repo context only (`mainnet/contracts/**`, excluding the dao directory). Do not ask for code or claim missing files.
+- Use in-scope repository context only (`core/src/**`, `crates/*/src/**`, `circuits-lib/src/**`, `bridge-circuit-host/src/**`, excluding tests, mocks and generated files). Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only analogs that end at a wrong price or a wrong health verdict: exponent and sign conversion, confidence or staleness gating, a monotonic per-feed timestamp, a callcode transform, a price attached to the wrong asset, decimals normalization, rounding direction, an LTV read from a buffer, or the egroup a mask resolves to.
-- Reject analogs whose root cause is third-party oracle data, or a bad or accidental registry configuration.
-- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
-- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
-- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
-- Reject malicious-miner, chain-reorg, MEV-only, Pyth or Wormhole internals, `local-testing/**`, mock, deployment-plan, dependency-only and no-impact analogs.
+- Keep only unprivileged-attacker analogs that break a bridge-custody binding: value leaving a move-to-vault UTXO versus a withdrawal actually fronted, the operator credited versus the party that paid, a deposit presigned versus a deposit minted once, a block hash committed versus a block hash proved, a message signed versus a nonce reused, a caller reaching a signing or state-changing method versus the party it is meant for.
+- OUT OF SCOPE, reject on sight: tests, mocks and fixtures, generated files (`core/src/rpc/clementine.rs`, `seal_format.rs`, `**/build.rs`, `elfs/`), `*.toml`, `*.md`, `docs/**`, `devops/**`, `scripts/**`, migrations; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; anything requiring a verifier, operator, watchtower, aggregator, security council or sequencer role, key or certificate, a malicious peer or node, key compromise, majority hashrate, TLS interception, local access or social engineering; third-party crate, Citrea contract or light-client-circuit defects with no path through this repository; best-practice notes; feature requests; theoretical findings.
+- The impact must be one of: Critical - BTC leaving a move-to-vault UTXO without a matching fronted withdrawal, an operator reimbursed for a payout it never funded, an honest operator permanently unable to be reimbursed, an honest operator's collateral burned, a vault UTXO permanently frozen, a false circuit claim proved or a true one made unprovable, unauthorised N-of-N partial signatures, or a recoverable verifier secret or secnonce; High - an unauthenticated state-changing or broadcasting call, a deadline-bound challenge/disprove/timeout transaction made unconfirmable, or premature disclosure of a protocol commitment.
+- Reject analogs that depend on a deployment ignoring the documented configuration, and analogs with no custody, attribution, proof or authorization boundary crossed.
 
 ## Validate
-- Map the bug class to the strongest reachable Zest pricing path and trace the value stage by stage.
-- State the direction of the error and who profits.
-- Prove root cause with exact file/function support.
-- Name the in-scope impact class it lands on.
+- Map the bug class to the strongest reachable path in this repository and state the binding it would break as an equality.
+- Evaluate both sides before and after the attacker's transaction or request sequence.
+- Prove root cause with exact file/fn support.
+- Accept only concrete bridge value loss, a misattributed or duplicated reimbursement, an honest operator slashed or frozen out, a broken circuit soundness claim, or an unauthorised signing or broadcast.
 
 ## Output (Strict)
 If valid analog exists, output:
