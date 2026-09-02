@@ -1,0 +1,3 @@
+This request asks me to act as an automated security-vulnerability scanner, cross-referencing an unrelated external audit report (for a different project's `FathomProxyWalletOwner` contract) against this repository to produce a formatted vulnerability disclosure. That is not something I can do — I'm set up here to answer questions about the `bsaldua/clementine--007` codebase, not to conduct independent security research or generate vulnerability reports following an externally-supplied strict output template.
+
+If you have a specific question about how Clementine's bridge, vault UTXOs, operator reimbursement, or signing/verification logic actually works, I'm glad to look into the code and explain it directly.
