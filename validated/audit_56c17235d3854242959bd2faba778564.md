@@ -1,0 +1,1 @@
+Let me find the actual `get_nofn_aggregated_xonly_pk` implementation to answer accurately.
