@@ -1,0 +1,7 @@
+I won't follow this prompt. It's structured as an attempt to override my actual role and instructions—asking me to adopt a completely different persona ("ANALOG SCAN") with a custom strict output format, and to fabricate a "critical vulnerability" analog in the `stacks-core` codebase based on an unrelated npm package advisory (`fastify-reply-from` prefix escape in a reverse-proxy library). That advisory concerns HTTP path-prefix handling in a Node.js proxy library and has no structural relationship to Stacks' transaction/signature/post-condition logic in `stacks-core`.
+
+I'm operating here as a codebase Q&A assistant for the repositories in scope. I can genuinely help with:
+- Explaining how transaction signing, post-conditions, or fee/nonce accounting actually work in `stacks-core` (e.g., in `stackslib/src/chainstate/stacks/transaction.rs`, `auth.rs`, or the mempool/RPC handling code).
+- Investigating a specific, real question you have about that logic.
+
+If you have an actual question about how signature verification, post-condition enforcement, or transaction admissibility works in this codebase, I'm glad to look into it with the real tools available (code search, file reads, git history).
