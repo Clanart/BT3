@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'stacks-network/stacks-core'
+SOURCE_REPO = 'crate-crypto/go-eth-kzg'
 # todo: the name of the repository
-REPO_NAME = 'stacks-core'
+REPO_NAME = 'go-eth-kzg'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -49,510 +49,97 @@ else:
 
 scope_files = [
     # =================================================================================
-    # LENS: TRANSACTION AUTHENTICATION AND POST-CONDITION ENFORCEMENT.
-    # Every Stacks transaction is bytes an unprivileged sender chose. The files below sit
-    # on the path from those bytes - the auth structure, nonce, fee, chain id, version,
-    # payload and post-conditions - to one of three decisions: is the signer who they
-    # claim and did they authorise exactly this transaction, does every asset the
-    # transaction moves satisfy a post-condition, and does the fee/nonce debited equal
-    # what the sender committed. A question belongs here only if it can be closed by an
-    # equality between what was authenticated and what was executed or charged.
+    # LENS: KZG VERIFIER SOUNDNESS AND SPEC CONFORMANCE (EIP-4844 / EIP-7594 PeerDAS).
+    # go-eth-kzg is the KZG library consensus and execution clients call to decide
+    # whether attacker-authored bytes - a Blob, a KZGCommitment, a KZGProof, a Cell, a
+    # cell index, an evaluation point - are accepted. The files below sit on the path
+    # from those bytes to one of four decisions: does Verify accept only a true opening,
+    # does the batch accept only when every member would, does the deserialised element
+    # equal a canonical subgroup element, and do cells / proofs / recovered data equal
+    # what the consensus spec and c-kzg produce for the same input. A question belongs
+    # here only if it can be closed by an equality between what the library accepts or
+    # emits and what the spec says it must accept or emit.
     # =================================================================================
-    # -- clarity-types: Clarity value, type and effect model -------------------------------
-    "clarity-types/src/effects/asset_map.rs",
-    "clarity-types/src/effects/mod.rs",
-    "clarity-types/src/errors/mod.rs",
-    "clarity-types/src/lib.rs",
-    "clarity-types/src/representations.rs",
-    "clarity-types/src/types/mod.rs",
-    "clarity-types/src/types/serialization.rs",
-    "clarity-types/src/types/signatures.rs",
-    "clarity-types/src/version.rs",
+    # -- root package: the public Context API every client calls -----------------------
+    # api.go builds the Context from the trusted setup; verify.go / prove.go are the
+    # EIP-4844 entry points; api_eip7594.go is the PeerDAS cell prover, verifier and
+    # recovery; api_eip.go is cell recovery for cell-level messaging.
 
-    # -- clarity: the Clarity language, analyser, interpreter, costs and database ----------
-    "clarity/src/libclarity.rs",
-    "clarity/src/vm/analysis/analysis_db.rs",
-    "clarity/src/vm/analysis/arithmetic_checker/mod.rs",
-    "clarity/src/vm/analysis/contract_interface_builder/mod.rs",
-    "clarity/src/vm/analysis/errors.rs",
-    "clarity/src/vm/analysis/mod.rs",
-    "clarity/src/vm/analysis/read_only_checker/mod.rs",
-    "clarity/src/vm/analysis/trait_checker/mod.rs",
-    "clarity/src/vm/analysis/type_checker/contexts.rs",
-    "clarity/src/vm/analysis/type_checker/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/contexts.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/assets.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/maps.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/options.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/sequences.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/contexts.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/assets.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/conversions.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/maps.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/options.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/post_conditions.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/sequences.rs",
-    "clarity/src/vm/analysis/types.rs",
-    "clarity/src/vm/ast/definition_sorter/mod.rs",
-    "clarity/src/vm/ast/errors.rs",
-    "clarity/src/vm/ast/expression_identifier/mod.rs",
-    "clarity/src/vm/ast/mod.rs",
-    "clarity/src/vm/ast/parser/mod.rs",
-    "clarity/src/vm/ast/parser/v1.rs",
-    "clarity/src/vm/ast/parser/v2/lexer/error.rs",
-    "clarity/src/vm/ast/parser/v2/lexer/mod.rs",
-    "clarity/src/vm/ast/parser/v2/lexer/token.rs",
-    "clarity/src/vm/ast/parser/v2/mod.rs",
-    "clarity/src/vm/ast/stack_depth_checker.rs",
-    "clarity/src/vm/ast/sugar_expander/mod.rs",
-    "clarity/src/vm/ast/traits_resolver/mod.rs",
-    "clarity/src/vm/ast/types.rs",
-    "clarity/src/vm/callables.rs",
-    "clarity/src/vm/clarity.rs",
-    "clarity/src/vm/contexts.rs",
-    "clarity/src/vm/contracts.rs",
-    "clarity/src/vm/costs/constants.rs",
-    "clarity/src/vm/costs/cost_functions.rs",
-    "clarity/src/vm/costs/costs_1.rs",
-    "clarity/src/vm/costs/costs_2.rs",
-    "clarity/src/vm/costs/costs_2_testnet.rs",
-    "clarity/src/vm/costs/costs_3.rs",
-    "clarity/src/vm/costs/costs_4.rs",
-    "clarity/src/vm/costs/costs_5.rs",
-    "clarity/src/vm/costs/errors.rs",
-    "clarity/src/vm/costs/execution_cost.rs",
-    "clarity/src/vm/costs/mod.rs",
-    "clarity/src/vm/database/caching/mod.rs",
-    "clarity/src/vm/database/caching/weight_limited_fifo.rs",
-    "clarity/src/vm/database/clarity_db.rs",
-    "clarity/src/vm/database/clarity_store.rs",
-    "clarity/src/vm/database/key_value_wrapper.rs",
-    "clarity/src/vm/database/mod.rs",
-    "clarity/src/vm/database/sqlite.rs",
-    "clarity/src/vm/database/structures.rs",
-    "clarity/src/vm/diagnostic.rs",
-    "clarity/src/vm/errors.rs",
-    "clarity/src/vm/events.rs",
-    "clarity/src/vm/functions/arithmetic.rs",
-    "clarity/src/vm/functions/assets.rs",
-    "clarity/src/vm/functions/bitcoin.rs",
-    "clarity/src/vm/functions/boolean.rs",
-    "clarity/src/vm/functions/conversions.rs",
-    "clarity/src/vm/functions/crypto.rs",
-    "clarity/src/vm/functions/database.rs",
-    "clarity/src/vm/functions/define.rs",
-    "clarity/src/vm/functions/mod.rs",
-    "clarity/src/vm/functions/options.rs",
-    "clarity/src/vm/functions/post_conditions.rs",
-    "clarity/src/vm/functions/principals.rs",
-    "clarity/src/vm/functions/sequences.rs",
-    "clarity/src/vm/functions/tuples.rs",
-    "clarity/src/vm/hooks/internals.rs",
-    "clarity/src/vm/hooks/mod.rs",
-    "clarity/src/vm/hooks/trace.rs",
-    "clarity/src/vm/mod.rs",
-    "clarity/src/vm/representations.rs",
-    "clarity/src/vm/resource_limiter.rs",
-    "clarity/src/vm/tooling/mod.rs",
-    "clarity/src/vm/types/mod.rs",
-    "clarity/src/vm/types/serialization.rs",
-    "clarity/src/vm/types/signatures.rs",
-    "clarity/src/vm/variables.rs",
-    "clarity/src/vm/version.rs",
+    # -- root package: context, EIP-4844 and EIP-7594 entry points ------------------------
+    "api.go",
+    "api_eip.go",
+    "api_eip7594.go",
+    "verify.go",
+    "prove.go",
+    "errors.go",
 
-    # -- stacks-codec: transaction and message wire encoding -------------------------------
-    "stacks-codec/src/lib.rs",
-    "stacks-codec/src/strings.rs",
-    "stacks-codec/src/transaction.rs",
+    # -- root package: byte <-> field / group element boundary, transcript, setup --------
+    "serialization.go",
+    "fiatshamir.go",
+    "trusted_setup.go",
 
-    # -- crates/stacks-transactions: standalone transaction and post-condition checks ------
-    "crates/stacks-transactions/src/lib.rs",
+    # -- internal/kzg: single-point opening, batch verification, commit key ----------------
+    "internal/kzg/kzg.go",
+    "internal/kzg/kzg_prove.go",
+    "internal/kzg/kzg_verify.go",
+    "internal/kzg/srs.go",
+    "internal/kzg/errors.go",
 
-    # -- stacks-common: addresses, hashing, secp256k1, codec and shared utils --------------
-    "stacks-common/src/address/b58.rs",
-    "stacks-common/src/address/c32.rs",
-    "stacks-common/src/address/c32_old.rs",
-    "stacks-common/src/address/mod.rs",
-    "stacks-common/src/alloc_tracker.rs",
-    "stacks-common/src/bitvec.rs",
-    "stacks-common/src/codec/macros.rs",
-    "stacks-common/src/codec/mod.rs",
-    "stacks-common/src/libcommon.rs",
-    "stacks-common/src/types/chainstate.rs",
-    "stacks-common/src/types/mod.rs",
-    "stacks-common/src/types/net.rs",
-    "stacks-common/src/types/sqlite.rs",
-    "stacks-common/src/util/chunked_encoding.rs",
-    "stacks-common/src/util/db.rs",
-    "stacks-common/src/util/ed25519.rs",
-    "stacks-common/src/util/hash.rs",
-    "stacks-common/src/util/log.rs",
-    "stacks-common/src/util/lru_cache.rs",
-    "stacks-common/src/util/macros.rs",
-    "stacks-common/src/util/mod.rs",
-    "stacks-common/src/util/pair.rs",
-    "stacks-common/src/util/pipe.rs",
-    "stacks-common/src/util/retry.rs",
-    "stacks-common/src/util/secp256k1/mod.rs",
-    "stacks-common/src/util/secp256k1/native.rs",
-    "stacks-common/src/util/secp256k1/wasm.rs",
-    "stacks-common/src/util/secp256r1.rs",
-    "stacks-common/src/util/serde_serializers.rs",
-    "stacks-common/src/util/uint.rs",
-    "stacks-common/src/util/vrf.rs",
+    # -- internal/kzg_multi: multi-point (cell) batch verification, opening key, FK20 -------
+    "internal/kzg_multi/kzg_prove.go",
+    "internal/kzg_multi/kzg_verify.go",
+    "internal/kzg_multi/srs.go",
+    "internal/kzg_multi/errors.go",
+    "internal/kzg_multi/fk20/fk20.go",
+    "internal/kzg_multi/fk20/toeplitz.go",
 
-    # -- libsigner: signer transport, events and v0 messages -------------------------------
-    "libsigner/src/error.rs",
-    "libsigner/src/events.rs",
-    "libsigner/src/http.rs",
-    "libsigner/src/libsigner.rs",
-    "libsigner/src/runloop.rs",
-    "libsigner/src/session.rs",
-    "libsigner/src/signer_set.rs",
-    "libsigner/src/v0/messages.rs",
-    "libsigner/src/v0/mod.rs",
-    "libsigner/src/v0/signer_state.rs",
+    # -- internal/erasure_code: block-erasure recovery of the extended blob ----------------
+    "internal/erasure_code/erasure_code.go",
 
-    # -- libstackerdb: StackerDB chunk signing and verification ----------------------------
-    "libstackerdb/src/libstackerdb.rs",
+    # -- internal/domain: roots of unity, bit reversal, Lagrange evaluation, FFTs ----------
+    "internal/domain/domain.go",
+    "internal/domain/fft.go",
+    "internal/domain/coset_fft.go",
+    "internal/domain/errors.go",
 
-    # -- pox-locking: the Rust side that locks and unlocks STX for PoX/stacking ------------
-    "pox-locking/src/events.rs",
-    "pox-locking/src/events_24.rs",
-    "pox-locking/src/lib.rs",
-    "pox-locking/src/pox_1.rs",
-    "pox-locking/src/pox_2.rs",
-    "pox-locking/src/pox_3.rs",
-    "pox-locking/src/pox_4.rs",
-    "pox-locking/src/pox_5.rs",
-
-    # -- stacks-signer: the Nakamoto signer decision logic and chainstate view -------------
-    "stacks-signer/src/chainstate/mod.rs",
-    "stacks-signer/src/chainstate/v1.rs",
-    "stacks-signer/src/chainstate/v2.rs",
-    "stacks-signer/src/cli.rs",
-    "stacks-signer/src/client/mod.rs",
-    "stacks-signer/src/client/stackerdb.rs",
-    "stacks-signer/src/client/stacks_client.rs",
-    "stacks-signer/src/config.rs",
-    "stacks-signer/src/lib.rs",
-    "stacks-signer/src/main.rs",
-    "stacks-signer/src/monitor_signers.rs",
-    "stacks-signer/src/monitoring/mod.rs",
-    "stacks-signer/src/monitoring/prometheus.rs",
-    "stacks-signer/src/monitoring/server.rs",
-    "stacks-signer/src/runloop.rs",
-    "stacks-signer/src/signerdb.rs",
-    "stacks-signer/src/utils.rs",
-    "stacks-signer/src/v0/mod.rs",
-    "stacks-signer/src/v0/signer.rs",
-    "stacks-signer/src/v0/signer_state.rs",
-
-    # -- stacks-node: the node binary, run loops, miner, burnchain and event dispatch ------
-    "stacks-node/src/burnchains/bitcoin/core_controller.rs",
-    "stacks-node/src/burnchains/bitcoin/mod.rs",
-    "stacks-node/src/burnchains/bitcoin_regtest_controller.rs",
-    "stacks-node/src/burnchains/mod.rs",
-    "stacks-node/src/burnchains/rpc/bitcoin_rpc_client/mod.rs",
-    "stacks-node/src/burnchains/rpc/mod.rs",
-    "stacks-node/src/burnchains/rpc/rpc_transport/mod.rs",
-    "stacks-node/src/event_dispatcher.rs",
-    "stacks-node/src/event_dispatcher/db.rs",
-    "stacks-node/src/event_dispatcher/payloads.rs",
-    "stacks-node/src/event_dispatcher/stacker_db.rs",
-    "stacks-node/src/event_dispatcher/worker.rs",
-    "stacks-node/src/globals.rs",
-    "stacks-node/src/keychain.rs",
-    "stacks-node/src/main.rs",
-    "stacks-node/src/monitoring/mod.rs",
-    "stacks-node/src/monitoring/prometheus.rs",
-    "stacks-node/src/nakamoto_node.rs",
-    "stacks-node/src/nakamoto_node/miner.rs",
-    "stacks-node/src/nakamoto_node/miner_db.rs",
-    "stacks-node/src/nakamoto_node/peer.rs",
-    "stacks-node/src/nakamoto_node/relayer.rs",
-    "stacks-node/src/nakamoto_node/signer_coordinator.rs",
-    "stacks-node/src/nakamoto_node/stackerdb_listener.rs",
-    "stacks-node/src/neon_node.rs",
-    "stacks-node/src/node.rs",
-    "stacks-node/src/operations.rs",
-    "stacks-node/src/run_loop/boot_nakamoto.rs",
-    "stacks-node/src/run_loop/helium.rs",
-    "stacks-node/src/run_loop/mod.rs",
-    "stacks-node/src/run_loop/nakamoto.rs",
-    "stacks-node/src/run_loop/neon.rs",
-    "stacks-node/src/syncctl.rs",
-    "stacks-node/src/tenure.rs",
-
-    # -- stackslib: consensus, chainstate, the Clarity VM host, burn ops and the P2P/RPC network ----
-    "stackslib/src/burnchains/bitcoin/address.rs",
-    "stackslib/src/burnchains/bitcoin/bits.rs",
-    "stackslib/src/burnchains/bitcoin/blocks.rs",
-    "stackslib/src/burnchains/bitcoin/indexer.rs",
-    "stackslib/src/burnchains/bitcoin/keys.rs",
-    "stackslib/src/burnchains/bitcoin/messages.rs",
-    "stackslib/src/burnchains/bitcoin/mod.rs",
-    "stackslib/src/burnchains/bitcoin/network.rs",
-    "stackslib/src/burnchains/bitcoin/spv.rs",
-    "stackslib/src/burnchains/burnchain.rs",
-    "stackslib/src/burnchains/db.rs",
-    "stackslib/src/burnchains/indexer.rs",
-    "stackslib/src/burnchains/mod.rs",
-    "stackslib/src/chainstate/burn/atc.rs",
-    "stackslib/src/chainstate/burn/db/mod.rs",
-    "stackslib/src/chainstate/burn/db/processing.rs",
-    "stackslib/src/chainstate/burn/db/sortdb.rs",
-    "stackslib/src/chainstate/burn/distribution.rs",
-    "stackslib/src/chainstate/burn/mod.rs",
-    "stackslib/src/chainstate/burn/operations/delegate_stx.rs",
-    "stackslib/src/chainstate/burn/operations/leader_block_commit.rs",
-    "stackslib/src/chainstate/burn/operations/leader_key_register.rs",
-    "stackslib/src/chainstate/burn/operations/mod.rs",
-    "stackslib/src/chainstate/burn/operations/stack_stx.rs",
-    "stackslib/src/chainstate/burn/operations/transfer_stx.rs",
-    "stackslib/src/chainstate/burn/operations/vote_for_aggregate_key.rs",
-    "stackslib/src/chainstate/burn/sortition.rs",
-    "stackslib/src/chainstate/coordinator/comm.rs",
-    "stackslib/src/chainstate/coordinator/mod.rs",
-    "stackslib/src/chainstate/mod.rs",
-    "stackslib/src/chainstate/nakamoto/coordinator/mod.rs",
-    "stackslib/src/chainstate/nakamoto/keys.rs",
-    "stackslib/src/chainstate/nakamoto/miner.rs",
-    "stackslib/src/chainstate/nakamoto/mod.rs",
-    "stackslib/src/chainstate/nakamoto/shadow.rs",
-    "stackslib/src/chainstate/nakamoto/signer_set.rs",
-    "stackslib/src/chainstate/nakamoto/staging_blocks.rs",
-    "stackslib/src/chainstate/nakamoto/tenure.rs",
-    "stackslib/src/chainstate/stacks/address.rs",
-    "stackslib/src/chainstate/stacks/auth.rs",
-    "stackslib/src/chainstate/stacks/block.rs",
-    "stackslib/src/chainstate/stacks/boot/bns.clar",
-    "stackslib/src/chainstate/stacks/boot/contract_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/cost-voting.clar",
-    "stackslib/src/chainstate/stacks/boot/costs-2.clar",
-    "stackslib/src/chainstate/stacks/boot/costs-3.clar",
-    "stackslib/src/chainstate/stacks/boot/costs-4.clar",
-    "stackslib/src/chainstate/stacks/boot/costs.clar",
-    "stackslib/src/chainstate/stacks/boot/docs.rs",
-    "stackslib/src/chainstate/stacks/boot/genesis.clar",
-    "stackslib/src/chainstate/stacks/boot/lockup.clar",
-    "stackslib/src/chainstate/stacks/boot/mod.rs",
-    "stackslib/src/chainstate/stacks/boot/pox-2.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-3.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-4.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-5.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-mainnet.clar",
-    "stackslib/src/chainstate/stacks/boot/pox.clar",
-    "stackslib/src/chainstate/stacks/boot/pox_2_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/pox_3_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/pox_4_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/signers-0-xxx.clar",
-    "stackslib/src/chainstate/stacks/boot/signers-1-xxx.clar",
-    "stackslib/src/chainstate/stacks/boot/signers-voting.clar",
-    "stackslib/src/chainstate/stacks/boot/signers.clar",
-    "stackslib/src/chainstate/stacks/boot/signers_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/sip-031.clar",
-    "stackslib/src/chainstate/stacks/db/accounts.rs",
-    "stackslib/src/chainstate/stacks/db/blocks.rs",
-    "stackslib/src/chainstate/stacks/db/contracts.rs",
-    "stackslib/src/chainstate/stacks/db/headers.rs",
-    "stackslib/src/chainstate/stacks/db/mod.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/blocks.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/burnchain.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/clarity.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/common.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/fork_storage.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/index.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/mod.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/sortition.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/spv.rs",
-    "stackslib/src/chainstate/stacks/db/transactions.rs",
-    "stackslib/src/chainstate/stacks/db/unconfirmed.rs",
-    "stackslib/src/chainstate/stacks/events.rs",
-    "stackslib/src/chainstate/stacks/index/bits.rs",
-    "stackslib/src/chainstate/stacks/index/blob_layout.rs",
-    "stackslib/src/chainstate/stacks/index/cache.rs",
-    "stackslib/src/chainstate/stacks/index/file.rs",
-    "stackslib/src/chainstate/stacks/index/marf.rs",
-    "stackslib/src/chainstate/stacks/index/mod.rs",
-    "stackslib/src/chainstate/stacks/index/node.rs",
-    "stackslib/src/chainstate/stacks/index/profile.rs",
-    "stackslib/src/chainstate/stacks/index/proofs.rs",
-    "stackslib/src/chainstate/stacks/index/squash.rs",
-    "stackslib/src/chainstate/stacks/index/squash/node_store.rs",
-    "stackslib/src/chainstate/stacks/index/squash/stream.rs",
-    "stackslib/src/chainstate/stacks/index/storage.rs",
-    "stackslib/src/chainstate/stacks/index/trie.rs",
-    "stackslib/src/chainstate/stacks/index/trie_sql.rs",
-    "stackslib/src/chainstate/stacks/miner.rs",
-    "stackslib/src/chainstate/stacks/mod.rs",
-    "stackslib/src/chainstate/stacks/sbtc.rs",
-    "stackslib/src/chainstate/stacks/transaction.rs",
-    "stackslib/src/clarity_vm/clarity.rs",
-    "stackslib/src/clarity_vm/database/ephemeral.rs",
-    "stackslib/src/clarity_vm/database/marf.rs",
-    "stackslib/src/clarity_vm/database/mod.rs",
-    "stackslib/src/clarity_vm/mod.rs",
-    "stackslib/src/clarity_vm/special.rs",
-    "stackslib/src/config/chain_data.rs",
-    "stackslib/src/config/mod.rs",
-    "stackslib/src/core/mempool.rs",
-    "stackslib/src/core/mod.rs",
-    "stackslib/src/core/nonce_cache.rs",
-    "stackslib/src/cost_estimates/fee_medians.rs",
-    "stackslib/src/cost_estimates/fee_rate_fuzzer.rs",
-    "stackslib/src/cost_estimates/fee_scalar.rs",
-    "stackslib/src/cost_estimates/metrics.rs",
-    "stackslib/src/cost_estimates/mod.rs",
-    "stackslib/src/cost_estimates/pessimistic.rs",
-    "stackslib/src/deps/mod.rs",
-    "stackslib/src/lib.rs",
-    "stackslib/src/monitoring/mod.rs",
-    "stackslib/src/monitoring/prometheus.rs",
-    "stackslib/src/net/api/blockreplay.rs",
-    "stackslib/src/net/api/blocksimulate.rs",
-    "stackslib/src/net/api/callreadonly.rs",
-    "stackslib/src/net/api/fastcallreadonly.rs",
-    "stackslib/src/net/api/get_tenure_tip_meta.rs",
-    "stackslib/src/net/api/get_tenures_fork_info.rs",
-    "stackslib/src/net/api/getaccount.rs",
-    "stackslib/src/net/api/getattachment.rs",
-    "stackslib/src/net/api/getattachmentsinv.rs",
-    "stackslib/src/net/api/getblock.rs",
-    "stackslib/src/net/api/getblock_v3.rs",
-    "stackslib/src/net/api/getblockbyheight.rs",
-    "stackslib/src/net/api/getclaritymarfvalue.rs",
-    "stackslib/src/net/api/getclaritymetadata.rs",
-    "stackslib/src/net/api/getconstantval.rs",
-    "stackslib/src/net/api/getcontractabi.rs",
-    "stackslib/src/net/api/getcontractsrc.rs",
-    "stackslib/src/net/api/getdatavar.rs",
-    "stackslib/src/net/api/getheaders.rs",
-    "stackslib/src/net/api/gethealth.rs",
-    "stackslib/src/net/api/getinfo.rs",
-    "stackslib/src/net/api/getistraitimplemented.rs",
-    "stackslib/src/net/api/getmapentry.rs",
-    "stackslib/src/net/api/getmicroblocks_confirmed.rs",
-    "stackslib/src/net/api/getmicroblocks_indexed.rs",
-    "stackslib/src/net/api/getmicroblocks_unconfirmed.rs",
-    "stackslib/src/net/api/getneighbors.rs",
-    "stackslib/src/net/api/getpoxinfo.rs",
-    "stackslib/src/net/api/getsigner.rs",
-    "stackslib/src/net/api/getsortition.rs",
-    "stackslib/src/net/api/getstackerdbchunk.rs",
-    "stackslib/src/net/api/getstackerdbmetadata.rs",
-    "stackslib/src/net/api/getstackers.rs",
-    "stackslib/src/net/api/getstxtransfercost.rs",
-    "stackslib/src/net/api/gettenure.rs",
-    "stackslib/src/net/api/gettenureblocks.rs",
-    "stackslib/src/net/api/gettenureblocksbyhash.rs",
-    "stackslib/src/net/api/gettenureblocksbyheight.rs",
-    "stackslib/src/net/api/gettenureinfo.rs",
-    "stackslib/src/net/api/gettenuretip.rs",
-    "stackslib/src/net/api/gettransaction.rs",
-    "stackslib/src/net/api/gettransaction_unconfirmed.rs",
-    "stackslib/src/net/api/liststackerdbreplicas.rs",
-    "stackslib/src/net/api/mod.rs",
-    "stackslib/src/net/api/postblock.rs",
-    "stackslib/src/net/api/postblock_proposal.rs",
-    "stackslib/src/net/api/postblock_v3.rs",
-    "stackslib/src/net/api/postfeerate.rs",
-    "stackslib/src/net/api/postmempoolquery.rs",
-    "stackslib/src/net/api/postmicroblock.rs",
-    "stackslib/src/net/api/poststackerdbchunk.rs",
-    "stackslib/src/net/api/posttransaction.rs",
-    "stackslib/src/net/api/read_only/mod.rs",
-    "stackslib/src/net/api/read_only/parse.rs",
-    "stackslib/src/net/api/txsimulate.rs",
-    "stackslib/src/net/asn.rs",
-    "stackslib/src/net/atlas/db.rs",
-    "stackslib/src/net/atlas/download.rs",
-    "stackslib/src/net/atlas/mod.rs",
-    "stackslib/src/net/chat.rs",
-    "stackslib/src/net/codec.rs",
-    "stackslib/src/net/connection.rs",
-    "stackslib/src/net/db.rs",
-    "stackslib/src/net/dns.rs",
-    "stackslib/src/net/download/epoch2x.rs",
-    "stackslib/src/net/download/mod.rs",
-    "stackslib/src/net/download/nakamoto/download_state_machine.rs",
-    "stackslib/src/net/download/nakamoto/mod.rs",
-    "stackslib/src/net/download/nakamoto/tenure.rs",
-    "stackslib/src/net/download/nakamoto/tenure_downloader.rs",
-    "stackslib/src/net/download/nakamoto/tenure_downloader_set.rs",
-    "stackslib/src/net/download/nakamoto/tenure_downloader_unconfirmed.rs",
-    "stackslib/src/net/http/common.rs",
-    "stackslib/src/net/http/error.rs",
-    "stackslib/src/net/http/mod.rs",
-    "stackslib/src/net/http/request.rs",
-    "stackslib/src/net/http/response.rs",
-    "stackslib/src/net/http/stream.rs",
-    "stackslib/src/net/httpcore.rs",
-    "stackslib/src/net/inv/epoch2x.rs",
-    "stackslib/src/net/inv/mod.rs",
-    "stackslib/src/net/inv/nakamoto.rs",
-    "stackslib/src/net/mempool/mod.rs",
-    "stackslib/src/net/mod.rs",
-    "stackslib/src/net/neighbors/comms.rs",
-    "stackslib/src/net/neighbors/db.rs",
-    "stackslib/src/net/neighbors/mod.rs",
-    "stackslib/src/net/neighbors/neighbor.rs",
-    "stackslib/src/net/neighbors/rpc.rs",
-    "stackslib/src/net/neighbors/walk.rs",
-    "stackslib/src/net/p2p.rs",
-    "stackslib/src/net/poll.rs",
-    "stackslib/src/net/prune.rs",
-    "stackslib/src/net/relay.rs",
-    "stackslib/src/net/rpc.rs",
-    "stackslib/src/net/server.rs",
-    "stackslib/src/net/stackerdb/config.rs",
-    "stackslib/src/net/stackerdb/db.rs",
-    "stackslib/src/net/stackerdb/mod.rs",
-    "stackslib/src/net/stackerdb/sync.rs",
-    "stackslib/src/net/unsolicited.rs",
-    "stackslib/src/util_lib/bloom.rs",
-    "stackslib/src/util_lib/boot.rs",
-    "stackslib/src/util_lib/db.rs",
-    "stackslib/src/util_lib/mod.rs",
-    "stackslib/src/util_lib/signed_structured_data.rs",
-    "stackslib/src/util_lib/strings.rs",
+    # -- internal: multi-exponentiation, coefficient polynomials, scalar helpers -----------
+    "internal/multiexp/multiexp.go",
+    "internal/multiexp/errors.go",
+    "internal/poly/poly.go",
+    "internal/utils/utils.go",
 
     # =================================================================================
-    # NOT AUDITED (excluded from every variant): tests, mocks and *test* files; fuzz and
-    # bench harnesses; test_util and the hooks/testing render helpers; docs/ and README;
-    # config, *.toml and CHANGELOG; generated tables (stx-genesis, genesis_data.rs) and
-    # build.rs; vendored third-party code under deps_common/ (bitcoin, httparse, bech32,
-    # ctrlc); the contrib/ tools and stacks-profiler; sample/ example contracts; and the
-    # *-testnet / *.tests.clar network- and test-only contract bodies. A defect in any of
-    # these is only in scope when it is reachable from the audited code above.
+    # NOT AUDITED (excluded from every variant): every *_test.go and bench_*_test.go,
+    # examples_test.go, consensus_specs_test.go, the tests/ fixture tree (data.yaml);
+    # internal/kzg/srs_insecure.go (test-only SRS with a supplied secret, never used by
+    # NewContext4096); trusted_setup.json (embedded ceremony output); go.mod / go.sum,
+    # .golangci.yml, .github workflows and scripts, audits/, LICENSE and readme.md. A
+    # defect in any of these is only in scope when it is reachable from the audited
+    # code above through the public Context API.
     # =================================================================================
 ]
 
 
 target_scopes = [
-    "Critical. THE SIGNATURE HASH MUST COVER EVERY FIELD THE NODE ACTS ON. `StacksTransaction::verify` -> `verify_origin` (codec transaction.rs) rebuilds the signing hash via `next_signature` over a cleared-auth transaction, then recovers the pubkey and compares its `Hash160` to the auth's `signer`. Find a field the node acts on that is not bound into that hash, or a re-encoding that produces the same hash for two different transactions: a post-condition list or `post_condition_mode` altered after signing, a `TransactionPayload` field the clearing step blanks and never restores, an `anchor_mode` or `sponsor` toggled, an auth field order in order-independent multisig that changes the executed set but not the digest. Show an unprivileged attacker taking a validly signed transaction and mutating it into a different executed transaction with the same recovered signer. Identity: the transaction the recovered public key authenticated == the transaction the node executes and charges.",
+    "Critical. VERIFY MUST ACCEPT ONLY A TRUE OPENING. `kzg.Verify` checks e([f(α)-f(z)]G₁, -G₂) · e(Q, [α-z]G₂) == 1 after `Context.VerifyKZGProof` / `VerifyBlobKZGProof` deserialise `blobCommitment`, `kzgProof`, `inputPointBytes`, `claimedValueBytes` and `VerifyBlobKZGProof` derives `ClaimedValue` from the blob via `EvaluateLagrangePolynomial`. `deserializeG1Point` accepts the point at infinity (`PointAtInfinity`) for both commitment and proof; `SubAssign` on Jacobian points and `FromJacobian` normalise before `PairingCheck`. Probe every (commitment, proof, z, y) tuple that passes without f(z) == y: commitment or proof at infinity with a chosen y; z equal to a bit-reversed domain root so `FindRootIndex` returns an index and the value is read straight from the blob; z == α-independent degenerate cases where [α-z]G₂ is the identity; a blob whose polynomial is constant so every quotient is zero. Identity: `Verify` returns nil ⇔ the polynomial committed by `blobCommitment` evaluates to `claimedValue` at `inputPoint`, for every deserialisable input.",
 
-    "Critical. MULTISIG THRESHOLD MUST EQUAL SIGNATURES VERIFIED. `TransactionAuth` singlesig, `MultisigSpendingCondition`, `OrderIndependentMultisigSpendingCondition` and their `verify` / `push_signature` / `push_public_key` / `pop_auth_field` decide when enough distinct keys signed; `next_signature` threads the running hash for sequential multisig. Show an auth that verifies with fewer distinct signers than the required `signatures_required`, or where one signature is counted twice: a duplicated `TransactionAuthField::Signature`, a public-key field that fills a slot without a signature in order-independent mode, a recovered key that matches the address hash but signs a different sighash than the thread expects, a `signatures_required` of zero accepted. Identity: the count of distinct authorized keys whose signatures verify over the correct sighash == the `signatures_required` encoded in the spending condition.",
+    "Critical. THE BATCH MUST ACCEPT ONLY WHEN EVERY MEMBER WOULD. `kzg.BatchVerifyMultiPoints` folds `commitments`, `ClaimedValue` and `QuotientCommitment` with `utils.ComputePowers(randomNumber, batchSize)` drawn from `fr.SetRandom`, short-circuits `batchSize == 1` to `Verify`, and multiplies `randomNumbers[i]` by `InputPoint` in place for the second `MultiExp`; `Context.VerifyBlobKZGProofBatch` builds `openingProofs` per blob with `computeChallenge(blob, serComm)`; `VerifyBlobKZGProofBatchPar` runs `VerifyBlobKZGProof` per index under `errgroup`. Show a batch containing one invalid (blob, commitment, proof) triple that returns nil, or a batch of valid triples that fails: a batch where two members cancel in the folded pairing because their quotients or commitments are negations or infinity; a length mismatch between `commitments` and `proofs` caught late; a zero-length batch returning nil where a caller treats nil as 'all valid'; a `randomNumbers` power sequence that is not injective over the batch. Identity: `VerifyBlobKZGProofBatch(blobs, comms, proofs) == nil` ⇔ `VerifyBlobKZGProof(blobs[i], comms[i], proofs[i]) == nil` for every i, with probability 1 - negl.",
 
-    "Critical. LOW-S AND RECOVERY MUST NOT ADMIT A SECOND VALID SIGNATURE. `secp256k1/native.rs` `recover_to_pubkey`, `recover_to_pubkey_without_validating_low_s`, `secp256k1_verify` and `MessageSignature` conversions decide signature admissibility; `TransactionAuthVerificationMode` (from `allows_tx_signatures_with_high_s`) selects whether high-S is rejected in the current epoch. Show a transaction where a malleated signature (flipped S, alternate recovery id) recovers the same signer and is accepted, so the same authorized transaction has two distinct txids, or where the epoch gate lets a high-S signature through that a later epoch's mempool or block check rejects. Identity: the set of byte-distinct signatures the node accepts for one (signer, sighash) == exactly the canonical one the epoch's verification mode permits.",
+    "Critical. A CELL BATCH MUST BIND EACH CELL TO ITS COMMITMENT AND COSET. `Context.VerifyCellKZGProofBatch` runs `deduplicateKZGCommitments` to get `rowCommitments, rowIndices`, bounds-checks `cellIndices < CellsPerExtBlob`, deserialises, and calls `kzgmulti.VerifyMultiPointKZGProofBatch`, which sizes `rPowers` by `len(commitmentIndices)`, accumulates `weights[commitmentIndex]`, bit-reverses and coset-IFFTs each `cosetEval` in place through `openKey.cosetDomains[cosetIndex]`, sums them with `poly.PolyAdd` (which drops nothing but `removeTrailingZeros` elsewhere does), commits with `CommitG1`, scales proofs by `CosetShiftsPowCosetSize[cosetIndex]` and pairs against `openKey.G2[cosetSize]` and `genG2()`. Show a (commitments, cellIndices, cells, proofs) batch accepted although some cell is not the committed polynomial's evaluation on that coset: the same `cellIndex` repeated with two different cells whose contributions cancel; a cell of all zeros with a proof at infinity; a `rowIndices` / `cellIndices` pairing where the dedup map reorders commitments relative to `cellIndices`; a proof set where `rPowers[k]` and the weighted `CosetShiftsPowCosetSize` term collapse; an `interpolationPoly` shorter than `cosetSize` after `PolyAdd`. Identity: acceptance ⇔ for every k, `cells[k]` == evaluations of the polynomial committed by `commitments[k]` on coset `cellIndices[k]`, and `proofs[k]` opens exactly that.",
 
-    "Critical. THE SPONSOR PAYS; THE ORIGIN COMMANDS. In a sponsored transaction `is_sponsored`, `verify` (origin then sponsor), `get_origin_nonce`, `get_sponsor_nonce`, `get_tx_fee`, and the account projection in `transactions.rs` split authority: the origin authorises the payload, the sponsor authorises the fee. Show a sponsored transaction where the fee is charged to the wrong account, the origin's payload executes without a valid sponsor signature, the sponsor nonce and origin nonce are checked against the wrong accounts, or a non-sponsored transaction is processed through the sponsored path so `tx-sponsor?` reports an account that never signed. Identity: the account debited the fee == the sponsor who signed the sponsor auth, and the account whose nonce and payload authority are consumed == the origin who signed the origin auth.",
+    "Critical. BYTES ACCEPTED MUST BE CANONICAL SUBGROUP ELEMENTS AND CANONICAL SCALARS. `deserializeG1Point` relies on gnark `SetBytes` for on-curve and subgroup checks and the `0xc0` infinity flag; `DeserializeScalar` and `deserializeBlobToPoly` use `SetBytesCanonical` / `ReduceCanonicalBigEndian` and return `ErrNonCanonicalScalar`; `deserializeCell` copies 32-byte chunks; `SerializeG1Point` / `SerializeScalar` round-trip. Probe every byte string that deserialises to an element the spec's `validate_kzg_g1` / `bytes_to_bls_field` would reject, or two byte strings that deserialise to the same element: a compressed point with the infinity bit set and non-zero x bytes; a point with both the `0x80` compression and sort flags in a combination gnark tolerates; a scalar equal to `BlsModulus`, `BlsModulus - 1` and `2^255`; a blob where one chunk is non-canonical but deserialisation happens after an earlier accept decision. Identity: `Deserialize*(b)` succeeds ⇔ b is the unique canonical encoding of an element of the prime-order subgroup (or of a scalar < `BlsModulus`), and `Serialize*(Deserialize*(b)) == b`.",
 
-    "Critical. POST-CONDITIONS MUST COVER EVERY ASSET THAT MOVED. `check_transaction_postconditions` (stacks-transactions) compares the transaction's `TransactionPostCondition` list under `TransactionPostConditionMode` against the `AssetMap` the VM produced; `FungibleConditionCode::check`, `AssetInfoID` and the STX/FT/NFT branches decide pass/fail. Show a transfer that escapes its post-conditions: `Allow` mode letting an unexpected asset move (intended), but also `Deny` mode where an asset moved by a `contract-call?` sub-call is not attributed to the sender the post-condition names, an NFT identified by a `Value` that the check compares by a different encoding than the AssetMap stored, an STX post-condition satisfied by burn versus transfer, a memo transfer counted under the wrong code. Identity: every asset movement in the committed AssetMap == an asset movement permitted by the transaction's post-conditions under its mode.",
+    "High. THE CHALLENGE MUST HASH EXACTLY THE SPEC TRANSCRIPT. `computeChallenge` writes `DomSepProtocol` (16 bytes), `u64ToByteArray16(ScalarsPerBlob)`, `blob[:]` and `commitment[:]` into SHA-256 then `challenge.SetBytes(digest)`; `ComputeBlobKZGProof` deserialises `blobCommitment` only for a subgroup check and never verifies it commits to `blob`; `VerifyBlobKZGProof` recomputes the challenge from the caller's `blobCommitment` bytes rather than the deserialised point. Show two distinct (blob, commitment) transcripts that yield one challenge, a challenge that differs from `compute_challenge` in the consensus spec for some blob so this client accepts what c-kzg rejects or vice versa, or a challenge landing in the domain so `EvaluateLagrangePolynomial` reads `poly[index]` and the quotient path changes: a `SetBytes` reduction mismatch with `hash_to_bls_field`, a commitment whose non-canonical but accepted encoding hashes differently from its canonical form, a blob with a non-canonical scalar hashed before rejection. Identity: `computeChallenge(blob, commitment)` == spec `compute_challenge(blob, commitment)` byte-for-byte, and equal challenges imply equal (blob, canonical commitment).",
 
-    "Critical. THE EPOCH GATE MUST REJECT EVERY UNSUPPORTED TRANSACTION IDENTICALLY. `process_transaction_precheck` / `validate_transactions_static_epoch_and_process_transaction` check `tx.auth.is_supported_in_epoch`, `chain_id`, `version`, `check_post_conditions_supported_in_epoch`, and the `SmartContract(_, Some(clarity_version))` bound against `ClarityVersion::default_for_epoch`. Show a transaction accepted in one epoch or by one node's gate but not another's, or a version/chain-id/hash-mode combination that the mempool admits and a block applies inconsistently: an order-independent multisig auth not supported before its epoch, a post-condition mode gated differently in codec versus stacks-transactions, a `chain_id` compared against the wrong network constant, a Clarity version newer than the epoch that a soft check lets through. Identity: the set of transactions node A's epoch gate admits == the set node B admits at the same tip.",
+    "High. THE EVALUATION AND QUOTIENT MUST EQUAL THE SPEC FOR EVERY z. `Domain.EvaluateLagrangePolynomialWithIndex` returns `&poly[index]` when `FindRootIndex` hits a (bit-reversed) root, else the barycentric formula with `getElementSlice` / `putElementSlice` pooled buffers and `fr.BatchInvert`; `kzg.Open` feeds `indexInDomain` into `computeQuotientPoly`, which selects `computeQuotientPolyOnDomain` (sets `rootsMinusZ[index]` to one, accumulates `q_m_j` with `PreComputedInverses[index]`) or `computeQuotientPolyOutsideDomain`. Show a (blob, z) where the returned `ClaimedValue` or `QuotientCommitment` differs from `evaluate_polynomial_in_evaluation_form` / `compute_kzg_proof_impl`, so a proof this library produces is rejected by c-kzg or a proof c-kzg produces is rejected here: z equal to a root under bit-reversed `Roots` versus natural order; a pooled `denom` slice carrying stale values into `BatchInvert`; `ClaimedValue` read from `&poly[index]` after `putPolynomial` returns the buffer to `polynomialPool`; a zero in `rootsMinusZ` silently skipped by `BatchInvert`. Identity: (`ClaimedValue`, `QuotientCommitment`) from `ComputeKZGProof(blob, z)` == spec output for (blob, z), and `VerifyKZGProof` accepts exactly the spec's accept set.",
 
-    "Critical. NONCE AND FEE DEBIT MUST EQUAL WHAT THE SENDER COMMITTED. `check_transaction_nonces`, `get_nonce`, `update_account_nonce`, `account_debit`, and the fee charge in `process_transaction` decide the account's next nonce and balance; `nonce_cache.rs` and the mempool mirror it. Show a transaction that executes without advancing the nonce (replayable), advances the nonce twice, is charged a fee different from `get_tx_fee`, or is charged against a balance snapshot taken after a payload that already spent it: a sponsored fee debited before the origin payload reverts, a nonce checked against the cache but committed against the DB, an abort path that keeps the payload's writes but not the fee. Identity: after a transaction, the account's nonce == committed nonce + 1 and its balance == prior balance minus exactly `get_tx_fee` and the payload's authorized spends.",
+    "High. POOLED BUFFERS MUST NEVER LEAK ONE CALL'S DATA INTO ANOTHER'S DECISION. `polynomialPool` hands out 4096-element `kzg.Polynomial` slices through `getPolynomial` / `putPolynomial` and `elementSlicePool` hands out up to 8192-element slices through `getElementSlice` / `putElementSlice`; `VerifyBlobKZGProofBatch` copies `claimedValue := *outputPoint` before `putPolynomial`; `EvaluateLagrangePolynomialWithIndex` defers `putElementSlice(invDenom)` on a slice `BatchInvert` freshly allocated; `ComputeCells` and `ComputeCellsAndKZGProofs` mutate the pooled `polynomial` in place via `BitReverse` and `IfftFr`; `VerifyBlobKZGProofBatchPar` verifies concurrently. Show any sequence of public calls - one attacker-authored input followed by an honest one, or two concurrent verifications - where an accept, reject, commitment, proof or cell depends on bytes from a previous call: a slice returned to the pool while a pointer into it is still read; `getElementSlice` returning a re-sliced buffer whose tail is not overwritten before use; a `Cell` or `KZGProof` array aliasing pooled memory after return. Identity: the result of every public `Context` method is a pure function of its arguments and the trusted setup, regardless of prior or concurrent calls.",
 
-    "High. THE MEMPOOL GATE MUST MATCH THE BLOCK GATE. `will_admit_mempool_tx` -> `can_include_tx` in db/blocks.rs enforces `process_transaction_precheck`, the `MINIMUM_TX_FEE` / `MINIMUM_TX_FEE_RATE_PER_BYTE` floor against `tx_size`, and epoch, before `posttransaction.rs` relays a tx. Show a transaction the mempool admits that the block builder or `process_transaction` then rejects (or the reverse), or a fee/size computation where `fee / tx_size` under- or over-counts due to a cast or a size mismatch between the decoded and re-encoded transaction. State whether the divergence lets an underpaying transaction be mined or a valid one be permanently un-mineable. Identity: the admissibility and fee a transaction is judged by in the mempool == the admissibility and fee it is judged by at block inclusion.",
+    "High. RECOVERED CELLS MUST EQUAL THE UNIQUE EXTENDED BLOB THE SUPPLIED CELLS LIE ON. `recoverPolynomialCoeffs` checks `len(cellIDs) == len(cells)`, `isAscending`, `cellID < CellsPerExtBlob` and `NumBlocksNeededToReconstruct`, bit-reverses missing ids, places cells at `cellID*scalarsPerCell`, bit-reverses the extended blob and calls `DataRecovery.RecoverPolynomialCoefficients`, which builds the vanishing polynomial on `rootsOfUnityBlockErasureIndex`, divides on the coset generated by `fr.NewElement(7)` with `BatchInvert`, and truncates to `numScalarsInDataWord` without checking the high coefficients are zero. `RecoverCellsAndComputeKZGProofs` then re-derives all 128 cells and proofs. Show 64 or more attacker-authored cells that are not evaluations of any degree < 4096 polynomial yet are accepted, so the recovered cells or proofs differ from the cells the node was given or from what c-kzg's `recover_cells_and_kzg_proofs` returns: inconsistent cells whose inconsistency is truncated away; a zero in `cosetZxEval`; supplied cells that do not survive recovery unchanged; an id set that satisfies `isAscending` but wraps `BitReverseInt`. Identity: for every supplied `cellIDs[i]`, `recovered[cellIDs[i]] == cells[i]`, and the recovered polynomial has degree < `ScalarsPerBlob`, else an error.",
 
-    "High. DESERIALIZATION MUST ROUND-TRIP OR REJECT. `posttransaction.rs` decodes posted octets or JSON into a `StacksTransaction` via `consensus_deserialize`; the codec's `MAX_PAYLOAD_LEN`, the auth-field and payload deserializers, and `Value` serialization in contract-call arguments must accept exactly the transactions that re-serialize to the same bytes. Show input bytes that deserialize to a transaction whose re-serialization differs (so its txid or sighash is computed over different bytes than were transmitted), a trailing-bytes acceptance, a length field that under-reads a field, or a contract-call argument `Value` that deserializes past its declared type. Identity: for every accepted transaction, `consensus_deserialize` then `consensus_serialize` reproduces the original bytes, and the txid the network gossips == the txid the node stores.",
+    "High. CELLS AND PROOFS THIS LIBRARY EMITS MUST EQUAL C-KZG'S FOR THE SAME BLOB AND SETUP. `ComputeCellsAndKZGProofs` bit-reverses the blob, `IfftFr`s to coefficients, evaluates through `FK20.ComputeExtendedPolynomial` (`extDomain.FftFr`, `BitReverse`, `partition`) and proves through `ComputeMultiOpenProof` (`takeEveryNth`, `newToeplitz`, `embedCirculant`, `BatchMulAggregation`, `proofDomain.FftG1`, `BitReverse`); `NewFK20` reverses and truncates the monomial SRS and `padToPowerOfTwo`s it; `NewContext4096` slices `setupMonomialG1Points[:len(setupG2Points)]` for `openKey7594` and passes `scalarsPerCell` as coset size; `serializeCells` and `computeKZGProofsFromPolyCoeff` check only counts. Show a blob for which any emitted cell or proof differs from the consensus-spec `compute_cells_and_kzg_proofs`, or verifies under `VerifyCellKZGProofBatch` here yet fails in c-kzg (or the reverse), splitting clients on data availability: an off-by-one in `srs[evalSetSize:]`, a proof ordering after `BitReverse` that mismatches `cellIndices`, a Toeplitz row/column built from the wrong half of `polyCoeff`, a coset shift `extDomain.Roots[k*cosetSize]` taken after `BitReverse` versus before. Identity: (`cells`, `proofs`) == spec output for (blob, setup), and `VerifyCellKZGProofBatch` here agrees with c-kzg on every (commitment, index, cell, proof).",
 
-    "Critical. THE MISSING INVARIANT - what nobody built. Nothing asserts that the pre-signing hash covers the full set of executed fields across every future payload variant; nothing proves order-independent multisig cannot reuse a public-key slot as authority; the epoch gate trusts two independent codepaths (codec and stacks-transactions) to classify the same post-condition identically; the mempool fee floor and the block builder compute size from possibly-different encodings; a sponsored transaction splits nonce and fee authority across two accounts checked in two places. Identify the FIRST place one of these unstated authentication or accounting assumptions is violated by an unprivileged sender crafting their own transaction bytes, prove it with a Rust test in `stacks-codec` or `stackslib` that constructs the transaction, verifies the auth, applies it to a chainstate and asserts the authenticated fields versus the executed and charged fields, and show that once they diverge the transaction is either replayable, under-charged, or accepted by only part of the network.",
+    "Critical. THE MISSING INVARIANT - what nobody built. No check ties the `blobCommitment` passed to `ComputeBlobKZGProof` or `VerifyBlobKZGProof` to the blob beyond hashing its bytes; `deserializeG1Point` trusts gnark's notion of canonical encoding rather than the spec's; `VerifyCellKZGProofBatch` never rejects a duplicate `cellIndex` within one commitment; `RecoverPolynomialCoefficients` never asserts the recovered polynomial has degree < 4096; `NewContext4096` parses the setup with `NoSubgroupChecks` and never confirms `SetupG1Lagrange` is the IFFT of `SetupG1Monomial`; a zero-length batch returns nil. Identify the FIRST place one of these unstated soundness or conformance assumptions is violated by attacker-authored bytes reaching a public `Context` method, prove it with a `go test` that asserts both sides (accepted versus true opening, this library versus spec vectors in tests/, recovered versus supplied, batch versus per-member) before and after, and show that no later step in the client's verification pipeline can detect or reverse it.",
 ]
 
 
@@ -562,112 +149,109 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate transaction-authentication and post-condition audit questions for one
-    stacks-core target.
+    Generate KZG verifier soundness / spec-conformance audit questions for one go-eth-kzg target.
 
     ```
     target_file format:
-    "'File Name: stacks-codec/src/transaction.rs -> Scope: Critical. ...'"
+    "'File Name: internal/kzg/kzg_verify.go -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate blockchain-node security audit questions for this exact stacks-core target:
+    Generate cryptographic-library security audit questions for this exact go-eth-kzg
+    target:
 
     {target_file}
 
     Project focus:
-    stacks-core authenticates and applies Stacks transactions. Every transaction is bytes an
-    unprivileged sender chose: an auth structure (singlesig, multisig, order-independent
-    multisig, sponsored), a nonce, a fee, a chain id, a version, a payload and a
-    post-condition list. The node decides (a) whether the recovered signer authorised
-    exactly this transaction - `verify_origin` / `verify` rebuild the sighash via
-    `next_signature` and recover the key; (b) whether every asset the transaction moves
-    satisfies a `TransactionPostCondition` under its mode, comparing the codec's
-    `FungibleConditionCode::check` against the VM's committed `AssetMap`; (c) whether the
-    nonce advances once and the fee debited equals `get_tx_fee`. Anything executed or charged
-    that the authenticated bytes did not commit, or an asset that moves past its
-    post-conditions, or a classification two nodes disagree on, is the bug.
+    go-eth-kzg is the KZG library Ethereum clients call for EIP-4844 blobs and EIP-7594
+    PeerDAS cells. Untrusted bytes enter through the public `Context` methods: a `Blob`,
+    a `KZGCommitment`, a `KZGProof`, a `Cell`, cell indices and evaluation points that an
+    ordinary user authored and the protocol delivered to the verifier. The library decides
+    (a) whether a single or batched opening proof is a true opening; (b) whether a cell
+    batch binds each cell to its commitment and coset; (c) whether bytes deserialise to a
+    canonical subgroup element or scalar; (d) whether cells, proofs and recovered data
+    equal what the consensus spec and c-kzg produce. Anything accepted that is not a true
+    opening, or any output that differs from the spec for the same input, is the bug.
 
     Rules:
     * Treat `File Name:` as the exact file.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Rust symbols (function, struct, enum variant, constant, trait) as they
-      appear in the file.
+    * Use exact Go symbols (exported function, method, constant, error variable, struct
+      field) as they appear in the file.
     * EVERY question must close on an equality that must hold across a call. State it
       explicitly. Narrative questions with no stated equality are rejected.
-    * Attacker is unprivileged only: any sender who can craft, sign and post arbitrary
-      transaction bytes - any auth mode, any payload, any post-condition list, any nonce or
-      fee - and mutate transactions signed by themselves. They may run a wallet and submit
-      to any node's RPC.
-    * Attacker is NOT a miner, signer, node operator or admin, and holds no other account's
-      private key. No malicious peer, node or RPC beyond posting their own bytes; no
-      compromised dependency; no social engineering.
+    * Attacker is unprivileged only: an ordinary Ethereum user who authors the blob,
+      commitment, proof, cell, index or evaluation-point bytes that reach a public
+      `Context` method through the normal protocol path, with their own keys and funds.
+      They may call any public method with any arguments and order their own calls.
+    * Attacker is NOT the trusted-setup ceremony, a client developer wiring the library
+      wrongly, or an operator. No malicious peer, node or RPC assumption; no compromised
+      dependency or machine; no social engineering.
     * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
-      - Block-assembly, tenure, reward-set and P2P internals beyond the mempool/RPC entry
-        are handled in other variants and OUT OF SCOPE here, as are README, tests, benches
-        and config.
-      - Denial of service, gas griefing, block stuffing, mempool spam and memory hygiene are
-        OUT OF SCOPE.
-      - Defects in secp256k1, rusqlite or serde with no exploit path through this repo's
-        auth/post-condition code are OUT OF SCOPE; a weakness here that steers them wrong is
-        fully IN scope.
-      - Also excluded: leaked keys, privileged accounts, centralization risk, best-practice
-        notes, feature requests, oracle assumptions, funds sent by mistake, theoretical
-        findings.
+      - Tests, benchmarks, tests/ fixtures, srs_insecure.go, trusted_setup.json, go.mod,
+        CI config, audits/ and readme are OUT OF SCOPE.
+      - Denial of service, panics as DoS, timeouts, unbounded loops, allocation, cache
+        growth and memory hygiene are OUT OF SCOPE.
+      - Defects inside gnark-crypto with no path through this repo are OUT OF SCOPE; this
+        repo relying on gnark for a check the spec requires and gnark not performing it
+        is fully IN scope.
+      - Also excluded: a dishonest trusted setup, side channels and timing, best-practice
+        notes, feature requests, publicly known issues, and theoretical findings.
     * IN-SCOPE IMPACTS - every question must land on one and name it:
-      Critical: forging or replaying a transaction so an asset moves without the owner's
-      authorization; an asset moving past its post-conditions (theft); a transaction
-      accepted by only part of the network (chain split, invalid-transaction processing);
-      permanent freezing via an un-spendable-but-nonce-consuming replay.
-      High: mempool-versus-block admissibility divergence that mines an underpaying tx or
-      permanently blocks a valid one; a fee or nonce charged incorrectly; a txid/sighash
-      computed over different bytes than transmitted.
-    * Every question must be a concrete real-world scenario an unprivileged sender can
-      execute by crafting and posting transaction bytes to a node.
-    * A rejection is a finding only when it permanently blocks a valid transaction or a
-      malformed one is accepted - say which.
-    * Generate 20 to 40 high-signal questions.
+      Critical: a proof, blob or cell batch accepted that is not a true opening (forged
+      data availability, consensus split); bytes deserialised to a non-canonical or
+      out-of-subgroup element that then passes verification.
+      High: this library and the consensus spec / c-kzg disagreeing on accept or on the
+      emitted commitment, proof, cell or recovered data for the same input (client
+      split); a valid proof rejected; pooled state from one call changing another's result.
+    * Every question must be a concrete real-world scenario an unprivileged party can
+      trigger through the public `Context` surface with bytes they authored.
+    * A returned error is a finding only when the spec would accept, or when it replaces
+      an accept the spec would reject - say which.
+    * Generate 40 to 80 high-signal questions.
     * At least 70% must land on a Critical impact rather than a High one.
-    * Every question must be testable with a Rust test in `stacks-codec` or `stackslib` on a
-      local chainstate. Never propose testing on mainnet or a public testnet.
+    * Every question must be testable locally with `go test` using the embedded trusted
+      setup or the consensus-spec vectors in tests/. Never propose testing on mainnet or
+      a public testnet.
     * Avoid generic checklist questions and repeated root causes.
     * Prefer questions that name TWO values that must be equal and ask whether they are:
-      transaction authenticated and transaction executed, signatures verified and threshold
-      required, asset moved and post-condition permitted, fee/nonce charged and committed,
-      admissibility on node A and node B.
+      accepted and true opening, batch and per-member, deserialised and canonical,
+      challenge and spec transcript, emitted and spec output, recovered and supplied.
 
     Known dead ends - do NOT generate questions about these:
-    * Anything needing a miner, signer, admin or another account's private key.
-    * A CVE in a dependency with no reachable path through this repo's auth code.
-    * Mempool spam, DoS, or a sender harming only their own account.
+    * Anything needing the setup ceremony, a client developer or an operator to act
+      maliciously.
+    * A bug in gnark-crypto or the consensus spec itself with no path here.
+    * DoS, panics, timeouts, memory, logging, or performance.
     * Findings only reproducible through tests or tooling.
 
     Core equalities (each question must close on one):
-    * AUTHENTICATION: the transaction the recovered key(s) signed == the transaction
-      executed and charged.
-    * THRESHOLD: distinct verified signatures over the correct sighash == signatures_required.
-    * POST-CONDITION: every committed asset movement == a movement its post-conditions permit.
-    * ACCOUNTING: nonce advances once; fee debited == get_tx_fee; balance change == authorized.
-    * DETERMINISM: admissibility and classification on node A == on node B at one tip.
+    * SOUNDNESS: `Verify` accepts ⇔ the committed polynomial opens to the claimed value.
+    * BATCH == MEMBERS: batch accepts ⇔ every (commitment, proof, input) member accepts.
+    * CELL BINDING: cell k accepted ⇔ it equals the committed polynomial on coset k.
+    * CANONICAL BYTES: accepted bytes == unique canonical encoding of a subgroup element.
+    * SPEC CONFORMANCE: emitted / accepted here == consensus spec and c-kzg for same input.
+    * RECOVERY TRUTH: recovered cells at supplied ids == supplied cells, degree < 4096.
 
     Each question must include:
-    1. target function, struct or enum variant;
-    2. attacker action (a concrete transaction with the auth/payload/post-condition fields
+    1. target exported function, method or constant;
+    2. attacker input (the concrete blob, commitment, proof, cell, index or scalar bytes
        that matter);
-    3. preconditions (epoch, account state, nonce, balances);
-    4. call sequence through the codec, auth and transactions-db path;
+    3. preconditions (batch shape, duplicate indices, point at infinity, z in domain,
+       pooled state);
+    4. call sequence through the Context method, internal package and gnark call;
     5. the equality that breaks, written explicitly;
-    6. scoped impact and whose funds are exposed;
+    6. scoped impact and which clients or chain state are exposed;
     7. proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Method: function_or_struct] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, breaking the equality EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: Rust test PARAMETERS asserting AUTHENTICATION, THRESHOLD, POST_CONDITION, ACCOUNTING, or DETERMINISM.",
+    "[File: {target_file}] [Method: function_name] Can an unprivileged ATTACKER_INPUT under PRECONDITIONS trigger CALL_SEQUENCE, breaking the equality EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: go test PARAMETERS asserting SOUNDNESS, BATCH_EQUALS_MEMBERS, CELL_BINDING, CANONICAL_BYTES, SPEC_CONFORMANCE, or RECOVERY_TRUTH.",
     ]
     """
     return prompt
@@ -675,7 +259,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a transaction-authentication and post-condition exploit-validation prompt.
+    Generate a KZG-soundness / spec-conformance exploit-validation prompt for go-eth-kzg.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -685,19 +269,19 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: any sender who can craft, sign, mutate (only transactions they signed) and post arbitrary transaction bytes to a node's RPC. They are not a miner, signer, node operator or admin, and hold no other account's private key.
-- Reject malicious peer/node/RPC assumptions beyond posting their own bytes, compromised dependencies, social engineering, and any path requiring a privileged role.
-- OUT OF SCOPE, reject on sight: block-assembly, tenure, reward-set and P2P internals beyond the mempool/RPC entry; README, tests, benches, config; denial of service, gas griefing, block stuffing, mempool spam and memory hygiene; secp256k1, rusqlite or serde defects with no exploit path through this repo's auth/post-condition code; oracle assumptions; funds sent by mistake; best-practice notes; theoretical findings.
-- The impact must be one of: Critical - forging or replaying a transaction so an asset moves without authorization, an asset moving past its post-conditions, a transaction accepted by only part of the network, permanent freezing via a nonce-consuming replay; High - mempool-versus-block admissibility divergence, a fee or nonce charged incorrectly, a txid/sighash over different bytes than transmitted.
-- Focus on real impact: a field executed that the signature did not cover, an asset that escaped its post-conditions, or two nodes disagreeing on one transaction.
+- Attacker is unprivileged only: an ordinary Ethereum user who authors the blob, commitment, proof, cell, index or evaluation-point bytes that reach a public `Context` method through the normal protocol path. They may call any public method with any arguments.
+- Reject anything requiring a dishonest trusted setup, a client developer wiring the library wrongly, an operator, a malicious peer/node/RPC, a compromised dependency or machine, or social engineering.
+- OUT OF SCOPE, reject on sight: tests, benchmarks, tests/ fixtures, srs_insecure.go, trusted_setup.json, go.mod, CI config, audits/, readme; denial of service, panics as DoS, timeouts, unbounded loops, allocation, cache growth and memory hygiene; defects inside gnark-crypto with no path through this repo; side channels and timing; dishonest setup; best-practice notes; publicly known issues; theoretical findings.
+- The impact must be one of: Critical - a proof, blob or cell batch accepted that is not a true opening, or non-canonical / out-of-subgroup bytes deserialised and then passing verification; High - this library and the consensus spec / c-kzg disagreeing on accept or on emitted commitment, proof, cell or recovered data for the same input, a valid proof rejected, or pooled state from one call changing another's result.
+- Focus on real impact: something accepted that is not a true opening, or an output that differs from the spec for the same input.
 
 ## Validate
 - Write the equality the question claims is broken between two named values BEFORE tracing any code.
-- Trace the exact reachable path from the attacker's bytes and record every read and write of the sighash, recovered pubkey, `signer` hash, `signatures_required`, the post-condition list and mode, the committed `AssetMap`, the nonce and the fee.
+- Trace the exact reachable path from the attacker's bytes and record every read and write of the deserialised commitment / proof point, `InputPoint`, `ClaimedValue`, the challenge, `rPowers` / `randomNumbers`, `rowIndices` / `cellIndices`, `cosetEvals`, pooled `polynomial` and `elementSlice` buffers, and the `PairingCheck` operands.
 - Evaluate both sides of the equality before and after. If they still match, output no vulnerability.
-- Check whether `verify_origin`/`verify`, `next_signature`, the multisig field counting, the low-S verification mode, `check_transaction_postconditions`, `process_transaction_precheck`, the epoch gate, or `check_transaction_nonces` already prevents the divergence.
-- State what the attacker gains per transaction and whether it is repeatable.
-- Require exact file/function support and a reproducible Rust test on a local chainstate.
+- Check whether `SetBytes` / `SetBytesCanonical` subgroup and canonicity checks, `FindRootIndex`, the `batchSize` and length checks, `ErrInvalidRowIndex` / `ErrInvalidCellID`, `isAscending`, `NumBlocksNeededToReconstruct`, the `claimedValue` copy before `putPolynomial`, or the pairing equation itself already prevent the divergence.
+- State what the attacker gains per call and whether it is repeatable.
+- Require exact file/function support and a reproducible `go test` using the embedded trusted setup or tests/ vectors.
 
 ## Output
 If valid, output exactly:
@@ -709,19 +293,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[The broken equality, the code path, root cause, the attacker's exact transaction, exploit flow, and why existing guards fail]
+[The broken equality, the code path, root cause, the attacker's exact bytes, exploit flow, and why existing guards fail]
 
 ### Impact Explanation
-[What is forged, moved, replayed, misconfigured or split, which party, repeatability, matching severity category]
+[What is accepted, rejected, mis-emitted or mis-recovered, which clients or chain state, repeatability, matching severity category]
 
 ### Likelihood Explanation
-[Preconditions, epoch and account state required, attacker cost, feasibility, repeatability]
+[Preconditions, batch shape and state required, attacker cost, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Rust test plan with the exact assertions on both sides of the equality]
+[go test plan with the exact assertions on both sides of the equality]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -733,7 +317,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for stacks-core auth/post-condition claims.
+    Generate a strict bounty-style validation prompt for go-eth-kzg claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -746,31 +330,31 @@ def validation_format(report: str) -> str:
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
 - A claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
-- Reject anything requiring a miner, signer, node operator, admin, another account's private key, a malicious peer/node/RPC beyond posting bytes, a compromised dependency, or social engineering.
-- OUT OF SCOPE, reject on sight: block-assembly, tenure, reward-set and P2P internals beyond the mempool/RPC entry; README, tests, benches, config; denial of service, gas griefing, block stuffing, mempool spam and memory hygiene; secp256k1, rusqlite or serde defects with no exploit path through this repo's auth/post-condition code; oracle assumptions; centralization risk; funds sent by mistake; best-practice notes; feature requests; theoretical findings.
-- The impact must be one of: Critical - forging or replaying a transaction so an asset moves without authorization, an asset moving past its post-conditions, a transaction accepted by only part of the network, permanent freezing via a nonce-consuming replay; High - mempool-versus-block admissibility divergence, a fee or nonce charged incorrectly, a txid/sighash over different bytes than transmitted.
-- Reject claims where the only loss is the attacker's own account.
+- Reject anything requiring a dishonest trusted setup, a client developer wiring the library wrongly, an operator, a malicious peer/node/RPC, a compromised dependency or machine, or social engineering.
+- OUT OF SCOPE, reject on sight: tests, benchmarks, tests/ fixtures, srs_insecure.go, trusted_setup.json, go.mod, CI config, audits/, readme; denial of service, panics as DoS, timeouts, unbounded loops, allocation, cache growth and memory hygiene; defects inside gnark-crypto with no path through this repo; side channels and timing; dishonest setup; centralization risk; best-practice notes; feature requests; publicly known issues; theoretical findings.
+- The impact must be one of: Critical - a proof, blob or cell batch accepted that is not a true opening, or non-canonical / out-of-subgroup bytes deserialised and then passing verification; High - this library and the consensus spec / c-kzg disagreeing on accept or on emitted commitment, proof, cell or recovered data for the same input, a valid proof rejected, or pooled state from one call changing another's result.
+- Reject claims where the only effect is on the attacker's own blob or proof being rejected.
 - Reject if the bug was already fixed, publicly disclosed, or covered by a known-issues list.
-- A valid report must be triggerable by an unprivileged sender against the current code by posting their own transaction bytes.
+- A valid report must be triggerable by an unprivileged party against the current code through the public `Context` surface.
 - A PoC is mandatory. Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
-1. Exact in-scope file, function/struct/enum, and line references.
+1. Exact in-scope file, function/method/constant, and line references.
 2. The equality written explicitly, with both sides shown before and after.
-3. Clear root cause: which uncovered field, miscounted signature, malleable signature, escaped post-condition, epoch-gate divergence, or nonce/fee error causes it.
-4. Reachable exploit path: preconditions -> attacker bytes -> codec, auth and transactions-db sequence -> observed divergence.
-5. `verify_origin`/`verify`, `next_signature`, the multisig counting, the low-S mode, `check_transaction_postconditions`, the epoch gate and `check_transaction_nonces` reviewed and shown insufficient.
-6. Impact stated concretely: which funds or which nodes, and whether it is repeatable.
-7. Reproducible proof: Rust test on a local chainstate with the asserted values.
+3. Clear root cause: which pairing-operand drift, batch-folding gap, deserialisation gap, transcript mismatch, pooled-buffer aliasing, or recovery gap causes it.
+4. Reachable exploit path: preconditions -> attacker bytes -> Context method, internal package and gnark call sequence -> observed divergence.
+5. `SetBytes` / `SetBytesCanonical` checks, `FindRootIndex`, batch length checks, `ErrInvalidRowIndex` / `ErrInvalidCellID`, `isAscending`, `NumBlocksNeededToReconstruct`, the `claimedValue` copy and the pairing equation reviewed and shown insufficient.
+6. Impact stated concretely: what is accepted or mis-emitted, which clients, and whether it is repeatable.
+7. Reproducible proof: `go test` using the embedded trusted setup or tests/ vectors, with the asserted values.
 
 ## Silent Triage Questions
 Before output, internally answer:
 - What exactly is the equality, and does it actually fail?
-- Can an ordinary sender trigger it with no privileged role and no other user's key?
-- Is the flaw in this repo's auth/post-condition/codec code, not in a dependency or a wallet?
-- What is forged, moved, replayed or split, whose funds are exposed, and can it be repeated?
-- Would an Immunefi triager accept the exploit path under the Blockchain/DLT severity system?
+- Can an ordinary user's authored bytes trigger it with no trusted role and no setup compromise?
+- Is the flaw in this repo's code, not in gnark-crypto or the consensus spec itself?
+- What is accepted, rejected, mis-emitted or mis-recovered, which clients, and can it be repeated?
+- Would an Ethereum Foundation bug bounty triager accept the exploit path for the go-eth-kzg dependency?
 - What exact test would prove it?
 
 ## Output
@@ -788,7 +372,7 @@ Audit Report
 [Exact code path, the equality, root cause, exploit flow, and why existing guards fail]
 
 ## Impact Explanation
-[What is forged, moved, replayed or split, affected party, repeatability, severity category]
+[What is accepted, rejected, mis-emitted or mis-recovered, affected clients, repeatability, severity category]
 
 ## Likelihood Explanation
 [Attacker capability, preconditions, state required, cost, feasibility]
@@ -797,7 +381,7 @@ Audit Report
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or Rust test plan with concrete assertions]
+[Minimal reproducible steps or go test plan with concrete assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -809,7 +393,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for stacks-core transaction auth.
+    Generate a short cross-project analog scan prompt for go-eth-kzg.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -817,18 +401,18 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope repo context only (stacks-codec transaction.rs, auth.rs, transactions.rs, accounts.rs, the secp256k1 and address modules, the post-condition VM/codec code, the mempool and posttransaction entry). Do not ask for code or claim missing files.
+- Use in-scope repo context only (root package `*.go` and `internal/**/*.go`, excluding every `*_test.go`, tests/ fixtures, srs_insecure.go and trusted_setup.json). Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged-sender analogs that break an equality: a transaction executed or charged beyond what its signature covered, signatures verified fewer than the threshold, an asset moving past its post-conditions, a fee/nonce charged wrong, or a transaction classified differently by two nodes.
-- OUT OF SCOPE, reject on sight: block-assembly, tenure, reward-set and P2P internals beyond the mempool/RPC entry; README, tests, benches, config; denial of service, gas griefing, block stuffing, mempool spam and memory hygiene; secp256k1, rusqlite or serde defects with no exploit path through this repo's auth code; anything requiring a miner, signer, admin or another account's key; malicious peer/node assumptions beyond posting bytes; oracle assumptions; funds sent by mistake; best-practice notes; theoretical findings.
-- The impact must be one of: Critical - forging or replaying a transaction so an asset moves without authorization, an asset moving past its post-conditions, a transaction accepted by only part of the network, permanent freezing via a nonce-consuming replay; High - mempool-versus-block admissibility divergence, a fee or nonce charged incorrectly, a txid/sighash over different bytes than transmitted.
-- Reject analogs where the only loss is the attacker's own account.
+- Keep only unprivileged analogs that break an equality: a proof or batch accepted that is not a true opening, a cell accepted that is not the committed polynomial on its coset, bytes deserialised that are not a canonical subgroup element or scalar, a challenge or output that differs from the consensus spec / c-kzg for the same input, recovered cells that differ from the supplied ones, or a result that depends on pooled state from another call.
+- OUT OF SCOPE, reject on sight: tests, benchmarks, fixtures, config, readme; denial of service, panics as DoS, timeouts, unbounded loops, allocation, cache growth and memory hygiene; defects inside gnark-crypto with no path here; anything requiring a dishonest trusted setup, a client developer, an operator or a compromised machine; malicious peer/node/RPC assumptions; side channels and timing; best-practice notes; theoretical findings.
+- The impact must be one of: Critical - a proof, blob or cell batch accepted that is not a true opening, or non-canonical / out-of-subgroup bytes deserialised and then passing verification; High - this library and the consensus spec / c-kzg disagreeing on accept or on emitted commitment, proof, cell or recovered data for the same input, a valid proof rejected, or pooled state from one call changing another's result.
+- Reject analogs where the only effect is on the attacker's own blob or proof.
 
 ## Validate
 - Map the bug class to the strongest reachable path in this repo and state the equality it would break.
-- Evaluate both sides before and after the attacker's transaction.
+- Evaluate both sides before and after the attacker's bytes.
 - Prove root cause with exact file/function support.
-- Accept only concrete forgery, replay, post-condition escape, mis-charged fee/nonce, or cross-node divergence.
+- Accept only concrete forged acceptance, spec divergence, wrong recovery, valid-proof rejection or cross-call state leakage.
 
 ## Output (Strict)
 If valid analog exists, output:
