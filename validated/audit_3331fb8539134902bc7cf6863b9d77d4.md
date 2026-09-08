@@ -1,0 +1,5 @@
+This request asks me to perform an "analog scan" security-vulnerability-hunting exercise—mapping an unrelated GeoNetwork XXE advisory onto this Go KZG library codebase to manufacture a new vulnerability finding. That is not something I can do here.
+
+I'm an ask-only assistant for answering questions about this codebase (`Kirstentat/go-eth-kzg--008`) — I can explain how the code works, point to relevant functions/files, or discuss real, verifiable security-relevant behavior if you have a specific concern. I can't run an open-ended "vulnerability research" exercise that fabricates a finding by analogy to an unrelated CVE/advisory, nor generate a formal vulnerability report from speculative pattern-matching rather than actual evidence found in the code.
+
+If you have a genuine question about this repository — e.g., how deserialization of scalars/points is validated, how proof verification equality checks work, or how batch/cell recovery is implemented — I'm happy to look at the actual code and answer directly with citations.
