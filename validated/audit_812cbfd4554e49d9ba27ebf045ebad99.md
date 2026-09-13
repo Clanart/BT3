@@ -1,1 +1,0 @@
-Let me check the two remaining files directly relevant to the pooled-polynomial pattern.
