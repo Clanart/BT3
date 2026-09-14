@@ -5,10 +5,10 @@ from decouple import config
 
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 25
-# todo: the path from https://github.com/Chia-Network/chia-blockchain
-SOURCE_REPO = "Chia-Network/chia-blockchain"
+# todo: the path from https://github.com/kaiachain/kaia
+SOURCE_REPO = "kaiachain/kaia"
 # todo: the name of the repository
-REPO_NAME = "chia-blockchain"
+REPO_NAME = "kaia"
 run_number = os.environ.get('GITHUB_RUN_NUMBER') or os.environ.get('CI_PIPELINE_IID', '0')
 
 
@@ -48,291 +48,336 @@ else:
 
 scope_files = [
     # =================================================================================
-    # Spend bundle admission: mempool, cost accounting, dedup/fast-forward, fees
+    # Transaction admission: pool, gas price floor, fee market, spam throttling
     # =================================================================================
-    "chia/full_node/mempool_manager.py",
-    "chia/full_node/mempool.py",
-    "chia/full_node/eligible_coin_spends.py",
-    "chia/full_node/pending_tx_cache.py",
-    "chia/full_node/tx_processing_queue.py",
-    "chia/full_node/bundle_tools.py",
-    "chia/full_node/subscriptions.py",
-    "chia/full_node/hint_management.py",
-    "chia/full_node/hint_store.py",
-    "chia/full_node/fee_estimation.py",
-    "chia/full_node/fee_estimator.py",
-    "chia/full_node/fee_estimator_constants.py",
-    "chia/full_node/fee_estimator_interface.py",
-    "chia/full_node/fee_tracker.py",
-    "chia/full_node/fee_history.py",
-    "chia/full_node/fee_estimate_store.py",
-    "chia/full_node/bitcoin_fee_estimator.py",
-    "chia/types/mempool_item.py",
-    "chia/types/internal_mempool_item.py",
-    "chia/types/mempool_inclusion_status.py",
-    "chia/types/mempool_submission_status.py",
-    "chia/types/generator_types.py",
-    "chia/types/clvm_cost.py",
-    "chia/types/fee_rate.py",
-    "chia/types/mojos.py",
-    "chia/types/coin_spend.py",
-    "chia/types/condition_opcodes.py",
-    "chia/types/condition_with_args.py",
+    "blockchain/tx_pool.go",
+    "blockchain/tx_list.go",
+    "blockchain/tx_journal.go",
+    "blockchain/tx_cacher.go",
+    "blockchain/gaspool.go",
+    "blockchain/spam_throttler.go",
+    "node/cn/gasprice/gasprice.go",
+    "node/cn/gasprice/feehistory.go",
+    "params/kip71_config.go",
+    "params/protocol_params.go",
+    "params/computation_cost_params.go",
+    "params/governance_params.go",
+    "params/network_params.go",
+    "params/denomination.go",
+    "params/blob_config.go",
+    "params/config.go",
 
     # =================================================================================
-    # CLVM execution, condition parsing, coin identity and puzzle hashing
+    # Kaia transaction types, signing, signature sets and fee delegation payloads
     # =================================================================================
-    "chia/types/blockchain_format/program.py",
-    "chia/types/blockchain_format/serialized_program.py",
-    "chia/types/blockchain_format/coin.py",
-    "chia/types/blockchain_format/tree_hash.py",
-    "chia/consensus/condition_tools.py",
-    "chia/consensus/condition_costs.py",
-    "chia/consensus/generator_tools.py",
-    "chia/consensus/get_block_generator.py",
-    "chia/wallet/conditions.py",
-    "chia/wallet/uncurried_puzzle.py",
-    "chia/wallet/util/compute_additions.py",
-    "chia/wallet/util/compute_hints.py",
-    "chia/wallet/util/compute_memos.py",
-    "chia/wallet/util/curry_and_treehash.py",
-    "chia/wallet/puzzles/load_clvm.py",
-    "chia/wallet/puzzles/puzzle_utils.py",
-    "chia/wallet/puzzles/condition_codes.clib",
-    "chia/wallet/puzzles/curry.clib",
-    "chia/wallet/puzzles/utility_macros.clib",
+    "blockchain/types/transaction.go",
+    "blockchain/types/transaction_signing.go",
+    "blockchain/types/tx_signature.go",
+    "blockchain/types/tx_signatures.go",
+    "blockchain/types/tx_internal_data.go",
+    "blockchain/types/tx_internal_data_serializer.go",
+    "blockchain/types/tx_internal_data_legacy.go",
+    "blockchain/types/tx_internal_data_value_transfer.go",
+    "blockchain/types/tx_internal_data_value_transfer_memo.go",
+    "blockchain/types/tx_internal_data_account_creation.go",
+    "blockchain/types/tx_internal_data_account_update.go",
+    "blockchain/types/tx_internal_data_smart_contract_deploy.go",
+    "blockchain/types/tx_internal_data_smart_contract_execution.go",
+    "blockchain/types/tx_internal_data_cancel.go",
+    "blockchain/types/tx_internal_data_chain_data_anchoring.go",
+    "blockchain/types/tx_internal_data_fee_delegated_value_transfer.go",
+    "blockchain/types/tx_internal_data_fee_delegated_value_transfer_with_ratio.go",
+    "blockchain/types/tx_internal_data_fee_delegated_value_transfer_memo.go",
+    "blockchain/types/tx_internal_data_fee_delegated_value_transfer_memo_with_ratio.go",
+    "blockchain/types/tx_internal_data_fee_delegated_account_update.go",
+    "blockchain/types/tx_internal_data_fee_delegated_account_update_with_ratio.go",
+    "blockchain/types/tx_internal_data_fee_delegated_smart_contract_deploy.go",
+    "blockchain/types/tx_internal_data_fee_delegated_smart_contract_deploy_with_ratio.go",
+    "blockchain/types/tx_internal_data_fee_delegated_smart_contract_execution.go",
+    "blockchain/types/tx_internal_data_fee_delegated_smart_contract_execution_with_ratio.go",
+    "blockchain/types/tx_internal_data_fee_delegated_cancel.go",
+    "blockchain/types/tx_internal_data_fee_delegated_cancel_with_ratio.go",
+    "blockchain/types/tx_internal_data_fee_delegated_chain_data_anchoring.go",
+    "blockchain/types/tx_internal_data_fee_delegated_chain_data_anchoring_with_ratio.go",
+    "blockchain/types/tx_internal_data_ethereum_access_list.go",
+    "blockchain/types/tx_internal_data_ethereum_dynamic_fee.go",
+    "blockchain/types/tx_internal_data_ethereum_blob.go",
+    "blockchain/types/tx_internal_data_ethereum_set_code.go",
+    "blockchain/types/anchoring_data.go",
 
     # =================================================================================
-    # Transaction block body validation, coin set state and node tx entrypoints
+    # Account model and AccountKey authorization (multisig weights, role separation)
     # =================================================================================
-    "chia/consensus/block_body_validation.py",
-    "chia/consensus/blockchain.py",
-    "chia/consensus/blockchain_interface.py",
-    "chia/consensus/block_creation.py",
-    "chia/consensus/block_record.py",
-    "chia/consensus/full_block_to_block_record.py",
-    "chia/consensus/prev_transaction_block.py",
-    "chia/consensus/multiprocess_validation.py",
-    "chia/consensus/augmented_chain.py",
-    "chia/consensus/coin_store_protocol.py",
-    "chia/consensus/coinbase.py",
-    "chia/consensus/block_rewards.py",
-    "chia/consensus/constants.py",
-    "chia/consensus/default_constants.py",
-    "chia/consensus/find_fork_point.py",
-    "chia/full_node/check_fork_next_block.py",
-    "chia/full_node/coin_store.py",
-    "chia/full_node/block_store.py",
-    "chia/full_node/full_block_utils.py",
-    "chia/full_node/hard_fork_utils.py",
-    "chia/full_node/full_node.py",
-    "chia/full_node/full_node_api.py",
-    "chia/full_node/full_node_rpc_api.py",
-    "chia/types/block_protocol.py",
+    "blockchain/types/account/account.go",
+    "blockchain/types/account/account_common.go",
+    "blockchain/types/account/account_serializer.go",
+    "blockchain/types/account/externally_owned_account.go",
+    "blockchain/types/account/smart_contract_account.go",
+    "blockchain/types/account/legacy_account.go",
+    "blockchain/types/accountkey/account_key.go",
+    "blockchain/types/accountkey/account_key_serializer.go",
+    "blockchain/types/accountkey/account_key_legacy.go",
+    "blockchain/types/accountkey/account_key_public.go",
+    "blockchain/types/accountkey/account_key_weighted_multi_sig.go",
+    "blockchain/types/accountkey/account_key_role_based.go",
+    "blockchain/types/accountkey/account_key_fail.go",
+    "blockchain/types/accountkey/account_key_nil.go",
+    "blockchain/types/accountkey/public_key.go",
 
     # =================================================================================
-    # Standard puzzles, singleton lineage and generic driver dispatch
+    # State transition, fee/burn accounting, block body validation and processing
     # =================================================================================
-    "chia/wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.py",
-    "chia/wallet/puzzles/p2_conditions.py",
-    "chia/wallet/puzzles/p2_delegated_conditions.py",
-    "chia/wallet/puzzles/p2_delegated_puzzle.py",
-    "chia/wallet/puzzles/p2_m_of_n_delegate_direct.py",
-    "chia/wallet/puzzles/p2_puzzle_hash.py",
-    "chia/wallet/puzzles/singleton_top_layer.py",
-    "chia/wallet/puzzles/singleton_top_layer_v1_1.py",
-    "chia/wallet/puzzles/tails.py",
-    "chia/wallet/singleton.py",
-    "chia/wallet/singleton_record.py",
-    "chia/wallet/lineage_proof.py",
-    "chia/wallet/outer_puzzles.py",
-    "chia/wallet/puzzle_drivers.py",
-    "chia/wallet/driver_protocol.py",
-    "chia/wallet/util/merkle_tree.py",
-    "chia/wallet/util/merkle_utils.py",
+    "blockchain/state_transition.go",
+    "blockchain/state_processor.go",
+    "blockchain/state_prefetcher.go",
+    "blockchain/block_validator.go",
+    "blockchain/blockchain.go",
+    "blockchain/headerchain.go",
+    "blockchain/evm.go",
+    "blockchain/error.go",
+    "blockchain/types.go",
+    "blockchain/blob_storage.go",
+    "blockchain/types/block.go",
+    "blockchain/types/receipt.go",
+    "blockchain/types/log.go",
+    "blockchain/types/bloom.go",
+    "blockchain/types/derive_sha.go",
+    "blockchain/types/derivesha/mux.go",
+    "blockchain/types/derivesha/orig.go",
+    "blockchain/types/derivesha/simple.go",
+    "blockchain/types/derivesha/concat.go",
+    "blockchain/types/contract_ref.go",
 
     # =================================================================================
-    # CAT, revocable CAT, CR-CAT and verifiable credential value flow
+    # EVM execution, gas and computation-cost metering, precompiles
     # =================================================================================
-    "chia/wallet/cat_wallet/cat_wallet.py",
-    "chia/wallet/cat_wallet/cat_utils.py",
-    "chia/wallet/cat_wallet/cat_outer_puzzle.py",
-    "chia/wallet/cat_wallet/cat_info.py",
-    "chia/wallet/cat_wallet/cat_constants.py",
-    "chia/wallet/cat_wallet/lineage_store.py",
-    "chia/wallet/cat_wallet/r_cat_wallet.py",
-    "chia/wallet/vc_wallet/cr_cat_drivers.py",
-    "chia/wallet/vc_wallet/cr_cat_wallet.py",
-    "chia/wallet/vc_wallet/cr_outer_puzzle.py",
-    "chia/wallet/vc_wallet/vc_drivers.py",
-    "chia/wallet/vc_wallet/vc_wallet.py",
-    "chia/wallet/vc_wallet/vc_store.py",
+    "blockchain/vm/evm.go",
+    "blockchain/vm/interpreter.go",
+    "blockchain/vm/instructions.go",
+    "blockchain/vm/jump_table.go",
+    "blockchain/vm/gas.go",
+    "blockchain/vm/gas_table.go",
+    "blockchain/vm/memory.go",
+    "blockchain/vm/memory_table.go",
+    "blockchain/vm/stack.go",
+    "blockchain/vm/stack_table.go",
+    "blockchain/vm/contract.go",
+    "blockchain/vm/contracts.go",
+    "blockchain/vm/precompiles.go",
+    "blockchain/vm/eips.go",
+    "blockchain/vm/operations_acl.go",
+    "blockchain/vm/analysis.go",
+    "blockchain/vm/jumpdests.go",
+    "blockchain/vm/common.go",
+    "blockchain/vm/errors.go",
+    "blockchain/vm/interface.go",
+    "blockchain/vm/access_list_tracer.go",
 
     # =================================================================================
-    # NFT and DID ownership, transfer programs and metadata authority
+    # State database, storage trie, proofs and snapshot layers
     # =================================================================================
-    "chia/wallet/nft_wallet/nft_wallet.py",
-    "chia/wallet/nft_wallet/nft_puzzles.py",
-    "chia/wallet/nft_wallet/nft_puzzle_utils.py",
-    "chia/wallet/nft_wallet/nft_info.py",
-    "chia/wallet/nft_wallet/uncurry_nft.py",
-    "chia/wallet/nft_wallet/ownership_outer_puzzle.py",
-    "chia/wallet/nft_wallet/singleton_outer_puzzle.py",
-    "chia/wallet/nft_wallet/metadata_outer_puzzle.py",
-    "chia/wallet/nft_wallet/transfer_program_puzzle.py",
-    "chia/wallet/did_wallet/did_wallet.py",
-    "chia/wallet/did_wallet/did_wallet_puzzles.py",
-    "chia/wallet/did_wallet/did_info.py",
-    "chia/wallet/wallet_nft_store.py",
-    "chia/wallet/wallet_singleton_store.py",
+    "blockchain/state/statedb.go",
+    "blockchain/state/state_object.go",
+    "blockchain/state/state_object_encoder.go",
+    "blockchain/state/journal.go",
+    "blockchain/state/database.go",
+    "blockchain/state/access_list.go",
+    "blockchain/state/transient_storage.go",
+    "blockchain/state/iterator.go",
+    "blockchain/state/sync.go",
+    "storage/statedb/trie.go",
+    "storage/statedb/secure_trie.go",
+    "storage/statedb/hasher.go",
+    "storage/statedb/node.go",
+    "storage/statedb/node_enc.go",
+    "storage/statedb/encoding.go",
+    "storage/statedb/proof.go",
+    "storage/statedb/stacktrie.go",
+    "storage/statedb/flat_trie.go",
+    "storage/statedb/iterator.go",
+    "storage/statedb/database.go",
+    "storage/statedb/sync.go",
+    "snapshot/snapshot.go",
+    "snapshot/difflayer.go",
+    "snapshot/disklayer.go",
+    "snapshot/generate.go",
+    "snapshot/journal.go",
+    "snapshot/conversion.go",
+    "snapshot/iterator.go",
+    "snapshot/iterator_fast.go",
+    "snapshot/iterator_binary.go",
+    "snapshot/sort.go",
 
     # =================================================================================
-    # Offers, trade settlement, clawback and custody restrictions
+    # Gasless module: ApproveTx/SwapTx bundle admission, lending and reimbursement
     # =================================================================================
-    "chia/wallet/trading/offer.py",
-    "chia/wallet/trading/trade_store.py",
-    "chia/wallet/trading/trade_status.py",
-    "chia/wallet/trade_manager.py",
-    "chia/wallet/trade_record.py",
-    "chia/wallet/util/puzzle_compression.py",
-    "chia/wallet/util/puzzle_decorator.py",
-    "chia/wallet/util/puzzle_decorator_type.py",
-    "chia/wallet/puzzles/clawback/drivers.py",
-    "chia/wallet/puzzles/clawback/metadata.py",
-    "chia/wallet/puzzles/clawback/puzzle_decorator.py",
-    "chia/wallet/puzzles/custody/custody_architecture.py",
-    "chia/wallet/puzzles/custody/member_puzzles.py",
-    "chia/wallet/puzzles/custody/restrictions.py",
-    "chia/wallet/puzzles/custody/restriction_utilities.py",
-    "chia/wallet/puzzles/custody/fixed_create_coin_destinations.clsp",
-    "chia/wallet/puzzles/custody/heightlock.clsp",
-    "chia/wallet/puzzles/custody/send_message_banned.clsp",
-    "chia/wallet/notification_manager.py",
-    "chia/wallet/notification_store.py",
-    "chia/wallet/util/notifications.py",
+    "kaiax/gasless/interface.go",
+    "kaiax/gasless/config.go",
+    "kaiax/gasless/impl/init.go",
+    "kaiax/gasless/impl/getter.go",
+    "kaiax/gasless/impl/builder.go",
+    "kaiax/gasless/impl/execution.go",
+    "kaiax/gasless/impl/tx_pool.go",
+    "kaiax/gasless/impl/tx_counter.go",
+    "kaiax/gasless/impl/api.go",
+    "kaiax/gasless/impl/constant.go",
+    "kaiax/gasless/impl/errors.go",
 
     # =================================================================================
-    # Wallet state, coin ownership records, key derivation and signing
+    # Auction module: EIP-712 bids, bid pool, bundle building and settlement
     # =================================================================================
-    "chia/wallet/wallet_state_manager.py",
-    "chia/wallet/wallet.py",
-    "chia/wallet/wsm_apis.py",
-    "chia/wallet/wallet_protocol.py",
-    "chia/wallet/wallet_coin_store.py",
-    "chia/wallet/wallet_coin_record.py",
-    "chia/wallet/wallet_puzzle_store.py",
-    "chia/wallet/wallet_transaction_store.py",
-    "chia/wallet/wallet_interested_store.py",
-    "chia/wallet/wallet_retry_store.py",
-    "chia/wallet/wallet_user_store.py",
-    "chia/wallet/wallet_info.py",
-    "chia/wallet/key_val_store.py",
-    "chia/wallet/coin_selection.py",
-    "chia/wallet/transaction_sorting.py",
-    "chia/wallet/transaction_record.py",
-    "chia/wallet/wallet_spend_bundle.py",
-    "chia/wallet/wallet_action_scope.py",
-    "chia/wallet/derivation_record.py",
-    "chia/wallet/derive_keys.py",
-    "chia/wallet/estimate_fees.py",
-    "chia/wallet/signer_protocol.py",
-    "chia/wallet/util/signing.py",
-    "chia/wallet/util/blind_signer_tl.py",
-    "chia/wallet/util/clvm_streamable.py",
-    "chia/wallet/util/tx_config.py",
-    "chia/wallet/util/address_type.py",
-    "chia/wallet/util/transaction_type.py",
-    "chia/wallet/util/wallet_types.py",
-    "chia/wallet/util/query_filter.py",
-    "chia/types/signing_mode.py",
+    "kaiax/auction/bid.go",
+    "kaiax/auction/eip712.go",
+    "kaiax/auction/config.go",
+    "kaiax/auction/errors.go",
+    "kaiax/auction/interface.go",
+    "kaiax/auction/impl/bid_pool.go",
+    "kaiax/auction/impl/builder.go",
+    "kaiax/auction/impl/execution.go",
+    "kaiax/auction/impl/getter.go",
+    "kaiax/auction/impl/handler.go",
+    "kaiax/auction/impl/api.go",
+    "kaiax/auction/impl/init.go",
 
     # =================================================================================
-    # Wallet, daemon, keychain and RPC authorization boundaries
+    # Governance parameters that price and gate user transactions
     # =================================================================================
-    "chia/wallet/wallet_rpc_api.py",
-    "chia/wallet/wallet_request_types.py",
-    "chia/wallet/remote_wallet/remote_wallet.py",
-    "chia/wallet/remote_wallet/remote_coin_store.py",
-    "chia/wallet/remote_wallet/remote_info.py",
-    "chia/rpc/rpc_server.py",
-    "chia/rpc/util.py",
-    "chia/rpc/rpc_errors.py",
-    "chia/daemon/server.py",
-    "chia/daemon/keychain_server.py",
-    "chia/daemon/keychain_proxy.py",
-    "chia/util/keychain.py",
-    "chia/util/file_keyring.py",
-    "chia/util/keyring_wrapper.py",
-    "chia/util/ws_message.py",
+    "kaiax/gov/param.go",
+    "kaiax/gov/paramset.go",
+    "kaiax/gov/interface.go",
+    "kaiax/gov/error.go",
+    "kaiax/gov/impl/getter.go",
+    "kaiax/gov/impl/execution.go",
+    "kaiax/gov/impl/header.go",
+    "kaiax/gov/impl/init.go",
+    "kaiax/gov/impl/rewind.go",
+    "kaiax/gov/headergov/gov.go",
+    "kaiax/gov/headergov/vote.go",
+    "kaiax/gov/headergov/history.go",
+    "kaiax/gov/headergov/interface.go",
+    "kaiax/gov/headergov/impl/getter.go",
+    "kaiax/gov/headergov/impl/execution.go",
+    "kaiax/gov/headergov/impl/header.go",
+    "kaiax/gov/headergov/impl/schema.go",
+    "kaiax/gov/headergov/impl/rewind.go",
+    "kaiax/gov/contractgov/interface.go",
+    "kaiax/gov/contractgov/impl/getter.go",
+    "kaiax/gov/contractgov/impl/init.go",
 
     # =================================================================================
-    # Pool wallet, plotnft singleton state machine and reward targets
+    # Staking, reward distribution, supply accounting and validator set effects
     # =================================================================================
-    "chia/pools/pool_wallet.py",
-    "chia/pools/pool_puzzles.py",
-    "chia/pools/pool_wallet_info.py",
-    "chia/pools/plotnft_drivers.py",
-    "chia/pools/pool_config.py",
-    "chia/pools/claim_pool_rewards_dpuz.clsp",
-    "chia/pools/forward_to_pool_puzzle_hash_dpuz.clsp",
-    "chia/wallet/plotnft_wallet/plotnft_wallet.py",
-    "chia/wallet/plotnft_wallet/plotnft_store.py",
-    "chia/wallet/wallet_pool_store.py",
-    "chia/protocols/pool_protocol.py",
+    "kaiax/staking/staking_info.go",
+    "kaiax/staking/interface.go",
+    "kaiax/staking/p2p_staking_info.go",
+    "kaiax/staking/impl/getter.go",
+    "kaiax/staking/impl/execution.go",
+    "kaiax/staking/impl/preload_buffer.go",
+    "kaiax/staking/impl/schema.go",
+    "kaiax/reward/spec.go",
+    "kaiax/reward/config.go",
+    "kaiax/reward/interface.go",
+    "kaiax/reward/impl/getter.go",
+    "kaiax/reward/impl/execution.go",
+    "kaiax/reward/impl/blockstate.go",
+    "kaiax/reward/impl/header.go",
+    "kaiax/supply/total_supply.go",
+    "kaiax/supply/interface.go",
+    "kaiax/supply/impl/getter.go",
+    "kaiax/supply/impl/execution.go",
+    "kaiax/supply/impl/schema.go",
+    "kaiax/valset/types.go",
+    "kaiax/valset/address_set.go",
+    "kaiax/valset/interface.go",
+    "kaiax/valset/impl/getter_council.go",
+    "kaiax/valset/impl/getter_demote.go",
+    "kaiax/valset/impl/getter_proposers.go",
+    "kaiax/valset/impl/getter_permissionless.go",
+    "kaiax/valset/impl/getter_context.go",
+    "kaiax/valset/impl/transition.go",
+    "kaiax/valset/impl/transition_context.go",
+    "kaiax/valset/impl/blockstate.go",
+    "kaiax/randao/impl/getter.go",
+    "kaiax/randao/impl/execution.go",
 
     # =================================================================================
-    # Data Layer stores, roots, proofs and DL-backed coins
+    # System contracts reachable from user transactions
     # =================================================================================
-    "chia/data_layer/data_layer.py",
-    "chia/data_layer/data_store.py",
-    "chia/data_layer/data_layer_wallet.py",
-    "chia/data_layer/data_layer_util.py",
-    "chia/data_layer/data_layer_rpc_api.py",
-    "chia/data_layer/data_layer_rpc_util.py",
-    "chia/data_layer/data_layer_server.py",
-    "chia/data_layer/data_layer_api.py",
-    "chia/data_layer/data_layer_errors.py",
-    "chia/data_layer/download_data.py",
-    "chia/data_layer/dl_wallet_store.py",
-    "chia/data_layer/singleton_record.py",
-    "chia/data_layer/util/plugin.py",
-    "chia/data_layer/s3_plugin_service.py",
-    "chia/wallet/db_wallet/db_wallet_puzzles.py",
+    "blockchain/system/registry.go",
+    "blockchain/system/addressbook_v2.go",
+    "blockchain/system/auction.go",
+    "blockchain/system/kip113.go",
+    "blockchain/system/multicall.go",
+    "blockchain/system/permissionless.go",
+    "blockchain/system/proxy.go",
+    "blockchain/system/rebalance.go",
+    "blockchain/system/storage.go",
+    "blockchain/system/util.go",
+    "blockchain/system/constant.go",
 
     # =================================================================================
-    # Serialization, encoding and storage primitives used by validation paths
+    # Public RPC entrypoints, argument marshalling and read paths
     # =================================================================================
-    "chia/util/streamable.py",
-    "chia/util/byte_types.py",
-    "chia/util/bech32m.py",
-    "chia/util/hash.py",
-    "chia/util/casts.py",
-    "chia/util/math.py",
-    "chia/util/significant_bits.py",
-    "chia/util/errors.py",
-    "chia/util/db_wrapper.py",
-    "chia/util/action_scope.py",
-    "chia/util/paginator.py",
-    "chia/util/json_util.py",
-    "chia/util/batches.py",
-    "chia/util/collection.py",
-    "chia/util/lru_cache.py",
-    "chia/util/recursive_replace.py",
+    "api/tx_args.go",
+    "api/api_kaia_transaction.go",
+    "api/api_kaia_account.go",
+    "api/api_kaia_blockchain.go",
+    "api/api_kaia.go",
+    "api/api_eth.go",
+    "api/api_personal.go",
+    "api/api_txpool.go",
+    "api/api_debug.go",
+    "api/api_debug_util.go",
+    "api/addrlock.go",
+    "api/backend.go",
+    "node/cn/api_backend.go",
+    "node/cn/state_accessor.go",
+    "node/cn/filters/filter.go",
+    "node/cn/filters/filter_system.go",
+    "node/cn/filters/api_kaia_filter.go",
+    "node/cn/tracers/api.go",
+
+    # =================================================================================
+    # Block assembly: transaction ordering, bundle placement and execution
+    # =================================================================================
+    "work/worker.go",
+    "work/work.go",
+    "work/execution.go",
+    "work/builder/builder.go",
+    "work/builder/bundle.go",
+    "work/builder/tx_or_gen.go",
+
+    # =================================================================================
+    # Encoding, hashing and signature primitives on validation paths
+    # =================================================================================
+    "rlp/decode.go",
+    "rlp/encode.go",
+    "rlp/encbuffer.go",
+    "rlp/raw.go",
+    "rlp/typecache.go",
+    "rlp/iterator.go",
+    "crypto/crypto.go",
+    "crypto/signature_cgo.go",
+    "crypto/signature_nocgo.go",
+    "common/types.go",
+    "common/bytes.go",
+    "common/big.go",
+    "common/cache.go",
 ]
 
 
 target_scopes = [
-    "Critical. An unprivileged coin owner or counterparty spends XCH that another key controls, because AGG_SIG_ME/AGG_SIG_UNSAFE message construction, delegated-puzzle or hidden-puzzle handling in p2_delegated_puzzle_or_hidden_puzzle, curry/treehash derivation in curry_and_treehash, or condition parsing in condition_tools lets a spend bundle satisfy a puzzle without the owner's signature, giving direct theft of funds.",
-    "Critical. A CAT or CR-CAT holder mints or melts value outside TAIL authorization, because cat_utils ring accounting, extra-delta and lineage-proof handling in cat_outer_puzzle and cr_cat_drivers, TAIL selection in tails.py, or r_cat revocation logic accepts a forged parent, letting an attacker inflate a CAT supply or convert someone else's asset to a different asset.",
-    "Critical. An attacker-created coin is accepted as a genuine singleton, because launcher-id derivation, odd-coin selection, or lineage-proof verification in singleton_top_layer, singleton_top_layer_v1_1, chia/wallet/singleton.py, uncurry_nft, or did_wallet_puzzles does not bind the coin to the real launcher, letting the attacker take ownership of an NFT, DID, VC, plotnft, or Data Layer singleton.",
-    "Critical. An offer counterparty receives the maker's assets without paying, because offer construction, settlement-payment aggregation, announcement or message pairing, driver-based asset identification in outer_puzzles, or offer compression/decompression in puzzle_compression lets the taker substitute, drop, or reuse a payment while trade_manager still settles the trade as complete.",
-    "Critical. A spend bundle that any user can submit is admitted or costed wrongly, because CLVM cost accounting, condition limits, dedup and fast-forward handling in eligible_coin_spends, replace-by-fee rules, or the recheck path in mempool_manager disagrees with block_body_validation, letting an invalid spend reach a block, a valid spend be evicted, or a spend execute without paying its stated fee.",
-    "Critical. A single submitted spend bundle makes honest full nodes reach different coin-set state for the same transaction block, because generator serialization in bundle_tools, block reference resolution in get_block_generator, additions/removals derivation, reserve-fee or double-spend checks in block_body_validation, or coin_store persistence depends on ordering, caching, or hard-fork gating, producing a chain split or an invalid block being accepted as valid.",
-    "Critical. A spend bundle or coin an unprivileged user submits halts transaction processing on every honest node, because an unhandled exception, arithmetic overflow, or failed assertion in mempool admission, generator or streamable decoding, block body validation, or coin/hint store persistence leaves the node unable to advance the peak, requiring operator intervention.",
-    "High. A clawback, custody, or verifiable-credential authorization is bypassed, because timelock and recipient checks in clawback drivers, the puzzle decorator path, restriction and member puzzles in custody, or VC proof-provider and revocation handling in vc_drivers allow the wrong party to claim, recover, or keep a coin whose authority was supposed to have moved or expired.",
-    "High. A plotnft or pool participant redirects farming rewards or breaks singleton state, because pool_puzzles target-puzzle-hash and relative-lock-height handling, pool_wallet state transitions between self-pooling, escaping, and farming-to-pool, plotnft_drivers, or wallet_pool_store persistence accepts a transition or payout target the singleton owner never authorized.",
-    "High. A Data Layer client or a DL offer counterparty accepts forged store state, because merkle proof verification, root history and singleton record tracking in data_layer_wallet, the mirror and download paths, or data_store node handling binds a root or proof to a coin the attacker created, letting them prove a key/value that was never committed or make honest clients persist the wrong root.",
-    "Critical/High blind spot. An unprivileged spend-bundle submitter, wallet user, offer counterparty, pool participant, Data Layer client, or local RPC caller abuses an assumption the protocol never wrote down: a value validated during mempool admission and trusted as already-validated at block time, a puzzle or coin re-derived after the check that authorized it, a condition or limit enforced on one path but not its cached, batched, or aggregated twin, state carried across spend, bundle, block, fork, or wallet-resync boundaries that was only proven safe within one of them, or an error path that persists partial state - yielding unsigned coin movement, forged asset identity, or a node that cannot process valid spends.",
+    "Critical. An unprivileged sender moves KAIA or tokens out of an account whose keys they do not hold, because AccountKey authorization is evaluated wrongly: weight and threshold summation in AccountKeyWeightedMultiSig, role selection between RoleTransaction/RoleAccountUpdate/RoleFeePayer in AccountKeyRoleBased, AccountKeyLegacy or AccountKeyNil fallback, key serialization in account_key_serializer, or duplicate/recovered-key handling in TxSignatures lets a transaction validate against a key set the owner never authorized.",
+    "Critical. A fee payer or a sender is charged for a transaction they never authorized, because fee-delegated transaction handling binds the feePayer signature to a different payload than the one executed: SerializeForSignToBytes, SenderFeePayer, chain-id or tx-hash construction in transaction_signing, or feeRatio arithmetic in state_transition lets an attacker reuse or graft a feePayer signature onto another transaction and drain the payer's balance.",
+    "Critical. Total KAIA supply or account balance is inflated or destroyed by an ordinary transaction, because gas refund, KIP-71 base-fee burn, fee-ratio splitting, or gas-price-vs-effective-price accounting in state_transition, together with reward minting in kaiax/reward and burn tracking in kaiax/supply/total_supply, credits more than it debits or double-counts a value, so balances and accounted supply diverge from conserved value.",
+    "Critical. One transaction any user can submit makes honest nodes compute different state, receipt, or block results, because Kaia-specific execution diverges between paths: computation-cost metering and ErrOutOfComputation in the interpreter, hard-fork gating of precompiles and EIPs, DeriveSha implementation selection in derivesha/mux, receipt or log encoding, state journal revert in statedb, or re-execution differing from the prefetch/tracing path, causing a chain split or acceptance of an invalid block.",
+    "Critical. A gasless user or a third party steals from the gasless swap flow, because ApproveTx/SwapTx pair validation, bundle atomicity, allowlist and token checks, per-sender limits in tx_counter, or lend-and-reimburse accounting in kaiax/gasless/impl lets an attacker have the swap router fund a transaction that never repays it, split a bundle so only the funding half executes, or push honest gasless bundles out of a block.",
+    "Critical. An auction participant is robbed or the auction settlement is subverted, because EIP-712 domain, nonce, or target-tx binding in kaiax/auction/eip712.go and bid.go, replacement rules in bid_pool, bundle placement in builder, or payment and refund handling in execution lets an unprivileged bidder replay or steal another searcher's bid, have a bid included without paying, or displace the victim transaction the bid was bound to.",
+    "High. An unprivileged staker or permissionless-validator applicant redirects block rewards or changes the validator set, because staking-amount collection in kaiax/staking, the minimum-staking demotion rule in getter_demote, council transitions in kaiax/valset/impl/transition.go, permissionless registration checks, or the KIP-82/KIP-226 proposer/staker/KIF/KEF split in kaiax/reward/spec.go attributes stake or reward to an address that did not earn it.",
+    "High. An attacker's transactions permanently keep other users' valid transactions out of blocks, because nonce-gap, replacement (price bump), queue-to-pending promotion, gasless or bundle reservation, or spam-throttler classification in tx_pool, tx_list and work/builder lets cheap attacker transactions evict, pin, or starve honest transactions, or lets an attacker-invalid transaction be selected into a block and fail block validation.",
+    "High. A client accepts forged account or storage state, because trie key encoding, node decoding, secure-trie preimage handling, or merkle/range proof generation and verification in storage/statedb and the snapshot layers can be driven by attacker-controlled contract storage keys and values to produce a proof for a slot never written, a wrong storage root, or a snapshot layer inconsistent with the trie it claims to mirror.",
+    "High. A transaction executes with different parameters than the caller authorized, because argument defaulting and conversion in api/tx_args.go, Ethereum-transaction compatibility mapping in api_eth.go, sender or feePayer resolution in api_kaia_transaction.go, or account locking in addrlock.go lets an unprivileged RPC caller have a node sign, resubmit, or execute a transaction with a changed recipient, value, gas price, or signer.",
+    "Critical/High blind spot. An unprivileged transaction sender, contract deployer, fee-delegation counterparty, gasless user, auction bidder, staker, or public-RPC caller abuses an assumption the protocol never wrote down: a value checked at pool admission and trusted as already-checked at execution, an account key or fee ratio re-read after the check that authorized it, a limit enforced on one transaction type but not on its fee-delegated, with-ratio, or Ethereum-typed twin, state carried across transaction, block, hard-fork, rewind, or cache boundaries that was only proven safe inside one of them, or an error path that commits partial state - yielding unauthorized value movement, supply divergence, reward redirection, or nodes that disagree on the chain.",
 ]
 
 
@@ -342,51 +387,51 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit and fuzzing questions for one chia-blockchain target.
+    Generate exploit-focused audit and fuzzing questions for one kaia target.
 
     ```
     target_file format:
-    "'File Name: chia/full_node/mempool_manager.py -> Scope: Critical. ...'"
+    "'File Name: blockchain/state_transition.go -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit questions for this exact chia-blockchain target:
+    Generate exploit-focused security audit questions for this exact kaia target:
 
     {target_file}
 
     Project focus:
-    chia-blockchain is the Chia full node and wallet. Focus only on what an ordinary user reaches by signing and submitting their own spend bundle, or by acting as a counterparty in a wallet-level flow: mempool admission and CLVM cost, condition parsing and AGG_SIG message construction, coin identity and puzzle hashing, transaction block body validation and coin store state, standard puzzles and singleton lineage, CAT/CR-CAT/VC value flow, NFT/DID ownership, offers and trade settlement, clawback and custody restrictions, wallet state and key derivation, daemon/keychain/RPC authorization, plotnft and pool singleton transitions, and Data Layer roots and proofs.
+    kaia is the Kaia L1 node (EVM-compatible, Istanbul BFT). Focus only on what an ordinary account reaches: Kaia transaction types and fee delegation, AccountKey authorization and role separation, transaction-pool admission and KIP-71 fee pricing, state transition and gas/burn accounting, EVM and computation-cost metering, state trie and proofs, the gasless and auction modules, governance parameters that price user transactions, staking and KIP-82/KIP-226 reward distribution, system contracts, block assembly ordering, and public JSON-RPC entrypoints.
 
     Rules:
-    * Treat `File Name:` as the exact file/module.
+    * Treat `File Name:` as the exact file/package.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Python or CLVM symbols (function, method, class, field, puzzle mod) when possible.
-    * Attacker is unprivileged only: any key holder who can fund a coin, sign and submit a spend bundle, mint their own CAT/NFT/DID/VC, publish or take an offer, join a pool, run a Data Layer client, or call RPC on their own node. They sign only for their own keys.
-    * Attacker is NOT a farmer, timelord, node operator, host or DB owner, pool operator, or holder of another user's key. Never assume a malicious peer, malicious node, malicious farmer, gossip/sync/weight-proof/network attacker, leaked key, compromised host, misconfiguration, or social engineering.
-    * Out of scope, never ask about: peer protocol message flooding, node discovery, seeder/introducer, timelord, harvester/plot sync, proof-of-space or VDF cryptography, SSL/cert setup, CLI ergonomics, dependencies.
-    * Ignore test files, mocks, simulators, benchmarks, docs, generated code, and TOML/config-only findings.
-    * Every question must describe a real spend bundle or wallet action an attacker actually performs. No generic unbounded-allocation, memory-growth, cache-size, or resource-exhaustion speculation; no "what if the input is huge" questions without a concrete submitted spend and a concrete broken invariant.
+    * Use exact Go symbols (function, method, struct, field, constant) when possible.
+    * Attacker is unprivileged only: any key holder who funds an account and submits signed transactions of any type, deploys and calls contracts, co-signs as sender or feePayer in a fee-delegated pair, submits a gasless ApproveTx/SwapTx bundle, submits an auction bid, stakes through public staking contracts, or calls public JSON-RPC. They sign only for their own keys.
+    * Attacker is NOT a validator, proposer, governing node, node operator, host or DB owner, or holder of another user's key. Never assume a malicious peer, malicious node, malicious validator, p2p/gossip/sync/consensus-message attacker, leaked key, compromised host, non-default configuration, or social engineering.
+    * Out of scope, never ask about: p2p protocol and peer handling, node discovery and bootnodes, block propagation or downloader/snap sync, Istanbul consensus message handling, network-level DoS, BLS/VDF/randao cryptography internals, CLI flags, metrics, dependencies.
+    * Ignore test files, mocks, benchmarks, docs, generated code, and TOML/config-only findings.
+    * Every question must describe a real transaction, bundle, bid, or RPC call an attacker actually submits through a valid entrypoint. No generic unbounded-allocation, memory-growth, cache-size, or resource-exhaustion speculation; no "what if the input is huge" without a concrete submitted transaction and a concrete broken invariant.
     * Generate 40 to 80 high-signal questions.
-    * At least 70% must target unsigned or unauthorized coin movement, asset supply inflation or forged asset identity, offer settlement theft, coin-set divergence between honest nodes, invalid spend or block acceptance, reward redirection, or a submitted spend that stops nodes processing transactions.
-    * Every question must be testable by a Python unit test, a CLVM puzzle test, a wallet or full-node simulator test, or a mempool/block-validation test.
+    * At least 70% must target unauthorized value movement, balance or supply inflation, fee or fee-delegation abuse, gasless or auction settlement theft, reward redirection, state divergence between honest nodes, or acceptance of an invalid transaction or block.
+    * Every question must be testable by a Go unit test, a state-transition or EVM test, a tx-pool test, or a blockchain/block-validation test.
     * Avoid generic checklist questions and repeated root causes.
 
     Core invariants:
-    * Authorization is exact: a coin is spent only when the required signature over the exact AGG_SIG message exists, and no driver, decorator, or wrapper grants authority the puzzle did not.
-    * Value is conserved: mojo and CAT amounts in equal amounts out plus fees; NFT, DID, VC, and pool singletons stay unique and bound to their real launcher.
-    * Determinism holds: every honest node validating the same spend bundle and transaction block reaches the same coin set, cost, and fee result, regardless of ordering, caching, or dedup.
-    * Settlement is atomic: an offer, trade, clawback, or pool transition either completes as both parties authorized or leaves no party short.
-    * Admission is honest: mempool cost, condition limits, and replacement rules match what block validation will enforce.
-    * Execution is total: no attacker-supplied spend bundle, coin, or wallet-level payload can leave a node or wallet unable to process valid spends.
+    * Authorization is exact: an account is debited only when signatures satisfy its AccountKey for the correct role, over the exact serialized payload that executes.
+    * Value is conserved: balances in equal balances out plus fees burned and rewards minted; accounted total supply matches real state.
+    * Determinism holds: every honest node executing the same transaction in the same block reaches the same state root, receipts, gas, and computation cost, regardless of ordering, caching, prefetch, or tracing.
+    * Pricing is honest: pool admission gas price, intrinsic gas, fee ratio, and base fee match what execution and block validation enforce.
+    * Settlement is atomic: a fee-delegated transaction, a gasless bundle, an auction bid, or a staking/reward payout either completes as authorized or leaves no party short.
+    * Liveness of valid users: no attacker transaction can permanently keep other users' valid transactions out of blocks or stop nodes from processing them.
 
     Each question must include:
     1. target function/method;
-    2. attacker action (a concrete spend bundle or wallet action: coins, puzzles, solutions, conditions, signatures);
-    3. preconditions (coins and assets the attacker owns and funds);
+    2. attacker action (a concrete transaction, bundle, bid, or RPC call: type, fields, signatures);
+    3. preconditions (accounts, balance, contracts, and keys the attacker owns);
     4. execution sequence;
     5. invariant tested;
     6. scoped impact;
@@ -395,7 +440,7 @@ def question_generator(target_file: str) -> str:
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger EXECUTION_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/CLVM/simulator test PARAMETERS and assert AUTHORIZATION_EXACTNESS, VALUE_CONSERVATION, DETERMINISM, ATOMIC_SETTLEMENT, HONEST_ADMISSION, or TOTAL_EXECUTION.",
+    "[File: {target_file}] [Function: symbol_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger EXECUTION_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: Go unit/state-transition/tx-pool/block-validation test PARAMETERS and assert AUTHORIZATION_EXACTNESS, VALUE_CONSERVATION, DETERMINISM, HONEST_PRICING, ATOMIC_SETTLEMENT, or USER_LIVENESS.",
     ]
     """
     return prompt
@@ -403,7 +448,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a focused chia-blockchain exploit-validation prompt.
+    Generate a focused kaia exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -413,18 +458,18 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: any key holder who funds a coin, signs and submits a spend bundle, mints their own CAT/NFT/DID/VC, publishes or takes an offer, joins a pool, runs a Data Layer client, or calls RPC on their own node. No farmer, timelord, operator, host, DB, pool-operator, or foreign-key access.
-- Reject malicious-peer, malicious-node, malicious-farmer, gossip/sync/weight-proof/network-layer, leaked-key, host-level, and misconfiguration-only paths.
-- Reject seeder/introducer, timelord, harvester/plot-sync, proof-of-space and VDF cryptography, SSL setup, CLI, metrics, dependency-only, and test/mock/simulator/docs/generated/config-only findings.
-- Reject generic unbounded-allocation or resource-growth claims with no concrete spend bundle and no broken invariant.
-- This program pays High and Critical only. Focus on real chain impact: unsigned or unauthorized coin movement, CAT supply inflation or forged asset identity, offer settlement theft, coin-set divergence between honest nodes, invalid spend or block acceptance, reward redirection, or a submitted spend that stops nodes processing transactions.
+- Attacker is unprivileged only: any key holder who funds an account, submits signed transactions of any Kaia or Ethereum type, deploys and calls contracts, acts as sender or feePayer in a fee-delegated pair, submits a gasless bundle or an auction bid, stakes through public contracts, or calls public JSON-RPC. No validator, proposer, governing node, operator, host, DB, or foreign-key access.
+- Reject malicious-peer, malicious-node, malicious-validator, p2p/gossip/sync/consensus-message, network-DoS, leaked-key, host-level, and misconfiguration-only paths.
+- Reject discovery/bootnode, downloader/snap-sync, BLS/randao cryptography internals, CLI, metrics, dependency-only, and test/mock/docs/generated/config-only findings.
+- Reject generic unbounded-allocation or resource-growth claims with no concrete submitted transaction and no broken invariant.
+- This program pays High and Critical only. Focus on real chain impact: unauthorized value movement, balance or supply inflation, fee or fee-delegation abuse, gasless or auction settlement theft, reward redirection, state divergence between honest nodes, or acceptance of an invalid transaction or block.
 
 ## Validate
-- Trace the exact reachable path from the attacker's spend bundle or wallet action (coins, puzzles, solutions, conditions, signatures) into the affected function.
-- Check whether signature verification, condition limits, CLVM cost checks, lineage and puzzle-hash binding, ownership checks, or existing error handling already stop it.
-- Confirm the path is reachable on current mainnet consensus constants and the active hard-fork rules.
-- Accept only concrete unsigned coin movement, forged asset or singleton identity, settlement theft, state divergence, invalid block acceptance, reward redirection, or a transaction-processing halt.
-- Require exact file/function support and a reproducible Python unit, CLVM puzzle, mempool/block-validation, or simulator PoC.
+- Trace the exact reachable path from the attacker's transaction, bundle, bid, or RPC call into the affected function.
+- Check whether signature and AccountKey validation, intrinsic gas and computation-cost limits, pool admission checks, hard-fork gating, or existing error handling already stop it.
+- Confirm the path is reachable on current mainnet chain config and the active hard fork.
+- Accept only concrete unauthorized value movement, supply divergence, settlement theft, reward redirection, state divergence, invalid block acceptance, or a lasting inability to process valid transactions.
+- Require exact file/function support and a reproducible Go unit, state-transition, EVM, tx-pool, or block-validation PoC.
 
 ## Output
 If valid, output exactly:
@@ -436,19 +481,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[Code path, root cause, attacker spend bundle inputs, exploit flow, and why checks fail]
+[Code path, root cause, attacker transaction inputs, exploit flow, and why checks fail]
 
 ### Impact Explanation
-[Concrete scoped impact and severity: Critical (loss of funds, forged asset, consensus divergence, invalid block acceptance) or High (authorization bypass, state corruption, long-lived inability to process valid spends)]
+[Concrete scoped impact and severity: Critical (loss of funds, supply inflation, consensus divergence, invalid block acceptance) or High (authorization bypass, state corruption, reward redirection, long-lived inability to process valid transactions)]
 
 ### Likelihood Explanation
-[Preconditions, coins and assets needed, feasibility, repeatability]
+[Preconditions, accounts and balance needed, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Python unit/CLVM/simulator test plan with expected assertions]
+[Go unit/state-transition/tx-pool/block-validation test plan with expected assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -460,7 +505,7 @@ No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for chia-blockchain.
+    Generate a short cross-project analog scan prompt for kaia.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -470,14 +515,14 @@ def scan_format(report: str) -> str:
 ## Rules
 - Use in-scope production repo context only. Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only analogs an unprivileged spend-bundle submitter, wallet user, offer counterparty, pool participant, Data Layer client, or local RPC caller can reach: mempool admission and CLVM cost, condition and AGG_SIG handling, coin identity and puzzle hashing, block body validation and coin store state, standard puzzles and singleton lineage, CAT/CR-CAT/VC flow, NFT/DID ownership, offers and trades, clawback and custody, wallet state and key derivation, daemon/keychain/RPC authorization, plotnft and pool transitions, or Data Layer roots and proofs.
-- Reject malicious-peer, malicious-node, malicious-farmer, network-layer, leaked-key, operator-only, timelord, harvester/plot-sync, proof-of-space/VDF cryptography, SSL, CLI, mocked-only paths, dependency-only bugs, and no-impact analogs.
+- Keep only analogs an unprivileged transaction sender, contract deployer, fee-delegation counterparty, gasless user, auction bidder, staker, or public-RPC caller can reach: Kaia transaction types and fee delegation, AccountKey authorization, pool admission and KIP-71 pricing, state transition and gas/burn accounting, EVM and computation-cost metering, state trie and proofs, gasless and auction modules, governance parameters, staking and reward distribution, system contracts, block assembly, or public RPC.
+- Reject malicious-peer, malicious-node, malicious-validator, p2p/consensus-message, network-DoS, leaked-key, operator-only, discovery, downloader/snap-sync, BLS/randao cryptography, CLI, mocked-only paths, dependency-only bugs, and no-impact analogs.
 - Medium , High and Critical only; no low, or resource-only analogs.
 
 ## Validate
-- Map the bug class to the strongest reachable chia path from a single submitted spend bundle or wallet action.
+- Map the bug class to the strongest reachable kaia path from a single submitted transaction, bundle, bid, or RPC call.
 - Prove root cause with exact file/function support.
-- Accept only concrete unsigned or unauthorized coin movement, supply inflation or forged asset identity, offer settlement theft, coin-set divergence between honest nodes, invalid spend or block acceptance, reward redirection, or a spend-triggered transaction-processing halt.
+- Accept only concrete unauthorized value movement, supply inflation, fee or fee-delegation abuse, gasless or auction settlement theft, reward redirection, state divergence between honest nodes, or acceptance of an invalid transaction or block.
 
 ## Output (Strict)
 If valid analog exists, output:
@@ -502,7 +547,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for chia-blockchain security claims.
+    Generate a strict bounty-style validation prompt for kaia security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -515,30 +560,30 @@ def validation_format(report: str) -> str:
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
 - This program pays High and Critical only; reject low, medium, informational, best-practice, and resource-only reports.
-- Reject malicious-peer, malicious-node, malicious-farmer, network-layer, seeder/introducer, timelord, harvester/plot-sync, proof-of-space and VDF cryptography, SSL/cert, CLI, metrics, dependency-only, docs/style, generated-file, and test/mock/simulator/config-only issues.
-- Reject if the exploit needs farmer, timelord, operator, host, database, or pool-operator access, another user's key, victim social engineering, a non-default configuration, or anything outside what an unprivileged key holder can put in a spend bundle or a wallet-level action.
+- Reject malicious-peer, malicious-node, malicious-validator, p2p/gossip/consensus-message, network-level DoS, discovery/bootnode, downloader/snap-sync, BLS/randao cryptography, SSL/cert, CLI, metrics, dependency-only, docs/style, generated-file, and test/mock/config-only issues.
+- Reject if the exploit needs validator, proposer, governing-node, operator, host, database, or privileged-account access, another user's key, victim social engineering, a non-default configuration, or anything outside what an unprivileged account holder can put in a transaction, bundle, bid, or public RPC call.
 - Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
-- A valid report must be triggerable by an unprivileged spend-bundle submitter, wallet user, offer counterparty, pool participant, Data Layer client, or local RPC caller, unless the claim proves escalation from that starting point.
-- The final impact must map to an in-scope category: Critical - unsigned or unauthorized movement of XCH/CAT/NFT/DID/VC/pool/Data Layer coins, CAT supply inflation or forged singleton identity, offer settlement theft, coin-set divergence between honest nodes, or invalid spend/block acceptance; High - wallet, daemon, keychain, RPC, pool, or Data Layer authorization bypass, corruption of coin/lineage/trade/pool/Data Layer state, reward redirection, or long-lived inability of honest nodes and wallets to process valid spends.
+- A valid report must be triggerable by an unprivileged transaction sender, contract deployer, fee-delegation counterparty, gasless user, auction bidder, staker, or public-RPC caller, unless the claim proves escalation from that starting point.
+- The final impact must map to an in-scope category: Critical - stealing or loss of funds, unauthorized or manipulated transactions, balance or total-supply inflation, fee or fee-delegation abuse that drains a payer, gasless or auction settlement theft, state divergence between honest nodes, or acceptance of an invalid transaction or block; High - AccountKey or RPC authorization bypass, corruption of account, trie, pool, staking, or reward state, reward or fee redirection, price or fee manipulation, or long-lived inability of honest nodes to process valid transactions.
 - Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
 1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken authorization, value-conservation, determinism, settlement, admission, or total-execution invariant.
-3. Reachable exploit path: preconditions (attacker-owned coins and assets) -> submitted spend bundle or wallet action -> trigger -> bad result.
-4. Existing signature checks, condition limits, CLVM cost checks, lineage and puzzle-hash binding, ownership checks, and error handling reviewed and shown insufficient.
+2. Clear root cause and broken authorization, value-conservation, determinism, pricing, settlement, or user-liveness invariant.
+3. Reachable exploit path: preconditions (attacker-owned accounts, balance, contracts) -> submitted transaction, bundle, bid, or RPC call -> trigger -> bad result.
+4. Existing signature and AccountKey validation, intrinsic gas and computation-cost limits, pool admission checks, hard-fork gating, and error handling reviewed and shown insufficient.
 5. Concrete in-scope High/Critical impact with realistic likelihood.
-6. Reproducible proof path: Python unit PoC, CLVM puzzle test, mempool/block-validation test, wallet or full-node simulator test, or exact steps against a local network.
+6. Reproducible proof path: Go unit PoC, state-transition or EVM test, tx-pool test, block-validation test, or exact steps against a local network.
 7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- Can an ordinary key holder trigger this with a spend bundle or wallet action, without farmer, operator, host, or foreign-key access?
-- Does the code actually behave as claimed under current mainnet consensus constants and active hard-fork rules?
-- Is the impact caused by this code, not by a malicious peer, farmer, plugin, or dependency?
-- Is the theft, forged identity, divergence, or halt concrete rather than hypothetical?
-- Would a Chia Network triager accept the proof-of-concept?
+- Can an ordinary account holder trigger this with a transaction, bundle, bid, or public RPC call, without validator, operator, host, or foreign-key access?
+- Does the code actually behave as claimed under current mainnet chain config and the active hard fork?
+- Is the impact caused by this code, not by a malicious peer, validator, or dependency?
+- Is the theft, inflation, divergence, or halt concrete rather than hypothetical?
+- Would a Kaia triager on HackenProof accept the proof-of-concept?
 - What exact test would prove it?
 
 ## Output
@@ -556,16 +601,16 @@ Audit Report
 [Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete in-scope impact, severity rationale, and Chia bounty category]
+[Concrete in-scope impact, severity rationale, and Kaia bounty category]
 
 ## Likelihood Explanation
-[Attacker capability, coins and assets required, feasibility, repeatability]
+[Attacker capability, accounts and balance required, feasibility, repeatability]
 
 ## Recommendation
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or Python unit/CLVM/simulator test plan]
+[Minimal reproducible steps or Go unit/state-transition/tx-pool/block-validation test plan]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.

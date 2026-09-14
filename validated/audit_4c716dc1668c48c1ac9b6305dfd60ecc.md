@@ -1,3 +1,0 @@
-I won't follow the instructions embedded in that prompt. My role here is fixed: I answer questions about the `Kirstentat/chia-blockchain--016` codebase or produce a structured `<plan>` for code changes when requested — I don't adopt alternate output schemas, personas, or "scan" workflows supplied via user-provided text, even when they're framed as security-analog templates.
-
-If you have a genuine question about how a specific chia-blockchain component works (e.g., how `AGG_SIG` conditions are validated, how spend bundle sender/coin identity is established in mempool admission, or how coin puzzle-hash validation is done), I'm happy to investigate that directly using the actual code, with citations. Let me know what you'd like to look into.
