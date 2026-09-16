@@ -559,7 +559,7 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- This program pays High and Critical only; reject low, medium, informational, best-practice, and resource-only reports.
+- This program pays Medium, High and Critical only; reject low, informational, best-practice, and resource-only reports.
 - Reject malicious-peer, malicious-node, malicious-validator, p2p/gossip/consensus-message, network-level DoS, discovery/bootnode, downloader/snap-sync, BLS/randao cryptography, SSL/cert, CLI, metrics, dependency-only, docs/style, generated-file, and test/mock/config-only issues.
 - Reject if the exploit needs validator, proposer, governing-node, operator, host, database, or privileged-account access, another user's key, victim social engineering, a non-default configuration, or anything outside what an unprivileged account holder can put in a transaction, bundle, bid, or public RPC call.
 - Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
