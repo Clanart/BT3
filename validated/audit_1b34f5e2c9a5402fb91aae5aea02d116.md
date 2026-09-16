@@ -1,7 +1,0 @@
-No vulnerability found for this question.
-
-The reported bug class (a swap function that hardcodes `amountOutMinimum`/slippage protection to 0, exposing users to sandwich attacks) does not have a valid analog in this codebase for an unprivileged caller path. The only swap-adjacent, transaction-sender-reachable code is Kaia's gasless module (`kaiax/gasless`), where `swapForGas(token, amountIn, minAmountOut, amountRepay, deadline)` is invoked with a **caller-supplied** `minAmountOut`, not a hardcoded zero [1](#0-0) . The tx-pool admission logic explicitly enforces `minAmountOut >= amountRepay` and cross-checks `amountIn` against the router's `getAmountIn(minAmountOut)` quote before accepting the swap transaction [2](#0-1) . Since the slippage bound is chosen and controlled by the sender themselves (not fixed at zero by the protocol), a sandwich attacker cannot force execution beyond the sender's own declared tolerance — this is the opposite of the reported USSD vulnerability, where the protocol itself hardcoded zero slippage protection on behalf of users.
-
-No other DEX-router-style swap logic (e.g., Uniswap bindings under `contracts/bindings/uniswap`) is invoked internally by Kaia system contracts with a hardcoded zero `amountOutMin`; those bindings are only used in test/mock deployment helpers [3](#0-2) , not in a reachable production code path from an unprivileged transaction sender, bidder, or RPC caller.
-
-### Citations
