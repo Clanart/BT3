@@ -1,1 +1,0 @@
-The dependency `github.com/shamaton/msgpack` does not appear anywhere in this codebase.The dependency `github.com/shamaton/msgpack` only appears in `go.sum` (a transitive/indirect entry, likely via `vmihailenco/msgpack` or another dependency's own dependency graph), and not in any `go.mod` require directive, nor is it imported anywhere in the codebase.
