@@ -1,0 +1,30 @@
+### Title
+`DkgConfirmer` cached-preprocess context omits the tributary/spec, causing deterministic FROST nonce reuse across validator sets and leaking the MuSig secret share - ([File: coordinator/src/tributary/signing_protocol.rs](coordinator/src/tributary/signing_protocol.rs))
+
+### Summary
+`SigningProtocol::preprocess_internal` deterministically regenerates FROST nonces from a seed cached in the DB under `context`. For `DkgConfirmer`, the context is only `(b"DkgConfirmer", attempt)`. It does not bind the tributary spec, genesis, validator set, participant list, or message. When the coordinator runs a DKG confirmation for a *different* tributary/validator set at the same `attempt` index (a routine occurrence as sets rotate over time), the same cached seed — and therefore the same secret nonces — are reused to sign a different message under a different MuSig participant set. Reusing a Schnorr nonce across two distinct challenges allows algebraic recovery of the signer's secret share.
+
+This mirrors the upstream bug class: a "cloned" object (the cached preprocess seed, reloaded by `from_cache`) shares sub-objects (the derived nonces) with a prior session; operating on it in a new context is unsafe, just as the kernel found accessing a cloned skb's shared fraglist unsafe.
+
+### Finding Description
+In `preprocess_internal`, the ChaCha20 seed that fully determines the FROST nonces is stored in `CachedPreprocesses` keyed solely by `self.context` (`coordinator/src/tributary/signing_protocol.rs:88,123-145`). `DkgConfirmer::signing_protocol` sets `context = (b"DkgConfirmer", self.attempt)` (`signing_protocol.rs:275`). The XOR encryption key is `Blake2s256("Cached Preprocess Encryption Key" || context.encode() || key)` (`signing_protocol.rs:107-114`) — identical whenever `context` and `key` are identical, so a stale entry is decrypted correctly for the wrong protocol instance.
+
+On a cache hit, `AlgorithmSignMachine::from_cache` → `seeded_preprocess` re-derives `nonces` and `commitments` from `ChaCha20Rng::from_seed(*seed.0)` (`crypto/frost/src/sign.rs:127-141`), producing byte-identical nonces and nonce commitments. `share_internal` then calls `machine.sign(preprocesses, msg)` (`signing_protocol.rs:156,170`) where `msg = set_keys_message(&self.spec.set(), &removed, key_pair)` (`signing_protocol.rs:296-301`) — which varies with `spec.set()`, `removed`, and `key_pair`, none of which are in the context key. The MuSig `keys` also vary with `participants`/`spec` (`signing_protocol.rs:118-121`), yet the nonce is fixed.
+
+The file's own safety argument (`signing_protocol.rs:25-48`) states nonce reuse is safe only because "the received nonce commitments (or the message to be signed)" cannot differ under BFT for the same decided context. That invariant is only valid *within* one tributary instance; nothing prevents two distinct specs sharing the `(b"DkgConfirmer", attempt)` key, since `attempt` is a small `u32` per-DKG counter and the DB is a single coordinator-wide store (`create_db!` at `signing_protocol.rs:86-90`).
+
+For FROST/Schnorr shares of the form `z = d + b·ρ + λ·s·c`, two signatures under the same `(d, b)` but different `c`/`ρ` (different message or participant binding factors) yield a linear system solving for the secret share `s` — i.e., the validator's MuSig key share, which is the root-of-trust key used to confirm DKG results on-chain.
+
+### Impact Explanation
+Recovery of a validator's MuSig secret share. Since this protocol signs `set_keys_message` to confirm validator key sets on Substrate (`signing_protocol.rs:1-14`), compromising even one validator's share undermines the supermajority root of trust; combined with threshold adversaries it enables forging on-chain DKG confirmations. This is a key-share-recovery-class impact, reachable by unprivileged parties in the sense that the leak occurs through legitimately published signature shares on distinct messages — no malicious validator, BFT break, or leaked key is required; the trigger is ordinary validator-set rotation producing a context collision.
+
+### Likelihood Explanation
+Requires the coordinator to execute `DkgConfirmer` for two different specs/tributaries at the same `attempt` value while retaining the DB. DKG attempts are numbered per tributary; any second tributary (new genesis/validator set) reusing attempt index `k` collides deterministically. No attacker action is needed to cause the nonce reuse itself; an observer only needs the two resulting shares/signatures (published on-chain/publicly) to recover the share algebraically. Medium likelihood, high impact → High severity.
+
+### Recommendation
+Include the tributary identity in the context: e.g., `context = (b"DkgConfirmer", spec.genesis(), spec.set(), attempt)` so `CachedPreprocesses` keys (and the encryption key) are unique per validator set. Additionally, delete the cached preprocess entry after first use (`CachedPreprocesses::remove`) per the `from_cache` contract ("the preprocess must be deleted so it's never reused," `crypto/frost/src/sign.rs:218-220`), and bind the participant set/message hash into the context as defense in depth.
+
+### Proof of Concept
+1. Coordinator runs `DkgConfirmer::new(key, spec_A, txn, attempt=1)` on tributary A and calls `share(preprocesses_A, key_pair_A)`, signing `msg_A = set_keys_message(set_A, removed_A, key_pair_A)`. `CachedPreprocesses[(b"DkgConfirmer", 1)] = seed` is stored.
+2. Later, the same coordinator (same DB, same `key`) runs `DkgConfirmer::new(key, spec_B, txn, attempt=1)` on tributary B (rotated validator set). `preprocess_internal` hits the cache at the same context key, decrypts with the same derived key, and `from_cache` regenerates identical nonces `(d, b)`.
+3. `share(preprocesses_B, key_pair_B)` signs `msg_B ≠ msg_A`, publishing share `z_B`. With `z_A` from step 1, solve `z_A - z_B = b(ρ_A - ρ_B) + λ·s·(c_A - c_B)` — together with the public aggregated nonces, recover the validator's secret share `s` (standard nonce-reuse key recovery for Schnorr/FROST).
