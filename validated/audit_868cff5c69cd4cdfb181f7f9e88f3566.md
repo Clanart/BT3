@@ -1,0 +1,28 @@
+### Title
+Anyone can send funds to the multisig's internal offset addresses (Change/Branch/Forwarded) and have them misclassified as internal outputs, permanently uncredited — classification by `script_pubkey`-derived offset only ([File: networks/bitcoin/src/wallet/mod.rs](Annirich/serai--021), [File: processor/src/networks/bitcoin.rs](Annirich/serai--021))
+
+### Summary
+The Union finding is "credit granted for a resource that was only freshly committed": `getRewardsMultiplier` counts `lockedStake` without accounting for how long it was locked, so a lock created in the same transaction earns the full multiplier. The structural flaw is attribution without provenance — the system looks only at the *current state* (stake is locked now / script matches now) and not at *how the state came to be*.
+
+The Serai analog lives in the Bitcoin output classification path. `Scanner::scan_transaction` classifies a received output purely by looking up `output.script_pubkey` in `self.scripts`, a map from script → offset. `processor/src/networks/bitcoin.rs::get_outputs` then maps that offset to an `OutputType` (`External`, `Branch`, `Change`, `Forwarded`) via the `kinds` table, and only attaches the InInstruction memo data when `kind == OutputType::External`. The offset scripts are deterministic: `branch`, `change`, and `forward` offsets are `Secp256k1::hash_to_F(b"Serai Bitcoin Output Offset", ...)`, publicly computable for any group key. Any unprivileged party can therefore send a Bitcoin transaction paying directly to the change/branch/forward script, and the scanner will report it as an internal `Change`/`Branch`/`Forwarded` output rather than an external deposit — with no memo data attached. Like the freshly-locked stake that gets treated identically to an old lock, a freshly-sent attacker output gets treated identically to protocol-generated internal change, with no check that the output was actually produced by the protocol's own transaction.
+
+### Impact Explanation
+Funds deposited to a non-`External` address are received by the multisig but are never credited to a depositor: `get_outputs` skips `extract_serai_data` for non-external kinds (processor/src/networks/bitcoin.rs:731-735), so no `InInstruction` is associated and no user is credited. The output is "reported received" yet is not spendable as a deposit — the protocol bookkeeping treats it as its own change/branch liquidity. A user (or attacker luring a user, or a user following stale/misconstructed address derivation) who pays the change or forward address loses attribution of those funds entirely; the sats become indistinguishable protocol float. This mirrors the Union impact — the pool absorbs value that should have been attributed — except here the loss falls on the depositor rather than being distributed.
+
+### Likelihood Explanation
+Reachable entirely with public inputs: `KEY_DST`, the offset derivations, and `register_offset` are all deterministic functions of the group key, which is public. Any party can compute `p2tr_script_buf(key + G*offset)` for each internal offset and broadcast a standard transaction. No validator collusion, no malformed encoding, no RPC access needed — just a normal Bitcoin transaction the scanner is designed to ingest. Exploitation requires a victim (or confused integrator) to pay such an address, which is plausible since these addresses are derivable and indistinguishable in form from the deposit address.
+
+### Recommendation
+Do not classify received outputs by offset/script alone. Distinguish protocol-created change/branch/forward outputs by provenance — e.g., only treat an output as `Change`/`Branch`/`Forwarded` when it appears in a transaction the protocol itself signed and broadcast (checkable against the known txids/eventualities), or restrict `scan_transaction` in the deposit path to the `Scalar::ZERO` (External) script and handle internal outputs via a separate, internally-registered outpoint set. Additionally, attach/parsing memo data regardless of kind so a user-supplied InInstruction cannot be silently dropped by paying the wrong offset.
+
+### Proof of Concept
+1. Observe the multisig group key `key` (public).
+2. Reproduce `scanner(key)` logic: compute `offset = Secp256k1::hash_to_F(b"Serai Bitcoin Output Offset", b"change")`, increment until `key + G*offset` is even — the exact loop in `Scanner::register_offset` (networks/bitcoin/src/wallet/mod.rs:180-195).
+3. Broadcast a transaction paying `p2tr_script_buf(key + G*offset)` with an `InInstruction` memo naming the sender's Serai account.
+4. In `Bitcoin::get_outputs` (processor/src/networks/bitcoin.rs:686-739), `scanner.scan_transaction(tx)` matches `script_pubkey` → returns the output with the change offset → `kinds[offset_repr]` yields `OutputType::Change` → `output.data` is left empty (the `if output.kind == OutputType::External` guard at line 732 skips memo extraction).
+5. Result: the multisig balance increases, the output is logged/scanned as internal change, and no deposit is credited — funds received but not attributable/spendable as a deposit, exactly the "reward for a freshly-created lock" attribution gap transplanted to output classification.
+
+Relevant code:
+- `Scanner::register_offset` / `scan_transaction`: `networks/bitcoin/src/wallet/mod.rs:180-214`
+- Offset derivation and `kinds` map: `processor/src/networks/bitcoin.rs:308-347`
+- Kind-based memo attachment: `processor/src/networks/bitcoin.rs:686-739`
