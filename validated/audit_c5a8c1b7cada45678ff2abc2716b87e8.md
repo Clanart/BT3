@@ -1,0 +1,32 @@
+### Title
+Blame verdicts are attributable to any arbitrary participant — `blame` blames a caller-supplied `recipient` it never authenticates - (File: crypto/dkg/pedpop/src/lib.rs)
+
+### Summary
+The zNS bug is a missing-binding flaw: `approveDomainBid` checked that the caller was *a* parent domain owner, but never bound the approval to the specific domain being approved — so authority over "any object" could be exercised over "every object". Serai's PedPoP blame protocol has the same shape. `BlameMachine::blame` / `AdditionalBlameMachine::blame` take a `sender` and a `recipient` as bare `Participant` labels. The sender is cryptographically bound into the message (the per-message Schnorr PoP mixes `from` into `pop_challenge`), but the **recipient is never bound**: neither the `EncryptedMessage` nor the `pop_challenge` commits to who the message was addressed to, and `decrypt_with_proof` only checks the supplied proof against `enc_keys[&decryptor]` for whichever `decryptor` label the caller chose. When decryption fails, `blame_internal` returns `recipient` — i.e., whatever label the caller passed in — as the faulty party.
+
+### Finding Description
+`EncryptedMessage` carries only `key` (a per-message ephemeral public key), `pop`, and `msg` (`crypto/dkg/pedpop/src/encryption.rs:80-93`). The PoP challenge binds `context`, `pub_nonce`, `pub_key`, `from`, and `msg` — but no `to` field exists anywhere in the message or challenge (`pop_challenge` call at `encryption.rs:164`, and the decrypt-side check at `encryption.rs:374-377`).
+
+`blame_internal` then attributes fault purely by which side of the API the failure occurred on (`crypto/dkg/pedpop/src/lib.rs:582-608`):
+- `InvalidSignature` → return `sender` (correctly bound: the PoP proves the message came from `sender`).
+- `InvalidProof` → return `recipient` (**not bound**: the caller supplied `recipient` as a free parameter, and the only thing checked is a DLEq against `self.enc_keys[&decryptor]` at `encryption.rs:383-390`, which just fails when the labels are wrong).
+- Valid share → return `recipient` (again the unauthenticated label).
+
+`AdditionalBlameMachine::new` is explicitly constructed so that *non-participants* can evaluate blame (`crypto/dkg/pedpop/src/lib.rs:649-662`), and it registers each participant's encryption key from the publicly broadcast `EncryptionKeyMessage`s. Nothing in `blame` ties the claimed `recipient` to the party who actually holds the decryption key or who actually filed the accusation.
+
+### Impact Explanation
+Any party — including a non-participant observer — can fabricate a blame verdict against an arbitrary honest participant. Concretely, given a broadcast `EncryptedMessage` from sender `S` to real recipient `R` (these messages are published during the DKG, and blame material is public), an attacker calls `blame(S, V, msg, bogus_proof)` for any victim `V ≠ R`. The PoP verifies (message is genuinely from `S`), but the DLEq is checked against `enc_keys[V]` rather than `enc_keys[R]`, so it fails → `DecryptionError::InvalidProof` → `blame_internal` returns `V`. `V` is declared the faulty party — exactly the "recipient lied" verdict — without `V` ever having sent or received anything. In deployment this verdict is what gets a validator fatally slashed (the processor consumes `ProcessorMessage::Blame { participant }`), so a fabricated accusation translates into wrongful slashing of an honest party. Symmetrically, an attacker who *is* the real recipient can launder their accusation: call `blame(S, V, msg, real_proof)` — the proof is valid for `R = attacker`'s key, not `V`'s, so the honest-party outcome (`return recipient`) names `V` instead of the attacker even when the share verifies.
+
+### Likelihood Explanation
+The inputs are all public: commitment/`EncryptionKeyMessage`s are broadcast, the encrypted share and blame proof are published during any blame event, and `AdditionalBlameMachine::new(context, n, commitment_msgs)` is designed to be run by anyone. The attacker needs no secrets — just a public message and a label swap. The only mitigating factor is that the transport layer is expected to authenticate who filed an accusation; the library itself documents that messages "must have been authenticated as actually having come from the sender" but places **no** analogous requirement on the recipient, and provides no cryptographic means to check it. Since the recipient label is attacker-controlled data feeding a blame attribution, this is reachable with public inputs.
+
+### Recommendation
+Bind the recipient into the encrypted message: add `to` (or the recipient's registered encryption public key) to `pop_challenge` in `encrypt`/`decrypt`/`decrypt_with_proof`, so a message provably names its intended recipient. Additionally, in `blame_internal`, treat an `InvalidProof` result as unverifiable-with-respect-to-the-claimed-pairing rather than proof of the `recipient`'s fault — e.g., only attribute `recipient` fault when the accuser's identity is itself authenticated (a signed accusation, or a proof that the accuser holds `enc_key` for `recipient` via a DLEq against `enc_keys[recipient]`). Callers should be required to prove the claimed recipient is the accuser, not merely assert it.
+
+### Proof of Concept
+1. Participants run PedPoP; `S`'s `EncryptedMessage<SecretShare>` to `R` is broadcast (or surfaced during any later blame event). `S` and `R` are both honest; the share is valid.
+2. Attacker (any observer) builds `AdditionalBlameMachine::new(context, n, commitment_msgs)` from the public commitment messages.
+3. Attacker calls `blame(S, V, msg.clone(), Some(tampered_proof))` where `V` is an arbitrary honest participant and `tampered_proof` is any `EncryptionKeyProof` (e.g., the real proof with `key` incremented — cf. `invalidate_key` at `encryption.rs:283-285`).
+4. `msg.pop.verify(..., pop_challenge(context, R?, ...))` — note `from = S` verifies fine because the message is genuinely `S`'s; the recipient never enters the challenge.
+5. `proof.dleq.verify(..., &[G, msg.key], &[enc_keys[V], proof.key])` fails (`encryption.rs:383-390`) → `InvalidProof` → `blame_internal` returns `V`.
+6. Result: `V` is returned as the faulty party despite `V` never receiving the message or making any accusation — a fabricated, unauthenticated blame verdict against an honest participant.
