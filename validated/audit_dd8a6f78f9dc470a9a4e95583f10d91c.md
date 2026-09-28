@@ -1,0 +1,23 @@
+### Title
+PedPoP accepts the identity point as a recipient encryption key, making all secret shares addressed to that key publicly decryptable - (File: crypto/dkg/pedpop/src/encryption.rs)
+
+### Summary
+The advisory's bug class is "unrestricted context handling": attacker-controlled input is admitted into a context that should have been restricted to a safe set. In Serai's DKG this maps directly onto the deserialization of PedPoP encryption keys. `Ciphersuite::read_G` only enforces canonical encoding — it accepts the identity point. FROST compensates with `Curve::read_G`, which rejects identity, but PedPoP deliberately uses `C::read_G` (the unrestricted variant) for both the broadcast `enc_key` in `EncryptionKeyMessage::read` and the per-message `key` in `EncryptedMessage::read`, and nothing else rejects an identity `enc_key`.
+
+### Finding Description
+Each PedPoP participant broadcasts an `EncryptionKeyMessage` containing a Pedersen `Commitments` message and an `enc_key` used by every other participant as the ECDH recipient in `encrypt(rng, context, from, to, msg)`. The proof-of-knowledge signature inside `Commitments` binds only `context`, the sender's `Participant` index, `R`, and `cached_msg` (the commitment bytes); the `enc_key` is neither signed nor validated, and `read` accepts it via `C::read_G`, which rejects only non-canonical encodings — the identity element is a perfectly canonical Ristretto/Ed25519 encoding and is admitted. A malicious participant `j` therefore broadcasts `enc_key = identity`. Every honest sender computes `ecdh(ephemeral_k, identity) = identity`, so `cipher(context, identity)` derives a ChaCha20 key that any party who knows the 32-byte `context` can recompute — the "encrypted" secret shares `f_i(j)` sent to `j` are effectively encrypted under a public key whose private key (0) is known to everyone. These encrypted shares are published by the coordinator in `Transaction::DkgShares` and are readable by any passive observer of the tributary.
+
+### Impact Explanation
+An unprivileged observer who watches the DKG traffic recovers every `f_i(j)` destined for `j` in cleartext, and hence `j`'s full threshold secret share `s_j = Σ_i f_i(j)` plus evaluations of every honest participant's polynomial at `j`. This is concrete key-share recovery obtained purely from attacker-caused public inputs, and it permanently reduces the effective security of the resulting `ThresholdKeys` for all other participants: the scheme's privacy rests on each share being known only to its recipient, and this attack erases that guarantee for `j`'s share without corrupting any honest party. (Caveat I could not fully verify in the time available: `Encryption::register` may perform an additional check on `enc_key` I did not read; the `read` path itself, however, has no identity rejection and no signature binds `enc_key` to `j`.)
+
+### Likelihood Explanation
+The attack requires only that a PedPoP participant publish a malformed round-1 message — a single 32-byte identity encoding in a field the parser accepts and the PoK does not cover. It needs no race, no collusion, no computational work, and no privileged position; the malicious participant is indistinguishable from honest ones at the commitment layer because the malformed field is unauthenticated.
+
+### Recommendation
+Validate `enc_key` (and `EncryptedMessage.key`) after `C::read_G` by rejecting `is_identity()`, mirroring `Curve::read_G`'s explicit identity check, and bind `enc_key` into the round-1 proof-of-knowledge transcript (e.g., append it to `cached_msg` fed into `challenge()` or into the PoP challenge) so a participant cannot swap or degrade their encryption key after the fact.
+
+### Proof of Concept
+1. Malicious participant `j` constructs an `EncryptionKeyMessage` with valid `Commitments` (honestly generated coefficients and PoK) but sets `enc_key = C::G::identity()` (e.g., the canonical 32-byte Ristretto identity encoding).
+2. `EncryptionKeyMessage::read` succeeds: `C::read_G` accepts the canonical identity encoding, and the `Commitments` PoK verifies because it never covers `enc_key`.
+3. Each honest participant `i` calls `encrypt(rng, context, i, j_enc_key = identity, f_i(j))`, producing `ecdh = k_i · identity = identity` and a cipher keyed by `transcript("DKG Encryption v0.2" || context || identity_bytes)` — fully recomputable by anyone.
+4. The coordinator publishes the resulting `EncryptedMessage`s inside `Transaction::DkgShares`; a passive observer reads the ciphertext, recomputes the cipher from public `context` and the known identity encoding, applies the ChaCha20 keystream (static IV `"DKG IV v0.2\0"`), and recovers every `f_i(j)` and thus `j`'s secret share `Σ_i f_i(j)` in cleartext.
