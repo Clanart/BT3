@@ -1,0 +1,29 @@
+### Title
+Cached FROST preprocess reused across distinct signing inputs enables validator key-share recovery - (File: coordinator/src/tributary/signing_protocol.rs)
+
+### Summary
+`SigningProtocol::preprocess_internal` deterministically reconstructs FROST nonces from a seed cached in the DB keyed only by `context` (`(b"DkgConfirmer", attempt)`). The cached seed is never deleted after use, and neither `share` nor `complete` verifies that the preprocess set/message being signed is identical to what was previously signed. `DkgConfirmer::complete` even re-executes `share_internal` wholesale (line 322). Any path that causes `share_internal` to run twice for the same `context` with different counterparty preprocess bytes or a different message produces multiple signature shares over the same FROST nonce — nonce reuse that yields recovery of the validator's private key share. The file's own header (lines 25–54) documents this dependency and notes the guarding check ("commitments generated from the decided nonces are in fact its commitments on-chain") is an unimplemented `TODO`.
+
+### Finding Description
+- `preprocess_internal` (lines 123–147) loads `CachedPreprocesses::get(txn, context)` and calls `AlgorithmSignMachine::from_cache(algorithm, keys, CachedPreprocess(cached))`, which re-derives identical `nonces` via `seeded_preprocess` (`crypto/frost/src/sign.rs:268-274`). The DB entry is never removed after `sign` is executed.
+- `share_internal` (lines 150–181) rebuilds the machine from that same seed and calls `machine.sign(preprocesses, msg)` where `preprocesses` is built from attacker-influenced serialized bytes (`read_preprocess`, `crypto/frost/src/sign.rs:276-281`) and the signing set is derived from the supplied map keys.
+- In `crypto/frost/src/sign.rs:385-398`, the emitted share is `d + rho·e + c·k` where `d, e` are fixed by the cached seed, `rho` is the per-participant binding factor computed over the received commitments (`calculate_binding_factors`, `nonce.rs:161-173`), `c` is `Hram(R, group_key, msg)` (`algorithm.rs:208`), and `k` is the interpolated secret share.
+- `DkgConfirmer::share` (line 304) and `DkgConfirmer::complete` (line 312) each independently call `share_internal`. `complete` re-executes signing with whatever `preprocesses` map it is handed, without checking it equals the map used by the earlier `share` call — so two finalized-but-distinct preprocess sets for the same `(DkgConfirmer, attempt)` context produce two shares over identical `d, e`.
+
+### Impact Explanation
+Each signing execution with the same cached seed yields `s_i = d + rho_i·e + c_i·k`. The attacker knows `s_i` (published share), `rho_i` (recomputable from public commitments via `hash_binding_factor`), and `c_i` (public challenge). Unknowns are only `d`, `e`, `k`. Three shares over reused nonces with distinct `rho`/`c` give three linear equations in three unknowns, recovering `k` — the validator's MuSig secret share for `ThresholdKeys` — and the nonces. Compromise of a validator key share lets the attacker forge DKG-confirmation signatures and, combined with analogous reuse elsewhere, erodes the validator-set root of trust. This maps the CVE class (false early responses accepted despite transport authentication): untrusted preprocess bytes reach `read_preprocess`/`sign` and are acted upon without being bound to the single use the cached seed authorizes.
+
+### Likelihood Explanation
+Triggering requires two `share_internal` executions for one `context` with differing inputs. Safety rests entirely on BFT deduplication delivering identical messages, on no crash/re-execution divergence, and on callers never passing a different preprocess map to `complete` than to `share` — none of which is enforced in code (the enforcing check is an explicit TODO at lines 50–54). The `complete` re-execution path makes the double-sign structural rather than incidental. Reachability through validator-supplied transaction data bounds exposure; colluding-threshold and broken-BFT scenarios are out of scope, but a single distinct finalized preprocess set (e.g., a reordered/supplemented map in a later transaction) suffices since no persisted record of the already-consumed preprocess exists.
+
+### Recommendation
+- Delete or mark the `CachedPreprocesses` entry as consumed on first `sign`, and record a hash of the exact preprocess map and `msg` alongside it; refuse to sign, or deterministically re-derive only when the recorded hash matches.
+- Implement the documented TODO: before publishing a share, verify our on-chain commitments match the commitments derived from the cached seed, and abort if they differ.
+- Prefer a monotonic, one-shot state machine in the DB (preprocess-published → share-published) so re-execution after a rebuild cannot emit a second share for different inputs.
+
+### Proof of Concept
+1. For context `(b"DkgConfirmer", attempt = x)`, cause `share(preprocesses_A, key_pair)` to execute; `preprocess_internal` creates seed `S` and the node emits `s_1 = d + rho_A·e + c_1·k`.
+2. Cause a second execution — `complete(preprocesses_B, key_pair, shares)` or a repeated `share` — where `preprocesses_B` differs in any byte or signer set. `from_cache` rebuilds identical `d, e`; new binding factors `rho_B` and challenge `c_2` produce `s_2 = d + rho_B·e + c_2·k`.
+3. Collect a third such share if needed and solve the linear system over `Ristretto::F` for `d, e, k`. Recovered `k` is the validator's secret share under `musig(...)` (`preprocess_internal` line 118–121).
+
+Uncertainty note: I could not fully trace `handle.rs`'s transaction path to confirm whether a non-validator can inject a distinct preprocess map for an already-used context; the finding stands on the missing single-use enforcement and the acknowledged unimplemented guard, which is concrete in the cited code.
