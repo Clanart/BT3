@@ -1,0 +1,73 @@
+### Title
+`ThresholdKeys::new`/`ThresholdKeys::read` declare an `n`-participant share set but only derive and enforce the group key over participants `1..=t` — the remaining `n - t` verification shares are never validated as consistent, so semantically-invalid keys are accepted (File: crypto/dkg/src/lib.rs)
+
+### Summary
+Analogous to the ERC-4626 finding — where `maxRedeem()`/`maxDeposit()` limits exist and are advertised, yet the mutating functions never check them — `ThresholdKeys` advertises a set of `n` verification shares (the "limit"/full participant commitment) but computes the group key from only the first `t` of them. Shares for participants `t+1..=n` are read, stored, and later used by `view()`, yet they are never verified to lie on the same sharing as the group key. Attacker-controlled bytes fed to `ThresholdKeys::read` (an in-scope untrusted-input sink) can therefore encode a key set whose declared participants cannot actually sign.
+
+### Finding Description
+`ThresholdKeys::read` reads `t`, `n`, `i`, the interpolation method, the secret share, and exactly `n` verification shares, then calls `ThresholdKeys::new` (crypto/dkg/src/lib.rs:574-632). `ThresholdKeys::new` validates only:
+
+- `verification_shares.len() == n`, and
+- every map key satisfies `participant <= n` (crypto/dkg/src/lib.rs:355-365).
+
+It then derives the group key as:
+
+```rust
+let t = (1 ..= params.t()).map(Participant).collect::<Vec<_>>();
+let group_key =
+  t.iter().map(|i| verification_shares[i] * interpolation.interpolation_factor(*i, &t)).sum();
+```
+
+(crypto/dkg/src/lib.rs:376-378)
+
+The summation runs over participants `1..=t` only. Nothing checks that `verification_shares[j]` for `j > t` is consistent with the polynomial implied by the first `t` shares (nor that `secret_share` matches `verification_shares[i]`). The metadata describing the "maximum" share set (`n` shares, `participant <= n` bounds check) exists, but the actual group-key derivation ignores `n - t` of those shares — exactly the report's pattern of a declared bound that is never enforced at the point it matters.
+
+Consequences exercised through public inputs:
+
+- `ThresholdKeys::read` is listed as an acceptable untrusted-bytes entry point. An attacker who supplies or corrupts serialized `ThresholdKeys` can set arbitrary group elements for shares `t+1..=n` while keeping a valid-looking `group_key`.
+- `ThresholdKeys::view` interpolates `self.core.verification_shares[i]` for every included participant (crypto/dkg/src/lib.rs:500-507) and `AlgorithmSignatureMachine::complete` verifies each share against `view.verification_share(l)` in the blame path (crypto/frost/src/sign.rs:475-489). A bogus share `j > t` produces a wrong interpolated verification share, so participant `j`'s legitimately-produced signature share fails `verify_share`, `j` is falsely blamed via `FrostError::InvalidShare(j)`, and the session aborts even though all shares were honestly generated.
+- If an integrator provisions threshold keys for a Bitcoin/Schnorr address from such bytes and funds are sent to `group_key()`, any signing set that must include one of the inconsistent participants can never produce a valid signature — funds are received at an address whose declared `n`-of-`t` policy is not actually spendable as declared. Honest participants can additionally be permanently mis-blamed.
+
+### Impact Explanation
+A group key no longer commits to the declared participant set: the same `group_key` is produced regardless of the contents of `n - t` verification shares, so two materially different share distributions are indistinguishable on-chain. Signing sessions including an out-of-polynomial participant deterministically fail verification and mis-attribute blame to an honest signer (`FrostError::InvalidShare`, crypto/frost/src/sign.rs:487-489). Where these keys back a wallet/validator set, deposits to `group_key()` may be unspendable under the advertised policy.
+
+### Likelihood Explanation
+Reachability requires the victim to deserialize attacker-influenced `ThresholdKeys` bytes or to operate in a setup path where verification shares are not cross-checked (e.g., key import/recovery tooling rather than the in-tree DKG, which does produce consistent shares). The DKG dealer path (crypto/dkg/dealer/src/lib.rs:46-64) generates consistent shares, so exploitation is limited to ingestion of untrusted serialized keys — but `ThresholdKeys::read` is explicitly exposed for that purpose and performs no semantic validation of the trailing shares. Impact is conditional, matching the source report's Medium severity.
+
+### Recommendation
+In `ThresholdKeys::new` (crypto/dkg/src/lib.rs:349), enforce the declared share set over all `n` participants: derive `group_key` and then verify, for every `j` in `1..=n`, that `verification_shares[j]` is consistent with the polynomial/group key (e.g., recompute the expected share commitment via interpolation over a fixed basis and compare), and verify `secret_share` satisfies `C::generator() * secret_share == verification_shares[&params.i()]` under `interpolation`. Reject inputs in `ThresholdKeys::read` that fail these checks so deserialized keys cannot encode participants the group key does not commit to.
+
+### Proof of Concept
+```rust
+// C = Ristretto (any Ciphersuite); n = 3, t = 2
+let n: u16 = 3; let t: u16 = 2;
+let shares: Vec<F> = (1..=n).map(|_| F::random(&mut OsRng)).collect();
+let mut vshares: HashMap<Participant, G> = (1..=n)
+    .map(|i| (Participant::new(i).unwrap(), G::generator() * shares[i - 1]))
+    .collect();
+
+// Corrupt the verification share for participant 3 (index > t).
+// group_key is unchanged because ThresholdKeys::new only sums over 1..=t.
+vshares.insert(Participant::new(3).unwrap(), G::generator() * F::random(&mut OsRng));
+
+let keys = ThresholdKeys::<C>::new(
+    ThresholdParams::new(t, n, Participant::new(1).unwrap()).unwrap(),
+    Interpolation::Lagrange,
+    Zeroizing::new(shares[0]),
+    vshares,
+).unwrap(); // ACCEPTED — no consistency check for share 3
+
+// Equivalently, the same bytes accepted via ThresholdKeys::read.
+
+// Any signing set including participant 3 fails / mis-blames:
+let view = keys.view(vec![
+    Participant::new(1).unwrap(),
+    Participant::new(3).unwrap(),
+]).unwrap(); // view builds a verification_share(3) from the garbage share
+
+// AlgorithmSignMachine::complete will queue verify_share(verification_share(3), ...)
+// which fails against participant 3's honest share -> FrostError::InvalidShare(3),
+// and the aggregate signature can never verify for sets containing participant 3.
+```
+
+The same serialized blob passes `ThresholdKeys::read` (crypto/dkg/src/lib.rs:574-632) since `read` only checks participant indexes `<= n` and delegates to the same unchecked `new`.
