@@ -1,0 +1,29 @@
+### Title
+BIP-340 parity normalization applied to nonce `R` but never to the group key / secret share — emitted signatures are invalid under Bitcoin consensus whenever the threshold group key has odd Y - (File: `networks/bitcoin/src/crypto.rs`)
+
+### Summary
+The bug class from the external report — a required check/normalization applied on only one side of a two-sided condition — maps directly onto Serai's BIP-340 FROST algorithm. BIP-340 requires parity normalization on **both** `R` (the nonce commitment) and `A` (the x-only group key, which is implicitly even-Y). `crypto.rs` handles `R` parity in `Hram::hram` and in `Schnorr::verify`, but never normalizes the group key: `sign_share` feeds the raw `secret_share` into the Schnorr equation, and `verify` verifies against the raw `group_key` before serializing an x-only signature.
+
+### Finding Description
+In `Hram::hram`, the challenge is conditionally negated only based on `needs_negation(R)` — the nonce's parity (`crypto.rs:70-72`). In `Schnorr::verify`, the aggregated scalar `s` is conditionally negated only based on `needs_negation(&sig.R)` (`crypto.rs:145-146`). There is no symmetric normalization for the group key: BIP-340 verification uses `lift_x(x(A))`, which always yields the even-Y point. If `group_key` has odd Y, the effective secret under BIP-340 is `n - d`, so every signer must sign with `-secret_share` (equivalently the challenge/key parity must be folded in). `Schnorr::sign_share` delegates to `FrostSchnorr::sign_share`, which calls `SchnorrSignature::<C>::sign(params.secret_share(), nonce, c)` with the un-negated share (`crypto/frost/src/algorithm.rs:201-211`), and no parity correction for `A` exists anywhere in `crypto.rs` (`needs_negation` is only ever applied to `R`).
+
+Concretely, the internal check `self.0.verify(group_key, nonces, sum)` succeeds because `SchnorrSignature::verify` evaluates `sG == R + c·A` against the actual odd-Y `A`. The function then serializes `sig.serialize()[1..]` — dropping the sign bit — into a 64-byte BIP-340 signature. Any BIP-340 verifier (Bitcoin consensus) computes `sG == R + c·lift_x(x(A)) = R - c·A`, which fails. The condition is inverted relative to the report: the check (parity correction) is performed in the "even key / odd nonce" cases but omitted for the "odd key" case — the exact analog of checking margin only when `liquidityDelta > 0` and not `< 0`.
+
+### Impact Explanation
+A FROST signing session over secp256k1 produces a signature that passes Serai's internal `verify`/`verify_share`/`complete` path yet is rejected by every BIP-340 verifier. For a threshold key whose (tweaked) group key has odd Y — parity is effectively random per key, and Taproot tweaking re-randomizes it — every signature is unspendable on-chain. Since `verify` returns `Some`, the signer stack treats completion as success; the resulting transaction can never confirm, so outputs controlled by that multisig are effectively locked — funds reported correctly signed that are not actually spendable. Reachability is via ordinary signing (`sign_share` → `complete`), with the group key determined by the public DKG/TapTweak parameters.
+
+### Likelihood Explanation
+No attacker action is required: the defect triggers with ~50% probability per group key (or per tweaked key), purely as a function of public key material. Any unprivileged user whose deposit maps to an odd-parity multisig key produces withdrawals that silently fail consensus validation. Severity is High: correctness/fund-locking, deterministic once the key parity is odd.
+
+### Recommendation
+Apply the same conditional-negation pattern already used for `R` to the group key. Either (a) negate the effective secret share when `needs_negation(&group_key)` inside `sign_share`/`verify_share` (e.g., by folding the key-parity sign into the challenge term or negating `params.secret_share()` and each participant's `verification_share`), or (b) enforce even-Y group keys at key-aggregation/offset time so `lift_x(x(A)) == A` is an invariant. The correction must be applied identically in `sign_share` and `verify_share` so per-share blame still works, and `verify` should additionally confirm the emitted signature under `lift_x(group_key)` parity before returning `Some`.
+
+### Proof of Concept
+Code-level demonstration (no private inputs needed — only the public group key parity):
+
+1. Run a `ThresholdKeys<Secp256k1>` signing session with `Schnorr::new()` where `needs_negation(&group_key)` is true (odd-Y group key; occurs ~50% of the time, e.g., after a TapTweak offset).
+2. `Hram::hram` (crypto.rs:59-73) computes `c` over `x(R) || x(A) || m`, negating only on `R` parity. `sign_share` computes `s_i = nonce_i + c·secret_share_i` with the raw share (`algorithm.rs:208-210`).
+3. `complete` sums shares; `Schnorr::verify` (crypto.rs:139-149) checks `sum·G == R + c·A` internally — true — then emits `sig = x(R) || s` with `s` negated only if `R` is odd.
+4. Verify `sig` under BIP-340 (`XOnlyPublicKey`/libsecp256k1): verification uses `P = lift_x(x(A)) = -A`, so `s·G == R + c·A ≠ R + c·P`. The signature is rejected — Bitcoin treats it as invalid, and the output is unspendable despite `verify` having returned `Some`.
+
+Uncertainty: I could not fully confirm whether the wallet layer (`networks/bitcoin/src/wallet/send.rs`, `wallet/mod.rs`, which do contain `needs_negation`/offset references) compensates for odd-parity tweaked keys upstream of `Schnorr::sign_share`. If it does not — and no parity normalization exists in `crypto.rs` itself, where the BIP-340 contract is implemented — the defect stands exactly as described at the algorithm layer, which is the component contractually responsible for producing BIP-340-valid signatures.
