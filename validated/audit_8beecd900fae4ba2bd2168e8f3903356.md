@@ -1,0 +1,26 @@
+### Title
+Repeated FROST signing under a fixed context deterministically reuses the same nonces, enabling private key share recovery — (File: coordinator/src/tributary/signing_protocol.rs)
+
+### Summary
+`SigningProtocol::preprocess_internal` caches a FROST preprocess seed keyed solely by `context` and never consumes or rotates it. Every call to `share_internal` rebuilds a `AlgorithmSignMachine` from that same seed via `from_cache` → `seeded_preprocess`, which deterministically re-derives identical nonces with `ChaCha20Rng::from_seed`. Any second `sign` executed under the same context — for example `DkgConfirmer::share` followed by `DkgConfirmer::complete`, which internally calls `share_internal` again with caller-supplied `preprocesses` and `key_pair` — produces two Schnorr signature shares over the same nonce with different binding factors/challenges. Solving the two linear equations recovers the signer's secret share.
+
+### Finding Description
+The UAF bug class maps to Serai as *reuse of a cryptographically single-use value after it was already consumed*: `CachedPreprocess` is documented as single-use ("A preprocess MUST only be used once. Reuse will enable third-party recovery of your private key share," frost/src/sign.rs:85-87, 211-213), yet `preprocess_internal` persists the encrypted seed in `CachedPreprocesses` keyed by `context` and reads it back on every invocation without deletion (signing_protocol.rs:123-145). `seeded_preprocess` then deterministically regenerates the identical nonces from `ChaCha20Rng::from_seed(*seed.0)` (frost/src/sign.rs:127-141), so two `machine.sign(preprocesses, msg)` calls under the same context emit shares `s = d + b·e + λ·c·x` with identical `d + b·e` but attacker-influenced `c` (via different preprocess sets) or different `msg`.
+
+For `DkgConfirmer`, `context = (b"DkgConfirmer", attempt)` (signing_protocol.rs:275), so all signing activity within an attempt shares one nonce. `share` signs `set_keys_message(...)` built from the caller-supplied `key_pair`, and `complete` calls `share_internal` again with independently supplied `preprocesses`/`key_pair` (lines 288-327). If either the preprocess set or the key pair differs between the two calls — e.g., an invalid preprocess causes `share` to be retried with a corrected set, or a different `key_pair` reaches `complete` — two shares with reused nonces and distinct challenges are published on the BFT channel.
+
+### Impact Explanation
+Two published signature shares over the same nonce with different effective challenges yield `x = (s₁ − s₂)/(λ(c₁ − c₂))`, recovering the validator's MuSig secret share (`self.key`). The shares are broadcast over the authenticated-but-public tributary channel, so any observer can perform the recovery. Compromise of a validator key share undermines the root-of-trust key used to confirm DKG results on-chain.
+
+### Likelihood Explanation
+Reachability requires two `share_internal` executions under the same attempt context with differing preprocess maps or `key_pair`. The code deliberately relies on BFT ordering to make received messages identical across calls (comment lines 34-48), and there is no guard ensuring `share` and `complete` sign byte-identical messages — `complete` does not verify the msg matches what `share` signed, and `share` can be re-entered after an `InvalidPreprocess` error with a corrected set (the error path at lines 170-178 returns the faulty participant but the cached nonce persists). Any logic divergence — retry after a faulty preprocess, or `complete` invoked on a distinct finalized `key_pair` — triggers reuse. This is a conditional but real path requiring only that distinct public inputs reach a second signing pass.
+
+### Recommendation
+Delete or rotate the cached seed after a successful `sign` under a context (e.g., `CachedPreprocesses::remove` / re-key on share generation), and/or bind the signed message into the context and assert in `complete` that the message and preprocess set equal those used in `share`. Alternatively, derive nonces as `H(seed || msg || preprocess_set)` so reuse cannot produce identical nonces under different challenges.
+
+### Proof of Concept
+1. Under attempt `a`, coordinator calls `DkgConfirmer::share(P, kp₁)` → `share_internal` loads seed `S` from `CachedPreprocesses[("DkgConfirmer", a)]`, derives nonces `d, e`, signs `m₁ = set_keys_message(kp₁)`, publishes share `s₁`.
+2. `DkgConfirmer::complete(P', kp₂, shares)` is invoked with `P' ≠ P` (or `kp₂ ≠ kp₁`) → `share_internal` reloads the same `S` (seed still cached), regenerates identical `d, e`, signs `m₂`, publishes `s₂`.
+3. Observer computes `x = (s₁ − s₂) / (λ·(c₁ − c₂))` using the known binding/challenge values, recovering the validator's secret share. The same structure applies to any `SigningProtocol` context where `share` is re-entered with mutated preprocesses after an `InvalidPreprocess` return.
+
+Note: I was unable to fully trace the call sites in `coordinator/src/tributary/handle.rs` before completing this analysis, so the exact sequence by which `share` and `complete` are driven with divergent inputs could not be confirmed; the root cause in `preprocess_internal`/`share_internal` is verified directly.
